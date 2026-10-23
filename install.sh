@@ -55,6 +55,8 @@ fi
 if command -v npx >/dev/null 2>&1; then
   npx -y skills add remotion-dev/skills -g -a claude-code -s '*' -y >/dev/null 2>&1 \
     && ok "Remotion's official skills" || skip "Remotion's official skills, optional"
+  # The studio skill bans this one: it answers "make a video" by starting a blank project.
+  rm -rf "$HOME/.claude/skills/remotion-create" "$HOME/.agents/skills/remotion-create"
 fi
 
 echo

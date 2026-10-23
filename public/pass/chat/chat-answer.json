@@ -1,0 +1,68 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "source": "https://campusai-demo.vercel.app/",
+ "captured": "2026-10-23T03:04:26.569Z",
+ "question": "What should I ask at the Evercore chat?",
+ "answerText": "The Evercore Coffee Chat is a small group with no presentation, so your questions are the whole hour. Bring two about the restructuring group specifically: what a first-year analyst's week looks like on a live deal, and how they would prepare for a superday if they were doing it again. Then ask who else from Smith is on the desk.",
+ "boxes": {
+  "name": {
+   "x": 325.5,
+   "y": 559.4,
+   "w": 147.8,
+   "h": 17
+  },
+  "answer": {
+   "x": 299,
+   "y": 556.4,
+   "w": 1096,
+   "h": 47.6
+  },
+  "bubble": {
+   "x": 1126,
+   "y": 510,
+   "w": 255,
+   "h": 22.4
+  },
+  "followUp": {
+   "x": 297,
+   "y": 666.5,
+   "w": 281.9,
+   "h": 58.5
+  },
+  "textarea": {
+   "x": 270,
+   "y": 780,
+   "w": 1040,
+   "h": 36
+  },
+  "style": {
+   "fontSize": 13,
+   "lineHeight": 21.125,
+   "fontWeight": 400,
+   "color": "rgb(242, 241, 239)",
+   "fontFamily": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "placeholder": "Ask CampusAI anything…"
+  },
+  "field": {
+   "x": 261,
+   "y": 770.953125,
+   "w": 1134,
+   "h": 54,
+   "radius": 15
+  },
+  "send": {
+   "x": 1354,
+   "y": 782,
+   "w": 32,
+   "h": 32
+  },
+  "card": {
+   "x": 248,
+   "y": 428.3,
+   "w": 1160,
+   "h": 409.7
+  }
+ }
+}

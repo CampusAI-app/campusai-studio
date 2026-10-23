@@ -28,9 +28,9 @@ src/private/*
 public/brooks/
 # Licensed font files: `npm run fonts` fetches them (ITF Free Font License, no redistribution)
 public/fonts/*.woff2
-# Recordings made by `npm run chat` (frames.json is useless without its frames)
-public/*/chat/
 # One-off capture scripts with this machine's paths, and draft voice notes
 public/four/registration/_capture/
 public/four/week/*.cjs
 public/audio/vo/
+# The example chat recording (`npm run chat examples/study-spots.json` makes it on each machine)
+public/study-spots/

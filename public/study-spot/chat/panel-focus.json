@@ -1,0 +1,19 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "source": "https://campusai-demo.vercel.app/",
+ "captured": "2026-10-23T17:44:45.452Z",
+ "panel": {
+  "x": 980,
+  "y": 0,
+  "w": 460,
+  "h": 900
+ },
+ "field": {
+  "x": 1040,
+  "y": 843,
+  "w": 303,
+  "h": 36
+ }
+}

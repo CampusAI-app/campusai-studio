@@ -1,0 +1,40 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "source": "https://campusai-demo.vercel.app/",
+ "captured": "2026-10-23T03:04:15.123Z",
+ "textarea": {
+  "x": 270,
+  "y": 627.7,
+  "w": 1040,
+  "h": 36
+ },
+ "style": {
+  "fontSize": 13,
+  "lineHeight": 21.125,
+  "fontWeight": 400,
+  "color": "rgb(242, 241, 239)",
+  "fontFamily": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+  "placeholder": "Ask CampusAI anything…"
+ },
+ "field": {
+  "x": 261,
+  "y": 618.71875,
+  "w": 1134,
+  "h": 54,
+  "radius": 15
+ },
+ "send": {
+  "x": 1354,
+  "y": 629.7,
+  "w": 32,
+  "h": 32
+ },
+ "card": {
+  "x": 248,
+  "y": 428.3,
+  "w": 1160,
+  "h": 257.4
+ }
+}

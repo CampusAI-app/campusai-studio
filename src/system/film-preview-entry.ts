@@ -8,7 +8,7 @@
 import React from "react";
 import { Composition, registerRoot } from "remotion";
 import type { AnyZodObject } from "remotion";
-import demo from "../../../films/_parts-demo/storyboard.json";
+import demo from "../../examples/parts-demo/storyboard.json";
 import { Film, filmMetadata } from "./Film";
 import type { FilmProps } from "./Film";
 import { FPS } from "./motion";

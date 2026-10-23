@@ -1,0 +1,93 @@
+{
+  "id": "_parts-demo",
+  "title": "Parts demo, every scene part once",
+  "format": "custom",
+  "mode": "bulk",
+  "aspects": ["4x5", "9x16", "16x9"],
+  "brand": "campusai",
+  "contract": {
+    "does": "A student presses Tailor resume on a Goldman role, sees why it fits, then catches a moved due date and asks CampusAI",
+    "changes": "The role explains itself, the moved assignment is already in the brief, and the answer writes itself on the dashboard",
+    "better": "They know what to do next without digging through Canvas or job boards"
+  },
+  "surfaces": {
+    "goldman": {
+      "src": "pass/job-goldman.jpg",
+      "page": { "w": 1440, "h": 900 },
+      "dpr": 2,
+      "layers": "pass/job-goldman.json",
+      "patch": [{ "x": 116, "y": 10, "w": 40, "h": 36, "color": "rgb(29, 20, 21)" }]
+    },
+    "notifications": {
+      "src": "pass/notifications.jpg",
+      "page": { "w": 1440, "h": 900 },
+      "dpr": 2,
+      "layers": "pass/notifications.json"
+    },
+    "chat": {
+      "src": "pass/chat/chat-answer.jpg",
+      "page": { "w": 1440, "h": 900 },
+      "dpr": 2,
+      "patch": [{ "x": 116, "y": 10, "w": 40, "h": 36, "color": "rgb(29, 20, 21)" }]
+    }
+  },
+  "shots": [
+    {
+      "id": "title",
+      "seconds": 3.2,
+      "part": "control-title",
+      "surface": "goldman",
+      "action": "The real Tailor resume button fills the frame as the title over its dimmed page, is pressed, and flies back into its slot on the Goldman role",
+      "focus": { "x": 742, "y": 226, "w": 640, "h": 142 },
+      "press": { "x": 1004, "y": 343, "at": 1.5 },
+      "lands": "why",
+      "props": { "rect": { "x": 939, "y": 324, "w": 130, "h": 38 }, "pressAt": 1.5 },
+      "transition": "camera"
+    },
+    {
+      "id": "why",
+      "seconds": 4.6,
+      "part": "page-walk",
+      "surface": "goldman",
+      "action": "The camera carries down from the actions to Why this fits you, the rest of the page dims",
+      "focus": { "x": 742, "y": 380, "w": 624, "h": 196 },
+      "props": { "dim": 0.5 },
+      "text": [{ "text": "Each match explains why it fits you.", "role": "caption", "source": "facts", "at": 0.9 }],
+      "transition": "camera"
+    },
+    {
+      "id": "moved",
+      "seconds": 5.6,
+      "part": "like-when-line",
+      "surface": "notifications",
+      "action": "Like when your due date moves overnight, set over the dimmed notifications page, then rising into a small headline as the BMGT380 row lights",
+      "focus": { "x": 300, "y": 176, "w": 470, "h": 96 },
+      "props": { "accent": ["due date"] },
+      "text": [{ "text": "Like when your due date moves overnight.", "role": "hook", "source": "hook", "at": 0.1 }],
+      "transition": "carry"
+    },
+    {
+      "id": "answer",
+      "seconds": 2.8,
+      "part": "timelapse",
+      "surface": "chat",
+      "action": "The moved assignment carries into the daily brief, the camera eases to Ask CampusAI and the recorded answer writes itself, sped up with a clock",
+      "focus": { "x": 262, "y": 436, "w": 780, "h": 300 },
+      "hero": true,
+      "props": {
+        "carryFrom": { "x": 282, "y": 160, "w": 250, "h": 80 },
+        "sequence": "pass/chat/answer/frames.json",
+        "from": 0.3,
+        "to": 4.2
+      },
+      "text": [{ "text": "Answered right here.", "role": "caption", "source": "facts", "at": 0.15 }]
+    }
+  ],
+  "end": { "kind": "logo-url", "hold": 3 },
+  "music": { "track": "slow-walk" },
+  "cuts": { "15": { "shots": ["title", "why", "answer"], "format": "feature-15" } },
+  "facts": [
+    { "text": "Each match explains why it fits you.", "source": "pass/job-goldman.jpg: every role's detail opens on a Why this fits you panel written for the student" },
+    { "text": "Answered right here.", "source": "pass/chat/chat-answer.jpg: the Ask CampusAI card's own subtitle, Jobs, classes, events, campus life. Answered right here." }
+  ]
+}
