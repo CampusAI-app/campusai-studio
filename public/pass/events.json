@@ -1,0 +1,738 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "tallH": 1872,
+ "dpr": 2,
+ "source": "https://campusai-demo.vercel.app/events",
+ "captured": "2026-10-23T02:49:19.339Z",
+ "layers": [
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 8,
+   "w": 56,
+   "h": 40,
+   "text": "Expand sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Collapse Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 311,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 251,
+   "y": 35,
+   "w": 119,
+   "h": 31,
+   "text": "Recommended"
+  },
+  {
+   "kind": "button",
+   "x": 372,
+   "y": 35,
+   "w": 64,
+   "h": 31,
+   "text": "Today"
+  },
+  {
+   "kind": "button",
+   "x": 438,
+   "y": 35,
+   "w": 90,
+   "h": 31,
+   "text": "This Week"
+  },
+  {
+   "kind": "button",
+   "x": 530,
+   "y": 35,
+   "w": 128,
+   "h": 31,
+   "text": "Looking Forward"
+  },
+  {
+   "kind": "button",
+   "x": 660,
+   "y": 35,
+   "w": 65,
+   "h": 31,
+   "text": "Saved"
+  },
+  {
+   "kind": "button",
+   "x": 739,
+   "y": 32,
+   "w": 131,
+   "h": 37,
+   "text": "All events"
+  },
+  {
+   "kind": "button",
+   "x": 751,
+   "y": 295,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 781,
+   "y": 295,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 263,
+   "y": 383,
+   "w": 269,
+   "h": 36,
+   "text": "On your calendar"
+  },
+  {
+   "kind": "button",
+   "x": 1337,
+   "y": 295,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1367,
+   "y": 295,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 849,
+   "y": 384,
+   "w": 269,
+   "h": 34,
+   "text": "Add to CampusAI Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 751,
+   "y": 517,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 781,
+   "y": 517,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 263,
+   "y": 605,
+   "w": 269,
+   "h": 36,
+   "text": "On your calendar"
+  },
+  {
+   "kind": "button",
+   "x": 538,
+   "y": 604,
+   "w": 269,
+   "h": 38,
+   "text": "View details ›"
+  },
+  {
+   "kind": "button",
+   "x": 1337,
+   "y": 517,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1367,
+   "y": 517,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 849,
+   "y": 606,
+   "w": 269,
+   "h": 34,
+   "text": "Add to CampusAI Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 751,
+   "y": 738,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 781,
+   "y": 738,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 263,
+   "y": 827,
+   "w": 269,
+   "h": 34,
+   "text": "Add to CampusAI Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 1337,
+   "y": 738,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1367,
+   "y": 738,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 849,
+   "y": 827,
+   "w": 269,
+   "h": 34,
+   "text": "Add to CampusAI Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 1124,
+   "y": 826,
+   "w": 269,
+   "h": 38,
+   "text": "View details ›"
+  },
+  {
+   "kind": "button",
+   "x": 751,
+   "y": 960,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 781,
+   "y": 960,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 263,
+   "y": 1049,
+   "w": 269,
+   "h": 34,
+   "text": "Add to CampusAI Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 1337,
+   "y": 960,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1367,
+   "y": 960,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 849,
+   "y": 1049,
+   "w": 269,
+   "h": 34,
+   "text": "Add to CampusAI Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 1124,
+   "y": 1047,
+   "w": 269,
+   "h": 38,
+   "text": "View details ›"
+  },
+  {
+   "kind": "button",
+   "x": 751,
+   "y": 1182,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 781,
+   "y": 1182,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 263,
+   "y": 1270,
+   "w": 269,
+   "h": 34,
+   "text": "Add to CampusAI Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 1337,
+   "y": 1182,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1367,
+   "y": 1182,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 849,
+   "y": 1270,
+   "w": 269,
+   "h": 34,
+   "text": "Add to CampusAI Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 751,
+   "y": 1403,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 781,
+   "y": 1403,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 263,
+   "y": 1492,
+   "w": 269,
+   "h": 34,
+   "text": "Add to CampusAI Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 538,
+   "y": 1490,
+   "w": 269,
+   "h": 38,
+   "text": "View details ›"
+  },
+  {
+   "kind": "button",
+   "x": 1337,
+   "y": 1403,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1367,
+   "y": 1403,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 849,
+   "y": 1492,
+   "w": 269,
+   "h": 34,
+   "text": "Add to CampusAI Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 751,
+   "y": 1625,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 781,
+   "y": 1625,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 263,
+   "y": 1714,
+   "w": 269,
+   "h": 34,
+   "text": "Add to CampusAI Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 538,
+   "y": 1712,
+   "w": 269,
+   "h": 38,
+   "text": "View details ›"
+  },
+  {
+   "kind": "button",
+   "x": 992,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1038,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 1084,
+   "y": 816,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 311,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 349,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 380,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 411,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 349,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 387,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 425,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 476,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 225,
+   "w": 574,
+   "h": 210,
+   "text": "SAT 24 Evercore Coffee Chat 10:00 AM - 11:30 AM · Van Munching Hall ✦ Strong match Restruc"
+  },
+  {
+   "kind": "card",
+   "x": 834,
+   "y": 225,
+   "w": 574,
+   "h": 210,
+   "text": "SUN 25 Financial Modeling Bootcamp: 3-Statement to DCF 5:00 PM - 7:00 PM · Van Munching Ha"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 447,
+   "w": 574,
+   "h": 210,
+   "text": "MON 26 Smith Finance Group Stock Pitch Night 6:30 PM - 8:00 PM · Van Munching Hall ✦ Stron"
+  },
+  {
+   "kind": "card",
+   "x": 834,
+   "y": 447,
+   "w": 574,
+   "h": 210,
+   "text": "TUE 27 Smith Fall Career & Internship Fair 10:00 AM - 3:00 PM · The Hotel at UMD ✦ Good ma"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 668,
+   "w": 574,
+   "h": 210,
+   "text": "THU 29 Goldman Sachs, Investment Banking Info Session 6:00 PM - 7:30 PM · Van Munching Hal"
+  },
+  {
+   "kind": "card",
+   "x": 834,
+   "y": 668,
+   "w": 574,
+   "h": 210,
+   "text": "SUN 1 Smith Investment Fund, Stock Pitch Competition 5:00 PM - 8:00 PM · Van Munching Hall"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 890,
+   "w": 574,
+   "h": 210,
+   "text": "SAT 24 Deloitte Consulting, Coffee Chat 4:00 PM - 5:00 PM · Van Munching Hall ✦ Good match"
+  },
+  {
+   "kind": "card",
+   "x": 834,
+   "y": 890,
+   "w": 574,
+   "h": 210,
+   "text": "SUN 1 T. Rowe Price, Employer of the Day 11:00 AM - 2:00 PM · Van Munching Hall ✦ Good mat"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 1112,
+   "w": 574,
+   "h": 210,
+   "text": "WED 28 Morgan Stanley, Sales & Trading Info Session 6:00 PM - 7:30 PM · Van Munching Hall "
+  },
+  {
+   "kind": "card",
+   "x": 834,
+   "y": 1112,
+   "w": 574,
+   "h": 210,
+   "text": "FRI 30 Bloomberg Terminal Workshop 4:00 PM - 6:00 PM · Van Munching Hall ✦ Good match Bloo"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 1333,
+   "w": 574,
+   "h": 210,
+   "text": "FRI 23 Finance Association, Resume & LinkedIn Night 7:00 PM - 8:30 PM · Van Munching Hall "
+  },
+  {
+   "kind": "card",
+   "x": 834,
+   "y": 1333,
+   "w": 574,
+   "h": 210,
+   "text": "WED 4 JPMorgan, Women in Finance Panel 5:30 PM - 7:00 PM · Van Munching Hall ✦ Good match "
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 1555,
+   "w": 574,
+   "h": 210,
+   "text": "SUN 8 Federal Reserve, Careers in Economics & Policy 4:00 PM - 5:30 PM · Tydings Hall ✦ Go"
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+{
+  "_what": "Every scene part a storyboard shot may name in its `part` field. The checker (scripts/check-film.mjs) fails any other name. Add a name here in the same change that adds the part to the registry.",
+  "names": ["page-walk", "like-when-line", "control-title", "end-url", "timelapse"]
+}

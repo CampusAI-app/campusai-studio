@@ -1,0 +1,72 @@
+{
+  "card-02-jpmorgan": {
+    "phrase": "Finance Association",
+    "rects": [
+      {
+        "x": 0.12875104043457308,
+        "y": 0.41096989966555186,
+        "w": 0.338064572655189,
+        "h": 0.06849498327759197
+      }
+    ],
+    "card": {
+      "w": 357,
+      "h": 234
+    },
+    "text": "Your Finance Association pitch-competition reps are the technicals this class screens on."
+  },
+  "card-04-trowe": {
+    "phrase": "BMGT340 Business Finance",
+    "rects": [
+      {
+        "x": 0.20800841146061508,
+        "y": 0.41096989966555186,
+        "w": 0.47686848330850784,
+        "h": 0.06849498327759197
+      }
+    ],
+    "card": {
+      "w": 357,
+      "h": 234
+    },
+    "text": "You aced BMGT340 Business Finance; its valuation final project is this analyst's core work."
+  },
+  "card-03-marriott": {
+    "phrase": "Smith Investment Fund",
+    "rects": [
+      {
+        "x": 0.6860159467274161,
+        "y": 0.41096989966555186,
+        "w": 0.09760799088758433,
+        "h": 0.06849498327759197
+      },
+      {
+        "x": 0.04205730307544029,
+        "y": 0.4860869565217391,
+        "w": 0.28222202751248576,
+        "h": 0.06849498327759197
+      }
+    ],
+    "card": {
+      "w": 357,
+      "h": 234
+    },
+    "text": "The forecast models you build for the Smith Investment Fund are the ones this team runs."
+  },
+  "card-06-fanniemae": {
+    "phrase": "markets group you follow",
+    "rects": [
+      {
+        "x": 0.11679663541575397,
+        "y": 0.41096989966555186,
+        "w": 0.42696924559712607,
+        "h": 0.06849498327759197
+      }
+    ],
+    "card": {
+      "w": 357,
+      "h": 234
+    },
+    "text": "The markets group you follow with the Finance Association is this desk's daily work."
+  }
+}

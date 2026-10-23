@@ -1,0 +1,195 @@
+{
+ "w": 1196,
+ "h": 1146,
+ "cards": [
+  {
+   "label": "Corporate Finance Summer Analyst — 2027 at Marriott International",
+   "slug": null,
+   "x": 21,
+   "y": 187,
+   "w": 377,
+   "h": 211
+  },
+  {
+   "label": "Growth Operations Intern at Northlane AI",
+   "slug": null,
+   "x": 410,
+   "y": 187,
+   "w": 377,
+   "h": 211
+  },
+  {
+   "label": "Business Analyst — Rotational Program at Capital One",
+   "slug": null,
+   "x": 798,
+   "y": 187,
+   "w": 377,
+   "h": 211
+  },
+  {
+   "label": "Strategy & Transactions Intern — Summer 2027 at EY",
+   "slug": null,
+   "x": 21,
+   "y": 410,
+   "w": 377,
+   "h": 211
+  },
+  {
+   "label": "Deals Summer Associate Intern — 2027 at PwC",
+   "slug": "01-experience-pwc",
+   "x": 410,
+   "y": 410,
+   "w": 377,
+   "h": 211
+  },
+  {
+   "label": "Capital Markets Summer Intern — 2027 at Fannie Mae",
+   "slug": null,
+   "x": 798,
+   "y": 410,
+   "w": 377,
+   "h": 211
+  },
+  {
+   "label": "Finance Rotation Program Intern — 2027 at Capital One",
+   "slug": "02-skills-capitalone",
+   "x": 21,
+   "y": 632,
+   "w": 377,
+   "h": 211
+  },
+  {
+   "label": "Private Equity Analyst — Growth Fund at Carlyle Group",
+   "slug": "03-club-carlyle",
+   "x": 410,
+   "y": 632,
+   "w": 377,
+   "h": 211
+  },
+  {
+   "label": "Corporate Finance Intern — Summer 2027 at Under Armour",
+   "slug": null,
+   "x": 798,
+   "y": 632,
+   "w": 377,
+   "h": 211
+  },
+  {
+   "label": "Finance Intern — Summer 2027 at Lockheed Martin",
+   "slug": null,
+   "x": 21,
+   "y": 855,
+   "w": 377,
+   "h": 211
+  },
+  {
+   "label": "Commercial Energy Trading Intern — Summer 2027 at Constellation Energy",
+   "slug": null,
+   "x": 410,
+   "y": 855,
+   "w": 377,
+   "h": 211
+  },
+  {
+   "label": "Equity Research Summer Analyst — Industrials at Robert W. Baird",
+   "slug": null,
+   "x": 798,
+   "y": 855,
+   "w": 377,
+   "h": 211
+  }
+ ],
+ "chrome": [
+  {
+   "text": "✦",
+   "x": 21,
+   "y": 73,
+   "w": 13,
+   "h": 26
+  },
+  {
+   "text": "Ranked against your North Star, the career goal you're aiming at.",
+   "x": 21,
+   "y": 100,
+   "w": 365,
+   "h": 18
+  },
+  {
+   "text": "↻",
+   "x": 909,
+   "y": 89,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "text": "→",
+   "x": 1148,
+   "y": 86,
+   "w": 12,
+   "h": 20
+  },
+  {
+   "text": "Top Matches",
+   "x": 24,
+   "y": 134,
+   "w": 106,
+   "h": 31
+  },
+  {
+   "text": "Part-time",
+   "x": 132,
+   "y": 134,
+   "w": 84,
+   "h": 31
+  },
+  {
+   "text": "Saved",
+   "x": 218,
+   "y": 134,
+   "w": 65,
+   "h": 31
+  },
+  {
+   "text": "✦",
+   "x": 750,
+   "y": 141,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "text": "What are you aiming for?",
+   "x": 774,
+   "y": 135,
+   "w": 133,
+   "h": 14
+  },
+  {
+   "text": "Investment Banking Summer Analyst",
+   "x": 845,
+   "y": 148,
+   "w": 225,
+   "h": 15
+  },
+  {
+   "text": "Open to",
+   "x": 1092,
+   "y": 135,
+   "w": 43,
+   "h": 14
+  },
+  {
+   "text": "Any type",
+   "x": 1092,
+   "y": 149,
+   "w": 54,
+   "h": 15
+  },
+  {
+   "text": "Show more →",
+   "x": 538,
+   "y": 1086,
+   "w": 121,
+   "h": 39
+  }
+ ]
+}

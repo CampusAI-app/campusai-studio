@@ -1,0 +1,1769 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "coords": "viewport",
+ "scrollY": 0,
+ "source": "https://campusai-demo.vercel.app/ai",
+ "captured": "2026-10-23T04:32:38.137Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": true,
+  "chatgpt": false
+ },
+ "press": {
+  "x": 1283,
+  "y": 504,
+  "label": "Section of BMGT289D Frauds, Scams, and Thefts: What",
+  "rect": {
+   "x": 1208,
+   "y": 486,
+   "w": 149,
+   "h": 36
+  }
+ },
+ "marks": {
+  "yourWeekTitle": {
+   "x": 276,
+   "y": 231,
+   "w": 65,
+   "h": 20,
+   "text": "Your week"
+  },
+  "yourWeek": {
+   "x": 272,
+   "y": 112,
+   "w": 352,
+   "h": 635,
+   "text": "Your preferences Afternoons Back to back Fri free In person Course and professor"
+  },
+  "weekGrid": {
+   "x": 276,
+   "y": 266,
+   "w": 344,
+   "h": 320,
+   "text": "8 AM 9 AM 10 AM 11 AM 12 PM 1 PM 2 PM 3 PM 4 PM 5 PM Mon BMGT441 2pm BMGT495 3:3"
+  },
+  "prefs": {
+   "x": 276,
+   "y": 112,
+   "w": 344,
+   "h": 20,
+   "text": "Your preferences"
+  },
+  "pressed": {
+   "x": 1208,
+   "y": 486,
+   "w": 149,
+   "h": 36
+  },
+  "testudo": [
+   {
+    "x": 935,
+    "y": 692,
+    "w": 67,
+    "h": 15,
+    "text": "on Testudo"
+   }
+  ]
+ },
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 276,
+   "y": 230,
+   "w": 65,
+   "h": 20,
+   "text": "Your week"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 18,
+   "w": 171,
+   "h": 20,
+   "text": "University of Maryland — home"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Collapse Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 311,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 311,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 349,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 380,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 411,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 349,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 387,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 425,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 476,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "button",
+   "x": 19,
+   "y": 854,
+   "w": 124,
+   "h": 34,
+   "text": "MC Maya Chen 80% · Connect your transcript"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 1191,
+   "y": 42,
+   "w": 87,
+   "h": 32,
+   "text": "History"
+  },
+  {
+   "kind": "button",
+   "x": 1286,
+   "y": 43,
+   "w": 98,
+   "h": 30,
+   "text": "New chat"
+  },
+  {
+   "kind": "button",
+   "x": 276,
+   "y": 137,
+   "w": 99,
+   "h": 28,
+   "text": "Afternoons"
+  },
+  {
+   "kind": "button",
+   "x": 379,
+   "y": 137,
+   "w": 109,
+   "h": 28,
+   "text": "Back to back"
+  },
+  {
+   "kind": "button",
+   "x": 492,
+   "y": 137,
+   "w": 77,
+   "h": 28,
+   "text": "Fri free"
+  },
+  {
+   "kind": "button",
+   "x": 276,
+   "y": 169,
+   "w": 89,
+   "h": 28,
+   "text": "In person"
+  },
+  {
+   "kind": "button",
+   "x": 369,
+   "y": 169,
+   "w": 203,
+   "h": 28,
+   "text": "Course and professor reviews"
+  },
+  {
+   "kind": "button",
+   "x": 504,
+   "y": 228,
+   "w": 70,
+   "h": 24,
+   "text": "Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 574,
+   "y": 228,
+   "w": 44,
+   "h": 24,
+   "text": "Map"
+  },
+  {
+   "kind": "button",
+   "x": 576,
+   "y": 606,
+   "w": 44,
+   "h": 24,
+   "text": "Change"
+  },
+  {
+   "kind": "button",
+   "x": 576,
+   "y": 644,
+   "w": 44,
+   "h": 24,
+   "text": "Change"
+  },
+  {
+   "kind": "button",
+   "x": 576,
+   "y": 682,
+   "w": 44,
+   "h": 24,
+   "text": "Change"
+  },
+  {
+   "kind": "button",
+   "x": 576,
+   "y": 720,
+   "w": 44,
+   "h": 24,
+   "text": "Change"
+  },
+  {
+   "kind": "button",
+   "x": 1208,
+   "y": 562,
+   "w": 149,
+   "h": 36,
+   "text": "Add to my week"
+  },
+  {
+   "kind": "button",
+   "x": 710,
+   "y": 688,
+   "w": 120,
+   "h": 24,
+   "text": "Pick a different class"
+  },
+  {
+   "kind": "button",
+   "x": 842,
+   "y": 688,
+   "w": 176,
+   "h": 24,
+   "text": "See BMGT289D on Testudo"
+  },
+  {
+   "kind": "button",
+   "x": 719,
+   "y": 726,
+   "w": 80,
+   "h": 24,
+   "text": "Stop planning"
+  },
+  {
+   "kind": "button",
+   "x": 331,
+   "y": 805,
+   "w": 32,
+   "h": 32,
+   "text": "Attach file"
+  },
+  {
+   "kind": "button",
+   "x": 1255,
+   "y": 805,
+   "w": 32,
+   "h": 32,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1293,
+   "y": 805,
+   "w": 32,
+   "h": 32,
+   "text": "Send message"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 311,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 349,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 380,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 411,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 349,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 387,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 425,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 476,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "card",
+   "x": 706,
+   "y": 548,
+   "w": 666,
+   "h": 66,
+   "text": "Mon and Wed, 5pm to 6:15pm Section 0201 · 60 seats open Add to my week"
+  },
+  {
+   "kind": "text",
+   "text": "Skip to main content",
+   "x": -1,
+   "y": 2,
+   "w": 149,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Dashboard",
+   "x": 52,
+   "y": 76,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "My Calendar",
+   "x": 52,
+   "y": 114,
+   "w": 78,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 154,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Career Advisor",
+   "x": 64,
+   "y": 152,
+   "w": 92,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Resume Review",
+   "x": 52,
+   "y": 187,
+   "w": 94,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Job Match",
+   "x": 52,
+   "y": 218,
+   "w": 63,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Interview Prep",
+   "x": 52,
+   "y": 249,
+   "w": 86,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Company Tracker",
+   "x": 52,
+   "y": 280,
+   "w": 105,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 323,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Academic Advisor",
+   "x": 64,
+   "y": 321,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Planner & Progress",
+   "x": 52,
+   "y": 356,
+   "w": 115,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Class Tracker",
+   "x": 52,
+   "y": 387,
+   "w": 81,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Courses and Professors",
+   "x": 52,
+   "y": 418,
+   "w": 143,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Organizations",
+   "x": 52,
+   "y": 359,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Events",
+   "x": 52,
+   "y": 397,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Dining",
+   "x": 52,
+   "y": 435,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI",
+   "x": 52,
+   "y": 486,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Accessibility",
+   "x": 28,
+   "y": 834,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "MC",
+   "x": 28,
+   "y": 865,
+   "w": 17,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Maya Chen",
+   "x": 63,
+   "y": 856,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80",
+   "x": 63,
+   "y": 874,
+   "w": 14,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "%",
+   "x": 77,
+   "y": 874,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 87,
+   "y": 874,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Connect your transcript",
+   "x": 96,
+   "y": 874,
+   "w": 115,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI",
+   "x": 312,
+   "y": 48,
+   "w": 76,
+   "h": 19
+  },
+  {
+   "kind": "text",
+   "text": "History",
+   "x": 1223,
+   "y": 50,
+   "w": 42,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "New chat",
+   "x": 1317,
+   "y": 50,
+   "w": 55,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Your preferences",
+   "x": 276,
+   "y": 112,
+   "w": 108,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Afternoons",
+   "x": 287,
+   "y": 144,
+   "w": 62,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Back to back",
+   "x": 390,
+   "y": 144,
+   "w": 72,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Fri free",
+   "x": 503,
+   "y": 144,
+   "w": 40,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "In person",
+   "x": 287,
+   "y": 176,
+   "w": 52,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Course and professor reviews",
+   "x": 380,
+   "y": 176,
+   "w": 166,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Your week",
+   "x": 276,
+   "y": 231,
+   "w": 65,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "4 classes · 12 cr",
+   "x": 349,
+   "y": 233,
+   "w": 84,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Calendar",
+   "x": 514,
+   "y": 233,
+   "w": 50,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Map",
+   "x": 584,
+   "y": 233,
+   "w": 24,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "8 AM",
+   "x": 277,
+   "y": 279,
+   "w": 25,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "9 AM",
+   "x": 277,
+   "y": 309,
+   "w": 25,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "10 AM",
+   "x": 271,
+   "y": 339,
+   "w": 31,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "11 AM",
+   "x": 271,
+   "y": 369,
+   "w": 31,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "12 PM",
+   "x": 271,
+   "y": 399,
+   "w": 31,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "1 PM",
+   "x": 277,
+   "y": 429,
+   "w": 25,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "2 PM",
+   "x": 277,
+   "y": 459,
+   "w": 25,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "3 PM",
+   "x": 277,
+   "y": 489,
+   "w": 25,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "4 PM",
+   "x": 277,
+   "y": 519,
+   "w": 25,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "5 PM",
+   "x": 277,
+   "y": 549,
+   "w": 25,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Mon",
+   "x": 328,
+   "y": 267,
+   "w": 23,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "BMGT441",
+   "x": 316,
+   "y": 469,
+   "w": 48,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "2pm",
+   "x": 316,
+   "y": 482,
+   "w": 21,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "BMGT495",
+   "x": 316,
+   "y": 514,
+   "w": 49,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "3:30pm",
+   "x": 316,
+   "y": 527,
+   "w": 37,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Tue",
+   "x": 392,
+   "y": 267,
+   "w": 20,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "BMGT440",
+   "x": 378,
+   "y": 469,
+   "w": 49,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "2pm",
+   "x": 378,
+   "y": 482,
+   "w": 21,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "BMGT446",
+   "x": 378,
+   "y": 424,
+   "w": 49,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "12:30pm",
+   "x": 378,
+   "y": 437,
+   "w": 42,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Wed",
+   "x": 452,
+   "y": 267,
+   "w": 24,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "BMGT441",
+   "x": 441,
+   "y": 469,
+   "w": 48,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "2pm",
+   "x": 441,
+   "y": 482,
+   "w": 21,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "BMGT495",
+   "x": 441,
+   "y": 514,
+   "w": 49,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "3:30pm",
+   "x": 441,
+   "y": 527,
+   "w": 37,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Thu",
+   "x": 516,
+   "y": 267,
+   "w": 20,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "BMGT440",
+   "x": 503,
+   "y": 469,
+   "w": 49,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "2pm",
+   "x": 503,
+   "y": 482,
+   "w": 21,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "BMGT446",
+   "x": 503,
+   "y": 424,
+   "w": 49,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "12:30pm",
+   "x": 503,
+   "y": 437,
+   "w": 42,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Fri",
+   "x": 582,
+   "y": 267,
+   "w": 14,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "BMGT440",
+   "x": 289,
+   "y": 602,
+   "w": 58,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "0301",
+   "x": 350,
+   "y": 602,
+   "w": 28,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Tue, Thu · 2pm to 3:15pm",
+   "x": 289,
+   "y": 618,
+   "w": 134,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Change",
+   "x": 576,
+   "y": 610,
+   "w": 44,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "BMGT441",
+   "x": 289,
+   "y": 640,
+   "w": 56,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "0301",
+   "x": 348,
+   "y": 640,
+   "w": 28,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mon, Wed · 2pm to 3:15pm",
+   "x": 289,
+   "y": 656,
+   "w": 141,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Change",
+   "x": 576,
+   "y": 648,
+   "w": 44,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "BMGT446",
+   "x": 289,
+   "y": 678,
+   "w": 58,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "0301",
+   "x": 350,
+   "y": 678,
+   "w": 28,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Tue, Thu · 12:30pm to 1:45pm",
+   "x": 289,
+   "y": 694,
+   "w": 157,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Change",
+   "x": 576,
+   "y": 686,
+   "w": 44,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "BMGT495",
+   "x": 289,
+   "y": 716,
+   "w": 58,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "0401",
+   "x": 350,
+   "y": 716,
+   "w": 28,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mon, Wed · 3:30pm to 4:45pm",
+   "x": 289,
+   "y": 732,
+   "w": 161,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Change",
+   "x": 576,
+   "y": 724,
+   "w": 44,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "BMGT446 International Finance",
+   "x": 1154,
+   "y": 32,
+   "w": 204,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "BMGT446.",
+   "x": 706,
+   "y": 80,
+   "w": 72,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Pick a time.",
+   "x": 778,
+   "y": 80,
+   "w": 78,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "BMGT446 0301",
+   "x": 1256,
+   "y": 133,
+   "w": 102,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Upper Level Core.",
+   "x": 706,
+   "y": 181,
+   "w": 120,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Pick one for the Smith upper level core. BMGT496, the one in your plan, isn't offered this spring.",
+   "x": 706,
+   "y": 181,
+   "w": 617,
+   "h": 41
+  },
+  {
+   "kind": "text",
+   "text": "BMGT495 Strategic Management",
+   "x": 1142,
+   "y": 258,
+   "w": 216,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "BMGT495.",
+   "x": 706,
+   "y": 305,
+   "w": 72,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Pick a time.",
+   "x": 778,
+   "y": 305,
+   "w": 78,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "BMGT495 0401",
+   "x": 1257,
+   "y": 358,
+   "w": 101,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Gen ed.",
+   "x": 706,
+   "y": 406,
+   "w": 52,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Pick one that fills a gen ed you still need.",
+   "x": 758,
+   "y": 406,
+   "w": 267,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "BMGT289D Frauds, Scams, and Thefts: What, How and Why?",
+   "x": 960,
+   "y": 459,
+   "w": 398,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Only one section of",
+   "x": 706,
+   "y": 506,
+   "w": 129,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "BMGT289D",
+   "x": 835,
+   "y": 506,
+   "w": 78,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "fits around the classes you picked.",
+   "x": 913,
+   "y": 506,
+   "w": 227,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Mon and Wed, 5pm to 6:15pm",
+   "x": 721,
+   "y": 562,
+   "w": 201,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Section",
+   "x": 721,
+   "y": 584,
+   "w": 44,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "0201",
+   "x": 765,
+   "y": 584,
+   "w": 27,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "· 60 seats open",
+   "x": 792,
+   "y": 584,
+   "w": 88,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Add to my week",
+   "x": 1224,
+   "y": 572,
+   "w": 97,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mon and Wed, 3:30pm to 4:45pm",
+   "x": 721,
+   "y": 631,
+   "w": 219,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "0101",
+   "x": 948,
+   "y": 633,
+   "w": 25,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "· 60 open",
+   "x": 974,
+   "y": 633,
+   "w": 55,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Overlaps",
+   "x": 733,
+   "y": 654,
+   "w": 53,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "BMGT495 0401",
+   "x": 786,
+   "y": 654,
+   "w": 87,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "on your week",
+   "x": 873,
+   "y": 654,
+   "w": 77,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Pick a different class",
+   "x": 710,
+   "y": 692,
+   "w": 120,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "See",
+   "x": 842,
+   "y": 692,
+   "w": 25,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "BMGT289D",
+   "x": 868,
+   "y": 692,
+   "w": 67,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "on Testudo",
+   "x": 935,
+   "y": 692,
+   "w": 67,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Stop planning",
+   "x": 719,
+   "y": 730,
+   "w": 80,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI can make mistakes. Verify important information.",
+   "x": 672,
+   "y": 869,
+   "w": 313,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "6",
+   "x": 1260,
+   "y": 26,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "new",
+   "x": 1268,
+   "y": 26,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Feedback",
+   "x": 1352,
+   "y": 26,
+   "w": 57,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦Career Advisor",
+   "x": 52,
+   "y": 152,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦Academic Advisor",
+   "x": 52,
+   "y": 321,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "80% · Connect your transcript",
+   "x": 63,
+   "y": 873,
+   "w": 80,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80%",
+   "x": 63,
+   "y": 874,
+   "w": 24,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Afternoons",
+   "x": 276,
+   "y": 137,
+   "w": 99,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "text": "Back to back",
+   "x": 379,
+   "y": 137,
+   "w": 109,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "text": "Fri free",
+   "x": 492,
+   "y": 137,
+   "w": 77,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "text": "In person",
+   "x": 276,
+   "y": 169,
+   "w": 89,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "text": "Course and professor reviews",
+   "x": 369,
+   "y": 169,
+   "w": 203,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "text": "BMGT440 0301",
+   "x": 289,
+   "y": 602,
+   "w": 277,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Change",
+   "x": 576,
+   "y": 604,
+   "w": 44,
+   "h": 26
+  },
+  {
+   "kind": "text",
+   "text": "BMGT441 0301",
+   "x": 289,
+   "y": 640,
+   "w": 277,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Change",
+   "x": 576,
+   "y": 642,
+   "w": 44,
+   "h": 26
+  },
+  {
+   "kind": "text",
+   "text": "BMGT446 0301",
+   "x": 289,
+   "y": 678,
+   "w": 277,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Change",
+   "x": 576,
+   "y": 680,
+   "w": 44,
+   "h": 26
+  },
+  {
+   "kind": "text",
+   "text": "BMGT495 0401",
+   "x": 289,
+   "y": 716,
+   "w": 277,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Change",
+   "x": 576,
+   "y": 718,
+   "w": 44,
+   "h": 26
+  },
+  {
+   "kind": "text",
+   "text": "BMGT446. Pick a time.",
+   "x": 706,
+   "y": 77,
+   "w": 666,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "text": "Upper Level Core. Pick one for the Smith upper level core. BMGT496, the one in your plan, isn't offered this spring.",
+   "x": 706,
+   "y": 178,
+   "w": 666,
+   "h": 48
+  },
+  {
+   "kind": "text",
+   "text": "BMGT495. Pick a time.",
+   "x": 706,
+   "y": 302,
+   "w": 666,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "text": "Gen ed. Pick one that fills a gen ed you still need.",
+   "x": 706,
+   "y": 403,
+   "w": 666,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "text": "Only one section of BMGT289D fits around the classes you picked.",
+   "x": 706,
+   "y": 503,
+   "w": 666,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "text": "Section 0201 · 60 seats open",
+   "x": 721,
+   "y": 582,
+   "w": 475,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Add to my week",
+   "x": 1208,
+   "y": 562,
+   "w": 149,
+   "h": 36
+  },
+  {
+   "kind": "text",
+   "text": "0101 · 60 open",
+   "x": 948,
+   "y": 631,
+   "w": 80,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Overlaps BMGT495 0401 on your week",
+   "x": 733,
+   "y": 653,
+   "w": 217,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Stop planning",
+   "x": 656,
+   "y": 724,
+   "w": 728,
+   "h": 26
+  },
+  {
+   "kind": "text",
+   "text": "6 new",
+   "x": 1260,
+   "y": 28,
+   "w": 35,
+   "h": 12
+  }
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "pageW": 1440,
+ "pageH": 1400,
+ "dpr": 3,
+ "source": "https://campusai-demo.vercel.app/career?view=jobs&student_signal=intern%2Cco_op%2Cnew_grad%2Centry_level&job=jp_e0a1000000000001",
+ "captured": "2026-10-23T04:09:15.943Z",
+ "boxes": {
+  "Audit and Assurance Intern, Summer 2027": [
+   {
+    "tag": "BUTTON",
+    "x": 340,
+    "y": 251,
+    "w": 321.7,
+    "h": 19.9,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   },
+   {
+    "tag": "DIV",
+    "x": 340,
+    "y": 229,
+    "w": 349.7,
+    "h": 127.5,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   },
+   {
+    "tag": "DIV",
+    "x": 269,
+    "y": 214,
+    "w": 435.7,
+    "h": 157.5,
+    "border": "1px",
+    "bg": "rgb(34, 22, 24)",
+    "radius": "13px"
+   },
+   {
+    "tag": "LI",
+    "x": 269,
+    "y": 214,
+    "w": 435.7,
+    "h": 157.5,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   },
+   {
+    "tag": "UL",
+    "x": 269,
+    "y": 214,
+    "w": 435.7,
+    "h": 3467.1,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   },
+   {
+    "tag": "DIV",
+    "x": 269,
+    "y": 214,
+    "w": 435.7,
+    "h": 3554.4,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   },
+   {
+    "tag": "DIV",
+    "x": 269,
+    "y": 214,
+    "w": 435.7,
+    "h": 3602.4,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   }
+  ],
+  "Corporate Finance Summer Analyst, 2027": [
+   {
+    "tag": "BUTTON",
+    "x": 340,
+    "y": 640.9,
+    "w": 321.7,
+    "h": 19.9,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   },
+   {
+    "tag": "DIV",
+    "x": 340,
+    "y": 601.4,
+    "w": 349.7,
+    "h": 139.5,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   },
+   {
+    "tag": "DIV",
+    "x": 269,
+    "y": 586.4,
+    "w": 435.7,
+    "h": 169.5,
+    "border": "1px",
+    "bg": "rgb(34, 22, 24)",
+    "radius": "13px"
+   },
+   {
+    "tag": "LI",
+    "x": 269,
+    "y": 586.4,
+    "w": 435.7,
+    "h": 169.5,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   },
+   {
+    "tag": "UL",
+    "x": 269,
+    "y": 214,
+    "w": 435.7,
+    "h": 3467.1,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   },
+   {
+    "tag": "DIV",
+    "x": 269,
+    "y": 214,
+    "w": 435.7,
+    "h": 3554.4,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   },
+   {
+    "tag": "DIV",
+    "x": 269,
+    "y": 214,
+    "w": 435.7,
+    "h": 3602.4,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   }
+  ],
+  "Jobs for you": [
+   {
+    "tag": "H2",
+    "x": 269,
+    "y": 100.5,
+    "w": 458.9,
+    "h": 30,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   },
+   {
+    "tag": "DIV",
+    "x": 269,
+    "y": 100.5,
+    "w": 458.9,
+    "h": 52.8,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   },
+   {
+    "tag": "DIV",
+    "x": 269,
+    "y": 100.5,
+    "w": 1118,
+    "h": 52.8,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   },
+   {
+    "tag": "DIV",
+    "x": 248,
+    "y": 83.5,
+    "w": 1160,
+    "h": 3753.9,
+    "border": "1px",
+    "bg": "rgba(255, 255, 255, 0.043)",
+    "radius": "13px"
+   },
+   {
+    "tag": "DIV",
+    "x": 248,
+    "y": 32,
+    "w": 1160,
+    "h": 3805.4,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   },
+   {
+    "tag": "DIV",
+    "x": 248,
+    "y": 32,
+    "w": 1160,
+    "h": 3869.4,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   },
+   {
+    "tag": "DIV",
+    "x": 248,
+    "y": 32,
+    "w": 1160,
+    "h": 3869.4,
+    "border": "0px",
+    "bg": "rgba(0, 0, 0, 0)",
+    "radius": "0px"
+   }
+  ]
+ }
+}

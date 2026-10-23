@@ -1,0 +1,83 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "source": "https://campusai-demo.vercel.app/",
+ "captured": "2026-10-23T03:52:54.155Z",
+ "question": "What should I ask at the Evercore chat?",
+ "answerText": "The Evercore Coffee Chat is a small group with no presentation, so your questions are the whole hour. Bring two about the restructuring group specifically: what a first-year analyst's week looks like on a live deal, and how they would prepare for a superday if they were doing it again. Then ask who else from Smith is on the desk.",
+ "answerStyle": {
+  "fontSize": 14,
+  "lineHeight": 23.8,
+  "color": "rgb(247, 239, 230)"
+ },
+ "lines": 6,
+ "boxes": {
+  "name": {
+   "x": 1057.5,
+   "y": 141.1,
+   "w": 147.8,
+   "h": 17
+  },
+  "answer": {
+   "x": 1031,
+   "y": 138.1,
+   "w": 397,
+   "h": 142.8
+  },
+  "bubble": {
+   "x": 1159,
+   "y": 56,
+   "w": 255,
+   "h": 22.4
+  },
+  "loader": {
+   "x": 1031,
+   "y": 111.4,
+   "w": 93.9,
+   "h": 18.8
+  },
+  "followUp": {
+   "x": 1029,
+   "y": 347.4,
+   "w": 281.9,
+   "h": 58.5
+  },
+  "textarea": {
+   "x": 1040,
+   "y": 823,
+   "w": 303,
+   "h": 36
+  },
+  "style": {
+   "fontSize": 13,
+   "lineHeight": 21.125,
+   "fontWeight": 400,
+   "color": "rgb(242, 241, 239)",
+   "fontFamily": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "placeholder": "Ask about your schedule, events, or campus...",
+   "paddingLeft": 0,
+   "paddingTop": 0
+  },
+  "textW": 239.30029296875,
+  "field": {
+   "x": 993,
+   "y": 814,
+   "w": 435,
+   "h": 54,
+   "radius": 15
+  },
+  "send": {
+   "x": 1387,
+   "y": 825,
+   "w": 32,
+   "h": 32
+  },
+  "panel": {
+   "x": 980,
+   "y": 0,
+   "w": 460,
+   "h": 900
+  }
+ }
+}

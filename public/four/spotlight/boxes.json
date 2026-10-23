@@ -1,0 +1,208 @@
+{
+ "before": {
+  "save": {
+   "x": 670.671875,
+   "y": 453.25,
+   "w": 23,
+   "h": 23
+  },
+  "card": {
+   "x": 269,
+   "y": 442.25,
+   "w": 435.671875,
+   "h": 169.5
+  },
+  "tab": {
+   "x": 417.921875,
+   "y": 176.25,
+   "w": 78.03125,
+   "h": 30.75
+  },
+  "tabText": "Saved\n8",
+  "why": {
+   "x": 742.671875,
+   "y": 483.75,
+   "w": 622.3125,
+   "h": 177.75
+  },
+  "whyText": "✦\nWhy this fits you\n\nYou have financial statement analysis, Excel, accounting and PowerPoint, plus a credit internship where you used them. In that internship you read company financials and explained what moved. That is the core of corporate finance work, so you would be a strong fit from day one. Financial modeling is the one to add. It hires for graduation between December 2027 and June 2028, and you graduate in May 2028.",
+  "para": {
+   "x": 762.671875,
+   "y": 530.75,
+   "w": 582.3125,
+   "h": 113.75
+  },
+  "lines": [
+   {
+    "x": 762.671875,
+    "y": 532.75,
+    "w": 552.734375,
+    "h": 17
+   },
+   {
+    "x": 762.671875,
+    "y": 555.5,
+    "w": 538.5625,
+    "h": 17
+   },
+   {
+    "x": 762.671875,
+    "y": 578.25,
+    "w": 546.046875,
+    "h": 17
+   },
+   {
+    "x": 762.671875,
+    "y": 601,
+    "w": 533.21875,
+    "h": 17
+   },
+   {
+    "x": 762.671875,
+    "y": 623.75,
+    "w": 470.890625,
+    "h": 17
+   }
+  ],
+  "strong": {
+   "x": 413.34375,
+   "y": 457.25,
+   "w": 97.984375,
+   "h": 17
+  },
+  "title": {
+   "x": 762.671875,
+   "y": 499.75,
+   "w": 131.390625,
+   "h": 21
+  }
+ },
+ "after": {
+  "save": {
+   "x": 670.671875,
+   "y": 453.25,
+   "w": 23,
+   "h": 23
+  },
+  "card": {
+   "x": 269,
+   "y": 442.25,
+   "w": 435.671875,
+   "h": 169.5
+  },
+  "tab": {
+   "x": 417.921875,
+   "y": 176.25,
+   "w": 77.953125,
+   "h": 30.75
+  },
+  "tabText": "Saved\n9",
+  "why": {
+   "x": 742.671875,
+   "y": 483.75,
+   "w": 622.3125,
+   "h": 177.75
+  },
+  "whyText": "✦\nWhy this fits you\n\nYou have financial statement analysis, Excel, accounting and PowerPoint, plus a credit internship where you used them. In that internship you read company financials and explained what moved. That is the core of corporate finance work, so you would be a strong fit from day one. Financial modeling is the one to add. It hires for graduation between December 2027 and June 2028, and you graduate in May 2028.",
+  "para": {
+   "x": 762.671875,
+   "y": 530.75,
+   "w": 582.3125,
+   "h": 113.75
+  },
+  "lines": [
+   {
+    "x": 762.671875,
+    "y": 532.75,
+    "w": 552.734375,
+    "h": 17
+   },
+   {
+    "x": 762.671875,
+    "y": 555.5,
+    "w": 538.5625,
+    "h": 17
+   },
+   {
+    "x": 762.671875,
+    "y": 578.25,
+    "w": 546.046875,
+    "h": 17
+   },
+   {
+    "x": 762.671875,
+    "y": 601,
+    "w": 533.21875,
+    "h": 17
+   },
+   {
+    "x": 762.671875,
+    "y": 623.75,
+    "w": 470.890625,
+    "h": 17
+   }
+  ],
+  "strong": {
+   "x": 413.34375,
+   "y": 457.25,
+   "w": 97.984375,
+   "h": 17
+  },
+  "title": {
+   "x": 762.671875,
+   "y": 499.75,
+   "w": 131.390625,
+   "h": 21
+  }
+ },
+ "saved": {
+  "removes": [
+   {
+    "label": "Remove 2027 Summer Analyst, Global Banking and Markets at Goldman Sachs from saved",
+    "x": 670.671875,
+    "y": -113
+   },
+   {
+    "label": "Remove Audit and Assurance Intern, Summer 2027 at Deloitte from saved",
+    "x": 670.671875,
+    "y": 91.9375
+   },
+   {
+    "label": "Remove Part-time Financial Analyst Assistant at Brightline Wealth Partners from saved",
+    "x": 670.671875,
+    "y": 259.4375
+   },
+   {
+    "label": "Remove Corporate Finance Summer Analyst, 2027 at Capital One from saved",
+    "x": 670.671875,
+    "y": 438.625
+   },
+   {
+    "label": "Remove Wealth Management Summer Analyst",
+    "x": 616.9375,
+    "y": 660.875
+   },
+   {
+    "label": "Remove Equity Research Associate",
+    "x": 616.9375,
+    "y": 761.875
+   },
+   {
+    "label": "Remove Asset Management Summer Analyst",
+    "x": 616.9375,
+    "y": 862.875
+   },
+   {
+    "label": "Remove Corporate Finance Analyst",
+    "x": 616.9375,
+    "y": 963.875
+   },
+   {
+    "label": "Remove Brand Ambassador",
+    "x": 616.9375,
+    "y": 1064.875
+   }
+  ],
+  "text": "Career Overview\n·\nJob Match\nJobs for you\n\nOpen student roles at curated US employers, checked today at 5:12 AM\n\n✦\nGo through them with me\nJobs\nPart-time\nSaved\n9\nG\nGoldman Sachs\n✦\nStrong match\nBulge bracket\nInternship\n2027 Summer Analyst, Global Banking and Markets\nNew York, NY·$110k/yr\n\nYou have financial statement analysis and Excel, plus a credit internship and an investment fund role.\n\nCloses Oct 28\nPosted 3d ago\nD\nDeloitte\n✦\nStrong match\nBig 4\nInternship\nAudit and Assurance Intern, Summer 2027\nMcLean, VA or Washington, DC\n\nYou have financial statement analysis, accounting and Excel, plus a credit internship.\n\nCloses today\nPosted 2d ago\nB\nBrightline Wealth Partners\n✦\nStrong match\nPart-time\nPart-time Financial Analyst Assistant\nHybrid, Bethesda, MD·$22-$26/hr\n\nReal client finance work, 15 to 20 hours a week, around your classes.\n\nPosted 1d ago\nC\nCapital One\n✦\nStrong match\nFortune 500\nInternship\nCorporate Finance Summer Analyst, 2027\nHybrid, McLean, VA·$42-$46/hr\n\nYou have financial statement analysis and Excel, plus a credit internship.\n\nPosted 3d ago\nNo longer open\nMerrill\nWealth Management Summer Analyst\nThis posting is no longer available\nRemove\nT. Rowe Price\nEquity Research Associate\nThis posting is no longer available\nRemove\nBloomberg\nAsset Management Summer Analyst\nThis posting is no longer available\nRemove\nUnder Armour\nCorporate Finance Analyst\nThis posting is no longer available\nRemove\nRed Bull\nBrand Ambassador\nThis posting is no longer available\nRemove\n4 of 4\nApply"
+ }
+}

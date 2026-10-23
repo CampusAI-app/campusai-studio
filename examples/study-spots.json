@@ -1,0 +1,10 @@
+{
+  "question": "Best study spots on campus?",
+  "answer": "Five that students keep coming back to:\n\n**[McKeldin Library, upper floors](https://www.lib.umd.edu/visit/libraries/mckeldin)**  \nThe quiet ones. Undergrads can get their own study carrel on the 3rd, 4th or 6th floor.\n\n**[Edward St. John Learning and Teaching Center](https://provost.umd.edu/resources/esj)**  \nNatural light, the Food for Thought café, and outlets everywhere.\n\n**[Iribe Center](https://iribe.umd.edu)**  \nOpen study on the second floor, and you don't need a reservation.\n\n**[STEM Library](https://www.lib.umd.edu/visit/libraries/stem)**  \nA student pick when finals hit.\n\n**[Stamp Student Union, top floor](https://stamp.umd.edu)**  \nAnother finals favorite, with the food court in the same building.",
+  "steps": [{ "label": "Checking campus study spaces", "detail": "Libraries, quiet floors and group rooms", "ms": 1000 }],
+  "chips": ["How do I book an ESJ huddle room?"],
+  "theme": "dark",
+  "size": [820, 1458],
+  "zoom": 1.5,
+  "tail": 2
+}

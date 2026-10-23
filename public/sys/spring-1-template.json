@@ -1,0 +1,1125 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "coords": "viewport",
+ "scrollY": 0,
+ "source": "https://campusai-demo.vercel.app/ai",
+ "captured": "2026-10-23T04:32:14.881Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false
+ },
+ "press": null,
+ "marks": {
+  "prefs": null
+ },
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 467,
+   "y": 409,
+   "w": 76,
+   "h": 16,
+   "text": "Spring 2027"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 18,
+   "w": 171,
+   "h": 20,
+   "text": "University of Maryland — home"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Collapse Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 311,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 311,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 349,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 380,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 411,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 349,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 387,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 425,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 476,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "button",
+   "x": 19,
+   "y": 854,
+   "w": 124,
+   "h": 34,
+   "text": "MC Maya Chen 80% · Connect your transcript"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 1191,
+   "y": 42,
+   "w": 87,
+   "h": 32,
+   "text": "History"
+  },
+  {
+   "kind": "button",
+   "x": 1286,
+   "y": 43,
+   "w": 98,
+   "h": 30,
+   "text": "New chat"
+  },
+  {
+   "kind": "button",
+   "x": 454,
+   "y": 652,
+   "w": 118,
+   "h": 36,
+   "text": "Add a class"
+  },
+  {
+   "kind": "button",
+   "x": 578,
+   "y": 652,
+   "w": 123,
+   "h": 36,
+   "text": "Swap a type"
+  },
+  {
+   "kind": "button",
+   "x": 707,
+   "y": 652,
+   "w": 142,
+   "h": 36,
+   "text": "Remove a class"
+  },
+  {
+   "kind": "button",
+   "x": 1150,
+   "y": 652,
+   "w": 122,
+   "h": 36,
+   "text": "Looks good"
+  },
+  {
+   "kind": "button",
+   "x": 467,
+   "y": 726,
+   "w": 80,
+   "h": 24,
+   "text": "Stop planning"
+  },
+  {
+   "kind": "button",
+   "x": 331,
+   "y": 805,
+   "w": 32,
+   "h": 32,
+   "text": "Attach file"
+  },
+  {
+   "kind": "button",
+   "x": 1255,
+   "y": 805,
+   "w": 32,
+   "h": 32,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1293,
+   "y": 805,
+   "w": 32,
+   "h": 32,
+   "text": "Send message"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 311,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 349,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 380,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 411,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 349,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 387,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 425,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 476,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "card",
+   "x": 454,
+   "y": 394,
+   "w": 818,
+   "h": 242,
+   "text": "Spring 2027 15 cr Planned Major Requirement 3 cr Major Requirement 3 cr Upper Level Core 3 cr Major Requirement 3 cr Gen Ed 3 cr"
+  },
+  {
+   "kind": "text",
+   "text": "Skip to main content",
+   "x": -1,
+   "y": 2,
+   "w": 149,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Dashboard",
+   "x": 52,
+   "y": 76,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "My Calendar",
+   "x": 52,
+   "y": 114,
+   "w": 78,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 154,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Career Advisor",
+   "x": 64,
+   "y": 152,
+   "w": 92,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Resume Review",
+   "x": 52,
+   "y": 187,
+   "w": 94,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Job Match",
+   "x": 52,
+   "y": 218,
+   "w": 63,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Interview Prep",
+   "x": 52,
+   "y": 249,
+   "w": 86,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Company Tracker",
+   "x": 52,
+   "y": 280,
+   "w": 105,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 323,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Academic Advisor",
+   "x": 64,
+   "y": 321,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Planner & Progress",
+   "x": 52,
+   "y": 356,
+   "w": 115,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Class Tracker",
+   "x": 52,
+   "y": 387,
+   "w": 81,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Courses and Professors",
+   "x": 52,
+   "y": 418,
+   "w": 143,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Organizations",
+   "x": 52,
+   "y": 359,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Events",
+   "x": 52,
+   "y": 397,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Dining",
+   "x": 52,
+   "y": 435,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI",
+   "x": 52,
+   "y": 486,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Accessibility",
+   "x": 28,
+   "y": 834,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "MC",
+   "x": 28,
+   "y": 865,
+   "w": 17,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Maya Chen",
+   "x": 63,
+   "y": 856,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80",
+   "x": 63,
+   "y": 874,
+   "w": 14,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "%",
+   "x": 77,
+   "y": 874,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 87,
+   "y": 874,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Connect your transcript",
+   "x": 96,
+   "y": 874,
+   "w": 115,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI",
+   "x": 312,
+   "y": 48,
+   "w": 76,
+   "h": 19
+  },
+  {
+   "kind": "text",
+   "text": "History",
+   "x": 1223,
+   "y": 50,
+   "w": 42,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "New chat",
+   "x": 1317,
+   "y": 50,
+   "w": 55,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Looks right",
+   "x": 1186,
+   "y": 3,
+   "w": 72,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "You're graduating",
+   "x": 454,
+   "y": 51,
+   "w": 118,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "May 2028",
+   "x": 572,
+   "y": 51,
+   "w": 67,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": ", right?",
+   "x": 640,
+   "y": 51,
+   "w": 45,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Yes",
+   "x": 1235,
+   "y": 104,
+   "w": 23,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Now your preferences. Answer what matters to you and press Done.",
+   "x": 454,
+   "y": 152,
+   "w": 439,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Afternoons, Back to back, Fri free, In person, course and professor reviews matter",
+   "x": 730,
+   "y": 205,
+   "w": 528,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Are there any required classes you need to take this semester, for your major or for a program?",
+   "x": 454,
+   "y": 252,
+   "w": 610,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Nothing specific",
+   "x": 1153,
+   "y": 306,
+   "w": 105,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "That makes Spring 2027 3 major requirements, 1 upper level core and 1 gen ed, 15 credits. Does this look good?",
+   "x": 454,
+   "y": 353,
+   "w": 720,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Spring 2027",
+   "x": 467,
+   "y": 409,
+   "w": 76,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "15",
+   "x": 1198,
+   "y": 411,
+   "w": 11,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 1209,
+   "y": 411,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Planned",
+   "x": 475,
+   "y": 434,
+   "w": 39,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Major Requirement",
+   "x": 480,
+   "y": 462,
+   "w": 87,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 1231,
+   "y": 461,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 1238,
+   "y": 461,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Major Requirement",
+   "x": 480,
+   "y": 497,
+   "w": 87,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 1231,
+   "y": 496,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 1238,
+   "y": 496,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Upper Level Core",
+   "x": 480,
+   "y": 532,
+   "w": 79,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 1231,
+   "y": 531,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 1238,
+   "y": 531,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Major Requirement",
+   "x": 480,
+   "y": 567,
+   "w": 87,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 1231,
+   "y": 566,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 1238,
+   "y": 566,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Gen Ed",
+   "x": 480,
+   "y": 603,
+   "w": 33,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 1231,
+   "y": 602,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 1238,
+   "y": 602,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Add a class",
+   "x": 489,
+   "y": 662,
+   "w": 68,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Swap a type",
+   "x": 613,
+   "y": 662,
+   "w": 73,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Remove a class",
+   "x": 742,
+   "y": 662,
+   "w": 92,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Looks good",
+   "x": 1166,
+   "y": 662,
+   "w": 70,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "You can also change any block yourself",
+   "x": 454,
+   "y": 696,
+   "w": 231,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "in the plan above: press its type.",
+   "x": 685,
+   "y": 696,
+   "w": 187,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Stop planning",
+   "x": 467,
+   "y": 730,
+   "w": 80,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI can make mistakes. Verify important information.",
+   "x": 672,
+   "y": 869,
+   "w": 313,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "6",
+   "x": 1260,
+   "y": 26,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "new",
+   "x": 1268,
+   "y": 26,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Feedback",
+   "x": 1352,
+   "y": 26,
+   "w": 57,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦Career Advisor",
+   "x": 52,
+   "y": 152,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦Academic Advisor",
+   "x": 52,
+   "y": 321,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "80% · Connect your transcript",
+   "x": 63,
+   "y": 873,
+   "w": 80,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80%",
+   "x": 63,
+   "y": 874,
+   "w": 24,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "You're graduating May 2028, right?",
+   "x": 454,
+   "y": 48,
+   "w": 818,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "text": "15 cr",
+   "x": 1198,
+   "y": 410,
+   "w": 25,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 1231,
+   "y": 460,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 1231,
+   "y": 495,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 1231,
+   "y": 530,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 1231,
+   "y": 565,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 1231,
+   "y": 601,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Add a class",
+   "x": 454,
+   "y": 652,
+   "w": 118,
+   "h": 36
+  },
+  {
+   "kind": "text",
+   "text": "Swap a type",
+   "x": 578,
+   "y": 652,
+   "w": 123,
+   "h": 36
+  },
+  {
+   "kind": "text",
+   "text": "Remove a class",
+   "x": 707,
+   "y": 652,
+   "w": 142,
+   "h": 36
+  },
+  {
+   "kind": "text",
+   "text": "You can also change any block yourself in the plan above: press its type.",
+   "x": 454,
+   "y": 696,
+   "w": 818,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Stop planning",
+   "x": 404,
+   "y": 724,
+   "w": 880,
+   "h": 26
+  },
+  {
+   "kind": "text",
+   "text": "6 new",
+   "x": 1260,
+   "y": 28,
+   "w": 35,
+   "h": 12
+  }
+ ]
+}

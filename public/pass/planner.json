@@ -1,0 +1,626 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "tallH": 1991,
+ "dpr": 2,
+ "source": "https://campusai-demo.vercel.app/academics?tab=planning",
+ "captured": "2026-10-23T02:49:34.256Z",
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 248,
+   "y": 59,
+   "w": 1011,
+   "h": 29,
+   "text": "Maya's 4-year plan"
+  },
+  {
+   "kind": "heading",
+   "x": 282,
+   "y": 954,
+   "w": 57,
+   "h": 16,
+   "text": "Fall 2026"
+  },
+  {
+   "kind": "heading",
+   "x": 848,
+   "y": 954,
+   "w": 76,
+   "h": 16,
+   "text": "Spring 2027"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 8,
+   "w": 56,
+   "h": 40,
+   "text": "Expand sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 180,
+   "w": 24,
+   "h": 36,
+   "text": "Collapse Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 265,
+   "y": 333,
+   "w": 97,
+   "h": 20,
+   "text": "Suggestions"
+  },
+  {
+   "kind": "button",
+   "x": 1335,
+   "y": 331,
+   "w": 24,
+   "h": 24,
+   "text": "Previous suggestion"
+  },
+  {
+   "kind": "button",
+   "x": 1367,
+   "y": 331,
+   "w": 24,
+   "h": 24,
+   "text": "Next suggestion"
+  },
+  {
+   "kind": "button",
+   "x": -56,
+   "y": 388,
+   "w": 307,
+   "h": 36,
+   "text": "One class, two Gen Eds: Natural Science + Big Question"
+  },
+  {
+   "kind": "button",
+   "x": 73,
+   "y": 478,
+   "w": 127,
+   "h": 17,
+   "text": "✦ Which should I take?"
+  },
+  {
+   "kind": "button",
+   "x": 284,
+   "y": 388,
+   "w": 306,
+   "h": 36,
+   "text": "One class, two Gen Eds: Scholarship in Practice + Understanding Plural Societies"
+  },
+  {
+   "kind": "button",
+   "x": 413,
+   "y": 478,
+   "w": 127,
+   "h": 17,
+   "text": "✦ Which should I take?"
+  },
+  {
+   "kind": "button",
+   "x": 622,
+   "y": 388,
+   "w": 306,
+   "h": 18,
+   "text": "Add a Professional Writing class"
+  },
+  {
+   "kind": "button",
+   "x": 751,
+   "y": 478,
+   "w": 127,
+   "h": 17,
+   "text": "✦ Which should I take?"
+  },
+  {
+   "kind": "button",
+   "x": 961,
+   "y": 388,
+   "w": 306,
+   "h": 18,
+   "text": "Add 2 more Finance Major Electives"
+  },
+  {
+   "kind": "button",
+   "x": 1090,
+   "y": 478,
+   "w": 127,
+   "h": 17,
+   "text": "✦ Which should I take?"
+  },
+  {
+   "kind": "button",
+   "x": 1299,
+   "y": 388,
+   "w": 306,
+   "h": 18,
+   "text": "Take BMGT367"
+  },
+  {
+   "kind": "button",
+   "x": 1428,
+   "y": 478,
+   "w": 134,
+   "h": 17,
+   "text": "✦ When should I take it?"
+  },
+  {
+   "kind": "button",
+   "x": 264,
+   "y": 558,
+   "w": 450,
+   "h": 34,
+   "text": "General Education University Gen Ed requirements · 5 areas"
+  },
+  {
+   "kind": "button",
+   "x": 724,
+   "y": 558,
+   "w": 82,
+   "h": 35,
+   "text": "11/17reqs 1 in progress"
+  },
+  {
+   "kind": "button",
+   "x": 850,
+   "y": 558,
+   "w": 450,
+   "h": 34,
+   "text": "Electives Free + restricted electives · 2 areas"
+  },
+  {
+   "kind": "button",
+   "x": 1310,
+   "y": 558,
+   "w": 82,
+   "h": 35,
+   "text": "2/6reqs 1 in progress"
+  },
+  {
+   "kind": "button",
+   "x": 264,
+   "y": 715,
+   "w": 317,
+   "h": 34,
+   "text": "Finance Courses required for the Finance major · 3 areas"
+  },
+  {
+   "kind": "button",
+   "x": 722,
+   "y": 715,
+   "w": 84,
+   "h": 35,
+   "text": "0/7reqs 2 in progress"
+  },
+  {
+   "kind": "button",
+   "x": 850,
+   "y": 715,
+   "w": 317,
+   "h": 34,
+   "text": "College Core Robert H. Smith School of Business · 3 areas"
+  },
+  {
+   "kind": "button",
+   "x": 1308,
+   "y": 715,
+   "w": 84,
+   "h": 35,
+   "text": "12/16reqs 2 in progress"
+  },
+  {
+   "kind": "button",
+   "x": 272,
+   "y": 889,
+   "w": 87,
+   "h": 31,
+   "text": "Freshman"
+  },
+  {
+   "kind": "button",
+   "x": 361,
+   "y": 889,
+   "w": 97,
+   "h": 31,
+   "text": "Sophomore"
+  },
+  {
+   "kind": "button",
+   "x": 460,
+   "y": 889,
+   "w": 67,
+   "h": 31,
+   "text": "Junior"
+  },
+  {
+   "kind": "button",
+   "x": 528,
+   "y": 889,
+   "w": 66,
+   "h": 31,
+   "text": "Senior"
+  },
+  {
+   "kind": "button",
+   "x": 597,
+   "y": 889,
+   "w": 217,
+   "h": 31,
+   "text": "Summer, Winter & outside UMD"
+  },
+  {
+   "kind": "button",
+   "x": 762,
+   "y": 948,
+   "w": 24,
+   "h": 24,
+   "text": "Edit Fall 2026"
+  },
+  {
+   "kind": "button",
+   "x": 788,
+   "y": 948,
+   "w": 24,
+   "h": 24,
+   "text": "Delete Fall 2026"
+  },
+  {
+   "kind": "button",
+   "x": 282,
+   "y": 1598,
+   "w": 526,
+   "h": 35,
+   "text": "＋ Add extra course"
+  },
+  {
+   "kind": "button",
+   "x": 1328,
+   "y": 948,
+   "w": 24,
+   "h": 24,
+   "text": "Edit Spring 2027"
+  },
+  {
+   "kind": "button",
+   "x": 1354,
+   "y": 948,
+   "w": 24,
+   "h": 24,
+   "text": "Delete Spring 2027"
+  },
+  {
+   "kind": "button",
+   "x": 848,
+   "y": 1663,
+   "w": 526,
+   "h": 35,
+   "text": "＋ Add extra course"
+  },
+  {
+   "kind": "button",
+   "x": 745,
+   "y": 1742,
+   "w": 45,
+   "h": 27,
+   "text": "Fall"
+  },
+  {
+   "kind": "button",
+   "x": 796,
+   "y": 1742,
+   "w": 62,
+   "h": 27,
+   "text": "Spring"
+  },
+  {
+   "kind": "button",
+   "x": 864,
+   "y": 1742,
+   "w": 72,
+   "h": 27,
+   "text": "Summer"
+  },
+  {
+   "kind": "button",
+   "x": 942,
+   "y": 1742,
+   "w": 62,
+   "h": 27,
+   "text": "Winter"
+  },
+  {
+   "kind": "button",
+   "x": 992,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1038,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 1084,
+   "y": 816,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 180,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 218,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 249,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 280,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 318,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 356,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 394,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 445,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 142,
+   "w": 1160,
+   "h": 99,
+   "text": "A guide, not your official degree audit. Requirements change and approved exceptions may n"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 265,
+   "w": 1160,
+   "h": 261,
+   "text": "Degree progress 61 of 120 credits · 18 in progress 51% Suggestions 2 of 5 01 One class, tw"
+  },
+  {
+   "kind": "card",
+   "x": 272,
+   "y": 361,
+   "w": 330,
+   "h": 152,
+   "text": ""
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 542,
+   "w": 574,
+   "h": 146,
+   "text": "General Education University Gen Ed requirements · 5 areas 11/17reqs 1 in progress ● 11 do"
+  },
+  {
+   "kind": "card",
+   "x": 834,
+   "y": 542,
+   "w": 574,
+   "h": 146,
+   "text": "Electives Free + restricted electives · 2 areas 2/6reqs 1 in progress ● 2 done | ● 1 now |"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 699,
+   "w": 574,
+   "h": 146,
+   "text": "Finance Courses required for the Finance major · 3 areas Requirements Requirements 0/7reqs"
+  },
+  {
+   "kind": "card",
+   "x": 834,
+   "y": 699,
+   "w": 574,
+   "h": 146,
+   "text": "College Core Robert H. Smith School of Business · 3 areas Requirements Requirements 12/16r"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 869,
+   "w": 1160,
+   "h": 961,
+   "text": "Freshman Sophomore Junior Senior Summer, Winter & outside UMD Fall 2026 18 cr In progress "
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 939,
+   "w": 552,
+   "h": 772,
+   "text": "Fall 2026 18 cr In progress × BMGT310 Major Requirement 3 cr Intermediate Accounting I In "
+  },
+  {
+   "kind": "card",
+   "x": 835,
+   "y": 939,
+   "w": 552,
+   "h": 772,
+   "text": "Spring 2027 15 cr Planned × BMGT434 Major Requirement 3 cr Financial Modeling & Analysis F"
+  }
+ ]
+}

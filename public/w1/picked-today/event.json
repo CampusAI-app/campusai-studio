@@ -1,0 +1,1613 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "url": "https://campusai-demo.vercel.app/",
+ "sandy": false,
+ "emdash": false,
+ "dialogs": 1,
+ "clickedFrom": "https://campusai-demo.vercel.app/",
+ "navigated": false,
+ "layers": [
+  {
+   "kind": "dialog",
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 900,
+   "text": "S Evercore Coffee Chat Smith Office of Career Services S Smith Finance Group Stock Pitch Night Smith Finance Group E Inv"
+  },
+  {
+   "kind": "heading",
+   "x": 329,
+   "y": 49,
+   "w": 1046,
+   "h": 22.8,
+   "text": "Your daily brief"
+  },
+  {
+   "kind": "heading",
+   "x": 281,
+   "y": 116.7,
+   "w": 65.8,
+   "h": 19.5,
+   "text": "Your week"
+  },
+  {
+   "kind": "heading",
+   "x": 848,
+   "y": 116.7,
+   "w": 79.1,
+   "h": 19.5,
+   "text": "Worth a look"
+  },
+  {
+   "kind": "heading",
+   "x": 313,
+   "y": 447,
+   "w": 966.3,
+   "h": 22.8,
+   "text": "Ask CampusAI"
+  },
+  {
+   "kind": "heading",
+   "x": 313,
+   "y": 730.5,
+   "w": 973,
+   "h": 22.8,
+   "text": "What's new"
+  },
+  {
+   "kind": "heading",
+   "x": 385,
+   "y": 203,
+   "w": 670,
+   "h": 27.6,
+   "text": "Finance Association, Resume & LinkedIn Night"
+  },
+  {
+   "kind": "heading",
+   "x": 406,
+   "y": 509.1,
+   "w": 628,
+   "h": 19.5,
+   "text": "About this event"
+  },
+  {
+   "kind": "heading",
+   "x": 385,
+   "y": 630.1,
+   "w": 670,
+   "h": 24.8,
+   "text": "Details"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 17.5,
+   "w": 171,
+   "h": 20,
+   "text": "University of Maryland — home"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 13.5,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 7.5,
+   "w": 56,
+   "h": 40,
+   "text": "Expand sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 180,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 180,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 218,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 249,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 280,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 218,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 256,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 294,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 345,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 832.5,
+   "w": 199,
+   "h": 13.5,
+   "text": "Accessibility"
+  },
+  {
+   "kind": "button",
+   "x": 19,
+   "y": 854,
+   "w": 124,
+   "h": 34,
+   "text": "MC Maya Chen 80% · Connect your transcript"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 289,
+   "y": 163.2,
+   "w": 219,
+   "h": 76.1,
+   "text": "Moved · BMGT380 Reading Response 6: Remedies Moved from Wed, Oct 14→ to Sun, Oct 18"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 163.2,
+   "w": 224,
+   "h": 28.3,
+   "text": "Open My Calendar →"
+  },
+  {
+   "kind": "button",
+   "x": 289,
+   "y": 252.3,
+   "w": 219,
+   "h": 36.8,
+   "text": "Quiz · Fri · BMGT364 Quiz 4"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 252.3,
+   "w": 224,
+   "h": 44.5,
+   "text": "Find time to study before Friday's quiz"
+  },
+  {
+   "kind": "button",
+   "x": 750.1,
+   "y": 253.3,
+   "w": 57.9,
+   "h": 28,
+   "text": "Done"
+  },
+  {
+   "kind": "button",
+   "x": 289,
+   "y": 309.8,
+   "w": 219,
+   "h": 36.8,
+   "text": "Event · Sat · 10:00 AM - 11:30 AM Evercore Coffee Chat"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 309.8,
+   "w": 224,
+   "h": 44.5,
+   "text": "Who's hosting, and what's worth asking them"
+  },
+  {
+   "kind": "button",
+   "x": 281,
+   "y": 368.3,
+   "w": 90.9,
+   "h": 26.8,
+   "text": "View all 4 →"
+  },
+  {
+   "kind": "button",
+   "x": 856,
+   "y": 163.2,
+   "w": 275,
+   "h": 36.8,
+   "text": "Spring registration Plan your Spring 2027 classes"
+  },
+  {
+   "kind": "button",
+   "x": 1143,
+   "y": 163.2,
+   "w": 224,
+   "h": 44.5,
+   "text": "Plan it with CampusAI Real sections, your times →"
+  },
+  {
+   "kind": "button",
+   "x": 856,
+   "y": 220.7,
+   "w": 275,
+   "h": 56.3,
+   "text": "Job Investment Banking Summer Analyst, 2027 at Evercore"
+  },
+  {
+   "kind": "button",
+   "x": 1143,
+   "y": 220.7,
+   "w": 224,
+   "h": 44.5,
+   "text": "Tailor my resume for Evercore →"
+  },
+  {
+   "kind": "button",
+   "x": 856,
+   "y": 289.9,
+   "w": 511,
+   "h": 36.8,
+   "text": "Event · Fri · 7:00 PM - 8:30 PM Finance Association, Resume & LinkedIn Night"
+  },
+  {
+   "kind": "button",
+   "x": 848,
+   "y": 340.7,
+   "w": 90.6,
+   "h": 26.8,
+   "text": "View all 8 →"
+  },
+  {
+   "kind": "button",
+   "x": 1319,
+   "y": 341,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1349,
+   "y": 341,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1291.3,
+   "y": 452.9,
+   "w": 99.7,
+   "h": 28,
+   "text": "Open chat"
+  },
+  {
+   "kind": "button",
+   "x": 265,
+   "y": 517.7,
+   "w": 274,
+   "h": 79.8,
+   "text": "Career Am I a fit for Investment Banking Summer Analyst?"
+  },
+  {
+   "kind": "button",
+   "x": 549,
+   "y": 517.7,
+   "w": 274,
+   "h": 79.8,
+   "text": "Academics Ready to plan your spring classes?"
+  },
+  {
+   "kind": "button",
+   "x": 833,
+   "y": 517.7,
+   "w": 274,
+   "h": 79.8,
+   "text": "Events Sat How should I prep for Evercore Coffee Chat?"
+  },
+  {
+   "kind": "button",
+   "x": 1117,
+   "y": 517.7,
+   "w": 274,
+   "h": 79.8,
+   "text": "Campus Life What's open late tonight?"
+  },
+  {
+   "kind": "button",
+   "x": 1316,
+   "y": 637.5,
+   "w": 32,
+   "h": 32,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1354,
+   "y": 637.5,
+   "w": 32,
+   "h": 32,
+   "text": "Send message"
+  },
+  {
+   "kind": "button",
+   "x": 1298,
+   "y": 744.3,
+   "w": 93,
+   "h": 15,
+   "text": "All notifications"
+  },
+  {
+   "kind": "button",
+   "x": 249,
+   "y": 817.1,
+   "w": 1158,
+   "h": 82.9,
+   "text": "Assignment moved: BMGT380 · Reading Response 6: Remedies"
+  },
+  {
+   "kind": "button",
+   "x": 1133.4,
+   "y": 842.6,
+   "w": 152.6,
+   "h": 32,
+   "text": "Open My Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 1181.1,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225.1,
+   "y": 17,
+   "w": 83.5,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1316.6,
+   "y": 16,
+   "w": 107.4,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "button",
+   "x": -85,
+   "y": 37.8,
+   "w": 220,
+   "h": 60.5,
+   "text": "S Evercore Coffee Chat Smith Office of Career Services"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 29,
+   "w": 220,
+   "h": 78,
+   "text": "S Smith Finance Group Stock Pitch Night Smith Finance Group"
+  },
+  {
+   "kind": "button",
+   "x": 379,
+   "y": 29,
+   "w": 220,
+   "h": 78,
+   "text": "E Investment Banking Summer Analyst, 2027 Evercore"
+  },
+  {
+   "kind": "button",
+   "x": 607.7,
+   "y": 27.8,
+   "w": 226.6,
+   "h": 80.3,
+   "text": "F Finance Association, Resume & LinkedIn Night Finance Association"
+  },
+  {
+   "kind": "button",
+   "x": 843,
+   "y": 29,
+   "w": 220,
+   "h": 78,
+   "text": "D Deloitte Consulting, Coffee Chat Deloitte"
+  },
+  {
+   "kind": "button",
+   "x": 1075,
+   "y": 29,
+   "w": 220,
+   "h": 78,
+   "text": "S Financial Modeling Bootcamp: 3-Statement to DCF Smith Finance Group"
+  },
+  {
+   "kind": "button",
+   "x": 1307,
+   "y": 29,
+   "w": 220,
+   "h": 78,
+   "text": "S Smith Fall Career & Internship Fair Smith Office of Career Services"
+  },
+  {
+   "kind": "button",
+   "x": 314,
+   "y": 434,
+   "w": 36,
+   "h": 36,
+   "text": "Previous"
+  },
+  {
+   "kind": "button",
+   "x": 1023,
+   "y": 159,
+   "w": 32,
+   "h": 32,
+   "text": "Close"
+  },
+  {
+   "kind": "button",
+   "x": 864.5,
+   "y": 725,
+   "w": 190.5,
+   "h": 34,
+   "text": "Add to CampusAI Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 1090,
+   "y": 434,
+   "w": 36,
+   "h": 36,
+   "text": "Next"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 76,
+   "w": 112.8,
+   "h": 16,
+   "text": "Dashboard"
+  },
+  {
+   "kind": "text",
+   "x": 172.8,
+   "y": 76,
+   "w": 26.2,
+   "h": 16,
+   "text": "⌘ 1"
+  },
+  {
+   "kind": "text",
+   "x": 0,
+   "y": 80,
+   "w": 215,
+   "h": 12,
+   "text": "Home"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 114,
+   "w": 147,
+   "h": 16,
+   "text": "My Calendar"
+  },
+  {
+   "kind": "text",
+   "x": 0,
+   "y": 118,
+   "w": 215,
+   "h": 12,
+   "text": "Calendar"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 152,
+   "w": 129,
+   "h": 16,
+   "text": "Career Advisor"
+  },
+  {
+   "kind": "text",
+   "x": 0,
+   "y": 156,
+   "w": 215,
+   "h": 12,
+   "text": "Career"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 185.6,
+   "w": 93.6,
+   "h": 18.8,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 216.6,
+   "w": 62.8,
+   "h": 18.8,
+   "text": "Job Match"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 247.6,
+   "w": 86.3,
+   "h": 18.8,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 278.6,
+   "w": 104.9,
+   "h": 18.8,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 190,
+   "w": 129,
+   "h": 16,
+   "text": "Academic Advisor"
+  },
+  {
+   "kind": "text",
+   "x": 0,
+   "y": 194,
+   "w": 215,
+   "h": 12,
+   "text": "Academics"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 223.6,
+   "w": 114.5,
+   "h": 18.8,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 254.6,
+   "w": 81,
+   "h": 18.8,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 285.6,
+   "w": 142.5,
+   "h": 18.8,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 228,
+   "w": 147,
+   "h": 16,
+   "text": "Organizations"
+  },
+  {
+   "kind": "text",
+   "x": 0,
+   "y": 232,
+   "w": 215,
+   "h": 12,
+   "text": "Orgs"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 266,
+   "w": 110.6,
+   "h": 16,
+   "text": "Events"
+  },
+  {
+   "kind": "text",
+   "x": 170.6,
+   "y": 266,
+   "w": 28.4,
+   "h": 16,
+   "text": "⌘ 4"
+  },
+  {
+   "kind": "text",
+   "x": 0,
+   "y": 270,
+   "w": 215,
+   "h": 12,
+   "text": "Events"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 304,
+   "w": 110.8,
+   "h": 16,
+   "text": "Dining"
+  },
+  {
+   "kind": "text",
+   "x": 170.8,
+   "y": 304,
+   "w": 28.2,
+   "h": 16,
+   "text": "⌘ 6"
+  },
+  {
+   "kind": "text",
+   "x": 0,
+   "y": 308,
+   "w": 215,
+   "h": 12,
+   "text": "Dining"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 355,
+   "w": 147,
+   "h": 16,
+   "text": "CampusAI"
+  },
+  {
+   "kind": "text",
+   "x": 0,
+   "y": 359,
+   "w": 215,
+   "h": 12,
+   "text": "CampusAI"
+  },
+  {
+   "kind": "text",
+   "x": 8,
+   "y": 832.5,
+   "w": 199,
+   "h": 13.5,
+   "text": "Accessibility"
+  },
+  {
+   "kind": "text",
+   "x": 27.6,
+   "y": 863.5,
+   "w": 16.7,
+   "h": 15,
+   "text": "MC"
+  },
+  {
+   "kind": "text",
+   "x": 63,
+   "y": 854.5,
+   "w": 80,
+   "h": 18,
+   "text": "Maya Chen"
+  },
+  {
+   "kind": "text",
+   "x": 63,
+   "y": 872.5,
+   "w": 80,
+   "h": 15,
+   "text": "· Connect your transcript"
+  },
+  {
+   "kind": "text",
+   "x": 63,
+   "y": 873.5,
+   "w": 23.7,
+   "h": 12,
+   "text": "80 %"
+  },
+  {
+   "kind": "text",
+   "x": 329,
+   "y": 49,
+   "w": 1046,
+   "h": 22.8,
+   "text": "Your daily brief"
+  },
+  {
+   "kind": "text",
+   "x": 329,
+   "y": 71.8,
+   "w": 1046,
+   "h": 16.9,
+   "text": "Friday, October 23. What's worth your attention today, picked for you."
+  },
+  {
+   "kind": "text",
+   "x": 281,
+   "y": 116.7,
+   "w": 65.8,
+   "h": 19.5,
+   "text": "Your week"
+  },
+  {
+   "kind": "text",
+   "x": 289,
+   "y": 163.2,
+   "w": 219,
+   "h": 17.3,
+   "text": "Moved · BMGT380"
+  },
+  {
+   "kind": "text",
+   "x": 289,
+   "y": 180.4,
+   "w": 219,
+   "h": 39,
+   "text": "Reading Response 6: Remedies"
+  },
+  {
+   "kind": "text",
+   "x": 289,
+   "y": 221.4,
+   "w": 74.1,
+   "h": 16,
+   "text": "Wed, Oct 14"
+  },
+  {
+   "kind": "text",
+   "x": 389,
+   "y": 221.4,
+   "w": 70.8,
+   "h": 16,
+   "text": "Sun, Oct 18"
+  },
+  {
+   "kind": "text",
+   "x": 532,
+   "y": 169.2,
+   "w": 179.1,
+   "h": 16.3,
+   "text": "Open My Calendar"
+  },
+  {
+   "kind": "text",
+   "x": 289,
+   "y": 245.3,
+   "w": 511,
+   "h": 18.1,
+   "text": "Canvas changed the due date. Your calendar already shows the new one."
+  },
+  {
+   "kind": "text",
+   "x": 289,
+   "y": 252.3,
+   "w": 219,
+   "h": 17.3,
+   "text": "Quiz · Fri · BMGT364"
+  },
+  {
+   "kind": "text",
+   "x": 289,
+   "y": 269.5,
+   "w": 219,
+   "h": 19.5,
+   "text": "Quiz 4"
+  },
+  {
+   "kind": "text",
+   "x": 554,
+   "y": 258.3,
+   "w": 178,
+   "h": 16.3,
+   "text": "Find time to study"
+  },
+  {
+   "kind": "text",
+   "x": 554,
+   "y": 274.5,
+   "w": 178,
+   "h": 16.3,
+   "text": "before Friday's quiz"
+  },
+  {
+   "kind": "text",
+   "x": 776.1,
+   "y": 261.8,
+   "w": 27.9,
+   "h": 11,
+   "text": "Done"
+  },
+  {
+   "kind": "text",
+   "x": 289,
+   "y": 302.8,
+   "w": 511,
+   "h": 36.3,
+   "text": "Worth 5% of your grade in Management and Organization Theory. Due Friday at 2:00 PM."
+  },
+  {
+   "kind": "text",
+   "x": 289,
+   "y": 309.8,
+   "w": 219,
+   "h": 17.3,
+   "text": "Event · Sat · 10:00 AM - 11:30 AM"
+  },
+  {
+   "kind": "text",
+   "x": 289,
+   "y": 327,
+   "w": 219,
+   "h": 19.5,
+   "text": "Evercore Coffee Chat"
+  },
+  {
+   "kind": "text",
+   "x": 554,
+   "y": 315.8,
+   "w": 178,
+   "h": 16.3,
+   "text": "Who's hosting, and what's"
+  },
+  {
+   "kind": "text",
+   "x": 554,
+   "y": 332,
+   "w": 178,
+   "h": 16.3,
+   "text": "worth asking them"
+  },
+  {
+   "kind": "text",
+   "x": 289,
+   "y": 360.3,
+   "w": 511,
+   "h": 36.3,
+   "text": "You're registered. Small-group chat with Smith alumni on the Evercore desk. Hosted by Smith Office of Career Services at"
+  },
+  {
+   "kind": "text",
+   "x": 281,
+   "y": 368.3,
+   "w": 90.9,
+   "h": 26.8,
+   "text": "View all 4 →"
+  },
+  {
+   "kind": "text",
+   "x": 848,
+   "y": 116.7,
+   "w": 79.1,
+   "h": 19.5,
+   "text": "Worth a look"
+  },
+  {
+   "kind": "text",
+   "x": 856,
+   "y": 163.2,
+   "w": 275,
+   "h": 17.3,
+   "text": "Spring registration"
+  },
+  {
+   "kind": "text",
+   "x": 856,
+   "y": 180.4,
+   "w": 275,
+   "h": 19.5,
+   "text": "Plan your Spring 2027 classes"
+  },
+  {
+   "kind": "text",
+   "x": 1155,
+   "y": 169.2,
+   "w": 179.1,
+   "h": 16.3,
+   "text": "Plan it with CampusAI"
+  },
+  {
+   "kind": "text",
+   "x": 1155,
+   "y": 185.4,
+   "w": 179.1,
+   "h": 16.3,
+   "text": "Real sections, your times"
+  },
+  {
+   "kind": "text",
+   "x": 856,
+   "y": 213.7,
+   "w": 511,
+   "h": 36.3,
+   "text": "UMD sends registration details Oct 9. I'll build it around your 4-year plan, with real sections."
+  },
+  {
+   "kind": "text",
+   "x": 856,
+   "y": 220.7,
+   "w": 275,
+   "h": 17.3,
+   "text": "Job"
+  },
+  {
+   "kind": "text",
+   "x": 856,
+   "y": 237.9,
+   "w": 275,
+   "h": 39,
+   "text": "Investment Banking Summer Analyst, 2027 at Evercore"
+  },
+  {
+   "kind": "text",
+   "x": 1155,
+   "y": 226.7,
+   "w": 179.1,
+   "h": 16.3,
+   "text": "Tailor my resume"
+  },
+  {
+   "kind": "text",
+   "x": 1155,
+   "y": 242.9,
+   "w": 179.1,
+   "h": 16.3,
+   "text": "for Evercore"
+  },
+  {
+   "kind": "text",
+   "x": 856,
+   "y": 282.9,
+   "w": 511,
+   "h": 36.3,
+   "text": "Your finance coursework and the valuation work in your Investment Fund pitches line up directly with an M&A analyst's co"
+  },
+  {
+   "kind": "text",
+   "x": 856,
+   "y": 289.9,
+   "w": 511,
+   "h": 17.3,
+   "text": "Event · Fri · 7:00 PM - 8:30 PM"
+  },
+  {
+   "kind": "text",
+   "x": 856,
+   "y": 307.2,
+   "w": 511,
+   "h": 19.5,
+   "text": "Finance Association, Resume & LinkedIn Night"
+  },
+  {
+   "kind": "text",
+   "x": 856,
+   "y": 332.7,
+   "w": 511,
+   "h": 36.3,
+   "text": "Your resume is going into fall banking books now, and its sharpest line, your Smith Investment Fund pitch, deserves a se"
+  },
+  {
+   "kind": "text",
+   "x": 848,
+   "y": 340.7,
+   "w": 90.6,
+   "h": 26.8,
+   "text": "View all 8 →"
+  },
+  {
+   "kind": "text",
+   "x": 313,
+   "y": 447,
+   "w": 966.3,
+   "h": 22.8,
+   "text": "Ask CampusAI"
+  },
+  {
+   "kind": "text",
+   "x": 313,
+   "y": 469.8,
+   "w": 966.3,
+   "h": 16.9,
+   "text": "Jobs, classes, events, campus life. Answered right here."
+  },
+  {
+   "kind": "text",
+   "x": 1291.3,
+   "y": 452.9,
+   "w": 99.7,
+   "h": 28,
+   "text": "Open chat"
+  },
+  {
+   "kind": "text",
+   "x": 316,
+   "y": 530.8,
+   "w": 35.3,
+   "h": 15.8,
+   "text": "Career"
+  },
+  {
+   "kind": "text",
+   "x": 316,
+   "y": 550.6,
+   "w": 190,
+   "h": 33.8,
+   "text": "Am I a fit for Investment Banking Summer Analyst?"
+  },
+  {
+   "kind": "text",
+   "x": 600,
+   "y": 530.8,
+   "w": 57.4,
+   "h": 15.8,
+   "text": "Academics"
+  },
+  {
+   "kind": "text",
+   "x": 600,
+   "y": 550.6,
+   "w": 190,
+   "h": 33.8,
+   "text": "Ready to plan your spring classes?"
+  },
+  {
+   "kind": "text",
+   "x": 884,
+   "y": 530.8,
+   "w": 35.3,
+   "h": 15.8,
+   "text": "Events"
+  },
+  {
+   "kind": "text",
+   "x": 927.3,
+   "y": 528.7,
+   "w": 29.9,
+   "h": 20,
+   "text": "Sat"
+  },
+  {
+   "kind": "text",
+   "x": 884,
+   "y": 552.7,
+   "w": 190,
+   "h": 33.8,
+   "text": "How should I prep for Evercore Coffee Chat?"
+  },
+  {
+   "kind": "text",
+   "x": 1168,
+   "y": 539.3,
+   "w": 65.2,
+   "h": 15.8,
+   "text": "Campus Life"
+  },
+  {
+   "kind": "text",
+   "x": 1168,
+   "y": 559,
+   "w": 190,
+   "h": 16.9,
+   "text": "What's open late tonight?"
+  },
+  {
+   "kind": "text",
+   "x": 313,
+   "y": 730.5,
+   "w": 973,
+   "h": 22.8,
+   "text": "What's new"
+  },
+  {
+   "kind": "text",
+   "x": 313,
+   "y": 753.3,
+   "w": 973,
+   "h": 16.9,
+   "text": "New matches, moved due dates and CampusAI updates, as they come in."
+  },
+  {
+   "kind": "text",
+   "x": 1298,
+   "y": 744.3,
+   "w": 93,
+   "h": 15,
+   "text": "All notifications"
+  },
+  {
+   "kind": "text",
+   "x": 249,
+   "y": 783.1,
+   "w": 1158,
+   "h": 34,
+   "text": "Today"
+  },
+  {
+   "kind": "text",
+   "x": 309,
+   "y": 829.1,
+   "w": 796.4,
+   "h": 17.3,
+   "text": "Assignment moved"
+  },
+  {
+   "kind": "text",
+   "x": 309,
+   "y": 848.4,
+   "w": 796.4,
+   "h": 18.2,
+   "text": "BMGT380 · Reading Response 6: Remedies"
+  },
+  {
+   "kind": "text",
+   "x": 309,
+   "y": 869.6,
+   "w": 74.3,
+   "h": 16,
+   "text": "Wed, Oct 14"
+  },
+  {
+   "kind": "text",
+   "x": 407,
+   "y": 869.6,
+   "w": 73,
+   "h": 16,
+   "text": "Sun, Oct 18"
+  },
+  {
+   "kind": "text",
+   "x": 1133.4,
+   "y": 842.6,
+   "w": 152.6,
+   "h": 32,
+   "text": "Open My Calendar"
+  },
+  {
+   "kind": "text",
+   "x": 1302,
+   "y": 850.4,
+   "w": 62,
+   "h": 16.5,
+   "text": "35m ago"
+  },
+  {
+   "kind": "text",
+   "x": 1260.1,
+   "y": 28,
+   "w": 35.5,
+   "h": 12,
+   "text": "new"
+  },
+  {
+   "kind": "text",
+   "x": 1316.6,
+   "y": 16,
+   "w": 107.4,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "text",
+   "x": -38,
+   "y": 50.8,
+   "w": 141,
+   "h": 17.5,
+   "text": "Evercore Coffee Chat"
+  },
+  {
+   "kind": "text",
+   "x": -38,
+   "y": 70.3,
+   "w": 158,
+   "h": 15,
+   "text": "Smith Office of Career Services"
+  },
+  {
+   "kind": "text",
+   "x": 194,
+   "y": 42,
+   "w": 158,
+   "h": 35,
+   "text": "Smith Finance Group Stock Pitch Night"
+  },
+  {
+   "kind": "text",
+   "x": 194,
+   "y": 79,
+   "w": 158,
+   "h": 15,
+   "text": "Smith Finance Group"
+  },
+  {
+   "kind": "text",
+   "x": 432,
+   "y": 42,
+   "w": 152,
+   "h": 35,
+   "text": "Investment Banking Summer Analyst, 2027"
+  },
+  {
+   "kind": "text",
+   "x": 426,
+   "y": 79,
+   "w": 158,
+   "h": 15,
+   "text": "Evercore"
+  },
+  {
+   "kind": "text",
+   "x": 656.1,
+   "y": 41.2,
+   "w": 162.7,
+   "h": 36.1,
+   "text": "Finance Association, Resume & LinkedIn Night"
+  },
+  {
+   "kind": "text",
+   "x": 656.1,
+   "y": 79.3,
+   "w": 162.7,
+   "h": 15.4,
+   "text": "Finance Association"
+  },
+  {
+   "kind": "text",
+   "x": 890,
+   "y": 42,
+   "w": 158,
+   "h": 35,
+   "text": "Deloitte Consulting, Coffee Chat"
+  },
+  {
+   "kind": "text",
+   "x": 890,
+   "y": 79,
+   "w": 158,
+   "h": 15,
+   "text": "Deloitte"
+  },
+  {
+   "kind": "text",
+   "x": 1122,
+   "y": 42,
+   "w": 158,
+   "h": 35,
+   "text": "Financial Modeling Bootcamp: 3-Statement to DCF"
+  },
+  {
+   "kind": "text",
+   "x": 1122,
+   "y": 79,
+   "w": 158,
+   "h": 15,
+   "text": "Smith Finance Group"
+  },
+  {
+   "kind": "text",
+   "x": 1354,
+   "y": 42,
+   "w": 158,
+   "h": 35,
+   "text": "Smith Fall Career & Internship Fair"
+  },
+  {
+   "kind": "text",
+   "x": 1354,
+   "y": 79,
+   "w": 158,
+   "h": 15,
+   "text": "Smith Office of Career Services"
+  },
+  {
+   "kind": "text",
+   "x": 385,
+   "y": 166,
+   "w": 45.1,
+   "h": 18,
+   "text": "Event"
+  },
+  {
+   "kind": "text",
+   "x": 385,
+   "y": 203,
+   "w": 670,
+   "h": 27.6,
+   "text": "Finance Association, Resume & LinkedIn Night"
+  },
+  {
+   "kind": "text",
+   "x": 425,
+   "y": 242.6,
+   "w": 127.5,
+   "h": 20.3,
+   "text": "Finance Association"
+  },
+  {
+   "kind": "text",
+   "x": 425,
+   "y": 262.8,
+   "w": 127.5,
+   "h": 18.8,
+   "text": "Fri, Oct 23"
+  },
+  {
+   "kind": "text",
+   "x": 405,
+   "y": 298.2,
+   "w": 65.5,
+   "h": 12.8,
+   "text": "Fri, Oct 23"
+  },
+  {
+   "kind": "text",
+   "x": 486.5,
+   "y": 297.6,
+   "w": 134.2,
+   "h": 14,
+   "text": "7:00 PM – 8:30 PM"
+  },
+  {
+   "kind": "text",
+   "x": 636.8,
+   "y": 297.6,
+   "w": 130.6,
+   "h": 14,
+   "text": "Van Munching Hall"
+  },
+  {
+   "kind": "text",
+   "x": 783.4,
+   "y": 297.6,
+   "w": 118.3,
+   "h": 14,
+   "text": "In person · Open"
+  },
+  {
+   "kind": "text",
+   "x": 406,
+   "y": 353.6,
+   "w": 628,
+   "h": 19.5,
+   "text": "Why this fits you"
+  },
+  {
+   "kind": "text",
+   "x": 947.7,
+   "y": 354.7,
+   "w": 86.3,
+   "h": 17.3,
+   "text": "Strong match"
+  },
+  {
+   "kind": "text",
+   "x": 406,
+   "y": 383.1,
+   "w": 628,
+   "h": 91,
+   "text": "Your resume is going into fall banking books now, and its sharpest line, your Smith Investment Fund pitch, deserves a se"
+  },
+  {
+   "kind": "text",
+   "x": 406,
+   "y": 509.1,
+   "w": 628,
+   "h": 19.5,
+   "text": "About this event"
+  },
+  {
+   "kind": "text",
+   "x": 406,
+   "y": 538.6,
+   "w": 628,
+   "h": 45.5,
+   "text": "Bring your resume for line-by-line feedback from upperclassmen who've landed IB and corporate finance offers."
+  },
+  {
+   "kind": "text",
+   "x": 385,
+   "y": 630.1,
+   "w": 670,
+   "h": 24.8,
+   "text": "Details"
+  },
+  {
+   "kind": "text",
+   "x": 402,
+   "y": 679.8,
+   "w": 296,
+   "h": 17.3,
+   "text": "Where"
+  },
+  {
+   "kind": "text",
+   "x": 402,
+   "y": 701.1,
+   "w": 296,
+   "h": 21,
+   "text": "Van Munching Hall"
+  },
+  {
+   "kind": "text",
+   "x": 742,
+   "y": 679.8,
+   "w": 296,
+   "h": 17.3,
+   "text": "Hosted by"
+  },
+  {
+   "kind": "text",
+   "x": 742,
+   "y": 701.1,
+   "w": 296,
+   "h": 21,
+   "text": "Finance Association"
+  },
+  {
+   "kind": "text",
+   "x": 402,
+   "y": 758.1,
+   "w": 296,
+   "h": 17.3,
+   "text": "Format"
+  },
+  {
+   "kind": "text",
+   "x": 402,
+   "y": 779.3,
+   "w": 296,
+   "h": 21,
+   "text": "In person · Open"
+  },
+  {
+   "kind": "text",
+   "x": 880.5,
+   "y": 733,
+   "w": 158.5,
+   "h": 18,
+   "text": "Add to CampusAI Calendar"
+  }
+ ]
+}

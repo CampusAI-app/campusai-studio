@@ -1,0 +1,12 @@
+macbook-16.glb
+"macbook pro M3 16 inch 2024" by jackbaeten (https://sketchfab.com/jackbaeten)
+Source: https://sketchfab.com/3d-models/macbook-pro-m3-16-inch-2024-8e34fc2b303144f78490007d91ff57c4
+Licence: CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+Obtained Draco-compressed from github.com/adrianhajdin/gsap_macbook_landing (public/models/macbook-16.glb),
+author/licence metadata intact in the file's asset.extras.
+Changes made at render time (src/four/real-laptop.tsx): lid split from the base so it opens, body
+materials replaced with a flat anodised finish (which removes the lid logo carried in the roughness
+map), underside badge meshes hidden.
+Credit line for posts that carry credits: 3D laptop model by jackbaeten, CC BY 4.0.
+
+draco/  Draco decoder from three@0.186.1 (examples/jsm/libs/draco/gltf), MIT / Apache-2.0.

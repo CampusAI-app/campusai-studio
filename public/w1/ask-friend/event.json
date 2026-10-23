@@ -1,0 +1,45 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "source": "https://campusai-demo.vercel.app/",
+ "captured": "2026-10-23T03:53:09.359Z",
+ "opened": "Evercore Coffee Chat",
+ "boxes": {
+  "panel": {
+   "x": 360,
+   "y": 12,
+   "w": 720,
+   "h": 648,
+   "radius": 24
+  },
+  "title": {
+   "x": 385,
+   "y": 87,
+   "w": 670,
+   "h": 27.6
+  },
+  "date": {
+   "x": 405,
+   "y": 182.2,
+   "w": 70.1,
+   "h": 12.8
+  },
+  "why": {
+   "x": 385,
+   "y": 219.6,
+   "w": 670,
+   "h": 266.5
+  },
+  "add": {
+   "x": 666.5,
+   "y": 608,
+   "w": 190.5,
+   "h": 34
+  },
+  "onCal": null,
+  "signUp": null,
+  "caption": null
+ },
+ "text": "Event\nEvercore Coffee Chat\nS\nSmith Office of Career Services\nSat, Oct 24\nSat, Oct 24\n10:00 AM – 11:30 AM\nVan Munching Hall\nIn person · Sign-up required\n✦\nWhy this fits you\nStrong match\n\nRestructuring is on your target list and both analysts came out of Smith finance. A named contact inside the process before applications open. Bring two questions about the restructuring group specifically.\n\nAbout this event\n\nTwo Evercore analysts, both Smith alumni, host an informal coffee chat for students targeting restructuring and M&A. Small group, no presentation, straight to questions about the desk and the recruiting timeline.\n\nDetails\n\nWhere\n\nVan Munching Hall\n\nHosted by\n\nSmith Office of Career Services\n\nFormat\n\nIn person · Sign-up required\n\nAdd to CampusAI Calendar\nLearn more and sign up"
+}

@@ -1,0 +1,263 @@
+{
+ "clock": "2026-10-18T23:48:00-04:00",
+ "source": "https://campusai-demo.vercel.app",
+ "captured": "2026-10-23T03:48:43.402Z",
+ "stills": {
+  "dash": {
+   "url": "https://campusai-demo.vercel.app/",
+   "mouse": [
+    1436,
+    896
+   ],
+   "sandy": false,
+   "em": false
+  },
+  "dash-hover": {
+   "url": "https://campusai-demo.vercel.app/",
+   "mouse": [
+    632,
+    177
+   ],
+   "sandy": false,
+   "em": false
+  },
+  "cal": {
+   "url": "https://campusai-demo.vercel.app/calendar",
+   "mouse": [
+    1436,
+    896
+   ],
+   "sandy": false,
+   "em": false
+  },
+  "cal-hover": {
+   "url": "https://campusai-demo.vercel.app/calendar",
+   "mouse": [
+    344,
+    536
+   ],
+   "sandy": false,
+   "em": false
+  },
+  "ans": {
+   "url": "https://campusai-demo.vercel.app/calendar",
+   "mouse": [
+    1436,
+    896
+   ],
+   "sandy": false,
+   "em": false
+  },
+  "ans-hover": {
+   "url": "https://campusai-demo.vercel.app/calendar",
+   "mouse": [
+    1175,
+    307
+   ],
+   "sandy": false,
+   "em": false
+  },
+  "added": {
+   "url": "https://campusai-demo.vercel.app/calendar",
+   "mouse": [
+    1175,
+    307
+   ],
+   "sandy": false,
+   "em": false
+  },
+  "added-rest": {
+   "url": "https://campusai-demo.vercel.app/calendar",
+   "mouse": [
+    1436,
+    896
+   ],
+   "sandy": false,
+   "em": false
+  }
+ },
+ "answer": [
+  {
+   "file": "ans/0000.jpg",
+   "t": 0.075
+  },
+  {
+   "file": "ans/0001.jpg",
+   "t": 0.178
+  },
+  {
+   "file": "ans/0002.jpg",
+   "t": 0.275
+  },
+  {
+   "file": "ans/0003.jpg",
+   "t": 0.352
+  },
+  {
+   "file": "ans/0004.jpg",
+   "t": 0.428
+  },
+  {
+   "file": "ans/0005.jpg",
+   "t": 0.496
+  },
+  {
+   "file": "ans/0006.jpg",
+   "t": 0.55
+  },
+  {
+   "file": "ans/0007.jpg",
+   "t": 0.614
+  },
+  {
+   "file": "ans/0008.jpg",
+   "t": 0.665
+  },
+  {
+   "file": "ans/0009.jpg",
+   "t": 0.733
+  },
+  {
+   "file": "ans/0010.jpg",
+   "t": 0.796
+  },
+  {
+   "file": "ans/0011.jpg",
+   "t": 0.849
+  },
+  {
+   "file": "ans/0012.jpg",
+   "t": 0.911
+  },
+  {
+   "file": "ans/0013.jpg",
+   "t": 0.966
+  },
+  {
+   "file": "ans/0014.jpg",
+   "t": 1.033
+  },
+  {
+   "file": "ans/0015.jpg",
+   "t": 1.08
+  },
+  {
+   "file": "ans/0016.jpg",
+   "t": 1.133
+  },
+  {
+   "file": "ans/0017.jpg",
+   "t": 1.199
+  },
+  {
+   "file": "ans/0018.jpg",
+   "t": 1.263
+  },
+  {
+   "file": "ans/0019.jpg",
+   "t": 1.316
+  },
+  {
+   "file": "ans/0020.jpg",
+   "t": 1.383
+  },
+  {
+   "file": "ans/0021.jpg",
+   "t": 1.449
+  },
+  {
+   "file": "ans/0022.jpg",
+   "t": 1.516
+  },
+  {
+   "file": "ans/0023.jpg",
+   "t": 1.583
+  },
+  {
+   "file": "ans/0024.jpg",
+   "t": 1.696
+  },
+  {
+   "file": "ans/0025.jpg",
+   "t": 1.767
+  },
+  {
+   "file": "ans/0026.jpg",
+   "t": 1.833
+  },
+  {
+   "file": "ans/0027.jpg",
+   "t": 1.899
+  },
+  {
+   "file": "ans/0028.jpg",
+   "t": 1.966
+  },
+  {
+   "file": "ans/0029.jpg",
+   "t": 2.036
+  },
+  {
+   "file": "ans/0030.jpg",
+   "t": 2.1
+  },
+  {
+   "file": "ans/0031.jpg",
+   "t": 2.174
+  },
+  {
+   "file": "ans/0032.jpg",
+   "t": 2.23
+  },
+  {
+   "file": "ans/0033.jpg",
+   "t": 2.279
+  },
+  {
+   "file": "ans/0034.jpg",
+   "t": 2.328
+  },
+  {
+   "file": "ans/0035.jpg",
+   "t": 2.378
+  },
+  {
+   "file": "ans/0036.jpg",
+   "t": 2.432
+  },
+  {
+   "file": "ans/0037.jpg",
+   "t": 2.499
+  },
+  {
+   "file": "ans/0038.jpg",
+   "t": 2.548
+  },
+  {
+   "file": "ans/0039.jpg",
+   "t": 2.613
+  }
+ ],
+ "press1": {
+  "label": "Open My Calendar",
+  "at": [
+   632,
+   177
+  ]
+ },
+ "press2": {
+  "label": "Find time to study for Quiz 2",
+  "at": [
+   344,
+   536
+  ]
+ },
+ "press3": {
+  "label": "Wed, Oct 21, 6pm to 8pm",
+  "aria": "Add Study: BMGT343 Quiz 2, Wed, Oct 21, 6pm to 8pm",
+  "at": [
+   1175,
+   307
+  ]
+ }
+}

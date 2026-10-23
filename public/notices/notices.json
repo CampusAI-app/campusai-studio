@@ -1,0 +1,85 @@
+{
+ "source": "https://campusai-demo.vercel.app/notifications",
+ "captured": "2026-10-21T16:21:11.004Z",
+ "notices": {
+  "moved": {
+   "w": 1126,
+   "h": 125.109375
+  },
+  "roles": {
+   "w": 1126,
+   "h": 143.421875
+  },
+  "events": {
+   "w": 1126,
+   "h": 143.421875
+  },
+  "clubs": {
+   "w": 1126,
+   "h": 143.421875
+  }
+ },
+ "cards": {
+  "roles": [
+   {
+    "w": 349.328125,
+    "h": 135.734375,
+    "text": "Evercore / Investment Banking Summer Analyst"
+   },
+   {
+    "w": 349.328125,
+    "h": 135.734375,
+    "text": "Marriott International / Corporate Finance Summer Analyst"
+   },
+   {
+    "w": 349.34375,
+    "h": 135.734375,
+    "text": "T. Rowe Price / Equity Research Summer Analyst"
+   },
+   {
+    "w": 349.328125,
+    "h": 135.734375,
+    "text": "Carlyle Group / Private Equity Analyst"
+   },
+   {
+    "w": 349.328125,
+    "h": 135.734375,
+    "text": "Robert H. Smith School / Smith Finance Peer Mentor"
+   },
+   {
+    "w": 349.34375,
+    "h": 135.734375,
+    "text": "Bloomberg / Student Brand Ambassador"
+   }
+  ],
+  "events": [
+   {
+    "w": 349.328125,
+    "h": 147.59375,
+    "text": "WED / 21"
+   },
+   {
+    "w": 349.328125,
+    "h": 147.59375,
+    "text": "THU / 22"
+   },
+   {
+    "w": 349.34375,
+    "h": 147.59375,
+    "text": "SAT / 24"
+   }
+  ],
+  "clubs": [
+   {
+    "w": 349.328125,
+    "h": 139.21875,
+    "text": "Smith Investment Fund / Student-run equity fund"
+   },
+   {
+    "w": 349.328125,
+    "h": 139.21875,
+    "text": "Finance Association / Recruiting prep for banking and corporate finance"
+   }
+  ]
+ }
+}

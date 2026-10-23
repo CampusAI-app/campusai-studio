@@ -1,0 +1,682 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "tallH": 2847,
+ "dpr": 2,
+ "source": "https://campusai-demo.vercel.app/notifications",
+ "captured": "2026-10-23T02:49:41.083Z",
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 248,
+   "y": 32,
+   "w": 1160,
+   "h": 29,
+   "text": "Notifications"
+  },
+  {
+   "kind": "heading",
+   "x": 265,
+   "y": 2263,
+   "w": 366,
+   "h": 20,
+   "text": "What you get notified about"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 8,
+   "w": 56,
+   "h": 40,
+   "text": "Expand sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 180,
+   "w": 24,
+   "h": 36,
+   "text": "Collapse Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 251,
+   "y": 118,
+   "w": 57,
+   "h": 31,
+   "text": "All 6"
+  },
+  {
+   "kind": "button",
+   "x": 310,
+   "y": 118,
+   "w": 86,
+   "h": 31,
+   "text": "For you 5"
+  },
+  {
+   "kind": "button",
+   "x": 398,
+   "y": 118,
+   "w": 110,
+   "h": 31,
+   "text": "What's new 1"
+  },
+  {
+   "kind": "button",
+   "x": 1265,
+   "y": 124,
+   "w": 53,
+   "h": 18,
+   "text": "Select all"
+  },
+  {
+   "kind": "button",
+   "x": 1333,
+   "y": 124,
+   "w": 75,
+   "h": 18,
+   "text": "Mark all read"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 284,
+   "w": 86,
+   "h": 17,
+   "text": "Mark as read"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 390,
+   "w": 86,
+   "h": 17,
+   "text": "Mark as read"
+  },
+  {
+   "kind": "button",
+   "x": 1120,
+   "y": 358,
+   "w": 106,
+   "h": 32,
+   "text": "Completed"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 514,
+   "w": 625,
+   "h": 32,
+   "text": "Evercore Marriott International T. Rowe Price +3 more"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 561,
+   "w": 86,
+   "h": 17,
+   "text": "Mark as read"
+  },
+  {
+   "kind": "button",
+   "x": 422,
+   "y": 556,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 452,
+   "y": 556,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 1293,
+   "y": 464,
+   "w": 98,
+   "h": 32,
+   "text": "View 6 roles"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 687,
+   "w": 625,
+   "h": 32,
+   "text": "Fri 23 Fri 23 Sun 25 Deloitte coffee chat and 2 more"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 733,
+   "w": 86,
+   "h": 17,
+   "text": "Mark as read"
+  },
+  {
+   "kind": "button",
+   "x": 422,
+   "y": 729,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 452,
+   "y": 729,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 1283,
+   "y": 636,
+   "w": 108,
+   "h": 32,
+   "text": "View 3 events"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 859,
+   "w": 625,
+   "h": 32,
+   "text": "Smith Investment Fund Finance Association"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 906,
+   "w": 86,
+   "h": 17,
+   "text": "Mark as read"
+  },
+  {
+   "kind": "button",
+   "x": 422,
+   "y": 901,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 452,
+   "y": 901,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 1290,
+   "y": 809,
+   "w": 101,
+   "h": 32,
+   "text": "View 2 clubs"
+  },
+  {
+   "kind": "button",
+   "x": 313,
+   "y": 1128,
+   "w": 86,
+   "h": 17,
+   "text": "Mark as read"
+  },
+  {
+   "kind": "button",
+   "x": 411,
+   "y": 1123,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 441,
+   "y": 1123,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 313,
+   "y": 1383,
+   "w": 99,
+   "h": 17,
+   "text": "Mark as unread"
+  },
+  {
+   "kind": "button",
+   "x": 424,
+   "y": 1379,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 454,
+   "y": 1379,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 1521,
+   "w": 625,
+   "h": 32,
+   "text": "JPMorgan Chase Jefferies T. Rowe Price +1 more"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 1568,
+   "w": 99,
+   "h": 17,
+   "text": "Mark as unread"
+  },
+  {
+   "kind": "button",
+   "x": 435,
+   "y": 1563,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 465,
+   "y": 1563,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 1293,
+   "y": 1471,
+   "w": 98,
+   "h": 32,
+   "text": "View 4 roles"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 1673,
+   "w": 625,
+   "h": 32,
+   "text": "Wed 27 Thu 28 Evercore info session and 1 more"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 1720,
+   "w": 99,
+   "h": 17,
+   "text": "Mark as unread"
+  },
+  {
+   "kind": "button",
+   "x": 435,
+   "y": 1715,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 465,
+   "y": 1715,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 1283,
+   "y": 1643,
+   "w": 108,
+   "h": 32,
+   "text": "View 2 events"
+  },
+  {
+   "kind": "button",
+   "x": 313,
+   "y": 1962,
+   "w": 99,
+   "h": 17,
+   "text": "Mark as unread"
+  },
+  {
+   "kind": "button",
+   "x": 424,
+   "y": 1958,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 454,
+   "y": 1958,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 313,
+   "y": 2176,
+   "w": 99,
+   "h": 17,
+   "text": "Mark as unread"
+  },
+  {
+   "kind": "button",
+   "x": 424,
+   "y": 2172,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 454,
+   "y": 2172,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 1353,
+   "y": 2330,
+   "w": 38,
+   "h": 22,
+   "text": "New matches"
+  },
+  {
+   "kind": "button",
+   "x": 1353,
+   "y": 2428,
+   "w": 38,
+   "h": 22,
+   "text": "Due date changes"
+  },
+  {
+   "kind": "button",
+   "x": 1353,
+   "y": 2527,
+   "w": 38,
+   "h": 22,
+   "text": "Product updates"
+  },
+  {
+   "kind": "button",
+   "x": 992,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1038,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 1084,
+   "y": 816,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 180,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 218,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 249,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 280,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 318,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 356,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 394,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 445,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 164,
+   "w": 1160,
+   "h": 2062,
+   "text": "Unread BMGT380 assignment moved from Wed, Oct 14→ to Sun, Oct 18 Reading Response 6: Remed"
+  },
+  {
+   "kind": "card",
+   "x": 298,
+   "y": 955,
+   "w": 1093,
+   "h": 207,
+   "text": "✦ New on CampusAI 3d ago Resume Coach can now tailor your resume to one posting Paste a po"
+  },
+  {
+   "kind": "card",
+   "x": 298,
+   "y": 1190,
+   "w": 1093,
+   "h": 227,
+   "text": "✦ New on CampusAI 1w ago Job Match filters by when you want to start Summer 2027, this fal"
+  },
+  {
+   "kind": "card",
+   "x": 298,
+   "y": 1769,
+   "w": 1093,
+   "h": 227,
+   "text": "✦ New on CampusAI 2w ago The 4-year planner checks your degree requirements as you build D"
+  },
+  {
+   "kind": "card",
+   "x": 298,
+   "y": 2025,
+   "w": 1093,
+   "h": 186,
+   "text": "✦ New on CampusAI 3w ago A first-run walkthrough now introduces each area Six stops coveri"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 2250,
+   "w": 1160,
+   "h": 361,
+   "text": "What you get notified about Turning one off stops it here and everywhere else it reaches y"
+  }
+ ]
+}

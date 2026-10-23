@@ -1,0 +1,1162 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "tallH": 2270,
+ "dpr": 2,
+ "source": "https://campusai-demo.vercel.app/organizations",
+ "captured": "2026-10-23T02:49:26.987Z",
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 248,
+   "y": 59,
+   "w": 1160,
+   "h": 27,
+   "text": "Hear directly from the orgs themselves"
+  },
+  {
+   "kind": "heading",
+   "x": 479,
+   "y": 155,
+   "w": 222,
+   "h": 23,
+   "text": "Finance Association"
+  },
+  {
+   "kind": "heading",
+   "x": 1392,
+   "y": 165,
+   "w": 195,
+   "h": 22,
+   "text": "Smith Investment Fund"
+  },
+  {
+   "kind": "heading",
+   "x": 2288,
+   "y": 165,
+   "w": 357,
+   "h": 22,
+   "text": "Smith Undergraduate Student Association"
+  },
+  {
+   "kind": "heading",
+   "x": 3184,
+   "y": 165,
+   "w": 268,
+   "h": 22,
+   "text": "Undergraduate Consulting Club"
+  },
+  {
+   "kind": "heading",
+   "x": 4080,
+   "y": 165,
+   "w": 286,
+   "h": 22,
+   "text": "Smith Analytics Consulting Group"
+  },
+  {
+   "kind": "heading",
+   "x": 4976,
+   "y": 165,
+   "w": 195,
+   "h": 22,
+   "text": "Colvin Real Estate Club"
+  },
+  {
+   "kind": "heading",
+   "x": 5872,
+   "y": 165,
+   "w": 213,
+   "h": 22,
+   "text": "Beta Alpha Psi"
+  },
+  {
+   "kind": "heading",
+   "x": 6768,
+   "y": 165,
+   "w": 300,
+   "h": 22,
+   "text": "Accounting & Business Association"
+  },
+  {
+   "kind": "heading",
+   "x": 7664,
+   "y": 165,
+   "w": 220,
+   "h": 22,
+   "text": "Smith Women in Business"
+  },
+  {
+   "kind": "heading",
+   "x": 8560,
+   "y": 165,
+   "w": 208,
+   "h": 22,
+   "text": "Smith Marketing Society"
+  },
+  {
+   "kind": "heading",
+   "x": 9456,
+   "y": 165,
+   "w": 312,
+   "h": 22,
+   "text": "Terp Startup / Entrepreneurship Club"
+  },
+  {
+   "kind": "heading",
+   "x": 10352,
+   "y": 165,
+   "w": 232,
+   "h": 22,
+   "text": "Black Business Association"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 8,
+   "w": 56,
+   "h": 40,
+   "text": "Expand sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Collapse Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 311,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 409,
+   "y": 537,
+   "w": 95,
+   "h": 37,
+   "text": "Member"
+  },
+  {
+   "kind": "button",
+   "x": 512,
+   "y": 538,
+   "w": 72,
+   "h": 35,
+   "text": "Save"
+  },
+  {
+   "kind": "button",
+   "x": 1156,
+   "y": 546,
+   "w": 91,
+   "h": 19,
+   "text": "View details"
+  },
+  {
+   "kind": "button",
+   "x": 1326,
+   "y": 528,
+   "w": 91,
+   "h": 35,
+   "text": "Member"
+  },
+  {
+   "kind": "button",
+   "x": 1424,
+   "y": 529,
+   "w": 69,
+   "h": 33,
+   "text": "Save"
+  },
+  {
+   "kind": "button",
+   "x": 2035,
+   "y": 536,
+   "w": 87,
+   "h": 18,
+   "text": "View details"
+  },
+  {
+   "kind": "button",
+   "x": 2222,
+   "y": 530,
+   "w": 120,
+   "h": 33,
+   "text": "I'm a member"
+  },
+  {
+   "kind": "button",
+   "x": 2350,
+   "y": 530,
+   "w": 69,
+   "h": 33,
+   "text": "Save"
+  },
+  {
+   "kind": "button",
+   "x": 2931,
+   "y": 537,
+   "w": 87,
+   "h": 18,
+   "text": "View details"
+  },
+  {
+   "kind": "button",
+   "x": 3118,
+   "y": 530,
+   "w": 120,
+   "h": 33,
+   "text": "I'm a member"
+  },
+  {
+   "kind": "button",
+   "x": 3246,
+   "y": 530,
+   "w": 76,
+   "h": 33,
+   "text": "Saved"
+  },
+  {
+   "kind": "button",
+   "x": 3827,
+   "y": 537,
+   "w": 87,
+   "h": 18,
+   "text": "View details"
+  },
+  {
+   "kind": "button",
+   "x": 4014,
+   "y": 530,
+   "w": 120,
+   "h": 33,
+   "text": "I'm a member"
+  },
+  {
+   "kind": "button",
+   "x": 4142,
+   "y": 530,
+   "w": 69,
+   "h": 33,
+   "text": "Save"
+  },
+  {
+   "kind": "button",
+   "x": 4723,
+   "y": 537,
+   "w": 87,
+   "h": 18,
+   "text": "View details"
+  },
+  {
+   "kind": "button",
+   "x": 4910,
+   "y": 530,
+   "w": 120,
+   "h": 33,
+   "text": "I'm a member"
+  },
+  {
+   "kind": "button",
+   "x": 5038,
+   "y": 530,
+   "w": 69,
+   "h": 33,
+   "text": "Save"
+  },
+  {
+   "kind": "button",
+   "x": 5619,
+   "y": 537,
+   "w": 87,
+   "h": 18,
+   "text": "View details"
+  },
+  {
+   "kind": "button",
+   "x": 5806,
+   "y": 530,
+   "w": 120,
+   "h": 33,
+   "text": "I'm a member"
+  },
+  {
+   "kind": "button",
+   "x": 5934,
+   "y": 530,
+   "w": 69,
+   "h": 33,
+   "text": "Save"
+  },
+  {
+   "kind": "button",
+   "x": 6515,
+   "y": 537,
+   "w": 87,
+   "h": 18,
+   "text": "View details"
+  },
+  {
+   "kind": "button",
+   "x": 6702,
+   "y": 530,
+   "w": 120,
+   "h": 33,
+   "text": "I'm a member"
+  },
+  {
+   "kind": "button",
+   "x": 6830,
+   "y": 530,
+   "w": 69,
+   "h": 33,
+   "text": "Save"
+  },
+  {
+   "kind": "button",
+   "x": 7411,
+   "y": 537,
+   "w": 87,
+   "h": 18,
+   "text": "View details"
+  },
+  {
+   "kind": "button",
+   "x": 7598,
+   "y": 530,
+   "w": 120,
+   "h": 33,
+   "text": "I'm a member"
+  },
+  {
+   "kind": "button",
+   "x": 7726,
+   "y": 530,
+   "w": 69,
+   "h": 33,
+   "text": "Save"
+  },
+  {
+   "kind": "button",
+   "x": 8307,
+   "y": 537,
+   "w": 87,
+   "h": 18,
+   "text": "View details"
+  },
+  {
+   "kind": "button",
+   "x": 8494,
+   "y": 530,
+   "w": 120,
+   "h": 33,
+   "text": "I'm a member"
+  },
+  {
+   "kind": "button",
+   "x": 8622,
+   "y": 530,
+   "w": 69,
+   "h": 33,
+   "text": "Save"
+  },
+  {
+   "kind": "button",
+   "x": 9203,
+   "y": 537,
+   "w": 87,
+   "h": 18,
+   "text": "View details"
+  },
+  {
+   "kind": "button",
+   "x": 9390,
+   "y": 530,
+   "w": 120,
+   "h": 33,
+   "text": "I'm a member"
+  },
+  {
+   "kind": "button",
+   "x": 9518,
+   "y": 530,
+   "w": 69,
+   "h": 33,
+   "text": "Save"
+  },
+  {
+   "kind": "button",
+   "x": 10099,
+   "y": 537,
+   "w": 87,
+   "h": 18,
+   "text": "View details"
+  },
+  {
+   "kind": "button",
+   "x": 10286,
+   "y": 530,
+   "w": 120,
+   "h": 33,
+   "text": "I'm a member"
+  },
+  {
+   "kind": "button",
+   "x": 10414,
+   "y": 530,
+   "w": 69,
+   "h": 33,
+   "text": "Save"
+  },
+  {
+   "kind": "button",
+   "x": 10995,
+   "y": 537,
+   "w": 87,
+   "h": 18,
+   "text": "View details"
+  },
+  {
+   "kind": "button",
+   "x": 248,
+   "y": 344,
+   "w": 36,
+   "h": 36,
+   "text": "Previous clubs"
+  },
+  {
+   "kind": "button",
+   "x": 1372,
+   "y": 344,
+   "w": 36,
+   "h": 36,
+   "text": "Next clubs"
+  },
+  {
+   "kind": "button",
+   "x": 248,
+   "y": 645,
+   "w": 180,
+   "h": 42,
+   "text": "Recommended for You"
+  },
+  {
+   "kind": "button",
+   "x": 432,
+   "y": 645,
+   "w": 85,
+   "h": 42,
+   "text": "All Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 521,
+   "y": 645,
+   "w": 88,
+   "h": 42,
+   "text": "My Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 612,
+   "y": 645,
+   "w": 73,
+   "h": 42,
+   "text": "Saved"
+  },
+  {
+   "kind": "button",
+   "x": 698,
+   "y": 644,
+   "w": 155,
+   "h": 37,
+   "text": "All categories"
+  },
+  {
+   "kind": "button",
+   "x": 263,
+   "y": 1042,
+   "w": 349,
+   "h": 38,
+   "text": "Learn More ›"
+  },
+  {
+   "kind": "button",
+   "x": 654,
+   "y": 1042,
+   "w": 349,
+   "h": 38,
+   "text": "Learn More ›"
+  },
+  {
+   "kind": "button",
+   "x": 1337,
+   "y": 957,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1367,
+   "y": 957,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1044,
+   "y": 1042,
+   "w": 349,
+   "h": 38,
+   "text": "Learn More ›"
+  },
+  {
+   "kind": "button",
+   "x": 556,
+   "y": 1194,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 586,
+   "y": 1194,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 263,
+   "y": 1279,
+   "w": 349,
+   "h": 38,
+   "text": "Learn More ›"
+  },
+  {
+   "kind": "button",
+   "x": 946,
+   "y": 1194,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 976,
+   "y": 1194,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 654,
+   "y": 1279,
+   "w": 349,
+   "h": 38,
+   "text": "Learn More ›"
+  },
+  {
+   "kind": "button",
+   "x": 1337,
+   "y": 1194,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1367,
+   "y": 1194,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1044,
+   "y": 1279,
+   "w": 349,
+   "h": 38,
+   "text": "Learn More ›"
+  },
+  {
+   "kind": "button",
+   "x": 556,
+   "y": 1430,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 586,
+   "y": 1430,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 263,
+   "y": 1515,
+   "w": 349,
+   "h": 38,
+   "text": "Learn More ›"
+  },
+  {
+   "kind": "button",
+   "x": 556,
+   "y": 1805,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 586,
+   "y": 1805,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 263,
+   "y": 1890,
+   "w": 349,
+   "h": 38,
+   "text": "Learn More ›"
+  },
+  {
+   "kind": "button",
+   "x": 946,
+   "y": 1788,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 976,
+   "y": 1788,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 654,
+   "y": 1890,
+   "w": 349,
+   "h": 38,
+   "text": "Learn More ›"
+  },
+  {
+   "kind": "button",
+   "x": 1337,
+   "y": 1788,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1367,
+   "y": 1788,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1044,
+   "y": 1890,
+   "w": 349,
+   "h": 38,
+   "text": "Learn More ›"
+  },
+  {
+   "kind": "button",
+   "x": 556,
+   "y": 2025,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 586,
+   "y": 2025,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 263,
+   "y": 2110,
+   "w": 349,
+   "h": 38,
+   "text": "Learn More ›"
+  },
+  {
+   "kind": "button",
+   "x": 946,
+   "y": 2025,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 976,
+   "y": 2025,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 654,
+   "y": 2110,
+   "w": 349,
+   "h": 38,
+   "text": "Learn More ›"
+  },
+  {
+   "kind": "button",
+   "x": 1337,
+   "y": 2025,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1367,
+   "y": 2025,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1044,
+   "y": 2110,
+   "w": 349,
+   "h": 38,
+   "text": "Learn More ›"
+  },
+  {
+   "kind": "button",
+   "x": 992,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1038,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 1084,
+   "y": 816,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 311,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 349,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 380,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 411,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 349,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 387,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 425,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 476,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "card",
+   "x": 388,
+   "y": 130,
+   "w": 880,
+   "h": 464,
+   "text": "F Finance Association Pre Professional Business Career Meeting Wednesday · 7:00 PM Van Mun"
+  },
+  {
+   "kind": "card",
+   "x": 1306,
+   "y": 142,
+   "w": 836,
+   "h": 441,
+   "text": "Smith Investment Fund Pre Professional Business Meeting Monday · 6:30 PM Van Munching Hall"
+  },
+  {
+   "kind": "card",
+   "x": 2202,
+   "y": 142,
+   "w": 836,
+   "h": 441,
+   "text": "Smith Undergraduate Student Association Student Government Business Meeting Thursday · 5:3"
+  },
+  {
+   "kind": "card",
+   "x": 3098,
+   "y": 142,
+   "w": 836,
+   "h": 441,
+   "text": "U Undergraduate Consulting Club Pre Professional Business Career Meeting Tuesday · 7:00 PM"
+  },
+  {
+   "kind": "card",
+   "x": 3994,
+   "y": 142,
+   "w": 836,
+   "h": 441,
+   "text": "S Smith Analytics Consulting Group Business Stem Pre Professional Meeting Wednesday · 6:00"
+  },
+  {
+   "kind": "card",
+   "x": 4890,
+   "y": 142,
+   "w": 836,
+   "h": 441,
+   "text": "Colvin Real Estate Club Pre Professional Business Meeting Monday · 7:00 PM Van Munching Ha"
+  },
+  {
+   "kind": "card",
+   "x": 5786,
+   "y": 142,
+   "w": 836,
+   "h": 441,
+   "text": "B Beta Alpha Psi Honors Pre Professional Business Meeting Thursday · 6:00 PM Van Munching "
+  },
+  {
+   "kind": "card",
+   "x": 6682,
+   "y": 142,
+   "w": 836,
+   "h": 441,
+   "text": "Accounting & Business Association Business Pre Professional Meeting Tuesday · 6:00 PM Van "
+  },
+  {
+   "kind": "card",
+   "x": 7578,
+   "y": 142,
+   "w": 836,
+   "h": 441,
+   "text": "Smith Women in Business Business Social Meeting Wednesday · 5:30 PM Van Munching Hall 1211"
+  },
+  {
+   "kind": "card",
+   "x": 8474,
+   "y": 142,
+   "w": 836,
+   "h": 441,
+   "text": "S Smith Marketing Society Business Meeting Monday · 6:00 PM Van Munching Hall 1402 Why thi"
+  },
+  {
+   "kind": "card",
+   "x": 9370,
+   "y": 142,
+   "w": 836,
+   "h": 441,
+   "text": "T Terp Startup / Entrepreneurship Club Business Meeting Thursday · 7:00 PM Dingman Center "
+  },
+  {
+   "kind": "card",
+   "x": 10266,
+   "y": 142,
+   "w": 836,
+   "h": 441,
+   "text": "Black Business Association Cultural Business Meeting Wednesday · 6:30 PM Van Munching Hall"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 870,
+   "w": 379,
+   "h": 224,
+   "text": "F Finance Association Pre Professional Business Career Meets Wednesday ✦ Strong match Memb"
+  },
+  {
+   "kind": "card",
+   "x": 639,
+   "y": 870,
+   "w": 379,
+   "h": 224,
+   "text": "Smith Investment Fund Pre Professional Business Meets Monday ✦ Strong match Member Managin"
+  },
+  {
+   "kind": "card",
+   "x": 1029,
+   "y": 870,
+   "w": 379,
+   "h": 224,
+   "text": "Smith Undergraduate Student Association Student Government Business Meets Thursday ✦ Stron"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 1107,
+   "w": 379,
+   "h": 224,
+   "text": "U Undergraduate Consulting Club Pre Professional Business Career Meets Tuesday ✦ Good matc"
+  },
+  {
+   "kind": "card",
+   "x": 639,
+   "y": 1107,
+   "w": 379,
+   "h": 224,
+   "text": "S Smith Analytics Consulting Group Business Stem Pre Professional Meets Wednesday ✦ Good m"
+  },
+  {
+   "kind": "card",
+   "x": 1029,
+   "y": 1107,
+   "w": 379,
+   "h": 224,
+   "text": "Colvin Real Estate Club Pre Professional Business Meets Monday ✦ Good match Open to join R"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 1343,
+   "w": 379,
+   "h": 224,
+   "text": "B Beta Alpha Psi Honors Pre Professional Business Meets Thursday ✦ Good match Open to join"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 1718,
+   "w": 379,
+   "h": 224,
+   "text": "Accounting & Business Association Business Pre Professional Meets Tuesday Open to join Bro"
+  },
+  {
+   "kind": "card",
+   "x": 639,
+   "y": 1718,
+   "w": 379,
+   "h": 224,
+   "text": "Black Business Association Cultural Business Meets Wednesday Open to join Community and re"
+  },
+  {
+   "kind": "card",
+   "x": 1029,
+   "y": 1718,
+   "w": 379,
+   "h": 224,
+   "text": "N Net Impact, Smith Chapter Sustainability Business Meets Tuesday Open to join If ESG or i"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 1955,
+   "w": 379,
+   "h": 208,
+   "text": "S Smith Marketing Society Business Meets Monday Open to join A creative outlet outside fin"
+  },
+  {
+   "kind": "card",
+   "x": 639,
+   "y": 1955,
+   "w": 379,
+   "h": 208,
+   "text": "Smith Women in Business Business Social Meets Wednesday Open to join A supportive business"
+  },
+  {
+   "kind": "card",
+   "x": 1029,
+   "y": 1955,
+   "w": 379,
+   "h": 208,
+   "text": "T Terp Startup / Entrepreneurship Club Business Meets Thursday Open to join Exposure to ho"
+  }
+ ]
+}

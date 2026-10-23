@@ -1,0 +1,536 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "url": "https://campusai-demo.vercel.app/",
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 329,
+   "y": 49,
+   "w": 1046,
+   "h": 23,
+   "text": "Your daily brief"
+  },
+  {
+   "kind": "heading",
+   "x": 281,
+   "y": 117,
+   "w": 66,
+   "h": 20,
+   "text": "Your week"
+  },
+  {
+   "kind": "heading",
+   "x": 848,
+   "y": 117,
+   "w": 79,
+   "h": 20,
+   "text": "Worth a look"
+  },
+  {
+   "kind": "heading",
+   "x": 313,
+   "y": 432,
+   "w": 966,
+   "h": 23,
+   "text": "Ask CampusAI"
+  },
+  {
+   "kind": "heading",
+   "x": 313,
+   "y": 715,
+   "w": 973,
+   "h": 23,
+   "text": "What's new"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 18,
+   "w": 171,
+   "h": 20,
+   "text": "University of Maryland — home"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 8,
+   "w": 56,
+   "h": 40,
+   "text": "Expand sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 180,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 180,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 218,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 249,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 280,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 218,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 256,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 294,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 345,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 833,
+   "w": 199,
+   "h": 14,
+   "text": "Accessibility"
+  },
+  {
+   "kind": "button",
+   "x": 19,
+   "y": 854,
+   "w": 124,
+   "h": 34,
+   "text": "MC Maya Chen 80% · Connect your transcript"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 289,
+   "y": 163,
+   "w": 219,
+   "h": 76,
+   "text": "Moved · BMGT380 Reading Response 6: Remedies Moved from Wed, Oct 14→ to Sun, Oct 18"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 163,
+   "w": 224,
+   "h": 28,
+   "text": "Open My Calendar →"
+  },
+  {
+   "kind": "button",
+   "x": 289,
+   "y": 252,
+   "w": 455,
+   "h": 37,
+   "text": "Due · Mon · BMGT343 Problem set 3: bond pricing"
+  },
+  {
+   "kind": "button",
+   "x": 750,
+   "y": 253,
+   "w": 58,
+   "h": 28,
+   "text": "Done"
+  },
+  {
+   "kind": "button",
+   "x": 289,
+   "y": 302,
+   "w": 455,
+   "h": 37,
+   "text": "Due · Tue · BMGT364 Reading: Ch. 6-7"
+  },
+  {
+   "kind": "button",
+   "x": 750,
+   "y": 303,
+   "w": 58,
+   "h": 28,
+   "text": "Done"
+  },
+  {
+   "kind": "button",
+   "x": 281,
+   "y": 353,
+   "w": 91,
+   "h": 27,
+   "text": "View all 8 →"
+  },
+  {
+   "kind": "button",
+   "x": 856,
+   "y": 163,
+   "w": 275,
+   "h": 37,
+   "text": "Spring registration Plan your Spring 2027 classes"
+  },
+  {
+   "kind": "button",
+   "x": 1143,
+   "y": 163,
+   "w": 224,
+   "h": 45,
+   "text": "Plan it with CampusAI Real sections, your times →"
+  },
+  {
+   "kind": "button",
+   "x": 856,
+   "y": 221,
+   "w": 275,
+   "h": 56,
+   "text": "Job Investment Banking Summer Analyst, 2027 at Evercore"
+  },
+  {
+   "kind": "button",
+   "x": 1143,
+   "y": 221,
+   "w": 224,
+   "h": 45,
+   "text": "Tailor my resume for Evercore →"
+  },
+  {
+   "kind": "button",
+   "x": 856,
+   "y": 290,
+   "w": 511,
+   "h": 37,
+   "text": "Event · Fri · 7:00 PM - 8:30 PM Finance Association, Resume & LinkedIn Night"
+  },
+  {
+   "kind": "button",
+   "x": 848,
+   "y": 341,
+   "w": 91,
+   "h": 27,
+   "text": "View all 6 →"
+  },
+  {
+   "kind": "button",
+   "x": 1319,
+   "y": 341,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1349,
+   "y": 341,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't a good recommendation"
+  },
+  {
+   "kind": "button",
+   "x": 1291,
+   "y": 437,
+   "w": 100,
+   "h": 28,
+   "text": "Open chat"
+  },
+  {
+   "kind": "button",
+   "x": 265,
+   "y": 502,
+   "w": 274,
+   "h": 80,
+   "text": "Career Am I a fit for Investment Banking Summer Analyst?"
+  },
+  {
+   "kind": "button",
+   "x": 549,
+   "y": 502,
+   "w": 274,
+   "h": 80,
+   "text": "Academics Ready to plan your spring classes?"
+  },
+  {
+   "kind": "button",
+   "x": 833,
+   "y": 502,
+   "w": 274,
+   "h": 80,
+   "text": "Events Sat How should I prep for Evercore Coffee Chat?"
+  },
+  {
+   "kind": "button",
+   "x": 1117,
+   "y": 502,
+   "w": 274,
+   "h": 80,
+   "text": "Campus Life What's open late tonight?"
+  },
+  {
+   "kind": "button",
+   "x": 1316,
+   "y": 622,
+   "w": 32,
+   "h": 32,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1354,
+   "y": 622,
+   "w": 32,
+   "h": 32,
+   "text": "Send message"
+  },
+  {
+   "kind": "button",
+   "x": 1298,
+   "y": 729,
+   "w": 93,
+   "h": 15,
+   "text": "All notifications"
+  },
+  {
+   "kind": "button",
+   "x": 249,
+   "y": 802,
+   "w": 1158,
+   "h": 83,
+   "text": "Assignment moved: BMGT380 · Reading Response 6: Remedies"
+  },
+  {
+   "kind": "button",
+   "x": 1133,
+   "y": 827,
+   "w": 153,
+   "h": 32,
+   "text": "Open My Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 249,
+   "y": 886,
+   "w": 1158,
+   "h": 81,
+   "text": "Your plan: Did you finish ANTH 101 at Montgomery College?"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "block",
+   "x": 8,
+   "y": 850,
+   "w": 199,
+   "h": 42,
+   "text": "MC Maya Chen 80% · Connect your transcript"
+  },
+  {
+   "kind": "block",
+   "x": 281,
+   "y": 157,
+   "w": 527,
+   "h": 89,
+   "text": "Moved · BMGT380 Reading Response 6: Remedies Moved from Wed, Oct 14→ to Sun, Oct 18 Open My Calendar → Canvas changed th"
+  },
+  {
+   "kind": "block",
+   "x": 281,
+   "y": 246,
+   "w": 527,
+   "h": 50,
+   "text": "Due · Mon · BMGT343 Problem set 3: bond pricing Done Worth 5% of your grade in Investments. Due Monday at 11:59 PM. 3 ot"
+  },
+  {
+   "kind": "block",
+   "x": 281,
+   "y": 296,
+   "w": 527,
+   "h": 49,
+   "text": "Due · Tue · BMGT364 Reading: Ch. 6-7 Done On your week in Management and Organization Theory. 4 other graded items are d"
+  },
+  {
+   "kind": "block",
+   "x": 848,
+   "y": 157,
+   "w": 527,
+   "h": 58,
+   "text": "Spring registration Plan your Spring 2027 classes Plan it with CampusAI Real sections, your times → UMD sends registrati"
+  },
+  {
+   "kind": "block",
+   "x": 848,
+   "y": 215,
+   "w": 527,
+   "h": 69,
+   "text": "Job Investment Banking Summer Analyst, 2027 at Evercore Tailor my resume for Evercore → Your finance coursework and the "
+  },
+  {
+   "kind": "block",
+   "x": 848,
+   "y": 284,
+   "w": 527,
+   "h": 49,
+   "text": "Event · Fri · 7:00 PM - 8:30 PM Finance Association, Resume & LinkedIn Night Your resume is going into fall banking book"
+  }
+ ]
+}

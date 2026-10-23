@@ -1,0 +1,36 @@
+node_modules
+dist
+.DS_Store
+.env
+
+# Ignore the output video from Git but not videos you import into src/.
+out
+
+# Footage and renders are too big for history; code, data and fonts are kept.
+public/**/*.mp4
+public/**/*.mov
+public/**/*.webm
+public/**/*.png
+public/**/*.jpg
+public/**/*.jpeg
+public/**/*.webp
+public/**/*.wav
+public/**/*.mp3
+public/**/*.m4a
+public/**/*.zip
+# Loose check stills saved at the studio root (named by frame number)
+/[0-9]*
+
+# Kept on this machine only (2026-10-23, when the studio became the team's public repo).
+# Other ventures and client jobs:
+src/private/*
+!src/private/README.md
+public/brooks/
+# Licensed font files: `npm run fonts` fetches them (ITF Free Font License, no redistribution)
+public/fonts/*.woff2
+# Recordings made by `npm run chat` (frames.json is useless without its frames)
+public/*/chat/
+# One-off capture scripts with this machine's paths, and draft voice notes
+public/four/registration/_capture/
+public/four/week/*.cjs
+public/audio/vo/

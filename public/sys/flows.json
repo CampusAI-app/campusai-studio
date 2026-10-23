@@ -1,0 +1,194 @@
+{
+ "captured": "2026-10-23T04:30:59.588Z",
+ "base": "https://campusai-demo.vercel.app",
+ "viewport": {
+  "w": 1440,
+  "h": 900,
+  "dpr": 2
+ },
+ "steps": [
+  {
+   "flow": "moved",
+   "before": "moved-0-dashboard",
+   "after": "moved-1-bell",
+   "press": {
+    "x": 1267,
+    "y": 34,
+    "label": "Notifications bell",
+    "rect": {
+     "x": 1225,
+     "y": 17,
+     "w": 83,
+     "h": 34
+    }
+   }
+  },
+  {
+   "flow": "moved",
+   "before": "moved-2-bell-open-calendar",
+   "after": "moved-3-calendar",
+   "press": {
+    "x": 1220,
+    "y": 204,
+    "label": "Open My Calendar",
+    "rect": {
+     "x": 1148,
+     "y": 190,
+     "w": 144,
+     "h": 27
+    }
+   }
+  },
+  {
+   "flow": "job",
+   "before": "job-0-list",
+   "after": "job-1-goldman",
+   "press": {
+    "x": 501,
+    "y": 456,
+    "label": "Goldman Sachs card",
+    "rect": {
+     "x": 340,
+     "y": 436,
+     "w": 322,
+     "h": 40
+    }
+   }
+  },
+  {
+   "flow": "spring",
+   "before": "spring-0-dashboard",
+   "after": "spring-0b-opened",
+   "press": {
+    "x": 686,
+    "y": 558,
+    "label": "Ready to plan your spring classes?",
+    "rect": {
+     "x": 549,
+     "y": 518,
+     "w": 274,
+     "h": 80
+    }
+   }
+  },
+  {
+   "flow": "spring",
+   "before": "spring-2-first-options",
+   "after": "spring-2-first-added",
+   "press": {
+    "x": 966,
+    "y": 378,
+    "label": "Section of BMGT440 Advanced",
+    "rect": {
+     "x": 721,
+     "y": 368,
+     "w": 490,
+     "h": 19
+    }
+   }
+  },
+  {
+   "flow": "spring",
+   "before": "spring-3-fourth-options",
+   "after": "spring-3-fourth-added",
+   "press": {
+    "x": 959,
+    "y": 123,
+    "label": "Section of BMGT495 Strategic",
+    "rect": {
+     "x": 721,
+     "y": 113,
+     "w": 476,
+     "h": 20
+    }
+   }
+  },
+  {
+   "flow": "spring",
+   "before": "spring-4-fifth-options",
+   "after": "spring-4-fifth-added",
+   "press": {
+    "x": 1283,
+    "y": 504,
+    "label": "Section of BMGT289D Frauds, Scams, and Thefts: What",
+    "rect": {
+     "x": 1208,
+     "y": 486,
+     "w": 149,
+     "h": 36
+    }
+   }
+  },
+  {
+   "flow": "cal",
+   "before": "cal-0-events",
+   "after": "cal-2-pressed",
+   "settled": "cal-3-added",
+   "press": {
+    "x": 984,
+    "y": 401,
+    "label": "Add to CampusAI Calendar",
+    "rect": {
+     "x": 849,
+     "y": 384,
+     "w": 269,
+     "h": 34
+    }
+   },
+   "buttonAfter": {
+    "x": 849,
+    "y": 381,
+    "w": 269,
+    "h": 36,
+    "text": "On your calendar"
+   },
+   "toast": {
+    "x": 705,
+    "y": 347,
+    "w": 346,
+    "h": 17,
+    "text": "Added. It will now show up in Your week on your dashboard."
+   }
+  },
+  {
+   "flow": "cal",
+   "before": "cal-4-nav",
+   "after": "cal-5-calendar-today-week",
+   "press": {
+    "x": 108,
+    "y": 122,
+    "label": "My Calendar (sidebar)",
+    "rect": {
+     "x": 8,
+     "y": 104,
+     "w": 199,
+     "h": 36
+    }
+   }
+  },
+  {
+   "flow": "cal",
+   "before": "cal-5-calendar-today-week",
+   "after": "cal-6-calendar-event-week",
+   "press": {
+    "x": 284,
+    "y": 24,
+    "label": "Next week",
+    "rect": {
+     "x": 270,
+     "y": 10,
+     "w": 28,
+     "h": 28
+    }
+   }
+  }
+ ],
+ "notes": [
+  "moved: Open My Calendar lands on Oct 18 – Oct 24, 2026; Reading Response 6 visible on My Calendar: false",
+  "moved: Reading Response 6 on My Calendar by week (week: found): Oct 11 – Oct 17, 2026: false; Oct 18 – Oct 24, 2026: false; Oct 25 – Oct 31, 2026: false. The tasks drawer for the week does not list it either. The calendar never shows it, so a film must not claim it lands there."
+ ],
+ "writes": [
+  "POST https://campusai-demo.vercel.app/api/v1/career/jobs/jp_3f9a1c07b2d40006/view",
+  "PATCH https://campusai-demo.vercel.app/api/profile"
+ ]
+}

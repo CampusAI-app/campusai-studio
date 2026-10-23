@@ -1,0 +1,288 @@
+{
+ "source": "https://campusai-demo.vercel.app",
+ "captured": "2026-10-21T22:16:30.227Z",
+ "dpr": 2,
+ "grid": {
+  "x": 478,
+  "y": 43,
+  "width": 962,
+  "height": 715
+ },
+ "pre": [
+  {
+   "i": 0,
+   "kind": "due",
+   "text": "Problem set 3: bond pricing",
+   "x": 177.5625,
+   "y": 66,
+   "w": 122.578125,
+   "h": 23
+  },
+  {
+   "i": 1,
+   "kind": "due",
+   "text": "Reading: Ch. 6-7",
+   "x": 309.140625,
+   "y": 66,
+   "w": 122.5625,
+   "h": 23
+  },
+  {
+   "i": 2,
+   "kind": "due",
+   "text": "Case brief: Palsgraf",
+   "x": 440.703125,
+   "y": 66,
+   "w": 122.578125,
+   "h": 23
+  },
+  {
+   "i": 3,
+   "kind": "due",
+   "text": "Quiz 2",
+   "x": 572.28125,
+   "y": 66,
+   "w": 122.5625,
+   "h": 23
+  },
+  {
+   "i": 4,
+   "kind": "due",
+   "text": "Reading: Ch. 8",
+   "x": 572.28125,
+   "y": 93,
+   "w": 122.5625,
+   "h": 23
+  },
+  {
+   "i": 5,
+   "kind": "due",
+   "text": "Quiz 4",
+   "x": 703.84375,
+   "y": 66,
+   "w": 122.578125,
+   "h": 23
+  },
+  {
+   "i": 6,
+   "kind": "class",
+   "text": "BMGT343",
+   "x": 175.421875,
+   "y": 281,
+   "w": 126.4375,
+   "h": 53
+  },
+  {
+   "i": 7,
+   "kind": "class",
+   "text": "BMGT380",
+   "x": 175.421875,
+   "y": 413,
+   "w": 126.4375,
+   "h": 53
+  },
+  {
+   "i": 8,
+   "kind": "work",
+   "text": "Work shift",
+   "x": 175.421875,
+   "y": 501,
+   "w": 126.4375,
+   "h": 86
+  },
+  {
+   "i": 9,
+   "kind": "class",
+   "text": "BMGT310",
+   "x": 306.859375,
+   "y": 215,
+   "w": 126.421875,
+   "h": 53
+  },
+  {
+   "i": 10,
+   "kind": "class",
+   "text": "BMGT364",
+   "x": 306.859375,
+   "y": 413,
+   "w": 126.421875,
+   "h": 53
+  },
+  {
+   "i": 11,
+   "kind": "class",
+   "text": "BMGT343",
+   "x": 438.28125,
+   "y": 281,
+   "w": 126.4375,
+   "h": 53
+  },
+  {
+   "i": 12,
+   "kind": "class",
+   "text": "BMGT380",
+   "x": 438.28125,
+   "y": 413,
+   "w": 126.4375,
+   "h": 53
+  },
+  {
+   "i": 13,
+   "kind": "work",
+   "text": "Work shift",
+   "x": 438.28125,
+   "y": 501,
+   "w": 126.4375,
+   "h": 86
+  },
+  {
+   "i": 14,
+   "kind": "class",
+   "text": "BMGT310",
+   "x": 569.71875,
+   "y": 215,
+   "w": 61.203125,
+   "h": 53
+  },
+  {
+   "i": 15,
+   "kind": "event",
+   "text": "Evercore Coffee Chat",
+   "x": 634.921875,
+   "y": 237,
+   "w": 61.203125,
+   "h": 64
+  },
+  {
+   "i": 16,
+   "kind": "class",
+   "text": "BMGT364",
+   "x": 569.71875,
+   "y": 413,
+   "w": 126.421875,
+   "h": 53
+  },
+  {
+   "i": 17,
+   "kind": "event",
+   "text": "Smith Finance Group Stock Pitch Night",
+   "x": 832.578125,
+   "y": 611,
+   "w": 126.421875,
+   "h": 64
+  },
+  {
+   "i": 18,
+   "kind": "suggested",
+   "text": "Deloitte Consulting, Coffee Chat",
+   "x": 569.71875,
+   "y": 501,
+   "w": 126.421875,
+   "h": 42
+  },
+  {
+   "i": 19,
+   "kind": "suggested",
+   "text": "Financial Modeling Bootcamp: 3-Statement to DCF",
+   "x": 701.140625,
+   "y": 545,
+   "w": 126.4375,
+   "h": 86
+  }
+ ],
+ "ask": {
+  "x": 224,
+  "y": 448.25,
+  "width": 239,
+  "height": 260.796875,
+  "row": {
+   "x": 13,
+   "y": 62.671875,
+   "w": 213,
+   "h": 49.75,
+   "text": "Find time to study for Quiz 2"
+  }
+ },
+ "events": {
+  "finassoc": {
+   "title": "Finance Association, Resume & LinkedIn Night",
+   "day": "WED",
+   "date": "21",
+   "w": 574,
+   "h": 209.59375
+  },
+  "evercore": {
+   "title": "Evercore Coffee Chat",
+   "day": "THU",
+   "date": "22",
+   "w": 574,
+   "h": 209.59375
+  },
+  "deloitte": {
+   "title": "Deloitte Consulting, Coffee Chat",
+   "day": "THU",
+   "date": "22",
+   "w": 574,
+   "h": 209.59375
+  },
+  "bootcamp": {
+   "title": "Financial Modeling Bootcamp: 3-Statement to DCF",
+   "day": "FRI",
+   "date": "23",
+   "w": 574,
+   "h": 209.59375
+  },
+  "pitch": {
+   "title": "Smith Finance Group Stock Pitch Night",
+   "day": "SAT",
+   "date": "24",
+   "w": 574,
+   "h": 209.59375
+  },
+  "fair": {
+   "title": "Smith Fall Career & Internship Fair",
+   "day": "SUN",
+   "date": "25",
+   "w": 574,
+   "h": 209.59375
+  }
+ },
+ "bootcampButton": {
+  "x": 15,
+  "y": 158.84375,
+  "w": 269,
+  "h": 34
+ },
+ "postBoot": {
+  "i": 17,
+  "kind": "event",
+  "text": "Financial Modeling Bootcamp: 3-Statement to DCF",
+  "x": 701.140625,
+  "y": 545,
+  "w": 126.4375,
+  "h": 86
+ },
+ "answer": {
+  "x": 1055,
+  "y": 124.140625,
+  "width": 389,
+  "height": 193.6875,
+  "pill": {
+   "x": 16,
+   "y": 140.1875,
+   "w": 249.328125,
+   "h": 37.5,
+   "text": "Wed, Oct 21, 6:30pm to 7:30pm"
+  },
+  "text": "BMGT343 Quiz 2, due Thu, Oct 22. I would study Wed, Oct 21, 6:30pm to 7:30pm, the last open stretch before it, so it is fresh.\n\nPress Add below and it goes straight on your calendar."
+ },
+ "postStudy": {
+  "i": 14,
+  "kind": "event",
+  "text": "Study: BMGT343 Quiz 2",
+  "x": 412.5625,
+  "y": 611,
+  "w": 117.859375,
+  "h": 42
+ }
+}

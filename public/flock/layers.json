@@ -1,0 +1,234 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "source": "https://campusai-demo.vercel.app/",
+ "captured": "2026-10-21T13:39:07.399Z",
+ "layers": [
+  {
+   "i": 0,
+   "group": "nav",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard"
+  },
+  {
+   "i": 1,
+   "group": "nav",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar"
+  },
+  {
+   "i": 2,
+   "group": "nav",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor"
+  },
+  {
+   "i": 3,
+   "group": "nav",
+   "x": 8,
+   "y": 180,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor"
+  },
+  {
+   "i": 4,
+   "group": "nav",
+   "x": 8,
+   "y": 218,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations"
+  },
+  {
+   "i": 5,
+   "group": "nav",
+   "x": 8,
+   "y": 256,
+   "w": 199,
+   "h": 36,
+   "text": "Events"
+  },
+  {
+   "i": 6,
+   "group": "nav",
+   "x": 8,
+   "y": 294,
+   "w": 199,
+   "h": 36,
+   "text": "Dining"
+  },
+  {
+   "i": 7,
+   "group": "nav",
+   "x": 8,
+   "y": 345,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI"
+  },
+  {
+   "i": 8,
+   "group": "brief",
+   "x": 281,
+   "y": 49,
+   "w": 1094,
+   "h": 39.671875,
+   "text": "Your daily brief"
+  },
+  {
+   "i": 9,
+   "group": "brief",
+   "x": 281,
+   "y": 116.671875,
+   "w": 527,
+   "h": 28.5,
+   "text": "Your week"
+  },
+  {
+   "i": 10,
+   "group": "brief",
+   "x": 848,
+   "y": 116.671875,
+   "w": 527,
+   "h": 28.5,
+   "text": "Worth a look"
+  },
+  {
+   "i": 11,
+   "group": "brief",
+   "x": 281,
+   "y": 157.171875,
+   "w": 527,
+   "h": 89.125,
+   "text": "Moved · BMGT380"
+  },
+  {
+   "i": 12,
+   "group": "brief",
+   "x": 281,
+   "y": 246.296875,
+   "w": 527,
+   "h": 49.75,
+   "text": "Due · Wed · BMGT380"
+  },
+  {
+   "i": 13,
+   "group": "brief",
+   "x": 281,
+   "y": 296.046875,
+   "w": 527,
+   "h": 56.5,
+   "text": "Quiz · Thu · BMGT343"
+  },
+  {
+   "i": 14,
+   "group": "brief",
+   "x": 848,
+   "y": 157.171875,
+   "w": 527,
+   "h": 57.5,
+   "text": "Spring registration"
+  },
+  {
+   "i": 15,
+   "group": "brief",
+   "x": 848,
+   "y": 214.671875,
+   "w": 527,
+   "h": 69.25,
+   "text": "Job"
+  },
+  {
+   "i": 16,
+   "group": "brief",
+   "x": 848,
+   "y": 283.921875,
+   "w": 527,
+   "h": 48.75,
+   "text": "Event · Wed · 3:00 PM - 4:00 PM"
+  },
+  {
+   "i": 17,
+   "group": "ask",
+   "x": 249,
+   "y": 429.296875,
+   "w": 1158,
+   "h": 60.671875,
+   "text": "✦"
+  },
+  {
+   "i": 18,
+   "group": "ask",
+   "x": 265,
+   "y": 509.96875,
+   "w": 274,
+   "h": 79.75,
+   "text": "Career"
+  },
+  {
+   "i": 19,
+   "group": "ask",
+   "x": 549,
+   "y": 509.96875,
+   "w": 274,
+   "h": 79.75,
+   "text": "Academics"
+  },
+  {
+   "i": 20,
+   "group": "ask",
+   "x": 833,
+   "y": 509.96875,
+   "w": 274,
+   "h": 79.75,
+   "text": "Events"
+  },
+  {
+   "i": 21,
+   "group": "ask",
+   "x": 1117,
+   "y": 509.96875,
+   "w": 274,
+   "h": 79.75,
+   "text": "Campus Life"
+  },
+  {
+   "i": 22,
+   "group": "ask",
+   "x": 270,
+   "y": 627.71875,
+   "w": 1040,
+   "h": 36,
+   "text": ""
+  },
+  {
+   "i": 23,
+   "group": "brief",
+   "x": 281,
+   "y": 360.546875,
+   "w": 90.625,
+   "h": 26.75,
+   "text": "View all 8 →"
+  },
+  {
+   "i": 24,
+   "group": "brief",
+   "x": 848,
+   "y": 340.671875,
+   "w": 90.625,
+   "h": 26.75,
+   "text": "View all 8 →"
+  }
+ ]
+}

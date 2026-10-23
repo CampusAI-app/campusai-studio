@@ -1,0 +1,39 @@
+{
+ "pageW": 720,
+ "pageH": 1120,
+ "dpr": 3,
+ "source": "https://campusai-demo.vercel.app/career?view=tailor&job_id=jp_3f9a1c07b2d40004",
+ "captured": "2026-10-23T03:48:23.608Z",
+ "boxes": {
+  "kicker": {
+   "x": 12,
+   "y": 119.5,
+   "w": 696,
+   "h": 861.4
+  },
+  "title": {
+   "x": 12,
+   "y": 136,
+   "w": 672,
+   "h": 25.5
+  },
+  "asks": {
+   "x": 13,
+   "y": 330.8,
+   "w": 694,
+   "h": 393.3
+  },
+  "change": {
+   "x": 13,
+   "y": 724,
+   "w": 694,
+   "h": 211.9
+  },
+  "pick": {
+   "x": 12,
+   "y": 211,
+   "w": 129,
+   "h": 32.8
+  }
+ }
+}

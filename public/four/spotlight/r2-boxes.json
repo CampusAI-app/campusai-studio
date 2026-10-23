@@ -1,0 +1,224 @@
+{
+ "desktop": {
+  "dashLink": {
+   "x": 1143,
+   "y": 220.671875,
+   "w": 224,
+   "h": 44.5
+  },
+  "changesHead": {
+   "x": 273,
+   "y": 253.21875,
+   "w": 522.40625,
+   "h": 27
+  },
+  "maCard": {
+   "x": 274,
+   "y": 418.609375,
+   "w": 1108,
+   "h": 89.890625
+  },
+  "list": {
+   "x": 273,
+   "y": 253.21875,
+   "w": 1110,
+   "h": 413.28125
+  },
+  "maCardOpen": {
+   "x": 274,
+   "y": 418.609375,
+   "w": 1108,
+   "h": 89.890625
+  },
+  "maText": "\u2726\nImprovement\nPut live M&A and restructuring deal teams on the page, not just your skills list\nThis posting asks for: Support live M&A and restructuring deal teams\nClose\n\u25be"
+ },
+ "phone": {
+  "cards": [
+   {
+    "x": 37,
+    "y": 1182.03125,
+    "w": 486,
+    "h": 194.171875
+   },
+   {
+    "x": 37,
+    "y": 1384.203125,
+    "w": 486,
+    "h": 176.78125
+   },
+   {
+    "x": 37,
+    "y": 1568.984375,
+    "w": 486,
+    "h": 93
+   },
+   {
+    "x": 37,
+    "y": 1669.984375,
+    "w": 486,
+    "h": 93
+   }
+  ],
+  "open": {
+   "w": 486,
+   "h": 470.15625,
+   "lines": [
+    {
+     "t": "\u2726",
+     "x": 19,
+     "y": 17,
+     "w": 11.90625,
+     "h": 18
+    },
+    {
+     "t": "Improvement",
+     "x": 42.90625,
+     "y": 15,
+     "w": 77.234375,
+     "h": 15
+    },
+    {
+     "t": "Put live M&A and restructuring deal team",
+     "x": 42.90625,
+     "y": 35,
+     "w": 272.71875,
+     "h": 17
+    },
+    {
+     "t": "Put live M&A and restructuring deal team",
+     "x": 42.90625,
+     "y": 57.5,
+     "w": 240.78125,
+     "h": 17
+    },
+    {
+     "t": "Put live M&A and restructuring deal team",
+     "x": 42.90625,
+     "y": 80,
+     "w": 66.765625,
+     "h": 17
+    },
+    {
+     "t": "This posting asks for:",
+     "x": 42.90625,
+     "y": 105.5,
+     "w": 126.90625,
+     "h": 15
+    },
+    {
+     "t": "Support live M&A and restructuring deal ",
+     "x": 173.1875,
+     "y": 105.5,
+     "w": 122.796875,
+     "h": 15
+    },
+    {
+     "t": "Support live M&A and restructuring deal ",
+     "x": 42.90625,
+     "y": 122.890625,
+     "w": 138.5625,
+     "h": 15
+    },
+    {
+     "t": "Close",
+     "x": 344.875,
+     "y": 21,
+     "w": 33.203125,
+     "h": 15
+    },
+    {
+     "t": "\u25be",
+     "x": 382.078125,
+     "y": 23,
+     "w": 4.921875,
+     "h": 12
+    },
+    {
+     "t": "Why this helps",
+     "x": 33,
+     "y": 169.28125,
+     "w": 92.84375,
+     "h": 16
+    },
+    {
+     "t": "This posting names it directly, and your",
+     "x": 33,
+     "y": 193.78125,
+     "w": 411.375,
+     "h": 16
+    },
+    {
+     "t": "This posting names it directly, and your",
+     "x": 33,
+     "y": 214.703125,
+     "w": 421.578125,
+     "h": 16
+    },
+    {
+     "t": "This posting names it directly, and your",
+     "x": 33,
+     "y": 235.625,
+     "w": 196.59375,
+     "h": 16
+    },
+    {
+     "t": "Current",
+     "x": 33,
+     "y": 265.546875,
+     "w": 41.953125,
+     "h": 13
+    },
+    {
+     "t": "Skills: Financial statement analysis, va",
+     "x": 33,
+     "y": 283.546875,
+     "w": 429.609375,
+     "h": 16
+    },
+    {
+     "t": "Skills: Financial statement analysis, va",
+     "x": 33,
+     "y": 304.46875,
+     "w": 91.859375,
+     "h": 16
+    },
+    {
+     "t": "Suggested",
+     "x": 33,
+     "y": 334.390625,
+     "w": 58.921875,
+     "h": 13
+    },
+    {
+     "t": "Skills: Financial statement analysis, va",
+     "x": 33,
+     "y": 352.390625,
+     "w": 429.609375,
+     "h": 16
+    },
+    {
+     "t": "Skills: Financial statement analysis, va",
+     "x": 33,
+     "y": 373.3125,
+     "w": 397.3125,
+     "h": 16
+    },
+    {
+     "t": "Skills: Financial statement analysis, va",
+     "x": 33,
+     "y": 394.234375,
+     "w": 36.859375,
+     "h": 16
+    },
+    {
+     "t": "Copy rewrite",
+     "x": 358.578125,
+     "y": 431.15625,
+     "w": 75.421875,
+     "h": 15
+    }
+   ]
+  },
+  "text": "\u2726\nImprovement\nPut live M&A and restructuring deal teams on the page, not just your skills list\nThis posting asks for: Support live M&A and restructuring deal teams\nClose\n\u25be\nWhy this helps\n\nThis posting names it directly, and your resume is the only place a reviewer checks. It is on your profile's skills list, but no bullet on the resume shows where you did it.\n\nCurrent\nSkills: Financial statement analysis, valuation (DCF, comps), Excel & PowerPoint.\nSuggested\nSkills: Financial statement analysis, valuation (DCF, comps), Excel & PowerPoint, applied across 3 equity pitches and a live fund book.\nCopy rewrite"
+ }
+}

@@ -1,0 +1,786 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "tallH": 3600,
+ "dpr": 2,
+ "source": "https://campusai-demo.vercel.app/career?view=jobs&student_signal=intern%2Cco_op%2Cnew_grad%2Centry_level&job=jp_3f9a1c07b2d40006",
+ "captured": "2026-10-23T02:51:12.227Z",
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 269,
+   "y": 101,
+   "w": 435,
+   "h": 30,
+   "text": "Jobs for you"
+  },
+  {
+   "kind": "heading",
+   "x": 798,
+   "y": 235,
+   "w": 568,
+   "h": 24,
+   "text": "2027 Summer Analyst, Global Banking and Markets"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 394,
+   "w": 131,
+   "h": 21,
+   "text": "✦ Why this fits you"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 595,
+   "w": 582,
+   "h": 21,
+   "text": "About this role"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 767,
+   "w": 582,
+   "h": 21,
+   "text": "What they're looking for"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 986,
+   "w": 582,
+   "h": 21,
+   "text": "The full posting"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 1487,
+   "w": 177,
+   "h": 21,
+   "text": "Skills recruiters screen for"
+  },
+  {
+   "kind": "heading",
+   "x": 815,
+   "y": 1673,
+   "w": 438,
+   "h": 21,
+   "text": "About Goldman Sachs"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 8,
+   "w": 56,
+   "h": 40,
+   "text": "Expand sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Collapse Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 311,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 240,
+   "y": 36,
+   "w": 141,
+   "h": 32,
+   "text": "Career Overview"
+  },
+  {
+   "kind": "button",
+   "x": 728,
+   "y": 109,
+   "w": 339,
+   "h": 36,
+   "text": "✦Aiming for Investment Banking Summer Analyst +2"
+  },
+  {
+   "kind": "button",
+   "x": 1093,
+   "y": 114,
+   "w": 42,
+   "h": 26,
+   "text": "List"
+  },
+  {
+   "kind": "button",
+   "x": 1137,
+   "y": 114,
+   "w": 45,
+   "h": 26,
+   "text": "Map"
+  },
+  {
+   "kind": "button",
+   "x": 272,
+   "y": 168,
+   "w": 58,
+   "h": 31,
+   "text": "Jobs"
+  },
+  {
+   "kind": "button",
+   "x": 332,
+   "y": 168,
+   "w": 78,
+   "h": 31,
+   "text": "Saved 8"
+  },
+  {
+   "kind": "button",
+   "x": 609,
+   "y": 167,
+   "w": 100,
+   "h": 33,
+   "text": "Roles 4"
+  },
+  {
+   "kind": "button",
+   "x": 716,
+   "y": 167,
+   "w": 96,
+   "h": 33,
+   "text": "Location"
+  },
+  {
+   "kind": "button",
+   "x": 821,
+   "y": 167,
+   "w": 106,
+   "h": 33,
+   "text": "Work type"
+  },
+  {
+   "kind": "button",
+   "x": 935,
+   "y": 167,
+   "w": 102,
+   "h": 33,
+   "text": "Company"
+  },
+  {
+   "kind": "button",
+   "x": 1045,
+   "y": 167,
+   "w": 87,
+   "h": 33,
+   "text": "Posted"
+  },
+  {
+   "kind": "button",
+   "x": 1139,
+   "y": 170,
+   "w": 87,
+   "h": 27,
+   "text": "Clear filters"
+  },
+  {
+   "kind": "button",
+   "x": 1270,
+   "y": 170,
+   "w": 117,
+   "h": 27,
+   "text": "Best match"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 251,
+   "w": 322,
+   "h": 20,
+   "text": "Audit and Assurance Intern, Summer 2027"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 436,
+   "w": 322,
+   "h": 40,
+   "text": "2027 Summer Analyst, Global Banking and Markets"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 641,
+   "w": 322,
+   "h": 20,
+   "text": "Corporate Finance Summer Analyst, 2027"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 803,
+   "w": 322,
+   "h": 20,
+   "text": "College Graduate Development Program"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 965,
+   "w": 322,
+   "h": 20,
+   "text": "Data Analyst Intern"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 1124,
+   "w": 322,
+   "h": 20,
+   "text": "Capital Markets Intern, Summer 2027"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 1286,
+   "w": 322,
+   "h": 20,
+   "text": "Summer Analyst, Corporate Private Equity"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 1466,
+   "w": 322,
+   "h": 20,
+   "text": "Data Science Intern"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 1628,
+   "w": 322,
+   "h": 20,
+   "text": "Marketing Analyst, Entry Level"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 1790,
+   "w": 322,
+   "h": 20,
+   "text": "Software Engineering Intern, Summer 2027"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 1940,
+   "w": 322,
+   "h": 40,
+   "text": "Mechanical Engineer Internship, Robotics Hardware"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 2122,
+   "w": 322,
+   "h": 40,
+   "text": "AI SW Intern, Cloud, Infrastructure & Data Centre Deployment"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 2342,
+   "w": 322,
+   "h": 20,
+   "text": "Solutions Architect, Early Career"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 2521,
+   "w": 322,
+   "h": 20,
+   "text": "Systems Engineer Associate"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 2701,
+   "w": 322,
+   "h": 20,
+   "text": "Store Operations Management Trainee"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 2880,
+   "w": 322,
+   "h": 20,
+   "text": "Product Design Intern"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 3042,
+   "w": 322,
+   "h": 20,
+   "text": "Clinical Research Coordinator I"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 3204,
+   "w": 322,
+   "h": 20,
+   "text": "Co-op, Mechanical Engineering (Spring 2027)"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 3384,
+   "w": 322,
+   "h": 20,
+   "text": "Associate Software Engineer"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 3566,
+   "w": 322,
+   "h": 20,
+   "text": "Cloud Support Associate"
+  },
+  {
+   "kind": "button",
+   "x": 939,
+   "y": 324,
+   "w": 130,
+   "h": 38,
+   "text": "✦ Tailor resume"
+  },
+  {
+   "kind": "button",
+   "x": 1077,
+   "y": 324,
+   "w": 151,
+   "h": 38,
+   "text": "Write a cover letter"
+  },
+  {
+   "kind": "button",
+   "x": 1236,
+   "y": 324,
+   "w": 89,
+   "h": 38,
+   "text": "Saved"
+  },
+  {
+   "kind": "button",
+   "x": 759,
+   "y": 1989,
+   "w": 221,
+   "h": 20,
+   "text": "See all 2 roles at Goldman Sachs"
+  },
+  {
+   "kind": "button",
+   "x": 992,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1038,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 1084,
+   "y": 816,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 311,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 349,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 380,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 411,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 349,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 387,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 425,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 476,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 84,
+   "w": 1160,
+   "h": 3754,
+   "text": "Jobs for you 22 open student roles at curated US employers, checked today at 5:12 AM ✦Aimi"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 214,
+   "w": 436,
+   "h": 158,
+   "text": "D Deloitte ✦ Strong match Big 4 Internship Audit and Assurance Intern, Summer 2027 McLean,"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 382,
+   "w": 436,
+   "h": 195,
+   "text": "G Goldman Sachs ✦ Strong match Bulge bracket Internship 2027 Summer Analyst, Global Bankin"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 586,
+   "w": 436,
+   "h": 170,
+   "text": "C Capital One ✦ Strong match Fortune 500 Internship Corporate Finance Summer Analyst, 2027"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 766,
+   "w": 436,
+   "h": 152,
+   "text": "U Uline ✦ Good match New grad College Graduate Development Program Kenosha, WI A year of b"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 928,
+   "w": 436,
+   "h": 132,
+   "text": "A Acme Corp ✦ Good match Internship Data Analyst Intern You have Excel and data analysis, "
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 1070,
+   "w": 436,
+   "h": 170,
+   "text": "F Fannie Mae ✦ Good match Fortune 500 Internship Capital Markets Intern, Summer 2027 Hybri"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 1249,
+   "w": 436,
+   "h": 152,
+   "text": "T The Carlyle Group ✦ Good match Internship Summer Analyst, Corporate Private Equity Washi"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 1411,
+   "w": 436,
+   "h": 170,
+   "text": "N Northwind Analytics ✦ Good match Well-known employer Internship Data Science Intern Hybr"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 1591,
+   "w": 436,
+   "h": 152,
+   "text": "A Acme Corp ✦ Good match Entry level Marketing Analyst, Entry Level Baltimore, MD You have"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 1753,
+   "w": 436,
+   "h": 140,
+   "text": "3 3M ✦ Possible match Fortune 500 Internship Software Engineering Intern, Summer 2027 Hybr"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 1903,
+   "w": 436,
+   "h": 172,
+   "text": "F Field AI ✦ Possible match Internship Mechanical Engineer Internship, Robotics Hardware B"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 2085,
+   "w": 436,
+   "h": 172,
+   "text": "T Tenstorrent ✦ Possible match Internship AI SW Intern, Cloud, Infrastructure & Data Centr"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 2267,
+   "w": 436,
+   "h": 190,
+   "text": "A Amazon Web Services ✦ Possible match Part of a Big Tech company New grad Solutions Archi"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 2467,
+   "w": 436,
+   "h": 170,
+   "text": "L Lockheed Martin ✦ Possible match Defense prime Entry level Systems Engineer Associate Be"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 2646,
+   "w": 436,
+   "h": 170,
+   "text": "H Harris Teeter ✦ Possible match Part of a Fortune 100 company New grad Store Operations M"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 2826,
+   "w": 436,
+   "h": 170,
+   "text": "T Tessera Labs ✦ Possible match Startup Internship Product Design Intern Remote (US)·$35-$"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 3005,
+   "w": 436,
+   "h": 152,
+   "text": "M MedStar Health ✦ Possible match Entry level Clinical Research Coordinator I Washington, "
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 3167,
+   "w": 436,
+   "h": 152,
+   "text": "3 3M ✦ Possible match Fortune 500 Co-op Co-op, Mechanical Engineering (Spring 2027) Austin"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 3329,
+   "w": 436,
+   "h": 152,
+   "text": "T Tessera Labs ✦ Possible match Startup New grad Associate Software Engineer Remote (US)·$"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 3491,
+   "w": 436,
+   "h": 190,
+   "text": "A Amazon Web Services ✦ Possible match Part of a Big Tech company Entry level Cloud Suppor"
+  },
+  {
+   "kind": "card",
+   "x": 721,
+   "y": 214,
+   "w": 666,
+   "h": 752,
+   "text": "G 2027 Summer Analyst, Global Banking and Markets Goldman Sachs · ✦ Strong match · Bulge b"
+  },
+  {
+   "kind": "card",
+   "x": 742,
+   "y": 377,
+   "w": 624,
+   "h": 1251,
+   "text": "✦ Why this fits you You have financial statement analysis, Excel, accounting and PowerPoin"
+  },
+  {
+   "kind": "card",
+   "x": 742,
+   "y": 1644,
+   "w": 624,
+   "h": 381,
+   "text": "G About Goldman Sachs Website (goldmansachs.com) Industry Investment and trading Size 5,00"
+  }
+ ]
+}

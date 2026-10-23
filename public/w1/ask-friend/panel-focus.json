@@ -1,0 +1,43 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "source": "https://campusai-demo.vercel.app/",
+ "captured": "2026-10-23T03:52:41.939Z",
+ "textarea": {
+  "x": 1040,
+  "y": 843,
+  "w": 303,
+  "h": 36
+ },
+ "style": {
+  "fontSize": 13,
+  "lineHeight": 21.125,
+  "fontWeight": 400,
+  "color": "rgb(242, 241, 239)",
+  "fontFamily": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+  "placeholder": "Ask about your schedule, events, or campus...",
+  "paddingLeft": 0,
+  "paddingTop": 0
+ },
+ "textW": 239.30029296875,
+ "field": {
+  "x": 993,
+  "y": 834,
+  "w": 435,
+  "h": 54,
+  "radius": 15
+ },
+ "send": {
+  "x": 1387,
+  "y": 845,
+  "w": 32,
+  "h": 32
+ },
+ "panel": {
+  "x": 980,
+  "y": 0,
+  "w": 460,
+  "h": 900
+ }
+}

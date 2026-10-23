@@ -1,0 +1,415 @@
+{
+ "dpr": 5,
+ "box": {
+  "x": 158,
+  "y": 116,
+  "width": 591,
+  "height": 716,
+  "pitch": 98.4296875
+ },
+ "box2": {
+  "x": 158,
+  "y": 116,
+  "width": 591,
+  "height": 716,
+  "pitch": 98.4296875
+ },
+ "tasksClip": {
+  "x": 20,
+  "y": 891,
+  "width": 420,
+  "height": 321
+ },
+ "fairAdd": {
+  "x": 15,
+  "y": 149.84375,
+  "width": 132,
+  "height": 34
+ },
+ "fairBox": {
+  "x": 1005.578125,
+  "y": 287.703125,
+  "width": 300,
+  "height": 198.59375
+ },
+ "initBlocks": [
+  {
+   "x": 4.421875,
+   "y": 61,
+   "w": 89.4375,
+   "h": 23,
+   "t": "Problem set 3: bond pricing",
+   "dashed": false
+  },
+  {
+   "x": 102.859375,
+   "y": 61,
+   "w": 89.421875,
+   "h": 23,
+   "t": "Reading: Ch. 6-7",
+   "dashed": false
+  },
+  {
+   "x": 102.859375,
+   "y": 88,
+   "w": 89.421875,
+   "h": 23,
+   "t": "Case Analysis: Zappos",
+   "dashed": false
+  },
+  {
+   "x": 201.28125,
+   "y": 61,
+   "w": 89.4375,
+   "h": 23,
+   "t": "Reading Response 5: Breach",
+   "dashed": false
+  },
+  {
+   "x": 299.71875,
+   "y": 61,
+   "w": 89.421875,
+   "h": 23,
+   "t": "Quiz 2",
+   "dashed": false
+  },
+  {
+   "x": 299.71875,
+   "y": 88,
+   "w": 89.421875,
+   "h": 23,
+   "t": "Reading: Ch. 8",
+   "dashed": false
+  },
+  {
+   "x": 299.71875,
+   "y": 120,
+   "w": 89.421875,
+   "h": 19,
+   "t": "+1 more",
+   "dashed": false
+  },
+  {
+   "x": 398.140625,
+   "y": 61,
+   "w": 89.4375,
+   "h": 23,
+   "t": "Quiz 4",
+   "dashed": false
+  },
+  {
+   "x": 398.140625,
+   "y": 88,
+   "w": 89.4375,
+   "h": 23,
+   "t": "Peer Review: Partner Memo",
+   "dashed": false
+  },
+  {
+   "x": 2.28125,
+   "y": 276,
+   "w": 93.296875,
+   "h": 53,
+   "t": "BMGT343 | Investments",
+   "dashed": false
+  },
+  {
+   "x": 2.28125,
+   "y": 408,
+   "w": 93.296875,
+   "h": 53,
+   "t": "BMGT380 | Business Law I",
+   "dashed": false
+  },
+  {
+   "x": 2.28125,
+   "y": 496,
+   "w": 93.296875,
+   "h": 86,
+   "t": "Work shift | McKeldin Library | ×",
+   "dashed": false
+  },
+  {
+   "x": 100.578125,
+   "y": 210,
+   "w": 44.640625,
+   "h": 53,
+   "t": "BMGT310 | Intermediate Accounting I",
+   "dashed": false
+  },
+  {
+   "x": 149.21875,
+   "y": 232,
+   "w": 44.640625,
+   "h": 64,
+   "t": "Evercore Coffee Chat | Van Munching Hall",
+   "dashed": false
+  },
+  {
+   "x": 100.578125,
+   "y": 408,
+   "w": 93.28125,
+   "h": 53,
+   "t": "BMGT364 | Management and Organization Theory",
+   "dashed": false
+  },
+  {
+   "x": 198.859375,
+   "y": 276,
+   "w": 93.296875,
+   "h": 53,
+   "t": "BMGT343 | Investments",
+   "dashed": false
+  },
+  {
+   "x": 198.859375,
+   "y": 408,
+   "w": 93.296875,
+   "h": 53,
+   "t": "BMGT380 | Business Law I",
+   "dashed": false
+  },
+  {
+   "x": 198.859375,
+   "y": 496,
+   "w": 93.296875,
+   "h": 86,
+   "t": "Work shift | McKeldin Library | ×",
+   "dashed": false
+  },
+  {
+   "x": 297.15625,
+   "y": 210,
+   "w": 93.28125,
+   "h": 53,
+   "t": "BMGT310 | Intermediate Accounting I",
+   "dashed": false
+  },
+  {
+   "x": 297.15625,
+   "y": 408,
+   "w": 93.28125,
+   "h": 53,
+   "t": "BMGT364 | Management and Organization Theory",
+   "dashed": false
+  },
+  {
+   "x": 297.15625,
+   "y": 606,
+   "w": 93.28125,
+   "h": 64,
+   "t": "Smith Finance Group Stock Pitch Night | Van Munching Hall",
+   "dashed": false
+  },
+  {
+   "x": 395.4375,
+   "y": 232,
+   "w": 93.28125,
+   "h": 218,
+   "t": "✦ | Suggested | Smith Fall Career & Internship Fair | Every ",
+   "dashed": true
+  },
+  {
+   "x": 493.71875,
+   "y": 584,
+   "w": 93.28125,
+   "h": 64,
+   "t": "✦ | Suggested | Morgan Stanley, Sales & Trading Info Session",
+   "dashed": true
+  }
+ ],
+ "fullBlocks": [
+  {
+   "x": 4.421875,
+   "y": 61,
+   "w": 89.4375,
+   "h": 23,
+   "t": "Problem set 3: bond pricing",
+   "dashed": false
+  },
+  {
+   "x": 102.859375,
+   "y": 61,
+   "w": 89.421875,
+   "h": 23,
+   "t": "Reading: Ch. 6-7",
+   "dashed": false
+  },
+  {
+   "x": 102.859375,
+   "y": 88,
+   "w": 89.421875,
+   "h": 23,
+   "t": "Case Analysis: Zappos",
+   "dashed": false
+  },
+  {
+   "x": 201.28125,
+   "y": 61,
+   "w": 89.4375,
+   "h": 23,
+   "t": "Reading Response 5: Breach",
+   "dashed": false
+  },
+  {
+   "x": 299.71875,
+   "y": 61,
+   "w": 89.421875,
+   "h": 23,
+   "t": "Quiz 2",
+   "dashed": false
+  },
+  {
+   "x": 299.71875,
+   "y": 88,
+   "w": 89.421875,
+   "h": 23,
+   "t": "Reading: Ch. 8",
+   "dashed": false
+  },
+  {
+   "x": 299.71875,
+   "y": 120,
+   "w": 89.421875,
+   "h": 19,
+   "t": "+1 more",
+   "dashed": false
+  },
+  {
+   "x": 398.140625,
+   "y": 61,
+   "w": 89.4375,
+   "h": 23,
+   "t": "Quiz 4",
+   "dashed": false
+  },
+  {
+   "x": 398.140625,
+   "y": 88,
+   "w": 89.4375,
+   "h": 23,
+   "t": "Peer Review: Partner Memo",
+   "dashed": false
+  },
+  {
+   "x": 2.28125,
+   "y": 276,
+   "w": 93.296875,
+   "h": 53,
+   "t": "BMGT343 | Investments",
+   "dashed": false
+  },
+  {
+   "x": 2.28125,
+   "y": 408,
+   "w": 93.296875,
+   "h": 53,
+   "t": "BMGT380 | Business Law I",
+   "dashed": false
+  },
+  {
+   "x": 2.28125,
+   "y": 496,
+   "w": 93.296875,
+   "h": 86,
+   "t": "Work shift | McKeldin Library | ×",
+   "dashed": false
+  },
+  {
+   "x": 100.578125,
+   "y": 210,
+   "w": 44.640625,
+   "h": 53,
+   "t": "BMGT310 | Intermediate Accounting I",
+   "dashed": false
+  },
+  {
+   "x": 149.21875,
+   "y": 232,
+   "w": 44.640625,
+   "h": 64,
+   "t": "Evercore Coffee Chat | Van Munching Hall",
+   "dashed": false
+  },
+  {
+   "x": 100.578125,
+   "y": 408,
+   "w": 93.28125,
+   "h": 53,
+   "t": "BMGT364 | Management and Organization Theory",
+   "dashed": false
+  },
+  {
+   "x": 198.859375,
+   "y": 276,
+   "w": 93.296875,
+   "h": 53,
+   "t": "BMGT343 | Investments",
+   "dashed": false
+  },
+  {
+   "x": 198.859375,
+   "y": 408,
+   "w": 93.296875,
+   "h": 53,
+   "t": "BMGT380 | Business Law I",
+   "dashed": false
+  },
+  {
+   "x": 198.859375,
+   "y": 496,
+   "w": 93.296875,
+   "h": 86,
+   "t": "Work shift | McKeldin Library | ×",
+   "dashed": false
+  },
+  {
+   "x": 198.859375,
+   "y": 584,
+   "w": 93.296875,
+   "h": 86,
+   "t": "Study: BMGT343 Quiz 2 | ×",
+   "dashed": false
+  },
+  {
+   "x": 297.15625,
+   "y": 210,
+   "w": 93.28125,
+   "h": 53,
+   "t": "BMGT310 | Intermediate Accounting I",
+   "dashed": false
+  },
+  {
+   "x": 297.15625,
+   "y": 408,
+   "w": 93.28125,
+   "h": 53,
+   "t": "BMGT364 | Management and Organization Theory",
+   "dashed": false
+  },
+  {
+   "x": 297.15625,
+   "y": 606,
+   "w": 93.28125,
+   "h": 64,
+   "t": "Smith Finance Group Stock Pitch Night | Van Munching Hall",
+   "dashed": false
+  },
+  {
+   "x": 395.4375,
+   "y": 232,
+   "w": 93.28125,
+   "h": 218,
+   "t": "Smith Fall Career & Internship Fair | The Hotel at UMD",
+   "dashed": false
+  },
+  {
+   "x": 493.71875,
+   "y": 584,
+   "w": 93.28125,
+   "h": 64,
+   "t": "✦ | Suggested | Morgan Stanley, Sales & Trading Info Session",
+   "dashed": true
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+  "_what": "The numbers every film is checked against (2026-10-23). One file so the checker (scripts/check-film.mjs) and the films (system/motion.ts) read the same rule. Change a rule here, never in a film. Each value cites where it was settled.",
+  "fps": 30,
+  "reading": {
+    "_source": "studio SKILL.md 'Time on screen': letters / 15 + 1.5 s, never under 1.8 s; a spoken line's caption at least the line plus 0.6 s",
+    "lettersPerSecond": 15,
+    "base": 1.5,
+    "min": 1.8,
+    "captionPad": 0.6
+  },
+  "pace": {
+    "_source": "studio SKILL.md: beats with no text move at about one idea per 1.7 s; the hero sits at 60 to 75% of the runtime",
+    "ideaSeconds": 1.7,
+    "heroFrom": 0.6,
+    "heroTo": 0.75
+  },
+  "logo": {
+    "_source": "Jacob 2026-10-22: logo near the start (inside the first 2 s, never delaying a hook in the first 0.5 s), always at the end",
+    "firstBy": 2.0,
+    "hookBy": 0.5
+  },
+  "end": {
+    "_source": "Jacob 2026-10-23 approved the What Ships finding for the system formats: logo plus campusai.app (Instagram: Link in bio), held about 3 s, never fully still",
+    "url": "campusai.app",
+    "instagram": "Link in bio",
+    "holdMin": 2.5,
+    "holdMax": 5.0
+  },
+  "formats": {
+    "_source": "What Ships analysis 2026-10-23 and the pro-process research: launch film about 45 s, single feature 10 to 20 s, scenario triplet 55 to 95 s, bumpers built natively at 6 s",
+    "like-when": { "min": 45, "max": 80 },
+    "feature-15": { "min": 10, "max": 22 },
+    "bumper-6": { "min": 5, "max": 7 },
+    "one-task": { "min": 40, "max": 95 },
+    "custom": { "min": 3, "max": 120 }
+  },
+  "banned": {
+    "_source": "studio rules and rules/campusai.md: no em dashes, never Sandy Spring, never ChatGPT, no Maryland imagery (Testudo), no 'Free for UMD students'",
+    "strings": ["—", "Sandy Spring", "ChatGPT", "Testudo", "Free for UMD"],
+    "caseInsensitive": true
+  },
+  "maskRects": {
+    "_source": "the Maryland M beside the logo in the sidebar, measured 2026-10-22 on the 1440x900 captures (CSS px). x 108 to 112 is our own logo's sparkle, so the patch starts at 116",
+    "maryland-m": { "x": 116, "y": 10, "w": 40, "h": 36 }
+  }
+}

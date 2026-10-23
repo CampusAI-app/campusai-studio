@@ -1,0 +1,21 @@
+{
+ "pageW": 720,
+ "pageH": 1120,
+ "dpr": 3,
+ "source": "https://campusai-demo.vercel.app/career?view=jobs&student_signal=intern%2Cco_op%2Cnew_grad%2Centry_level",
+ "captured": "2026-10-23T03:48:14.172Z",
+ "boxes": {
+  "card": {
+   "x": 33,
+   "y": 418.25,
+   "w": 654,
+   "h": 140.3125
+  },
+  "title": {
+   "x": 104,
+   "y": 455.25,
+   "w": 540,
+   "h": 19.9375
+  }
+ }
+}

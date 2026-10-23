@@ -1,0 +1,50 @@
+[
+ {
+  "name": "card0.png",
+  "text": "D | Deloitte",
+  "w": 435.671875,
+  "h": 157.5
+ },
+ {
+  "name": "card1.png",
+  "text": "C | Capital One",
+  "w": 435.671875,
+  "h": 169.5
+ },
+ {
+  "name": "card2.png",
+  "text": "G | Goldman Sachs",
+  "w": 435.671875,
+  "h": 194.9375
+ },
+ {
+  "name": "card3.png",
+  "text": "U | Uline",
+  "w": 435.671875,
+  "h": 152
+ },
+ {
+  "name": "card4.png",
+  "text": "A | Acme Corp",
+  "w": 435.671875,
+  "h": 131.8125
+ },
+ {
+  "name": "card5.png",
+  "text": "F | Fannie Mae",
+  "w": 435.671875,
+  "h": 169.5
+ },
+ {
+  "name": "card6.png",
+  "text": "T | The Carlyle Group",
+  "w": 435.671875,
+  "h": 152
+ },
+ {
+  "name": "card7.png",
+  "text": "N | Northwind Analytics",
+  "w": 435.671875,
+  "h": 169.5
+ }
+]

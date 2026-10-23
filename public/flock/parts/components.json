@@ -1,0 +1,60 @@
+{
+ "source": "https://campusai-demo.vercel.app",
+ "captured": "2026-10-21T15:37:24.905Z",
+ "components": [
+  {
+   "name": "event",
+   "path": "/events",
+   "w": 574,
+   "h": 209.59375
+  },
+  {
+   "name": "job",
+   "path": "/career?view=jobs",
+   "w": 435.671875,
+   "h": 157.5
+  },
+  {
+   "name": "job2",
+   "path": "/career?view=jobs",
+   "w": 435.671875,
+   "h": 169.5
+  },
+  {
+   "name": "job3",
+   "path": "/career?view=jobs",
+   "w": 435.671875,
+   "h": 194.9375
+  },
+  {
+   "name": "detail",
+   "path": "/career?view=jobs",
+   "w": 666.3125,
+   "h": 520
+  },
+  {
+   "name": "calendar",
+   "path": "/calendar",
+   "w": 968,
+   "h": 712
+  },
+  {
+   "name": "progress",
+   "path": "/academics/planner",
+   "w": 1160,
+   "h": 260.75
+  },
+  {
+   "name": "ask",
+   "path": "/",
+   "w": 1160,
+   "h": 257.421875
+  },
+  {
+   "name": "brief",
+   "path": "/",
+   "w": 1160,
+   "h": 372.296875
+  }
+ ]
+}

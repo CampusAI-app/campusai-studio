@@ -1,0 +1,98 @@
+{
+  "mode": "dark",
+  "w": 1440,
+  "h": 900,
+  "marks": [
+    {
+      "name": "surface",
+      "at": 3.015
+    },
+    {
+      "name": "input",
+      "box": {
+        "x": 533,
+        "y": 802.5,
+        "width": 576,
+        "height": 36
+      }
+    },
+    {
+      "name": "typing-start",
+      "at": 4.846
+    },
+    {
+      "name": "question-sent",
+      "at": 6.517
+    },
+    {
+      "name": "steps",
+      "box": {
+        "x": 454,
+        "y": 191.87338256835938,
+        "width": 772,
+        "height": 51
+      }
+    },
+    {
+      "name": "first-token",
+      "at": 11.516
+    },
+    {
+      "name": "answer-complete",
+      "at": 13.03
+    },
+    {
+      "name": "input-after",
+      "box": {
+        "x": 533,
+        "y": 802.5,
+        "width": 576,
+        "height": 36
+      }
+    },
+    {
+      "name": "answer",
+      "box": {
+        "x": 502,
+        "y": 185.875,
+        "width": 626.546875,
+        "height": 308.375
+      }
+    },
+    {
+      "name": "answer-link",
+      "box": {
+        "x": 517,
+        "y": 287.1875,
+        "width": 81.46875,
+        "height": 16
+      }
+    },
+    {
+      "name": "first-event",
+      "box": {
+        "x": 502,
+        "y": 185.875,
+        "width": 626.546875,
+        "height": 308.375
+      }
+    },
+    {
+      "name": "nav-events",
+      "at": 19.026
+    },
+    {
+      "name": "event-card",
+      "box": {
+        "x": 916,
+        "y": 305.28125,
+        "width": 457,
+        "height": 18.125
+      }
+    },
+    {
+      "name": "end",
+      "at": 23.035
+    }
+  ]
+}

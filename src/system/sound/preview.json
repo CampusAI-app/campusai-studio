@@ -1,0 +1,20 @@
+{
+  "_what": "The sound preview's score, read by preview.tsx and by scripts/sound-check.py (which recomputes the snaps on its own and measures the render). Frames at 30 fps, 300 frames = 10 s. startAt is the downbeat two bars before tech-house-vibes' big lift (14.3165 s), so the lift lands at film 3.93 s, where the 'land' event is snapped to the downbeat.",
+  "fps": 30,
+  "durationInFrames": 300,
+  "music": { "track": "tech-house-vibes", "startAt": 10.3821 },
+  "events": [
+    { "kind": "move", "frame": 20, "name": "camera reframes to Ask CampusAI" },
+    { "kind": "press", "frame": 62, "snap": "beat", "name": "press: Academics card" },
+    { "kind": "land", "frame": 116, "snap": "downbeat", "name": "card lands on the lift" },
+    { "kind": "notify", "frame": 150, "name": "6 new chip" },
+    { "kind": "type", "frame": 168, "index": 0, "name": "key 1" },
+    { "kind": "type", "frame": 172, "index": 1, "name": "key 2" },
+    { "kind": "type", "frame": 176, "index": 2, "name": "key 3" },
+    { "kind": "type", "frame": 180, "index": 3, "name": "key 4" },
+    { "kind": "success", "frame": 196, "name": "done" },
+    { "kind": "logo", "frame": 216, "name": "logo: end card" }
+  ],
+  "duck": [{ "from": 150, "to": 200, "db": 7, "name": "typing" }],
+  "end": { "from": 216 }
+}

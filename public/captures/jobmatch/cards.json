@@ -1,0 +1,218 @@
+[
+ {
+  "slug": "01-experience-pwc",
+  "company": "PwC",
+  "title": "Deals Summer Associate",
+  "w": 377,
+  "h": 211,
+  "parts": [
+   {
+    "text": "PwC",
+    "x": 18,
+    "y": 15,
+    "w": 25,
+    "h": 16
+   },
+   {
+    "text": "·",
+    "x": 47,
+    "y": 15,
+    "w": 4,
+    "h": 16
+   },
+   {
+    "text": "Baltimore, MD · $36–$42 / hr",
+    "x": 55,
+    "y": 15,
+    "w": 158,
+    "h": 16
+   },
+   {
+    "text": "Deals Summer Associate Intern — 2027",
+    "x": 18,
+    "y": 31,
+    "w": 296,
+    "h": 18
+   },
+   {
+    "text": "✦",
+    "x": 26,
+    "y": 68,
+    "w": 8,
+    "h": 10
+   },
+   {
+    "text": "⏳",
+    "x": 137,
+    "y": 67,
+    "w": 14,
+    "h": 11
+   },
+   {
+    "text": "At BlackRock you did credit analysis and loan write-ups. Deals teams run that same analysis on every company they buy.",
+    "x": 18,
+    "y": 97,
+    "w": 344,
+    "h": 49
+   },
+   {
+    "text": "✦",
+    "x": 52,
+    "y": 169,
+    "w": 9,
+    "h": 17
+   },
+   {
+    "text": "›",
+    "x": 314,
+    "y": 168,
+    "w": 5,
+    "h": 18
+   }
+  ]
+ },
+ {
+  "slug": "02-skills-capitalone",
+  "company": "Capital One",
+  "title": "Finance Rotation Program",
+  "w": 377,
+  "h": 211,
+  "parts": [
+   {
+    "text": "Capital One",
+    "x": 18,
+    "y": 15,
+    "w": 65,
+    "h": 16
+   },
+   {
+    "text": "·",
+    "x": 87,
+    "y": 15,
+    "w": 4,
+    "h": 16
+   },
+   {
+    "text": "Richmond, VA · $38–$44 / hr",
+    "x": 95,
+    "y": 15,
+    "w": 158,
+    "h": 16
+   },
+   {
+    "text": "Finance Rotation Program Intern — 2027",
+    "x": 18,
+    "y": 31,
+    "w": 296,
+    "h": 18
+   },
+   {
+    "text": "✦",
+    "x": 26,
+    "y": 68,
+    "w": 8,
+    "h": 10
+   },
+   {
+    "text": "⏳",
+    "x": 129,
+    "y": 67,
+    "w": 14,
+    "h": 11
+   },
+   {
+    "text": "Financial statement analysis is proven on your resume, from your Investment Fund pitches. This program starts there.",
+    "x": 18,
+    "y": 97,
+    "w": 344,
+    "h": 49
+   },
+   {
+    "text": "✦",
+    "x": 52,
+    "y": 169,
+    "w": 9,
+    "h": 17
+   },
+   {
+    "text": "›",
+    "x": 314,
+    "y": 168,
+    "w": 5,
+    "h": 18
+   }
+  ]
+ },
+ {
+  "slug": "03-club-carlyle",
+  "company": "Carlyle Group",
+  "title": "Private Equity Analyst",
+  "w": 377,
+  "h": 211,
+  "parts": [
+   {
+    "text": "Carlyle Group",
+    "x": 18,
+    "y": 15,
+    "w": 76,
+    "h": 16
+   },
+   {
+    "text": "·",
+    "x": 98,
+    "y": 15,
+    "w": 4,
+    "h": 16
+   },
+   {
+    "text": "Washington, DC · $100k–$115k",
+    "x": 106,
+    "y": 15,
+    "w": 169,
+    "h": 16
+   },
+   {
+    "text": "Private Equity Analyst — Growth Fund",
+    "x": 18,
+    "y": 31,
+    "w": 296,
+    "h": 18
+   },
+   {
+    "text": "✦",
+    "x": 26,
+    "y": 68,
+    "w": 8,
+    "h": 10
+   },
+   {
+    "text": "⏳",
+    "x": 129,
+    "y": 67,
+    "w": 14,
+    "h": 11
+   },
+   {
+    "text": "Leading the Investment Fund's consumer team gave you DCF modeling, valuation and projections. That's why you fit here.",
+    "x": 18,
+    "y": 97,
+    "w": 344,
+    "h": 49
+   },
+   {
+    "text": "✦",
+    "x": 52,
+    "y": 169,
+    "w": 9,
+    "h": 17
+   },
+   {
+    "text": "›",
+    "x": 314,
+    "y": 168,
+    "w": 5,
+    "h": 18
+   }
+  ]
+ }
+]

@@ -1,0 +1,114 @@
+{
+  "video": "CampusAI — Job Match (social post 1)",
+  "generatedFor": "AI video tooling handoff (Google Flow / Veo) and any future re-cut",
+  "source": "Content/video-studio/studio/src/script.ts — JOB_MATCH_SCENES",
+  "captureMethod": "Headless Chrome via Playwright against https://campusai-demo.vercel.app/career?view=jobs at 1440px wide. 1440 is mandatory: the job grid uses container queries and the reason line is line-clamp-2, so a narrower viewport clips the sentence the video highlights.",
+  "fps": 30,
+  "totalFrames": 845,
+  "durationSeconds": 28.17,
+  "transitionFrames": 10,
+  "note": "Scene start frames account for the 10-frame crossfade, which overlaps two scenes and therefore shortens the timeline.",
+  "renders": {
+    "4x5_1080": { "file": "out/jobmatch-4x5.mp4", "px": "1080x1350", "use": "Instagram feed, primary" },
+    "4x5_4K":   { "file": "out/jobmatch-4x5-4k.mp4", "px": "2160x2700", "use": "master / regrade" },
+    "16x9_1080":{ "file": "out/jobmatch-16x9.mp4", "px": "1920x1080", "use": "site, LinkedIn" },
+    "16x9_4K":  { "file": "out/jobmatch-16x9-4k.mp4", "px": "3840x2160", "use": "true 4K UHD master" }
+  },
+  "assetRoot": "Content/video-studio/studio/public/captures/campusai-jobmatch/",
+  "beats": [
+    {
+      "n": 1, "name": "Establish the surface", "startFrame": 0, "endFrame": 84, "frames": 84,
+      "asset": "view-jobs.png", "assetPx": "4320x2700", "capturedAtDPR": 3,
+      "onScreen": "The real Job Match page: breadcrumb 'Career Overview / Job Match', 'Job matches' heading, tab row, nine ranked job cards, Smith lockup in the sidebar.",
+      "motion": "Contain fit. Scale 1.0 -> 1.1 by frame 26, then 1.1 -> 2.8 by frame 74, transform-origin locked to the North Star chip. Settles at 74 so it is still under the crossfade.",
+      "measured": { "northStarChipCenter": { "x": 0.696, "y": 0.238 }, "method": "getBoundingClientRect on the live page, normalised to the 1440x900 viewport" },
+      "captions": [{ "text": "Job Match: you pick what you want to do", "from": 6, "duration": 70, "accent": ["Job", "Match"] }]
+    },
+    {
+      "n": 2, "name": "The picker, opened", "startFrame": 74, "endFrame": 170, "frames": 96,
+      "asset": "northstar-picker.png", "assetPx": "1692x2856", "capturedAtDPR": 6,
+      "onScreen": "North Star popover. Top half 'Aim at' with 'Investment Banking Summer Analyst' checked in red and 'Roles you are already matching to'. Bottom half 'Actively looking' with Any type 16 / Internships 13 / Full-time 1 / Part-time 2.",
+      "motion": "Width fit, so the tall panel overruns the frame. Scale 0.93 -> 1.0 by frame 16 (reads as the panel appearing), hold to 34, then pan y 0 -> 1 by frame 86.",
+      "captions": [{ "text": "And what you're open to", "from": 8, "duration": 82, "accent": ["open"] }]
+    },
+    {
+      "n": 3, "name": "The turn", "startFrame": 160, "endFrame": 205, "frames": 45,
+      "asset": null,
+      "onScreen": "Full-bleed type on the product's own background. 'Now it knows' / 'everything about you.' with 'everything' in brand red. Montserrat 800.",
+      "motion": "Lines fade and rise, staggered 8 frames apart, 24-frame entrance.",
+      "captions": []
+    },
+    {
+      "n": 4, "name": "Her experience", "startFrame": 195, "endFrame": 285, "frames": 90,
+      "asset": "card-07-pwc.png", "assetPx": "2136x1398", "capturedAtDPR": 6,
+      "onScreen": "PwC, Deals Summer Associate Intern, Baltimore MD, $36-$42/hr. Strong match, Closes Oct 9. Reason: 'Your Sandy Spring credit memos are diligence work under a different name.'",
+      "motion": "Carousel beat, held 90 frames rather than the standard 54 because it is the first job card the viewer sees and has to teach the whole format. Highlight wipes across the measured phrase after ~26 frames of stillness.",
+      "measured": { "highlightPhrase": "Sandy Spring credit memos", "rects": [{ "x": 0.1288, "y": 0.411, "w": 0.4682, "h": 0.0685 }] },
+      "captions": [{ "text": "Her experience", "accent": ["experience"] }]
+    },
+    {
+      "n": 5, "name": "The other four sources", "startFrame": 275, "endFrame": 491, "frames": 216,
+      "assets": [
+        { "asset": "card-08-capitalone.png", "assetPx": "2136x1398", "label": "Skills she has proven", "accent": "proven",
+          "onScreen": "Capital One, Finance Rotation Program Intern, Richmond VA. Reason: 'Financial modeling and forecasting are both proven on you; all three rotations run on them.'",
+          "measured": { "highlightPhrase": "Financial modeling and forecasting", "rects": [{ "x": 0.0421, "y": 0.411, "w": 0.5899, "h": 0.0685 }] } },
+        { "asset": "card-03-marriott.png", "assetPx": "2136x1398", "label": "Her investment fund", "accent": "fund",
+          "onScreen": "Marriott International, Corporate Finance Summer Analyst, Bethesda MD. Reason: 'The forecast models you build for the Smith Investment Fund are the ones this team runs.'",
+          "measured": { "highlightPhrase": "Smith Investment Fund", "rects": [{ "x": 0.686, "y": 0.411, "w": 0.0976, "h": 0.0685 }, { "x": 0.0421, "y": 0.4861, "w": 0.2822, "h": 0.0685 }], "note": "Two rects because the phrase wraps across a line." } },
+        { "asset": "card-02-jpmorgan.png", "assetPx": "2136x1398", "label": "What she learned there", "accent": "learned",
+          "onScreen": "JPMorgan Chase, Investment Banking Summer Analyst, New York NY. Reason: 'Your Finance Association pitch-competition reps are the technicals this class screens on.'",
+          "measured": { "highlightPhrase": "Finance Association pitch-competition reps", "rects": [{ "x": 0.1288, "y": 0.411, "w": 0.7364, "h": 0.0685 }] } },
+        { "asset": "card-04-trowe.png", "assetPx": "2136x1398", "label": "And a class she aced", "accent": "class",
+          "onScreen": "T. Rowe Price, Equity Research Summer Analyst, Baltimore MD. Reason: 'You aced BMGT340 Business Finance; its valuation final project is this analyst's core work.'",
+          "measured": { "highlightPhrase": "BMGT340 Business Finance", "rects": [{ "x": 0.208, "y": 0.411, "w": 0.4769, "h": 0.0685 }] } }
+      ],
+      "onScreen": "Horizontal carousel, 54 frames per card. One continuous position float drives every card's offset, scale and opacity, so cards enter and leave as one move rather than four cuts.",
+      "motion": "Swipe left, one card at a time. The North Star chip sits pinned above the carousel the whole way.",
+      "orderIsDeliberate": "Experience, skills, organisations, what she learned, academics. The academic beat is last by explicit instruction."
+    },
+    {
+      "n": 6, "name": "Open one for the full reason", "startFrame": 481, "endFrame": 613, "frames": 132,
+      "asset": "detail-full-pwc.png", "assetPx": "2160x2766", "capturedAtDPR": 3,
+      "onScreen": "The whole opened job detail for the PwC role: header with role and company, match and timing chips, the full reason argument, the skills recruiters screen for, Tailor resume and Learn More actions.",
+      "motion": "Width fit. Scale 0.9 -> 1.0 by frame 18, hold to 44, then pan y 0 -> 1 across the remaining 88 frames.",
+      "captions": [
+        { "text": "Open any one for the full reason it fits", "from": 10, "duration": 60, "accent": ["full"] },
+        { "text": "And the skills recruiters screen for", "from": 78, "duration": 52, "accent": ["screen"] }
+      ],
+      "note": "'Any one', not 'it': four other cards play between the PwC card and this panel, so a pronoun had nothing to point at. The panel's own header re-anchors it."
+    },
+    {
+      "n": 7, "name": "The skills gap", "startFrame": 603, "endFrame": 759, "frames": 156,
+      "asset": "skills-section.png", "assetPx": "2802x4314", "capturedAtDPR": 3,
+      "onScreen": "The aggregate skills surface (UnifiedSkillsSection): what she already has, what to add to her resume, and the gaps to go learn. The gaps name the same jobs shown above: live-deal on PwC, FP&A on Marriott and Capital One.",
+      "motion": "Width fit. Scale 0.92 -> 1.0 by frame 18, hold to 40, then pan y 0 -> 1.",
+      "captions": [
+        { "text": "It also tells her what to go learn", "from": 10, "duration": 62, "accent": ["learn"] },
+        { "text": "For the exact roles she is chasing", "from": 82, "duration": 66, "accent": ["exact"] }
+      ],
+      "provenance": "The demo fixture was padded LOCALLY to show enough skills, captured, then the file restored and verified byte-identical. The deployed demo was never changed. The padded data exists nowhere except inside this PNG."
+    },
+    {
+      "n": 8, "name": "The ask", "startFrame": 749, "endFrame": 845, "frames": 96,
+      "asset": "brand/campusai-logo-white.svg",
+      "onScreen": "CampusAI wordmark, 'Open Job Match and see yours', red pill reading campusai.app.",
+      "motion": "Logo, line and pill fade and rise in sequence at 0, 8 and 18 frames.",
+      "note": "Deliberately not 'download the app'. CampusAI is sold to universities and gated at login, so there is nothing to download."
+    }
+  ],
+  "designSystem": {
+    "bg": "#070709", "surface": "#171012", "ink": "#f7efe6", "accent": "#D9202E",
+    "radius": 13,
+    "captionType": "Montserrat 800, white, dark stroke, revealed word by word, accent word in brand red",
+    "uiType": "Inter (captured pixels, not re-typeset)",
+    "houseRules": ["No monospace, anywhere.", "No all-caps letter-spaced eyebrow labels.", "No em dashes in our own copy."],
+    "easing": "cubic-bezier(0.22, 1, 0.36, 1) for text, cubic-bezier(0.4, 0, 0.2, 1) for camera",
+    "principle": "Text being read must be still. The camera only moves between beats, never while a sentence is legible."
+  },
+  "unusedButOnDisk": [
+    "card-01-evercore.png", "card-05-ey.png", "card-06-fanniemae.png", "list-full.png",
+    "header-block.png", "control-bar.png", "section-line.png", "smith-lockup.png",
+    "detail-header-pwc.png", "why-fits-pwc.png", "skills-pwc.png", "skills-ey.png",
+    "tailor-full.png", "reason-01..06-*.png", "campusai-wall/01..09-*.png"
+  ]
+}

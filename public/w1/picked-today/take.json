@@ -1,0 +1,89 @@
+{
+ "captured": "2026-10-23T04:21:11.903Z",
+ "base": "https://campusai-demo.vercel.app",
+ "shots": {
+  "dashboard": {
+   "url": "https://campusai-demo.vercel.app/",
+   "sandy": false,
+   "emdash": false,
+   "dialogs": 0,
+   "rows": {
+    "job": {
+     "x": 856,
+     "y": 237.921875,
+     "width": 275,
+     "height": 39
+    },
+    "event": {
+     "x": 856,
+     "y": 307.171875,
+     "width": 511,
+     "height": 19.5
+    },
+    "coffee": {
+     "x": 289,
+     "y": 327.046875,
+     "width": 219,
+     "height": 19.5
+    }
+   }
+  },
+  "job": {
+   "url": "https://campusai-demo.vercel.app/",
+   "sandy": false,
+   "emdash": false,
+   "dialogs": 1,
+   "clickedFrom": "https://campusai-demo.vercel.app/",
+   "navigated": false
+  },
+  "job-scrolled": {
+   "url": "https://campusai-demo.vercel.app/",
+   "sandy": false,
+   "emdash": false,
+   "dialogs": 1,
+   "scrolled": {
+    "scrollH": 862,
+    "clientH": 515,
+    "top": 309
+   }
+  },
+  "event": {
+   "url": "https://campusai-demo.vercel.app/",
+   "sandy": false,
+   "emdash": false,
+   "dialogs": 1,
+   "clickedFrom": "https://campusai-demo.vercel.app/",
+   "navigated": false
+  },
+  "event-scrolled": {
+   "url": "https://campusai-demo.vercel.app/",
+   "sandy": false,
+   "emdash": false,
+   "dialogs": 1,
+   "scrolled": {
+    "scrollH": 646,
+    "clientH": 517,
+    "top": 129
+   }
+  },
+  "coffee": {
+   "url": "https://campusai-demo.vercel.app/",
+   "sandy": false,
+   "emdash": false,
+   "dialogs": 1,
+   "clickedFrom": "https://campusai-demo.vercel.app/",
+   "navigated": false
+  },
+  "coffee-scrolled": {
+   "url": "https://campusai-demo.vercel.app/",
+   "sandy": false,
+   "emdash": false,
+   "dialogs": 1,
+   "scrolled": {
+    "scrollH": 646,
+    "clientH": 515,
+    "top": 131
+   }
+  }
+ }
+}

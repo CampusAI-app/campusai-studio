@@ -1,0 +1,1688 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "url": "https://campusai-demo.vercel.app/calendar",
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 310,
+   "y": 15,
+   "w": 185,
+   "h": 18,
+   "text": "Oct 18 – Oct 24, 2026"
+  },
+  {
+   "kind": "heading",
+   "x": 232,
+   "y": 65,
+   "w": 223,
+   "h": 20,
+   "text": "October 2026"
+  },
+  {
+   "kind": "heading",
+   "x": 285,
+   "y": 461,
+   "w": 165,
+   "h": 23,
+   "text": "Ask CampusAI"
+  },
+  {
+   "kind": "heading",
+   "x": 232,
+   "y": 729,
+   "w": 223,
+   "h": 16,
+   "text": "Show"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 18,
+   "w": 171,
+   "h": 20,
+   "text": "University of Maryland — home"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 8,
+   "w": 56,
+   "h": 40,
+   "text": "Expand sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 180,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 180,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 218,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 249,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 280,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 218,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 256,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 294,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 345,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 833,
+   "w": 199,
+   "h": 14,
+   "text": "Accessibility"
+  },
+  {
+   "kind": "button",
+   "x": 19,
+   "y": 854,
+   "w": 124,
+   "h": 34,
+   "text": "MC Maya Chen 80% · Connect your transcript"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 236,
+   "y": 10,
+   "w": 28,
+   "h": 28,
+   "text": "‹"
+  },
+  {
+   "kind": "button",
+   "x": 270,
+   "y": 10,
+   "w": 28,
+   "h": 28,
+   "text": "›"
+  },
+  {
+   "kind": "button",
+   "x": 507,
+   "y": 11,
+   "w": 135,
+   "h": 26,
+   "text": "Tasks · 7 due"
+  },
+  {
+   "kind": "button",
+   "x": 1363,
+   "y": 11,
+   "w": 57,
+   "h": 26,
+   "text": "Today"
+  },
+  {
+   "kind": "button",
+   "x": 202,
+   "y": 61,
+   "w": 28,
+   "h": 28,
+   "text": "Hide month and filters"
+  },
+  {
+   "kind": "button",
+   "x": 359,
+   "y": 108,
+   "w": 32,
+   "h": 24,
+   "text": "1"
+  },
+  {
+   "kind": "button",
+   "x": 391,
+   "y": 108,
+   "w": 32,
+   "h": 24,
+   "text": "2"
+  },
+  {
+   "kind": "button",
+   "x": 423,
+   "y": 108,
+   "w": 32,
+   "h": 24,
+   "text": "3"
+  },
+  {
+   "kind": "button",
+   "x": 232,
+   "y": 132,
+   "w": 32,
+   "h": 24,
+   "text": "4"
+  },
+  {
+   "kind": "button",
+   "x": 264,
+   "y": 132,
+   "w": 32,
+   "h": 24,
+   "text": "5"
+  },
+  {
+   "kind": "button",
+   "x": 296,
+   "y": 132,
+   "w": 32,
+   "h": 24,
+   "text": "6"
+  },
+  {
+   "kind": "button",
+   "x": 328,
+   "y": 132,
+   "w": 32,
+   "h": 24,
+   "text": "7"
+  },
+  {
+   "kind": "button",
+   "x": 359,
+   "y": 132,
+   "w": 32,
+   "h": 24,
+   "text": "8"
+  },
+  {
+   "kind": "button",
+   "x": 391,
+   "y": 132,
+   "w": 32,
+   "h": 24,
+   "text": "9"
+  },
+  {
+   "kind": "button",
+   "x": 423,
+   "y": 132,
+   "w": 32,
+   "h": 24,
+   "text": "10"
+  },
+  {
+   "kind": "button",
+   "x": 232,
+   "y": 156,
+   "w": 32,
+   "h": 24,
+   "text": "11"
+  },
+  {
+   "kind": "button",
+   "x": 264,
+   "y": 156,
+   "w": 32,
+   "h": 24,
+   "text": "12"
+  },
+  {
+   "kind": "button",
+   "x": 296,
+   "y": 156,
+   "w": 32,
+   "h": 24,
+   "text": "13"
+  },
+  {
+   "kind": "button",
+   "x": 328,
+   "y": 156,
+   "w": 32,
+   "h": 24,
+   "text": "14"
+  },
+  {
+   "kind": "button",
+   "x": 359,
+   "y": 156,
+   "w": 32,
+   "h": 24,
+   "text": "15"
+  },
+  {
+   "kind": "button",
+   "x": 391,
+   "y": 156,
+   "w": 32,
+   "h": 24,
+   "text": "16"
+  },
+  {
+   "kind": "button",
+   "x": 423,
+   "y": 156,
+   "w": 32,
+   "h": 24,
+   "text": "17"
+  },
+  {
+   "kind": "button",
+   "x": 232,
+   "y": 180,
+   "w": 32,
+   "h": 24,
+   "text": "18"
+  },
+  {
+   "kind": "button",
+   "x": 264,
+   "y": 180,
+   "w": 32,
+   "h": 24,
+   "text": "19"
+  },
+  {
+   "kind": "button",
+   "x": 296,
+   "y": 180,
+   "w": 32,
+   "h": 24,
+   "text": "20"
+  },
+  {
+   "kind": "button",
+   "x": 328,
+   "y": 180,
+   "w": 32,
+   "h": 24,
+   "text": "21"
+  },
+  {
+   "kind": "button",
+   "x": 359,
+   "y": 180,
+   "w": 32,
+   "h": 24,
+   "text": "22"
+  },
+  {
+   "kind": "button",
+   "x": 391,
+   "y": 180,
+   "w": 32,
+   "h": 24,
+   "text": "23"
+  },
+  {
+   "kind": "button",
+   "x": 423,
+   "y": 180,
+   "w": 32,
+   "h": 24,
+   "text": "24"
+  },
+  {
+   "kind": "button",
+   "x": 232,
+   "y": 204,
+   "w": 32,
+   "h": 24,
+   "text": "25"
+  },
+  {
+   "kind": "button",
+   "x": 264,
+   "y": 204,
+   "w": 32,
+   "h": 24,
+   "text": "26"
+  },
+  {
+   "kind": "button",
+   "x": 296,
+   "y": 204,
+   "w": 32,
+   "h": 24,
+   "text": "27"
+  },
+  {
+   "kind": "button",
+   "x": 328,
+   "y": 204,
+   "w": 32,
+   "h": 24,
+   "text": "28"
+  },
+  {
+   "kind": "button",
+   "x": 359,
+   "y": 204,
+   "w": 32,
+   "h": 24,
+   "text": "29"
+  },
+  {
+   "kind": "button",
+   "x": 391,
+   "y": 204,
+   "w": 32,
+   "h": 24,
+   "text": "30"
+  },
+  {
+   "kind": "button",
+   "x": 423,
+   "y": 204,
+   "w": 32,
+   "h": 24,
+   "text": "31"
+  },
+  {
+   "kind": "button",
+   "x": 245,
+   "y": 347,
+   "w": 197,
+   "h": 36,
+   "text": "Add Canvas"
+  },
+  {
+   "kind": "button",
+   "x": 299,
+   "y": 395,
+   "w": 89,
+   "h": 17,
+   "text": "How to find it"
+  },
+  {
+   "kind": "button",
+   "x": 237,
+   "y": 511,
+   "w": 213,
+   "h": 50,
+   "text": "Find time to study for Quiz 2"
+  },
+  {
+   "kind": "button",
+   "x": 237,
+   "y": 562,
+   "w": 213,
+   "h": 50,
+   "text": "Study 1 hour before the BMGT343 midterm"
+  },
+  {
+   "kind": "button",
+   "x": 237,
+   "y": 612,
+   "w": 213,
+   "h": 33,
+   "text": "Find events"
+  },
+  {
+   "kind": "button",
+   "x": 237,
+   "y": 646,
+   "w": 213,
+   "h": 50,
+   "text": "What can I do with my free time?"
+  },
+  {
+   "kind": "button",
+   "x": 232,
+   "y": 753,
+   "w": 223,
+   "h": 25,
+   "text": "Classes 8"
+  },
+  {
+   "kind": "button",
+   "x": 415,
+   "y": 755,
+   "w": 20,
+   "h": 20,
+   "text": "Show each classes item"
+  },
+  {
+   "kind": "button",
+   "x": 256,
+   "y": 780,
+   "w": 199,
+   "h": 44,
+   "text": "BMGT448Y needs a meeting time Pick section"
+  },
+  {
+   "kind": "button",
+   "x": 232,
+   "y": 830,
+   "w": 223,
+   "h": 25,
+   "text": "Events 3"
+  },
+  {
+   "kind": "button",
+   "x": 411,
+   "y": 832,
+   "w": 20,
+   "h": 20,
+   "text": "Events color. Change color"
+  },
+  {
+   "kind": "button",
+   "x": 232,
+   "y": 856,
+   "w": 223,
+   "h": 25,
+   "text": "Tasks 7"
+  },
+  {
+   "kind": "button",
+   "x": 411,
+   "y": 859,
+   "w": 20,
+   "h": 20,
+   "text": "Tasks color. Change color"
+  },
+  {
+   "kind": "button",
+   "x": 232,
+   "y": 885,
+   "w": 105,
+   "h": 24,
+   "text": "+ Add a category"
+  },
+  {
+   "kind": "button",
+   "x": 494,
+   "y": 111,
+   "w": 19,
+   "h": 15,
+   "text": "Due"
+  },
+  {
+   "kind": "button",
+   "x": 664,
+   "y": 114,
+   "w": 13,
+   "h": 13,
+   "text": "Mark Problem set 3: bond pricing done"
+  },
+  {
+   "kind": "button",
+   "x": 795,
+   "y": 114,
+   "w": 13,
+   "h": 13,
+   "text": "Mark Reading: Ch. 6-7 done"
+  },
+  {
+   "kind": "button",
+   "x": 927,
+   "y": 114,
+   "w": 13,
+   "h": 13,
+   "text": "Mark Case brief: Palsgraf done"
+  },
+  {
+   "kind": "button",
+   "x": 1058,
+   "y": 114,
+   "w": 13,
+   "h": 13,
+   "text": "Mark Quiz 2 done"
+  },
+  {
+   "kind": "button",
+   "x": 1058,
+   "y": 141,
+   "w": 13,
+   "h": 13,
+   "text": "Mark Reading: Ch. 8 done"
+  },
+  {
+   "kind": "button",
+   "x": 1050,
+   "y": 168,
+   "w": 123,
+   "h": 19,
+   "text": "+1 more"
+  },
+  {
+   "kind": "button",
+   "x": 1190,
+   "y": 114,
+   "w": 13,
+   "h": 13,
+   "text": "Mark Quiz 4 done"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 192,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 236,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 280,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 324,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 368,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 412,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 456,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 500,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 544,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 588,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 632,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 676,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 520,
+   "y": 720,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 651,
+   "y": 192,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 651,
+   "y": 236,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 651,
+   "y": 280,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 651,
+   "y": 324,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 651,
+   "y": 368,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 651,
+   "y": 412,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 651,
+   "y": 456,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 651,
+   "y": 500,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 651,
+   "y": 544,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 651,
+   "y": 588,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 651,
+   "y": 632,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 651,
+   "y": 676,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 651,
+   "y": 720,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 653,
+   "y": 324,
+   "w": 126,
+   "h": 53,
+   "text": "BMGT343 Investments"
+  },
+  {
+   "kind": "button",
+   "x": 653,
+   "y": 456,
+   "w": 126,
+   "h": 53,
+   "text": "BMGT380 Business Law I"
+  },
+  {
+   "kind": "button",
+   "x": 655,
+   "y": 544,
+   "w": 124,
+   "h": 86,
+   "text": "Edit Work shift"
+  },
+  {
+   "kind": "button",
+   "x": 758,
+   "y": 546,
+   "w": 20,
+   "h": 20,
+   "text": "×"
+  },
+  {
+   "kind": "button",
+   "x": 783,
+   "y": 192,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 783,
+   "y": 236,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 783,
+   "y": 280,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 783,
+   "y": 324,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 783,
+   "y": 368,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 783,
+   "y": 412,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 783,
+   "y": 456,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 783,
+   "y": 500,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 783,
+   "y": 544,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 783,
+   "y": 588,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 783,
+   "y": 632,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 783,
+   "y": 676,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 783,
+   "y": 720,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 785,
+   "y": 258,
+   "w": 126,
+   "h": 53,
+   "text": "BMGT310 Intermediate Accounting I"
+  },
+  {
+   "kind": "button",
+   "x": 785,
+   "y": 456,
+   "w": 126,
+   "h": 53,
+   "text": "BMGT364 Management and Organization Theory"
+  },
+  {
+   "kind": "button",
+   "x": 914,
+   "y": 192,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 914,
+   "y": 236,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 914,
+   "y": 280,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 914,
+   "y": 324,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 914,
+   "y": 368,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 914,
+   "y": 412,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 914,
+   "y": 456,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 914,
+   "y": 500,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 914,
+   "y": 544,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 914,
+   "y": 588,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 914,
+   "y": 632,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 914,
+   "y": 676,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 914,
+   "y": 720,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 916,
+   "y": 324,
+   "w": 126,
+   "h": 53,
+   "text": "BMGT343 Investments"
+  },
+  {
+   "kind": "button",
+   "x": 916,
+   "y": 456,
+   "w": 126,
+   "h": 53,
+   "text": "BMGT380 Business Law I"
+  },
+  {
+   "kind": "button",
+   "x": 918,
+   "y": 544,
+   "w": 124,
+   "h": 86,
+   "text": "Edit Work shift"
+  },
+  {
+   "kind": "button",
+   "x": 1021,
+   "y": 546,
+   "w": 20,
+   "h": 20,
+   "text": "×"
+  },
+  {
+   "kind": "button",
+   "x": 1046,
+   "y": 192,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1046,
+   "y": 236,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1046,
+   "y": 280,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1046,
+   "y": 324,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1046,
+   "y": 368,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1046,
+   "y": 412,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1046,
+   "y": 456,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1046,
+   "y": 500,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1046,
+   "y": 544,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1046,
+   "y": 588,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1046,
+   "y": 632,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1046,
+   "y": 676,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1046,
+   "y": 720,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1048,
+   "y": 258,
+   "w": 126,
+   "h": 53,
+   "text": "BMGT310 Intermediate Accounting I"
+  },
+  {
+   "kind": "button",
+   "x": 1048,
+   "y": 456,
+   "w": 126,
+   "h": 53,
+   "text": "BMGT364 Management and Organization Theory"
+  },
+  {
+   "kind": "button",
+   "x": 1177,
+   "y": 192,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1177,
+   "y": 236,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1177,
+   "y": 280,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1177,
+   "y": 324,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1177,
+   "y": 368,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1177,
+   "y": 412,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1177,
+   "y": 456,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1177,
+   "y": 500,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1177,
+   "y": 544,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1177,
+   "y": 588,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1177,
+   "y": 632,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1177,
+   "y": 676,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1177,
+   "y": 720,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1309,
+   "y": 192,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1309,
+   "y": 236,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1309,
+   "y": 280,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1309,
+   "y": 324,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1309,
+   "y": 368,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1309,
+   "y": 412,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1309,
+   "y": 456,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1309,
+   "y": 500,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1309,
+   "y": 544,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1309,
+   "y": 588,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1309,
+   "y": 632,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1309,
+   "y": 676,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1309,
+   "y": 720,
+   "w": 130,
+   "h": 44,
+   "text": "+"
+  },
+  {
+   "kind": "button",
+   "x": 1311,
+   "y": 280,
+   "w": 126,
+   "h": 64,
+   "text": "Evercore Coffee Chat Van Munching Hall"
+  },
+  {
+   "kind": "button",
+   "x": 1311,
+   "y": 544,
+   "w": 126,
+   "h": 42,
+   "text": "✦ Suggested Deloitte Consulting, Coffee Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1361,
+   "y": 720,
+   "w": 67,
+   "h": 32,
+   "text": "+ Add"
+  },
+  {
+   "kind": "button",
+   "x": 992,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1038,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 1084,
+   "y": 816,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "block",
+   "x": 8,
+   "y": 850,
+   "w": 199,
+   "h": 42,
+   "text": "MC Maya Chen 80% · Connect your transcript"
+  },
+  {
+   "kind": "block",
+   "x": 232,
+   "y": 244,
+   "w": 223,
+   "h": 184,
+   "text": "Your assignments live in Canvas One link brings them all here, and tells you when a due date moves. Add Canvas How to fi"
+  },
+  {
+   "kind": "block",
+   "x": 656,
+   "y": 109,
+   "w": 123,
+   "h": 23,
+   "text": "Problem set 3: bond pricing"
+  },
+  {
+   "kind": "block",
+   "x": 787,
+   "y": 109,
+   "w": 123,
+   "h": 23,
+   "text": "Reading: Ch. 6-7"
+  },
+  {
+   "kind": "block",
+   "x": 919,
+   "y": 109,
+   "w": 123,
+   "h": 23,
+   "text": "Case brief: Palsgraf"
+  },
+  {
+   "kind": "block",
+   "x": 1050,
+   "y": 109,
+   "w": 123,
+   "h": 23,
+   "text": "Quiz 2"
+  },
+  {
+   "kind": "block",
+   "x": 1050,
+   "y": 136,
+   "w": 123,
+   "h": 23,
+   "text": "Reading: Ch. 8"
+  },
+  {
+   "kind": "block",
+   "x": 1182,
+   "y": 109,
+   "w": 123,
+   "h": 23,
+   "text": "Quiz 4"
+  },
+  {
+   "kind": "block",
+   "x": 653,
+   "y": 544,
+   "w": 126,
+   "h": 86,
+   "text": "Work shift McKeldin Library ×"
+  },
+  {
+   "kind": "block",
+   "x": 916,
+   "y": 544,
+   "w": 126,
+   "h": 86,
+   "text": "Work shift McKeldin Library ×"
+  },
+  {
+   "kind": "block",
+   "x": 484,
+   "y": 805,
+   "w": 688,
+   "h": 58,
+   "text": "Chat"
+  }
+ ]
+}

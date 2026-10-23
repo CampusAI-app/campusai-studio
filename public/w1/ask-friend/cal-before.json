@@ -1,0 +1,31 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "source": "https://campusai-demo.vercel.app/calendar",
+ "captured": "2026-10-23T03:52:34.465Z",
+ "range": "Oct 18 – Oct 24, 2026",
+ "satHead": {
+  "x": 1309.4,
+  "y": 49,
+  "w": 130.6,
+  "h": 55
+ },
+ "blocks": [
+  {
+   "block": {
+    "x": 1310.578125,
+    "y": 280,
+    "w": 126.421875,
+    "h": 64
+   },
+   "text": {
+    "x": 1317.578125,
+    "y": 296,
+    "w": 112.421875,
+    "h": 27.5
+   },
+   "html": "✦\nSuggested\nEvercore Coffee Chat"
+  }
+ ]
+}

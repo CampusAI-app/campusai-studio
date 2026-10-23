@@ -1,0 +1,155 @@
+[
+ {
+  "n": 1,
+  "name": "Slow glide",
+  "note": "Real pages glide past, tilted, one at a time",
+  "file": "Pass-SlowGlide.mp4",
+  "seconds": 8.55,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 2,
+  "name": "Crane rise",
+  "note": "Starts on one row, rises to the whole page",
+  "file": "Pass-CraneRise.mp4",
+  "seconds": 5.25,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 3,
+  "name": "Focus walk",
+  "note": "One screen held, the camera walks part to part",
+  "file": "Pass-FocusWalk.mp4",
+  "seconds": 9.05,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 4,
+  "name": "Laptop in a place",
+  "note": "The real laptop, lit by a lamp, then at night",
+  "file": "Pass-LaptopRoom.mp4",
+  "seconds": 7.06,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 4,
+  "name": "Laptop in a place",
+  "note": "The real laptop, lit by a lamp, then at night",
+  "file": "Pass-LaptopRoomNight.mp4",
+  "seconds": 7.06,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 5,
+  "name": "Exploded page",
+  "note": "A real page comes apart in layers, then snaps back",
+  "file": "Pass-ExplodedPage.mp4",
+  "seconds": 8.55,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 6,
+  "name": "Honest typing",
+  "note": "Typed, hesitated, deleted, retyped, then the real answer",
+  "file": "Pass-HonestTyping.mp4",
+  "seconds": 8.96,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 7,
+  "name": "Answer becomes the page",
+  "note": "What the answer names opens as its real page",
+  "file": "Pass-AnswerToPage.mp4",
+  "seconds": 6.25,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 8,
+  "name": "The red dot",
+  "note": "CampusAI as a dot, landing on what it picked",
+  "file": "Pass-RedDot.mp4",
+  "seconds": 8.66,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 9,
+  "name": "Word swap",
+  "note": "Big words swap in, then the product rises",
+  "file": "Pass-WordSwap.mp4",
+  "seconds": 9.81,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 10,
+  "name": "Product inside the letters",
+  "note": "The real product plays inside the word (wide)",
+  "file": "Pass-ProductInLetters.mp4",
+  "seconds": 6.25,
+  "w": 1920,
+  "h": 1080
+ },
+ {
+  "n": 11,
+  "name": "Name into logo",
+  "note": "Two endings: a shimmer, and Apply turning into the logo",
+  "file": "Pass-NameToLogo.mp4",
+  "seconds": 7.3,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 11,
+  "name": "Name into logo",
+  "note": "Two endings: a shimmer, and Apply turning into the logo",
+  "file": "Pass-NameToLogoFromElement.mp4",
+  "seconds": 7.19,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 12,
+  "name": "Circle handoff",
+  "note": "The bell opens into the page it leads to",
+  "file": "Pass-CircleHandoff.mp4",
+  "seconds": 5.38,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 13,
+  "name": "Role card",
+  "note": "A real job card lifts off with its reason and chips",
+  "file": "Pass-RoleCard.mp4",
+  "seconds": 21.99,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 14,
+  "name": "Score fill",
+  "note": "Profile strength fills as real steps land",
+  "file": "Pass-ScoreFill.mp4",
+  "seconds": 8.32,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 15,
+  "name": "One shape",
+  "note": "One shape becomes each real button, then the logo",
+  "file": "Pass-ShapeMorph.mp4",
+  "seconds": 15.15,
+  "w": 1080,
+  "h": 1350
+ }
+]
