@@ -10,6 +10,7 @@
  * plus the end card. In "individual" mode this is what Jacob says yes to before `npm run make`.
  */
 import { spawnSync } from "node:child_process";
+import { REMOTION } from "./remotion-cli.mjs";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { checkFilm, printReport, sheetTimes, STUDIO } from "./check-film.mjs";
@@ -37,8 +38,8 @@ writeFileSync(props, JSON.stringify(sb, null, 2));
 
 console.log(`  draft · ${sb.id} · ${sb.aspects[0]} · jpeg frames, crf 23\n`);
 const render = spawnSync(
-  "npx",
-  ["remotion", "render", "src/system/entry.ts", "Draft", video, `--props=${props}`,
+  process.execPath,
+  [REMOTION, "render", "src/system/entry.ts", "Draft", video, `--props=${props}`,
     "--codec", "h264", "--image-format", "jpeg", "--crf", "23", "--pixel-format", "yuv420p"],
   { cwd: STUDIO, stdio: "inherit" },
 );

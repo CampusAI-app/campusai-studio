@@ -5,10 +5,13 @@ footage you shot, with the real product on screen. Built on [Remotion](https://w
 driven by Claude Code. Jacob and the team use this same studio, so every part and rule here is
 the one he uses.
 
-## Set up (Mac, about 10 minutes)
+## Set up (Mac or Windows, about 10 minutes)
 
 You need Git, Node 18+ ([nodejs.org](https://nodejs.org), the LTS button), Google Chrome and
-Claude Code. Then, in Terminal:
+Claude Code. On Windows also install [Git for Windows](https://git-scm.com/download/win) and, for
+contact sheets, [Python](https://www.python.org/downloads/) (tick "Add python.exe to PATH"). Then
+paste this in Terminal on a Mac, or in **Git Bash** on Windows (it comes with Git for Windows;
+PowerShell will not run it):
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/CampusAI-app/campusai-studio/main/install.sh | bash

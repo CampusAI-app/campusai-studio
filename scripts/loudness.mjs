@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { spawnSync } from "node:child_process";
+import { REMOTION } from "./remotion-cli.mjs";
 import { existsSync, renameSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -13,7 +14,7 @@ const STUDIO = join(dirname(fileURLToPath(import.meta.url)), "..");
 const hasFfmpeg = spawnSync("which", ["ffmpeg"], { stdio: "ignore" }).status === 0;
 const ffmpeg = (args) => hasFfmpeg
   ? spawnSync("ffmpeg", args, { encoding: "utf8" })
-  : spawnSync("npx", ["remotion", "ffmpeg", ...args], { cwd: STUDIO, encoding: "utf8" });
+  : spawnSync(process.execPath, [REMOTION, "ffmpeg", ...args], { cwd: STUDIO, encoding: "utf8" });
 export const loudness = (out) => {
   const probe = ffmpeg(["-hide_banner", "-i", out]);
   if (!/Audio:/.test(probe.stderr ?? "")) return console.log("  Silent film, no loudness pass.");

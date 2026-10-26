@@ -38,6 +38,7 @@
  * untagged.
  */
 import { spawnSync } from "node:child_process";
+import { REMOTION } from "./remotion-cli.mjs";
 import { existsSync, mkdirSync, renameSync } from "node:fs";
 import { dirname, join } from "node:path";
 
@@ -61,7 +62,7 @@ const out = positional[1] ?? join("out", `${composition}.mp4`);
 mkdirSync(dirname(out), { recursive: true });
 
 const renderArgs = [
-  "remotion",
+  REMOTION,
   "render",
   composition,
   out,
@@ -82,7 +83,7 @@ const renderArgs = [
 ];
 
 console.log(`\n  render · ${composition} → ${out} · crf ${crf} · png frames\n`);
-const render = spawnSync("npx", renderArgs, { stdio: "inherit" });
+const render = spawnSync(process.execPath, renderArgs, { stdio: "inherit" });
 if (render.status !== 0) process.exit(render.status ?? 1);
 
 if (flags.has("--no-tag")) {

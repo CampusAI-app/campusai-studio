@@ -7,7 +7,9 @@ import { execFileSync } from "node:child_process";
 import { mkdtempSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
-const studio = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
+import { fileURLToPath } from "node:url";
+import { REMOTION } from "./remotion-cli.mjs";
+const studio = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const args = process.argv.slice(2);
 const isComp = args[0] === "--comp";
 const fps = Number((args.find(a => a.startsWith("--fps=")) ?? "--fps=30").slice(6));
@@ -18,14 +20,15 @@ const labels = isComp ? points.map(f => `f${f}  ${(f / fps).toFixed(1)}s`) : poi
 points.forEach((p, i) => {
   const file = path.join(tmp, `f${String(i).padStart(2, "0")}.png`);
   const cmd = isComp
-    ? ["remotion", "still", "src/index.ts", source, file, `--frame=${p}`, "--scale=0.5"]
-    : ["remotion", "ffmpeg", "-y", "-ss", String(p), "-i", source, "-frames:v", "1", file];
-  execFileSync("npx", cmd, { cwd: studio, stdio: "ignore" });
+    ? [REMOTION, "still", "src/index.ts", source, file, `--frame=${p}`, "--scale=0.5"]
+    : [REMOTION, "ffmpeg", "-y", "-ss", String(p), "-i", source, "-frames:v", "1", file];
+  execFileSync(process.execPath, cmd, { cwd: studio, stdio: "ignore" });
 });
-execFileSync("python3", ["-c", `
-import sys, glob, json
+// Windows installs Python as `python`; paths go in as arguments so its backslashes are never read as escapes.
+execFileSync(process.platform === "win32" ? "python" : "python3", ["-c", `
+import sys, os, glob, json
 from PIL import Image, ImageDraw
-files = sorted(glob.glob("${tmp}/*.png"))
+files = sorted(glob.glob(os.path.join(sys.argv[2], "*.png")))
 labels = json.loads(sys.argv[1])
 ims = [Image.open(f).convert("RGB") for f in files]
 # Portrait films get narrower tiles so a 9x16 sheet stays readable on one screen.
@@ -41,7 +44,7 @@ for i, im in enumerate(ims):
     x, y = (i % cols)*w, (i // cols)*(h+pad)
     sheet.paste(im, (x, y+pad))
     d.text((x+8, y+6), labels[i], fill=(235,235,235))
-sheet.save("${out}")
+sheet.save(sys.argv[3])
 print("sheet:", sheet.size, len(ims), "frames")
-`, JSON.stringify(labels)], { stdio: "inherit" });
+`, JSON.stringify(labels), tmp, out], { stdio: "inherit" });
 rmSync(tmp, { recursive: true, force: true });

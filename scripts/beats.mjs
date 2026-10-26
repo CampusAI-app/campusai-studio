@@ -30,6 +30,7 @@
  * All times are float seconds into the TRACK; frames happen only in Score (method §1: round at the last step).
  */
 import { spawnSync } from "node:child_process";
+import { REMOTION } from "./remotion-cli.mjs";
 import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { basename, dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -48,7 +49,7 @@ const FR = SR / HOP; // onset frames per second
 // ---------------------------------------------------------------- decode
 
 function ffmpeg(args, binary = true) {
-  const r = spawnSync("npx", ["remotion", "ffmpeg", "-hide_banner", ...args], {
+  const r = spawnSync(process.execPath, [REMOTION, "ffmpeg", "-hide_banner", ...args], {
     cwd: STUDIO,
     maxBuffer: 1 << 30,
     encoding: binary ? "buffer" : "utf8",

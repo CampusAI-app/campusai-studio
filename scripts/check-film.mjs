@@ -14,7 +14,7 @@
  */
 import { existsSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
-import { dirname, join, resolve } from "node:path";
+import { basename, dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 export const STUDIO = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -91,7 +91,7 @@ export const checkFilm = (arg) => {
 
   // ---- Shape: the top level -------------------------------------------------------------------
   for (const k of ["id", "title"]) if (!isStr(sb[k])) fail(`The storyboard needs a "${k}" (text).`);
-  const folder = file.endsWith("storyboard.json") ? dirname(file).split("/").pop() : null;
+  const folder = file.endsWith("storyboard.json") ? basename(dirname(file)) : null;
   if (isStr(sb.id) && folder && sb.id !== folder) warn(`The id "${sb.id}" does not match its folder "${folder}".`);
   if (!FORMATS.includes(sb.format)) fail(`"format" is "${sb.format}"; it must be one of ${FORMATS.join(", ")}.`);
   if (!MODES.includes(sb.mode)) fail(`"mode" is "${sb.mode}"; it must be "individual" or "bulk".`);

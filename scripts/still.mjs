@@ -18,6 +18,7 @@
  * JPEG, and `--image-format png` is already the studio default anyway.
  */
 import { spawnSync } from "node:child_process";
+import { REMOTION } from "./remotion-cli.mjs";
 import { mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 
@@ -49,8 +50,8 @@ mkdirSync(dirname(out), { recursive: true });
 console.log(`\n  still · ${composition} @ frame ${frame} → ${out}\n`);
 
 const r = spawnSync(
-  "npx",
-  ["remotion", "still", composition, out, "--frame", frame, "--image-format", "png"],
+  process.execPath,
+  [REMOTION, "still", composition, out, "--frame", frame, "--image-format", "png"],
   { stdio: "inherit" },
 );
 

@@ -32,7 +32,18 @@ import { chromium } from "playwright-core";
 const STUDIO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const FILMS = process.env.STUDIO_FILMS || path.resolve(STUDIO, "..", "films");
 const DEMO = "https://campusai-demo.vercel.app";
-const CHROME = process.env.CHROME || "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+// Google Chrome where each system installs it; set CHROME to point anywhere else.
+const CHROME = process.env.CHROME || [
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  ...["PROGRAMFILES", "PROGRAMFILES(X86)", "LOCALAPPDATA"]
+    .filter((k) => process.env[k])
+    .map((k) => path.join(process.env[k], "Google", "Chrome", "Application", "chrome.exe")),
+  "/usr/bin/google-chrome",
+].find((p) => fs.existsSync(p));
+if (!CHROME) {
+  console.error("Google Chrome not found. Install it from google.com/chrome, or set CHROME to its path.");
+  process.exit(1);
+}
 // Recording runs this many times slower than real time so every frame is sharp; frames are stamped in real time.
 const SLOW = +(process.env.SLOW || 4);
 const EM = String.fromCharCode(8212); // the long dash, which never reaches a frame

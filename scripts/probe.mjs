@@ -2,6 +2,7 @@
 // Use it when you need exact numbers to cut a long recording into scenes.
 //   npm run probe -- my-recording.mov
 import { execFileSync } from "node:child_process";
+import { REMOTION } from "./remotion-cli.mjs";
 
 const file = process.argv[2];
 if (!file) {
@@ -14,8 +15,8 @@ if (!file) {
 let info = "";
 try {
   info = execFileSync(
-    "npx",
-    ["remotion", "ffmpeg", "-i", `public/footage/${file}`],
+    process.execPath,
+    [REMOTION, "ffmpeg", "-i", `public/footage/${file}`],
     { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] },
   );
 } catch (e) {

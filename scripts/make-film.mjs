@@ -15,6 +15,7 @@
  * (so _sample and _archive are never made by accident).
  */
 import { spawnSync } from "node:child_process";
+import { REMOTION } from "./remotion-cli.mjs";
 import { existsSync, mkdirSync, readdirSync, renameSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { checkFilm, FILMS, printReport, sheetTimes, STUDIO } from "./check-film.mjs";
@@ -51,7 +52,7 @@ const tag = (out) => {
     "h264_metadata=colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1:video_full_range_flag=0", tagged];
   const t = hasFfmpeg
     ? spawnSync("ffmpeg", args, { stdio: ["ignore", "ignore", "pipe"] })
-    : spawnSync("npx", ["remotion", "ffmpeg", ...args], { cwd: STUDIO, stdio: ["ignore", "ignore", "pipe"] });
+    : spawnSync(process.execPath, [REMOTION, "ffmpeg", ...args], { cwd: STUDIO, stdio: ["ignore", "ignore", "pipe"] });
   if (t.status !== 0 || !existsSync(tagged)) return console.log("  Colour tagging failed; keeping the untagged render.");
   renameSync(tagged, out);
   console.log("  bt709 tagged, faststart");
@@ -82,7 +83,7 @@ const make = (arg, { fromAll = false } = {}) => {
     const out = join(dir, `${base}.mp4`);
     writeFileSync(props, JSON.stringify(cut ? { ...sb, aspect, cut } : { ...sb, aspect }, null, 2));
     console.log(`  film · ${base} · png frames, crf 12, slow, bt709\n`);
-    const render = spawnSync("npx", ["remotion", "render", "src/system/entry.ts", "Film", out, `--props=${props}`,
+    const render = spawnSync(process.execPath, [REMOTION, "render", "src/system/entry.ts", "Film", out, `--props=${props}`,
       "--codec", "h264", "--image-format", "png", "--crf", "12", "--x264-preset", "slow", "--color-space", "bt709",
       "--pixel-format", "yuv420p", "--audio-bitrate", "320k"], { cwd: STUDIO, stdio: "inherit" });
     if (render.status !== 0) return console.error(`  Render failed for ${base}.\n`), "failed";
