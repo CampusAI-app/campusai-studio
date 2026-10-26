@@ -13,6 +13,7 @@ export * from "./PageView";
 export * from "./Pointer";
 export * from "./LogoMoment";
 export * from "./ChatRecording";
+export * from "./FlowRecording";
 export * from "./parts";
 export { EASE, EASE_CAMERA, enter, exit, envelope, keyframes } from "../lib/anim";
 export { safeLayout } from "../lib/safeArea";

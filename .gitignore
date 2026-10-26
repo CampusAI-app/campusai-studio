@@ -36,3 +36,6 @@ public/audio/vo/
 public/study-spots/
 # r4 hook films read films/eight-blocks-goldman/storyboard.json, which lives next to the studio on this machine only
 src/r4/hooks/
+
+# The example flow recording (`npm run flow examples/add-to-calendar.json` makes it on each machine)
+public/add-to-calendar/

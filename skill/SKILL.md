@@ -44,6 +44,7 @@ three differences.
 - **Shelves that only exist on Jacob's Mac:** `shots/` (shot recipes and licensed audio),
   `Design/...`, `Lucius/...`, the Studio reference page's local files, and Base favorites. When a
   step points at one, skip it and use the kit (`src/kit/`) and the films already in `src/` instead.
+  Jacob's `capture/` scripts are one of these: capture the demo with `npm run flow` (and `npm run chat`).
   Music: download free tracks from mixkit.co (free for commercial use, no credit needed) into
   `public/<film>/`; never commit them.
 - **Delivery goes to Jacob in Base, never to a social account.** See Deliver.
@@ -76,6 +77,16 @@ kit. Try `npm run chat examples/study-spots.json`, then render `Kit-ChatRecordin
 `src/kit/shelf-entry.ts` to see the whole path. Nothing in the demo changes; you only record it.
 **The answer is the one thing you author, so it has to be true:** every name, number and claim
 in it goes in `facts.md` with where it came from, the same as any other on-screen claim.
+
+## Your own flow (2026-10-26): any path through the real demo
+
+To show the product being used (open Events, press Add to CampusAI Calendar, open My Calendar), write
+`films/<name>/flow.json`, a list of steps in plain words (press, type, scroll, go, wait; the format is
+at the top of `scripts/flow.mjs`), and run `npm run flow <name>`. It records the real demo at a
+student's pace into `public/<name>/flow/`. Play it with `<FlowRecording src="<name>/flow/frames.json" />`,
+which draws the pointer and its presses. Try `npm run flow examples/add-to-calendar.json`, then open
+`Kit-FlowRecording` from `src/kit/shelf-entry.ts`. Nothing in the demo changes. This is how a teammate
+captures the product: Jacob's `capture/` scripts are not in the repo.
 
 ## The film system (2026-10-23): product films as data
 

@@ -49,6 +49,7 @@
     "draft": "node scripts/draft-film.mjs",
     "make": "node scripts/make-film.mjs",
     "chat": "node scripts/chat.mjs",
+    "flow": "node scripts/flow.mjs",
     "fonts": "node scripts/fonts.mjs",
     "sheet": "node scripts/sheet.mjs"
   },

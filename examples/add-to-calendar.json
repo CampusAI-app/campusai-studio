@@ -1,0 +1,14 @@
+{
+  "start": "/events",
+  "size": [1440, 900],
+  "theme": "dark",
+  "steps": [
+    { "wait": 1 },
+    { "press": "Add Financial Modeling Bootcamp", "mark": "added" },
+    { "wait": 1.6 },
+    { "press": "My Calendar", "mark": "calendar" },
+    { "wait": 1.2 },
+    { "scrollTo": "Financial Modeling Bootcamp", "mark": "found" }
+  ],
+  "tail": 2
+}

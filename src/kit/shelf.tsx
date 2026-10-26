@@ -12,6 +12,7 @@ import { PageView } from "./PageView";
 import { PointerAt } from "./Pointer";
 import { LogoEnd, LogoOpen } from "./LogoMoment";
 import { ChatRecording } from "./ChatRecording";
+import { FlowRecording } from "./FlowRecording";
 
 const B = brand("campusai");
 const W = 1080;
@@ -62,6 +63,13 @@ const PAGE_CameraPreview: React.FC = () => {
 };
 
 // Run `npm run chat examples/study-spots.json` first: the real chat, then the logo the piece ends on.
+// `npm run flow examples/add-to-calendar.json` makes this recording on each machine
+const FlowRecordingPreview: React.FC = () => (
+  <AbsoluteFill style={{ background: B.color.bgDeep }}>
+    <FlowRecording src="add-to-calendar/flow/frames.json" />
+  </AbsoluteFill>
+);
+
 const ChatRecordingPreview: React.FC = () => {
   const f = useCurrentFrame();
   const out = Math.min(1, Math.max(0, (f - 300) / 12));
@@ -78,6 +86,7 @@ export const KitShelfRoot: React.FC = () => (
     <Composition id="Kit-LogoOpen" component={LogoOpenPreview} durationInFrames={75} fps={FPS} width={W} height={H} />
     <Composition id="Kit-LogoEnd" component={LogoEndPreview} durationInFrames={100} fps={FPS} width={W} height={H} />
     <Composition id="Kit-ChatRecording" component={ChatRecordingPreview} durationInFrames={360} fps={FPS} width={1080} height={1920} />
+    <Composition id="Kit-FlowRecording" component={FlowRecordingPreview} durationInFrames={285} fps={FPS} width={1920} height={1080} />
     <Composition id="Kit-PageCamera" component={PAGE_CameraPreview} durationInFrames={170} fps={FPS} width={W} height={H} />
   </>
 );

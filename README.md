@@ -36,12 +36,14 @@ Useful on their own:
 |---|---|
 | `npm run dev` | Opens Remotion Studio to watch any film in the browser |
 | `npm run chat <film>` | Records the real CampusAI chat answering the question in `films/<film>/chat.json` |
+| `npm run flow <film>` | Records your own path through the real demo, written as steps in `films/<film>/flow.json` |
 | `npm run film <Composition>` | Renders a film to `out/` |
 | `npm run still <Composition>` | Renders one image |
 | `npm run sheet -- --comp <Composition> out.png 30,90,150` | One image with a frame from each beat |
 | `npm run probe -- <file>` | A clip's exact length and size |
 
-Try `npm run chat examples/study-spots.json`, then `npm run dev` and open `Kit-ChatRecording`.
+Try `npm run chat examples/study-spots.json` and `npm run flow examples/add-to-calendar.json`, then
+`npx remotion studio src/kit/shelf-entry.ts` and open `Kit-ChatRecording` or `Kit-FlowRecording`.
 
 ## How work gets to Jacob
 

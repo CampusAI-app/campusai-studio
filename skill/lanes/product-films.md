@@ -8,6 +8,9 @@ The real product on screen, captured and turned into a film. Most CampusAI work 
   `studio/public/<film>/` plus a `take.json` of timings. `capture/howto-run.cjs` is the newest
   pattern; `capture/shelf-jobmatch.cjs` is the stills pattern. Scrub em dashes on capture,
   close first-visit popups, check Sandy Spring is absent.
+- **A flow written as steps:** `npm run flow <film>` reads `films/<film>/flow.json` (press, type,
+  scroll, go, wait) and records it from campusai-demo the same slow-motion way; play it with the
+  kit's `FlowRecording`. The team's way to capture, and enough for most single-path runs.
 - **Jacob recording:** Cap in Studio mode with every beautify option off, dropped in
   `studio/public/footage/`. Only when a run cannot be scripted.
 - **Read the product's source, not a screenshot**, when drawing any product surface: strings
