@@ -1,0 +1,9 @@
+{
+ "captured": "2026-10-25T00:20:21.802Z",
+ "base": "https://campusai-demo.vercel.app",
+ "dpr": 3,
+ "log": [
+  "toast: Added. It will now show up in Your week on your dashboard.",
+  "non-GET requests: [\"POST https://campusai-demo.vercel.app/api/v1/career/jobs/jp_3f9a1c07b2d40006/view\"]"
+ ]
+}

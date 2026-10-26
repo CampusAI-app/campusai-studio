@@ -76,6 +76,8 @@ const Line: React.FC<{ t: TextLine; frame: number; L: Layout; big?: boolean }> =
 const Header: React.FC<{ shot: Shot; w: number; scale: number }> = ({ shot, w, scale }) => (
   <div style={{ position: "absolute", left: 28 * scale, top: 22 * scale, width: w - 56 * scale, fontFamily: INTER, fontWeight: 500,
     fontSize: 22 * scale, lineHeight: 1.3, color: GREY.soft, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+    {/* eight-block films (2026-10-24): the block leads, so the draft reads as the structure */}
+    {shot.block ? <span style={{ color: GREY.ink, fontWeight: 600 }}>{`${shot.block}  ·  `}</span> : null}
     <span style={{ color: GREY.ink, fontWeight: 600 }}>{shot.id}</span>
     {"  ·  "}{shot.part}{shot.hero ? "  ·  hero" : ""}{shot.transition ? `  ·  ${shot.transition} out` : ""}{"  ·  "}{shot.action}
   </div>
@@ -87,7 +89,7 @@ const ShotView: React.FC<{ sb: Storyboard; shot: Shot; L: Layout }> = ({ sb, sho
   const { W: w, H: h, u: scale } = L;
   const sf = shot.surface ? sb.surfaces[shot.surface] : undefined;
   const lines = shot.text ?? [];
-  const bigHooks = shot.part === "like-when-line";
+  const bigHooks = shot.part === "like-when-line" || shot.part === "word-swap";
   const hooks = bigHooks ? lines.filter((x) => x.role === "hook") : [];
   const heads = lines.filter((x) => x.role === "line" || (x.role === "hook" && !bigHooks));
   const captions = lines.filter((x) => x.role === "caption");
@@ -220,7 +222,7 @@ export const Draft: React.FC<Storyboard> = (sb) => {
   useBrandFonts(B);
   const aspect = sb.aspects[0];
   const { w, h } = SIZE[aspect];
-  const L = makeLayout(aspect, sb.shots.some((x) => (x.text ?? []).some((l) => l.role === "caption")));
+  const L = makeLayout(aspect, sb.shots.some((x) => (x.text ?? []).some((l) => l.role === "caption")), sb.fill === true);
   let acc = 0;
   const seqs = sb.shots.map((shot) => {
     const from = Math.round(acc * FPS);

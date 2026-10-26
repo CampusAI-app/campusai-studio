@@ -1,0 +1,70 @@
+{
+ "captured": "2026-10-25T14:25:15.747Z",
+ "base": "https://campusai-demo.vercel.app",
+ "week": "Oct 25 – Oct 31, 2026",
+ "order": [
+  "Financial Modeling Bootcamp",
+  "Smith Fall Career & Internship Fair",
+  "Goldman Sachs",
+  "Morgan Stanley",
+  "Deloitte Consulting"
+ ],
+ "steps": [
+  {
+   "title": "Financial Modeling Bootcamp",
+   "button": {
+    "x": 849,
+    "y": 384,
+    "w": 269,
+    "h": 34
+   },
+   "buttonAfter": "On your calendar",
+   "frame": "f01"
+  },
+  {
+   "title": "Smith Fall Career & Internship Fair",
+   "button": {
+    "x": 849,
+    "y": 606,
+    "w": 269,
+    "h": 34
+   },
+   "buttonAfter": "On your calendar",
+   "frame": "f02"
+  },
+  {
+   "title": "Goldman Sachs",
+   "button": {
+    "x": 263,
+    "y": 827,
+    "w": 269,
+    "h": 34
+   },
+   "buttonAfter": "On your calendar",
+   "frame": "f03"
+  },
+  {
+   "title": "Morgan Stanley",
+   "button": {
+    "x": 263,
+    "y": 1270,
+    "w": 269,
+    "h": 34
+   },
+   "buttonAfter": "On your calendar",
+   "frame": "f04"
+  },
+  {
+   "title": "Deloitte Consulting",
+   "button": {
+    "x": 263,
+    "y": 1049,
+    "w": 269,
+    "h": 34
+   },
+   "buttonAfter": "On your calendar",
+   "frame": "f05"
+  }
+ ],
+ "writes": []
+}

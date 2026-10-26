@@ -1,0 +1,1579 @@
+{
+ "pageW": 1440,
+ "pageH": 1475,
+ "dpr": 2,
+ "coords": "viewport",
+ "scrollY": 0,
+ "source": "https://campusai-demo.vercel.app/career?view=resume",
+ "captured": "2026-10-23T22:52:00.196Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false
+ },
+ "press": null,
+ "marks": {
+  "tailor": {
+   "x": 1205,
+   "y": 584,
+   "w": 178,
+   "h": 37,
+   "text": "Tailor to a specific job →"
+  }
+ },
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 288,
+   "y": 113,
+   "w": 231,
+   "h": 20,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "heading",
+   "x": 273,
+   "y": 390,
+   "w": 181,
+   "h": 23,
+   "text": "How a recruiter reads this"
+  },
+  {
+   "kind": "heading",
+   "x": 273,
+   "y": 584,
+   "w": 298,
+   "h": 27,
+   "text": "Suggestions for your resume"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 18,
+   "w": 171,
+   "h": 20,
+   "text": "University of Maryland — home"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Collapse Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 311,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 311,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 349,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 380,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 411,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 349,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 387,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 425,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 476,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "button",
+   "x": 19,
+   "y": 1429,
+   "w": 124,
+   "h": 34,
+   "text": "MC Maya Chen 80% · Connect your transcript"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 1432,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 1432,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 240,
+   "y": 36,
+   "w": 141,
+   "h": 32,
+   "text": "Career Overview"
+  },
+  {
+   "kind": "button",
+   "x": 879,
+   "y": 95,
+   "w": 197,
+   "h": 33,
+   "text": "What should I fix first? →"
+  },
+  {
+   "kind": "button",
+   "x": 1082,
+   "y": 95,
+   "w": 309,
+   "h": 33,
+   "text": "How do I make my bullet points stronger? →"
+  },
+  {
+   "kind": "button",
+   "x": 1036,
+   "y": 134,
+   "w": 355,
+   "h": 33,
+   "text": "Which skill gaps matter most for my target roles? →"
+  },
+  {
+   "kind": "button",
+   "x": 1316,
+   "y": 198,
+   "w": 32,
+   "h": 32,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1354,
+   "y": 198,
+   "w": 32,
+   "h": 32,
+   "text": "Send message"
+  },
+  {
+   "kind": "button",
+   "x": 907,
+   "y": 306,
+   "w": 209,
+   "h": 32,
+   "text": "Book an undergrad coach"
+  },
+  {
+   "kind": "button",
+   "x": 1123,
+   "y": 303,
+   "w": 170,
+   "h": 37,
+   "text": "Upload new resume"
+  },
+  {
+   "kind": "button",
+   "x": 1205,
+   "y": 584,
+   "w": 178,
+   "h": 37,
+   "text": "Tailor to a specific job →"
+  },
+  {
+   "kind": "button",
+   "x": 1166,
+   "y": 663,
+   "w": 130,
+   "h": 28,
+   "text": "View suggestion ▾"
+  },
+  {
+   "kind": "button",
+   "x": 1308,
+   "y": 665,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion is helpful"
+  },
+  {
+   "kind": "button",
+   "x": 1338,
+   "y": 665,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion isn't helpful — hide it"
+  },
+  {
+   "kind": "button",
+   "x": 1166,
+   "y": 742,
+   "w": 130,
+   "h": 28,
+   "text": "View suggestion ▾"
+  },
+  {
+   "kind": "button",
+   "x": 1308,
+   "y": 744,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion is helpful"
+  },
+  {
+   "kind": "button",
+   "x": 1338,
+   "y": 744,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion isn't helpful — hide it"
+  },
+  {
+   "kind": "button",
+   "x": 1166,
+   "y": 820,
+   "w": 130,
+   "h": 28,
+   "text": "View suggestion ▾"
+  },
+  {
+   "kind": "button",
+   "x": 1308,
+   "y": 822,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion is helpful"
+  },
+  {
+   "kind": "button",
+   "x": 1338,
+   "y": 822,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion isn't helpful — hide it"
+  },
+  {
+   "kind": "button",
+   "x": 1166,
+   "y": 899,
+   "w": 130,
+   "h": 28,
+   "text": "View suggestion ▾"
+  },
+  {
+   "kind": "button",
+   "x": 1308,
+   "y": 901,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion is helpful"
+  },
+  {
+   "kind": "button",
+   "x": 1338,
+   "y": 901,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion isn't helpful — hide it"
+  },
+  {
+   "kind": "button",
+   "x": 1166,
+   "y": 977,
+   "w": 130,
+   "h": 28,
+   "text": "View suggestion ▾"
+  },
+  {
+   "kind": "button",
+   "x": 1308,
+   "y": 979,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion is helpful"
+  },
+  {
+   "kind": "button",
+   "x": 1338,
+   "y": 979,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion isn't helpful — hide it"
+  },
+  {
+   "kind": "button",
+   "x": 273,
+   "y": 1045,
+   "w": 130,
+   "h": 38,
+   "text": "Show 1 more →"
+  },
+  {
+   "kind": "button",
+   "x": 1204,
+   "y": 1106,
+   "w": 161,
+   "h": 28,
+   "text": "Open your skills map →"
+  },
+  {
+   "kind": "button",
+   "x": 1205,
+   "y": 1223,
+   "w": 178,
+   "h": 36,
+   "text": "Open your skills map"
+  },
+  {
+   "kind": "button",
+   "x": 992,
+   "y": 1391,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1038,
+   "y": 1391,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 1084,
+   "y": 1391,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "5 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 311,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 349,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 380,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 411,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 349,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 387,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 425,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 476,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 84,
+   "w": 1160,
+   "h": 170,
+   "text": "✦ Resume Review Ask about your resume, answered right here What should I fix first? → How do I make my bullet points stronger? → Which skill"
+  },
+  {
+   "kind": "card",
+   "x": 249,
+   "y": 85,
+   "w": 1158,
+   "h": 168,
+   "text": ""
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 270,
+   "w": 1160,
+   "h": 1018,
+   "text": "Maya_Chen_Resume.pdf Updated 7/9/2026 Book an undergrad coach Upload new resume 74/100 How a recruiter reads this For Investment Banking Sum"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 648,
+   "w": 1110,
+   "h": 71,
+   "text": "✦ Improvement Quantify your Investment Fund work View suggestion ▾"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 727,
+   "w": 1110,
+   "h": 71,
+   "text": "✦ Improvement Add a finance-specific skills line View suggestion ▾"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 805,
+   "w": 1110,
+   "h": 71,
+   "text": "✦ Polish Frame your Finance Association role as leadership View suggestion ▾"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 884,
+   "w": 1110,
+   "h": 71,
+   "text": "✦ From your profile Add your Investment Committee role from your profile View suggestion ▾"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 962,
+   "w": 1110,
+   "h": 71,
+   "text": "✦ Polish Tighten the summary to a recruiter's 6-second read View suggestion ▾"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 1090,
+   "w": 1110,
+   "h": 87,
+   "text": "Worth learning Data analysis, Financial modeling Could strengthen you for your target roles · not counted in your score Open your skills map"
+  },
+  {
+   "kind": "text",
+   "text": "Skip to main content",
+   "x": -1,
+   "y": 2,
+   "w": 149,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Dashboard",
+   "x": 52,
+   "y": 76,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "My Calendar",
+   "x": 52,
+   "y": 114,
+   "w": 78,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 154,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Career Advisor",
+   "x": 64,
+   "y": 152,
+   "w": 92,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Resume Review",
+   "x": 52,
+   "y": 187,
+   "w": 94,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Job Match",
+   "x": 52,
+   "y": 218,
+   "w": 63,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Interview Prep",
+   "x": 52,
+   "y": 249,
+   "w": 86,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Company Tracker",
+   "x": 52,
+   "y": 280,
+   "w": 105,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 323,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Academic Advisor",
+   "x": 64,
+   "y": 321,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Planner & Progress",
+   "x": 52,
+   "y": 356,
+   "w": 115,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Class Tracker",
+   "x": 52,
+   "y": 387,
+   "w": 81,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Courses and Professors",
+   "x": 52,
+   "y": 418,
+   "w": 143,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Organizations",
+   "x": 52,
+   "y": 359,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Events",
+   "x": 52,
+   "y": 397,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Dining",
+   "x": 52,
+   "y": 435,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI",
+   "x": 52,
+   "y": 486,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Accessibility",
+   "x": 28,
+   "y": 1409,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "MC",
+   "x": 28,
+   "y": 1440,
+   "w": 17,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Maya Chen",
+   "x": 63,
+   "y": 1431,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80",
+   "x": 63,
+   "y": 1449,
+   "w": 14,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "%",
+   "x": 77,
+   "y": 1449,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 87,
+   "y": 1449,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Connect your transcript",
+   "x": 96,
+   "y": 1449,
+   "w": 115,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Career Overview",
+   "x": 268,
+   "y": 43,
+   "w": 105,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 381,
+   "y": 43,
+   "w": 4,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Resume Review",
+   "x": 393,
+   "y": 43,
+   "w": 99,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 265,
+   "y": 122,
+   "w": 11,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Resume Review",
+   "x": 288,
+   "y": 114,
+   "w": 99,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Ask about your resume, answered right here",
+   "x": 288,
+   "y": 133,
+   "w": 231,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "What should I fix first?",
+   "x": 912,
+   "y": 103,
+   "w": 133,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "→",
+   "x": 1052,
+   "y": 103,
+   "w": 13,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "How do I make my bullet points stronger?",
+   "x": 1115,
+   "y": 103,
+   "w": 244,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "→",
+   "x": 1366,
+   "y": 103,
+   "w": 13,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Which skill gaps matter most for my target roles?",
+   "x": 1069,
+   "y": 142,
+   "w": 290,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "→",
+   "x": 1366,
+   "y": 142,
+   "w": 13,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Maya_Chen_Resume.pdf",
+   "x": 273,
+   "y": 304,
+   "w": 168,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Updated 7/9/2026",
+   "x": 273,
+   "y": 325,
+   "w": 103,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Book an undergrad coach",
+   "x": 938,
+   "y": 314,
+   "w": 149,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Upload new resume",
+   "x": 1157,
+   "y": 313,
+   "w": 121,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "74",
+   "x": 1328,
+   "y": 311,
+   "w": 22,
+   "h": 21
+  },
+  {
+   "kind": "text",
+   "text": "/100",
+   "x": 1350,
+   "y": 317,
+   "w": 23,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "How a recruiter reads this",
+   "x": 273,
+   "y": 392,
+   "w": 181,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "For Investment Banking Summer Analyst roles, the page already proves Financial statement analysis and Equity research & stock pitches. 2 of your 5 findings are about roles named without the ownership in them.",
+   "x": 273,
+   "y": 427,
+   "w": 374,
+   "h": 89
+  },
+  {
+   "kind": "text",
+   "text": "What lands",
+   "x": 715,
+   "y": 425,
+   "w": 66,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Section headings and layout",
+   "x": 729,
+   "y": 449,
+   "w": 165,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Financial statement analysis",
+   "x": 729,
+   "y": 473,
+   "w": 164,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Equity research & stock pitches",
+   "x": 729,
+   "y": 497,
+   "w": 185,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "What's costing you",
+   "x": 1065,
+   "y": 425,
+   "w": 113,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Smith Investment Fund bullets, described but not measured",
+   "x": 1079,
+   "y": 449,
+   "w": 288,
+   "h": 33
+  },
+  {
+   "kind": "text",
+   "text": "Skills line, missing the terms a screen filters on",
+   "x": 1079,
+   "y": 491,
+   "w": 274,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Missing for this role: LBO modeling and Bloomberg Terminal",
+   "x": 1079,
+   "y": 515,
+   "w": 297,
+   "h": 33
+  },
+  {
+   "kind": "text",
+   "text": "Suggestions for your resume",
+   "x": 273,
+   "y": 587,
+   "w": 242,
+   "h": 21
+  },
+  {
+   "kind": "text",
+   "text": "6",
+   "x": 273,
+   "y": 614,
+   "w": 8,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "recommendation",
+   "x": 281,
+   "y": 614,
+   "w": 106,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "s",
+   "x": 387,
+   "y": 614,
+   "w": 7,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "· Tailored to your target roles",
+   "x": 394,
+   "y": 614,
+   "w": 178,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Tailor to a specific job →",
+   "x": 1220,
+   "y": 594,
+   "w": 148,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 292,
+   "y": 665,
+   "w": 12,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Improvement",
+   "x": 316,
+   "y": 663,
+   "w": 77,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Quantify your Investment Fund work",
+   "x": 316,
+   "y": 683,
+   "w": 282,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "View suggestion",
+   "x": 1178,
+   "y": 669,
+   "w": 97,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "▾",
+   "x": 1279,
+   "y": 671,
+   "w": 5,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 292,
+   "y": 744,
+   "w": 12,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Improvement",
+   "x": 316,
+   "y": 742,
+   "w": 77,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Add a finance-specific skills line",
+   "x": 316,
+   "y": 762,
+   "w": 242,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "View suggestion",
+   "x": 1178,
+   "y": 748,
+   "w": 97,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "▾",
+   "x": 1279,
+   "y": 750,
+   "w": 5,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 292,
+   "y": 822,
+   "w": 12,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Polish",
+   "x": 316,
+   "y": 820,
+   "w": 35,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Frame your Finance Association role as leadership",
+   "x": 316,
+   "y": 840,
+   "w": 383,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "View suggestion",
+   "x": 1178,
+   "y": 826,
+   "w": 97,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "▾",
+   "x": 1279,
+   "y": 828,
+   "w": 5,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 292,
+   "y": 901,
+   "w": 12,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "From your profile",
+   "x": 332,
+   "y": 899,
+   "w": 100,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Add your Investment Committee role from your profile",
+   "x": 316,
+   "y": 919,
+   "w": 417,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "View suggestion",
+   "x": 1178,
+   "y": 905,
+   "w": 97,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "▾",
+   "x": 1279,
+   "y": 907,
+   "w": 5,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 292,
+   "y": 979,
+   "w": 12,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Polish",
+   "x": 316,
+   "y": 977,
+   "w": 35,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Tighten the summary to a recruiter's 6-second read",
+   "x": 316,
+   "y": 997,
+   "w": 388,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "View suggestion",
+   "x": 1178,
+   "y": 983,
+   "w": 97,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "▾",
+   "x": 1279,
+   "y": 985,
+   "w": 5,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Show 1 more →",
+   "x": 290,
+   "y": 1055,
+   "w": 96,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Worth learning",
+   "x": 318,
+   "y": 1104,
+   "w": 87,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Data analysis, Financial modeling",
+   "x": 318,
+   "y": 1124,
+   "w": 255,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Could strengthen you for your target roles · not counted in your score",
+   "x": 318,
+   "y": 1147,
+   "w": 392,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Open your skills map",
+   "x": 1216,
+   "y": 1112,
+   "w": 123,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "→",
+   "x": 1344,
+   "y": 1114,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "You have 4 of the 12 skills Investment Banking Summer Analyst postings ask for most",
+   "x": 273,
+   "y": 1212,
+   "w": 609,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Biggest gap:",
+   "x": 273,
+   "y": 1236,
+   "w": 80,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Presentations",
+   "x": 353,
+   "y": 1236,
+   "w": 83,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": ",",
+   "x": 436,
+   "y": 1236,
+   "w": 7,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "32",
+   "x": 443,
+   "y": 1236,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "postings ask for it.",
+   "x": 459,
+   "y": 1236,
+   "w": 116,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Open your skills map",
+   "x": 1219,
+   "y": 1232,
+   "w": 132,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Chat",
+   "x": 1115,
+   "y": 1400,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI can make mistakes. Verify important information.",
+   "x": 684,
+   "y": 1445,
+   "w": 288,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "5",
+   "x": 1260,
+   "y": 26,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "new",
+   "x": 1268,
+   "y": 26,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Feedback",
+   "x": 1352,
+   "y": 26,
+   "w": 57,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦Career Advisor",
+   "x": 52,
+   "y": 152,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦Academic Advisor",
+   "x": 52,
+   "y": 321,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "80% · Connect your transcript",
+   "x": 63,
+   "y": 1448,
+   "w": 80,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80%",
+   "x": 63,
+   "y": 1449,
+   "w": 24,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "74/100",
+   "x": 1328,
+   "y": 313,
+   "w": 44,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "6 recommendations · Tailored to your target roles",
+   "x": 273,
+   "y": 613,
+   "w": 298,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "text": "Tailor to a specific job →",
+   "x": 1205,
+   "y": 584,
+   "w": 178,
+   "h": 37
+  },
+  {
+   "kind": "text",
+   "text": "Biggest gap: Presentations, 32 postings ask for it.",
+   "x": 273,
+   "y": 1235,
+   "w": 908,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "text": "5 new",
+   "x": 1260,
+   "y": 28,
+   "w": 35,
+   "h": 12
+  }
+ ]
+}

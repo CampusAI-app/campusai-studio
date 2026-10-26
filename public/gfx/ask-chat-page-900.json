@@ -1,0 +1,266 @@
+{
+ "pageW": 900,
+ "pageH": 900,
+ "dpr": 2,
+ "coords": "viewport",
+ "scrollY": 0,
+ "source": "https://campusai-demo.vercel.app/ai",
+ "captured": "2026-10-23T22:22:21.912Z",
+ "question": "What should I ask at the Evercore chat?",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false
+ },
+ "layers": [
+  {
+   "kind": "button",
+   "x": 12,
+   "y": 12,
+   "w": 40,
+   "h": 40,
+   "text": "Open sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 671,
+   "y": 78,
+   "w": 87,
+   "h": 32,
+   "text": "History"
+  },
+  {
+   "kind": "button",
+   "x": 766,
+   "y": 79,
+   "w": 98,
+   "h": 30,
+   "text": "New chat"
+  },
+  {
+   "kind": "button",
+   "x": 88,
+   "y": 333,
+   "w": 51,
+   "h": 19,
+   "text": "Copy"
+  },
+  {
+   "kind": "button",
+   "x": 141,
+   "y": 333,
+   "w": 70,
+   "h": 19,
+   "text": "Try again"
+  },
+  {
+   "kind": "button",
+   "x": 213,
+   "y": 329,
+   "w": 26,
+   "h": 26,
+   "text": "This answer was helpful"
+  },
+  {
+   "kind": "button",
+   "x": 243,
+   "y": 329,
+   "w": 26,
+   "h": 26,
+   "text": "This answer was not helpful"
+  },
+  {
+   "kind": "button",
+   "x": 65,
+   "y": 841,
+   "w": 32,
+   "h": 32,
+   "text": "Attach file"
+  },
+  {
+   "kind": "button",
+   "x": 765,
+   "y": 841,
+   "w": 32,
+   "h": 32,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 803,
+   "y": 841,
+   "w": 32,
+   "h": 32,
+   "text": "Send message"
+  },
+  {
+   "kind": "button",
+   "x": 641,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 685,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 777,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "text",
+   "text": "Skip to main content",
+   "x": -1,
+   "y": 2,
+   "w": 149,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI",
+   "x": 76,
+   "y": 84,
+   "w": 76,
+   "h": 19
+  },
+  {
+   "kind": "text",
+   "text": "History",
+   "x": 703,
+   "y": 86,
+   "w": 42,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "New chat",
+   "x": 797,
+   "y": 86,
+   "w": 55,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "What should I ask at the Evercore chat?",
+   "x": 575,
+   "y": 155,
+   "w": 255,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "The",
+   "x": 94,
+   "y": 211,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Evercore Coffee Chat",
+   "x": 125,
+   "y": 211,
+   "w": 157,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "is a small group with no presentation, so your questions are the whole hour. Bring two about the restructuring group specifically:",
+   "x": 94,
+   "y": 211,
+   "w": 722,
+   "h": 44
+  },
+  {
+   "kind": "text",
+   "text": "what a first-year analyst's week looks like on a live deal",
+   "x": 94,
+   "y": 237,
+   "w": 740,
+   "h": 44
+  },
+  {
+   "kind": "text",
+   "text": ", and",
+   "x": 125,
+   "y": 263,
+   "w": 39,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "how they would prepare for a superday if they were doing it again",
+   "x": 164,
+   "y": 263,
+   "w": 479,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": ". Then ask who else from Smith is on the desk.",
+   "x": 94,
+   "y": 263,
+   "w": 725,
+   "h": 44
+  },
+  {
+   "kind": "text",
+   "text": "Copy",
+   "x": 108,
+   "y": 336,
+   "w": 25,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Try again",
+   "x": 161,
+   "y": 336,
+   "w": 44,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "6:22 PM",
+   "x": 275,
+   "y": 336,
+   "w": 40,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "6",
+   "x": 720,
+   "y": 26,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "new",
+   "x": 728,
+   "y": 26,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Feedback",
+   "x": 812,
+   "y": 26,
+   "w": 57,
+   "h": 15
+  }
+ ]
+}

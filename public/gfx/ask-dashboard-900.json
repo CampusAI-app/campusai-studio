@@ -1,0 +1,482 @@
+{
+ "pageW": 900,
+ "pageH": 900,
+ "dpr": 2,
+ "coords": "viewport",
+ "scrollY": 493,
+ "source": "https://campusai-demo.vercel.app/",
+ "captured": "2026-10-23T22:22:16.292Z",
+ "question": "What should I ask at the Evercore chat?",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false
+ },
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 77,
+   "y": 192,
+   "w": 647,
+   "h": 23,
+   "text": "Ask CampusAI"
+  },
+  {
+   "kind": "heading",
+   "x": 77,
+   "y": 651,
+   "w": 689,
+   "h": 23,
+   "text": "What's new"
+  },
+  {
+   "kind": "button",
+   "x": 12,
+   "y": 12,
+   "w": 40,
+   "h": 40,
+   "text": "Open sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 53,
+   "y": -46,
+   "w": 77,
+   "h": 145,
+   "text": "Event · Sat · 10:00 AM - 11:30 AM Evercore Coffee Chat"
+  },
+  {
+   "kind": "button",
+   "x": 45,
+   "y": 113,
+   "w": 91,
+   "h": 27,
+   "text": "View all 4 →"
+  },
+  {
+   "kind": "button",
+   "x": 736,
+   "y": 198,
+   "w": 135,
+   "h": 28,
+   "text": "Continue in chat"
+  },
+  {
+   "kind": "button",
+   "x": 57,
+   "y": 400,
+   "w": 51,
+   "h": 19,
+   "text": "Copy"
+  },
+  {
+   "kind": "button",
+   "x": 110,
+   "y": 400,
+   "w": 70,
+   "h": 19,
+   "text": "Try again"
+  },
+  {
+   "kind": "button",
+   "x": 182,
+   "y": 397,
+   "w": 26,
+   "h": 26,
+   "text": "This answer was helpful"
+  },
+  {
+   "kind": "button",
+   "x": 212,
+   "y": 397,
+   "w": 26,
+   "h": 26,
+   "text": "This answer was not helpful"
+  },
+  {
+   "kind": "button",
+   "x": 61,
+   "y": 443,
+   "w": 282,
+   "h": 59,
+   "text": "What should I bring to the fair? Asks CampusAI →"
+  },
+  {
+   "kind": "button",
+   "x": 796,
+   "y": 558,
+   "w": 32,
+   "h": 32,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 834,
+   "y": 558,
+   "w": 32,
+   "h": 32,
+   "text": "Send message"
+  },
+  {
+   "kind": "button",
+   "x": 13,
+   "y": 738,
+   "w": 874,
+   "h": 81,
+   "text": "Assignment moved: BMGT380 · Reading Response 6: Remedies"
+  },
+  {
+   "kind": "button",
+   "x": 13,
+   "y": 820,
+   "w": 874,
+   "h": 81,
+   "text": "Your plan: Did you finish ANTH 101 at Montgomery College?"
+  },
+  {
+   "kind": "button",
+   "x": 641,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 685,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 777,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "text",
+   "text": "Event · Sat · 10:00 AM - 11:30 AM",
+   "x": 74,
+   "y": -45,
+   "w": 53,
+   "h": 83
+  },
+  {
+   "kind": "text",
+   "text": "Evercore Coffee Chat",
+   "x": 53,
+   "y": 41,
+   "w": 64,
+   "h": 58
+  },
+  {
+   "kind": "text",
+   "text": "View all 4 →",
+   "x": 53,
+   "y": 118,
+   "w": 75,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 41,
+   "y": 203,
+   "w": 13,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Ask CampusAI",
+   "x": 77,
+   "y": 191,
+   "w": 131,
+   "h": 23
+  },
+  {
+   "kind": "text",
+   "text": "Jobs, classes, events, campus life. Answered right here.",
+   "x": 77,
+   "y": 215,
+   "w": 328,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Continue in chat",
+   "x": 747,
+   "y": 204,
+   "w": 95,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "What should I ask at the Evercore chat?",
+   "x": 606,
+   "y": 264,
+   "w": 255,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "The",
+   "x": 63,
+   "y": 312,
+   "w": 28,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Evercore Coffee Chat",
+   "x": 91,
+   "y": 312,
+   "w": 144,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "is a small group with no presentation, so your questions are the whole hour. Bring two about the restructuring group specifically:",
+   "x": 63,
+   "y": 312,
+   "w": 792,
+   "h": 41
+  },
+  {
+   "kind": "text",
+   "text": "what a first-year analyst's week looks like on a live deal",
+   "x": 272,
+   "y": 336,
+   "w": 372,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": ", and",
+   "x": 644,
+   "y": 336,
+   "w": 36,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "how they would prepare for a superday if they were doing it again",
+   "x": 63,
+   "y": 336,
+   "w": 801,
+   "h": 41
+  },
+  {
+   "kind": "text",
+   "text": ". Then ask who else from Smith is on the desk.",
+   "x": 314,
+   "y": 359,
+   "w": 300,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Copy",
+   "x": 77,
+   "y": 403,
+   "w": 25,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Try again",
+   "x": 130,
+   "y": 403,
+   "w": 44,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "6:22 PM",
+   "x": 244,
+   "y": 403,
+   "w": 40,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "What should I bring to the fair?",
+   "x": 102,
+   "y": 455,
+   "w": 201,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Asks CampusAI",
+   "x": 102,
+   "y": 476,
+   "w": 84,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "→",
+   "x": 314,
+   "y": 464,
+   "w": 13,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "What's new",
+   "x": 77,
+   "y": 650,
+   "w": 106,
+   "h": 23
+  },
+  {
+   "kind": "text",
+   "text": "New matches, moved due dates and CampusAI updates, as they come in.",
+   "x": 77,
+   "y": 674,
+   "w": 429,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "All notifications",
+   "x": 778,
+   "y": 665,
+   "w": 93,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Today",
+   "x": 29,
+   "y": 717,
+   "w": 35,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Assignment moved",
+   "x": 73,
+   "y": 752,
+   "w": 108,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "35m ago",
+   "x": 798,
+   "y": 751,
+   "w": 46,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "BMGT380 · Reading Response 6: Remedies",
+   "x": 73,
+   "y": 769,
+   "w": 286,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "from",
+   "x": 72,
+   "y": 789,
+   "w": 26,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Wed, Oct 14",
+   "x": 73,
+   "y": 790,
+   "w": 69,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "→",
+   "x": 148,
+   "y": 790,
+   "w": 11,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "to",
+   "x": 164,
+   "y": 789,
+   "w": 11,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Sun, Oct 18",
+   "x": 165,
+   "y": 790,
+   "w": 68,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Your plan",
+   "x": 73,
+   "y": 834,
+   "w": 53,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "2h ago",
+   "x": 808,
+   "y": 834,
+   "w": 36,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Did you finish ANTH 101 at Montgomery College?",
+   "x": 73,
+   "y": 852,
+   "w": 324,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Summer 2026 is over. Tell your plan so it counts the class the right way.",
+   "x": 73,
+   "y": 873,
+   "w": 404,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "6",
+   "x": 720,
+   "y": 26,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "new",
+   "x": 728,
+   "y": 26,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Feedback",
+   "x": 812,
+   "y": 26,
+   "w": 57,
+   "h": 15
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "clip": {
+  "x": 0,
+  "y": 0,
+  "w": 1440,
+  "h": 900
+ },
+ "frames": [
+  {
+   "t": 0,
+   "name": "frames/f00.jpg"
+  },
+  {
+   "t": 6.6,
+   "name": "frames/f01.jpg"
+  },
+  {
+   "t": 13.7,
+   "name": "frames/f02.jpg"
+  },
+  {
+   "t": 20.7,
+   "name": "frames/f03.jpg"
+  },
+  {
+   "t": 27.8,
+   "name": "frames/f04.jpg"
+  },
+  {
+   "t": 34.9,
+   "name": "frames/f05.jpg"
+  },
+  {
+   "t": 37.5,
+   "name": "frames/f06.jpg",
+   "hold": true
+  }
+ ]
+}

@@ -66,10 +66,12 @@ export const applyCut = (sb: Storyboard, cut?: string): Storyboard => {
   if (!cut) return sb;
   const c = sb.cuts?.[cut];
   if (!c) throw new Error(`[film] no cut "${cut}" in ${sb.id}; it has: ${Object.keys(sb.cuts ?? {}).join(", ") || "none"}`);
-  const byId = new Map(sb.shots.map((x) => [x.id, x] as const));
+  // the film's own shots first, then any shot made for cuts only (`cutShots`, opt-in)
+  const byId = new Map([...sb.shots, ...(sb.cutShots ?? [])].map((x) => [x.id, x] as const));
   const missing = c.shots.filter((id) => !byId.has(id));
   if (missing.length) throw new Error(`[film] cut "${cut}" names shots ${sb.id} does not have: ${missing.join(", ")}`);
-  return { ...sb, format: c.format ?? sb.format, shots: c.shots.map((id) => byId.get(id) as Shot) };
+  const end = typeof c.endHold === "number" ? { ...sb.end, hold: c.endHold } : sb.end;
+  return { ...sb, format: c.format ?? sb.format, end, shots: c.shots.map((id) => byId.get(id) as Shot) };
 };
 
 // motion: the whip window is DUR.reframe long, split 6 frames before the boundary and 18 after, so the
@@ -123,7 +125,7 @@ const isCaption = (t: TextLine) => t.role === "caption";
 
 export const planFilm = (sb: Storyboard, aspect: Aspect) => {
   const hasCaptions = sb.shots.some((s) => (s.text ?? []).some(isCaption));
-  const layout = makeLayout(aspect, hasCaptions);
+  const layout = makeLayout(aspect, hasCaptions, sb.fill === true);
   // a trailing end-url shot is the end card itself: it is merged with `end`, never drawn twice
   const lastIsEnd = sb.shots.length > 0 && sb.shots[sb.shots.length - 1].part === "end-url";
   const shots = lastIsEnd ? sb.shots.slice(0, -1) : sb.shots;
@@ -222,7 +224,8 @@ export const filmCues = (plan: ReturnType<typeof planFilm>): SoundEvent[] => {
 /** Captions in the band below the product; hook and line text small above it when the part does not set them. */
 const ShotText: React.FC<{ shot: Shot; f: number; start: number; layout: Layout; brand: Brand }> = ({ shot, f, start, layout, brand }) => {
   const lines = shot.text ?? [];
-  const partSetsTop = shot.part === "like-when-line";
+  // parts that draw their own hook (like-when-line, word-swap): Film adds no small headline for them
+  const partSetsTop = shot.part === "like-when-line" || shot.part === "word-swap";
   const { u } = layout;
   return (
     <>

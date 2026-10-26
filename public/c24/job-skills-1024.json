@@ -1,0 +1,150 @@
+{
+ "page": {
+  "w": 1024,
+  "h": 900
+ },
+ "dpr": 3,
+ "clip": {
+  "x": 572,
+  "y": 418,
+  "w": 383,
+  "h": 221
+ },
+ "source": "https://campusai-demo.vercel.app/career?view=jobs&student_signal=intern%2Cco_op%2Cnew_grad%2Centry_level&job=jp_3f9a1c07b2d40006",
+ "captured": "2026-10-25T00:35:13.349Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false,
+  "terp": false
+ },
+ "texts": [
+  {
+   "text": "Skills recruiters screen for",
+   "x": 26,
+   "y": 24,
+   "w": 177,
+   "h": 17
+  },
+  {
+   "text": "4",
+   "x": 320,
+   "y": 25,
+   "w": 8,
+   "h": 16
+  },
+  {
+   "text": "of",
+   "x": 329,
+   "y": 25,
+   "w": 20,
+   "h": 16
+  },
+  {
+   "text": "6",
+   "x": 349,
+   "y": 25,
+   "w": 8,
+   "h": 16
+  },
+  {
+   "text": "Financial statement analysis",
+   "x": 55,
+   "y": 60,
+   "w": 169,
+   "h": 15
+  },
+  {
+   "text": "(you have this)",
+   "x": 36,
+   "y": 66,
+   "w": 89,
+   "h": 15
+  },
+  {
+   "text": "Excel",
+   "x": 272,
+   "y": 60,
+   "w": 32,
+   "h": 15
+  },
+  {
+   "text": "(you have this)",
+   "x": 253,
+   "y": 66,
+   "w": 89,
+   "h": 15
+  },
+  {
+   "text": "Accounting",
+   "x": 55,
+   "y": 95,
+   "w": 68,
+   "h": 15
+  },
+  {
+   "text": "(you have this)",
+   "x": 36,
+   "y": 101,
+   "w": 89,
+   "h": 15
+  },
+  {
+   "text": "PowerPoint",
+   "x": 171,
+   "y": 95,
+   "w": 68,
+   "h": 15
+  },
+  {
+   "text": "(you have this)",
+   "x": 152,
+   "y": 101,
+   "w": 89,
+   "h": 15
+  },
+  {
+   "text": "Financial modeling",
+   "x": 37,
+   "y": 129,
+   "w": 109,
+   "h": 15
+  },
+  {
+   "text": "(not shown yet)",
+   "x": 36,
+   "y": 135,
+   "w": 92,
+   "h": 15
+  },
+  {
+   "text": "Valuation",
+   "x": 176,
+   "y": 129,
+   "w": 54,
+   "h": 15
+  },
+  {
+   "text": "(not shown yet)",
+   "x": 175,
+   "y": 135,
+   "w": 92,
+   "h": 15
+  },
+  {
+   "text": "Worth sharpening:",
+   "x": 26,
+   "y": 163,
+   "w": 118,
+   "h": 16
+  },
+  {
+   "text": "Valuation and modeling. A class DCF you can walk through counts.",
+   "x": 26,
+   "y": 163,
+   "w": 310,
+   "h": 34
+  }
+ ]
+}

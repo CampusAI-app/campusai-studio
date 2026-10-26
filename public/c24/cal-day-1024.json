@@ -1,0 +1,388 @@
+{
+ "page": {
+  "w": 1024,
+  "h": 900
+ },
+ "dpr": 3,
+ "clip": {
+  "x": 576,
+  "y": 40,
+  "w": 360,
+  "h": 680
+ },
+ "source": "https://campusai-demo.vercel.app/calendar",
+ "captured": "2026-10-25T00:35:43.968Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false,
+  "terp": false
+ },
+ "texts": [
+  {
+   "text": "item",
+   "x": -4,
+   "y": 47,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "due",
+   "x": 27,
+   "y": 47,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "Wed",
+   "x": 76,
+   "y": 18,
+   "w": 24,
+   "h": 13
+  },
+  {
+   "text": "28",
+   "x": 77,
+   "y": 34,
+   "w": 23,
+   "h": 21
+  },
+  {
+   "text": "1",
+   "x": 88,
+   "y": 47,
+   "w": 7,
+   "h": 18
+  },
+  {
+   "text": "item",
+   "x": 99,
+   "y": 47,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "due",
+   "x": 130,
+   "y": 47,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "Thu",
+   "x": 181,
+   "y": 18,
+   "w": 20,
+   "h": 13
+  },
+  {
+   "text": "29",
+   "x": 180,
+   "y": 34,
+   "w": 22,
+   "h": 21
+  },
+  {
+   "text": "3",
+   "x": 191,
+   "y": 47,
+   "w": 10,
+   "h": 18
+  },
+  {
+   "text": "items",
+   "x": 204,
+   "y": 47,
+   "w": 40,
+   "h": 18
+  },
+  {
+   "text": "due",
+   "x": 244,
+   "y": 47,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "Fri",
+   "x": 287,
+   "y": 18,
+   "w": 14,
+   "h": 13
+  },
+  {
+   "text": "30",
+   "x": 283,
+   "y": 34,
+   "w": 23,
+   "h": 21
+  },
+  {
+   "text": "1",
+   "x": 294,
+   "y": 47,
+   "w": 7,
+   "h": 18
+  },
+  {
+   "text": "item",
+   "x": 305,
+   "y": 47,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "due",
+   "x": 336,
+   "y": 47,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "Reading: Ch. 6-7",
+   "x": -37,
+   "y": 74,
+   "w": 85,
+   "h": 12
+  },
+  {
+   "text": "Case brief: Palsgraf",
+   "x": 66,
+   "y": 74,
+   "w": 99,
+   "h": 12
+  },
+  {
+   "text": "Quiz 2",
+   "x": 169,
+   "y": 74,
+   "w": 32,
+   "h": 12
+  },
+  {
+   "text": "Reading: Ch. 8",
+   "x": 169,
+   "y": 101,
+   "w": 74,
+   "h": 12
+  },
+  {
+   "text": "+",
+   "x": 150,
+   "y": 131,
+   "w": 7,
+   "h": 12
+  },
+  {
+   "text": "1",
+   "x": 157,
+   "y": 131,
+   "w": 5,
+   "h": 12
+  },
+  {
+   "text": "more",
+   "x": 162,
+   "y": 131,
+   "w": 28,
+   "h": 12
+  },
+  {
+   "text": "Quiz 4",
+   "x": 272,
+   "y": 74,
+   "w": 32,
+   "h": 12
+  },
+  {
+   "text": "Intermediate Accounting I",
+   "x": -56,
+   "y": 236,
+   "w": 124,
+   "h": 12
+  },
+  {
+   "text": "Management and Organization Theory",
+   "x": -56,
+   "y": 434,
+   "w": 184,
+   "h": 12
+  },
+  {
+   "text": "Suggested",
+   "x": -46,
+   "y": 552,
+   "w": 49,
+   "h": 11
+  },
+  {
+   "text": "Financial Modeling Bootcamp: 3-Statement to DCF",
+   "x": -57,
+   "y": 564,
+   "w": 73,
+   "h": 68
+  },
+  {
+   "text": "Modeling is the skill gap that shows up most in your target roles.",
+   "x": -57,
+   "y": 596,
+   "w": 74,
+   "h": 67
+  },
+  {
+   "text": "BMGT343",
+   "x": 47,
+   "y": 288,
+   "w": 55,
+   "h": 13
+  },
+  {
+   "text": "Investments",
+   "x": 47,
+   "y": 302,
+   "w": 58,
+   "h": 12
+  },
+  {
+   "text": "BMGT380",
+   "x": 47,
+   "y": 420,
+   "w": 55,
+   "h": 13
+  },
+  {
+   "text": "Business Law I",
+   "x": 47,
+   "y": 434,
+   "w": 71,
+   "h": 12
+  },
+  {
+   "text": "Work shift",
+   "x": 47,
+   "y": 508,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "text": "McKeldin Library",
+   "x": 47,
+   "y": 522,
+   "w": 81,
+   "h": 12
+  },
+  {
+   "text": "Smith Finance Group Stock Pitch Night",
+   "x": 47,
+   "y": 618,
+   "w": 212,
+   "h": 13
+  },
+  {
+   "text": "Van Munching Hall",
+   "x": 47,
+   "y": 632,
+   "w": 90,
+   "h": 12
+  },
+  {
+   "text": "BMGT310",
+   "x": 149,
+   "y": 222,
+   "w": 53,
+   "h": 13
+  },
+  {
+   "text": "Intermediate Accounting I",
+   "x": 149,
+   "y": 236,
+   "w": 124,
+   "h": 12
+  },
+  {
+   "text": "Smith Fall Career & Internship Fair",
+   "x": 200,
+   "y": 244,
+   "w": 187,
+   "h": 13
+  },
+  {
+   "text": "The Hotel at UMD",
+   "x": 200,
+   "y": 258,
+   "w": 86,
+   "h": 12
+  },
+  {
+   "text": "BMGT364",
+   "x": 149,
+   "y": 420,
+   "w": 55,
+   "h": 13
+  },
+  {
+   "text": "Management and Organization Theory",
+   "x": 149,
+   "y": 434,
+   "w": 184,
+   "h": 12
+  },
+  {
+   "text": "✦",
+   "x": 251,
+   "y": 596,
+   "w": 7,
+   "h": 11
+  },
+  {
+   "text": "Suggested",
+   "x": 262,
+   "y": 596,
+   "w": 49,
+   "h": 11
+  },
+  {
+   "text": "Morgan Stanley, Sales & Trading Info Session",
+   "x": 251,
+   "y": 608,
+   "w": 75,
+   "h": 54
+  },
+  {
+   "text": "✦",
+   "x": 354,
+   "y": 596,
+   "w": 7,
+   "h": 11
+  },
+  {
+   "text": "Goldman Sachs, Investment Banking Info Session",
+   "x": 354,
+   "y": 608,
+   "w": 67,
+   "h": 68
+  },
+  {
+   "text": "6",
+   "x": 268,
+   "y": -14,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "text": "new",
+   "x": 276,
+   "y": -14,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "text": "Feedback",
+   "x": 360,
+   "y": -14,
+   "w": 57,
+   "h": 15
+  }
+ ]
+}

@@ -55,6 +55,11 @@ fi
 if command -v npx >/dev/null 2>&1; then
   npx -y skills add remotion-dev/skills -g -a claude-code -s '*' -y >/dev/null 2>&1 \
     && ok "Remotion's official skills" || skip "Remotion's official skills, optional"
+  # Emil Kowalski's motion craft (MIT): how motion should feel, the names of effects, Apple's springs,
+  # and a critique pass. Reference only; his `animate` is left out because it builds from scratch.
+  npx -y skills add emilkowalski/skills -g -a claude-code \
+    -s emil-design-eng -s review-animations -s animation-vocabulary -s apple-design -y >/dev/null 2>&1 \
+    && ok "Emil Kowalski's motion skills" || skip "Emil Kowalski's motion skills, optional"
   # The studio skill bans this one: it answers "make a video" by starting a blank project.
   rm -rf "$HOME/.claude/skills/remotion-create" "$HOME/.agents/skills/remotion-create"
 fi

@@ -1,0 +1,1620 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "coords": "viewport",
+ "scrollY": 1114,
+ "source": "https://campusai-demo.vercel.app/career?view=jobs&student_signal=intern%2Cco_op%2Cnew_grad%2Centry_level",
+ "captured": "2026-10-23T22:39:46.434Z",
+ "checks": {
+  "sandy": true,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false
+ },
+ "press": null,
+ "marks": {
+  "card": {
+   "x": 340,
+   "y": 150,
+   "w": 350,
+   "h": 122
+  },
+  "lines": [
+   "The Carlyle Group",
+   "✦",
+   "Good match",
+   "Internship",
+   "Summer Analyst, Corporate Private Equity",
+   "Washington, DC·$50-$55/hr",
+   "You have equity research and Excel, plus an investment fund role.",
+   "Posted 5d ago"
+  ]
+ },
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 798,
+   "y": 37,
+   "w": 568,
+   "h": 24,
+   "text": "Audit and Assurance Intern, Summer 2027"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 196,
+   "w": 131,
+   "h": 21,
+   "text": "✦ Why this fits you"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 374,
+   "w": 582,
+   "h": 21,
+   "text": "About this role"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 569,
+   "w": 582,
+   "h": 21,
+   "text": "What they're looking for"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 700,
+   "w": 582,
+   "h": 21,
+   "text": "The full posting"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 18,
+   "w": 171,
+   "h": 20,
+   "text": "University of Maryland — home"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Collapse Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 311,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 311,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 349,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 380,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 411,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 349,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 387,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 425,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 476,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "button",
+   "x": 19,
+   "y": 854,
+   "w": 124,
+   "h": 34,
+   "text": "MC Maya Chen 80% · Connect your transcript"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 10,
+   "w": 322,
+   "h": 20,
+   "text": "Capital Markets Intern, Summer 2027"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 172,
+   "w": 322,
+   "h": 20,
+   "text": "Summer Analyst, Corporate Private Equity"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 352,
+   "w": 322,
+   "h": 20,
+   "text": "Data Science Intern"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 514,
+   "w": 322,
+   "h": 20,
+   "text": "Marketing Analyst, Entry Level"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 676,
+   "w": 322,
+   "h": 40,
+   "text": "Mechanical Engineer Internship, Robotics Hardware"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 858,
+   "w": 322,
+   "h": 40,
+   "text": "AI SW Intern, Cloud, Infrastructure & Data Centre Deployment"
+  },
+  {
+   "kind": "button",
+   "x": 742,
+   "y": 127,
+   "w": 189,
+   "h": 36,
+   "text": "Apply on company site"
+  },
+  {
+   "kind": "button",
+   "x": 939,
+   "y": 126,
+   "w": 130,
+   "h": 38,
+   "text": "✦ Tailor resume"
+  },
+  {
+   "kind": "button",
+   "x": 1077,
+   "y": 126,
+   "w": 151,
+   "h": 38,
+   "text": "Write a cover letter"
+  },
+  {
+   "kind": "button",
+   "x": 1236,
+   "y": 126,
+   "w": 89,
+   "h": 38,
+   "text": "Saved"
+  },
+  {
+   "kind": "button",
+   "x": 992,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1038,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 1084,
+   "y": 816,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 311,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 349,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 380,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 411,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 349,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 387,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 425,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 476,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": -1030,
+   "w": 1160,
+   "h": 3754,
+   "text": "Jobs for you 22 open student roles at curated US employers, checked today at 5:12 AM ✦Aiming for Investment Banking Summer Analyst +2 List Map ✦ Go through them with me Jobs Saved 8 Roles 4 Location Work type Company Posted Clear filters Be"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": -44,
+   "w": 436,
+   "h": 170,
+   "text": "F Fannie Mae ✦ Good match Fortune 500 Internship Capital Markets Intern, Summer 2027 Hybrid, Washington, DC·$30-$36/hr You have financial statement analysis and Excel, plus market research. Posted 2d ago"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 135,
+   "w": 436,
+   "h": 152,
+   "text": "T The Carlyle Group ✦ Good match Internship Summer Analyst, Corporate Private Equity Washington, DC·$50-$55/hr You have equity research and Excel, plus an investment fund role. Posted 5d ago"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 297,
+   "w": 436,
+   "h": 170,
+   "text": "N Northwind Analytics ✦ Good match Well-known employer Internship Data Science Intern Hybrid, College Park, MD You have Excel and forecasting, plus an investment fund role. Python is the gap. Posted 7d ago"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 477,
+   "w": 436,
+   "h": 152,
+   "text": "A Acme Corp ✦ Good match Entry level Marketing Analyst, Entry Level Baltimore, MD You have Excel and experience pitching a recommendation backed by numbers. Found 2w ago"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 639,
+   "w": 436,
+   "h": 172,
+   "text": "F Field AI ✦ Possible match Internship Mechanical Engineer Internship, Robotics Hardware Boston, MA·$28-$63/hr Robotics hardware, open to you only with CAD and engineering coursework. Posted today"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 821,
+   "w": 436,
+   "h": 172,
+   "text": "T Tenstorrent ✦ Possible match Internship AI SW Intern, Cloud, Infrastructure & Data Centre Deployment Austin, TX or Santa Clara, CA·$50-$70/hr Possible if you are building toward tech, and it pays $50-$70/hr. Posted today"
+  },
+  {
+   "kind": "card",
+   "x": 721,
+   "y": 16,
+   "w": 666,
+   "h": 752,
+   "text": "D Audit and Assurance Intern, Summer 2027 Deloitte · ✦ Strong match · Big 4 · Internship · Closes today McLean, VA Washington, DC Apply on company site ✦ Tailor resume Write a cover letter Saved ✦ Why this fits you Your Credit Analyst Inter"
+  },
+  {
+   "kind": "card",
+   "x": 742,
+   "y": 179,
+   "w": 624,
+   "h": 1102,
+   "text": "✦ Why this fits you Your Credit Analyst Intern role at Sandy Spring Bank gave you financial statement analysis and Excel, two of the skills this posting requires. In the posting's own words: \"Test financial statement balances and internal c"
+  },
+  {
+   "kind": "text",
+   "text": "Dashboard",
+   "x": 52,
+   "y": 76,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "My Calendar",
+   "x": 52,
+   "y": 114,
+   "w": 78,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 154,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Career Advisor",
+   "x": 64,
+   "y": 152,
+   "w": 92,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Resume Review",
+   "x": 52,
+   "y": 187,
+   "w": 94,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Job Match",
+   "x": 52,
+   "y": 218,
+   "w": 63,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Interview Prep",
+   "x": 52,
+   "y": 249,
+   "w": 86,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Company Tracker",
+   "x": 52,
+   "y": 280,
+   "w": 105,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 323,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Academic Advisor",
+   "x": 64,
+   "y": 321,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Planner & Progress",
+   "x": 52,
+   "y": 356,
+   "w": 115,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Class Tracker",
+   "x": 52,
+   "y": 387,
+   "w": 81,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Courses and Professors",
+   "x": 52,
+   "y": 418,
+   "w": 143,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Organizations",
+   "x": 52,
+   "y": 359,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Events",
+   "x": 52,
+   "y": 397,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Dining",
+   "x": 52,
+   "y": 435,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI",
+   "x": 52,
+   "y": 486,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Accessibility",
+   "x": 28,
+   "y": 834,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "MC",
+   "x": 28,
+   "y": 865,
+   "w": 17,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Maya Chen",
+   "x": 63,
+   "y": 856,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80",
+   "x": 63,
+   "y": 874,
+   "w": 14,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "%",
+   "x": 77,
+   "y": 874,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 87,
+   "y": 874,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Connect your transcript",
+   "x": 96,
+   "y": 874,
+   "w": 115,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Fortune 500",
+   "x": 346,
+   "y": -6,
+   "w": 65,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Capital Markets Intern, Summer 2027",
+   "x": 340,
+   "y": 11,
+   "w": 255,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Hybrid, Washington, DC",
+   "x": 340,
+   "y": 34,
+   "w": 136,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 480,
+   "y": 34,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "$30-$36/hr",
+   "x": 487,
+   "y": 34,
+   "w": 66,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "You have financial statement analysis and Excel, plus market research.",
+   "x": 340,
+   "y": 57,
+   "w": 309,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Posted 2d ago",
+   "x": 583,
+   "y": 98,
+   "w": 79,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "The Carlyle Group",
+   "x": 340,
+   "y": 151,
+   "w": 104,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 456,
+   "y": 153,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Good match",
+   "x": 468,
+   "y": 152,
+   "w": 66,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Internship",
+   "x": 599,
+   "y": 154,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Summer Analyst, Corporate Private Equity",
+   "x": 340,
+   "y": 173,
+   "w": 287,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Washington, DC",
+   "x": 340,
+   "y": 196,
+   "w": 91,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 435,
+   "y": 196,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "$50-$55/hr",
+   "x": 442,
+   "y": 196,
+   "w": 66,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "You have equity research and Excel, plus an investment fund role.",
+   "x": 340,
+   "y": 219,
+   "w": 256,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Posted 5d ago",
+   "x": 583,
+   "y": 260,
+   "w": 79,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "N",
+   "x": 300,
+   "y": 325,
+   "w": 12,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Northwind Analytics",
+   "x": 340,
+   "y": 313,
+   "w": 117,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 469,
+   "y": 315,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Good match",
+   "x": 480,
+   "y": 314,
+   "w": 66,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Well-known employer",
+   "x": 346,
+   "y": 335,
+   "w": 113,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Internship",
+   "x": 599,
+   "y": 316,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Data Science Intern",
+   "x": 340,
+   "y": 353,
+   "w": 133,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Hybrid, College Park, MD",
+   "x": 340,
+   "y": 376,
+   "w": 142,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "You have Excel and forecasting, plus an investment fund role. Python is the gap.",
+   "x": 340,
+   "y": 399,
+   "w": 299,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Posted 7d ago",
+   "x": 584,
+   "y": 439,
+   "w": 78,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "A",
+   "x": 300,
+   "y": 505,
+   "w": 11,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Acme Corp",
+   "x": 340,
+   "y": 492,
+   "w": 64,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 416,
+   "y": 494,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Good match",
+   "x": 428,
+   "y": 494,
+   "w": 66,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Entry level",
+   "x": 597,
+   "y": 495,
+   "w": 58,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Marketing Analyst, Entry Level",
+   "x": 340,
+   "y": 515,
+   "w": 207,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Baltimore, MD",
+   "x": 340,
+   "y": 538,
+   "w": 80,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "You have Excel and experience pitching a recommendation backed by numbers.",
+   "x": 340,
+   "y": 561,
+   "w": 241,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Found 2w ago",
+   "x": 585,
+   "y": 601,
+   "w": 77,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Field AI",
+   "x": 340,
+   "y": 654,
+   "w": 43,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 395,
+   "y": 656,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Possible match",
+   "x": 407,
+   "y": 656,
+   "w": 83,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Internship",
+   "x": 599,
+   "y": 657,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Mechanical Engineer Internship, Robotics Hardware",
+   "x": 340,
+   "y": 677,
+   "w": 282,
+   "h": 37
+  },
+  {
+   "kind": "text",
+   "text": "Boston, MA",
+   "x": 340,
+   "y": 720,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 409,
+   "y": 720,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "$28-$63/hr",
+   "x": 417,
+   "y": 720,
+   "w": 66,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Robotics hardware, open to you only with CAD and engineering coursework.",
+   "x": 340,
+   "y": 743,
+   "w": 296,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Posted today",
+   "x": 590,
+   "y": 783,
+   "w": 72,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Tenstorrent",
+   "x": 340,
+   "y": 836,
+   "w": 67,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 419,
+   "y": 838,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Possible match",
+   "x": 431,
+   "y": 838,
+   "w": 83,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Internship",
+   "x": 599,
+   "y": 839,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "AI SW Intern, Cloud, Infrastructure & Data Centre Deployment",
+   "x": 340,
+   "y": 859,
+   "w": 285,
+   "h": 37
+  },
+  {
+   "kind": "text",
+   "text": "Audit and Assurance Intern, Summer 2027",
+   "x": 798,
+   "y": 37,
+   "w": 383,
+   "h": 23
+  },
+  {
+   "kind": "text",
+   "text": "Deloitte",
+   "x": 798,
+   "y": 67,
+   "w": 48,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 852,
+   "y": 67,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 868,
+   "y": 69,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Strong match",
+   "x": 879,
+   "y": 68,
+   "w": 74,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 966,
+   "y": 67,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Big 4",
+   "x": 975,
+   "y": 67,
+   "w": 30,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 1012,
+   "y": 67,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Internship",
+   "x": 1044,
+   "y": 68,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 1113,
+   "y": 67,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Closes today",
+   "x": 1123,
+   "y": 67,
+   "w": 79,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "McLean, VA",
+   "x": 814,
+   "y": 92,
+   "w": 69,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Washington, DC",
+   "x": 911,
+   "y": 92,
+   "w": 94,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Apply on company site",
+   "x": 756,
+   "y": 136,
+   "w": 143,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 954,
+   "y": 137,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Tailor resume",
+   "x": 969,
+   "y": 136,
+   "w": 85,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Write a cover letter",
+   "x": 1092,
+   "y": 136,
+   "w": 121,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Saved",
+   "x": 1271,
+   "y": 136,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 763,
+   "y": 198,
+   "w": 11,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Why this fits you",
+   "x": 782,
+   "y": 198,
+   "w": 112,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Your Credit Analyst Intern role at Sandy Spring Bank gave you financial statement analysis and Excel, two of the skills this posting requires. In the posting's own words: \"Test financial statement balances and internal controls with an engagement team.\" Using financial statement analysis at Sandy Spring Bank is a big part of why this is a strong fit for you. And it is in Washington, where you said you want to work.",
+   "x": 763,
+   "y": 229,
+   "w": 579,
+   "h": 108
+  },
+  {
+   "kind": "text",
+   "text": "About this role",
+   "x": 763,
+   "y": 376,
+   "w": 99,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "A summer on client audit teams, learning how companies report results and how an audit tests them.",
+   "x": 763,
+   "y": 407,
+   "w": 572,
+   "h": 40
+  },
+  {
+   "kind": "text",
+   "text": "Test financial statement balances and internal controls",
+   "x": 779,
+   "y": 461,
+   "w": 341,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Analyze client data in Excel and Alteryx to spot unusual activity",
+   "x": 779,
+   "y": 486,
+   "w": 393,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Document what you found in the audit tools",
+   "x": 779,
+   "y": 510,
+   "w": 272,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Attend the national intern program",
+   "x": 779,
+   "y": 535,
+   "w": 215,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "What they're looking for",
+   "x": 763,
+   "y": 571,
+   "w": 163,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Bachelor's in accounting or a related field",
+   "x": 779,
+   "y": 601,
+   "w": 259,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Financial accounting and GAAP coursework",
+   "x": 779,
+   "y": 625,
+   "w": 271,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CPA-eligible by full-time start",
+   "x": 779,
+   "y": 650,
+   "w": 185,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "The full posting",
+   "x": 763,
+   "y": 702,
+   "w": 105,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "At Deloitte, we're driven by a purpose",
+   "x": 763,
+   "y": 735,
+   "w": 246,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": ":",
+   "x": 1008,
+   "y": 735,
+   "w": 4,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "to make an impact that matters for our clients, our people and our communities. Our people work across industries, and we believe in the power of a diverse team.",
+   "x": 763,
+   "y": 735,
+   "w": 579,
+   "h": 60
+  },
+  {
+   "kind": "text",
+   "text": "As an Audit and Assurance Intern, you will work on client engagements with experienced practitioners, learning how public and private companies report their results and how an audit tests them.",
+   "x": 763,
+   "y": 811,
+   "w": 552,
+   "h": 60
+  },
+  {
+   "kind": "text",
+   "text": "What you'll do",
+   "x": 763,
+   "y": 891,
+   "w": 93,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Chat",
+   "x": 1115,
+   "y": 825,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI can make mistakes. Verify important information.",
+   "x": 684,
+   "y": 870,
+   "w": 288,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "6",
+   "x": 1260,
+   "y": 26,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "new",
+   "x": 1268,
+   "y": 26,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Feedback",
+   "x": 1352,
+   "y": 26,
+   "w": 57,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦Career Advisor",
+   "x": 52,
+   "y": 152,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦Academic Advisor",
+   "x": 52,
+   "y": 321,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "80% · Connect your transcript",
+   "x": 63,
+   "y": 873,
+   "w": 80,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80%",
+   "x": 63,
+   "y": 874,
+   "w": 24,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Hybrid, Washington, DC·$30-$36/hr",
+   "x": 340,
+   "y": 34,
+   "w": 322,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "·$30-$36/hr",
+   "x": 476,
+   "y": 34,
+   "w": 78,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Washington, DC·$50-$55/hr",
+   "x": 340,
+   "y": 196,
+   "w": 322,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "·$50-$55/hr",
+   "x": 431,
+   "y": 196,
+   "w": 77,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Boston, MA·$28-$63/hr",
+   "x": 340,
+   "y": 720,
+   "w": 322,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "·$28-$63/hr",
+   "x": 405,
+   "y": 720,
+   "w": 78,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "At Deloitte, we're driven by a purpose: to make an impact that matters for our clients, our people and our communities. Our people work across industries, and we believe in the power of a diverse team.",
+   "x": 763,
+   "y": 733,
+   "w": 582,
+   "h": 66
+  },
+  {
+   "kind": "text",
+   "text": "At Deloitte, we're driven by a purpose:",
+   "x": 763,
+   "y": 735,
+   "w": 250,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "6 new",
+   "x": 1260,
+   "y": 28,
+   "w": 35,
+   "h": 12
+  }
+ ]
+}

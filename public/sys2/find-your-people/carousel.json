@@ -1,0 +1,1441 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "coords": "viewport",
+ "scrollY": 0,
+ "source": "https://campusai-demo.vercel.app/organizations",
+ "captured": "2026-10-23T22:36:14.980Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false
+ },
+ "press": null,
+ "marks": {
+  "card": {
+   "x": 388,
+   "y": 130,
+   "w": 880,
+   "h": 464,
+   "text": "S Smith Analytics Consulting Group Business Stem Pre Professional Meeting Wednesday · 6:00 PM Van Munching Hall 1402 Why this fits you ✦ Good match SQL and Python are an increasingly expected edge for finance analysts. A client-facing analy"
+  },
+  "why": {
+   "x": 1326,
+   "y": 326,
+   "w": 591,
+   "h": 65,
+   "text": "✦ Good match REPE and development sit squarely in the finance track you're targeting. Underwriting workshops and DMV site tours that translate to modeling reps."
+  },
+  "meeting": {
+   "x": 4910,
+   "y": 228,
+   "w": 591,
+   "h": 60,
+   "text": "Meeting Monday · 6:00 PM Van Munching Hall 1402"
+  }
+ },
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 248,
+   "y": 59,
+   "w": 1160,
+   "h": 27,
+   "text": "Hear directly from the orgs themselves"
+  },
+  {
+   "kind": "heading",
+   "x": 479,
+   "y": 155,
+   "w": 302,
+   "h": 23,
+   "text": "Smith Analytics Consulting Group"
+  },
+  {
+   "kind": "heading",
+   "x": 1392,
+   "y": 165,
+   "w": 195,
+   "h": 22,
+   "text": "Colvin Real Estate Club"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 18,
+   "w": 171,
+   "h": 20,
+   "text": "University of Maryland — home"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 180,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 180,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 218,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 249,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 280,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 218,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 256,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 294,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 345,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "button",
+   "x": 19,
+   "y": 854,
+   "w": 124,
+   "h": 34,
+   "text": "MC Maya Chen 80% · Connect your transcript"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 144,
+   "y": 268,
+   "w": 115,
+   "h": 19,
+   "text": "@umdconsulting"
+  },
+  {
+   "kind": "button",
+   "x": 144,
+   "y": 292,
+   "w": 88,
+   "h": 19,
+   "text": "TerpEngage"
+  },
+  {
+   "kind": "button",
+   "x": 243,
+   "y": 537,
+   "w": 87,
+   "h": 18,
+   "text": "View details"
+  },
+  {
+   "kind": "button",
+   "x": 1051,
+   "y": 263,
+   "w": 119,
+   "h": 20,
+   "text": "@smithanalytics"
+  },
+  {
+   "kind": "button",
+   "x": 1051,
+   "y": 289,
+   "w": 92,
+   "h": 20,
+   "text": "TerpEngage"
+  },
+  {
+   "kind": "button",
+   "x": 409,
+   "y": 539,
+   "w": 126,
+   "h": 35,
+   "text": "I'm a member"
+  },
+  {
+   "kind": "button",
+   "x": 543,
+   "y": 539,
+   "w": 72,
+   "h": 35,
+   "text": "Save"
+  },
+  {
+   "kind": "button",
+   "x": 1156,
+   "y": 547,
+   "w": 91,
+   "h": 19,
+   "text": "View details"
+  },
+  {
+   "kind": "button",
+   "x": 1326,
+   "y": 530,
+   "w": 120,
+   "h": 33,
+   "text": "I'm a member"
+  },
+  {
+   "kind": "button",
+   "x": 248,
+   "y": 344,
+   "w": 36,
+   "h": 36,
+   "text": "Previous clubs"
+  },
+  {
+   "kind": "button",
+   "x": 1372,
+   "y": 344,
+   "w": 36,
+   "h": 36,
+   "text": "Next clubs"
+  },
+  {
+   "kind": "button",
+   "x": 248,
+   "y": 645,
+   "w": 180,
+   "h": 42,
+   "text": "Recommended for You"
+  },
+  {
+   "kind": "button",
+   "x": 432,
+   "y": 645,
+   "w": 85,
+   "h": 42,
+   "text": "All Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 521,
+   "y": 645,
+   "w": 88,
+   "h": 42,
+   "text": "My Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 612,
+   "y": 645,
+   "w": 73,
+   "h": 42,
+   "text": "Saved"
+  },
+  {
+   "kind": "button",
+   "x": 698,
+   "y": 644,
+   "w": 155,
+   "h": 37,
+   "text": "All categories"
+  },
+  {
+   "kind": "button",
+   "x": 992,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1038,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 1084,
+   "y": 816,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 180,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 218,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 249,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 280,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 218,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 256,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 294,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 345,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "card",
+   "x": -486,
+   "y": 142,
+   "w": 836,
+   "h": 441,
+   "text": "U Undergraduate Consulting Club Pre Professional Business Career Meeting Tuesday · 7:00 PM Van Munching Hall 1211 Why this fits you ✦ Good match Case structuring sharpens the same problem-solving muscle IB superdays test. Weekly mock cases "
+  },
+  {
+   "kind": "card",
+   "x": 388,
+   "y": 130,
+   "w": 880,
+   "h": 464,
+   "text": "S Smith Analytics Consulting Group Business Stem Pre Professional Meeting Wednesday · 6:00 PM Van Munching Hall 1402 Why this fits you ✦ Good match SQL and Python are an increasingly expected edge for finance analysts. A client-facing analy"
+  },
+  {
+   "kind": "card",
+   "x": 1306,
+   "y": 142,
+   "w": 836,
+   "h": 441,
+   "text": "Colvin Real Estate Club Pre Professional Business Meeting Monday · 7:00 PM Van Munching Hall 1330 Why this fits you ✦ Good match REPE and development sit squarely in the finance track you're targeting. Underwriting workshops and DMV site to"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 870,
+   "w": 379,
+   "h": 224,
+   "text": "F Finance Association Pre Professional Business Career Meets Wednesday ✦ Strong match Member You're a Finance junior starting your summer-analyst recruiting run, this is the club that runs Smith's banking recruiting pipeline. Learn More ›"
+  },
+  {
+   "kind": "card",
+   "x": 639,
+   "y": 870,
+   "w": 379,
+   "h": 224,
+   "text": "Smith Investment Fund Pre Professional Business Meets Monday ✦ Strong match Member Managing real capital and writing equity research is the strongest signal on an IB/ER resume. Learn More ›"
+  },
+  {
+   "kind": "card",
+   "x": 1029,
+   "y": 870,
+   "w": 379,
+   "h": 224,
+   "text": "Smith Undergraduate Student Association Student Government Business Meets Thursday ✦ Strong match Open to join A leadership seat in Smith's student government is the kind of ownership finance interviewers probe for. Learn More ›"
+  },
+  {
+   "kind": "text",
+   "text": "Skip to main content",
+   "x": -1,
+   "y": 2,
+   "w": 149,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Dashboard",
+   "x": 52,
+   "y": 76,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "My Calendar",
+   "x": 52,
+   "y": 114,
+   "w": 78,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 154,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Career Advisor",
+   "x": 64,
+   "y": 152,
+   "w": 92,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Resume Review",
+   "x": 52,
+   "y": 187,
+   "w": 94,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Job Match",
+   "x": 52,
+   "y": 218,
+   "w": 63,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Interview Prep",
+   "x": 52,
+   "y": 249,
+   "w": 86,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Company Tracker",
+   "x": 52,
+   "y": 280,
+   "w": 105,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 192,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Academic Advisor",
+   "x": 64,
+   "y": 190,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Planner & Progress",
+   "x": 52,
+   "y": 225,
+   "w": 115,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Class Tracker",
+   "x": 52,
+   "y": 256,
+   "w": 81,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Courses and Professors",
+   "x": 52,
+   "y": 287,
+   "w": 143,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Organizations",
+   "x": 52,
+   "y": 228,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Events",
+   "x": 52,
+   "y": 266,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Dining",
+   "x": 52,
+   "y": 304,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI",
+   "x": 52,
+   "y": 355,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Accessibility",
+   "x": 28,
+   "y": 834,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "MC",
+   "x": 28,
+   "y": 865,
+   "w": 17,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Maya Chen",
+   "x": 63,
+   "y": 856,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80",
+   "x": 63,
+   "y": 874,
+   "w": 14,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "%",
+   "x": 77,
+   "y": 874,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 87,
+   "y": 874,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Connect your transcript",
+   "x": 96,
+   "y": 874,
+   "w": 115,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Organizations",
+   "x": 1408,
+   "y": 30,
+   "w": 171,
+   "h": 31
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 248,
+   "y": 38,
+   "w": 10,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Meet the clubs",
+   "x": 264,
+   "y": 38,
+   "w": 87,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Hear directly from the orgs themselves",
+   "x": 248,
+   "y": 62,
+   "w": 338,
+   "h": 21
+  },
+  {
+   "kind": "text",
+   "text": "Slide through orgs picked for you, each in its own words, with why it fits you.",
+   "x": 248,
+   "y": 89,
+   "w": 432,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Weekly mock cases and a pro-bono project you can put on your resume.",
+   "x": -455,
+   "y": 351,
+   "w": 561,
+   "h": 30
+  },
+  {
+   "kind": "text",
+   "text": "UCC runs weekly case workshops, mock case interviews, and semester-long pro-bono engagements with local businesses, strong structured-thinking reps that also translate to finance interviews.",
+   "x": -466,
+   "y": 443,
+   "w": 579,
+   "h": 34
+  },
+  {
+   "kind": "text",
+   "text": "Leadership",
+   "x": 144,
+   "y": 163,
+   "w": 62,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "MB",
+   "x": 152,
+   "y": 200,
+   "w": 18,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Marcus Bell",
+   "x": 189,
+   "y": 191,
+   "w": 70,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "President",
+   "x": 189,
+   "y": 210,
+   "w": 47,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Links",
+   "x": 144,
+   "y": 246,
+   "w": 29,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "@",
+   "x": 163,
+   "y": 269,
+   "w": 11,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "umdconsulting",
+   "x": 174,
+   "y": 269,
+   "w": 85,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "TerpEngage",
+   "x": 163,
+   "y": 293,
+   "w": 69,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "View details",
+   "x": 243,
+   "y": 538,
+   "w": 71,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "S",
+   "x": 429,
+   "y": 164,
+   "w": 16,
+   "h": 29
+  },
+  {
+   "kind": "text",
+   "text": "Smith Analytics Consulting Group",
+   "x": 479,
+   "y": 154,
+   "w": 302,
+   "h": 23
+  },
+  {
+   "kind": "text",
+   "text": "Business",
+   "x": 486,
+   "y": 187,
+   "w": 47,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Stem",
+   "x": 553,
+   "y": 187,
+   "w": 27,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Pre Professional",
+   "x": 600,
+   "y": 187,
+   "w": 86,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Meeting",
+   "x": 409,
+   "y": 222,
+   "w": 48,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Wednesday · 6:00 PM",
+   "x": 409,
+   "y": 246,
+   "w": 138,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Van Munching Hall 1402",
+   "x": 409,
+   "y": 268,
+   "w": 136,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Why this fits you",
+   "x": 409,
+   "y": 302,
+   "w": 98,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 421,
+   "y": 334,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Good match",
+   "x": 434,
+   "y": 333,
+   "w": 73,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "SQL and Python are an increasingly expected edge for finance analysts.",
+   "x": 421,
+   "y": 351,
+   "w": 408,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "A client-facing analytics project that shows quantitative range beyond Excel.",
+   "x": 421,
+   "y": 351,
+   "w": 591,
+   "h": 31
+  },
+  {
+   "kind": "text",
+   "text": "About",
+   "x": 409,
+   "y": 423,
+   "w": 36,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "SACG pairs students on analytics engagements, SQL, Python, and Tableau work for campus and external clients. A useful complement for finance students who want a quantitative edge.",
+   "x": 409,
+   "y": 447,
+   "w": 581,
+   "h": 36
+  },
+  {
+   "kind": "text",
+   "text": "Leadership",
+   "x": 1051,
+   "y": 152,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "HC",
+   "x": 1060,
+   "y": 191,
+   "w": 18,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Hannah Cho",
+   "x": 1099,
+   "y": 182,
+   "w": 77,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "President",
+   "x": 1099,
+   "y": 202,
+   "w": 50,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Links",
+   "x": 1051,
+   "y": 240,
+   "w": 31,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "@",
+   "x": 1071,
+   "y": 264,
+   "w": 12,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "smithanalytics",
+   "x": 1083,
+   "y": 264,
+   "w": 87,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "TerpEngage",
+   "x": 1071,
+   "y": 290,
+   "w": 72,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "I'm a member",
+   "x": 440,
+   "y": 548,
+   "w": 83,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Save",
+   "x": 574,
+   "y": 548,
+   "w": 29,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "View details",
+   "x": 1156,
+   "y": 548,
+   "w": 74,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Colvin Real Estate Club",
+   "x": 1392,
+   "y": 164,
+   "w": 195,
+   "h": 22
+  },
+  {
+   "kind": "text",
+   "text": "Pre Professional",
+   "x": 1399,
+   "y": 195,
+   "w": 81,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "Meeting",
+   "x": 1326,
+   "y": 229,
+   "w": 46,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Monday · 7:00 PM",
+   "x": 1326,
+   "y": 252,
+   "w": 108,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Van Munching Hall 1330",
+   "x": 1326,
+   "y": 272,
+   "w": 130,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Why this fits you",
+   "x": 1326,
+   "y": 305,
+   "w": 94,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 1337,
+   "y": 335,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Good match",
+   "x": 1349,
+   "y": 334,
+   "w": 69,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "REPE and development sit squarely in the finance track you're targeting.",
+   "x": 1337,
+   "y": 351,
+   "w": 388,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Underwriting workshops and DMV site tours that translate to modeling reps.",
+   "x": 1337,
+   "y": 351,
+   "w": 547,
+   "h": 30
+  },
+  {
+   "kind": "text",
+   "text": "About",
+   "x": 1326,
+   "y": 420,
+   "w": 34,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "The Colvin Real Estate Club connects students to REPE, development, and brokerage professionals, with case competitions and site tours across the DMV.",
+   "x": 1326,
+   "y": 443,
+   "w": 572,
+   "h": 34
+  },
+  {
+   "kind": "text",
+   "text": "I'm a member",
+   "x": 1355,
+   "y": 538,
+   "w": 79,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Recommended for You",
+   "x": 266,
+   "y": 656,
+   "w": 144,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "All Orgs",
+   "x": 450,
+   "y": 656,
+   "w": 49,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "My Orgs",
+   "x": 539,
+   "y": 656,
+   "w": 52,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Saved",
+   "x": 630,
+   "y": 656,
+   "w": 37,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "All categories",
+   "x": 734,
+   "y": 654,
+   "w": 84,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "13 orgs",
+   "x": 248,
+   "y": 756,
+   "w": 43,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦ Recommended for you",
+   "x": 248,
+   "y": 791,
+   "w": 156,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Top matches",
+   "x": 248,
+   "y": 814,
+   "w": 111,
+   "h": 21
+  },
+  {
+   "kind": "text",
+   "text": "7 orgs aligned with your profile",
+   "x": 248,
+   "y": 841,
+   "w": 175,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Finance Association",
+   "x": 318,
+   "y": 885,
+   "w": 136,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Smith Investment Fund",
+   "x": 709,
+   "y": 888,
+   "w": 157,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Smith Undergraduate Student Association",
+   "x": 1099,
+   "y": 885,
+   "w": 287,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Chat",
+   "x": 1115,
+   "y": 825,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI can make mistakes. Verify important information.",
+   "x": 684,
+   "y": 870,
+   "w": 288,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "6",
+   "x": 1260,
+   "y": 26,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "new",
+   "x": 1268,
+   "y": 26,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Feedback",
+   "x": 1352,
+   "y": 26,
+   "w": 57,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦Career Advisor",
+   "x": 52,
+   "y": 152,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦Academic Advisor",
+   "x": 52,
+   "y": 190,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "80% · Connect your transcript",
+   "x": 63,
+   "y": 873,
+   "w": 80,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80%",
+   "x": 63,
+   "y": 874,
+   "w": 24,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Case structuring sharpens the same problem-solving muscle IB superdays test. Weekly mock cases and a pro-bono project you can put on your resume.",
+   "x": -455,
+   "y": 351,
+   "w": 568,
+   "h": 31
+  },
+  {
+   "kind": "text",
+   "text": "SQL and Python are an increasingly expected edge for finance analysts. A client-facing analytics project that shows quantitative range beyond Excel.",
+   "x": 421,
+   "y": 351,
+   "w": 598,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "REPE and development sit squarely in the finance track you're targeting. Underwriting workshops and DMV site tours that translate to modeling reps.",
+   "x": 1337,
+   "y": 351,
+   "w": 568,
+   "h": 31
+  },
+  {
+   "kind": "text",
+   "text": "All categories",
+   "x": 698,
+   "y": 644,
+   "w": 155,
+   "h": 37
+  },
+  {
+   "kind": "text",
+   "text": "6 new",
+   "x": 1260,
+   "y": 28,
+   "w": 35,
+   "h": 12
+  }
+ ]
+}

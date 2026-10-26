@@ -12,7 +12,8 @@
  *
  * Also imported by draft-film.mjs and make-film.mjs (`checkFilm`), so all three agree on what passes.
  */
-import { existsSync, readFileSync, statSync } from "node:fs";
+import { existsSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
@@ -282,18 +283,107 @@ export const checkFilm = (arg) => {
     }
   }
 
+  // ---- Eight-block format (2026-10-24, opt-in): block order, each block's timing, every open loop answered ----
+  // Robin Tempe's structure (rules.json `eightBlock`): hook, lead, body 1, loop 1, body 2, loop 2, body 3, CTA.
+  // Only a storyboard with "format": "eight-block" is held to it; any other film is untouched.
+  if (sb.format === "eight-block" && shots && shots.length) {
+    const E = rules.eightBlock;
+    const ORDER = E.order.filter((b) => b !== "cta");
+    const label = (b) => `${b} (${E.jobs[b] ?? ""})`;
+    // runs of consecutive shots that share a block
+    const runs = [];
+    shots.forEach((sh, i) => {
+      const b = sh?.block;
+      if (!ORDER.includes(b)) return fail(`Shot "${sh?.id ?? i + 1}" needs a "block": one of ${ORDER.join(", ")} (an eight-block film names every shot's block; the CTA is the end card).`);
+      const last = runs[runs.length - 1];
+      if (last && last.block === b) { last.end = starts[i] + (isNum(sh.seconds) ? sh.seconds : 0); last.idx.push(i); }
+      else runs.push({ block: b, start: starts[i], end: starts[i] + (isNum(sh.seconds) ? sh.seconds : 0), idx: [i] });
+    });
+    const seq = runs.map((r) => r.block);
+    if (seq.join(",") !== ORDER.join(",")) {
+      fail(`The blocks run ${seq.join(", ")}; an eight-block film runs ${ORDER.join(", ")}, then the end card as the CTA, each block once and in that order.`);
+    } else {
+      const run = Object.fromEntries(runs.map((r) => [r.block, r]));
+      // hook: short, and something worth watching on the first frames
+      const h = run.hook;
+      if (h.end - h.start > E.hook.maxSeconds + 1e-9) fail(`The hook runs ${s2(h.end - h.start)}; it stops the scroll in at most ${E.hook.maxSeconds} s.`);
+      const first = shots[0];
+      const earlyText = (first.text ?? []).some((t) => (t.role === "hook" || t.role === "line") && (isNum(t.at) ? t.at : 0) <= E.hook.showsBy);
+      if (!first.surface && !earlyText) fail(`The hook shows nothing by ${E.hook.showsBy} s: its first shot needs the product (a surface) or a hook line at ${E.hook.showsBy} s or sooner.`);
+      // lead: carries the viewer past the 10 second mark
+      const l = run.lead;
+      if (l.end < E.lead.endFrom - 1e-9 || l.end > E.lead.endTo + 1e-9)
+        fail(`The lead ends at ${s2(l.end)}; its job is to carry the viewer to about 10 s, so it ends between ${E.lead.endFrom} and ${E.lead.endTo} s.`);
+      else note(`Lead ends at ${s2(l.end)}: the viewer is carried past the 10 second mark.`);
+      if (!l.idx.some((i) => (shots[i].text ?? []).some((t) => t.role === "hook" || t.role === "line")))
+        warn(`The lead has no line on screen; a retention anchor is usually a promise the viewer can read.`);
+      for (const b of ["body-1", "body-2", "body-3"]) {
+        const r = run[b];
+        if (r.end - r.start < E.body.minSeconds - 1e-9) fail(`Block ${label(b)} runs ${s2(r.end - r.start)}; a body runs at least ${E.body.minSeconds} s.`);
+      }
+      // loops: a question on screen, answered by words on screen in the NEXT body
+      for (const [b, next] of [["loop-1", "body-2"], ["loop-2", "body-3"]]) {
+        const r = run[b];
+        const len = r.end - r.start;
+        if (len < E.loop.minSeconds - 1e-9 || len > E.loop.maxSeconds + 1e-9)
+          fail(`Open loop ${b} runs ${s2(len)}; a loop runs ${E.loop.minSeconds} to ${E.loop.maxSeconds} s (long enough to read, short enough to stay a question).`);
+        const own = shots[r.idx[0]];
+        const lp = own.loop;
+        if (!lp || !isStr(lp.question) || !lp.answer || !isStr(lp.answer.shot) || !isStr(lp.answer.evidence)) {
+          fail(`Open loop ${b}: its first shot "${own.id}" needs "loop": { "question", "answer": { "shot", "evidence" } }, the question it asks and where ${next} answers it.`);
+          continue;
+        }
+        const lines = r.idx.flatMap((i) => (shots[i].text ?? []).filter((t) => t.role === "hook" || t.role === "line").map((t) => norm(t.text)));
+        if (lp.visual !== true && !lines.includes(norm(lp.question)))
+          fail(`Open loop ${b}: the question "${lp.question}" is not one of its lines on screen (or mark it "visual": true and describe the picture).`);
+        const ai = ids.indexOf(lp.answer.shot);
+        if (ai === -1) { fail(`Open loop ${b}: its answer shot "${lp.answer.shot}" is not a shot.`); continue; }
+        if (!run[next].idx.includes(ai)) { fail(`Open loop ${b}: its answer shot "${lp.answer.shot}" is in ${shots[ai].block}, not the next body (${next}). A loop is answered by the body right after it.`); continue; }
+        const ans = shots[ai];
+        const ev = norm(lp.answer.evidence);
+        const onCapture = ans.surface && layerText[ans.surface] ? layerText[ans.surface].some((x) => x.includes(ev)) : false;
+        const onText = (ans.text ?? []).some((t) => norm(t.text).includes(ev));
+        if (!onCapture && !onText)
+          fail(`Open loop ${b} is never answered: "${lp.answer.evidence}" is not on screen in "${ans.id}" (not in its capture's layers, not in its text).`);
+        else note(`Open loop ${b} ("${lp.question}") is answered in ${next} by "${lp.answer.evidence}" in "${ans.id}".`);
+        if (lines.some((x) => x.includes(ev))) warn(`Open loop ${b} shows its own answer ("${lp.answer.evidence}"), so it is no longer open.`);
+      }
+      // CTA: the end card, logo plus address, about 3 s
+      if (isNum(sb.end?.hold) && (sb.end.hold < E.cta.holdMin - 1e-9 || sb.end.hold > E.cta.holdMax + 1e-9))
+        fail(`The CTA (end card) holds ${s2(sb.end.hold)}; in an eight-block film it holds ${E.cta.holdMin} to ${E.cta.holdMax} s.`);
+      for (const [i, sh] of shots.entries()) if (sh.hero && !["body-1", "body-2", "body-3"].includes(sh.block)) warn(`Hero shot "${shots[i].id}" sits in ${sh.block}; the hero belongs in a body.`);
+      note(`Eight blocks in order: ${runs.map((r) => `${r.block} ${s2(r.start)} to ${s2(r.end)}`).join(", ")}, cta ${s2(cursor)} to ${s2(total)}.`);
+    }
+  } else if (shots && shots.some((sh) => sh && (sh.block !== undefined || sh.loop !== undefined)))
+    warn(`Some shots name a "block" or "loop", which only an eight-block film reads ("format" is "${sb.format}").`);
+
   // ---- Length cutdowns: each cut is a list of the film's own shots, checked as a film of its own ----------
+  // opt-in (2026-10-23): shots made for cuts only, never in the full film; their ids must not clash
+  const cutShots = sb.cutShots === undefined ? [] : Array.isArray(sb.cutShots) ? sb.cutShots : (fail(`"cutShots" must be a list of shots.`), []);
+  for (const cs of cutShots) if (cs && ids.includes(cs.id)) fail(`Cut shot "${cs.id}" has the same id as a film shot.`);
   if (sb.cuts !== undefined) {
     if (!sb.cuts || typeof sb.cuts !== "object" || Array.isArray(sb.cuts)) fail(`"cuts" must be an object of { name: { shots: [...] } }.`);
     else for (const [name, c] of Object.entries(sb.cuts)) {
       const ids = Array.isArray(c?.shots) ? c.shots : null;
       if (!ids || ids.length === 0) { fail(`Cut "${name}" has no "shots" list.`); continue; }
-      const byId = new Map((shots ?? []).map((sh) => [sh?.id, sh]));
+      const byId = new Map([...(shots ?? []), ...cutShots].map((sh) => [sh?.id, sh]));
       const missing = ids.filter((id) => !byId.has(id));
       if (missing.length) { fail(`Cut "${name}" names shots that do not exist: ${missing.join(", ")}.`); continue; }
       const cf = c.format ?? sb.format;
       if (!FORMATS.includes(cf)) { fail(`Cut "${name}" has format "${cf}"; it must be one of ${FORMATS.join(", ")}.`); continue; }
-      const len = ids.reduce((a, id) => a + (isNum(byId.get(id).seconds) ? byId.get(id).seconds : 0), 0) + endHold;
+      if (c.endHold !== undefined && !isNum(c.endHold)) { fail(`Cut "${name}": "endHold" must be a number of seconds.`); continue; }
+      const cutEnd = isNum(c.endHold) ? c.endHold : endHold;
+      // the cut checked as a film of its own (reading holds, text truth, cameras, presses, end hold); its length is reported below
+      if (cutShots.length || c.endHold !== undefined) {
+        const tmp = join(tmpdir(), `film-cut-${process.pid}-${String(sb.id).replace(/[^\w-]/g, "")}-${String(name).replace(/[^\w-]/g, "")}.json`);
+        const { cuts: _c, cutShots: _cs, ...rest } = sb;
+        writeFileSync(tmp, JSON.stringify({ ...rest, format: cf, end: { ...sb.end, hold: cutEnd }, shots: ids.map((id) => byId.get(id)) }));
+        const sub = checkFilm(tmp);
+        rmSync(tmp, { force: true });
+        for (const m of sub.fails) if (!m.startsWith("Runtime is ")) fail(`Cut "${name}": ${m}`);
+        for (const m of sub.warns) if (!m.startsWith("The id ")) warn(`Cut "${name}": ${m}`);
+      }
+      const len = ids.reduce((a, id) => a + (isNum(byId.get(id).seconds) ? byId.get(id).seconds : 0), 0) + cutEnd;
       const range = rules.formats[cf];
       if (len < range.min || len > range.max) fail(`Cut "${name}" runs ${s2(len)}; a ${cf} cut runs ${range.min} to ${range.max} s.`);
       else note(`Cut "${name}" runs ${s2(len)}, inside ${cf}'s ${range.min} to ${range.max} s.`);

@@ -1,0 +1,94 @@
+{
+ "captured": "2026-10-24T03:05:53.371Z",
+ "base": "https://campusai-demo.vercel.app",
+ "viewport": {
+  "w": 1440,
+  "h": 900,
+  "dpr": 4
+ },
+ "steps": [
+  {
+   "flow": "job",
+   "before": "job-0-list",
+   "after": "job-1-goldman",
+   "press": {
+    "x": 501,
+    "y": 456,
+    "label": "Goldman Sachs card",
+    "rect": {
+     "x": 340,
+     "y": 436,
+     "w": 322,
+     "h": 40
+    }
+   }
+  },
+  {
+   "flow": "cal",
+   "before": "cal-0-events",
+   "after": "cal-2-pressed",
+   "settled": "cal-3-added",
+   "press": {
+    "x": 984,
+    "y": 401,
+    "label": "Add to CampusAI Calendar",
+    "rect": {
+     "x": 849,
+     "y": 384,
+     "w": 269,
+     "h": 34
+    }
+   },
+   "buttonAfter": {
+    "x": 849,
+    "y": 381,
+    "w": 269,
+    "h": 36,
+    "text": "On your calendar"
+   },
+   "toast": {
+    "x": 705,
+    "y": 347,
+    "w": 346,
+    "h": 17,
+    "text": "Added. It will now show up in Your week on your dashboard."
+   }
+  },
+  {
+   "flow": "cal",
+   "before": "cal-4-nav",
+   "after": "cal-5-calendar-today-week",
+   "press": {
+    "x": 108,
+    "y": 122,
+    "label": "My Calendar (sidebar)",
+    "rect": {
+     "x": 8,
+     "y": 104,
+     "w": 199,
+     "h": 36
+    }
+   }
+  },
+  {
+   "flow": "cal",
+   "before": "cal-5-calendar-today-week",
+   "after": "cal-6-calendar-event-week",
+   "press": {
+    "x": 284,
+    "y": 24,
+    "label": "Next week",
+    "rect": {
+     "x": 270,
+     "y": 10,
+     "w": 28,
+     "h": 28
+    }
+   }
+  }
+ ],
+ "notes": [],
+ "writes": [
+  "POST https://campusai-demo.vercel.app/api/v1/career/jobs/jp_3f9a1c07b2d40006/view"
+ ]
+}

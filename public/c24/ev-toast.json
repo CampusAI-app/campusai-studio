@@ -1,0 +1,59 @@
+{
+ "page": {
+  "w": 1440,
+  "h": 900
+ },
+ "dpr": 3,
+ "clip": {
+  "x": 697,
+  "y": 561,
+  "w": 362,
+  "h": 33
+ },
+ "source": "https://campusai-demo.vercel.app/events",
+ "captured": "2026-10-25T00:19:46.713Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false,
+  "terp": false
+ },
+ "texts": [
+  {
+   "text": "Your portfolio project runs on the same pitch structure the panel grades.",
+   "x": -434,
+   "y": -7,
+   "w": 438,
+   "h": 16
+  },
+  {
+   "text": "Every bank and corporate-finance team on your summer-analyst list is recruiting here in one afternoon, and your Smith Investment Fund analyst reps give you real work to lead with.",
+   "x": 152,
+   "y": -9,
+   "w": 531,
+   "h": 51
+  },
+  {
+   "text": "Added. It will now show up in",
+   "x": 8,
+   "y": 8,
+   "w": 167,
+   "h": 15
+  },
+  {
+   "text": "Your week",
+   "x": 179,
+   "y": 8,
+   "w": 61,
+   "h": 15
+  },
+  {
+   "text": "on your dashboard.",
+   "x": 243,
+   "y": 8,
+   "w": 112,
+   "h": 15
+  }
+ ]
+}

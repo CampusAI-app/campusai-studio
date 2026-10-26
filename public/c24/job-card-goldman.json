@@ -1,0 +1,108 @@
+{
+ "page": {
+  "w": 1440,
+  "h": 900
+ },
+ "dpr": 3,
+ "clip": {
+  "x": 330,
+  "y": 387,
+  "w": 370,
+  "h": 185
+ },
+ "source": "https://campusai-demo.vercel.app/career?view=jobs&student_signal=intern%2Cco_op%2Cnew_grad%2Centry_level",
+ "captured": "2026-10-25T00:19:30.653Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false,
+  "terp": false
+ },
+ "texts": [
+  {
+   "text": "Goldman Sachs",
+   "x": 10,
+   "y": 10,
+   "w": 90,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 112,
+   "y": 12,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "text": "Strong match",
+   "x": 124,
+   "y": 12,
+   "w": 74,
+   "h": 13
+  },
+  {
+   "text": "Bulge bracket",
+   "x": 16,
+   "y": 33,
+   "w": 73,
+   "h": 12
+  },
+  {
+   "text": "Internship",
+   "x": 269,
+   "y": 13,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "text": "2027 Summer Analyst, Global Banking and Markets",
+   "x": 10,
+   "y": 50,
+   "w": 290,
+   "h": 37
+  },
+  {
+   "text": "New York, NY",
+   "x": 10,
+   "y": 93,
+   "w": 77,
+   "h": 15
+  },
+  {
+   "text": "·",
+   "x": 91,
+   "y": 93,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "text": "$110k/yr",
+   "x": 99,
+   "y": 93,
+   "w": 48,
+   "h": 15
+  },
+  {
+   "text": "You have financial statement analysis and Excel, plus a credit internship and an investment fund role.",
+   "x": 10,
+   "y": 116,
+   "w": 319,
+   "h": 32
+  },
+  {
+   "text": "Closes Nov 3",
+   "x": 18,
+   "y": 159,
+   "w": 71,
+   "h": 13
+  },
+  {
+   "text": "Posted 2d ago",
+   "x": 253,
+   "y": 159,
+   "w": 79,
+   "h": 13
+  }
+ ]
+}

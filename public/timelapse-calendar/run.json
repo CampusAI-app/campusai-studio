@@ -1,0 +1,50 @@
+{
+ "captured": "2026-10-24T03:26:03.634Z",
+ "base": "https://campusai-demo.vercel.app",
+ "week": "Oct 25 to Oct 31, 2026",
+ "order": [
+  "Financial Modeling Bootcamp",
+  "Smith Fall Career & Internship Fair",
+  "Goldman Sachs",
+  "Morgan Stanley",
+  "Bloomberg Terminal Workshop"
+ ],
+ "steps": [
+  {
+   "title": "Financial Modeling Bootcamp",
+   "pressedAt": 0.019,
+   "buttonAfter": "On your calendar",
+   "frame": "frames/f01.jpg",
+   "t": 6.6
+  },
+  {
+   "title": "Smith Fall Career & Internship Fair",
+   "pressedAt": 7.121,
+   "buttonAfter": "On your calendar",
+   "frame": "frames/f02.jpg",
+   "t": 13.7
+  },
+  {
+   "title": "Goldman Sachs",
+   "pressedAt": 14.167,
+   "buttonAfter": "On your calendar",
+   "frame": "frames/f03.jpg",
+   "t": 20.7
+  },
+  {
+   "title": "Morgan Stanley",
+   "pressedAt": 21.217,
+   "buttonAfter": "On your calendar",
+   "frame": "frames/f04.jpg",
+   "t": 27.8
+  },
+  {
+   "title": "Bloomberg Terminal Workshop",
+   "pressedAt": 28.284,
+   "buttonAfter": "On your calendar",
+   "frame": "frames/f05.jpg",
+   "t": 34.9
+  }
+ ],
+ "writes": []
+}

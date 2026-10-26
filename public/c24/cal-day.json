@@ -1,0 +1,318 @@
+{
+ "page": {
+  "w": 1440,
+  "h": 900
+ },
+ "dpr": 3,
+ "clip": {
+  "x": 921,
+  "y": 40,
+  "w": 360,
+  "h": 680
+ },
+ "source": "https://campusai-demo.vercel.app/calendar",
+ "captured": "2026-10-25T00:20:10.316Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false,
+  "terp": false
+ },
+ "texts": [
+  {
+   "text": "due",
+   "x": -30,
+   "y": 47,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "Wed",
+   "x": 47,
+   "y": 18,
+   "w": 24,
+   "h": 13
+  },
+  {
+   "text": "28",
+   "x": 48,
+   "y": 34,
+   "w": 23,
+   "h": 21
+  },
+  {
+   "text": "1",
+   "x": 58,
+   "y": 47,
+   "w": 7,
+   "h": 18
+  },
+  {
+   "text": "item",
+   "x": 70,
+   "y": 47,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "due",
+   "x": 101,
+   "y": 47,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "Thu",
+   "x": 180,
+   "y": 18,
+   "w": 20,
+   "h": 13
+  },
+  {
+   "text": "29",
+   "x": 179,
+   "y": 34,
+   "w": 22,
+   "h": 21
+  },
+  {
+   "text": "3",
+   "x": 190,
+   "y": 47,
+   "w": 10,
+   "h": 18
+  },
+  {
+   "text": "items",
+   "x": 204,
+   "y": 47,
+   "w": 40,
+   "h": 18
+  },
+  {
+   "text": "due",
+   "x": 244,
+   "y": 47,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "Fri",
+   "x": 315,
+   "y": 18,
+   "w": 14,
+   "h": 13
+  },
+  {
+   "text": "30",
+   "x": 311,
+   "y": 34,
+   "w": 23,
+   "h": 21
+  },
+  {
+   "text": "1",
+   "x": 322,
+   "y": 47,
+   "w": 7,
+   "h": 18
+  },
+  {
+   "text": "item",
+   "x": 333,
+   "y": 47,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "Case brief: Palsgraf",
+   "x": 23,
+   "y": 74,
+   "w": 99,
+   "h": 12
+  },
+  {
+   "text": "Quiz 2",
+   "x": 154,
+   "y": 74,
+   "w": 32,
+   "h": 12
+  },
+  {
+   "text": "Reading: Ch. 8",
+   "x": 154,
+   "y": 101,
+   "w": 74,
+   "h": 12
+  },
+  {
+   "text": "+",
+   "x": 135,
+   "y": 131,
+   "w": 7,
+   "h": 12
+  },
+  {
+   "text": "1",
+   "x": 142,
+   "y": 131,
+   "w": 5,
+   "h": 12
+  },
+  {
+   "text": "more",
+   "x": 147,
+   "y": 131,
+   "w": 28,
+   "h": 12
+  },
+  {
+   "text": "Quiz 4",
+   "x": 286,
+   "y": 74,
+   "w": 32,
+   "h": 12
+  },
+  {
+   "text": "Management and Organization Theory",
+   "x": -128,
+   "y": 434,
+   "w": 184,
+   "h": 12
+  },
+  {
+   "text": "BMGT343",
+   "x": 3,
+   "y": 288,
+   "w": 55,
+   "h": 13
+  },
+  {
+   "text": "Investments",
+   "x": 3,
+   "y": 302,
+   "w": 58,
+   "h": 12
+  },
+  {
+   "text": "BMGT380",
+   "x": 3,
+   "y": 420,
+   "w": 55,
+   "h": 13
+  },
+  {
+   "text": "Business Law I",
+   "x": 3,
+   "y": 434,
+   "w": 71,
+   "h": 12
+  },
+  {
+   "text": "Work shift",
+   "x": 3,
+   "y": 508,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "text": "McKeldin Library",
+   "x": 3,
+   "y": 522,
+   "w": 81,
+   "h": 12
+  },
+  {
+   "text": "Smith Finance Group Stock Pitch Night",
+   "x": 3,
+   "y": 618,
+   "w": 212,
+   "h": 13
+  },
+  {
+   "text": "Van Munching Hall",
+   "x": 3,
+   "y": 632,
+   "w": 90,
+   "h": 12
+  },
+  {
+   "text": "BMGT310",
+   "x": 135,
+   "y": 222,
+   "w": 53,
+   "h": 13
+  },
+  {
+   "text": "Intermediate Accounting I",
+   "x": 135,
+   "y": 236,
+   "w": 124,
+   "h": 12
+  },
+  {
+   "text": "Smith Fall Career & Internship Fair",
+   "x": 200,
+   "y": 244,
+   "w": 187,
+   "h": 13
+  },
+  {
+   "text": "The Hotel at UMD",
+   "x": 200,
+   "y": 258,
+   "w": 86,
+   "h": 12
+  },
+  {
+   "text": "BMGT364",
+   "x": 135,
+   "y": 420,
+   "w": 55,
+   "h": 13
+  },
+  {
+   "text": "Management and Organization Theory",
+   "x": 135,
+   "y": 434,
+   "w": 184,
+   "h": 12
+  },
+  {
+   "text": "✦",
+   "x": 265,
+   "y": 596,
+   "w": 7,
+   "h": 11
+  },
+  {
+   "text": "Suggested",
+   "x": 276,
+   "y": 596,
+   "w": 49,
+   "h": 11
+  },
+  {
+   "text": "Morgan Stanley, Sales & Trading Info Session",
+   "x": 265,
+   "y": 608,
+   "w": 107,
+   "h": 41
+  },
+  {
+   "text": "6",
+   "x": 339,
+   "y": -14,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "text": "new",
+   "x": 347,
+   "y": -14,
+   "w": 27,
+   "h": 15
+  }
+ ]
+}

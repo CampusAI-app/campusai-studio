@@ -1,0 +1,1564 @@
+{
+ "page": {
+  "w": 1024,
+  "h": 900
+ },
+ "dpr": 3,
+ "clip": {
+  "x": 0,
+  "y": 0,
+  "w": 1024,
+  "h": 900
+ },
+ "source": "https://campusai-demo.vercel.app/calendar",
+ "captured": "2026-10-25T00:35:47.123Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false,
+  "terp": false
+ },
+ "texts": [
+  {
+   "text": "Skip to main content",
+   "x": -1,
+   "y": 2,
+   "w": 149,
+   "h": 18
+  },
+  {
+   "text": "Dashboard",
+   "x": 52,
+   "y": 76,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "text": "My Calendar",
+   "x": 52,
+   "y": 114,
+   "w": 78,
+   "h": 16
+  },
+  {
+   "text": "✦",
+   "x": 52,
+   "y": 154,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "text": "Career Advisor",
+   "x": 64,
+   "y": 152,
+   "w": 92,
+   "h": 16
+  },
+  {
+   "text": "Resume Review",
+   "x": 52,
+   "y": 187,
+   "w": 94,
+   "h": 15
+  },
+  {
+   "text": "Job Match",
+   "x": 52,
+   "y": 218,
+   "w": 63,
+   "h": 15
+  },
+  {
+   "text": "Interview Prep",
+   "x": 52,
+   "y": 249,
+   "w": 86,
+   "h": 15
+  },
+  {
+   "text": "Company Tracker",
+   "x": 52,
+   "y": 280,
+   "w": 105,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 52,
+   "y": 323,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "text": "Academic Advisor",
+   "x": 64,
+   "y": 321,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "text": "Planner & Progress",
+   "x": 52,
+   "y": 356,
+   "w": 115,
+   "h": 15
+  },
+  {
+   "text": "Class Tracker",
+   "x": 52,
+   "y": 387,
+   "w": 81,
+   "h": 15
+  },
+  {
+   "text": "Courses and Professors",
+   "x": 52,
+   "y": 418,
+   "w": 143,
+   "h": 15
+  },
+  {
+   "text": "Organizations",
+   "x": 52,
+   "y": 359,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "text": "Events",
+   "x": 52,
+   "y": 397,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "text": "Dining",
+   "x": 52,
+   "y": 435,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "text": "CampusAI",
+   "x": 52,
+   "y": 486,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "text": "Accessibility",
+   "x": 28,
+   "y": 834,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "text": "MC",
+   "x": 28,
+   "y": 865,
+   "w": 17,
+   "h": 12
+  },
+  {
+   "text": "Maya Chen",
+   "x": 63,
+   "y": 856,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "text": "80",
+   "x": 63,
+   "y": 874,
+   "w": 14,
+   "h": 12
+  },
+  {
+   "text": "%",
+   "x": 77,
+   "y": 874,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "text": "·",
+   "x": 87,
+   "y": 874,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "text": "Connect your transcript",
+   "x": 96,
+   "y": 874,
+   "w": 115,
+   "h": 12
+  },
+  {
+   "text": "‹",
+   "x": 247,
+   "y": 15,
+   "w": 7,
+   "h": 18
+  },
+  {
+   "text": "›",
+   "x": 281,
+   "y": 15,
+   "w": 7,
+   "h": 18
+  },
+  {
+   "text": "Oct 25 – Oct 31, 2026",
+   "x": 310,
+   "y": 13,
+   "w": 184,
+   "h": 21
+  },
+  {
+   "text": "7",
+   "x": 506,
+   "y": 16,
+   "w": 7,
+   "h": 15
+  },
+  {
+   "text": "due",
+   "x": 513,
+   "y": 16,
+   "w": 25,
+   "h": 15
+  },
+  {
+   "text": "Today",
+   "x": 958,
+   "y": 16,
+   "w": 35,
+   "h": 15
+  },
+  {
+   "text": "Showing Oct 25 – Oct 31, 2026. 22h scheduled, 7 due.",
+   "x": 215,
+   "y": 2,
+   "w": 396,
+   "h": 18
+  },
+  {
+   "text": "October",
+   "x": 248,
+   "y": 66,
+   "w": 55,
+   "h": 17
+  },
+  {
+   "text": "2026",
+   "x": 307,
+   "y": 66,
+   "w": 36,
+   "h": 17
+  },
+  {
+   "text": "S",
+   "x": 261,
+   "y": 94,
+   "w": 7,
+   "h": 12
+  },
+  {
+   "text": "M",
+   "x": 291,
+   "y": 94,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "text": "T",
+   "x": 324,
+   "y": 94,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "text": "W",
+   "x": 355,
+   "y": 94,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "text": "T",
+   "x": 388,
+   "y": 94,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "text": "F",
+   "x": 420,
+   "y": 94,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "text": "S",
+   "x": 452,
+   "y": 94,
+   "w": 7,
+   "h": 12
+  },
+  {
+   "text": "1",
+   "x": 389,
+   "y": 113,
+   "w": 5,
+   "h": 13
+  },
+  {
+   "text": "2",
+   "x": 420,
+   "y": 113,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "text": "3",
+   "x": 452,
+   "y": 113,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "text": "4",
+   "x": 260,
+   "y": 137,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "text": "5",
+   "x": 292,
+   "y": 137,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "text": "6",
+   "x": 324,
+   "y": 137,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "text": "7",
+   "x": 356,
+   "y": 137,
+   "w": 6,
+   "h": 13
+  },
+  {
+   "text": "8",
+   "x": 388,
+   "y": 137,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "text": "9",
+   "x": 420,
+   "y": 137,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "text": "10",
+   "x": 449,
+   "y": 137,
+   "w": 12,
+   "h": 13
+  },
+  {
+   "text": "11",
+   "x": 259,
+   "y": 161,
+   "w": 10,
+   "h": 13
+  },
+  {
+   "text": "12",
+   "x": 290,
+   "y": 161,
+   "w": 12,
+   "h": 13
+  },
+  {
+   "text": "13",
+   "x": 322,
+   "y": 161,
+   "w": 12,
+   "h": 13
+  },
+  {
+   "text": "14",
+   "x": 353,
+   "y": 161,
+   "w": 12,
+   "h": 13
+  },
+  {
+   "text": "15",
+   "x": 385,
+   "y": 161,
+   "w": 12,
+   "h": 13
+  },
+  {
+   "text": "16",
+   "x": 417,
+   "y": 161,
+   "w": 12,
+   "h": 13
+  },
+  {
+   "text": "17",
+   "x": 449,
+   "y": 161,
+   "w": 12,
+   "h": 13
+  },
+  {
+   "text": "18",
+   "x": 258,
+   "y": 185,
+   "w": 12,
+   "h": 13
+  },
+  {
+   "text": "19",
+   "x": 290,
+   "y": 185,
+   "w": 12,
+   "h": 13
+  },
+  {
+   "text": "20",
+   "x": 321,
+   "y": 185,
+   "w": 14,
+   "h": 13
+  },
+  {
+   "text": "21",
+   "x": 354,
+   "y": 185,
+   "w": 12,
+   "h": 13
+  },
+  {
+   "text": "22",
+   "x": 385,
+   "y": 185,
+   "w": 13,
+   "h": 13
+  },
+  {
+   "text": "23",
+   "x": 416,
+   "y": 185,
+   "w": 14,
+   "h": 13
+  },
+  {
+   "text": "24",
+   "x": 448,
+   "y": 185,
+   "w": 14,
+   "h": 13
+  },
+  {
+   "text": "25",
+   "x": 257,
+   "y": 209,
+   "w": 14,
+   "h": 13
+  },
+  {
+   "text": "26",
+   "x": 289,
+   "y": 209,
+   "w": 14,
+   "h": 13
+  },
+  {
+   "text": "27",
+   "x": 321,
+   "y": 209,
+   "w": 13,
+   "h": 13
+  },
+  {
+   "text": "28",
+   "x": 352,
+   "y": 209,
+   "w": 14,
+   "h": 13
+  },
+  {
+   "text": "29",
+   "x": 384,
+   "y": 209,
+   "w": 14,
+   "h": 13
+  },
+  {
+   "text": "30",
+   "x": 416,
+   "y": 209,
+   "w": 14,
+   "h": 13
+  },
+  {
+   "text": "31",
+   "x": 449,
+   "y": 209,
+   "w": 12,
+   "h": 13
+  },
+  {
+   "text": "Your assignments live in Canvas",
+   "x": 261,
+   "y": 258,
+   "w": 172,
+   "h": 39
+  },
+  {
+   "text": "One link brings them all here, and tells you when a due date moves.",
+   "x": 261,
+   "y": 302,
+   "w": 190,
+   "h": 32
+  },
+  {
+   "text": "Add Canvas",
+   "x": 320,
+   "y": 356,
+   "w": 78,
+   "h": 17
+  },
+  {
+   "text": "How to find it",
+   "x": 331,
+   "y": 396,
+   "w": 73,
+   "h": 13
+  },
+  {
+   "text": "✦",
+   "x": 265,
+   "y": 472,
+   "w": 13,
+   "h": 18
+  },
+  {
+   "text": "Ask CampusAI",
+   "x": 301,
+   "y": 460,
+   "w": 131,
+   "h": 23
+  },
+  {
+   "text": "About your week",
+   "x": 301,
+   "y": 484,
+   "w": 98,
+   "h": 15
+  },
+  {
+   "text": "Find time to study for Quiz 2",
+   "x": 275,
+   "y": 519,
+   "w": 158,
+   "h": 32
+  },
+  {
+   "text": "Study 1 hour before the BMGT343 midterm",
+   "x": 275,
+   "y": 570,
+   "w": 140,
+   "h": 32
+  },
+  {
+   "text": "Find events",
+   "x": 275,
+   "y": 620,
+   "w": 69,
+   "h": 15
+  },
+  {
+   "text": "What can I do with my free time?",
+   "x": 275,
+   "y": 654,
+   "w": 159,
+   "h": 32
+  },
+  {
+   "text": "Show",
+   "x": 248,
+   "y": 729,
+   "w": 32,
+   "h": 15
+  },
+  {
+   "text": "Classes",
+   "x": 274,
+   "y": 757,
+   "w": 45,
+   "h": 15
+  },
+  {
+   "text": "8",
+   "x": 460,
+   "y": 758,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "text": "BMGT448Y needs a meeting time",
+   "x": 283,
+   "y": 788,
+   "w": 95,
+   "h": 28
+  },
+  {
+   "text": "Pick section",
+   "x": 393,
+   "y": 794,
+   "w": 67,
+   "h": 13
+  },
+  {
+   "text": "Events",
+   "x": 274,
+   "y": 834,
+   "w": 39,
+   "h": 15
+  },
+  {
+   "text": "5",
+   "x": 460,
+   "y": 835,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "text": "Tasks",
+   "x": 274,
+   "y": 861,
+   "w": 33,
+   "h": 15
+  },
+  {
+   "text": "7",
+   "x": 460,
+   "y": 861,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "text": "+ Add a category",
+   "x": 252,
+   "y": 889,
+   "w": 97,
+   "h": 15
+  },
+  {
+   "text": "Sun",
+   "x": 345,
+   "y": 58,
+   "w": 21,
+   "h": 13
+  },
+  {
+   "text": "25",
+   "x": 344,
+   "y": 74,
+   "w": 22,
+   "h": 21
+  },
+  {
+   "text": "Mon",
+   "x": 446,
+   "y": 58,
+   "w": 23,
+   "h": 13
+  },
+  {
+   "text": "26",
+   "x": 447,
+   "y": 74,
+   "w": 22,
+   "h": 21
+  },
+  {
+   "text": "1",
+   "x": 458,
+   "y": 87,
+   "w": 7,
+   "h": 18
+  },
+  {
+   "text": "item",
+   "x": 469,
+   "y": 87,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "due",
+   "x": 500,
+   "y": 87,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "Tue",
+   "x": 551,
+   "y": 58,
+   "w": 20,
+   "h": 13
+  },
+  {
+   "text": "27",
+   "x": 550,
+   "y": 74,
+   "w": 21,
+   "h": 21
+  },
+  {
+   "text": "1",
+   "x": 561,
+   "y": 87,
+   "w": 7,
+   "h": 18
+  },
+  {
+   "text": "item",
+   "x": 572,
+   "y": 87,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "due",
+   "x": 603,
+   "y": 87,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "Wed",
+   "x": 652,
+   "y": 58,
+   "w": 24,
+   "h": 13
+  },
+  {
+   "text": "28",
+   "x": 653,
+   "y": 74,
+   "w": 23,
+   "h": 21
+  },
+  {
+   "text": "1",
+   "x": 664,
+   "y": 87,
+   "w": 7,
+   "h": 18
+  },
+  {
+   "text": "item",
+   "x": 675,
+   "y": 87,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "due",
+   "x": 706,
+   "y": 87,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "Thu",
+   "x": 757,
+   "y": 58,
+   "w": 20,
+   "h": 13
+  },
+  {
+   "text": "29",
+   "x": 756,
+   "y": 74,
+   "w": 22,
+   "h": 21
+  },
+  {
+   "text": "3",
+   "x": 767,
+   "y": 87,
+   "w": 10,
+   "h": 18
+  },
+  {
+   "text": "items",
+   "x": 780,
+   "y": 87,
+   "w": 40,
+   "h": 18
+  },
+  {
+   "text": "due",
+   "x": 820,
+   "y": 87,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "Fri",
+   "x": 863,
+   "y": 58,
+   "w": 14,
+   "h": 13
+  },
+  {
+   "text": "30",
+   "x": 859,
+   "y": 74,
+   "w": 23,
+   "h": 21
+  },
+  {
+   "text": "1",
+   "x": 870,
+   "y": 87,
+   "w": 7,
+   "h": 18
+  },
+  {
+   "text": "item",
+   "x": 881,
+   "y": 87,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "due",
+   "x": 912,
+   "y": 87,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "Sat",
+   "x": 964,
+   "y": 58,
+   "w": 18,
+   "h": 13
+  },
+  {
+   "text": "31",
+   "x": 963,
+   "y": 74,
+   "w": 20,
+   "h": 21
+  },
+  {
+   "text": "Due",
+   "x": 278,
+   "y": 112,
+   "w": 19,
+   "h": 12
+  },
+  {
+   "text": "Problem set 3: bond pricing",
+   "x": 436,
+   "y": 114,
+   "w": 139,
+   "h": 12
+  },
+  {
+   "text": "Reading: Ch. 6-7",
+   "x": 539,
+   "y": 114,
+   "w": 85,
+   "h": 12
+  },
+  {
+   "text": "Case brief: Palsgraf",
+   "x": 642,
+   "y": 114,
+   "w": 99,
+   "h": 12
+  },
+  {
+   "text": "Quiz 2",
+   "x": 745,
+   "y": 114,
+   "w": 32,
+   "h": 12
+  },
+  {
+   "text": "Reading: Ch. 8",
+   "x": 745,
+   "y": 141,
+   "w": 74,
+   "h": 12
+  },
+  {
+   "text": "+",
+   "x": 726,
+   "y": 171,
+   "w": 7,
+   "h": 12
+  },
+  {
+   "text": "1",
+   "x": 733,
+   "y": 171,
+   "w": 5,
+   "h": 12
+  },
+  {
+   "text": "more",
+   "x": 738,
+   "y": 171,
+   "w": 28,
+   "h": 12
+  },
+  {
+   "text": "Quiz 4",
+   "x": 848,
+   "y": 114,
+   "w": 32,
+   "h": 12
+  },
+  {
+   "text": "8am",
+   "x": 276,
+   "y": 187,
+   "w": 21,
+   "h": 12
+  },
+  {
+   "text": "9am",
+   "x": 276,
+   "y": 231,
+   "w": 21,
+   "h": 12
+  },
+  {
+   "text": "10am",
+   "x": 271,
+   "y": 275,
+   "w": 26,
+   "h": 12
+  },
+  {
+   "text": "11am",
+   "x": 273,
+   "y": 319,
+   "w": 24,
+   "h": 12
+  },
+  {
+   "text": "12pm",
+   "x": 271,
+   "y": 363,
+   "w": 26,
+   "h": 12
+  },
+  {
+   "text": "1pm",
+   "x": 277,
+   "y": 407,
+   "w": 20,
+   "h": 12
+  },
+  {
+   "text": "2pm",
+   "x": 276,
+   "y": 451,
+   "w": 21,
+   "h": 12
+  },
+  {
+   "text": "3pm",
+   "x": 276,
+   "y": 495,
+   "w": 21,
+   "h": 12
+  },
+  {
+   "text": "4pm",
+   "x": 275,
+   "y": 539,
+   "w": 22,
+   "h": 12
+  },
+  {
+   "text": "5pm",
+   "x": 276,
+   "y": 583,
+   "w": 21,
+   "h": 12
+  },
+  {
+   "text": "6pm",
+   "x": 275,
+   "y": 627,
+   "w": 22,
+   "h": 12
+  },
+  {
+   "text": "7pm",
+   "x": 276,
+   "y": 671,
+   "w": 21,
+   "h": 12
+  },
+  {
+   "text": "8pm",
+   "x": 275,
+   "y": 715,
+   "w": 22,
+   "h": 12
+  },
+  {
+   "text": "Evercore Coffee Chat",
+   "x": 417,
+   "y": 284,
+   "w": 117,
+   "h": 13
+  },
+  {
+   "text": "Van Munching Hall",
+   "x": 417,
+   "y": 298,
+   "w": 90,
+   "h": 12
+  },
+  {
+   "text": "BMGT343",
+   "x": 468,
+   "y": 328,
+   "w": 55,
+   "h": 13
+  },
+  {
+   "text": "Investments",
+   "x": 468,
+   "y": 342,
+   "w": 58,
+   "h": 12
+  },
+  {
+   "text": "BMGT380",
+   "x": 417,
+   "y": 460,
+   "w": 55,
+   "h": 13
+  },
+  {
+   "text": "Business Law I",
+   "x": 417,
+   "y": 474,
+   "w": 71,
+   "h": 12
+  },
+  {
+   "text": "Work shift",
+   "x": 417,
+   "y": 548,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "text": "McKeldin Library",
+   "x": 417,
+   "y": 562,
+   "w": 81,
+   "h": 12
+  },
+  {
+   "text": "BMGT310",
+   "x": 520,
+   "y": 262,
+   "w": 53,
+   "h": 13
+  },
+  {
+   "text": "Intermediate Accounting I",
+   "x": 520,
+   "y": 276,
+   "w": 124,
+   "h": 12
+  },
+  {
+   "text": "BMGT364",
+   "x": 520,
+   "y": 460,
+   "w": 55,
+   "h": 13
+  },
+  {
+   "text": "Management and Organization Theory",
+   "x": 520,
+   "y": 474,
+   "w": 184,
+   "h": 12
+  },
+  {
+   "text": "✦",
+   "x": 519,
+   "y": 592,
+   "w": 7,
+   "h": 11
+  },
+  {
+   "text": "Suggested",
+   "x": 530,
+   "y": 592,
+   "w": 49,
+   "h": 11
+  },
+  {
+   "text": "Financial Modeling Bootcamp: 3-Statement to DCF",
+   "x": 519,
+   "y": 604,
+   "w": 73,
+   "h": 68
+  },
+  {
+   "text": "Modeling is the skill gap that shows up most in your target roles.",
+   "x": 519,
+   "y": 636,
+   "w": 74,
+   "h": 67
+  },
+  {
+   "text": "BMGT343",
+   "x": 623,
+   "y": 328,
+   "w": 55,
+   "h": 13
+  },
+  {
+   "text": "Investments",
+   "x": 623,
+   "y": 342,
+   "w": 58,
+   "h": 12
+  },
+  {
+   "text": "BMGT380",
+   "x": 623,
+   "y": 460,
+   "w": 55,
+   "h": 13
+  },
+  {
+   "text": "Business Law I",
+   "x": 623,
+   "y": 474,
+   "w": 71,
+   "h": 12
+  },
+  {
+   "text": "Work shift",
+   "x": 623,
+   "y": 548,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "text": "McKeldin Library",
+   "x": 623,
+   "y": 562,
+   "w": 81,
+   "h": 12
+  },
+  {
+   "text": "Smith Finance Group Stock Pitch Night",
+   "x": 623,
+   "y": 658,
+   "w": 212,
+   "h": 13
+  },
+  {
+   "text": "Van Munching Hall",
+   "x": 623,
+   "y": 672,
+   "w": 90,
+   "h": 12
+  },
+  {
+   "text": "BMGT310",
+   "x": 725,
+   "y": 262,
+   "w": 53,
+   "h": 13
+  },
+  {
+   "text": "Intermediate Accounting I",
+   "x": 725,
+   "y": 276,
+   "w": 124,
+   "h": 12
+  },
+  {
+   "text": "Smith Fall Career & Internship Fair",
+   "x": 776,
+   "y": 284,
+   "w": 187,
+   "h": 13
+  },
+  {
+   "text": "The Hotel at UMD",
+   "x": 776,
+   "y": 298,
+   "w": 86,
+   "h": 12
+  },
+  {
+   "text": "BMGT364",
+   "x": 725,
+   "y": 460,
+   "w": 55,
+   "h": 13
+  },
+  {
+   "text": "Management and Organization Theory",
+   "x": 725,
+   "y": 474,
+   "w": 184,
+   "h": 12
+  },
+  {
+   "text": "✦",
+   "x": 827,
+   "y": 636,
+   "w": 7,
+   "h": 11
+  },
+  {
+   "text": "Suggested",
+   "x": 838,
+   "y": 636,
+   "w": 49,
+   "h": 11
+  },
+  {
+   "text": "Morgan Stanley, Sales & Trading Info Session",
+   "x": 827,
+   "y": 648,
+   "w": 75,
+   "h": 54
+  },
+  {
+   "text": "✦",
+   "x": 930,
+   "y": 636,
+   "w": 7,
+   "h": 11
+  },
+  {
+   "text": "Suggested",
+   "x": 941,
+   "y": 636,
+   "w": 49,
+   "h": 11
+  },
+  {
+   "text": "Goldman Sachs, Investment Banking Info Session",
+   "x": 930,
+   "y": 648,
+   "w": 67,
+   "h": 68
+  },
+  {
+   "text": "+",
+   "x": 959,
+   "y": 727,
+   "w": 9,
+   "h": 17
+  },
+  {
+   "text": "Add",
+   "x": 974,
+   "y": 728,
+   "w": 24,
+   "h": 15
+  },
+  {
+   "text": "Chat",
+   "x": 907,
+   "y": 825,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "text": "CampusAI can make mistakes. Verify important information.",
+   "x": 476,
+   "y": 870,
+   "w": 288,
+   "h": 12
+  },
+  {
+   "text": "6",
+   "x": 844,
+   "y": 26,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "text": "new",
+   "x": 852,
+   "y": 26,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "text": "Feedback",
+   "x": 936,
+   "y": 26,
+   "w": 57,
+   "h": 15
+  },
+  {
+   "text": "Evercore Coffee Chat",
+   "x": -14,
+   "y": 51,
+   "w": 141,
+   "h": 17
+  },
+  {
+   "text": "Smith Office of Career Services",
+   "x": -14,
+   "y": 70,
+   "w": 178,
+   "h": 15
+  },
+  {
+   "text": "S",
+   "x": 193,
+   "y": 47,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "text": "Smith Finance Group Stock Pitch Night",
+   "x": 218,
+   "y": 42,
+   "w": 138,
+   "h": 35
+  },
+  {
+   "text": "Smith Finance Group",
+   "x": 218,
+   "y": 79,
+   "w": 118,
+   "h": 15
+  },
+  {
+   "text": "S",
+   "x": 423,
+   "y": 46,
+   "w": 8,
+   "h": 13
+  },
+  {
+   "text": "Smith Fall Career & Internship Fair",
+   "x": 448,
+   "y": 41,
+   "w": 130,
+   "h": 36
+  },
+  {
+   "text": "Smith Office of Career Services",
+   "x": 448,
+   "y": 79,
+   "w": 184,
+   "h": 15
+  },
+  {
+   "text": "Event",
+   "x": 189,
+   "y": 167,
+   "w": 33,
+   "h": 15
+  },
+  {
+   "text": "Smith Fall Career & Internship Fair",
+   "x": 177,
+   "y": 202,
+   "w": 359,
+   "h": 28
+  },
+  {
+   "text": "S",
+   "x": 188,
+   "y": 253,
+   "w": 8,
+   "h": 16
+  },
+  {
+   "text": "Smith Office of Career Services",
+   "x": 217,
+   "y": 245,
+   "w": 201,
+   "h": 16
+  },
+  {
+   "text": "Thu, Oct 29",
+   "x": 217,
+   "y": 264,
+   "w": 70,
+   "h": 15
+  },
+  {
+   "text": "Thu, Oct 29",
+   "x": 197,
+   "y": 296,
+   "w": 73,
+   "h": 15
+  },
+  {
+   "text": "10:00 AM – 3:00 PM",
+   "x": 306,
+   "y": 296,
+   "w": 121,
+   "h": 15
+  },
+  {
+   "text": "The Hotel at UMD",
+   "x": 464,
+   "y": 296,
+   "w": 106,
+   "h": 15
+  },
+  {
+   "text": "In person · Sign-up required",
+   "x": 606,
+   "y": 296,
+   "w": 167,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 198,
+   "y": 355,
+   "w": 10,
+   "h": 16
+  },
+  {
+   "text": "Why this fits you",
+   "x": 216,
+   "y": 355,
+   "w": 105,
+   "h": 16
+  },
+  {
+   "text": "Strong match",
+   "x": 751,
+   "y": 357,
+   "w": 75,
+   "h": 13
+  },
+  {
+   "text": "Every bank and corporate-finance team on your summer-analyst list is recruiting here in one afternoon, and your Smith Investment Fund analyst reps give you real work to lead with. This is where recruiters start building their first-round lists, before applications formally open. Come in with the five firms you most want and a tight version of your fund pitch ready.",
+   "x": 198,
+   "y": 385,
+   "w": 613,
+   "h": 85
+  },
+  {
+   "text": "About this event",
+   "x": 198,
+   "y": 510,
+   "w": 104,
+   "h": 16
+  },
+  {
+   "text": "Smith's flagship fall fair brings 80+ employers to the Grand Ballroom for one afternoon: bulge-bracket banks, the Big 4, and Fortune 500 corporate finance teams, all recruiting finance, accounting, and information systems talent. Recruiters run open conversations, collect resumes on the spot, and many use the day to start building their first-round interview lists for summer 2027. Come with printed resumes and a short list of the firms you most want to reach.",
+   "x": 198,
+   "y": 541,
+   "w": 616,
+   "h": 108
+  },
+  {
+   "text": "Details",
+   "x": 177,
+   "y": 700,
+   "w": 52,
+   "h": 20
+  },
+  {
+   "text": "Where",
+   "x": 194,
+   "y": 750,
+   "w": 35,
+   "h": 13
+  },
+  {
+   "text": "The Hotel at UMD",
+   "x": 194,
+   "y": 771,
+   "w": 117,
+   "h": 17
+  },
+  {
+   "text": "Hosted by",
+   "x": 534,
+   "y": 750,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "text": "Smith Office of Career Services",
+   "x": 534,
+   "y": 771,
+   "w": 208,
+   "h": 17
+  },
+  {
+   "text": "Format",
+   "x": 194,
+   "y": 828,
+   "w": 39,
+   "h": 13
+  },
+  {
+   "text": "In person · Sign-up required",
+   "x": 194,
+   "y": 850,
+   "w": 185,
+   "h": 17
+  },
+  {
+   "text": "On your calendar",
+   "x": 531,
+   "y": 733,
+   "w": 101,
+   "h": 15
+  },
+  {
+   "text": "Learn more and sign up",
+   "x": 692,
+   "y": 733,
+   "w": 138,
+   "h": 15
+  }
+ ]
+}

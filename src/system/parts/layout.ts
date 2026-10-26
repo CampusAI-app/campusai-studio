@@ -22,7 +22,13 @@ const intersect = (a: Rect, b: Rect): Rect => {
   return { x, y, w: Math.min(a.x + a.w, b.x + b.w) - x, h: Math.min(a.y + a.h, b.y + b.h) - y };
 };
 
-export const makeLayout = (aspect: Aspect, hasCaptions: boolean): Layout => {
+/**
+ * `fill` (wave 2, 2026-10-23, opt-in per storyboard with `"fill": true`, 9x16 only): the product fills the
+ * frame from just under the held mark to the bottom edge, instead of sitting as a panel between empty bands.
+ * Words still stay in the Reels safe band (the focus box is unchanged: y 285 to 1500), the page simply runs on
+ * under the Reels UI. Films without the flag render exactly as before.
+ */
+export const makeLayout = (aspect: Aspect, hasCaptions: boolean, fill = false): Layout => {
   const { w: W, h: H } = SIZE[aspect];
   const u = Math.min(W, H) / 1080;
   const tall = safeLayout(W, H).stageTopRatio > 0;
@@ -47,6 +53,11 @@ export const makeLayout = (aspect: Aspect, hasCaptions: boolean): Layout => {
     headline = { cx: W / 2, cy: 328, size: 40, maxW: 900 };
     bigLine = { size: 96, maxW: 900 };
     captionSize = 46;
+    if (fill && !hasCaptions) {
+      top = { x: 0, y: 0, w: W, h: 230 };
+      view = { x: 0, y: 230, w: W, h: H - 230 };
+      headline = { cx: W / 2, cy: 168, size: 40, maxW: 900 };
+    }
   } else if (aspect === "4x5") {
     top = { x: 0, y: 0, w: W, h: 132 };
     view = { x: 36, y: 132, w: W - 72, h: hasCaptions ? 960 : 1182 };
@@ -70,7 +81,7 @@ export const makeLayout = (aspect: Aspect, hasCaptions: boolean): Layout => {
     bigLine = { size: 84, maxW: 860 };
     captionSize = 38;
   }
-  const label = { right: view.x + view.w, cy: aspect === "9x16" || tall ? headline.cy : mark.y + mark.width / (223 / 53) / 2 };
+  const label = { right: fill && aspect === "9x16" && !hasCaptions ? W - 60 : view.x + view.w, cy: aspect === "9x16" || tall ? headline.cy : mark.y + mark.width / (223 / 53) / 2 };
   const air = inset(view, view.w * 0.04, view.h * 0.04);
   const focusBox = aspect === "9x16" ? intersect(air, { x: 0, y: safe.y, w: W, h: safe.h }) : air;
   return { aspect, W, H, u, top, view, focusBox, caption, safe, mark, headline, label, captionSize, bigLine, radius: Math.round(28 * u) };

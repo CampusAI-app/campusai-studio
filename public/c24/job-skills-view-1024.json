@@ -1,0 +1,871 @@
+{
+ "page": {
+  "w": 1024,
+  "h": 900
+ },
+ "dpr": 3,
+ "clip": {
+  "x": 0,
+  "y": 0,
+  "w": 1024,
+  "h": 900
+ },
+ "source": "https://campusai-demo.vercel.app/career?view=jobs&student_signal=intern%2Cco_op%2Cnew_grad%2Centry_level&job=jp_3f9a1c07b2d40006",
+ "captured": "2026-10-25T00:35:16.275Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false,
+  "terp": false
+ },
+ "texts": [
+  {
+   "text": "Dashboard",
+   "x": 52,
+   "y": 76,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "text": "My Calendar",
+   "x": 52,
+   "y": 114,
+   "w": 78,
+   "h": 16
+  },
+  {
+   "text": "✦",
+   "x": 52,
+   "y": 154,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "text": "Career Advisor",
+   "x": 64,
+   "y": 152,
+   "w": 92,
+   "h": 16
+  },
+  {
+   "text": "Resume Review",
+   "x": 52,
+   "y": 187,
+   "w": 94,
+   "h": 15
+  },
+  {
+   "text": "Job Match",
+   "x": 52,
+   "y": 218,
+   "w": 63,
+   "h": 15
+  },
+  {
+   "text": "Interview Prep",
+   "x": 52,
+   "y": 249,
+   "w": 86,
+   "h": 15
+  },
+  {
+   "text": "Company Tracker",
+   "x": 52,
+   "y": 280,
+   "w": 105,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 52,
+   "y": 323,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "text": "Academic Advisor",
+   "x": 64,
+   "y": 321,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "text": "Planner & Progress",
+   "x": 52,
+   "y": 356,
+   "w": 115,
+   "h": 15
+  },
+  {
+   "text": "Class Tracker",
+   "x": 52,
+   "y": 387,
+   "w": 81,
+   "h": 15
+  },
+  {
+   "text": "Courses and Professors",
+   "x": 52,
+   "y": 418,
+   "w": 143,
+   "h": 15
+  },
+  {
+   "text": "Organizations",
+   "x": 52,
+   "y": 359,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "text": "Events",
+   "x": 52,
+   "y": 397,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "text": "Dining",
+   "x": 52,
+   "y": 435,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "text": "CampusAI",
+   "x": 52,
+   "y": 486,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "text": "Accessibility",
+   "x": 28,
+   "y": 834,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "text": "MC",
+   "x": 28,
+   "y": 865,
+   "w": 17,
+   "h": 12
+  },
+  {
+   "text": "Maya Chen",
+   "x": 63,
+   "y": 856,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "text": "80",
+   "x": 63,
+   "y": 874,
+   "w": 14,
+   "h": 12
+  },
+  {
+   "text": "%",
+   "x": 77,
+   "y": 874,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "text": "·",
+   "x": 87,
+   "y": 874,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "text": "Connect your transcript",
+   "x": 96,
+   "y": 874,
+   "w": 115,
+   "h": 12
+  },
+  {
+   "text": "Roles",
+   "x": 282,
+   "y": 3,
+   "w": 34,
+   "h": 15
+  },
+  {
+   "text": "4",
+   "x": 326,
+   "y": 5,
+   "w": 7,
+   "h": 12
+  },
+  {
+   "text": "Location",
+   "x": 390,
+   "y": 3,
+   "w": 52,
+   "h": 15
+  },
+  {
+   "text": "Work type",
+   "x": 494,
+   "y": 3,
+   "w": 62,
+   "h": 15
+  },
+  {
+   "text": "Company",
+   "x": 608,
+   "y": 3,
+   "w": 58,
+   "h": 15
+  },
+  {
+   "text": "Posted",
+   "x": 718,
+   "y": 3,
+   "w": 43,
+   "h": 15
+  },
+  {
+   "text": "Clear filters",
+   "x": 808,
+   "y": 3,
+   "w": 71,
+   "h": 15
+  },
+  {
+   "text": "Best match",
+   "x": 879,
+   "y": 41,
+   "w": 69,
+   "h": 15
+  },
+  {
+   "text": "Deloitte",
+   "x": 340,
+   "y": 89,
+   "w": 45,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 346,
+   "y": 112,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "text": "Strong match",
+   "x": 358,
+   "y": 111,
+   "w": 74,
+   "h": 13
+  },
+  {
+   "text": "Big 4",
+   "x": 346,
+   "y": 132,
+   "w": 27,
+   "h": 12
+  },
+  {
+   "text": "Internship",
+   "x": 434,
+   "y": 93,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "text": "Audit and Assurance Intern, Summer 2027",
+   "x": 340,
+   "y": 150,
+   "w": 145,
+   "h": 37
+  },
+  {
+   "text": "McLean, VA or Washington, DC",
+   "x": 340,
+   "y": 193,
+   "w": 176,
+   "h": 15
+  },
+  {
+   "text": "You have financial statement analysis, accounting and Excel, plus a credit internship.",
+   "x": 340,
+   "y": 216,
+   "w": 156,
+   "h": 67
+  },
+  {
+   "text": "Closes Oct 25",
+   "x": 348,
+   "y": 259,
+   "w": 77,
+   "h": 13
+  },
+  {
+   "text": "Posted 1d ago",
+   "x": 420,
+   "y": 279,
+   "w": 77,
+   "h": 13
+  },
+  {
+   "text": "Goldman Sachs",
+   "x": 340,
+   "y": 332,
+   "w": 90,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 346,
+   "y": 355,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "text": "Strong match",
+   "x": 358,
+   "y": 354,
+   "w": 74,
+   "h": 13
+  },
+  {
+   "text": "Bulge bracket",
+   "x": 346,
+   "y": 375,
+   "w": 73,
+   "h": 12
+  },
+  {
+   "text": "Internship",
+   "x": 434,
+   "y": 335,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "text": "2027 Summer Analyst, Global Banking and Markets",
+   "x": 340,
+   "y": 393,
+   "w": 155,
+   "h": 57
+  },
+  {
+   "text": "New York, NY",
+   "x": 340,
+   "y": 455,
+   "w": 77,
+   "h": 15
+  },
+  {
+   "text": "·",
+   "x": 421,
+   "y": 455,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "text": "$110k/yr",
+   "x": 429,
+   "y": 455,
+   "w": 48,
+   "h": 15
+  },
+  {
+   "text": "You have financial statement analysis and Excel, plus a credit internship and an investment fund role.",
+   "x": 340,
+   "y": 479,
+   "w": 135,
+   "h": 84
+  },
+  {
+   "text": "Closes Nov 3",
+   "x": 348,
+   "y": 522,
+   "w": 71,
+   "h": 13
+  },
+  {
+   "text": "Posted 2d ago",
+   "x": 419,
+   "y": 542,
+   "w": 79,
+   "h": 13
+  },
+  {
+   "text": "Capital One",
+   "x": 340,
+   "y": 594,
+   "w": 67,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 346,
+   "y": 617,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "text": "Strong match",
+   "x": 358,
+   "y": 617,
+   "w": 74,
+   "h": 13
+  },
+  {
+   "text": "Fortune 500",
+   "x": 346,
+   "y": 638,
+   "w": 65,
+   "h": 12
+  },
+  {
+   "text": "Internship",
+   "x": 434,
+   "y": 598,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "text": "Corporate Finance Summer Analyst, 2027",
+   "x": 340,
+   "y": 655,
+   "w": 155,
+   "h": 37
+  },
+  {
+   "text": "Hybrid, McLean, VA",
+   "x": 340,
+   "y": 698,
+   "w": 111,
+   "h": 15
+  },
+  {
+   "text": "·",
+   "x": 455,
+   "y": 698,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "text": "$42-$46/hr",
+   "x": 463,
+   "y": 698,
+   "w": 66,
+   "h": 15
+  },
+  {
+   "text": "You have financial statement analysis and Excel, plus a credit internship.",
+   "x": 340,
+   "y": 721,
+   "w": 135,
+   "h": 67
+  },
+  {
+   "text": "Posted 3d ago",
+   "x": 418,
+   "y": 762,
+   "w": 79,
+   "h": 13
+  },
+  {
+   "text": "Uline",
+   "x": 340,
+   "y": 814,
+   "w": 29,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 346,
+   "y": 837,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "text": "Good match",
+   "x": 358,
+   "y": 836,
+   "w": 66,
+   "h": 13
+  },
+  {
+   "text": "New grad",
+   "x": 438,
+   "y": 818,
+   "w": 52,
+   "h": 13
+  },
+  {
+   "text": "College Graduate Development Program",
+   "x": 340,
+   "y": 854,
+   "w": 153,
+   "h": 37
+  },
+  {
+   "text": "Kenosha, WI",
+   "x": 340,
+   "y": 897,
+   "w": 70,
+   "h": 15
+  },
+  {
+   "text": "Prepare pitch materials and client presentations in PowerPoint",
+   "x": 614,
+   "y": -23,
+   "w": 313,
+   "h": 35
+  },
+  {
+   "text": "Research industries, companies and market trends and summarize what matters",
+   "x": 614,
+   "y": 21,
+   "w": 273,
+   "h": 35
+  },
+  {
+   "text": "Support due diligence and the execution of transactions",
+   "x": 614,
+   "y": 64,
+   "w": 269,
+   "h": 35
+  },
+  {
+   "text": "Present a final project to senior bankers at the end of the program",
+   "x": 614,
+   "y": 107,
+   "w": 288,
+   "h": 35
+  },
+  {
+   "text": "Pursuing a bachelor's degree with an expected graduation between December 2027 and June 2028",
+   "x": 614,
+   "y": 154,
+   "w": 293,
+   "h": 53
+  },
+  {
+   "text": "Strong Excel skills and comfort working with financial statements",
+   "x": 614,
+   "y": 216,
+   "w": 276,
+   "h": 35
+  },
+  {
+   "text": "Demonstrated interest in financial markets",
+   "x": 614,
+   "y": 259,
+   "w": 264,
+   "h": 16
+  },
+  {
+   "text": "Minimum 3.3 GPA",
+   "x": 614,
+   "y": 283,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "text": "Nice to have",
+   "x": 598,
+   "y": 317,
+   "w": 80,
+   "h": 16
+  },
+  {
+   "text": "Coursework in accounting, corporate finance or valuation",
+   "x": 614,
+   "y": 346,
+   "w": 298,
+   "h": 35
+  },
+  {
+   "text": "Experience with Bloomberg or Capital IQ",
+   "x": 614,
+   "y": 389,
+   "w": 252,
+   "h": 16
+  },
+  {
+   "text": "Skills recruiters screen for",
+   "x": 598,
+   "y": 442,
+   "w": 177,
+   "h": 17
+  },
+  {
+   "text": "4",
+   "x": 892,
+   "y": 443,
+   "w": 8,
+   "h": 16
+  },
+  {
+   "text": "of",
+   "x": 901,
+   "y": 443,
+   "w": 20,
+   "h": 16
+  },
+  {
+   "text": "6",
+   "x": 921,
+   "y": 443,
+   "w": 8,
+   "h": 16
+  },
+  {
+   "text": "Financial statement analysis",
+   "x": 627,
+   "y": 478,
+   "w": 169,
+   "h": 15
+  },
+  {
+   "text": "(you have this)",
+   "x": 608,
+   "y": 484,
+   "w": 89,
+   "h": 15
+  },
+  {
+   "text": "Excel",
+   "x": 844,
+   "y": 478,
+   "w": 32,
+   "h": 15
+  },
+  {
+   "text": "(you have this)",
+   "x": 825,
+   "y": 484,
+   "w": 89,
+   "h": 15
+  },
+  {
+   "text": "Accounting",
+   "x": 627,
+   "y": 513,
+   "w": 68,
+   "h": 15
+  },
+  {
+   "text": "(you have this)",
+   "x": 608,
+   "y": 519,
+   "w": 89,
+   "h": 15
+  },
+  {
+   "text": "PowerPoint",
+   "x": 743,
+   "y": 513,
+   "w": 68,
+   "h": 15
+  },
+  {
+   "text": "(you have this)",
+   "x": 724,
+   "y": 519,
+   "w": 89,
+   "h": 15
+  },
+  {
+   "text": "Financial modeling",
+   "x": 609,
+   "y": 547,
+   "w": 109,
+   "h": 15
+  },
+  {
+   "text": "(not shown yet)",
+   "x": 608,
+   "y": 553,
+   "w": 92,
+   "h": 15
+  },
+  {
+   "text": "Valuation",
+   "x": 748,
+   "y": 547,
+   "w": 54,
+   "h": 15
+  },
+  {
+   "text": "(not shown yet)",
+   "x": 747,
+   "y": 553,
+   "w": 92,
+   "h": 15
+  },
+  {
+   "text": "Worth sharpening:",
+   "x": 598,
+   "y": 581,
+   "w": 118,
+   "h": 16
+  },
+  {
+   "text": "Valuation and modeling. A class DCF you can walk through counts.",
+   "x": 598,
+   "y": 581,
+   "w": 310,
+   "h": 34
+  },
+  {
+   "text": "About",
+   "x": 650,
+   "y": 680,
+   "w": 44,
+   "h": 17
+  },
+  {
+   "text": "Goldman Sachs",
+   "x": 695,
+   "y": 680,
+   "w": 105,
+   "h": 17
+  },
+  {
+   "text": "Website",
+   "x": 859,
+   "y": 681,
+   "w": 48,
+   "h": 15
+  },
+  {
+   "text": "(",
+   "x": 858,
+   "y": 689,
+   "w": 5,
+   "h": 15
+  },
+  {
+   "text": "goldmansachs.com",
+   "x": 863,
+   "y": 689,
+   "w": 115,
+   "h": 15
+  },
+  {
+   "text": ")",
+   "x": 978,
+   "y": 689,
+   "w": 5,
+   "h": 15
+  },
+  {
+   "text": "Industry",
+   "x": 628,
+   "y": 734,
+   "w": 43,
+   "h": 13
+  },
+  {
+   "text": "Investment and trading",
+   "x": 628,
+   "y": 750,
+   "w": 66,
+   "h": 49
+  },
+  {
+   "text": "Size",
+   "x": 744,
+   "y": 734,
+   "w": 22,
+   "h": 13
+  },
+  {
+   "text": "5,000+ employees",
+   "x": 744,
+   "y": 750,
+   "w": 64,
+   "h": 32
+  },
+  {
+   "text": "Type",
+   "x": 859,
+   "y": 734,
+   "w": 26,
+   "h": 13
+  },
+  {
+   "text": "Public company",
+   "x": 859,
+   "y": 750,
+   "w": 55,
+   "h": 32
+  },
+  {
+   "text": "Bulge bracket",
+   "x": 603,
+   "y": 829,
+   "w": 80,
+   "h": 15
+  },
+  {
+   "text": "Dow 30",
+   "x": 707,
+   "y": 829,
+   "w": 44,
+   "h": 15
+  },
+  {
+   "text": "Fortune 100",
+   "x": 775,
+   "y": 829,
+   "w": 70,
+   "h": 15
+  },
+  {
+   "text": "At Goldman Sachs, we connect people, capital and ideas to help solve problems for our clients. We are a leading global financial institution, and our people are at the heart of everything we do.",
+   "x": 594,
+   "y": 865,
+   "w": 334,
+   "h": 82
+  },
+  {
+   "text": "Chat",
+   "x": 907,
+   "y": 825,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "text": "CampusAI can make mistakes. Verify important information.",
+   "x": 476,
+   "y": 870,
+   "w": 288,
+   "h": 12
+  },
+  {
+   "text": "6",
+   "x": 844,
+   "y": 26,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "text": "new",
+   "x": 852,
+   "y": 26,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "text": "Feedback",
+   "x": 936,
+   "y": 26,
+   "w": 57,
+   "h": 15
+  }
+ ]
+}

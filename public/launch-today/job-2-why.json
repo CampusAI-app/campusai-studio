@@ -1,0 +1,1914 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "coords": "viewport",
+ "scrollY": 95,
+ "source": "https://campusai-demo.vercel.app/career?view=jobs&student_signal=intern%2Cco_op%2Cnew_grad%2Centry_level&job=jp_3f9a1c07b2d40006",
+ "captured": "2026-10-25T00:17:35.679Z",
+ "checks": {
+  "sandy": true,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false
+ },
+ "press": null,
+ "marks": {
+  "heading": {
+   "x": 763,
+   "y": 120,
+   "w": 131,
+   "h": 21,
+   "text": "✦ Why this fits you"
+  },
+  "section": {
+   "x": 743,
+   "y": 104,
+   "w": 622,
+   "h": 178,
+   "text": "✦ Why this fits you Financial statement analysis and Excel are skills you used as Credit Analyst Intern at Sandy Spring Bank, and this posting requires both. He"
+  }
+ },
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 269,
+   "y": 6,
+   "w": 435,
+   "h": 30,
+   "text": "Jobs for you"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 120,
+   "w": 131,
+   "h": 21,
+   "text": "✦ Why this fits you"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 298,
+   "w": 582,
+   "h": 21,
+   "text": "About this role"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 470,
+   "w": 582,
+   "h": 21,
+   "text": "What they're looking for"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 689,
+   "w": 582,
+   "h": 21,
+   "text": "The full posting"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 18,
+   "w": 171,
+   "h": 20,
+   "text": "University of Maryland — home"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Collapse Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 311,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 311,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 349,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 380,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 411,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 349,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 387,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 425,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 476,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "button",
+   "x": 19,
+   "y": 854,
+   "w": 124,
+   "h": 34,
+   "text": "MC Maya Chen 80% · Connect your transcript"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 728,
+   "y": 14,
+   "w": 339,
+   "h": 36,
+   "text": "✦Aiming for Investment Banking Summer Analyst +2"
+  },
+  {
+   "kind": "button",
+   "x": 1093,
+   "y": 19,
+   "w": 42,
+   "h": 26,
+   "text": "List"
+  },
+  {
+   "kind": "button",
+   "x": 1137,
+   "y": 19,
+   "w": 45,
+   "h": 26,
+   "text": "Map"
+  },
+  {
+   "kind": "button",
+   "x": 1192,
+   "y": 16,
+   "w": 196,
+   "h": 33,
+   "text": "✦ Go through them with me"
+  },
+  {
+   "kind": "button",
+   "x": 272,
+   "y": 73,
+   "w": 58,
+   "h": 31,
+   "text": "Jobs"
+  },
+  {
+   "kind": "button",
+   "x": 332,
+   "y": 73,
+   "w": 78,
+   "h": 31,
+   "text": "Saved 8"
+  },
+  {
+   "kind": "button",
+   "x": 609,
+   "y": 72,
+   "w": 100,
+   "h": 33,
+   "text": "Roles 4"
+  },
+  {
+   "kind": "button",
+   "x": 716,
+   "y": 72,
+   "w": 96,
+   "h": 33,
+   "text": "Location"
+  },
+  {
+   "kind": "button",
+   "x": 821,
+   "y": 72,
+   "w": 106,
+   "h": 33,
+   "text": "Work type"
+  },
+  {
+   "kind": "button",
+   "x": 935,
+   "y": 72,
+   "w": 102,
+   "h": 33,
+   "text": "Company"
+  },
+  {
+   "kind": "button",
+   "x": 1045,
+   "y": 72,
+   "w": 87,
+   "h": 33,
+   "text": "Posted"
+  },
+  {
+   "kind": "button",
+   "x": 1139,
+   "y": 75,
+   "w": 87,
+   "h": 27,
+   "text": "Clear filters"
+  },
+  {
+   "kind": "button",
+   "x": 1270,
+   "y": 75,
+   "w": 117,
+   "h": 27,
+   "text": "Best match"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 156,
+   "w": 322,
+   "h": 20,
+   "text": "Audit and Assurance Intern, Summer 2027"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 341,
+   "w": 322,
+   "h": 40,
+   "text": "2027 Summer Analyst, Global Banking and Markets"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 546,
+   "w": 322,
+   "h": 20,
+   "text": "Corporate Finance Summer Analyst, 2027"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 708,
+   "w": 322,
+   "h": 20,
+   "text": "College Graduate Development Program"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 870,
+   "w": 322,
+   "h": 20,
+   "text": "Data Analyst Intern"
+  },
+  {
+   "kind": "button",
+   "x": 742,
+   "y": 51,
+   "w": 189,
+   "h": 36,
+   "text": "Apply on company site"
+  },
+  {
+   "kind": "button",
+   "x": 939,
+   "y": 50,
+   "w": 130,
+   "h": 38,
+   "text": "✦ Tailor resume"
+  },
+  {
+   "kind": "button",
+   "x": 1077,
+   "y": 50,
+   "w": 151,
+   "h": 38,
+   "text": "Write a cover letter"
+  },
+  {
+   "kind": "button",
+   "x": 1236,
+   "y": 50,
+   "w": 89,
+   "h": 38,
+   "text": "Saved"
+  },
+  {
+   "kind": "button",
+   "x": 992,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1038,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 1084,
+   "y": 816,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 311,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 349,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 380,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 411,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 349,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 387,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 425,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 476,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": -11,
+   "w": 1160,
+   "h": 3754,
+   "text": "Jobs for you 22 open student roles at curated US employers, checked today at 5:12 AM ✦Aiming for Investment Banking Summer Analyst +2 List M"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 119,
+   "w": 436,
+   "h": 158,
+   "text": "D Deloitte ✦ Strong match Big 4 Internship Audit and Assurance Intern, Summer 2027 McLean, VA or Washington, DC You have financial statement"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 287,
+   "w": 436,
+   "h": 195,
+   "text": "G Goldman Sachs ✦ Strong match Bulge bracket Internship 2027 Summer Analyst, Global Banking and Markets New York, NY·$110k/yr You have finan"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 491,
+   "w": 436,
+   "h": 170,
+   "text": "C Capital One ✦ Strong match Fortune 500 Internship Corporate Finance Summer Analyst, 2027 Hybrid, McLean, VA·$42-$46/hr You have financial "
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 671,
+   "w": 436,
+   "h": 152,
+   "text": "U Uline ✦ Good match New grad College Graduate Development Program Kenosha, WI A year of business rotations, with analytics and reporting in"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 833,
+   "w": 436,
+   "h": 132,
+   "text": "A Acme Corp ✦ Good match Internship Data Analyst Intern You have Excel and data analysis, plus a credit internship. SQL is the gap. Found to"
+  },
+  {
+   "kind": "card",
+   "x": 721,
+   "y": 119,
+   "w": 666,
+   "h": 752,
+   "text": "G 2027 Summer Analyst, Global Banking and Markets Goldman Sachs · ✦ Strong match · Bulge bracket · Internship · $110k/yr · Closes Nov 3 New "
+  },
+  {
+   "kind": "card",
+   "x": 742,
+   "y": 103,
+   "w": 624,
+   "h": 1228,
+   "text": "✦ Why this fits you Financial statement analysis and Excel are skills you used as Credit Analyst Intern at Sandy Spring Bank, and this posti"
+  },
+  {
+   "kind": "text",
+   "text": "Dashboard",
+   "x": 52,
+   "y": 76,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "My Calendar",
+   "x": 52,
+   "y": 114,
+   "w": 78,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 154,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Career Advisor",
+   "x": 64,
+   "y": 152,
+   "w": 92,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Resume Review",
+   "x": 52,
+   "y": 187,
+   "w": 94,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Job Match",
+   "x": 52,
+   "y": 218,
+   "w": 63,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Interview Prep",
+   "x": 52,
+   "y": 249,
+   "w": 86,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Company Tracker",
+   "x": 52,
+   "y": 280,
+   "w": 105,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 323,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Academic Advisor",
+   "x": 64,
+   "y": 321,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Planner & Progress",
+   "x": 52,
+   "y": 356,
+   "w": 115,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Class Tracker",
+   "x": 52,
+   "y": 387,
+   "w": 81,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Courses and Professors",
+   "x": 52,
+   "y": 418,
+   "w": 143,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Organizations",
+   "x": 52,
+   "y": 359,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Events",
+   "x": 52,
+   "y": 397,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Dining",
+   "x": 52,
+   "y": 435,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI",
+   "x": 52,
+   "y": 486,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Accessibility",
+   "x": 28,
+   "y": 834,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "MC",
+   "x": 28,
+   "y": 865,
+   "w": 17,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Maya Chen",
+   "x": 63,
+   "y": 856,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80",
+   "x": 63,
+   "y": 874,
+   "w": 14,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "%",
+   "x": 77,
+   "y": 874,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 87,
+   "y": 874,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Connect your transcript",
+   "x": 96,
+   "y": 874,
+   "w": 115,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Jobs for you",
+   "x": 269,
+   "y": 9,
+   "w": 118,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "text": "22 open student roles at curated US employers, checked today at 5:12 AM",
+   "x": 269,
+   "y": 41,
+   "w": 435,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 734,
+   "y": 23,
+   "w": 10,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Aiming for",
+   "x": 748,
+   "y": 23,
+   "w": 65,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Investment Banking Summer Analyst",
+   "x": 829,
+   "y": 24,
+   "w": 219,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "+",
+   "x": 1015,
+   "y": 24,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "2",
+   "x": 1023,
+   "y": 24,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "List",
+   "x": 1103,
+   "y": 24,
+   "w": 22,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Map",
+   "x": 1147,
+   "y": 24,
+   "w": 25,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 1205,
+   "y": 25,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Go through them with me",
+   "x": 1219,
+   "y": 24,
+   "w": 155,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Jobs",
+   "x": 286,
+   "y": 80,
+   "w": 30,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Saved",
+   "x": 346,
+   "y": 80,
+   "w": 37,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "8",
+   "x": 388,
+   "y": 81,
+   "w": 8,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Roles",
+   "x": 622,
+   "y": 80,
+   "w": 34,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "4",
+   "x": 666,
+   "y": 82,
+   "w": 7,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Location",
+   "x": 729,
+   "y": 80,
+   "w": 52,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Work type",
+   "x": 834,
+   "y": 80,
+   "w": 62,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Company",
+   "x": 948,
+   "y": 80,
+   "w": 58,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Posted",
+   "x": 1058,
+   "y": 80,
+   "w": 43,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Clear filters",
+   "x": 1147,
+   "y": 80,
+   "w": 71,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Best match",
+   "x": 1295,
+   "y": 80,
+   "w": 69,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Deloitte",
+   "x": 340,
+   "y": 134,
+   "w": 45,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 397,
+   "y": 137,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Strong match",
+   "x": 409,
+   "y": 136,
+   "w": 74,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Big 4",
+   "x": 501,
+   "y": 136,
+   "w": 27,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Internship",
+   "x": 599,
+   "y": 138,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Audit and Assurance Intern, Summer 2027",
+   "x": 340,
+   "y": 157,
+   "w": 289,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "McLean, VA or Washington, DC",
+   "x": 340,
+   "y": 180,
+   "w": 176,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "You have financial statement analysis, accounting and Excel, plus a credit internship.",
+   "x": 340,
+   "y": 203,
+   "w": 315,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Closes Oct 25",
+   "x": 348,
+   "y": 247,
+   "w": 77,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Posted 1d ago",
+   "x": 585,
+   "y": 246,
+   "w": 77,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Goldman Sachs",
+   "x": 340,
+   "y": 302,
+   "w": 90,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 442,
+   "y": 304,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Strong match",
+   "x": 454,
+   "y": 304,
+   "w": 74,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Bulge bracket",
+   "x": 346,
+   "y": 325,
+   "w": 73,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Internship",
+   "x": 599,
+   "y": 305,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "2027 Summer Analyst, Global Banking and Markets",
+   "x": 340,
+   "y": 342,
+   "w": 290,
+   "h": 37
+  },
+  {
+   "kind": "text",
+   "text": "New York, NY",
+   "x": 340,
+   "y": 385,
+   "w": 77,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 421,
+   "y": 385,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "$110k/yr",
+   "x": 429,
+   "y": 385,
+   "w": 48,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "You have financial statement analysis and Excel, plus a credit internship and an investment fund role.",
+   "x": 340,
+   "y": 408,
+   "w": 319,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Closes Nov 3",
+   "x": 348,
+   "y": 451,
+   "w": 71,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Posted 2d ago",
+   "x": 583,
+   "y": 451,
+   "w": 79,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Capital One",
+   "x": 340,
+   "y": 507,
+   "w": 67,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 419,
+   "y": 509,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Strong match",
+   "x": 431,
+   "y": 508,
+   "w": 74,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Fortune 500",
+   "x": 346,
+   "y": 529,
+   "w": 65,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Internship",
+   "x": 599,
+   "y": 510,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Corporate Finance Summer Analyst, 2027",
+   "x": 340,
+   "y": 547,
+   "w": 285,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Hybrid, McLean, VA",
+   "x": 340,
+   "y": 570,
+   "w": 111,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 455,
+   "y": 570,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "$42-$46/hr",
+   "x": 463,
+   "y": 570,
+   "w": 66,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "You have financial statement analysis and Excel, plus a credit internship.",
+   "x": 340,
+   "y": 593,
+   "w": 319,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Posted 3d ago",
+   "x": 583,
+   "y": 633,
+   "w": 79,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Uline",
+   "x": 340,
+   "y": 686,
+   "w": 29,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 381,
+   "y": 688,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Good match",
+   "x": 393,
+   "y": 688,
+   "w": 66,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "New grad",
+   "x": 603,
+   "y": 689,
+   "w": 52,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "College Graduate Development Program",
+   "x": 340,
+   "y": 709,
+   "w": 275,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Kenosha, WI",
+   "x": 340,
+   "y": 732,
+   "w": 70,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "A year of business rotations, with analytics and reporting in the mix.",
+   "x": 340,
+   "y": 755,
+   "w": 275,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Posted today",
+   "x": 590,
+   "y": 795,
+   "w": 72,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "A",
+   "x": 300,
+   "y": 861,
+   "w": 11,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Acme Corp",
+   "x": 340,
+   "y": 848,
+   "w": 64,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 416,
+   "y": 850,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Good match",
+   "x": 428,
+   "y": 850,
+   "w": 66,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Internship",
+   "x": 599,
+   "y": 851,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Data Analyst Intern",
+   "x": 340,
+   "y": 871,
+   "w": 131,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "You have Excel and data analysis, plus a credit internship. SQL is the gap.",
+   "x": 340,
+   "y": 897,
+   "w": 271,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Goldman Sachs",
+   "x": 798,
+   "y": -9,
+   "w": 95,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 899,
+   "y": -9,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 914,
+   "y": -7,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Strong match",
+   "x": 926,
+   "y": -8,
+   "w": 74,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 1012,
+   "y": -9,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Bulge bracket",
+   "x": 1022,
+   "y": -9,
+   "w": 81,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 1109,
+   "y": -9,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Internship",
+   "x": 1142,
+   "y": -8,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 1210,
+   "y": -9,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "$110k/yr",
+   "x": 1220,
+   "y": -9,
+   "w": 49,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 1275,
+   "y": -9,
+   "w": 4,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Closes Nov 3",
+   "x": 1285,
+   "y": -9,
+   "w": 80,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "New York, NY",
+   "x": 814,
+   "y": 16,
+   "w": 80,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Apply on company site",
+   "x": 756,
+   "y": 60,
+   "w": 143,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 954,
+   "y": 61,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Tailor resume",
+   "x": 969,
+   "y": 60,
+   "w": 85,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Write a cover letter",
+   "x": 1092,
+   "y": 60,
+   "w": 121,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Saved",
+   "x": 1271,
+   "y": 60,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 763,
+   "y": 122,
+   "w": 11,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Why this fits you",
+   "x": 782,
+   "y": 122,
+   "w": 112,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Financial statement analysis and Excel are skills you used as Credit Analyst Intern at Sandy Spring Bank, and this posting requires both. Here is how the posting puts the work: \"Build and maintain financial models and comparable company analyses for live deals.\" Using financial statement analysis at Sandy Spring Bank is a big part of why this is a strong fit for you.",
+   "x": 763,
+   "y": 153,
+   "w": 579,
+   "h": 108
+  },
+  {
+   "kind": "text",
+   "text": "About this role",
+   "x": 763,
+   "y": 300,
+   "w": 99,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Ten weeks on a banking or markets desk, working on live deals beside full-time analysts.",
+   "x": 763,
+   "y": 331,
+   "w": 569,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Build financial models and comparable company analyses for live deals",
+   "x": 779,
+   "y": 363,
+   "w": 442,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Prepare pitch materials and client presentations",
+   "x": 779,
+   "y": 387,
+   "w": 299,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Research industries and companies and summarize what matters",
+   "x": 779,
+   "y": 412,
+   "w": 406,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Present a final project to senior bankers",
+   "x": 779,
+   "y": 436,
+   "w": 248,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "What they're looking for",
+   "x": 763,
+   "y": 472,
+   "w": 163,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Graduating between December 2027 and June 2028",
+   "x": 779,
+   "y": 502,
+   "w": 329,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Strong Excel and comfort with financial statements",
+   "x": 779,
+   "y": 526,
+   "w": 318,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Minimum 3.3 GPA",
+   "x": 779,
+   "y": 551,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Nice to have",
+   "x": 763,
+   "y": 584,
+   "w": 80,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Accounting, corporate finance or valuation coursework",
+   "x": 779,
+   "y": 614,
+   "w": 342,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Bloomberg or Capital IQ",
+   "x": 779,
+   "y": 638,
+   "w": 150,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "The full posting",
+   "x": 763,
+   "y": 691,
+   "w": 105,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Our Global Banking and Markets division serves corporations, financial institutions, investment funds and governments. Summer Analysts spend ten weeks on a desk, working on live transactions alongside full-time analysts and associates.",
+   "x": 763,
+   "y": 724,
+   "w": 566,
+   "h": 60
+  },
+  {
+   "kind": "text",
+   "text": "Responsibilities",
+   "x": 763,
+   "y": 804,
+   "w": 103,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Build and maintain financial models and comparable company analyses for live deals",
+   "x": 779,
+   "y": 833,
+   "w": 526,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Prepare pitch materials and client presentations in PowerPoint",
+   "x": 779,
+   "y": 857,
+   "w": 388,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Research industries, companies and market trends and summarize what matters",
+   "x": 779,
+   "y": 882,
+   "w": 501,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Chat",
+   "x": 1115,
+   "y": 825,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI can make mistakes. Verify important information.",
+   "x": 684,
+   "y": 870,
+   "w": 288,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "6",
+   "x": 1260,
+   "y": 26,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "new",
+   "x": 1268,
+   "y": 26,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Feedback",
+   "x": 1352,
+   "y": 26,
+   "w": 57,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦Career Advisor",
+   "x": 52,
+   "y": 152,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦Academic Advisor",
+   "x": 52,
+   "y": 321,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "80% · Connect your transcript",
+   "x": 63,
+   "y": 873,
+   "w": 80,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80%",
+   "x": 63,
+   "y": 874,
+   "w": 24,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "✦Aiming for",
+   "x": 734,
+   "y": 22,
+   "w": 80,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "text": "+2",
+   "x": 1007,
+   "y": 18,
+   "w": 32,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "text": "Roles 4",
+   "x": 609,
+   "y": 72,
+   "w": 100,
+   "h": 33
+  },
+  {
+   "kind": "text",
+   "text": "Location",
+   "x": 716,
+   "y": 72,
+   "w": 96,
+   "h": 33
+  },
+  {
+   "kind": "text",
+   "text": "Work type",
+   "x": 821,
+   "y": 72,
+   "w": 106,
+   "h": 33
+  },
+  {
+   "kind": "text",
+   "text": "Company",
+   "x": 935,
+   "y": 72,
+   "w": 102,
+   "h": 33
+  },
+  {
+   "kind": "text",
+   "text": "Posted",
+   "x": 1045,
+   "y": 72,
+   "w": 87,
+   "h": 33
+  },
+  {
+   "kind": "text",
+   "text": "Best match",
+   "x": 1270,
+   "y": 75,
+   "w": 117,
+   "h": 27
+  },
+  {
+   "kind": "text",
+   "text": "New York, NY·$110k/yr",
+   "x": 340,
+   "y": 385,
+   "w": 322,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "·$110k/yr",
+   "x": 417,
+   "y": 385,
+   "w": 59,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Hybrid, McLean, VA·$42-$46/hr",
+   "x": 340,
+   "y": 570,
+   "w": 322,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "·$42-$46/hr",
+   "x": 451,
+   "y": 570,
+   "w": 78,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "6 new",
+   "x": 1260,
+   "y": 28,
+   "w": 35,
+   "h": 12
+  }
+ ]
+}

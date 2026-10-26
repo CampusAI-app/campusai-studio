@@ -1,0 +1,45 @@
+{
+ "page": {
+  "w": 1440,
+  "h": 900
+ },
+ "dpr": 3,
+ "clip": {
+  "x": 244,
+  "y": 141,
+  "w": 1168,
+  "h": 77
+ },
+ "source": "https://campusai-demo.vercel.app/events",
+ "captured": "2026-10-25T00:19:45.144Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false,
+  "terp": false
+ },
+ "texts": [
+  {
+   "text": "Personalized",
+   "x": 4,
+   "y": 5,
+   "w": 81,
+   "h": 16
+  },
+  {
+   "text": "Recommended for you",
+   "x": 4,
+   "y": 28,
+   "w": 195,
+   "h": 21
+  },
+  {
+   "text": "Ranked by relevance to your profile and campus activity",
+   "x": 4,
+   "y": 55,
+   "w": 316,
+   "h": 15
+  }
+ ]
+}

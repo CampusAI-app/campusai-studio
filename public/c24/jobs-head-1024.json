@@ -1,0 +1,38 @@
+{
+ "page": {
+  "w": 1024,
+  "h": 900
+ },
+ "dpr": 3,
+ "clip": {
+  "x": 265,
+  "y": 97,
+  "w": 366,
+  "h": 80
+ },
+ "source": "https://campusai-demo.vercel.app/career?view=jobs&student_signal=intern%2Cco_op%2Cnew_grad%2Centry_level",
+ "captured": "2026-10-25T00:35:04.129Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false,
+  "terp": false
+ },
+ "texts": [
+  {
+   "text": "Jobs for you",
+   "x": 4,
+   "y": 7,
+   "w": 118,
+   "h": 24
+  },
+  {
+   "text": "22 open student roles at curated US employers, checked today at 5:12 AM",
+   "x": 4,
+   "y": 39,
+   "w": 333,
+   "h": 34
+  }
+ ]
+}

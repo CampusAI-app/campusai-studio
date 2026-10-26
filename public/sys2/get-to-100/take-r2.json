@@ -1,0 +1,26 @@
+{
+ "captured": "2026-10-23T22:51:42.201Z",
+ "base": "https://campusai-demo.vercel.app",
+ "viewport": {
+  "w": 1440,
+  "h": 900,
+  "dpr": 2
+ },
+ "stills": [
+  {
+   "name": "p0-profile-tall",
+   "pageH": 1818,
+   "press": null,
+   "marks": {
+    "chip": {
+     "x": 63,
+     "y": 855,
+     "w": 80,
+     "h": 33,
+     "text": "Maya Chen 15% · Connect your transcript"
+    }
+   }
+  }
+ ],
+ "writes": []
+}

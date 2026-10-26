@@ -1,0 +1,3464 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "tallH": 3600,
+ "dpr": 2,
+ "source": "https://campusai-demo.vercel.app/career?view=jobs&student_signal=intern%2Cco_op%2Cnew_grad%2Centry_level&sort=newest",
+ "captured": "2026-10-25T03:48:07.512Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false
+ },
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 269,
+   "y": 101,
+   "w": 435,
+   "h": 30,
+   "text": "Jobs for you"
+  },
+  {
+   "kind": "heading",
+   "x": 798,
+   "y": 235,
+   "w": 568,
+   "h": 24,
+   "text": "Software Engineering Intern, Summer 2027"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 394,
+   "w": 131,
+   "h": 21,
+   "text": "✦ Why this fits you"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 504,
+   "w": 582,
+   "h": 21,
+   "text": "About this role"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 674,
+   "w": 582,
+   "h": 21,
+   "text": "What they're looking for"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 805,
+   "w": 582,
+   "h": 21,
+   "text": "The full posting"
+  },
+  {
+   "kind": "heading",
+   "x": 763,
+   "y": 1145,
+   "w": 177,
+   "h": 21,
+   "text": "Skills recruiters screen for"
+  },
+  {
+   "kind": "heading",
+   "x": 815,
+   "y": 1297,
+   "w": 438,
+   "h": 21,
+   "text": "About 3M"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Collapse Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 311,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 240,
+   "y": 36,
+   "w": 141,
+   "h": 32,
+   "text": "Career Overview"
+  },
+  {
+   "kind": "button",
+   "x": 728,
+   "y": 109,
+   "w": 339,
+   "h": 36,
+   "text": "✦Aiming for Investment Banking Summer Analyst +2"
+  },
+  {
+   "kind": "button",
+   "x": 1093,
+   "y": 114,
+   "w": 42,
+   "h": 26,
+   "text": "List"
+  },
+  {
+   "kind": "button",
+   "x": 1137,
+   "y": 114,
+   "w": 45,
+   "h": 26,
+   "text": "Map"
+  },
+  {
+   "kind": "button",
+   "x": 272,
+   "y": 168,
+   "w": 58,
+   "h": 31,
+   "text": "Jobs"
+  },
+  {
+   "kind": "button",
+   "x": 332,
+   "y": 168,
+   "w": 78,
+   "h": 31,
+   "text": "Saved 8"
+  },
+  {
+   "kind": "button",
+   "x": 609,
+   "y": 167,
+   "w": 100,
+   "h": 33,
+   "text": "Roles 4"
+  },
+  {
+   "kind": "button",
+   "x": 716,
+   "y": 167,
+   "w": 96,
+   "h": 33,
+   "text": "Location"
+  },
+  {
+   "kind": "button",
+   "x": 821,
+   "y": 167,
+   "w": 106,
+   "h": 33,
+   "text": "Work type"
+  },
+  {
+   "kind": "button",
+   "x": 935,
+   "y": 167,
+   "w": 102,
+   "h": 33,
+   "text": "Company"
+  },
+  {
+   "kind": "button",
+   "x": 1045,
+   "y": 167,
+   "w": 87,
+   "h": 33,
+   "text": "Posted"
+  },
+  {
+   "kind": "button",
+   "x": 1139,
+   "y": 170,
+   "w": 87,
+   "h": 27,
+   "text": "Clear filters"
+  },
+  {
+   "kind": "button",
+   "x": 1293,
+   "y": 170,
+   "w": 94,
+   "h": 27,
+   "text": "Newest"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 251,
+   "w": 322,
+   "h": 20,
+   "text": "Software Engineering Intern, Summer 2027"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 401,
+   "w": 322,
+   "h": 40,
+   "text": "Mechanical Engineer Internship, Robotics Hardware"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 583,
+   "w": 322,
+   "h": 20,
+   "text": "College Graduate Development Program"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 745,
+   "w": 322,
+   "h": 40,
+   "text": "AI SW Intern, Cloud, Infrastructure & Data Centre Deployment"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 965,
+   "w": 322,
+   "h": 20,
+   "text": "Solutions Architect, Early Career"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 1127,
+   "w": 322,
+   "h": 20,
+   "text": "Data Analyst Intern"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 1286,
+   "w": 322,
+   "h": 20,
+   "text": "Systems Engineer Associate"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 1448,
+   "w": 322,
+   "h": 20,
+   "text": "Audit and Assurance Intern, Summer 2027"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 1633,
+   "w": 322,
+   "h": 20,
+   "text": "Capital Markets Intern, Summer 2027"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 1813,
+   "w": 322,
+   "h": 20,
+   "text": "Store Operations Management Trainee"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 1992,
+   "w": 322,
+   "h": 40,
+   "text": "2027 Summer Analyst, Global Banking and Markets"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 2197,
+   "w": 322,
+   "h": 20,
+   "text": "Corporate Finance Summer Analyst, 2027"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 2377,
+   "w": 322,
+   "h": 20,
+   "text": "Product Design Intern"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 2539,
+   "w": 322,
+   "h": 20,
+   "text": "Clinical Research Coordinator I"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 2701,
+   "w": 322,
+   "h": 20,
+   "text": "Summer Analyst, Corporate Private Equity"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 2863,
+   "w": 322,
+   "h": 20,
+   "text": "Co-op, Mechanical Engineering (Spring 2027)"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 3042,
+   "w": 322,
+   "h": 20,
+   "text": "Data Science Intern"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 3222,
+   "w": 322,
+   "h": 20,
+   "text": "Associate Software Engineer"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 3366,
+   "w": 322,
+   "h": 20,
+   "text": "Marketing Analyst, Entry Level"
+  },
+  {
+   "kind": "button",
+   "x": 340,
+   "y": 3566,
+   "w": 322,
+   "h": 20,
+   "text": "Cloud Support Associate"
+  },
+  {
+   "kind": "button",
+   "x": 417,
+   "y": 3701,
+   "w": 140,
+   "h": 39,
+   "text": "Show more roles"
+  },
+  {
+   "kind": "button",
+   "x": 939,
+   "y": 324,
+   "w": 130,
+   "h": 38,
+   "text": "✦ Tailor resume"
+  },
+  {
+   "kind": "button",
+   "x": 1077,
+   "y": 324,
+   "w": 151,
+   "h": 38,
+   "text": "Write a cover letter"
+  },
+  {
+   "kind": "button",
+   "x": 1236,
+   "y": 324,
+   "w": 80,
+   "h": 38,
+   "text": "Save"
+  },
+  {
+   "kind": "button",
+   "x": 759,
+   "y": 1586,
+   "w": 143,
+   "h": 20,
+   "text": "See all 3 roles at 3M"
+  },
+  {
+   "kind": "button",
+   "x": 992,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1038,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 1084,
+   "y": 816,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 84,
+   "w": 1160,
+   "h": 3754,
+   "text": "Jobs for you 22 open student roles at curated US employers, checked today at 5:12 AM ✦Aiming for Investment Banking Summer Analyst +2 List Map ✦ Go through them"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 214,
+   "w": 436,
+   "h": 140,
+   "text": "3 3M ✦ Possible match Fortune 500 Internship Software Engineering Intern, Summer 2027 Hybrid, Maplewood, MN·$28-$38/hr A way into fintech if you start building "
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 364,
+   "w": 436,
+   "h": 172,
+   "text": "F Field AI ✦ Possible match Internship Mechanical Engineer Internship, Robotics Hardware Boston, MA·$28-$63/hr Robotics hardware, open to you only with CAD and "
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 546,
+   "w": 436,
+   "h": 152,
+   "text": "U Uline ✦ Good match New grad College Graduate Development Program Kenosha, WI A year of business rotations, with analytics and reporting in the mix. Posted tod"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 708,
+   "w": 436,
+   "h": 172,
+   "text": "T Tenstorrent ✦ Possible match Internship AI SW Intern, Cloud, Infrastructure & Data Centre Deployment Austin, TX or Santa Clara, CA·$50-$70/hr Possible if you "
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 890,
+   "w": 436,
+   "h": 190,
+   "text": "A Amazon Web Services ✦ Possible match Part of a Big Tech company New grad Solutions Architect, Early Career Arlington, VA +2 more·$118k-$165k/yr Your cost anal"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 1090,
+   "w": 436,
+   "h": 132,
+   "text": "A Acme Corp ✦ Good match Internship Data Analyst Intern You have Excel and data analysis, plus a credit internship. SQL is the gap. Found today"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 1232,
+   "w": 436,
+   "h": 170,
+   "text": "L Lockheed Martin ✦ Possible match Defense prime Entry level Systems Engineer Associate Bethesda, MD·$78k-$96k/yr Program budgets run through systems teams, whe"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 1411,
+   "w": 436,
+   "h": 158,
+   "text": "D Deloitte ✦ Strong match Big 4 Internship Audit and Assurance Intern, Summer 2027 McLean, VA or Washington, DC You have financial statement analysis, accountin"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 1579,
+   "w": 436,
+   "h": 170,
+   "text": "F Fannie Mae ✦ Good match Fortune 500 Internship Capital Markets Intern, Summer 2027 Hybrid, Washington, DC·$30-$36/hr You have financial statement analysis and"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 1758,
+   "w": 436,
+   "h": 170,
+   "text": "H Harris Teeter ✦ Possible match Part of a Fortune 100 company New grad Store Operations Management Trainee Matthews, NC Running a store is a P&L you own, which"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 1938,
+   "w": 436,
+   "h": 195,
+   "text": "G Goldman Sachs ✦ Strong match Bulge bracket Internship 2027 Summer Analyst, Global Banking and Markets New York, NY·$110k/yr You have financial statement analy"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 2143,
+   "w": 436,
+   "h": 170,
+   "text": "C Capital One ✦ Strong match Fortune 500 Internship Corporate Finance Summer Analyst, 2027 Hybrid, McLean, VA·$42-$46/hr You have financial statement analysis a"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 2322,
+   "w": 436,
+   "h": 170,
+   "text": "T Tessera Labs ✦ Possible match Startup Internship Product Design Intern Remote (US)·$35-$42/hr Product teams value analysis, and a small portfolio gets you a l"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 2502,
+   "w": 436,
+   "h": 152,
+   "text": "M MedStar Health ✦ Possible match Entry level Clinical Research Coordinator I Washington, DC Your Excel and detail work fits the tracking side of a study. Poste"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 2664,
+   "w": 436,
+   "h": 152,
+   "text": "T The Carlyle Group ✦ Good match Internship Summer Analyst, Corporate Private Equity Washington, DC·$50-$55/hr You have equity research and Excel, plus an inves"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 2826,
+   "w": 436,
+   "h": 152,
+   "text": "3 3M ✦ Possible match Fortune 500 Co-op Co-op, Mechanical Engineering (Spring 2027) Austin, TX·$25-$31/hr Open to you with CAD basics, and the firm has finance "
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 2988,
+   "w": 436,
+   "h": 170,
+   "text": "N Northwind Analytics ✦ Good match Well-known employer Internship Data Science Intern Hybrid, College Park, MD You have Excel and forecasting, plus an investmen"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 3167,
+   "w": 436,
+   "h": 152,
+   "text": "T Tessera Labs ✦ Possible match Startup New grad Associate Software Engineer Remote (US)·$105k-$125k/yr A coding job you could reach with a year of projects. Po"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 3329,
+   "w": 436,
+   "h": 152,
+   "text": "A Acme Corp ✦ Good match Entry level Marketing Analyst, Entry Level Baltimore, MD You have Excel and experience pitching a recommendation backed by numbers. Fou"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": 3491,
+   "w": 436,
+   "h": 190,
+   "text": "A Amazon Web Services ✦ Possible match Part of a Big Tech company Entry level Cloud Support Associate Hybrid, Herndon, VA·$68k-$94k/yr Customer-facing cloud wor"
+  },
+  {
+   "kind": "card",
+   "x": 721,
+   "y": 214,
+   "w": 666,
+   "h": 752,
+   "text": "3 Software Engineering Intern, Summer 2027 3M · ✦ Possible match · Fortune 500 · Internship · $28-$38/hr · Closes Nov 6 Hybrid, Maplewood, MN Apply on company s"
+  },
+  {
+   "kind": "card",
+   "x": 742,
+   "y": 377,
+   "w": 624,
+   "h": 875,
+   "text": "✦ Why this fits you You said you want an internship, and this is one. In the posting's own words: \"Write clear design notes and share progress with the team.\" A"
+  },
+  {
+   "kind": "card",
+   "x": 742,
+   "y": 1268,
+   "w": 624,
+   "h": 354,
+   "text": "3 About 3M Website (3m.com) Industry Manufacturing and industrial Size 5,000+ employees Type Public company Fortune 500 S&P 500 At 3M, we apply science in colla"
+  },
+  {
+   "kind": "card",
+   "x": 759,
+   "y": 1341,
+   "w": 191,
+   "h": 71,
+   "text": "Industry Manufacturing and industrial"
+  },
+  {
+   "kind": "card",
+   "x": 958,
+   "y": 1341,
+   "w": 191,
+   "h": 71,
+   "text": "Size 5,000+ employees"
+  },
+  {
+   "kind": "card",
+   "x": 1158,
+   "y": 1341,
+   "w": 191,
+   "h": 71,
+   "text": "Type Public company"
+  },
+  {
+   "kind": "text",
+   "x": -1,
+   "y": 2,
+   "w": 149,
+   "h": 18,
+   "text": "Skip to main content"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 76,
+   "w": 67,
+   "h": 16,
+   "text": "Dashboard"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 114,
+   "w": 78,
+   "h": 16,
+   "text": "My Calendar"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 154,
+   "w": 9,
+   "h": 13,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 64,
+   "y": 152,
+   "w": 92,
+   "h": 16,
+   "text": "Career Advisor"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 187,
+   "w": 94,
+   "h": 15,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 218,
+   "w": 63,
+   "h": 15,
+   "text": "Job Match"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 249,
+   "w": 86,
+   "h": 15,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 280,
+   "w": 105,
+   "h": 15,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 323,
+   "w": 9,
+   "h": 13,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 64,
+   "y": 321,
+   "w": 111,
+   "h": 16,
+   "text": "Academic Advisor"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 356,
+   "w": 115,
+   "h": 15,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 387,
+   "w": 81,
+   "h": 15,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 418,
+   "w": 143,
+   "h": 15,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 359,
+   "w": 86,
+   "h": 16,
+   "text": "Organizations"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 397,
+   "w": 42,
+   "h": 16,
+   "text": "Events"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 435,
+   "w": 39,
+   "h": 16,
+   "text": "Dining"
+  },
+  {
+   "kind": "text",
+   "x": 52,
+   "y": 486,
+   "w": 63,
+   "h": 16,
+   "text": "CampusAI"
+  },
+  {
+   "kind": "text",
+   "x": 28,
+   "y": 834,
+   "w": 56,
+   "h": 11,
+   "text": "Accessibility"
+  },
+  {
+   "kind": "text",
+   "x": 28,
+   "y": 865,
+   "w": 17,
+   "h": 12,
+   "text": "MC"
+  },
+  {
+   "kind": "text",
+   "x": 63,
+   "y": 856,
+   "w": 65,
+   "h": 15,
+   "text": "Maya Chen"
+  },
+  {
+   "kind": "text",
+   "x": 63,
+   "y": 874,
+   "w": 14,
+   "h": 12,
+   "text": "80"
+  },
+  {
+   "kind": "text",
+   "x": 77,
+   "y": 874,
+   "w": 10,
+   "h": 12,
+   "text": "%"
+  },
+  {
+   "kind": "text",
+   "x": 87,
+   "y": 874,
+   "w": 9,
+   "h": 12,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 96,
+   "y": 874,
+   "w": 115,
+   "h": 12,
+   "text": "Connect your transcript"
+  },
+  {
+   "kind": "text",
+   "x": 268,
+   "y": 43,
+   "w": 105,
+   "h": 16,
+   "text": "Career Overview"
+  },
+  {
+   "kind": "text",
+   "x": 381,
+   "y": 43,
+   "w": 4,
+   "h": 16,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 393,
+   "y": 43,
+   "w": 66,
+   "h": 16,
+   "text": "Job Match"
+  },
+  {
+   "kind": "text",
+   "x": 269,
+   "y": 104,
+   "w": 118,
+   "h": 24,
+   "text": "Jobs for you"
+  },
+  {
+   "kind": "text",
+   "x": 269,
+   "y": 136,
+   "w": 435,
+   "h": 15,
+   "text": "22 open student roles at curated US employers, checked today at 5:12 AM"
+  },
+  {
+   "kind": "text",
+   "x": 734,
+   "y": 118,
+   "w": 10,
+   "h": 16,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 748,
+   "y": 118,
+   "w": 65,
+   "h": 16,
+   "text": "Aiming for"
+  },
+  {
+   "kind": "text",
+   "x": 829,
+   "y": 119,
+   "w": 219,
+   "h": 15,
+   "text": "Investment Banking Summer Analyst"
+  },
+  {
+   "kind": "text",
+   "x": 1015,
+   "y": 119,
+   "w": 8,
+   "h": 15,
+   "text": "+"
+  },
+  {
+   "kind": "text",
+   "x": 1023,
+   "y": 119,
+   "w": 8,
+   "h": 15,
+   "text": "2"
+  },
+  {
+   "kind": "text",
+   "x": 1103,
+   "y": 119,
+   "w": 22,
+   "h": 15,
+   "text": "List"
+  },
+  {
+   "kind": "text",
+   "x": 1147,
+   "y": 119,
+   "w": 25,
+   "h": 15,
+   "text": "Map"
+  },
+  {
+   "kind": "text",
+   "x": 1205,
+   "y": 120,
+   "w": 9,
+   "h": 13,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 1219,
+   "y": 119,
+   "w": 155,
+   "h": 15,
+   "text": "Go through them with me"
+  },
+  {
+   "kind": "text",
+   "x": 286,
+   "y": 175,
+   "w": 30,
+   "h": 15,
+   "text": "Jobs"
+  },
+  {
+   "kind": "text",
+   "x": 346,
+   "y": 175,
+   "w": 37,
+   "h": 15,
+   "text": "Saved"
+  },
+  {
+   "kind": "text",
+   "x": 388,
+   "y": 176,
+   "w": 8,
+   "h": 13,
+   "text": "8"
+  },
+  {
+   "kind": "text",
+   "x": 622,
+   "y": 175,
+   "w": 34,
+   "h": 15,
+   "text": "Roles"
+  },
+  {
+   "kind": "text",
+   "x": 666,
+   "y": 177,
+   "w": 7,
+   "h": 12,
+   "text": "4"
+  },
+  {
+   "kind": "text",
+   "x": 729,
+   "y": 175,
+   "w": 52,
+   "h": 15,
+   "text": "Location"
+  },
+  {
+   "kind": "text",
+   "x": 834,
+   "y": 175,
+   "w": 62,
+   "h": 15,
+   "text": "Work type"
+  },
+  {
+   "kind": "text",
+   "x": 948,
+   "y": 175,
+   "w": 58,
+   "h": 15,
+   "text": "Company"
+  },
+  {
+   "kind": "text",
+   "x": 1058,
+   "y": 175,
+   "w": 43,
+   "h": 15,
+   "text": "Posted"
+  },
+  {
+   "kind": "text",
+   "x": 1147,
+   "y": 175,
+   "w": 71,
+   "h": 15,
+   "text": "Clear filters"
+  },
+  {
+   "kind": "text",
+   "x": 1318,
+   "y": 175,
+   "w": 46,
+   "h": 15,
+   "text": "Newest"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 229,
+   "w": 18,
+   "h": 15,
+   "text": "3M"
+  },
+  {
+   "kind": "text",
+   "x": 370,
+   "y": 232,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 382,
+   "y": 231,
+   "w": 83,
+   "h": 13,
+   "text": "Possible match"
+  },
+  {
+   "kind": "text",
+   "x": 483,
+   "y": 231,
+   "w": 65,
+   "h": 12,
+   "text": "Fortune 500"
+  },
+  {
+   "kind": "text",
+   "x": 599,
+   "y": 233,
+   "w": 56,
+   "h": 13,
+   "text": "Internship"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 252,
+   "w": 295,
+   "h": 17,
+   "text": "Software Engineering Intern, Summer 2027"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 275,
+   "w": 136,
+   "h": 15,
+   "text": "Hybrid, Maplewood, MN"
+  },
+  {
+   "kind": "text",
+   "x": 480,
+   "y": 275,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 487,
+   "y": 275,
+   "w": 66,
+   "h": 15,
+   "text": "$28-$38/hr"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 298,
+   "w": 311,
+   "h": 15,
+   "text": "A way into fintech if you start building with code now."
+  },
+  {
+   "kind": "text",
+   "x": 348,
+   "y": 324,
+   "w": 72,
+   "h": 13,
+   "text": "Closes Nov 6"
+  },
+  {
+   "kind": "text",
+   "x": 590,
+   "y": 324,
+   "w": 72,
+   "h": 13,
+   "text": "Posted today"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 380,
+   "w": 43,
+   "h": 15,
+   "text": "Field AI"
+  },
+  {
+   "kind": "text",
+   "x": 395,
+   "y": 382,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 407,
+   "y": 381,
+   "w": 83,
+   "h": 13,
+   "text": "Possible match"
+  },
+  {
+   "kind": "text",
+   "x": 599,
+   "y": 383,
+   "w": 56,
+   "h": 13,
+   "text": "Internship"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 402,
+   "w": 282,
+   "h": 37,
+   "text": "Mechanical Engineer Internship, Robotics Hardware"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 445,
+   "w": 65,
+   "h": 15,
+   "text": "Boston, MA"
+  },
+  {
+   "kind": "text",
+   "x": 409,
+   "y": 445,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 417,
+   "y": 445,
+   "w": 66,
+   "h": 15,
+   "text": "$28-$63/hr"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 468,
+   "w": 296,
+   "h": 32,
+   "text": "Robotics hardware, open to you only with CAD and engineering coursework."
+  },
+  {
+   "kind": "text",
+   "x": 590,
+   "y": 509,
+   "w": 72,
+   "h": 13,
+   "text": "Posted today"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 562,
+   "w": 29,
+   "h": 15,
+   "text": "Uline"
+  },
+  {
+   "kind": "text",
+   "x": 381,
+   "y": 564,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 393,
+   "y": 563,
+   "w": 66,
+   "h": 13,
+   "text": "Good match"
+  },
+  {
+   "kind": "text",
+   "x": 603,
+   "y": 565,
+   "w": 52,
+   "h": 13,
+   "text": "New grad"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 584,
+   "w": 275,
+   "h": 17,
+   "text": "College Graduate Development Program"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 607,
+   "w": 70,
+   "h": 15,
+   "text": "Kenosha, WI"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 630,
+   "w": 275,
+   "h": 32,
+   "text": "A year of business rotations, with analytics and reporting in the mix."
+  },
+  {
+   "kind": "text",
+   "x": 590,
+   "y": 671,
+   "w": 72,
+   "h": 13,
+   "text": "Posted today"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 724,
+   "w": 67,
+   "h": 15,
+   "text": "Tenstorrent"
+  },
+  {
+   "kind": "text",
+   "x": 419,
+   "y": 726,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 431,
+   "y": 725,
+   "w": 83,
+   "h": 13,
+   "text": "Possible match"
+  },
+  {
+   "kind": "text",
+   "x": 599,
+   "y": 727,
+   "w": 56,
+   "h": 13,
+   "text": "Internship"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 746,
+   "w": 285,
+   "h": 37,
+   "text": "AI SW Intern, Cloud, Infrastructure & Data Centre Deployment"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 789,
+   "w": 165,
+   "h": 15,
+   "text": "Austin, TX or Santa Clara, CA"
+  },
+  {
+   "kind": "text",
+   "x": 509,
+   "y": 789,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 516,
+   "y": 789,
+   "w": 65,
+   "h": 15,
+   "text": "$50-$70/hr"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 812,
+   "w": 300,
+   "h": 32,
+   "text": "Possible if you are building toward tech, and it pays $50-$70/hr."
+  },
+  {
+   "kind": "text",
+   "x": 590,
+   "y": 853,
+   "w": 72,
+   "h": 13,
+   "text": "Posted today"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 905,
+   "w": 128,
+   "h": 15,
+   "text": "Amazon Web Services"
+  },
+  {
+   "kind": "text",
+   "x": 346,
+   "y": 928,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 358,
+   "y": 927,
+   "w": 83,
+   "h": 13,
+   "text": "Possible match"
+  },
+  {
+   "kind": "text",
+   "x": 346,
+   "y": 948,
+   "w": 143,
+   "h": 12,
+   "text": "Part of a Big Tech company"
+  },
+  {
+   "kind": "text",
+   "x": 603,
+   "y": 909,
+   "w": 52,
+   "h": 13,
+   "text": "New grad"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 966,
+   "w": 222,
+   "h": 17,
+   "text": "Solutions Architect, Early Career"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 989,
+   "w": 124,
+   "h": 15,
+   "text": "Arlington, VA +2 more"
+  },
+  {
+   "kind": "text",
+   "x": 468,
+   "y": 989,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 476,
+   "y": 989,
+   "w": 87,
+   "h": 15,
+   "text": "$118k-$165k/yr"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1012,
+   "w": 287,
+   "h": 32,
+   "text": "Your cost analysis fits the customer side of cloud work."
+  },
+  {
+   "kind": "text",
+   "x": 590,
+   "y": 1052,
+   "w": 72,
+   "h": 13,
+   "text": "Posted today"
+  },
+  {
+   "kind": "text",
+   "x": 300,
+   "y": 1118,
+   "w": 11,
+   "h": 18,
+   "text": "A"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1105,
+   "w": 64,
+   "h": 15,
+   "text": "Acme Corp"
+  },
+  {
+   "kind": "text",
+   "x": 416,
+   "y": 1107,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 428,
+   "y": 1107,
+   "w": 66,
+   "h": 13,
+   "text": "Good match"
+  },
+  {
+   "kind": "text",
+   "x": 599,
+   "y": 1108,
+   "w": 56,
+   "h": 13,
+   "text": "Internship"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1128,
+   "w": 131,
+   "h": 17,
+   "text": "Data Analyst Intern"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1154,
+   "w": 271,
+   "h": 32,
+   "text": "You have Excel and data analysis, plus a credit internship. SQL is the gap."
+  },
+  {
+   "kind": "text",
+   "x": 594,
+   "y": 1194,
+   "w": 68,
+   "h": 13,
+   "text": "Found today"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1247,
+   "w": 97,
+   "h": 15,
+   "text": "Lockheed Martin"
+  },
+  {
+   "kind": "text",
+   "x": 449,
+   "y": 1249,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 461,
+   "y": 1249,
+   "w": 83,
+   "h": 13,
+   "text": "Possible match"
+  },
+  {
+   "kind": "text",
+   "x": 346,
+   "y": 1270,
+   "w": 76,
+   "h": 12,
+   "text": "Defense prime"
+  },
+  {
+   "kind": "text",
+   "x": 597,
+   "y": 1250,
+   "w": 58,
+   "h": 13,
+   "text": "Entry level"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1287,
+   "w": 193,
+   "h": 17,
+   "text": "Systems Engineer Associate"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1310,
+   "w": 79,
+   "h": 15,
+   "text": "Bethesda, MD"
+  },
+  {
+   "kind": "text",
+   "x": 423,
+   "y": 1310,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 431,
+   "y": 1310,
+   "w": 78,
+   "h": 15,
+   "text": "$78k-$96k/yr"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1333,
+   "w": 307,
+   "h": 32,
+   "text": "Program budgets run through systems teams, where finance meets engineering."
+  },
+  {
+   "kind": "text",
+   "x": 585,
+   "y": 1374,
+   "w": 77,
+   "h": 13,
+   "text": "Posted 1d ago"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1427,
+   "w": 45,
+   "h": 15,
+   "text": "Deloitte"
+  },
+  {
+   "kind": "text",
+   "x": 397,
+   "y": 1429,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 409,
+   "y": 1428,
+   "w": 74,
+   "h": 13,
+   "text": "Strong match"
+  },
+  {
+   "kind": "text",
+   "x": 501,
+   "y": 1428,
+   "w": 27,
+   "h": 12,
+   "text": "Big 4"
+  },
+  {
+   "kind": "text",
+   "x": 599,
+   "y": 1430,
+   "w": 56,
+   "h": 13,
+   "text": "Internship"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1449,
+   "w": 289,
+   "h": 17,
+   "text": "Audit and Assurance Intern, Summer 2027"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1472,
+   "w": 176,
+   "h": 15,
+   "text": "McLean, VA or Washington, DC"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1495,
+   "w": 315,
+   "h": 32,
+   "text": "You have financial statement analysis, accounting and Excel, plus a credit internship."
+  },
+  {
+   "kind": "text",
+   "x": 348,
+   "y": 1539,
+   "w": 77,
+   "h": 13,
+   "text": "Closes Oct 25"
+  },
+  {
+   "kind": "text",
+   "x": 585,
+   "y": 1538,
+   "w": 77,
+   "h": 13,
+   "text": "Posted 1d ago"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1594,
+   "w": 65,
+   "h": 15,
+   "text": "Fannie Mae"
+  },
+  {
+   "kind": "text",
+   "x": 417,
+   "y": 1596,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 429,
+   "y": 1596,
+   "w": 66,
+   "h": 13,
+   "text": "Good match"
+  },
+  {
+   "kind": "text",
+   "x": 346,
+   "y": 1617,
+   "w": 65,
+   "h": 12,
+   "text": "Fortune 500"
+  },
+  {
+   "kind": "text",
+   "x": 599,
+   "y": 1597,
+   "w": 56,
+   "h": 13,
+   "text": "Internship"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1634,
+   "w": 255,
+   "h": 17,
+   "text": "Capital Markets Intern, Summer 2027"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1657,
+   "w": 136,
+   "h": 15,
+   "text": "Hybrid, Washington, DC"
+  },
+  {
+   "kind": "text",
+   "x": 480,
+   "y": 1657,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 487,
+   "y": 1657,
+   "w": 66,
+   "h": 15,
+   "text": "$30-$36/hr"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1680,
+   "w": 309,
+   "h": 32,
+   "text": "You have financial statement analysis and Excel, plus market research."
+  },
+  {
+   "kind": "text",
+   "x": 583,
+   "y": 1721,
+   "w": 79,
+   "h": 13,
+   "text": "Posted 2d ago"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1774,
+   "w": 75,
+   "h": 15,
+   "text": "Harris Teeter"
+  },
+  {
+   "kind": "text",
+   "x": 427,
+   "y": 1776,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 439,
+   "y": 1775,
+   "w": 83,
+   "h": 13,
+   "text": "Possible match"
+  },
+  {
+   "kind": "text",
+   "x": 346,
+   "y": 1796,
+   "w": 161,
+   "h": 12,
+   "text": "Part of a Fortune 100 company"
+  },
+  {
+   "kind": "text",
+   "x": 603,
+   "y": 1777,
+   "w": 52,
+   "h": 13,
+   "text": "New grad"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1814,
+   "w": 263,
+   "h": 17,
+   "text": "Store Operations Management Trainee"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1837,
+   "w": 80,
+   "h": 15,
+   "text": "Matthews, NC"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1860,
+   "w": 295,
+   "h": 32,
+   "text": "Running a store is a P&L you own, which is finance with people attached."
+  },
+  {
+   "kind": "text",
+   "x": 583,
+   "y": 1900,
+   "w": 79,
+   "h": 13,
+   "text": "Posted 2d ago"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1953,
+   "w": 90,
+   "h": 15,
+   "text": "Goldman Sachs"
+  },
+  {
+   "kind": "text",
+   "x": 442,
+   "y": 1955,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 454,
+   "y": 1955,
+   "w": 74,
+   "h": 13,
+   "text": "Strong match"
+  },
+  {
+   "kind": "text",
+   "x": 346,
+   "y": 1976,
+   "w": 73,
+   "h": 12,
+   "text": "Bulge bracket"
+  },
+  {
+   "kind": "text",
+   "x": 599,
+   "y": 1956,
+   "w": 56,
+   "h": 13,
+   "text": "Internship"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 1993,
+   "w": 290,
+   "h": 37,
+   "text": "2027 Summer Analyst, Global Banking and Markets"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2036,
+   "w": 77,
+   "h": 15,
+   "text": "New York, NY"
+  },
+  {
+   "kind": "text",
+   "x": 421,
+   "y": 2036,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 429,
+   "y": 2036,
+   "w": 48,
+   "h": 15,
+   "text": "$110k/yr"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2059,
+   "w": 319,
+   "h": 32,
+   "text": "You have financial statement analysis and Excel, plus a credit internship and an investment fund role."
+  },
+  {
+   "kind": "text",
+   "x": 348,
+   "y": 2103,
+   "w": 71,
+   "h": 13,
+   "text": "Closes Nov 3"
+  },
+  {
+   "kind": "text",
+   "x": 583,
+   "y": 2102,
+   "w": 79,
+   "h": 13,
+   "text": "Posted 2d ago"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2158,
+   "w": 67,
+   "h": 15,
+   "text": "Capital One"
+  },
+  {
+   "kind": "text",
+   "x": 419,
+   "y": 2160,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 431,
+   "y": 2160,
+   "w": 74,
+   "h": 13,
+   "text": "Strong match"
+  },
+  {
+   "kind": "text",
+   "x": 346,
+   "y": 2181,
+   "w": 65,
+   "h": 12,
+   "text": "Fortune 500"
+  },
+  {
+   "kind": "text",
+   "x": 599,
+   "y": 2161,
+   "w": 56,
+   "h": 13,
+   "text": "Internship"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2198,
+   "w": 285,
+   "h": 17,
+   "text": "Corporate Finance Summer Analyst, 2027"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2221,
+   "w": 111,
+   "h": 15,
+   "text": "Hybrid, McLean, VA"
+  },
+  {
+   "kind": "text",
+   "x": 455,
+   "y": 2221,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 463,
+   "y": 2221,
+   "w": 66,
+   "h": 15,
+   "text": "$42-$46/hr"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2244,
+   "w": 319,
+   "h": 32,
+   "text": "You have financial statement analysis and Excel, plus a credit internship."
+  },
+  {
+   "kind": "text",
+   "x": 583,
+   "y": 2285,
+   "w": 79,
+   "h": 13,
+   "text": "Posted 3d ago"
+  },
+  {
+   "kind": "text",
+   "x": 301,
+   "y": 2350,
+   "w": 10,
+   "h": 18,
+   "text": "T"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2338,
+   "w": 76,
+   "h": 15,
+   "text": "Tessera Labs"
+  },
+  {
+   "kind": "text",
+   "x": 428,
+   "y": 2340,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 440,
+   "y": 2339,
+   "w": 83,
+   "h": 13,
+   "text": "Possible match"
+  },
+  {
+   "kind": "text",
+   "x": 346,
+   "y": 2360,
+   "w": 40,
+   "h": 12,
+   "text": "Startup"
+  },
+  {
+   "kind": "text",
+   "x": 599,
+   "y": 2341,
+   "w": 56,
+   "h": 13,
+   "text": "Internship"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2378,
+   "w": 149,
+   "h": 17,
+   "text": "Product Design Intern"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2401,
+   "w": 72,
+   "h": 15,
+   "text": "Remote (US)"
+  },
+  {
+   "kind": "text",
+   "x": 416,
+   "y": 2401,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 424,
+   "y": 2401,
+   "w": 66,
+   "h": 15,
+   "text": "$35-$42/hr"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2424,
+   "w": 296,
+   "h": 32,
+   "text": "Product teams value analysis, and a small portfolio gets you a look."
+  },
+  {
+   "kind": "text",
+   "x": 583,
+   "y": 2464,
+   "w": 79,
+   "h": 13,
+   "text": "Posted 3d ago"
+  },
+  {
+   "kind": "text",
+   "x": 299,
+   "y": 2530,
+   "w": 14,
+   "h": 18,
+   "text": "M"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2517,
+   "w": 90,
+   "h": 15,
+   "text": "MedStar Health"
+  },
+  {
+   "kind": "text",
+   "x": 442,
+   "y": 2519,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 454,
+   "y": 2519,
+   "w": 83,
+   "h": 13,
+   "text": "Possible match"
+  },
+  {
+   "kind": "text",
+   "x": 597,
+   "y": 2520,
+   "w": 58,
+   "h": 13,
+   "text": "Entry level"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2540,
+   "w": 209,
+   "h": 17,
+   "text": "Clinical Research Coordinator I"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2563,
+   "w": 91,
+   "h": 15,
+   "text": "Washington, DC"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2586,
+   "w": 302,
+   "h": 32,
+   "text": "Your Excel and detail work fits the tracking side of a study."
+  },
+  {
+   "kind": "text",
+   "x": 583,
+   "y": 2626,
+   "w": 79,
+   "h": 13,
+   "text": "Posted 4d ago"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2679,
+   "w": 104,
+   "h": 15,
+   "text": "The Carlyle Group"
+  },
+  {
+   "kind": "text",
+   "x": 456,
+   "y": 2681,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 468,
+   "y": 2681,
+   "w": 66,
+   "h": 13,
+   "text": "Good match"
+  },
+  {
+   "kind": "text",
+   "x": 599,
+   "y": 2682,
+   "w": 56,
+   "h": 13,
+   "text": "Internship"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2702,
+   "w": 287,
+   "h": 17,
+   "text": "Summer Analyst, Corporate Private Equity"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2725,
+   "w": 91,
+   "h": 15,
+   "text": "Washington, DC"
+  },
+  {
+   "kind": "text",
+   "x": 435,
+   "y": 2725,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 442,
+   "y": 2725,
+   "w": 66,
+   "h": 15,
+   "text": "$50-$55/hr"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2748,
+   "w": 256,
+   "h": 32,
+   "text": "You have equity research and Excel, plus an investment fund role."
+  },
+  {
+   "kind": "text",
+   "x": 583,
+   "y": 2788,
+   "w": 79,
+   "h": 13,
+   "text": "Posted 5d ago"
+  },
+  {
+   "kind": "text",
+   "x": 301,
+   "y": 2854,
+   "w": 10,
+   "h": 18,
+   "text": "3"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2841,
+   "w": 18,
+   "h": 15,
+   "text": "3M"
+  },
+  {
+   "kind": "text",
+   "x": 370,
+   "y": 2843,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 382,
+   "y": 2843,
+   "w": 83,
+   "h": 13,
+   "text": "Possible match"
+  },
+  {
+   "kind": "text",
+   "x": 483,
+   "y": 2843,
+   "w": 65,
+   "h": 12,
+   "text": "Fortune 500"
+  },
+  {
+   "kind": "text",
+   "x": 621,
+   "y": 2844,
+   "w": 34,
+   "h": 13,
+   "text": "Co-op"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2864,
+   "w": 311,
+   "h": 17,
+   "text": "Co-op, Mechanical Engineering (Spring 2027)"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2887,
+   "w": 58,
+   "h": 15,
+   "text": "Austin, TX"
+  },
+  {
+   "kind": "text",
+   "x": 402,
+   "y": 2887,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 410,
+   "y": 2887,
+   "w": 64,
+   "h": 15,
+   "text": "$25-$31/hr"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 2910,
+   "w": 319,
+   "h": 32,
+   "text": "Open to you with CAD basics, and the firm has finance teams too."
+  },
+  {
+   "kind": "text",
+   "x": 583,
+   "y": 2950,
+   "w": 79,
+   "h": 13,
+   "text": "Posted 5d ago"
+  },
+  {
+   "kind": "text",
+   "x": 300,
+   "y": 3016,
+   "w": 12,
+   "h": 18,
+   "text": "N"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3003,
+   "w": 117,
+   "h": 15,
+   "text": "Northwind Analytics"
+  },
+  {
+   "kind": "text",
+   "x": 469,
+   "y": 3005,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 480,
+   "y": 3005,
+   "w": 66,
+   "h": 13,
+   "text": "Good match"
+  },
+  {
+   "kind": "text",
+   "x": 346,
+   "y": 3026,
+   "w": 113,
+   "h": 12,
+   "text": "Well-known employer"
+  },
+  {
+   "kind": "text",
+   "x": 599,
+   "y": 3006,
+   "w": 56,
+   "h": 13,
+   "text": "Internship"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3043,
+   "w": 133,
+   "h": 17,
+   "text": "Data Science Intern"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3066,
+   "w": 142,
+   "h": 15,
+   "text": "Hybrid, College Park, MD"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3089,
+   "w": 299,
+   "h": 32,
+   "text": "You have Excel and forecasting, plus an investment fund role. Python is the gap."
+  },
+  {
+   "kind": "text",
+   "x": 583,
+   "y": 3130,
+   "w": 79,
+   "h": 13,
+   "text": "Posted 6d ago"
+  },
+  {
+   "kind": "text",
+   "x": 301,
+   "y": 3195,
+   "w": 10,
+   "h": 18,
+   "text": "T"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3183,
+   "w": 76,
+   "h": 15,
+   "text": "Tessera Labs"
+  },
+  {
+   "kind": "text",
+   "x": 428,
+   "y": 3185,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 440,
+   "y": 3184,
+   "w": 83,
+   "h": 13,
+   "text": "Possible match"
+  },
+  {
+   "kind": "text",
+   "x": 346,
+   "y": 3205,
+   "w": 40,
+   "h": 12,
+   "text": "Startup"
+  },
+  {
+   "kind": "text",
+   "x": 603,
+   "y": 3186,
+   "w": 52,
+   "h": 13,
+   "text": "New grad"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3223,
+   "w": 196,
+   "h": 17,
+   "text": "Associate Software Engineer"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3246,
+   "w": 72,
+   "h": 15,
+   "text": "Remote (US)"
+  },
+  {
+   "kind": "text",
+   "x": 416,
+   "y": 3246,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 424,
+   "y": 3246,
+   "w": 89,
+   "h": 15,
+   "text": "$105k-$125k/yr"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3269,
+   "w": 307,
+   "h": 15,
+   "text": "A coding job you could reach with a year of projects."
+  },
+  {
+   "kind": "text",
+   "x": 583,
+   "y": 3292,
+   "w": 79,
+   "h": 13,
+   "text": "Posted 9d ago"
+  },
+  {
+   "kind": "text",
+   "x": 300,
+   "y": 3357,
+   "w": 11,
+   "h": 18,
+   "text": "A"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3345,
+   "w": 64,
+   "h": 15,
+   "text": "Acme Corp"
+  },
+  {
+   "kind": "text",
+   "x": 416,
+   "y": 3347,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 428,
+   "y": 3346,
+   "w": 66,
+   "h": 13,
+   "text": "Good match"
+  },
+  {
+   "kind": "text",
+   "x": 597,
+   "y": 3348,
+   "w": 58,
+   "h": 13,
+   "text": "Entry level"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3367,
+   "w": 207,
+   "h": 17,
+   "text": "Marketing Analyst, Entry Level"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3390,
+   "w": 80,
+   "h": 15,
+   "text": "Baltimore, MD"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3414,
+   "w": 241,
+   "h": 32,
+   "text": "You have Excel and experience pitching a recommendation backed by numbers."
+  },
+  {
+   "kind": "text",
+   "x": 585,
+   "y": 3454,
+   "w": 77,
+   "h": 13,
+   "text": "Found 2w ago"
+  },
+  {
+   "kind": "text",
+   "x": 300,
+   "y": 3519,
+   "w": 11,
+   "h": 18,
+   "text": "A"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3506,
+   "w": 128,
+   "h": 15,
+   "text": "Amazon Web Services"
+  },
+  {
+   "kind": "text",
+   "x": 346,
+   "y": 3529,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 358,
+   "y": 3529,
+   "w": 83,
+   "h": 13,
+   "text": "Possible match"
+  },
+  {
+   "kind": "text",
+   "x": 346,
+   "y": 3550,
+   "w": 143,
+   "h": 12,
+   "text": "Part of a Big Tech company"
+  },
+  {
+   "kind": "text",
+   "x": 597,
+   "y": 3510,
+   "w": 58,
+   "h": 13,
+   "text": "Entry level"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3567,
+   "w": 169,
+   "h": 17,
+   "text": "Cloud Support Associate"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3590,
+   "w": 116,
+   "h": 15,
+   "text": "Hybrid, Herndon, VA"
+  },
+  {
+   "kind": "text",
+   "x": 460,
+   "y": 3590,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 467,
+   "y": 3590,
+   "w": 79,
+   "h": 15,
+   "text": "$68k-$94k/yr"
+  },
+  {
+   "kind": "text",
+   "x": 340,
+   "y": 3613,
+   "w": 299,
+   "h": 32,
+   "text": "Customer-facing cloud work you could learn on the job."
+  },
+  {
+   "kind": "text",
+   "x": 581,
+   "y": 3654,
+   "w": 81,
+   "h": 13,
+   "text": "Posted 3w ago"
+  },
+  {
+   "kind": "text",
+   "x": 436,
+   "y": 3712,
+   "w": 102,
+   "h": 15,
+   "text": "Show more roles"
+  },
+  {
+   "kind": "text",
+   "x": 441,
+   "y": 3745,
+   "w": 48,
+   "h": 13,
+   "text": "Showing"
+  },
+  {
+   "kind": "text",
+   "x": 489,
+   "y": 3745,
+   "w": 14,
+   "h": 13,
+   "text": "20"
+  },
+  {
+   "kind": "text",
+   "x": 502,
+   "y": 3745,
+   "w": 17,
+   "h": 13,
+   "text": "of"
+  },
+  {
+   "kind": "text",
+   "x": 519,
+   "y": 3745,
+   "w": 13,
+   "h": 13,
+   "text": "22"
+  },
+  {
+   "kind": "text",
+   "x": 798,
+   "y": 235,
+   "w": 389,
+   "h": 23,
+   "text": "Software Engineering Intern, Summer 2027"
+  },
+  {
+   "kind": "text",
+   "x": 798,
+   "y": 265,
+   "w": 19,
+   "h": 15,
+   "text": "3M"
+  },
+  {
+   "kind": "text",
+   "x": 823,
+   "y": 265,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 839,
+   "y": 267,
+   "w": 8,
+   "h": 12,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 851,
+   "y": 266,
+   "w": 83,
+   "h": 13,
+   "text": "Possible match"
+  },
+  {
+   "kind": "text",
+   "x": 946,
+   "y": 265,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 955,
+   "y": 265,
+   "w": 72,
+   "h": 15,
+   "text": "Fortune 500"
+  },
+  {
+   "kind": "text",
+   "x": 1034,
+   "y": 265,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 1066,
+   "y": 266,
+   "w": 56,
+   "h": 13,
+   "text": "Internship"
+  },
+  {
+   "kind": "text",
+   "x": 1135,
+   "y": 265,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 1145,
+   "y": 265,
+   "w": 69,
+   "h": 15,
+   "text": "$28-$38/hr"
+  },
+  {
+   "kind": "text",
+   "x": 1219,
+   "y": 265,
+   "w": 4,
+   "h": 15,
+   "text": "·"
+  },
+  {
+   "kind": "text",
+   "x": 1229,
+   "y": 265,
+   "w": 80,
+   "h": 15,
+   "text": "Closes Nov 6"
+  },
+  {
+   "kind": "text",
+   "x": 814,
+   "y": 290,
+   "w": 141,
+   "h": 15,
+   "text": "Hybrid, Maplewood, MN"
+  },
+  {
+   "kind": "text",
+   "x": 756,
+   "y": 334,
+   "w": 143,
+   "h": 16,
+   "text": "Apply on company site"
+  },
+  {
+   "kind": "text",
+   "x": 954,
+   "y": 335,
+   "w": 9,
+   "h": 13,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 969,
+   "y": 334,
+   "w": 85,
+   "h": 16,
+   "text": "Tailor resume"
+  },
+  {
+   "kind": "text",
+   "x": 1092,
+   "y": 334,
+   "w": 121,
+   "h": 16,
+   "text": "Write a cover letter"
+  },
+  {
+   "kind": "text",
+   "x": 1271,
+   "y": 334,
+   "w": 30,
+   "h": 16,
+   "text": "Save"
+  },
+  {
+   "kind": "text",
+   "x": 763,
+   "y": 396,
+   "w": 11,
+   "h": 17,
+   "text": "✦"
+  },
+  {
+   "kind": "text",
+   "x": 782,
+   "y": 396,
+   "w": 112,
+   "h": 17,
+   "text": "Why this fits you"
+  },
+  {
+   "kind": "text",
+   "x": 763,
+   "y": 506,
+   "w": 99,
+   "h": 17,
+   "text": "About this role"
+  },
+  {
+   "kind": "text",
+   "x": 763,
+   "y": 537,
+   "w": 553,
+   "h": 40,
+   "text": "Twelve weeks building features on a product team, ending with a demo to engineering leadership."
+  },
+  {
+   "kind": "text",
+   "x": 779,
+   "y": 591,
+   "w": 293,
+   "h": 16,
+   "text": "Build and test features in React and TypeScript"
+  },
+  {
+   "kind": "text",
+   "x": 779,
+   "y": 616,
+   "w": 288,
+   "h": 16,
+   "text": "Write design notes and share progress weekly"
+  },
+  {
+   "kind": "text",
+   "x": 779,
+   "y": 640,
+   "w": 323,
+   "h": 16,
+   "text": "Learn how a production system is deployed on AWS"
+  },
+  {
+   "kind": "text",
+   "x": 763,
+   "y": 676,
+   "w": 163,
+   "h": 17,
+   "text": "What they're looking for"
+  },
+  {
+   "kind": "text",
+   "x": 779,
+   "y": 706,
+   "w": 299,
+   "h": 16,
+   "text": "Computer science or related degree in progress"
+  },
+  {
+   "kind": "text",
+   "x": 779,
+   "y": 730,
+   "w": 236,
+   "h": 16,
+   "text": "Projects in Python, Java or JavaScript"
+  },
+  {
+   "kind": "text",
+   "x": 779,
+   "y": 755,
+   "w": 100,
+   "h": 16,
+   "text": "Familiar with Git"
+  },
+  {
+   "kind": "text",
+   "x": 763,
+   "y": 807,
+   "w": 105,
+   "h": 17,
+   "text": "The full posting"
+  },
+  {
+   "kind": "text",
+   "x": 763,
+   "y": 920,
+   "w": 107,
+   "h": 16,
+   "text": "What you will do"
+  },
+  {
+   "kind": "text",
+   "x": 779,
+   "y": 949,
+   "w": 529,
+   "h": 35,
+   "text": "Build and test features in React and TypeScript with a mentor who reviews your work every week"
+  },
+  {
+   "kind": "text",
+   "x": 779,
+   "y": 993,
+   "w": 364,
+   "h": 16,
+   "text": "Write clear design notes and share progress with the team"
+  },
+  {
+   "kind": "text",
+   "x": 779,
+   "y": 1017,
+   "w": 418,
+   "h": 16,
+   "text": "Learn how a production system is deployed on AWS and monitored"
+  },
+  {
+   "kind": "text",
+   "x": 779,
+   "y": 1046,
+   "w": 493,
+   "h": 16,
+   "text": "Pursuing a bachelor's or master's degree in computer science or a related field"
+  },
+  {
+   "kind": "text",
+   "x": 779,
+   "y": 1070,
+   "w": 353,
+   "h": 16,
+   "text": "Coursework or projects using Python, Java or JavaScript"
+  },
+  {
+   "kind": "text",
+   "x": 779,
+   "y": 1095,
+   "w": 115,
+   "h": 16,
+   "text": "Familiarity with Git"
+  },
+  {
+   "kind": "text",
+   "x": 763,
+   "y": 1147,
+   "w": 177,
+   "h": 17,
+   "text": "Skills recruiters screen for"
+  },
+  {
+   "kind": "text",
+   "x": 1308,
+   "y": 1148,
+   "w": 8,
+   "h": 16,
+   "text": "0"
+  },
+  {
+   "kind": "text",
+   "x": 1317,
+   "y": 1148,
+   "w": 20,
+   "h": 16,
+   "text": "of"
+  },
+  {
+   "kind": "text",
+   "x": 1337,
+   "y": 1148,
+   "w": 8,
+   "h": 16,
+   "text": "6"
+  },
+  {
+   "kind": "text",
+   "x": 774,
+   "y": 1184,
+   "w": 41,
+   "h": 15,
+   "text": "Python"
+  },
+  {
+   "kind": "text",
+   "x": 773,
+   "y": 1190,
+   "w": 92,
+   "h": 15,
+   "text": "(not shown yet)"
+  },
+  {
+   "kind": "text",
+   "x": 845,
+   "y": 1184,
+   "w": 27,
+   "h": 15,
+   "text": "Java"
+  },
+  {
+   "kind": "text",
+   "x": 844,
+   "y": 1190,
+   "w": 92,
+   "h": 15,
+   "text": "(not shown yet)"
+  },
+  {
+   "kind": "text",
+   "x": 902,
+   "y": 1184,
+   "w": 61,
+   "h": 15,
+   "text": "JavaScript"
+  },
+  {
+   "kind": "text",
+   "x": 901,
+   "y": 1190,
+   "w": 92,
+   "h": 15,
+   "text": "(not shown yet)"
+  },
+  {
+   "kind": "text",
+   "x": 993,
+   "y": 1184,
+   "w": 34,
+   "h": 15,
+   "text": "React"
+  },
+  {
+   "kind": "text",
+   "x": 992,
+   "y": 1190,
+   "w": 92,
+   "h": 15,
+   "text": "(not shown yet)"
+  },
+  {
+   "kind": "text",
+   "x": 1057,
+   "y": 1184,
+   "w": 63,
+   "h": 15,
+   "text": "TypeScript"
+  },
+  {
+   "kind": "text",
+   "x": 1056,
+   "y": 1190,
+   "w": 92,
+   "h": 15,
+   "text": "(not shown yet)"
+  },
+  {
+   "kind": "text",
+   "x": 1150,
+   "y": 1184,
+   "w": 17,
+   "h": 15,
+   "text": "Git"
+  },
+  {
+   "kind": "text",
+   "x": 1149,
+   "y": 1190,
+   "w": 92,
+   "h": 15,
+   "text": "(not shown yet)"
+  },
+  {
+   "kind": "text",
+   "x": 763,
+   "y": 1217,
+   "w": 118,
+   "h": 16,
+   "text": "Worth sharpening:"
+  },
+  {
+   "kind": "text",
+   "x": 881,
+   "y": 1217,
+   "w": 320,
+   "h": 16,
+   "text": "Python or JavaScript, plus one project you can show."
+  },
+  {
+   "kind": "text",
+   "x": 815,
+   "y": 1299,
+   "w": 44,
+   "h": 17,
+   "text": "About"
+  },
+  {
+   "kind": "text",
+   "x": 859,
+   "y": 1299,
+   "w": 21,
+   "h": 17,
+   "text": "3M"
+  },
+  {
+   "kind": "text",
+   "x": 1275,
+   "y": 1299,
+   "w": 48,
+   "h": 15,
+   "text": "Website"
+  },
+  {
+   "kind": "text",
+   "x": 1274,
+   "y": 1308,
+   "w": 5,
+   "h": 15,
+   "text": "("
+  },
+  {
+   "kind": "text",
+   "x": 1279,
+   "y": 1308,
+   "w": 48,
+   "h": 15,
+   "text": "3m.com"
+  },
+  {
+   "kind": "text",
+   "x": 1327,
+   "y": 1308,
+   "w": 5,
+   "h": 15,
+   "text": ")"
+  },
+  {
+   "kind": "text",
+   "x": 793,
+   "y": 1352,
+   "w": 43,
+   "h": 13,
+   "text": "Industry"
+  },
+  {
+   "kind": "text",
+   "x": 793,
+   "y": 1369,
+   "w": 113,
+   "h": 32,
+   "text": "Manufacturing and industrial"
+  },
+  {
+   "kind": "text",
+   "x": 992,
+   "y": 1352,
+   "w": 22,
+   "h": 13,
+   "text": "Size"
+  },
+  {
+   "kind": "text",
+   "x": 992,
+   "y": 1369,
+   "w": 111,
+   "h": 15,
+   "text": "5,000+ employees"
+  },
+  {
+   "kind": "text",
+   "x": 1192,
+   "y": 1352,
+   "w": 26,
+   "h": 13,
+   "text": "Type"
+  },
+  {
+   "kind": "text",
+   "x": 1192,
+   "y": 1369,
+   "w": 95,
+   "h": 15,
+   "text": "Public company"
+  },
+  {
+   "kind": "text",
+   "x": 768,
+   "y": 1430,
+   "w": 71,
+   "h": 15,
+   "text": "Fortune 500"
+  },
+  {
+   "kind": "text",
+   "x": 863,
+   "y": 1430,
+   "w": 51,
+   "h": 15,
+   "text": "S&P 500"
+  },
+  {
+   "kind": "text",
+   "x": 759,
+   "y": 1524,
+   "w": 80,
+   "h": 16,
+   "text": "Why join 3M"
+  },
+  {
+   "kind": "text",
+   "x": 759,
+   "y": 1554,
+   "w": 582,
+   "h": 16,
+   "text": "We offer competitive pay, a hybrid schedule and an intern community with events all summer."
+  },
+  {
+   "kind": "text",
+   "x": 759,
+   "y": 1587,
+   "w": 45,
+   "h": 16,
+   "text": "See all"
+  },
+  {
+   "kind": "text",
+   "x": 804,
+   "y": 1587,
+   "w": 8,
+   "h": 16,
+   "text": "3"
+  },
+  {
+   "kind": "text",
+   "x": 812,
+   "y": 1587,
+   "w": 54,
+   "h": 16,
+   "text": "roles at"
+  },
+  {
+   "kind": "text",
+   "x": 866,
+   "y": 1587,
+   "w": 20,
+   "h": 16,
+   "text": "3M"
+  },
+  {
+   "kind": "text",
+   "x": 742,
+   "y": 1641,
+   "w": 425,
+   "h": 15,
+   "text": "Found on Workday · Posted Oct 25 · First seen Oct 25 · Last checked today"
+  },
+  {
+   "kind": "text",
+   "x": 1115,
+   "y": 825,
+   "w": 30,
+   "h": 16,
+   "text": "Chat"
+  },
+  {
+   "kind": "text",
+   "x": 684,
+   "y": 870,
+   "w": 288,
+   "h": 12,
+   "text": "CampusAI can make mistakes. Verify important information."
+  },
+  {
+   "kind": "text",
+   "x": 1260,
+   "y": 26,
+   "w": 8,
+   "h": 15,
+   "text": "6"
+  },
+  {
+   "kind": "text",
+   "x": 1268,
+   "y": 26,
+   "w": 27,
+   "h": 15,
+   "text": "new"
+  },
+  {
+   "kind": "text",
+   "x": 1352,
+   "y": 26,
+   "w": 57,
+   "h": 15,
+   "text": "Feedback"
+  }
+ ]
+}

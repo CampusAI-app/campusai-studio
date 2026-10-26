@@ -1,0 +1,738 @@
+{
+ "page": {
+  "w": 1440,
+  "h": 900
+ },
+ "dpr": 3,
+ "clip": {
+  "x": 0,
+  "y": 0,
+  "w": 1440,
+  "h": 900
+ },
+ "source": "https://campusai-demo.vercel.app/events",
+ "captured": "2026-10-25T00:19:44.545Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false,
+  "terp": false
+ },
+ "texts": [
+  {
+   "text": "Skip to main content",
+   "x": -1,
+   "y": 2,
+   "w": 149,
+   "h": 18
+  },
+  {
+   "text": "Dashboard",
+   "x": 52,
+   "y": 76,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "text": "My Calendar",
+   "x": 52,
+   "y": 114,
+   "w": 78,
+   "h": 16
+  },
+  {
+   "text": "✦",
+   "x": 52,
+   "y": 154,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "text": "Career Advisor",
+   "x": 64,
+   "y": 152,
+   "w": 92,
+   "h": 16
+  },
+  {
+   "text": "Resume Review",
+   "x": 52,
+   "y": 187,
+   "w": 94,
+   "h": 15
+  },
+  {
+   "text": "Job Match",
+   "x": 52,
+   "y": 218,
+   "w": 63,
+   "h": 15
+  },
+  {
+   "text": "Interview Prep",
+   "x": 52,
+   "y": 249,
+   "w": 86,
+   "h": 15
+  },
+  {
+   "text": "Company Tracker",
+   "x": 52,
+   "y": 280,
+   "w": 105,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 52,
+   "y": 323,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "text": "Academic Advisor",
+   "x": 64,
+   "y": 321,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "text": "Planner & Progress",
+   "x": 52,
+   "y": 356,
+   "w": 115,
+   "h": 15
+  },
+  {
+   "text": "Class Tracker",
+   "x": 52,
+   "y": 387,
+   "w": 81,
+   "h": 15
+  },
+  {
+   "text": "Courses and Professors",
+   "x": 52,
+   "y": 418,
+   "w": 143,
+   "h": 15
+  },
+  {
+   "text": "Organizations",
+   "x": 52,
+   "y": 359,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "text": "Events",
+   "x": 52,
+   "y": 397,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "text": "Dining",
+   "x": 52,
+   "y": 435,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "text": "CampusAI",
+   "x": 52,
+   "y": 486,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "text": "Accessibility",
+   "x": 28,
+   "y": 834,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "text": "MC",
+   "x": 28,
+   "y": 865,
+   "w": 17,
+   "h": 12
+  },
+  {
+   "text": "Maya Chen",
+   "x": 63,
+   "y": 856,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "text": "80",
+   "x": 63,
+   "y": 874,
+   "w": 14,
+   "h": 12
+  },
+  {
+   "text": "%",
+   "x": 77,
+   "y": 874,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "text": "·",
+   "x": 87,
+   "y": 874,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "text": "Connect your transcript",
+   "x": 96,
+   "y": 874,
+   "w": 115,
+   "h": 12
+  },
+  {
+   "text": "What's happening on campus",
+   "x": 1408,
+   "y": 30,
+   "w": 365,
+   "h": 31
+  },
+  {
+   "text": "Recommended",
+   "x": 265,
+   "y": 42,
+   "w": 91,
+   "h": 15
+  },
+  {
+   "text": "Today",
+   "x": 386,
+   "y": 42,
+   "w": 36,
+   "h": 15
+  },
+  {
+   "text": "This Week",
+   "x": 452,
+   "y": 42,
+   "w": 62,
+   "h": 15
+  },
+  {
+   "text": "Looking Forward",
+   "x": 544,
+   "y": 42,
+   "w": 100,
+   "h": 15
+  },
+  {
+   "text": "Saved",
+   "x": 674,
+   "y": 42,
+   "w": 37,
+   "h": 15
+  },
+  {
+   "text": "All events",
+   "x": 775,
+   "y": 42,
+   "w": 60,
+   "h": 15
+  },
+  {
+   "text": "13",
+   "x": 893,
+   "y": 41,
+   "w": 18,
+   "h": 17
+  },
+  {
+   "text": "upcoming",
+   "x": 917,
+   "y": 43,
+   "w": 54,
+   "h": 13
+  },
+  {
+   "text": "0",
+   "x": 1001,
+   "y": 41,
+   "w": 9,
+   "h": 17
+  },
+  {
+   "text": "today",
+   "x": 1016,
+   "y": 43,
+   "w": 31,
+   "h": 13
+  },
+  {
+   "text": "8",
+   "x": 1077,
+   "y": 41,
+   "w": 9,
+   "h": 17
+  },
+  {
+   "text": "registration",
+   "x": 1092,
+   "y": 43,
+   "w": 64,
+   "h": 13
+  },
+  {
+   "text": "Personalized",
+   "x": 248,
+   "y": 146,
+   "w": 81,
+   "h": 16
+  },
+  {
+   "text": "Recommended for you",
+   "x": 248,
+   "y": 169,
+   "w": 195,
+   "h": 21
+  },
+  {
+   "text": "Ranked by relevance to your profile and campus activity",
+   "x": 248,
+   "y": 196,
+   "w": 316,
+   "h": 15
+  },
+  {
+   "text": "Mon",
+   "x": 273,
+   "y": 246,
+   "w": 23,
+   "h": 11
+  },
+  {
+   "text": "26",
+   "x": 274,
+   "y": 256,
+   "w": 23,
+   "h": 21
+  },
+  {
+   "text": "Evercore Coffee Chat",
+   "x": 318,
+   "y": 244,
+   "w": 145,
+   "h": 17
+  },
+  {
+   "text": "10:00 AM - 11:30 AM · Van Munching Hall",
+   "x": 318,
+   "y": 264,
+   "w": 233,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 271,
+   "y": 302,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "text": "Strong match",
+   "x": 283,
+   "y": 302,
+   "w": 74,
+   "h": 13
+  },
+  {
+   "text": "Restructuring is on your target list and both analysts came out of Smith finance.",
+   "x": 263,
+   "y": 332,
+   "w": 482,
+   "h": 16
+  },
+  {
+   "text": "On your calendar",
+   "x": 356,
+   "y": 393,
+   "w": 101,
+   "h": 15
+  },
+  {
+   "text": "Learn more and sign up",
+   "x": 590,
+   "y": 392,
+   "w": 148,
+   "h": 16
+  },
+  {
+   "text": "Tue",
+   "x": 861,
+   "y": 246,
+   "w": 19,
+   "h": 11
+  },
+  {
+   "text": "27",
+   "x": 860,
+   "y": 256,
+   "w": 21,
+   "h": 21
+  },
+  {
+   "text": "Financial Modeling Bootcamp: 3-Statement to DCF",
+   "x": 904,
+   "y": 244,
+   "w": 345,
+   "h": 17
+  },
+  {
+   "text": "5:00 PM - 7:00 PM · Van Munching Hall",
+   "x": 904,
+   "y": 264,
+   "w": 222,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 857,
+   "y": 302,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "text": "Strong match",
+   "x": 869,
+   "y": 302,
+   "w": 74,
+   "h": 13
+  },
+  {
+   "text": "Modeling is the skill gap that shows up most in your target roles.",
+   "x": 849,
+   "y": 332,
+   "w": 389,
+   "h": 16
+  },
+  {
+   "text": "Add to CampusAI Calendar",
+   "x": 904,
+   "y": 393,
+   "w": 159,
+   "h": 15
+  },
+  {
+   "text": "Learn more and sign up",
+   "x": 1176,
+   "y": 392,
+   "w": 148,
+   "h": 16
+  },
+  {
+   "text": "Wed",
+   "x": 274,
+   "y": 468,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "28",
+   "x": 274,
+   "y": 478,
+   "w": 23,
+   "h": 21
+  },
+  {
+   "text": "Smith Finance Group Stock Pitch Night",
+   "x": 318,
+   "y": 465,
+   "w": 264,
+   "h": 17
+  },
+  {
+   "text": "6:30 PM - 8:00 PM · Van Munching Hall",
+   "x": 318,
+   "y": 485,
+   "w": 223,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 271,
+   "y": 524,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "text": "Strong match",
+   "x": 283,
+   "y": 523,
+   "w": 74,
+   "h": 13
+  },
+  {
+   "text": "Your portfolio project runs on the same pitch structure the panel grades.",
+   "x": 263,
+   "y": 554,
+   "w": 438,
+   "h": 16
+  },
+  {
+   "text": "On your calendar",
+   "x": 356,
+   "y": 615,
+   "w": 101,
+   "h": 15
+  },
+  {
+   "text": "View details",
+   "x": 628,
+   "y": 614,
+   "w": 77,
+   "h": 16
+  },
+  {
+   "text": "›",
+   "x": 711,
+   "y": 615,
+   "w": 5,
+   "h": 15
+  },
+  {
+   "text": "Thu",
+   "x": 861,
+   "y": 468,
+   "w": 21,
+   "h": 11
+  },
+  {
+   "text": "29",
+   "x": 860,
+   "y": 478,
+   "w": 23,
+   "h": 21
+  },
+  {
+   "text": "Smith Fall Career & Internship Fair",
+   "x": 904,
+   "y": 465,
+   "w": 232,
+   "h": 17
+  },
+  {
+   "text": "10:00 AM - 3:00 PM · The Hotel at UMD",
+   "x": 904,
+   "y": 485,
+   "w": 225,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 857,
+   "y": 524,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "text": "Good match",
+   "x": 869,
+   "y": 523,
+   "w": 66,
+   "h": 13
+  },
+  {
+   "text": "Every bank and corporate-finance team on your summer-analyst list is recruiting here in one afternoon, and your Smith Investment Fund analyst reps give you real work to lead with.",
+   "x": 849,
+   "y": 554,
+   "w": 531,
+   "h": 51
+  },
+  {
+   "text": "Add to CampusAI Calendar",
+   "x": 904,
+   "y": 615,
+   "w": 159,
+   "h": 15
+  },
+  {
+   "text": "Learn more and sign up",
+   "x": 1176,
+   "y": 614,
+   "w": 148,
+   "h": 16
+  },
+  {
+   "text": "Sat",
+   "x": 276,
+   "y": 689,
+   "w": 19,
+   "h": 11
+  },
+  {
+   "text": "31",
+   "x": 275,
+   "y": 699,
+   "w": 20,
+   "h": 21
+  },
+  {
+   "text": "Goldman Sachs, Investment Banking Info Session",
+   "x": 318,
+   "y": 687,
+   "w": 336,
+   "h": 17
+  },
+  {
+   "text": "6:00 PM - 7:30 PM · Van Munching Hall",
+   "x": 318,
+   "y": 707,
+   "w": 222,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 271,
+   "y": 745,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "text": "Good match",
+   "x": 283,
+   "y": 745,
+   "w": 66,
+   "h": 13
+  },
+  {
+   "text": "Goldman IB tops your summer-analyst list, and the analysts running this are the ones who screen Smith applicants, a chance to turn your Smith Investment Fund work into a name they remember.",
+   "x": 263,
+   "y": 775,
+   "w": 541,
+   "h": 51
+  },
+  {
+   "text": "Add to CampusAI Calendar",
+   "x": 318,
+   "y": 836,
+   "w": 159,
+   "h": 15
+  },
+  {
+   "text": "Learn more and sign up",
+   "x": 590,
+   "y": 836,
+   "w": 148,
+   "h": 16
+  },
+  {
+   "text": "Tue",
+   "x": 861,
+   "y": 689,
+   "w": 19,
+   "h": 11
+  },
+  {
+   "text": "3",
+   "x": 865,
+   "y": 699,
+   "w": 11,
+   "h": 21
+  },
+  {
+   "text": "Smith Investment Fund, Stock Pitch Competition",
+   "x": 904,
+   "y": 687,
+   "w": 330,
+   "h": 17
+  },
+  {
+   "text": "5:00 PM - 8:00 PM · Van Munching Hall",
+   "x": 904,
+   "y": 707,
+   "w": 223,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 857,
+   "y": 745,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "text": "Worth exploring",
+   "x": 869,
+   "y": 745,
+   "w": 87,
+   "h": 13
+  },
+  {
+   "text": "This is your own fund's competition, and watching a thesis get pressure-tested is the exact valuation muscle your summer-analyst interviews will test.",
+   "x": 849,
+   "y": 775,
+   "w": 514,
+   "h": 34
+  },
+  {
+   "text": "Add to CampusAI Calendar",
+   "x": 904,
+   "y": 836,
+   "w": 159,
+   "h": 15
+  },
+  {
+   "text": "View details",
+   "x": 1214,
+   "y": 836,
+   "w": 77,
+   "h": 16
+  },
+  {
+   "text": "›",
+   "x": 1297,
+   "y": 836,
+   "w": 5,
+   "h": 15
+  },
+  {
+   "text": "Chat",
+   "x": 1115,
+   "y": 825,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "text": "CampusAI can make mistakes. Verify important information.",
+   "x": 684,
+   "y": 870,
+   "w": 288,
+   "h": 12
+  },
+  {
+   "text": "6",
+   "x": 1260,
+   "y": 26,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "text": "new",
+   "x": 1268,
+   "y": 26,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "text": "Feedback",
+   "x": 1352,
+   "y": 26,
+   "w": 57,
+   "h": 15
+  }
+ ]
+}

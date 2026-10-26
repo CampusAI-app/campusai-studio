@@ -34,3 +34,5 @@ public/four/week/*.cjs
 public/audio/vo/
 # The example chat recording (`npm run chat examples/study-spots.json` makes it on each machine)
 public/study-spots/
+# r4 hook films read films/eight-blocks-goldman/storyboard.json, which lives next to the studio on this machine only
+src/r4/hooks/

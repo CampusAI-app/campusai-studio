@@ -32,7 +32,27 @@
     "feature-15": { "min": 10, "max": 22 },
     "bumper-6": { "min": 5, "max": 7 },
     "one-task": { "min": 40, "max": 95 },
+    "eight-block": { "min": 30, "max": 50 },
     "custom": { "min": 3, "max": 120 }
+  },
+  "eightBlock": {
+    "_source": "Robin Tempe (@robin_linkerpro), 'The perfect structure for short-form content, in 8 blocks', sent by Jacob through Muse; made a format 2026-10-24 (round 3). Opt-in: only a storyboard with \"format\": \"eight-block\" is held to it. Each shot names its `block`; the CTA is the film's end card (logo plus campusai.app).",
+    "order": ["hook", "lead", "body-1", "loop-1", "body-2", "loop-2", "body-3", "cta"],
+    "jobs": {
+      "hook": "Pattern break: stops the scroll. Something worth watching inside 0.5 s.",
+      "lead": "Retention anchor: a promise that pulls the viewer to the 10 second mark.",
+      "body-1": "The first answer, shown on the real product.",
+      "loop-1": "Open loop: a question or promise the next body answers, so they stay.",
+      "body-2": "The second answer: it closes loop 1.",
+      "loop-2": "Open loop: a question or promise the next body answers.",
+      "body-3": "The third answer: it closes loop 2. The hero usually sits here.",
+      "cta": "Logo plus campusai.app (Instagram: Link in bio), held about 3 s."
+    },
+    "hook": { "maxSeconds": 4.0, "showsBy": 0.5 },
+    "lead": { "_why": "the lead ends where the 10 second mark is behind the viewer, not before 9 s and not much after", "endFrom": 9.0, "endTo": 12.0 },
+    "body": { "minSeconds": 4.0 },
+    "loop": { "minSeconds": 2.5, "maxSeconds": 5.0 },
+    "cta": { "holdMin": 2.5, "holdMax": 3.5 }
   },
   "banned": {
     "_source": "studio rules and rules/campusai.md: no em dashes, never Sandy Spring, never ChatGPT, no Maryland imagery (Testudo), no 'Free for UMD students'",

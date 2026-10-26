@@ -1,0 +1,537 @@
+{
+ "pageW": 1024,
+ "pageH": 1366,
+ "tallH": 1591,
+ "dpr": 2,
+ "scrollY": 0,
+ "source": "https://campusai-demo.vercel.app/career?view=resume",
+ "captured": "2026-10-25T03:47:00.878Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false
+ },
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 288,
+   "y": 132,
+   "w": 231,
+   "h": 20,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "heading",
+   "x": 273,
+   "y": 429,
+   "w": 181,
+   "h": 23,
+   "text": "How a recruiter reads this"
+  },
+  {
+   "kind": "heading",
+   "x": 273,
+   "y": 677,
+   "w": 298,
+   "h": 27,
+   "text": "Suggestions for your resume"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 8,
+   "w": 56,
+   "h": 40,
+   "text": "Expand sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Collapse Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 311,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 1323,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 1323,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 240,
+   "y": 36,
+   "w": 141,
+   "h": 32,
+   "text": "Career Overview"
+  },
+  {
+   "kind": "button",
+   "x": 778,
+   "y": 95,
+   "w": 197,
+   "h": 33,
+   "text": "What should I fix first? →"
+  },
+  {
+   "kind": "button",
+   "x": 666,
+   "y": 134,
+   "w": 309,
+   "h": 33,
+   "text": "How do I make my bullet points stronger? →"
+  },
+  {
+   "kind": "button",
+   "x": 620,
+   "y": 173,
+   "w": 355,
+   "h": 33,
+   "text": "Which skill gaps matter most for my target roles? →"
+  },
+  {
+   "kind": "button",
+   "x": 900,
+   "y": 237,
+   "w": 32,
+   "h": 32,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 938,
+   "y": 237,
+   "w": 32,
+   "h": 32,
+   "text": "Send message"
+  },
+  {
+   "kind": "button",
+   "x": 707,
+   "y": 342,
+   "w": 170,
+   "h": 37,
+   "text": "Upload new resume"
+  },
+  {
+   "kind": "button",
+   "x": 789,
+   "y": 677,
+   "w": 178,
+   "h": 37,
+   "text": "Tailor to a specific job →"
+  },
+  {
+   "kind": "button",
+   "x": 750,
+   "y": 757,
+   "w": 130,
+   "h": 28,
+   "text": "View suggestion ▾"
+  },
+  {
+   "kind": "button",
+   "x": 892,
+   "y": 759,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion is helpful"
+  },
+  {
+   "kind": "button",
+   "x": 922,
+   "y": 759,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion isn't helpful — hide it"
+  },
+  {
+   "kind": "button",
+   "x": 750,
+   "y": 835,
+   "w": 130,
+   "h": 28,
+   "text": "View suggestion ▾"
+  },
+  {
+   "kind": "button",
+   "x": 892,
+   "y": 837,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion is helpful"
+  },
+  {
+   "kind": "button",
+   "x": 922,
+   "y": 837,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion isn't helpful — hide it"
+  },
+  {
+   "kind": "button",
+   "x": 750,
+   "y": 914,
+   "w": 130,
+   "h": 28,
+   "text": "View suggestion ▾"
+  },
+  {
+   "kind": "button",
+   "x": 892,
+   "y": 916,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion is helpful"
+  },
+  {
+   "kind": "button",
+   "x": 922,
+   "y": 916,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion isn't helpful — hide it"
+  },
+  {
+   "kind": "button",
+   "x": 750,
+   "y": 992,
+   "w": 130,
+   "h": 28,
+   "text": "View suggestion ▾"
+  },
+  {
+   "kind": "button",
+   "x": 892,
+   "y": 994,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion is helpful"
+  },
+  {
+   "kind": "button",
+   "x": 922,
+   "y": 994,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion isn't helpful — hide it"
+  },
+  {
+   "kind": "button",
+   "x": 750,
+   "y": 1071,
+   "w": 130,
+   "h": 28,
+   "text": "View suggestion ▾"
+  },
+  {
+   "kind": "button",
+   "x": 892,
+   "y": 1073,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion is helpful"
+  },
+  {
+   "kind": "button",
+   "x": 922,
+   "y": 1073,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion isn't helpful — hide it"
+  },
+  {
+   "kind": "button",
+   "x": 273,
+   "y": 1138,
+   "w": 130,
+   "h": 38,
+   "text": "Show 1 more →"
+  },
+  {
+   "kind": "button",
+   "x": 788,
+   "y": 1200,
+   "w": 161,
+   "h": 28,
+   "text": "Open your skills map →"
+  },
+  {
+   "kind": "button",
+   "x": 784,
+   "y": 1282,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 830,
+   "y": 1282,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 876,
+   "y": 1282,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 765,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 809,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 901,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "text",
+   "x": 393,
+   "y": 42,
+   "w": 99,
+   "h": 20,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "text",
+   "x": 288,
+   "y": 152,
+   "w": 231,
+   "h": 17,
+   "text": "Ask about your resume, answered right here"
+  },
+  {
+   "kind": "text",
+   "x": 811,
+   "y": 102,
+   "w": 133,
+   "h": 18,
+   "text": "What should I fix first?"
+  },
+  {
+   "kind": "text",
+   "x": 699,
+   "y": 141,
+   "w": 244,
+   "h": 18,
+   "text": "How do I make my bullet points stronger?"
+  },
+  {
+   "kind": "text",
+   "x": 653,
+   "y": 180,
+   "w": 290,
+   "h": 18,
+   "text": "Which skill gaps matter most for my target roles?"
+  },
+  {
+   "kind": "text",
+   "x": 522,
+   "y": 352,
+   "w": 149,
+   "h": 18,
+   "text": "Book an undergrad coach"
+  },
+  {
+   "kind": "text",
+   "x": 273,
+   "y": 463,
+   "w": 236,
+   "h": 181,
+   "text": "For Investment Banking Summer Analyst roles, the page already proves Financial statement analysis and Equity research & stock pitches. 2 of your 5 findings are "
+  },
+  {
+   "kind": "text",
+   "x": 588,
+   "y": 487,
+   "w": 165,
+   "h": 18,
+   "text": "Section headings and layout"
+  },
+  {
+   "kind": "text",
+   "x": 588,
+   "y": 511,
+   "w": 164,
+   "h": 18,
+   "text": "Financial statement analysis"
+  },
+  {
+   "kind": "text",
+   "x": 588,
+   "y": 535,
+   "w": 167,
+   "h": 36,
+   "text": "Equity research & stock pitches"
+  },
+  {
+   "kind": "text",
+   "x": 800,
+   "y": 487,
+   "w": 167,
+   "h": 54,
+   "text": "Smith Investment Fund bullets, described but not measured"
+  },
+  {
+   "kind": "text",
+   "x": 800,
+   "y": 547,
+   "w": 167,
+   "h": 36,
+   "text": "Skills line, missing the terms a screen filters on"
+  },
+  {
+   "kind": "text",
+   "x": 800,
+   "y": 590,
+   "w": 167,
+   "h": 54,
+   "text": "Missing for this role: LBO modeling and Bloomberg Terminal"
+  },
+  {
+   "kind": "text",
+   "x": 273,
+   "y": 706,
+   "w": 298,
+   "h": 20,
+   "text": "6 recommendations · Tailored to your target roles"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 84,
+   "w": 744,
+   "h": 209,
+   "text": "✦ Resume Review Ask about your resume, answered right here What should I fix first? → How do I make my bullet points stronger? → Which skill gaps matter most fo"
+  },
+  {
+   "kind": "card",
+   "x": 249,
+   "y": 85,
+   "w": 742,
+   "h": 207,
+   "text": ""
+  },
+  {
+   "kind": "card",
+   "x": 261,
+   "y": 226,
+   "w": 718,
+   "h": 54,
+   "text": ""
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 309,
+   "w": 744,
+   "h": 1095,
+   "text": "Maya_Chen_Resume.pdf Updated 7/9/2026 Book an undergrad coach Upload new resume 74/100 How a recruiter reads this For Investment Banking Summer Analyst roles, t"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 742,
+   "w": 694,
+   "h": 71,
+   "text": "✦ Improvement Quantify your Investment Fund work View suggestion ▾"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 820,
+   "w": 694,
+   "h": 71,
+   "text": "✦ Improvement Add a finance-specific skills line View suggestion ▾"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 899,
+   "w": 694,
+   "h": 71,
+   "text": "✦ Polish Frame your Finance Association role as leadership View suggestion ▾"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 977,
+   "w": 694,
+   "h": 71,
+   "text": "✦ From your profile Add your Investment Committee role from your profile View suggestion ▾"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 1056,
+   "w": 694,
+   "h": 71,
+   "text": "✦ Polish Tighten the summary to a recruiter's 6-second read View suggestion ▾"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 1184,
+   "w": 694,
+   "h": 87,
+   "text": "Worth learning Data analysis, Financial modeling Could strengthen you for your target roles · not counted in your score Open your skills map →"
+  }
+ ]
+}

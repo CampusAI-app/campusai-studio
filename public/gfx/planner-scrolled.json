@@ -1,0 +1,2314 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "coords": "viewport",
+ "scrollY": 238,
+ "source": "https://campusai-demo.vercel.app/academics?tab=planning",
+ "captured": "2026-10-23T22:26:14.160Z",
+ "question": "What should I ask at the Evercore chat?",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false
+ },
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 282,
+   "y": 716,
+   "w": 57,
+   "h": 16,
+   "text": "Fall 2026"
+  },
+  {
+   "kind": "heading",
+   "x": 848,
+   "y": 716,
+   "w": 76,
+   "h": 16,
+   "text": "Spring 2027"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 18,
+   "w": 171,
+   "h": 20,
+   "text": "University of Maryland — home"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 180,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 180,
+   "w": 24,
+   "h": 36,
+   "text": "Collapse Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 218,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 249,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 280,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 318,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 356,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 394,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 445,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "button",
+   "x": 19,
+   "y": 854,
+   "w": 124,
+   "h": 34,
+   "text": "MC Maya Chen 80% · Connect your transcript"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 265,
+   "y": 95,
+   "w": 97,
+   "h": 20,
+   "text": "Suggestions"
+  },
+  {
+   "kind": "button",
+   "x": 1335,
+   "y": 93,
+   "w": 24,
+   "h": 24,
+   "text": "Previous suggestion"
+  },
+  {
+   "kind": "button",
+   "x": 1367,
+   "y": 93,
+   "w": 24,
+   "h": 24,
+   "text": "Next suggestion"
+  },
+  {
+   "kind": "button",
+   "x": -58,
+   "y": 150,
+   "w": 307,
+   "h": 36,
+   "text": "One class, two Gen Eds: Natural Science + Big Question"
+  },
+  {
+   "kind": "button",
+   "x": -58,
+   "y": 235,
+   "w": 117,
+   "h": 27,
+   "text": "Find a course Find a course"
+  },
+  {
+   "kind": "button",
+   "x": 71,
+   "y": 240,
+   "w": 127,
+   "h": 17,
+   "text": "✦ Which should I take?"
+  },
+  {
+   "kind": "button",
+   "x": 282,
+   "y": 150,
+   "w": 306,
+   "h": 36,
+   "text": "One class, two Gen Eds: Scholarship in Practice + Understanding Plural Societies"
+  },
+  {
+   "kind": "button",
+   "x": 282,
+   "y": 235,
+   "w": 117,
+   "h": 27,
+   "text": "Find a course Find a course"
+  },
+  {
+   "kind": "button",
+   "x": 411,
+   "y": 240,
+   "w": 127,
+   "h": 17,
+   "text": "✦ Which should I take?"
+  },
+  {
+   "kind": "button",
+   "x": 620,
+   "y": 150,
+   "w": 306,
+   "h": 18,
+   "text": "Add a Professional Writing class"
+  },
+  {
+   "kind": "button",
+   "x": 620,
+   "y": 235,
+   "w": 117,
+   "h": 27,
+   "text": "Find a course Find a course"
+  },
+  {
+   "kind": "button",
+   "x": 749,
+   "y": 240,
+   "w": 127,
+   "h": 17,
+   "text": "✦ Which should I take?"
+  },
+  {
+   "kind": "button",
+   "x": 959,
+   "y": 150,
+   "w": 306,
+   "h": 18,
+   "text": "Add 2 more Finance Major Electives"
+  },
+  {
+   "kind": "button",
+   "x": 959,
+   "y": 235,
+   "w": 117,
+   "h": 27,
+   "text": "Find a course Find a course"
+  },
+  {
+   "kind": "button",
+   "x": 1088,
+   "y": 240,
+   "w": 127,
+   "h": 17,
+   "text": "✦ Which should I take?"
+  },
+  {
+   "kind": "button",
+   "x": 1297,
+   "y": 150,
+   "w": 306,
+   "h": 18,
+   "text": "Take BMGT367"
+  },
+  {
+   "kind": "button",
+   "x": 1297,
+   "y": 235,
+   "w": 117,
+   "h": 27,
+   "text": "Find a course Find a course"
+  },
+  {
+   "kind": "button",
+   "x": 1426,
+   "y": 240,
+   "w": 134,
+   "h": 17,
+   "text": "✦ When should I take it?"
+  },
+  {
+   "kind": "button",
+   "x": 264,
+   "y": 320,
+   "w": 450,
+   "h": 34,
+   "text": "General Education University Gen Ed requirements · 5 areas"
+  },
+  {
+   "kind": "button",
+   "x": 724,
+   "y": 320,
+   "w": 82,
+   "h": 35,
+   "text": "11/17reqs 1 in progress"
+  },
+  {
+   "kind": "button",
+   "x": 850,
+   "y": 320,
+   "w": 450,
+   "h": 34,
+   "text": "Electives Free + restricted electives · 2 areas"
+  },
+  {
+   "kind": "button",
+   "x": 1310,
+   "y": 320,
+   "w": 82,
+   "h": 35,
+   "text": "2/6reqs 1 in progress"
+  },
+  {
+   "kind": "button",
+   "x": 264,
+   "y": 477,
+   "w": 317,
+   "h": 34,
+   "text": "Finance Courses required for the Finance major · 3 areas"
+  },
+  {
+   "kind": "button",
+   "x": 591,
+   "y": 475,
+   "w": 119,
+   "h": 27,
+   "text": "Requirements Requirements"
+  },
+  {
+   "kind": "button",
+   "x": 722,
+   "y": 477,
+   "w": 84,
+   "h": 35,
+   "text": "0/7reqs 2 in progress"
+  },
+  {
+   "kind": "button",
+   "x": 850,
+   "y": 477,
+   "w": 317,
+   "h": 34,
+   "text": "College Core Robert H. Smith School of Business · 3 areas"
+  },
+  {
+   "kind": "button",
+   "x": 1177,
+   "y": 475,
+   "w": 119,
+   "h": 27,
+   "text": "Requirements Requirements"
+  },
+  {
+   "kind": "button",
+   "x": 1308,
+   "y": 477,
+   "w": 84,
+   "h": 35,
+   "text": "12/16reqs 2 in progress"
+  },
+  {
+   "kind": "button",
+   "x": 272,
+   "y": 651,
+   "w": 87,
+   "h": 31,
+   "text": "Freshman"
+  },
+  {
+   "kind": "button",
+   "x": 361,
+   "y": 651,
+   "w": 97,
+   "h": 31,
+   "text": "Sophomore"
+  },
+  {
+   "kind": "button",
+   "x": 460,
+   "y": 651,
+   "w": 67,
+   "h": 31,
+   "text": "Junior"
+  },
+  {
+   "kind": "button",
+   "x": 528,
+   "y": 651,
+   "w": 66,
+   "h": 31,
+   "text": "Senior"
+  },
+  {
+   "kind": "button",
+   "x": 597,
+   "y": 651,
+   "w": 217,
+   "h": 31,
+   "text": "Summer, Winter & outside UMD"
+  },
+  {
+   "kind": "button",
+   "x": 762,
+   "y": 710,
+   "w": 24,
+   "h": 24,
+   "text": "Edit Fall 2026"
+  },
+  {
+   "kind": "button",
+   "x": 788,
+   "y": 710,
+   "w": 24,
+   "h": 24,
+   "text": "Delete Fall 2026"
+  },
+  {
+   "kind": "button",
+   "x": 1328,
+   "y": 710,
+   "w": 24,
+   "h": 24,
+   "text": "Edit Spring 2027"
+  },
+  {
+   "kind": "button",
+   "x": 1354,
+   "y": 710,
+   "w": 24,
+   "h": 24,
+   "text": "Delete Spring 2027"
+  },
+  {
+   "kind": "button",
+   "x": 992,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1038,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 1084,
+   "y": 816,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "text",
+   "text": "Dashboard",
+   "x": 52,
+   "y": 76,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "My Calendar",
+   "x": 52,
+   "y": 114,
+   "w": 78,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 154,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Career Advisor",
+   "x": 64,
+   "y": 152,
+   "w": 92,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Resume Review",
+   "x": 52,
+   "y": 187,
+   "w": 94,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Job Match",
+   "x": 52,
+   "y": 218,
+   "w": 63,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Interview Prep",
+   "x": 52,
+   "y": 249,
+   "w": 86,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Company Tracker",
+   "x": 52,
+   "y": 280,
+   "w": 105,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 192,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Academic Advisor",
+   "x": 64,
+   "y": 190,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Planner & Progress",
+   "x": 52,
+   "y": 225,
+   "w": 115,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Class Tracker",
+   "x": 52,
+   "y": 256,
+   "w": 81,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Courses and Professors",
+   "x": 52,
+   "y": 287,
+   "w": 143,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Organizations",
+   "x": 52,
+   "y": 328,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Events",
+   "x": 52,
+   "y": 366,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Dining",
+   "x": 52,
+   "y": 404,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI",
+   "x": 52,
+   "y": 455,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Accessibility",
+   "x": 28,
+   "y": 834,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "MC",
+   "x": 28,
+   "y": 865,
+   "w": 17,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Maya Chen",
+   "x": 63,
+   "y": 856,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80",
+   "x": 63,
+   "y": 874,
+   "w": 14,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "%",
+   "x": 77,
+   "y": 874,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 87,
+   "y": 874,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Connect your transcript",
+   "x": 96,
+   "y": 874,
+   "w": 115,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Degree progress",
+   "x": 265,
+   "y": 41,
+   "w": 105,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "61",
+   "x": 378,
+   "y": 42,
+   "w": 13,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "of",
+   "x": 390,
+   "y": 42,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "120",
+   "x": 410,
+   "y": 42,
+   "w": 21,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "credits",
+   "x": 430,
+   "y": 42,
+   "w": 44,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "· 18 in progress",
+   "x": 474,
+   "y": 42,
+   "w": 93,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "51",
+   "x": 1361,
+   "y": 41,
+   "w": 17,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "%",
+   "x": 1378,
+   "y": 41,
+   "w": 13,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Suggestions",
+   "x": 265,
+   "y": 96,
+   "w": 79,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "2",
+   "x": 1296,
+   "y": 97,
+   "w": 7,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "of",
+   "x": 1303,
+   "y": 97,
+   "w": 17,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "5",
+   "x": 1320,
+   "y": 97,
+   "w": 7,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "One class, two Gen Eds: Natural Science + Big Question",
+   "x": -58,
+   "y": 150,
+   "w": 290,
+   "h": 34
+  },
+  {
+   "kind": "text",
+   "text": "Natural Science Non-Lab or Lab · Big Question",
+   "x": -1,
+   "y": 191,
+   "w": 254,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Gen Ed lets one class count for both of these.",
+   "x": -58,
+   "y": 210,
+   "w": 237,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Find a course",
+   "x": -45,
+   "y": 241,
+   "w": 75,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 71,
+   "y": 241,
+   "w": 12,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Which should I take?",
+   "x": 83,
+   "y": 241,
+   "w": 115,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "02",
+   "x": 282,
+   "y": 132,
+   "w": 15,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "One class, two Gen Eds: Scholarship in Practice + Understanding Plural Societies",
+   "x": 282,
+   "y": 150,
+   "w": 299,
+   "h": 34
+  },
+  {
+   "kind": "text",
+   "text": "Clears",
+   "x": 300,
+   "y": 191,
+   "w": 38,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Scholarship in Practice · Understanding Plural Societies / Cultural Competence",
+   "x": 338,
+   "y": 191,
+   "w": 427,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Gen Ed lets one class count for both of these.",
+   "x": 282,
+   "y": 210,
+   "w": 237,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Find a course",
+   "x": 295,
+   "y": 241,
+   "w": 75,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 411,
+   "y": 241,
+   "w": 12,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Which should I take?",
+   "x": 423,
+   "y": 241,
+   "w": 115,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "03",
+   "x": 620,
+   "y": 132,
+   "w": 15,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Add a Professional Writing class",
+   "x": 620,
+   "y": 150,
+   "w": 202,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Clears",
+   "x": 638,
+   "y": 173,
+   "w": 38,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Professional Writing",
+   "x": 677,
+   "y": 173,
+   "w": 109,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Find a course",
+   "x": 633,
+   "y": 241,
+   "w": 75,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 749,
+   "y": 241,
+   "w": 12,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Which should I take?",
+   "x": 761,
+   "y": 241,
+   "w": 115,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "04",
+   "x": 959,
+   "y": 132,
+   "w": 15,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Add 2 more Finance Major Electives",
+   "x": 959,
+   "y": 150,
+   "w": 225,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Clears",
+   "x": 977,
+   "y": 173,
+   "w": 38,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Finance Major Electives",
+   "x": 1015,
+   "y": 173,
+   "w": 129,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Find a course",
+   "x": 972,
+   "y": 241,
+   "w": 75,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 1088,
+   "y": 241,
+   "w": 12,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Which should I take?",
+   "x": 1100,
+   "y": 241,
+   "w": 115,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "05",
+   "x": 1297,
+   "y": 132,
+   "w": 15,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Take BMGT367",
+   "x": 1297,
+   "y": 150,
+   "w": 96,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Clears",
+   "x": 1315,
+   "y": 173,
+   "w": 38,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Career Search Strategies in Business",
+   "x": 1354,
+   "y": 173,
+   "w": 201,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Find a course",
+   "x": 1310,
+   "y": 241,
+   "w": 75,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 1426,
+   "y": 241,
+   "w": 12,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "When should I take it?",
+   "x": 1438,
+   "y": 241,
+   "w": 122,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "General Education",
+   "x": 264,
+   "y": 320,
+   "w": 122,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "University Gen Ed requirements",
+   "x": 264,
+   "y": 340,
+   "w": 166,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 430,
+   "y": 340,
+   "w": 10,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "5",
+   "x": 439,
+   "y": 340,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "area",
+   "x": 446,
+   "y": 340,
+   "w": 26,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "s",
+   "x": 472,
+   "y": 340,
+   "w": 6,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "11",
+   "x": 733,
+   "y": 321,
+   "w": 10,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "/",
+   "x": 744,
+   "y": 321,
+   "w": 4,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "17",
+   "x": 748,
+   "y": 321,
+   "w": 12,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "reqs",
+   "x": 764,
+   "y": 324,
+   "w": 20,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "1",
+   "x": 724,
+   "y": 340,
+   "w": 4,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "in progress",
+   "x": 728,
+   "y": 340,
+   "w": 56,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "●",
+   "x": 264,
+   "y": 381,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "11",
+   "x": 274,
+   "y": 381,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "done",
+   "x": 285,
+   "y": 381,
+   "w": 25,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "|",
+   "x": 318,
+   "y": 381,
+   "w": 4,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "●",
+   "x": 330,
+   "y": 381,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "1",
+   "x": 340,
+   "y": 381,
+   "w": 4,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "now",
+   "x": 347,
+   "y": 381,
+   "w": 21,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "|",
+   "x": 376,
+   "y": 381,
+   "w": 4,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "○",
+   "x": 387,
+   "y": 381,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "5",
+   "x": 397,
+   "y": 381,
+   "w": 6,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "left",
+   "x": 406,
+   "y": 381,
+   "w": 16,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "requirements",
+   "x": 430,
+   "y": 381,
+   "w": 65,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "5 requirements still to plan in this group",
+   "x": 264,
+   "y": 419,
+   "w": 195,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Electives",
+   "x": 850,
+   "y": 320,
+   "w": 60,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Free + restricted electives",
+   "x": 850,
+   "y": 340,
+   "w": 137,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 987,
+   "y": 340,
+   "w": 10,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "2",
+   "x": 997,
+   "y": 340,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "area",
+   "x": 1003,
+   "y": 340,
+   "w": 26,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "s",
+   "x": 1029,
+   "y": 340,
+   "w": 6,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "2",
+   "x": 1326,
+   "y": 321,
+   "w": 8,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "/",
+   "x": 1334,
+   "y": 321,
+   "w": 4,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "6",
+   "x": 1338,
+   "y": 321,
+   "w": 8,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "reqs",
+   "x": 1350,
+   "y": 324,
+   "w": 20,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "1",
+   "x": 1310,
+   "y": 340,
+   "w": 4,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "in progress",
+   "x": 1314,
+   "y": 340,
+   "w": 56,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "●",
+   "x": 850,
+   "y": 381,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "2",
+   "x": 860,
+   "y": 381,
+   "w": 6,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "done",
+   "x": 869,
+   "y": 381,
+   "w": 25,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "|",
+   "x": 902,
+   "y": 381,
+   "w": 4,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "●",
+   "x": 914,
+   "y": 381,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "1",
+   "x": 923,
+   "y": 381,
+   "w": 4,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "now",
+   "x": 931,
+   "y": 381,
+   "w": 21,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "|",
+   "x": 960,
+   "y": 381,
+   "w": 4,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "●",
+   "x": 971,
+   "y": 381,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "2",
+   "x": 981,
+   "y": 381,
+   "w": 6,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "planned",
+   "x": 990,
+   "y": 381,
+   "w": 40,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "|",
+   "x": 1038,
+   "y": 381,
+   "w": 4,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "○",
+   "x": 1050,
+   "y": 381,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "1",
+   "x": 1059,
+   "y": 381,
+   "w": 4,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "left",
+   "x": 1066,
+   "y": 381,
+   "w": 16,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "requirements",
+   "x": 1090,
+   "y": 381,
+   "w": 65,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "1 requirement still to plan in this group",
+   "x": 850,
+   "y": 419,
+   "w": 188,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Finance",
+   "x": 264,
+   "y": 477,
+   "w": 52,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Courses required for the Finance major",
+   "x": 264,
+   "y": 497,
+   "w": 204,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 468,
+   "y": 497,
+   "w": 10,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 478,
+   "y": 497,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "area",
+   "x": 485,
+   "y": 497,
+   "w": 26,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "s",
+   "x": 511,
+   "y": 497,
+   "w": 6,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Requirements",
+   "x": 604,
+   "y": 481,
+   "w": 77,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "0",
+   "x": 740,
+   "y": 478,
+   "w": 8,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "/",
+   "x": 749,
+   "y": 478,
+   "w": 4,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "7",
+   "x": 753,
+   "y": 478,
+   "w": 7,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "reqs",
+   "x": 764,
+   "y": 481,
+   "w": 20,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "2",
+   "x": 722,
+   "y": 498,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "in progress",
+   "x": 728,
+   "y": 498,
+   "w": 56,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "●",
+   "x": 264,
+   "y": 539,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "2",
+   "x": 274,
+   "y": 539,
+   "w": 6,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "now",
+   "x": 283,
+   "y": 539,
+   "w": 21,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "|",
+   "x": 312,
+   "y": 539,
+   "w": 4,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "●",
+   "x": 324,
+   "y": 539,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 333,
+   "y": 539,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "planned",
+   "x": 343,
+   "y": 539,
+   "w": 40,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "|",
+   "x": 391,
+   "y": 539,
+   "w": 4,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "○",
+   "x": 402,
+   "y": 539,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "2",
+   "x": 412,
+   "y": 539,
+   "w": 6,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "left",
+   "x": 421,
+   "y": 539,
+   "w": 16,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "requirements",
+   "x": 445,
+   "y": 539,
+   "w": 65,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "2 requirements still to plan in this group",
+   "x": 264,
+   "y": 577,
+   "w": 195,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "College Core",
+   "x": 850,
+   "y": 477,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Robert H. Smith School of Business",
+   "x": 850,
+   "y": 497,
+   "w": 186,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 1036,
+   "y": 497,
+   "w": 10,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 1046,
+   "y": 497,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "area",
+   "x": 1052,
+   "y": 497,
+   "w": 26,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "s",
+   "x": 1078,
+   "y": 497,
+   "w": 6,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Requirements",
+   "x": 1190,
+   "y": 481,
+   "w": 77,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "12",
+   "x": 1316,
+   "y": 478,
+   "w": 13,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "/",
+   "x": 1329,
+   "y": 478,
+   "w": 4,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "16",
+   "x": 1333,
+   "y": 478,
+   "w": 13,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "reqs",
+   "x": 1350,
+   "y": 481,
+   "w": 20,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "2",
+   "x": 1308,
+   "y": 498,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "in progress",
+   "x": 1314,
+   "y": 498,
+   "w": 56,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "●",
+   "x": 850,
+   "y": 539,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "12",
+   "x": 860,
+   "y": 539,
+   "w": 11,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "done",
+   "x": 873,
+   "y": 539,
+   "w": 25,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "|",
+   "x": 906,
+   "y": 539,
+   "w": 4,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "●",
+   "x": 918,
+   "y": 539,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "2",
+   "x": 928,
+   "y": 539,
+   "w": 6,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "now",
+   "x": 937,
+   "y": 539,
+   "w": 21,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "|",
+   "x": 966,
+   "y": 539,
+   "w": 4,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "●",
+   "x": 977,
+   "y": 539,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "1",
+   "x": 987,
+   "y": 539,
+   "w": 4,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "planned",
+   "x": 994,
+   "y": 539,
+   "w": 40,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "|",
+   "x": 1042,
+   "y": 539,
+   "w": 4,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "○",
+   "x": 1054,
+   "y": 539,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "1",
+   "x": 1064,
+   "y": 539,
+   "w": 4,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "left",
+   "x": 1071,
+   "y": 539,
+   "w": 16,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "requirements",
+   "x": 1094,
+   "y": 539,
+   "w": 65,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "1 requirement still to plan in this group",
+   "x": 850,
+   "y": 577,
+   "w": 188,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Freshman",
+   "x": 286,
+   "y": 658,
+   "w": 59,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Sophomore",
+   "x": 375,
+   "y": 658,
+   "w": 69,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Junior",
+   "x": 474,
+   "y": 658,
+   "w": 39,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Senior",
+   "x": 542,
+   "y": 658,
+   "w": 38,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Summer, Winter & outside UMD",
+   "x": 611,
+   "y": 658,
+   "w": 189,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Fall 2026",
+   "x": 282,
+   "y": 716,
+   "w": 57,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "18",
+   "x": 723,
+   "y": 718,
+   "w": 11,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 734,
+   "y": 718,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "In progress",
+   "x": 290,
+   "y": 740,
+   "w": 54,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "BMGT310",
+   "x": 295,
+   "y": 767,
+   "w": 51,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Major Requirement",
+   "x": 352,
+   "y": 769,
+   "w": 82,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 780,
+   "y": 768,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 787,
+   "y": 768,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Intermediate Accounting I",
+   "x": 295,
+   "y": 787,
+   "w": 137,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "In progress",
+   "x": 295,
+   "y": 806,
+   "w": 57,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "M/W 11:00am",
+   "x": 295,
+   "y": 845,
+   "w": 60,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "BMGT343",
+   "x": 295,
+   "y": 879,
+   "w": 54,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Major Requirement",
+   "x": 355,
+   "y": 881,
+   "w": 82,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 780,
+   "y": 880,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 787,
+   "y": 880,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Investments",
+   "x": 295,
+   "y": 899,
+   "w": 65,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Spring 2027",
+   "x": 848,
+   "y": 716,
+   "w": 76,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "15",
+   "x": 1289,
+   "y": 718,
+   "w": 11,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 1300,
+   "y": 718,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Planned",
+   "x": 856,
+   "y": 740,
+   "w": 39,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "BMGT434",
+   "x": 861,
+   "y": 767,
+   "w": 53,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Major Requirement",
+   "x": 920,
+   "y": 769,
+   "w": 82,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 1346,
+   "y": 768,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 1353,
+   "y": 768,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Financial Modeling & Analysis",
+   "x": 861,
+   "y": 787,
+   "w": 158,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "T/Th 11:00am",
+   "x": 861,
+   "y": 825,
+   "w": 60,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 867,
+   "y": 850,
+   "w": 7,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "It's the most direct build toward an IB summer-analyst seat, you leave able to build a three-statement model and a DCF from scratch.",
+   "x": 878,
+   "y": 850,
+   "w": 476,
+   "h": 26
+  },
+  {
+   "kind": "text",
+   "text": "Chat",
+   "x": 1115,
+   "y": 825,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI can make mistakes. Verify important information.",
+   "x": 684,
+   "y": 870,
+   "w": 288,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "6",
+   "x": 1260,
+   "y": 26,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "new",
+   "x": 1268,
+   "y": 26,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Feedback",
+   "x": 1352,
+   "y": 26,
+   "w": 57,
+   "h": 15
+  }
+ ]
+}

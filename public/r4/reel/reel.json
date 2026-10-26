@@ -1,0 +1,128 @@
+[
+ {
+  "n": 1,
+  "name": "Card opens the page",
+  "note": "A real card grows into the next page",
+  "file": "R4-CardOpensPage.mp4",
+  "seconds": 5.06,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 2,
+  "name": "Button opens the page",
+  "note": "My Calendar opens through the button's own shape",
+  "file": "R4-MaskHandoff.mp4",
+  "seconds": 5.55,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 3,
+  "name": "Deck swap",
+  "note": "One page slides under as the next deals on top",
+  "file": "R4-DeckSwap.mp4",
+  "seconds": 5.55,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 4,
+  "name": "Feature tag",
+  "note": "The control's outline becomes the feature name below",
+  "file": "R4-FeatureTag.mp4",
+  "seconds": 8.96,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 5,
+  "name": "Chapter mark",
+  "note": "The nav row grows into the chapter title and flies back",
+  "file": "R4-ChapterMark.mp4",
+  "seconds": 6.95,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 6,
+  "name": "Question hook",
+  "note": "A real question typed into the real Ask field",
+  "file": "R4-QuestionHook.mp4",
+  "seconds": 8.68,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 7,
+  "name": "Stat line",
+  "note": "A true number counts in and lands on the page",
+  "file": "R4-StatLine.mp4",
+  "seconds": 7.55,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 8,
+  "name": "Spotlight",
+  "note": "The page dims, one thing stays lit",
+  "file": "R4-Spotlight.mp4",
+  "seconds": 5.76,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 9,
+  "name": "Drawn mark",
+  "note": "A hand-drawn circle, underline and arrow",
+  "file": "R4-DrawnMark.mp4",
+  "seconds": 7.25,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 10,
+  "name": "Loupe",
+  "note": "A magnifier reads the small text",
+  "file": "R4-Loupe.mp4",
+  "seconds": 8.45,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 11,
+  "name": "Press mark",
+  "note": "The press, then a line to where it landed",
+  "file": "R4-PressMark.mp4",
+  "seconds": 7.36,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 12,
+  "name": "List re-rank",
+  "note": "Sort by Newest and the cards really move",
+  "file": "R4-ListReRank.mp4",
+  "seconds": 8.45,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 13,
+  "name": "Blocks land",
+  "note": "The button flies down and becomes its calendar block",
+  "file": "R4-BlocksLand.mp4",
+  "seconds": 8.45,
+  "w": 1080,
+  "h": 1350
+ },
+ {
+  "n": 14,
+  "name": "Tally roll",
+  "note": "Each event lands, then the count rolls",
+  "file": "R4-TallyRoll.mp4",
+  "seconds": 8.79,
+  "w": 1080,
+  "h": 1350
+ }
+]

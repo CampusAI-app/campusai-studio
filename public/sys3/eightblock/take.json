@@ -1,0 +1,287 @@
+{
+ "captured": "2026-10-25T00:17:06.805Z",
+ "stills": [
+  {
+   "name": "jobs-list",
+   "H": 1300,
+   "scrollY": 0,
+   "press": {
+    "x": 501,
+    "y": 456,
+    "label": "Goldman Sachs card"
+   },
+   "marks": {
+    "goldmanCard": {
+     "x": 340,
+     "y": 397,
+     "w": 350,
+     "h": 165,
+     "text": "Goldman Sachs ✦ Strong match Bulge bracket Internship 2027 Summer Analyst, Global Banking and Markets New York, NY·$110k/yr You have financial statement analysi"
+    },
+    "title": {
+     "x": 269,
+     "y": 101,
+     "w": 435,
+     "h": 30,
+     "text": "Jobs for you"
+    },
+    "detailTitle": null
+   },
+   "checks": {
+    "sandy": true,
+    "emdash": false,
+    "testudo": false,
+    "chatgpt": false
+   }
+  },
+  {
+   "name": "goldman-why",
+   "H": 1300,
+   "scrollY": 0,
+   "press": null,
+   "marks": {
+    "goldmanCard": {
+     "x": 340,
+     "y": 397,
+     "w": 350,
+     "h": 165,
+     "text": "Goldman Sachs ✦ Strong match Bulge bracket Internship 2027 Summer Analyst, Global Banking and Markets New York, NY·$110k/yr You have financial statement analysi"
+    },
+    "detailTitle": {
+     "x": 798,
+     "y": 235,
+     "w": 568,
+     "h": 24,
+     "text": "2027 Summer Analyst, Global Banking and Markets"
+    },
+    "why": {
+     "x": 743,
+     "y": 378,
+     "w": 622,
+     "h": 178,
+     "text": "✦ Why this fits you Financial statement analysis and Excel are skills you used as Credit Analyst Intern at Sandy Spring Bank, and this posting requires both. He"
+    },
+    "whyHead": null,
+    "whyPara": null
+   },
+   "checks": {
+    "sandy": true,
+    "emdash": false,
+    "testudo": false,
+    "chatgpt": false
+   }
+  },
+  {
+   "name": "goldman-skills",
+   "H": 1300,
+   "scrollY": 351,
+   "press": null,
+   "marks": {
+    "skillsHead": {
+     "x": 763,
+     "y": 573,
+     "w": 177,
+     "h": 21,
+     "text": "Skills recruiters screen for"
+    },
+    "skillsBox": {
+     "x": 743,
+     "y": 557,
+     "w": 622,
+     "h": 156,
+     "text": "Skills recruiters screen for 4 of 6 Financial statement analysis (you have this) Excel (you have this) Accounting (you have this) PowerPoint (you have this) Fin"
+    },
+    "fourOfSix": {
+     "x": 1308,
+     "y": 575,
+     "w": 37,
+     "h": 20,
+     "text": "4 of 6"
+    },
+    "worth": {
+     "x": 763,
+     "y": 679,
+     "w": 582,
+     "h": 18,
+     "text": "Worth sharpening: Valuation and modeling. A class DCF you can walk through counts."
+    },
+    "modeling": null,
+    "valuation": null
+   },
+   "checks": {
+    "sandy": false,
+    "emdash": false,
+    "testudo": false,
+    "chatgpt": false
+   }
+  },
+  {
+   "name": "calendar-suggested",
+   "H": 1300,
+   "scrollY": 0,
+   "press": null,
+   "marks": {
+    "weekTitle": {
+     "x": 310,
+     "y": 15,
+     "w": 184,
+     "h": 18,
+     "text": "Oct 25 – Oct 31, 2026"
+    },
+    "event": {
+     "x": 792,
+     "y": 604,
+     "w": 112,
+     "h": 28,
+     "text": "Financial Modeling Bootcamp: 3-Statement to DCF"
+    }
+   },
+   "checks": {
+    "sandy": false,
+    "emdash": false,
+    "testudo": false,
+    "chatgpt": false
+   }
+  },
+  {
+   "name": "events-before",
+   "H": 1300,
+   "scrollY": 0,
+   "press": {
+    "x": 984,
+    "y": 401,
+    "label": "Add to CampusAI Calendar",
+    "rect": {
+     "x": 849,
+     "y": 384,
+     "w": 269,
+     "h": 34,
+     "text": "Add to CampusAI Calendar"
+    }
+   },
+   "marks": {
+    "card": {
+     "x": 834,
+     "y": 225,
+     "w": 574,
+     "h": 210,
+     "text": "TUE 27 Financial Modeling Bootcamp: 3-Statement to DCF 5:00 PM - 7:00 PM · Van Munching Hall ✦ Strong match Modeling is the skill gap that shows up most in your target roles. Add to CampusAI Calendar Learn more and sign "
+    },
+    "button": {
+     "x": 849,
+     "y": 384,
+     "w": 269,
+     "h": 34,
+     "text": "Add to CampusAI Calendar"
+    }
+   },
+   "checks": {
+    "sandy": false,
+    "emdash": false,
+    "testudo": false,
+    "chatgpt": false
+   }
+  },
+  {
+   "name": "events-added",
+   "H": 1300,
+   "scrollY": 0,
+   "press": null,
+   "marks": {
+    "card": {
+     "x": 834,
+     "y": 223,
+     "w": 574,
+     "h": 210,
+     "text": "TUE 27 Financial Modeling Bootcamp: 3-Statement to DCF 5:00 PM - 7:00 PM · Van Munching Hall ✦ Strong match Modeling is the skill gap that shows up most in your target roles. On your calendar Learn more and sign up"
+    },
+    "button": {
+     "x": 849,
+     "y": 381,
+     "w": 269,
+     "h": 36,
+     "text": "On your calendar"
+    },
+    "toast": null
+   },
+   "checks": {
+    "sandy": false,
+    "emdash": false,
+    "testudo": false,
+    "chatgpt": false
+   }
+  },
+  {
+   "name": "events-added-settled",
+   "H": 1300,
+   "scrollY": 0,
+   "press": null,
+   "marks": {
+    "card": {
+     "x": 834,
+     "y": 225,
+     "w": 574,
+     "h": 210,
+     "text": "TUE 27 Financial Modeling Bootcamp: 3-Statement to DCF 5:00 PM - 7:00 PM · Van Munching Hall ✦ Strong match Modeling is the skill gap that shows up most in your target roles. On your calendar Learn more and sign up"
+    },
+    "button": {
+     "x": 849,
+     "y": 383,
+     "w": 269,
+     "h": 36,
+     "text": "On your calendar"
+    },
+    "toast": null
+   },
+   "checks": {
+    "sandy": false,
+    "emdash": false,
+    "testudo": false,
+    "chatgpt": false
+   }
+  },
+  {
+   "name": "calendar-week",
+   "H": 1300,
+   "scrollY": 0,
+   "press": null,
+   "marks": {
+    "weekTitle": {
+     "x": 310,
+     "y": 15,
+     "w": 184,
+     "h": 18,
+     "text": "Oct 25 – Oct 31, 2026"
+    },
+    "event": {
+     "x": 793,
+     "y": 592,
+     "w": 114,
+     "h": 14,
+     "text": "Financial Modeling Bootcamp: 3-Statement to DCF"
+    },
+    "sun": {
+     "x": 520,
+     "y": 49,
+     "w": 132,
+     "h": 55,
+     "text": "Sun 25"
+    }
+   },
+   "checks": {
+    "sandy": false,
+    "emdash": false,
+    "testudo": false,
+    "chatgpt": false
+   }
+  }
+ ],
+ "notes": [
+  "events: bootcamp card {\"x\":834,\"y\":225,\"w\":574,\"h\":210,\"text\":\"TUE 27 Financial Modeling Bootcamp: 3-Statement to DCF 5:00 PM - 7:00 PM · Van Munching Hall ✦ Strong match Modeling is the skill gap that shows up most in your target roles. Add to CampusAI Calendar Learn more and sign \"} button {\"x\":849,\"y\":384,\"w\":269,\"h\":34,\"text\":\"Add to CampusAI Calendar\"}",
+  "calendar opens on {\"x\":310,\"y\":15,\"w\":185,\"h\":18,\"text\":\"Oct 18 – Oct 24, 2026\"}",
+  "calendar week {\"x\":310,\"y\":15,\"w\":184,\"h\":18,\"text\":\"Oct 25 – Oct 31, 2026\"} event {\"x\":793,\"y\":592,\"w\":114,\"h\":14,\"text\":\"Financial Modeling Bootcamp: 3-Statement to DCF\"}"
+ ],
+ "writes": [
+  "POST https://campusai-demo.vercel.app/api/v1/career/jobs/jp_3f9a1c07b2d40006/view"
+ ]
+}

@@ -1,0 +1,1251 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "coords": "viewport",
+ "scrollY": 330,
+ "source": "https://campusai-demo.vercel.app/career?view=tailor",
+ "captured": "2026-10-23T22:52:23.655Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false
+ },
+ "press": null,
+ "marks": {
+  "asks": {
+   "x": 273,
+   "y": 3,
+   "w": 1110,
+   "h": 441,
+   "text": "This posting asks for What to do about it Run comparable-company and precedent-transaction analyses Name the closest thing you have to comparable-company and pr"
+  }
+ },
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 273,
+   "y": 477,
+   "w": 522,
+   "h": 27,
+   "text": "What to change for this role"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 18,
+   "w": 171,
+   "h": 20,
+   "text": "University of Maryland — home"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Collapse Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 311,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 311,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 349,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 380,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 411,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 349,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 387,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 425,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 476,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "button",
+   "x": 19,
+   "y": 854,
+   "w": 124,
+   "h": 34,
+   "text": "MC Maya Chen 80% · Connect your transcript"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 820,
+   "y": 56,
+   "w": 563,
+   "h": 36,
+   "text": "Name the closest thing you have to comparable-company and precedent-transaction analyses →"
+  },
+  {
+   "kind": "button",
+   "x": 820,
+   "y": 159,
+   "w": 494,
+   "h": 18,
+   "text": "Put live M&A and restructuring deal teams on the page, not just your skills list →"
+  },
+  {
+   "kind": "button",
+   "x": 1166,
+   "y": 557,
+   "w": 130,
+   "h": 28,
+   "text": "View suggestion ▾"
+  },
+  {
+   "kind": "button",
+   "x": 1308,
+   "y": 559,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion is helpful"
+  },
+  {
+   "kind": "button",
+   "x": 1338,
+   "y": 559,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion isn't helpful — hide it"
+  },
+  {
+   "kind": "button",
+   "x": 1166,
+   "y": 657,
+   "w": 130,
+   "h": 28,
+   "text": "View suggestion ▾"
+  },
+  {
+   "kind": "button",
+   "x": 1308,
+   "y": 659,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion is helpful"
+  },
+  {
+   "kind": "button",
+   "x": 1338,
+   "y": 659,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion isn't helpful — hide it"
+  },
+  {
+   "kind": "button",
+   "x": 1166,
+   "y": 757,
+   "w": 130,
+   "h": 28,
+   "text": "View suggestion ▾"
+  },
+  {
+   "kind": "button",
+   "x": 1308,
+   "y": 759,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion is helpful"
+  },
+  {
+   "kind": "button",
+   "x": 1338,
+   "y": 759,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion isn't helpful — hide it"
+  },
+  {
+   "kind": "button",
+   "x": 1166,
+   "y": 835,
+   "w": 130,
+   "h": 28,
+   "text": "View suggestion ▾"
+  },
+  {
+   "kind": "button",
+   "x": 1308,
+   "y": 837,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion is helpful"
+  },
+  {
+   "kind": "button",
+   "x": 1338,
+   "y": 837,
+   "w": 26,
+   "h": 26,
+   "text": "This suggestion isn't helpful — hide it"
+  },
+  {
+   "kind": "button",
+   "x": 992,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1038,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 1084,
+   "y": 816,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "5 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 311,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 349,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 380,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 411,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 349,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 387,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 425,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 476,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": -151,
+   "w": 1160,
+   "h": 1059,
+   "text": "Maya_Chen_Resume.pdf Updated 7/9/2026 Upload new resume What this posting asks for 4 requirements, none of them unusual for this kind of rol"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 542,
+   "w": 1110,
+   "h": 92,
+   "text": "✦ Polish Name the closest thing you have to comparable-company and precedent-transaction analyses This posting asks for: Run comparable-comp"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 642,
+   "w": 1110,
+   "h": 92,
+   "text": "✦ Improvement Put live M&A and restructuring deal teams on the page, not just your skills list This posting asks for: Support live M&A and r"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 742,
+   "w": 1110,
+   "h": 71,
+   "text": "✦ Polish Lead with the people, not the spreadsheet View suggestion ▾"
+  },
+  {
+   "kind": "card",
+   "x": 273,
+   "y": 820,
+   "w": 1110,
+   "h": 71,
+   "text": "✦ Polish Name transaction exposure, even indirect View suggestion ▾"
+  },
+  {
+   "kind": "text",
+   "text": "Dashboard",
+   "x": 52,
+   "y": 76,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "My Calendar",
+   "x": 52,
+   "y": 114,
+   "w": 78,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 154,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Career Advisor",
+   "x": 64,
+   "y": 152,
+   "w": 92,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Resume Review",
+   "x": 52,
+   "y": 187,
+   "w": 94,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Job Match",
+   "x": 52,
+   "y": 218,
+   "w": 63,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Interview Prep",
+   "x": 52,
+   "y": 249,
+   "w": 86,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Company Tracker",
+   "x": 52,
+   "y": 280,
+   "w": 105,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 323,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Academic Advisor",
+   "x": 64,
+   "y": 321,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Planner & Progress",
+   "x": 52,
+   "y": 356,
+   "w": 115,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Class Tracker",
+   "x": 52,
+   "y": 387,
+   "w": 81,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Courses and Professors",
+   "x": 52,
+   "y": 418,
+   "w": 143,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Organizations",
+   "x": 52,
+   "y": 359,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Events",
+   "x": 52,
+   "y": 397,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Dining",
+   "x": 52,
+   "y": 435,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI",
+   "x": 52,
+   "y": 486,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Accessibility",
+   "x": 28,
+   "y": 834,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "MC",
+   "x": 28,
+   "y": 865,
+   "w": 17,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Maya Chen",
+   "x": 63,
+   "y": 856,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80",
+   "x": 63,
+   "y": 874,
+   "w": 14,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "%",
+   "x": 77,
+   "y": 874,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 87,
+   "y": 874,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Connect your transcript",
+   "x": 96,
+   "y": 874,
+   "w": 115,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "This posting asks for",
+   "x": 303,
+   "y": 19,
+   "w": 119,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "What to do about it",
+   "x": 820,
+   "y": 19,
+   "w": 109,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Run comparable-company and precedent-transaction analyses",
+   "x": 303,
+   "y": 57,
+   "w": 403,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Name the closest thing you have to comparable-company and precedent-transaction analyses",
+   "x": 820,
+   "y": 57,
+   "w": 525,
+   "h": 34
+  },
+  {
+   "kind": "text",
+   "text": "→",
+   "x": 874,
+   "y": 76,
+   "w": 15,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Being straight about a gap costs less than a reviewer finding it themselves, and it keeps the rest of the page credible.",
+   "x": 820,
+   "y": 99,
+   "w": 557,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Support live M&A and restructuring deal teams",
+   "x": 303,
+   "y": 156,
+   "w": 299,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Put live M&A and restructuring deal teams on the page, not just your skills list",
+   "x": 820,
+   "y": 160,
+   "w": 479,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "→",
+   "x": 1299,
+   "y": 160,
+   "w": 15,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "This posting names it directly, and your resume is the only place a reviewer checks. It is on your profile's skills list, but no bullet on the resume shows where you did it.",
+   "x": 820,
+   "y": 183,
+   "w": 540,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Build LBO and DCF valuation models",
+   "x": 303,
+   "y": 241,
+   "w": 233,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Already covered",
+   "x": 820,
+   "y": 241,
+   "w": 100,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Equity research & stock pitches · work experience, Smith Investment Fund",
+   "x": 820,
+   "y": 262,
+   "w": 419,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Draft CIMs and management presentations",
+   "x": 303,
+   "y": 303,
+   "w": 275,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Already covered",
+   "x": 820,
+   "y": 303,
+   "w": 100,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Equity research & stock pitches · work experience, Smith Investment Fund",
+   "x": 820,
+   "y": 324,
+   "w": 419,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Typical for this kind of role, not published in this posting",
+   "x": 273,
+   "y": 370,
+   "w": 320,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Pitch and CIM drafting",
+   "x": 284,
+   "y": 398,
+   "w": 127,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Long-hours tolerance",
+   "x": 439,
+   "y": 398,
+   "w": 122,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Excel and PowerPoint speed",
+   "x": 588,
+   "y": 398,
+   "w": 159,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Not counted above and not checked against your resume. This posting never asked for them.",
+   "x": 273,
+   "y": 429,
+   "w": 507,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "What to change for this role",
+   "x": 273,
+   "y": 480,
+   "w": 232,
+   "h": 21
+  },
+  {
+   "kind": "text",
+   "text": "4",
+   "x": 273,
+   "y": 507,
+   "w": 8,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "recommendation",
+   "x": 281,
+   "y": 507,
+   "w": 106,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "s",
+   "x": 387,
+   "y": 507,
+   "w": 7,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "· Tailored to Investment Banking Summer Analyst, 2027 · Evercore",
+   "x": 394,
+   "y": 507,
+   "w": 402,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 292,
+   "y": 559,
+   "w": 12,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Polish",
+   "x": 316,
+   "y": 557,
+   "w": 35,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Name the closest thing you have to comparable-company and precedent-transaction analyses",
+   "x": 316,
+   "y": 577,
+   "w": 703,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "This posting asks for:",
+   "x": 316,
+   "y": 602,
+   "w": 127,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Run comparable-company and precedent-transaction analyses",
+   "x": 446,
+   "y": 602,
+   "w": 356,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "View suggestion",
+   "x": 1178,
+   "y": 563,
+   "w": 97,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "▾",
+   "x": 1279,
+   "y": 565,
+   "w": 5,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 292,
+   "y": 659,
+   "w": 12,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Improvement",
+   "x": 316,
+   "y": 657,
+   "w": 77,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Put live M&A and restructuring deal teams on the page, not just your skills list",
+   "x": 316,
+   "y": 677,
+   "w": 588,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "This posting asks for:",
+   "x": 316,
+   "y": 702,
+   "w": 127,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Support live M&A and restructuring deal teams",
+   "x": 446,
+   "y": 702,
+   "w": 265,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "View suggestion",
+   "x": 1178,
+   "y": 663,
+   "w": 97,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "▾",
+   "x": 1279,
+   "y": 665,
+   "w": 5,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 292,
+   "y": 759,
+   "w": 12,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Polish",
+   "x": 316,
+   "y": 757,
+   "w": 35,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Lead with the people, not the spreadsheet",
+   "x": 316,
+   "y": 777,
+   "w": 315,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "View suggestion",
+   "x": 1178,
+   "y": 763,
+   "w": 97,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "▾",
+   "x": 1279,
+   "y": 765,
+   "w": 5,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 292,
+   "y": 837,
+   "w": 12,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Polish",
+   "x": 316,
+   "y": 835,
+   "w": 35,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Name transaction exposure, even indirect",
+   "x": 316,
+   "y": 855,
+   "w": 317,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "View suggestion",
+   "x": 1178,
+   "y": 841,
+   "w": 97,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "▾",
+   "x": 1279,
+   "y": 843,
+   "w": 5,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Chat",
+   "x": 1115,
+   "y": 825,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI can make mistakes. Verify important information.",
+   "x": 684,
+   "y": 870,
+   "w": 288,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "5",
+   "x": 1260,
+   "y": 26,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "new",
+   "x": 1268,
+   "y": 26,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Feedback",
+   "x": 1352,
+   "y": 26,
+   "w": 57,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦Career Advisor",
+   "x": 52,
+   "y": 152,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦Academic Advisor",
+   "x": 52,
+   "y": 321,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "80% · Connect your transcript",
+   "x": 63,
+   "y": 873,
+   "w": 80,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80%",
+   "x": 63,
+   "y": 874,
+   "w": 24,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Name the closest thing you have to comparable-company and precedent-transaction analyses →",
+   "x": 820,
+   "y": 56,
+   "w": 563,
+   "h": 36
+  },
+  {
+   "kind": "text",
+   "text": "Put live M&A and restructuring deal teams on the page, not just your skills list →",
+   "x": 820,
+   "y": 159,
+   "w": 494,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "4 recommendations · Tailored to Investment Banking Summer Analyst, 2027 · Evercore",
+   "x": 273,
+   "y": 506,
+   "w": 522,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "text": "This posting asks for: Run comparable-company and precedent-transaction analyses",
+   "x": 316,
+   "y": 601,
+   "w": 838,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "This posting asks for: Support live M&A and restructuring deal teams",
+   "x": 316,
+   "y": 701,
+   "w": 838,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "5 new",
+   "x": 1260,
+   "y": 28,
+   "w": 35,
+   "h": 12
+  }
+ ]
+}

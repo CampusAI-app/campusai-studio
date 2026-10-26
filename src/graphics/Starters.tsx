@@ -14,6 +14,8 @@
 import React from "react";
 import { AbsoluteFill, Composition, Img, staticFile } from "remotion";
 import { brand, glow, INTER, PageView, useBrandFonts } from "../kit";
+import { PostersRoot } from "./Posters";
+import { LikeWhenRoot } from "./LikeWhenCarousel";
 
 const B = brand("campusai");
 const W = 1080;
@@ -91,5 +93,7 @@ export const GraphicsRoot: React.FC = () => (
     <Composition id="Graphic-Slide" component={Slide} durationInFrames={1} fps={30} width={W} height={H}
       defaultProps={{ n: 2, of: 4, step: "Find jobs that fit you" }} />
     <Composition id="Graphic-Poster" component={Poster} durationInFrames={1} fps={30} width={W} height={H} />
+    <PostersRoot />
+    <LikeWhenRoot />
   </>
 );

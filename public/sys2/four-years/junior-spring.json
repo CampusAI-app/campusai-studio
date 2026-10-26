@@ -1,0 +1,1597 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 2,
+ "coords": "viewport",
+ "scrollY": 1016,
+ "source": "https://campusai-demo.vercel.app/academics?tab=planning",
+ "captured": "2026-10-23T22:38:42.454Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false
+ },
+ "press": null,
+ "marks": {
+  "fall": {
+   "x": 269,
+   "y": -77,
+   "w": 552,
+   "h": 697,
+   "text": "Fall 2026 18 cr In progress × BMGT310 Major Requirement 3 cr Intermediate Accounting I In progress M/W 11:00am × BMGT343 Major Requirement 3 cr Investments In progress M/W 11:00am × BMGT364 Upper Level Core 3 cr Management and Organization "
+  },
+  "spring": {
+   "x": 835,
+   "y": -77,
+   "w": 552,
+   "h": 697,
+   "text": "Spring 2027 15 cr Planned × BMGT434 Major Requirement 3 cr Financial Modeling & Analysis T/Th 11:00am ✦ It's the most direct build toward an IB summer-analyst seat, you leave able to build a three-statement model and a DCF from scratch. × B"
+  },
+  "springHead": null,
+  "tabs": null,
+  "first": null
+ },
+ "layers": [
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 18,
+   "w": 171,
+   "h": 20,
+   "text": "University of Maryland — home"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 180,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 180,
+   "w": 24,
+   "h": 36,
+   "text": "Collapse Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 218,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 249,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 280,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 318,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 356,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 394,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 445,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "button",
+   "x": 19,
+   "y": 854,
+   "w": 124,
+   "h": 34,
+   "text": "MC Maya Chen 80% · Connect your transcript"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 857,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 282,
+   "y": 522,
+   "w": 526,
+   "h": 35,
+   "text": "＋ Add extra course"
+  },
+  {
+   "kind": "button",
+   "x": 848,
+   "y": 572,
+   "w": 526,
+   "h": 35,
+   "text": "＋ Add extra course"
+  },
+  {
+   "kind": "button",
+   "x": 745,
+   "y": 651,
+   "w": 45,
+   "h": 27,
+   "text": "Fall"
+  },
+  {
+   "kind": "button",
+   "x": 796,
+   "y": 651,
+   "w": 62,
+   "h": 27,
+   "text": "Spring"
+  },
+  {
+   "kind": "button",
+   "x": 864,
+   "y": 651,
+   "w": 72,
+   "h": 27,
+   "text": "Summer"
+  },
+  {
+   "kind": "button",
+   "x": 942,
+   "y": 651,
+   "w": 62,
+   "h": 27,
+   "text": "Winter"
+  },
+  {
+   "kind": "button",
+   "x": 248,
+   "y": 773,
+   "w": 294,
+   "h": 19,
+   "text": "Compare professor ratings in Explore courses →"
+  },
+  {
+   "kind": "button",
+   "x": 992,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1038,
+   "y": 816,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 1084,
+   "y": 816,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "6 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 180,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 218,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 249,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 280,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 318,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 356,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 394,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 445,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": -147,
+   "w": 1160,
+   "h": 886,
+   "text": "Freshman Sophomore Junior Senior Summer, Winter & outside UMD Fall 2026 18 cr In progress × BMGT310 Major Requirement 3 cr Intermediate Accounting I In progress M/W 11:00am × BMGT343 Major Requirement 3 cr Investments In progress M/W 11:00a"
+  },
+  {
+   "kind": "card",
+   "x": 269,
+   "y": -77,
+   "w": 552,
+   "h": 697,
+   "text": "Fall 2026 18 cr In progress × BMGT310 Major Requirement 3 cr Intermediate Accounting I In progress M/W 11:00am × BMGT343 Major Requirement 3 cr Investments In progress M/W 11:00am × BMGT364 Upper Level Core 3 cr Management and Organization "
+  },
+  {
+   "kind": "card",
+   "x": 835,
+   "y": -77,
+   "w": 552,
+   "h": 697,
+   "text": "Spring 2027 15 cr Planned × BMGT434 Major Requirement 3 cr Financial Modeling & Analysis T/Th 11:00am ✦ It's the most direct build toward an IB summer-analyst seat, you leave able to build a three-statement model and a DCF from scratch. × B"
+  },
+  {
+   "kind": "text",
+   "text": "Dashboard",
+   "x": 52,
+   "y": 76,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "My Calendar",
+   "x": 52,
+   "y": 114,
+   "w": 78,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 154,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Career Advisor",
+   "x": 64,
+   "y": 152,
+   "w": 92,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Resume Review",
+   "x": 52,
+   "y": 187,
+   "w": 94,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Job Match",
+   "x": 52,
+   "y": 218,
+   "w": 63,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Interview Prep",
+   "x": 52,
+   "y": 249,
+   "w": 86,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Company Tracker",
+   "x": 52,
+   "y": 280,
+   "w": 105,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 192,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Academic Advisor",
+   "x": 64,
+   "y": 190,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Planner & Progress",
+   "x": 52,
+   "y": 225,
+   "w": 115,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Class Tracker",
+   "x": 52,
+   "y": 256,
+   "w": 81,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Courses and Professors",
+   "x": 52,
+   "y": 287,
+   "w": 143,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Organizations",
+   "x": 52,
+   "y": 328,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Events",
+   "x": 52,
+   "y": 366,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Dining",
+   "x": 52,
+   "y": 404,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI",
+   "x": 52,
+   "y": 455,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Accessibility",
+   "x": 28,
+   "y": 834,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "MC",
+   "x": 28,
+   "y": 865,
+   "w": 17,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Maya Chen",
+   "x": 63,
+   "y": 856,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80",
+   "x": 63,
+   "y": 874,
+   "w": 14,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "%",
+   "x": 77,
+   "y": 874,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 87,
+   "y": 874,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Connect your transcript",
+   "x": 96,
+   "y": 874,
+   "w": 115,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "BMGT310",
+   "x": 295,
+   "y": -11,
+   "w": 51,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Major Requirement",
+   "x": 352,
+   "y": -9,
+   "w": 82,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 780,
+   "y": -10,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 787,
+   "y": -10,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Intermediate Accounting I",
+   "x": 295,
+   "y": 9,
+   "w": 137,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "In progress",
+   "x": 295,
+   "y": 28,
+   "w": 57,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "M/W 11:00am",
+   "x": 295,
+   "y": 52,
+   "w": 60,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "BMGT343",
+   "x": 295,
+   "y": 86,
+   "w": 54,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Major Requirement",
+   "x": 355,
+   "y": 88,
+   "w": 82,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 780,
+   "y": 87,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 787,
+   "y": 87,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Investments",
+   "x": 295,
+   "y": 106,
+   "w": 65,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "In progress",
+   "x": 295,
+   "y": 125,
+   "w": 57,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "M/W 11:00am",
+   "x": 295,
+   "y": 149,
+   "w": 60,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "BMGT364",
+   "x": 295,
+   "y": 183,
+   "w": 54,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Upper Level Core",
+   "x": 355,
+   "y": 185,
+   "w": 75,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 780,
+   "y": 184,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 787,
+   "y": 184,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Management and Organization Theory",
+   "x": 295,
+   "y": 202,
+   "w": 202,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "In progress",
+   "x": 295,
+   "y": 222,
+   "w": 57,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "M/W 11:00am",
+   "x": 295,
+   "y": 245,
+   "w": 60,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "BMGT380",
+   "x": 295,
+   "y": 280,
+   "w": 53,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Upper Level Core",
+   "x": 354,
+   "y": 282,
+   "w": 75,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 780,
+   "y": 281,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 787,
+   "y": 281,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Business Law I",
+   "x": 295,
+   "y": 299,
+   "w": 78,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "In progress",
+   "x": 295,
+   "y": 319,
+   "w": 57,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "M/W 11:00am",
+   "x": 295,
+   "y": 342,
+   "w": 60,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "ECON340",
+   "x": 295,
+   "y": 377,
+   "w": 53,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Elective",
+   "x": 354,
+   "y": 379,
+   "w": 34,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 780,
+   "y": 378,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 787,
+   "y": 378,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "International Economics",
+   "x": 295,
+   "y": 396,
+   "w": 126,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "In progress",
+   "x": 295,
+   "y": 415,
+   "w": 57,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "PHIL140",
+   "x": 295,
+   "y": 451,
+   "w": 43,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Gen Ed",
+   "x": 344,
+   "y": 453,
+   "w": 31,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 780,
+   "y": 452,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 787,
+   "y": 452,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Contemporary Moral Issues",
+   "x": 295,
+   "y": 471,
+   "w": 145,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "In progress",
+   "x": 295,
+   "y": 490,
+   "w": 57,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "＋",
+   "x": 492,
+   "y": 532,
+   "w": 11,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Add extra course",
+   "x": 508,
+   "y": 532,
+   "w": 90,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "BMGT434",
+   "x": 861,
+   "y": -11,
+   "w": 53,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Major Requirement",
+   "x": 920,
+   "y": -9,
+   "w": 82,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 1346,
+   "y": -10,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 1353,
+   "y": -10,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Financial Modeling & Analysis",
+   "x": 861,
+   "y": 9,
+   "w": 158,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "T/Th 11:00am",
+   "x": 861,
+   "y": 32,
+   "w": 60,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 867,
+   "y": 57,
+   "w": 7,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "It's the most direct build toward an IB summer-analyst seat, you leave able to build a three-statement model and a DCF from scratch.",
+   "x": 878,
+   "y": 57,
+   "w": 476,
+   "h": 26
+  },
+  {
+   "kind": "text",
+   "text": "BMGT440",
+   "x": 861,
+   "y": 109,
+   "w": 53,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Major Requirement",
+   "x": 920,
+   "y": 111,
+   "w": 82,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 1346,
+   "y": 110,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 1353,
+   "y": 110,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Advanced Financial Management",
+   "x": 861,
+   "y": 129,
+   "w": 177,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "M/W 2:00pm",
+   "x": 861,
+   "y": 152,
+   "w": 59,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 867,
+   "y": 177,
+   "w": 7,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "The capital-structure and capital-budgeting course that pairs with modeling, the 'why' behind the numbers you build.",
+   "x": 878,
+   "y": 177,
+   "w": 460,
+   "h": 26
+  },
+  {
+   "kind": "text",
+   "text": "BMGT496",
+   "x": 861,
+   "y": 229,
+   "w": 53,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Lower Level Core",
+   "x": 920,
+   "y": 231,
+   "w": 75,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 1346,
+   "y": 230,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 1353,
+   "y": 230,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Business Ethics & Society",
+   "x": 861,
+   "y": 249,
+   "w": 135,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "F 9:00am",
+   "x": 861,
+   "y": 272,
+   "w": 43,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 867,
+   "y": 297,
+   "w": 7,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "Counts as an upper-level elective, and clearing it junior spring keeps senior year open for Finance electives.",
+   "x": 878,
+   "y": 297,
+   "w": 462,
+   "h": 26
+  },
+  {
+   "kind": "text",
+   "text": "BMGT445",
+   "x": 861,
+   "y": 349,
+   "w": 53,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Major Requirement",
+   "x": 920,
+   "y": 351,
+   "w": 82,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 1346,
+   "y": 350,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 1353,
+   "y": 350,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Financial Management for the Firm",
+   "x": 861,
+   "y": 369,
+   "w": 185,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "M/W 11:00am",
+   "x": 861,
+   "y": 392,
+   "w": 60,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 867,
+   "y": 418,
+   "w": 7,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "The firm-side, decision-making view of corporate finance, the counterpart to the models you build in BMGT434.",
+   "x": 878,
+   "y": 418,
+   "w": 476,
+   "h": 26
+  },
+  {
+   "kind": "text",
+   "text": "ECON440",
+   "x": 861,
+   "y": 470,
+   "w": 53,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Elective",
+   "x": 920,
+   "y": 472,
+   "w": 34,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "3",
+   "x": 1346,
+   "y": 471,
+   "w": 6,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "cr",
+   "x": 1353,
+   "y": 471,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "International Finance",
+   "x": 861,
+   "y": 489,
+   "w": 110,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "T/Th 2:00pm",
+   "x": 861,
+   "y": 512,
+   "w": 58,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 867,
+   "y": 538,
+   "w": 7,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "A markets-and-global-macro flavor to round out an otherwise corporate-heavy term.",
+   "x": 878,
+   "y": 538,
+   "w": 401,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "＋",
+   "x": 1058,
+   "y": 582,
+   "w": 11,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Add extra course",
+   "x": 1074,
+   "y": 582,
+   "w": 90,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "＋",
+   "x": 652,
+   "y": 656,
+   "w": 13,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Add a term",
+   "x": 664,
+   "y": 656,
+   "w": 69,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Fall",
+   "x": 758,
+   "y": 657,
+   "w": 19,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Spring",
+   "x": 809,
+   "y": 657,
+   "w": 36,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Summer",
+   "x": 877,
+   "y": 657,
+   "w": 46,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Winter",
+   "x": 955,
+   "y": 657,
+   "w": 36,
+   "h": 14
+  },
+  {
+   "kind": "text",
+   "text": "Completed",
+   "x": 285,
+   "y": 704,
+   "w": 54,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Current",
+   "x": 371,
+   "y": 704,
+   "w": 38,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Recommended (future)",
+   "x": 441,
+   "y": 704,
+   "w": 115,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Compare professor ratings in Explore courses →",
+   "x": 248,
+   "y": 774,
+   "w": 294,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Chat",
+   "x": 1115,
+   "y": 825,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI can make mistakes. Verify important information.",
+   "x": 684,
+   "y": 870,
+   "w": 288,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "6",
+   "x": 1260,
+   "y": 26,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "new",
+   "x": 1268,
+   "y": 26,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Feedback",
+   "x": 1352,
+   "y": 26,
+   "w": 57,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦Career Advisor",
+   "x": 52,
+   "y": 152,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦Academic Advisor",
+   "x": 52,
+   "y": 190,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "80% · Connect your transcript",
+   "x": 63,
+   "y": 873,
+   "w": 80,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80%",
+   "x": 63,
+   "y": 874,
+   "w": 24,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 780,
+   "y": -11,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 780,
+   "y": 86,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 780,
+   "y": 183,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 780,
+   "y": 280,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 780,
+   "y": 377,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 780,
+   "y": 451,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 1346,
+   "y": -11,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 1346,
+   "y": 109,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 1346,
+   "y": 229,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 1346,
+   "y": 349,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "3 cr",
+   "x": 1346,
+   "y": 470,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "＋ Add a term",
+   "x": 652,
+   "y": 655,
+   "w": 82,
+   "h": 19
+  },
+  {
+   "kind": "text",
+   "text": "Compare professor ratings in Explore courses →",
+   "x": 248,
+   "y": 764,
+   "w": 1160,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "text": "6 new",
+   "x": 1260,
+   "y": 28,
+   "w": 35,
+   "h": 12
+  }
+ ]
+}

@@ -1,0 +1,126 @@
+{
+ "captured": "2026-10-23T22:34:20.881Z",
+ "base": "https://campusai-demo.vercel.app",
+ "viewport": {
+  "w": 1440,
+  "h": 900,
+  "dpr": 2
+ },
+ "stills": [
+  {
+   "name": "dash",
+   "pageH": 900,
+   "press": null,
+   "marks": {
+    "brief": {
+     "x": 248,
+     "y": 32,
+     "w": 1160,
+     "h": 380,
+     "text": "Your daily brief Friday, October 23. What's worth your attention today, picked for you. Your week Moved · BMGT380 Reading Response 6: Remedies Moved from Wed, O"
+    },
+    "moved": {
+     "x": 289,
+     "y": 163,
+     "w": 219,
+     "h": 76,
+     "text": "Moved · BMGT380 Reading Response 6: Remedies Moved from Wed, Oct 14→ to Sun, Oct 18"
+    },
+    "yourWeek": {
+     "x": 281,
+     "y": 117,
+     "w": 527,
+     "h": 278,
+     "text": "Your week Moved · BMGT380 Reading Response 6: Remedies Moved from Wed, Oct 14→ to Sun, Oct 18 Open My Calendar → Canvas changed the due date. Your calendar alre"
+    },
+    "worth": {
+     "x": 848,
+     "y": 117,
+     "w": 527,
+     "h": 278,
+     "text": "Worth a look Spring registration Plan your Spring 2027 classes Plan it with CampusAI Real sections, your times → UMD sends registration details Oct 9. I'll buil"
+    },
+    "ask": null,
+    "whatsNew": {
+     "x": 248,
+     "y": 717,
+     "w": 1160,
+     "h": 724,
+     "text": "What's new New matches, moved due dates and CampusAI updates, as they come in. All notifications Today Assignment moved BMGT380 · Reading Response 6: Remedies f"
+    },
+    "chip": {
+     "x": 63,
+     "y": 855,
+     "w": 80,
+     "h": 33,
+     "text": "Maya Chen 80% · Connect your transcript"
+    },
+    "bell": {
+     "x": 1225,
+     "y": 17,
+     "w": 83,
+     "h": 34,
+     "text": "6 new"
+    }
+   }
+  },
+  {
+   "name": "dash-tall",
+   "pageH": 1573,
+   "press": null,
+   "marks": {
+    "brief": {
+     "x": 248,
+     "y": 32,
+     "w": 1160,
+     "h": 380,
+     "text": "Your daily brief Friday, October 23. What's worth your attention today, picked for you. Your week Moved · BMGT380 Reading Response 6: Remedies Moved from Wed, O"
+    },
+    "moved": {
+     "x": 289,
+     "y": 163,
+     "w": 219,
+     "h": 76,
+     "text": "Moved · BMGT380 Reading Response 6: Remedies Moved from Wed, Oct 14→ to Sun, Oct 18"
+    },
+    "yourWeek": {
+     "x": 281,
+     "y": 117,
+     "w": 527,
+     "h": 278,
+     "text": "Your week Moved · BMGT380 Reading Response 6: Remedies Moved from Wed, Oct 14→ to Sun, Oct 18 Open My Calendar → Canvas changed the due date. Your calendar alre"
+    },
+    "worth": {
+     "x": 848,
+     "y": 117,
+     "w": 527,
+     "h": 278,
+     "text": "Worth a look Spring registration Plan your Spring 2027 classes Plan it with CampusAI Real sections, your times → UMD sends registration details Oct 9. I'll buil"
+    },
+    "ask": null,
+    "whatsNew": {
+     "x": 248,
+     "y": 717,
+     "w": 1160,
+     "h": 724,
+     "text": "What's new New matches, moved due dates and CampusAI updates, as they come in. All notifications Today Assignment moved BMGT380 · Reading Response 6: Remedies f"
+    },
+    "chip": {
+     "x": 63,
+     "y": 855,
+     "w": 80,
+     "h": 33,
+     "text": "Maya Chen 80% · Connect your transcript"
+    },
+    "bell": {
+     "x": 1225,
+     "y": 17,
+     "w": 83,
+     "h": 34,
+     "text": "6 new"
+    }
+   }
+  }
+ ],
+ "writes": []
+}

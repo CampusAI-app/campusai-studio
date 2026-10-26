@@ -1,0 +1,102 @@
+{
+ "pageW": 1440,
+ "pageH": 900,
+ "dpr": 4,
+ "coords": "viewport",
+ "scrollY": 1000,
+ "source": "https://campusai-demo.vercel.app/career?view=jobs&student_signal=intern%2Cco_op%2Cnew_grad%2Centry_level",
+ "captured": "2026-10-24T03:16:07.297Z",
+ "checks": {
+  "sandy": true,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false
+ },
+ "cards": [
+  {
+   "x": 269,
+   "y": -72,
+   "w": 436,
+   "h": 132,
+   "text": "A Acme Corp ✦ Good match Internship Data Analyst Intern You have Excel and data analysis, plus a credit internship. SQL is the gap. Found today"
+  },
+  {
+   "x": 269,
+   "y": -72,
+   "w": 436,
+   "h": 132,
+   "text": "A Acme Corp ✦ Good match Internship Data Analyst Intern You have Excel and data analysis, plus a credit internship. SQL is the gap. Found today"
+  },
+  {
+   "x": 269,
+   "y": 70,
+   "w": 436,
+   "h": 170,
+   "text": "F Fannie Mae ✦ Good match Fortune 500 Internship Capital Markets Intern, Summer 2027 Hybrid, Washington, DC·$30-$36/hr You have financial statement analysis and Excel, plus market research. Posted 2d ago"
+  },
+  {
+   "x": 269,
+   "y": 70,
+   "w": 436,
+   "h": 170,
+   "text": "F Fannie Mae ✦ Good match Fortune 500 Internship Capital Markets Intern, Summer 2027 Hybrid, Washington, DC·$30-$36/hr You have financial statement analysis and Excel, plus market research. Posted 2d ago"
+  },
+  {
+   "x": 269,
+   "y": 249,
+   "w": 436,
+   "h": 152,
+   "text": "T The Carlyle Group ✦ Good match Internship Summer Analyst, Corporate Private Equity Washington, DC·$50-$55/hr You have equity research and Excel, plus an investment fund role. Posted 5d ago"
+  },
+  {
+   "x": 269,
+   "y": 249,
+   "w": 436,
+   "h": 152,
+   "text": "T The Carlyle Group ✦ Good match Internship Summer Analyst, Corporate Private Equity Washington, DC·$50-$55/hr You have equity research and Excel, plus an investment fund role. Posted 5d ago"
+  },
+  {
+   "x": 269,
+   "y": 411,
+   "w": 436,
+   "h": 170,
+   "text": "N Northwind Analytics ✦ Good match Well-known employer Internship Data Science Intern Hybrid, College Park, MD You have Excel and forecasting, plus an investment fund role. Python is the gap. Posted 6d ago"
+  },
+  {
+   "x": 269,
+   "y": 411,
+   "w": 436,
+   "h": 170,
+   "text": "N Northwind Analytics ✦ Good match Well-known employer Internship Data Science Intern Hybrid, College Park, MD You have Excel and forecasting, plus an investment fund role. Python is the gap. Posted 6d ago"
+  },
+  {
+   "x": 269,
+   "y": 591,
+   "w": 436,
+   "h": 152,
+   "text": "A Acme Corp ✦ Good match Entry level Marketing Analyst, Entry Level Baltimore, MD You have Excel and experience pitching a recommendation backed by numbers. Found 2w ago"
+  },
+  {
+   "x": 269,
+   "y": 591,
+   "w": 436,
+   "h": 152,
+   "text": "A Acme Corp ✦ Good match Entry level Marketing Analyst, Entry Level Baltimore, MD You have Excel and experience pitching a recommendation backed by numbers. Found 2w ago"
+  },
+  {
+   "x": 269,
+   "y": 753,
+   "w": 436,
+   "h": 140,
+   "text": "3 3M ✦ Possible match Fortune 500 Internship Software Engineering Intern, Summer 2027 Hybrid, Maplewood, MN·$28-$38/hr A way into fintech if you start building with code now. Closes Nov 5 Posted today"
+  },
+  {
+   "x": 269,
+   "y": 753,
+   "w": 436,
+   "h": 140,
+   "text": "3 3M ✦ Possible match Fortune 500 Internship Software Engineering Intern, Summer 2027 Hybrid, Maplewood, MN·$28-$38/hr A way into fintech if you start building with code now. Closes Nov 5 Posted today"
+  }
+ ],
+ "writes": []
+}

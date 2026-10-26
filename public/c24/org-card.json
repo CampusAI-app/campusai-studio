@@ -1,0 +1,227 @@
+{
+ "page": {
+  "w": 1440,
+  "h": 900
+ },
+ "dpr": 3,
+ "clip": {
+  "x": 378,
+  "y": 120,
+  "w": 900,
+  "h": 484
+ },
+ "source": "https://campusai-demo.vercel.app/organizations",
+ "captured": "2026-10-25T00:20:21.802Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false,
+  "terp": true
+ },
+ "texts": [
+  {
+   "text": "F",
+   "x": 52,
+   "y": 44,
+   "w": 14,
+   "h": 29
+  },
+  {
+   "text": "Finance Association",
+   "x": 101,
+   "y": 34,
+   "w": 181,
+   "h": 23
+  },
+  {
+   "text": "Pre Professional",
+   "x": 108,
+   "y": 67,
+   "w": 86,
+   "h": 12
+  },
+  {
+   "text": "Business",
+   "x": 214,
+   "y": 67,
+   "w": 47,
+   "h": 12
+  },
+  {
+   "text": "Career",
+   "x": 281,
+   "y": 67,
+   "w": 35,
+   "h": 12
+  },
+  {
+   "text": "Meeting",
+   "x": 31,
+   "y": 102,
+   "w": 48,
+   "h": 15
+  },
+  {
+   "text": "Wednesday · 7:00 PM",
+   "x": 31,
+   "y": 126,
+   "w": 137,
+   "h": 16
+  },
+  {
+   "text": "Van Munching Hall 1330",
+   "x": 31,
+   "y": 148,
+   "w": 137,
+   "h": 15
+  },
+  {
+   "text": "Why this fits you",
+   "x": 31,
+   "y": 182,
+   "w": 98,
+   "h": 15
+  },
+  {
+   "text": "✦",
+   "x": 43,
+   "y": 214,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "text": "Strong match",
+   "x": 56,
+   "y": 213,
+   "w": 82,
+   "h": 15
+  },
+  {
+   "text": "You're a Finance junior starting your summer-analyst recruiting run, this is the club that runs Smith's banking recruiting pipeline.",
+   "x": 43,
+   "y": 231,
+   "w": 567,
+   "h": 31
+  },
+  {
+   "text": "Direct access to technical prep, alumni analysts, and the resume book recruiters actually read.",
+   "x": 43,
+   "y": 247,
+   "w": 554,
+   "h": 31
+  },
+  {
+   "text": "About",
+   "x": 31,
+   "y": 319,
+   "w": 36,
+   "h": 15
+  },
+  {
+   "text": "The Finance Association runs the recruiting pipeline for Smith finance students, weekly technical prep, mock interviews, resume books shared with recruiters, and alumni chats with analysts at bulge-bracket banks and top corporates.",
+   "x": 31,
+   "y": 343,
+   "w": 619,
+   "h": 55
+  },
+  {
+   "text": "Leadership",
+   "x": 673,
+   "y": 32,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "text": "PM",
+   "x": 682,
+   "y": 71,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "text": "Priya Menon",
+   "x": 721,
+   "y": 62,
+   "w": 78,
+   "h": 16
+  },
+  {
+   "text": "President",
+   "x": 721,
+   "y": 82,
+   "w": 50,
+   "h": 13
+  },
+  {
+   "text": "DO",
+   "x": 682,
+   "y": 121,
+   "w": 18,
+   "h": 15
+  },
+  {
+   "text": "Daniel Okafor",
+   "x": 721,
+   "y": 112,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "text": "VP, Recruiting",
+   "x": 721,
+   "y": 132,
+   "w": 73,
+   "h": 13
+  },
+  {
+   "text": "Links",
+   "x": 673,
+   "y": 170,
+   "w": 31,
+   "h": 15
+  },
+  {
+   "text": "@",
+   "x": 693,
+   "y": 194,
+   "w": 12,
+   "h": 16
+  },
+  {
+   "text": "umdfinance",
+   "x": 705,
+   "y": 194,
+   "w": 71,
+   "h": 16
+  },
+  {
+   "text": "TerpEngage",
+   "x": 693,
+   "y": 220,
+   "w": 72,
+   "h": 16
+  },
+  {
+   "text": "Member",
+   "x": 63,
+   "y": 427,
+   "w": 50,
+   "h": 15
+  },
+  {
+   "text": "Save",
+   "x": 165,
+   "y": 427,
+   "w": 29,
+   "h": 15
+  },
+  {
+   "text": "View details",
+   "x": 778,
+   "y": 427,
+   "w": 74,
+   "h": 15
+  }
+ ]
+}

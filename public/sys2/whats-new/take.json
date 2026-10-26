@@ -1,0 +1,193 @@
+{
+ "captured": "2026-10-23T22:51:42.200Z",
+ "base": "https://campusai-demo.vercel.app",
+ "viewport": {
+  "w": 1440,
+  "h": 900,
+  "dpr": 2
+ },
+ "stills": [
+  {
+   "name": "wn-0-card",
+   "pageH": 900,
+   "press": {
+    "x": 1270,
+    "y": 672,
+    "label": "Try it on a posting",
+    "rect": {
+     "x": 1195,
+     "y": 656,
+     "w": 150,
+     "h": 32
+    }
+   },
+   "marks": {
+    "card": {
+     "x": 265,
+     "y": 602,
+     "w": 1126,
+     "h": 110,
+     "text": "✦ New on CampusAI 3d ago Resume Coach can now tailor your resume to one posting Paste a posting and it rewrites your bullets in that posting's language, then sh"
+    },
+    "eyebrow": {
+     "x": 295,
+     "y": 609,
+     "w": 103,
+     "h": 17,
+     "text": "New on CampusAI"
+    },
+    "title": {
+     "x": 280,
+     "y": 652,
+     "w": 557,
+     "h": 18,
+     "text": "Resume Coach can now tailor your resume to one posting"
+    },
+    "sub": {
+     "x": 280,
+     "y": 673,
+     "w": 557,
+     "h": 18,
+     "text": "Paste a posting and it rewrites your bullets in that posting's language, then shows what a recruiter reads first."
+    },
+    "snippet": {
+     "x": 853,
+     "y": 644,
+     "w": 330,
+     "h": 55,
+     "text": "Helped with financial analysis for a student fund ✦ Built the DCF behind the fund's first buy call"
+    },
+    "pressed": {
+     "x": 1195,
+     "y": 656,
+     "w": 150,
+     "h": 32
+    }
+   }
+  },
+  {
+   "name": "wn-1-review",
+   "pageH": 900,
+   "press": null,
+   "marks": {
+    "tailor": {
+     "x": 1205,
+     "y": 584,
+     "w": 178,
+     "h": 37,
+     "text": "Tailor to a specific job →"
+    },
+    "score": {
+     "x": 1328,
+     "y": 313,
+     "w": 44,
+     "h": 18,
+     "text": "74/100"
+    }
+   }
+  },
+  {
+   "name": "wn-1-review-tall",
+   "pageH": 1475,
+   "press": null,
+   "marks": {
+    "tailor": {
+     "x": 1205,
+     "y": 584,
+     "w": 178,
+     "h": 37,
+     "text": "Tailor to a specific job →"
+    }
+   }
+  },
+  {
+   "name": "wn-2-pick",
+   "pageH": 900,
+   "press": null,
+   "marks": {
+    "evercore": {
+     "x": 1028,
+     "y": 601,
+     "w": 380,
+     "h": 100,
+     "text": "Investment Banking Summer Analyst, 2027 Evercore · New York, NY ✦ Strong match"
+    },
+    "saved": {
+     "x": 248,
+     "y": 263,
+     "w": 94,
+     "h": 19,
+     "text": "Jobs you saved"
+    }
+   }
+  },
+  {
+   "name": "wn-2-pick-tall",
+   "pageH": 1025,
+   "press": null,
+   "marks": {
+    "evercore": {
+     "x": 1028,
+     "y": 601,
+     "w": 380,
+     "h": 100,
+     "text": "Investment Banking Summer Analyst, 2027 Evercore · New York, NY ✦ Strong match"
+    }
+   }
+  },
+  {
+   "name": "wn-3-result",
+   "pageH": 900,
+   "press": null,
+   "marks": {
+    "head": null,
+    "asks": {
+     "x": 273,
+     "y": 271,
+     "w": 1110,
+     "h": 503,
+     "text": "What this posting asks for 4 requirements, none of them unusual for this kind of role. Your resume proves 2 and has nothing for 1. This posting asks for What to"
+    },
+    "covered": {
+     "x": 820,
+     "y": 570,
+     "w": 563,
+     "h": 18,
+     "text": "Already covered"
+    }
+   }
+  },
+  {
+   "name": "wn-3-result-tall",
+   "pageH": 1454,
+   "press": null,
+   "marks": {
+    "covered": {
+     "x": 820,
+     "y": 570,
+     "w": 563,
+     "h": 18,
+     "text": "Already covered"
+    }
+   }
+  },
+  {
+   "name": "wn-4-result-low",
+   "pageH": 900,
+   "press": null,
+   "marks": {
+    "asks": {
+     "x": 273,
+     "y": 3,
+     "w": 1110,
+     "h": 441,
+     "text": "This posting asks for What to do about it Run comparable-company and precedent-transaction analyses Name the closest thing you have to comparable-company and pr"
+    }
+   }
+  }
+ ],
+ "writes": [
+  "POST https://campusai-demo.vercel.app/api/pulse/signal",
+  "POST https://campusai-demo.vercel.app/api/v1/career/resume/tailor"
+ ]
+}

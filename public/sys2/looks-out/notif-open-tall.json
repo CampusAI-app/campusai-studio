@@ -1,0 +1,2896 @@
+{
+ "pageW": 1440,
+ "pageH": 3137,
+ "dpr": 2,
+ "coords": "viewport",
+ "scrollY": 0,
+ "source": "https://campusai-demo.vercel.app/notifications",
+ "captured": "2026-10-23T22:52:12.103Z",
+ "checks": {
+  "sandy": false,
+  "emdash": false,
+  "testudo": false,
+  "chatgpt": false
+ },
+ "press": null,
+ "marks": {
+  "roles": {
+   "title": {
+    "x": 324,
+    "y": 439,
+    "w": 625,
+    "h": 21
+   },
+   "row": {
+    "x": 265,
+    "y": 439,
+    "w": 1126,
+    "h": 103
+   },
+   "icon": {
+    "x": 298,
+    "y": 441,
+    "w": 16,
+    "h": 16
+   }
+  },
+  "events": {
+   "title": {
+    "x": 324,
+    "y": 902,
+    "w": 625,
+    "h": 21
+   },
+   "row": {
+    "x": 265,
+    "y": 902,
+    "w": 1126,
+    "h": 143
+   },
+   "icon": {
+    "x": 298,
+    "y": 904,
+    "w": 16,
+    "h": 16
+   }
+  },
+  "clubs": {
+   "title": {
+    "x": 324,
+    "y": 1074,
+    "w": 625,
+    "h": 21
+   },
+   "row": {
+    "x": 265,
+    "y": 1074,
+    "w": 1126,
+    "h": 143
+   },
+   "icon": {
+    "x": 298,
+    "y": 1076,
+    "w": 16,
+    "h": 16
+   }
+  },
+  "plan": {
+   "title": {
+    "x": 324,
+    "y": 333,
+    "w": 625,
+    "h": 21
+   },
+   "row": {
+    "x": 265,
+    "y": 333,
+    "w": 1126,
+    "h": 77
+   },
+   "icon": {
+    "x": 298,
+    "y": 335,
+    "w": 16,
+    "h": 16
+   }
+  },
+  "cards": {
+   "Investment Banking Summer Analyst": {
+    "x": 311,
+    "y": 554,
+    "w": 349,
+    "h": 136
+   },
+   "Corporate Finance Summer Analyst": {
+    "x": 676,
+    "y": 554,
+    "w": 349,
+    "h": 136
+   },
+   "Equity Research Summer Analyst": {
+    "x": 1042,
+    "y": 554,
+    "w": 349,
+    "h": 136
+   },
+   "Private Equity Analyst": {
+    "x": 311,
+    "y": 706,
+    "w": 349,
+    "h": 136
+   },
+   "Smith Finance Peer Mentor": {
+    "x": 676,
+    "y": 706,
+    "w": 349,
+    "h": 136
+   },
+   "Student Brand Ambassador": {
+    "x": 1042,
+    "y": 706,
+    "w": 349,
+    "h": 136
+   }
+  },
+  "viewAll": {
+   "x": 311,
+   "y": 854,
+   "w": 155,
+   "h": 19,
+   "text": "View all 6 in Job Match"
+  },
+  "moved": {
+   "x": 324,
+   "y": 249,
+   "w": 625,
+   "h": 20,
+   "text": "Canvas changed the due date. Your calendar already shows the new one."
+  }
+ },
+ "layers": [
+  {
+   "kind": "heading",
+   "x": 248,
+   "y": 32,
+   "w": 1160,
+   "h": 29,
+   "text": "Notifications"
+  },
+  {
+   "kind": "heading",
+   "x": 265,
+   "y": 2553,
+   "w": 366,
+   "h": 20,
+   "text": "What you get notified about"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 18,
+   "w": 171,
+   "h": 20,
+   "text": "University of Maryland — home"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 14,
+   "w": 28,
+   "h": 28,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 142,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Career Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 180,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "button",
+   "x": 179,
+   "y": 180,
+   "w": 24,
+   "h": 36,
+   "text": "Expand Academic Advisor"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 218,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 249,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "button",
+   "x": 42,
+   "y": 280,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 218,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 256,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 294,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "button",
+   "x": 8,
+   "y": 345,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "button",
+   "x": 19,
+   "y": 3091,
+   "w": 124,
+   "h": 34,
+   "text": "MC Maya Chen 80% · Connect your transcript"
+  },
+  {
+   "kind": "button",
+   "x": 147,
+   "y": 3094,
+   "w": 28,
+   "h": 28,
+   "text": "Switch to light mode"
+  },
+  {
+   "kind": "button",
+   "x": 175,
+   "y": 3094,
+   "w": 28,
+   "h": 28,
+   "text": "Account menu"
+  },
+  {
+   "kind": "button",
+   "x": 203,
+   "y": 16,
+   "w": 24,
+   "h": 24,
+   "text": "Collapse sidebar"
+  },
+  {
+   "kind": "button",
+   "x": 251,
+   "y": 118,
+   "w": 57,
+   "h": 31,
+   "text": "All 5"
+  },
+  {
+   "kind": "button",
+   "x": 310,
+   "y": 118,
+   "w": 86,
+   "h": 31,
+   "text": "For you 4"
+  },
+  {
+   "kind": "button",
+   "x": 398,
+   "y": 118,
+   "w": 110,
+   "h": 31,
+   "text": "What's new 1"
+  },
+  {
+   "kind": "button",
+   "x": 1265,
+   "y": 124,
+   "w": 53,
+   "h": 18,
+   "text": "Select all"
+  },
+  {
+   "kind": "button",
+   "x": 1333,
+   "y": 124,
+   "w": 75,
+   "h": 18,
+   "text": "Mark all read"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 284,
+   "w": 86,
+   "h": 17,
+   "text": "Mark as read"
+  },
+  {
+   "kind": "button",
+   "x": 1239,
+   "y": 204,
+   "w": 152,
+   "h": 32,
+   "text": "Open My Calendar"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 390,
+   "w": 86,
+   "h": 17,
+   "text": "Mark as read"
+  },
+  {
+   "kind": "button",
+   "x": 1120,
+   "y": 358,
+   "w": 106,
+   "h": 32,
+   "text": "Completed"
+  },
+  {
+   "kind": "button",
+   "x": 1232,
+   "y": 358,
+   "w": 159,
+   "h": 32,
+   "text": "Answer in your plan"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 521,
+   "w": 99,
+   "h": 17,
+   "text": "Mark as unread"
+  },
+  {
+   "kind": "button",
+   "x": 435,
+   "y": 516,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 465,
+   "y": 516,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 1338,
+   "y": 464,
+   "w": 53,
+   "h": 32,
+   "text": "Hide"
+  },
+  {
+   "kind": "button",
+   "x": 311,
+   "y": 854,
+   "w": 155,
+   "h": 19,
+   "text": "View all 6 in Job Match"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 977,
+   "w": 625,
+   "h": 32,
+   "text": "Sat 24 Sat 24 Mon 26 Deloitte coffee chat and 2 more"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 1024,
+   "w": 86,
+   "h": 17,
+   "text": "Mark as read"
+  },
+  {
+   "kind": "button",
+   "x": 422,
+   "y": 1019,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 452,
+   "y": 1019,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 1283,
+   "y": 927,
+   "w": 108,
+   "h": 32,
+   "text": "View 3 events"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 1149,
+   "w": 625,
+   "h": 32,
+   "text": "Smith Investment Fund Finance Association"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 1196,
+   "w": 86,
+   "h": 17,
+   "text": "Mark as read"
+  },
+  {
+   "kind": "button",
+   "x": 422,
+   "y": 1191,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 452,
+   "y": 1191,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 1290,
+   "y": 1099,
+   "w": 101,
+   "h": 32,
+   "text": "View 2 clubs"
+  },
+  {
+   "kind": "button",
+   "x": 313,
+   "y": 1418,
+   "w": 86,
+   "h": 17,
+   "text": "Mark as read"
+  },
+  {
+   "kind": "button",
+   "x": 411,
+   "y": 1414,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 441,
+   "y": 1414,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 1227,
+   "y": 1287,
+   "w": 149,
+   "h": 32,
+   "text": "Try it on a posting"
+  },
+  {
+   "kind": "button",
+   "x": 313,
+   "y": 1674,
+   "w": 99,
+   "h": 17,
+   "text": "Mark as unread"
+  },
+  {
+   "kind": "button",
+   "x": 424,
+   "y": 1669,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 454,
+   "y": 1669,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 1237,
+   "y": 1522,
+   "w": 139,
+   "h": 32,
+   "text": "Open Job Match"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 1812,
+   "w": 625,
+   "h": 32,
+   "text": "JPMorgan Chase Jefferies T. Rowe Price +1 more"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 1858,
+   "w": 99,
+   "h": 17,
+   "text": "Mark as unread"
+  },
+  {
+   "kind": "button",
+   "x": 435,
+   "y": 1854,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 465,
+   "y": 1854,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 1293,
+   "y": 1761,
+   "w": 98,
+   "h": 32,
+   "text": "View 4 roles"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 1964,
+   "w": 625,
+   "h": 32,
+   "text": "Wed 27 Thu 28 Evercore info session and 1 more"
+  },
+  {
+   "kind": "button",
+   "x": 324,
+   "y": 2010,
+   "w": 99,
+   "h": 17,
+   "text": "Mark as unread"
+  },
+  {
+   "kind": "button",
+   "x": 435,
+   "y": 2006,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 465,
+   "y": 2006,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 1283,
+   "y": 1934,
+   "w": 108,
+   "h": 32,
+   "text": "View 2 events"
+  },
+  {
+   "kind": "button",
+   "x": 313,
+   "y": 2253,
+   "w": 99,
+   "h": 17,
+   "text": "Mark as unread"
+  },
+  {
+   "kind": "button",
+   "x": 424,
+   "y": 2248,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 454,
+   "y": 2248,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 1231,
+   "y": 2101,
+   "w": 145,
+   "h": 32,
+   "text": "Open the planner"
+  },
+  {
+   "kind": "button",
+   "x": 313,
+   "y": 2467,
+   "w": 99,
+   "h": 17,
+   "text": "Mark as unread"
+  },
+  {
+   "kind": "button",
+   "x": 424,
+   "y": 2462,
+   "w": 26,
+   "h": 26,
+   "text": "Yes, this was worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 454,
+   "y": 2462,
+   "w": 26,
+   "h": 26,
+   "text": "No, this wasn't worth sending"
+  },
+  {
+   "kind": "button",
+   "x": 1249,
+   "y": 2357,
+   "w": 127,
+   "h": 32,
+   "text": "Open Settings"
+  },
+  {
+   "kind": "button",
+   "x": 1249,
+   "y": 2555,
+   "w": 142,
+   "h": 18,
+   "text": "Delivery and all settings"
+  },
+  {
+   "kind": "button",
+   "x": 1353,
+   "y": 2620,
+   "w": 38,
+   "h": 22,
+   "text": "New matches"
+  },
+  {
+   "kind": "button",
+   "x": 1353,
+   "y": 2719,
+   "w": 38,
+   "h": 22,
+   "text": "Due date changes"
+  },
+  {
+   "kind": "button",
+   "x": 1353,
+   "y": 2817,
+   "w": 38,
+   "h": 22,
+   "text": "Product updates"
+  },
+  {
+   "kind": "button",
+   "x": 992,
+   "y": 3053,
+   "w": 36,
+   "h": 36,
+   "text": "Dictate a message"
+  },
+  {
+   "kind": "button",
+   "x": 1038,
+   "y": 3053,
+   "w": 36,
+   "h": 36,
+   "text": "Conversation history"
+  },
+  {
+   "kind": "button",
+   "x": 1084,
+   "y": 3053,
+   "w": 75,
+   "h": 36,
+   "text": "Chat"
+  },
+  {
+   "kind": "button",
+   "x": 1181,
+   "y": 16,
+   "w": 36,
+   "h": 36,
+   "text": "Demo data is full. Switch to a student who just finished onboarding."
+  },
+  {
+   "kind": "button",
+   "x": 1225,
+   "y": 17,
+   "w": 83,
+   "h": 34,
+   "text": "5 new"
+  },
+  {
+   "kind": "button",
+   "x": 1317,
+   "y": 16,
+   "w": 107,
+   "h": 36,
+   "text": "Feedback"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 66,
+   "w": 199,
+   "h": 36,
+   "text": "Dashboard ⌘1 Home"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 104,
+   "w": 199,
+   "h": 36,
+   "text": "My Calendar Calendar"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 142,
+   "w": 199,
+   "h": 36,
+   "text": "✦Career Advisor Career"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 180,
+   "w": 165,
+   "h": 30,
+   "text": "Resume Review"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 211,
+   "w": 165,
+   "h": 30,
+   "text": "Job Match"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 242,
+   "w": 165,
+   "h": 30,
+   "text": "Interview Prep"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 273,
+   "w": 165,
+   "h": 30,
+   "text": "Company Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 180,
+   "w": 199,
+   "h": 36,
+   "text": "✦Academic Advisor Academics"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 218,
+   "w": 165,
+   "h": 30,
+   "text": "Planner & Progress"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 249,
+   "w": 165,
+   "h": 30,
+   "text": "Class Tracker"
+  },
+  {
+   "kind": "nav",
+   "x": 42,
+   "y": 280,
+   "w": 165,
+   "h": 30,
+   "text": "Courses and Professors"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 218,
+   "w": 199,
+   "h": 36,
+   "text": "Organizations Orgs"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 256,
+   "w": 199,
+   "h": 36,
+   "text": "Events ⌘4 Events"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 294,
+   "w": 199,
+   "h": 36,
+   "text": "Dining ⌘6 Dining"
+  },
+  {
+   "kind": "nav",
+   "x": 8,
+   "y": 345,
+   "w": 199,
+   "h": 36,
+   "text": "CampusAI CampusAI"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 164,
+   "w": 1160,
+   "h": 2353,
+   "text": "Unread BMGT380 assignment moved from Wed, Oct 14→ to Sun, Oct 18 Reading Response 6: Remedies Canvas changed the due date. Your calendar alr"
+  },
+  {
+   "kind": "card",
+   "x": 311,
+   "y": 554,
+   "w": 349,
+   "h": 136,
+   "text": "Evercore Investment Banking Summer Analyst ✦ Strong match Your BMGT343 valuation work maps straight onto this desk."
+  },
+  {
+   "kind": "card",
+   "x": 676,
+   "y": 554,
+   "w": 349,
+   "h": 136,
+   "text": "Marriott International Corporate Finance Summer Analyst ✦ Strong match FP&A, the role type you ranked first."
+  },
+  {
+   "kind": "card",
+   "x": 1042,
+   "y": 554,
+   "w": 349,
+   "h": 136,
+   "text": "T. Rowe Price Equity Research Summer Analyst ✦ Good match Baltimore, and it takes juniors without prior IB."
+  },
+  {
+   "kind": "card",
+   "x": 311,
+   "y": 706,
+   "w": 349,
+   "h": 136,
+   "text": "Carlyle Group Private Equity Analyst ✦ Worth exploring A reach, but your Investment Fund pitch is the story it wants."
+  },
+  {
+   "kind": "card",
+   "x": 676,
+   "y": 706,
+   "w": 349,
+   "h": 136,
+   "text": "Robert H. Smith School Smith Finance Peer Mentor ✦ Strong match On campus, paid, and it fits around Mon/Wed afternoons."
+  },
+  {
+   "kind": "card",
+   "x": 1042,
+   "y": 706,
+   "w": 349,
+   "h": 136,
+   "text": "Bloomberg Student Brand Ambassador ✦ Good match Remote, few hours, and it puts a finance name on your resume."
+  },
+  {
+   "kind": "card",
+   "x": 298,
+   "y": 1245,
+   "w": 1093,
+   "h": 207,
+   "text": "✦ New on CampusAI 3d ago Resume Coach can now tailor your resume to one posting Paste a posting and it rewrites your bullets in that posting"
+  },
+  {
+   "kind": "card",
+   "x": 298,
+   "y": 1481,
+   "w": 1093,
+   "h": 227,
+   "text": "✦ New on CampusAI 1w ago Job Match filters by when you want to start Summer 2027, this fall, or right now. Employment type moved onto your N"
+  },
+  {
+   "kind": "card",
+   "x": 298,
+   "y": 2060,
+   "w": 1093,
+   "h": 227,
+   "text": "✦ New on CampusAI 2w ago The 4-year planner checks your degree requirements as you build Drag a course into a term and it tells you which re"
+  },
+  {
+   "kind": "card",
+   "x": 298,
+   "y": 2315,
+   "w": 1093,
+   "h": 186,
+   "text": "✦ New on CampusAI 3w ago A first-run walkthrough now introduces each area Six stops covering the dashboard, Job Match, the planner and Event"
+  },
+  {
+   "kind": "card",
+   "x": 248,
+   "y": 2540,
+   "w": 1160,
+   "h": 361,
+   "text": "What you get notified about Turning one off stops it here and everywhere else it reaches you. Delivery and all settings New matches New role"
+  },
+  {
+   "kind": "text",
+   "text": "Skip to main content",
+   "x": -1,
+   "y": 2,
+   "w": 149,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Dashboard",
+   "x": 52,
+   "y": 76,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "My Calendar",
+   "x": 52,
+   "y": 114,
+   "w": 78,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 154,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Career Advisor",
+   "x": 64,
+   "y": 152,
+   "w": 92,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Resume Review",
+   "x": 52,
+   "y": 187,
+   "w": 94,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Job Match",
+   "x": 52,
+   "y": 218,
+   "w": 63,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Interview Prep",
+   "x": 52,
+   "y": 249,
+   "w": 86,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Company Tracker",
+   "x": 52,
+   "y": 280,
+   "w": 105,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 52,
+   "y": 192,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Academic Advisor",
+   "x": 64,
+   "y": 190,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Planner & Progress",
+   "x": 52,
+   "y": 225,
+   "w": 115,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Class Tracker",
+   "x": 52,
+   "y": 256,
+   "w": 81,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Courses and Professors",
+   "x": 52,
+   "y": 287,
+   "w": 143,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Organizations",
+   "x": 52,
+   "y": 228,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Events",
+   "x": 52,
+   "y": 266,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Dining",
+   "x": 52,
+   "y": 304,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI",
+   "x": 52,
+   "y": 355,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Accessibility",
+   "x": 28,
+   "y": 3071,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "kind": "text",
+   "text": "MC",
+   "x": 28,
+   "y": 3102,
+   "w": 17,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Maya Chen",
+   "x": 63,
+   "y": 3093,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80",
+   "x": 63,
+   "y": 3111,
+   "w": 14,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "%",
+   "x": 77,
+   "y": 3111,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "·",
+   "x": 87,
+   "y": 3111,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Connect your transcript",
+   "x": 96,
+   "y": 3111,
+   "w": 115,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Notifications",
+   "x": 248,
+   "y": 30,
+   "w": 157,
+   "h": 31
+  },
+  {
+   "kind": "text",
+   "text": "New matches, due date changes, and what's new on CampusAI.",
+   "x": 248,
+   "y": 66,
+   "w": 374,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "All",
+   "x": 265,
+   "y": 125,
+   "w": 16,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "5",
+   "x": 287,
+   "y": 126,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "For you",
+   "x": 324,
+   "y": 125,
+   "w": 45,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "4",
+   "x": 375,
+   "y": 126,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "What's new",
+   "x": 412,
+   "y": 125,
+   "w": 70,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "1",
+   "x": 488,
+   "y": 126,
+   "w": 6,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Select all",
+   "x": 1265,
+   "y": 125,
+   "w": 53,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mark all read",
+   "x": 1333,
+   "y": 125,
+   "w": 75,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Unread",
+   "x": 264,
+   "y": 181,
+   "w": 53,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "BMGT380",
+   "x": 324,
+   "y": 180,
+   "w": 78,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "assignment moved",
+   "x": 402,
+   "y": 180,
+   "w": 147,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "from",
+   "x": 323,
+   "y": 203,
+   "w": 30,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Wed, Oct 14",
+   "x": 324,
+   "y": 204,
+   "w": 79,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "→",
+   "x": 409,
+   "y": 204,
+   "w": 13,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "to",
+   "x": 427,
+   "y": 203,
+   "w": 13,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Sun, Oct 18",
+   "x": 428,
+   "y": 204,
+   "w": 78,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "Reading Response 6: Remedies",
+   "x": 324,
+   "y": 228,
+   "w": 188,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Canvas changed the due date. Your calendar already shows the new one.",
+   "x": 324,
+   "y": 251,
+   "w": 427,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mark as read",
+   "x": 341,
+   "y": 285,
+   "w": 69,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "35m ago",
+   "x": 1343,
+   "y": 181,
+   "w": 48,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Open My Calendar",
+   "x": 1252,
+   "y": 212,
+   "w": 109,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Unread",
+   "x": 264,
+   "y": 335,
+   "w": 53,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Did you finish ANTH 101 at Montgomery College?",
+   "x": 324,
+   "y": 334,
+   "w": 371,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Summer 2026 is over. Tell your plan so it counts the class the right way.",
+   "x": 324,
+   "y": 357,
+   "w": 418,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mark as read",
+   "x": 341,
+   "y": 391,
+   "w": 69,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "2h ago",
+   "x": 1354,
+   "y": 335,
+   "w": 37,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Completed",
+   "x": 1150,
+   "y": 366,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Answer in your plan",
+   "x": 1245,
+   "y": 366,
+   "w": 116,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Read",
+   "x": 264,
+   "y": 441,
+   "w": 37,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "6 new roles match you this week",
+   "x": 324,
+   "y": 440,
+   "w": 241,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Mostly finance roles across DC, Baltimore and New York, plus two on campus. All six are summer 2027, the window you want.",
+   "x": 324,
+   "y": 468,
+   "w": 624,
+   "h": 35
+  },
+  {
+   "kind": "text",
+   "text": "Three strong matches, two good and one a stretch.",
+   "x": 432,
+   "y": 488,
+   "w": 300,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mark as unread",
+   "x": 341,
+   "y": 522,
+   "w": 82,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "2h ago",
+   "x": 1354,
+   "y": 441,
+   "w": 37,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Hide",
+   "x": 1351,
+   "y": 472,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Evercore",
+   "x": 329,
+   "y": 570,
+   "w": 49,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Investment Banking Summer Analyst",
+   "x": 329,
+   "y": 585,
+   "w": 251,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 337,
+   "y": 615,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Strong match",
+   "x": 349,
+   "y": 615,
+   "w": 74,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Your BMGT343 valuation work maps straight onto this desk.",
+   "x": 329,
+   "y": 640,
+   "w": 301,
+   "h": 34
+  },
+  {
+   "kind": "text",
+   "text": "Marriott International",
+   "x": 694,
+   "y": 570,
+   "w": 118,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Corporate Finance Summer Analyst",
+   "x": 694,
+   "y": 585,
+   "w": 242,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 702,
+   "y": 615,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Strong match",
+   "x": 714,
+   "y": 615,
+   "w": 74,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "FP&A, the role type you ranked first.",
+   "x": 694,
+   "y": 640,
+   "w": 218,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "T. Rowe Price",
+   "x": 1060,
+   "y": 570,
+   "w": 75,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Equity Research Summer Analyst",
+   "x": 1060,
+   "y": 585,
+   "w": 226,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 1068,
+   "y": 615,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Good match",
+   "x": 1080,
+   "y": 615,
+   "w": 66,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Baltimore, and it takes juniors without prior IB.",
+   "x": 1060,
+   "y": 640,
+   "w": 279,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Carlyle Group",
+   "x": 329,
+   "y": 722,
+   "w": 76,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Private Equity Analyst",
+   "x": 329,
+   "y": 736,
+   "w": 149,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 337,
+   "y": 767,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Worth exploring",
+   "x": 349,
+   "y": 767,
+   "w": 87,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "A reach, but your Investment Fund pitch is the story it wants.",
+   "x": 329,
+   "y": 792,
+   "w": 313,
+   "h": 34
+  },
+  {
+   "kind": "text",
+   "text": "Robert H. Smith School",
+   "x": 694,
+   "y": 722,
+   "w": 130,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Smith Finance Peer Mentor",
+   "x": 694,
+   "y": 736,
+   "w": 184,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 702,
+   "y": 767,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Strong match",
+   "x": 714,
+   "y": 767,
+   "w": 74,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "On campus, paid, and it fits around Mon/Wed afternoons.",
+   "x": 694,
+   "y": 792,
+   "w": 273,
+   "h": 34
+  },
+  {
+   "kind": "text",
+   "text": "Bloomberg",
+   "x": 1060,
+   "y": 722,
+   "w": 61,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Student Brand Ambassador",
+   "x": 1060,
+   "y": 736,
+   "w": 188,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 1068,
+   "y": 767,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "Good match",
+   "x": 1080,
+   "y": 767,
+   "w": 66,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Remote, few hours, and it puts a finance name on your resume.",
+   "x": 1060,
+   "y": 792,
+   "w": 299,
+   "h": 34
+  },
+  {
+   "kind": "text",
+   "text": "View all 6 in Job Match",
+   "x": 311,
+   "y": 855,
+   "w": 140,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Unread",
+   "x": 264,
+   "y": 904,
+   "w": 53,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "3 events this week match what you're after",
+   "x": 324,
+   "y": 903,
+   "w": 326,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "A Deloitte coffee chat, an Evercore coffee chat and the Smith Finance Group pitch night. Two put you in a room with finance recruiters.",
+   "x": 324,
+   "y": 930,
+   "w": 615,
+   "h": 35
+  },
+  {
+   "kind": "text",
+   "text": "Sat",
+   "x": 334,
+   "y": 982,
+   "w": 12,
+   "h": 8
+  },
+  {
+   "kind": "text",
+   "text": "24",
+   "x": 332,
+   "y": 989,
+   "w": 16,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Sat",
+   "x": 372,
+   "y": 982,
+   "w": 12,
+   "h": 8
+  },
+  {
+   "kind": "text",
+   "text": "24",
+   "x": 370,
+   "y": 989,
+   "w": 16,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mon",
+   "x": 408,
+   "y": 982,
+   "w": 16,
+   "h": 8
+  },
+  {
+   "kind": "text",
+   "text": "26",
+   "x": 408,
+   "y": 989,
+   "w": 16,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Deloitte coffee chat and 2 more",
+   "x": 442,
+   "y": 985,
+   "w": 182,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mark as read",
+   "x": 341,
+   "y": 1025,
+   "w": 69,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "5h ago",
+   "x": 1354,
+   "y": 904,
+   "w": 37,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "View 3 events",
+   "x": 1296,
+   "y": 935,
+   "w": 82,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Unread",
+   "x": 264,
+   "y": 1076,
+   "w": 53,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "2 clubs match what you're after",
+   "x": 324,
+   "y": 1075,
+   "w": 240,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Both are Smith finance clubs that meet weekly in Van Munching, one research-heavy and one built around recruiting.",
+   "x": 324,
+   "y": 1103,
+   "w": 619,
+   "h": 35
+  },
+  {
+   "kind": "text",
+   "text": "One strong match and one good.",
+   "x": 387,
+   "y": 1123,
+   "w": 193,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Smith Investment Fund",
+   "x": 335,
+   "y": 1157,
+   "w": 133,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Finance Association",
+   "x": 496,
+   "y": 1157,
+   "w": 115,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mark as read",
+   "x": 341,
+   "y": 1197,
+   "w": 69,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Yesterday",
+   "x": 1337,
+   "y": 1076,
+   "w": 54,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "View 2 clubs",
+   "x": 1303,
+   "y": 1107,
+   "w": 75,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 313,
+   "y": 1254,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "New on CampusAI",
+   "x": 328,
+   "y": 1253,
+   "w": 99,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "3d ago",
+   "x": 1340,
+   "y": 1253,
+   "w": 36,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Resume Coach can now tailor your resume to one posting",
+   "x": 313,
+   "y": 1288,
+   "w": 434,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Paste a posting and it rewrites your bullets in that posting's language, then shows what a recruiter reads first.",
+   "x": 313,
+   "y": 1316,
+   "w": 639,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Paste any job posting",
+   "x": 325,
+   "y": 1343,
+   "w": 125,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Get your bullets rewritten in its language",
+   "x": 325,
+   "y": 1364,
+   "w": 237,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "See what a recruiter reads first",
+   "x": 325,
+   "y": 1385,
+   "w": 180,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mark as read",
+   "x": 330,
+   "y": 1419,
+   "w": 69,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Try it on a posting",
+   "x": 1240,
+   "y": 1295,
+   "w": 106,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 313,
+   "y": 1489,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "New on CampusAI",
+   "x": 328,
+   "y": 1489,
+   "w": 99,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "1w ago",
+   "x": 1340,
+   "y": 1489,
+   "w": 36,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Job Match filters by when you want to start",
+   "x": 313,
+   "y": 1523,
+   "w": 320,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Summer 2027, this fall, or right now. Employment type moved onto your North Star, so the feed follows your goal instead of a filter you had to remember to set.",
+   "x": 313,
+   "y": 1551,
+   "w": 758,
+   "h": 35
+  },
+  {
+   "kind": "text",
+   "text": "Pick summer 2027, this fall, or right now",
+   "x": 325,
+   "y": 1599,
+   "w": 234,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "It sits on your North Star, so it is set once",
+   "x": 325,
+   "y": 1620,
+   "w": 241,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "The feed follows it without a filter to remember",
+   "x": 325,
+   "y": 1641,
+   "w": 274,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mark as unread",
+   "x": 330,
+   "y": 1675,
+   "w": 82,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Open Job Match",
+   "x": 1250,
+   "y": 1530,
+   "w": 96,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Read",
+   "x": 264,
+   "y": 1738,
+   "w": 37,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "4 new roles matched you last week",
+   "x": 324,
+   "y": 1737,
+   "w": 259,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Two New York banks, Fannie Mae in DC and T. Rowe Price in Baltimore. All four are summer 2027.",
+   "x": 324,
+   "y": 1765,
+   "w": 568,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "One strong match, two good and one a stretch.",
+   "x": 324,
+   "y": 1765,
+   "w": 595,
+   "h": 35
+  },
+  {
+   "kind": "text",
+   "text": "JPMorgan Chase",
+   "x": 335,
+   "y": 1820,
+   "w": 98,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Jefferies",
+   "x": 461,
+   "y": 1820,
+   "w": 51,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "T. Rowe Price",
+   "x": 540,
+   "y": 1820,
+   "w": 78,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "+",
+   "x": 645,
+   "y": 1820,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "1",
+   "x": 653,
+   "y": 1820,
+   "w": 6,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "more",
+   "x": 659,
+   "y": 1820,
+   "w": 33,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mark as unread",
+   "x": 341,
+   "y": 1859,
+   "w": 82,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "1w ago",
+   "x": 1353,
+   "y": 1738,
+   "w": 38,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "View 4 roles",
+   "x": 1306,
+   "y": 1769,
+   "w": 72,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Read",
+   "x": 264,
+   "y": 1911,
+   "w": 37,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "2 events matched you last week",
+   "x": 324,
+   "y": 1910,
+   "w": 237,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "An Evercore info session and an OCS mock interview night, both in Van Munching.",
+   "x": 324,
+   "y": 1937,
+   "w": 479,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Wed",
+   "x": 332,
+   "y": 1969,
+   "w": 16,
+   "h": 8
+  },
+  {
+   "kind": "text",
+   "text": "27",
+   "x": 333,
+   "y": 1976,
+   "w": 15,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Thu",
+   "x": 371,
+   "y": 1969,
+   "w": 14,
+   "h": 8
+  },
+  {
+   "kind": "text",
+   "text": "28",
+   "x": 370,
+   "y": 1976,
+   "w": 16,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Evercore info session and 1 more",
+   "x": 404,
+   "y": 1972,
+   "w": 190,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mark as unread",
+   "x": 341,
+   "y": 2011,
+   "w": 82,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "1w ago",
+   "x": 1353,
+   "y": 1911,
+   "w": 38,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "View 2 events",
+   "x": 1296,
+   "y": 1942,
+   "w": 82,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 313,
+   "y": 2068,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "New on CampusAI",
+   "x": 328,
+   "y": 2068,
+   "w": 99,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "2w ago",
+   "x": 1338,
+   "y": 2068,
+   "w": 38,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "The 4-year planner checks your degree requirements as you build",
+   "x": 313,
+   "y": 2102,
+   "w": 487,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Drag a course into a term and it tells you which requirement it fills, what it leaves open, and whether the prerequisite chain still works.",
+   "x": 313,
+   "y": 2130,
+   "w": 738,
+   "h": 35
+  },
+  {
+   "kind": "text",
+   "text": "Drag a course into any term",
+   "x": 325,
+   "y": 2178,
+   "w": 162,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "See which requirement it fills",
+   "x": 325,
+   "y": 2199,
+   "w": 169,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Get warned when a prerequisite breaks",
+   "x": 325,
+   "y": 2220,
+   "w": 229,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mark as unread",
+   "x": 330,
+   "y": 2254,
+   "w": 82,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Open the planner",
+   "x": 1244,
+   "y": 2109,
+   "w": 102,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦",
+   "x": 313,
+   "y": 2324,
+   "w": 9,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "New on CampusAI",
+   "x": 328,
+   "y": 2323,
+   "w": 99,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "3w ago",
+   "x": 1338,
+   "y": 2323,
+   "w": 38,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "A first-run walkthrough now introduces each area",
+   "x": 313,
+   "y": 2358,
+   "w": 367,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "text": "Six stops covering the dashboard, Job Match, the planner and Events. You can restart it any time from Settings.",
+   "x": 313,
+   "y": 2385,
+   "w": 652,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Six short stops across the product",
+   "x": 325,
+   "y": 2413,
+   "w": 201,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Restart it any time from Settings",
+   "x": 325,
+   "y": 2434,
+   "w": 189,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Mark as unread",
+   "x": 330,
+   "y": 2468,
+   "w": 82,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Open Settings",
+   "x": 1262,
+   "y": 2365,
+   "w": 84,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "What you get notified about",
+   "x": 265,
+   "y": 2555,
+   "w": 182,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Turning one off stops it here and everywhere else it reaches you.",
+   "x": 265,
+   "y": 2576,
+   "w": 366,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Delivery and all settings",
+   "x": 1249,
+   "y": 2556,
+   "w": 142,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "New matches",
+   "x": 265,
+   "y": 2621,
+   "w": 86,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "New roles, events and clubs that match you. Batched weekly, never one at a time.",
+   "x": 265,
+   "y": 2646,
+   "w": 476,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Looks like: “",
+   "x": 265,
+   "y": 2672,
+   "w": 68,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "6 new roles match you this week",
+   "x": 333,
+   "y": 2672,
+   "w": 184,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "”",
+   "x": 517,
+   "y": 2672,
+   "w": 6,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "On",
+   "x": 1325,
+   "y": 2625,
+   "w": 16,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Due date changes",
+   "x": 265,
+   "y": 2720,
+   "w": 114,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "When a class moves an assignment's due date in Canvas. Your calendar updates on its own; this just tells you.",
+   "x": 265,
+   "y": 2744,
+   "w": 643,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Looks like: “",
+   "x": 265,
+   "y": 2771,
+   "w": 68,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "BMGT380 assignment moved · Reading Response 6: Remedies",
+   "x": 333,
+   "y": 2771,
+   "w": 356,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "”",
+   "x": 689,
+   "y": 2771,
+   "w": 6,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "On",
+   "x": 1325,
+   "y": 2723,
+   "w": 16,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Product updates",
+   "x": 265,
+   "y": 2818,
+   "w": 105,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Occasional news about new CampusAI features.",
+   "x": 265,
+   "y": 2843,
+   "w": 281,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Looks like: “",
+   "x": 265,
+   "y": 2869,
+   "w": 68,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Resume Coach can now tailor your resume to one posting",
+   "x": 333,
+   "y": 2869,
+   "w": 326,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "”",
+   "x": 659,
+   "y": 2869,
+   "w": 6,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "On",
+   "x": 1325,
+   "y": 2821,
+   "w": 16,
+   "h": 13
+  },
+  {
+   "kind": "text",
+   "text": "Chat",
+   "x": 1115,
+   "y": 3062,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "CampusAI can make mistakes. Verify important information.",
+   "x": 684,
+   "y": 3107,
+   "w": 288,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "5",
+   "x": 1260,
+   "y": 26,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "new",
+   "x": 1268,
+   "y": 26,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "Feedback",
+   "x": 1352,
+   "y": 26,
+   "w": 57,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "✦Career Advisor",
+   "x": 52,
+   "y": 152,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "✦Academic Advisor",
+   "x": 52,
+   "y": 190,
+   "w": 129,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "80% · Connect your transcript",
+   "x": 63,
+   "y": 3110,
+   "w": 80,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "text": "80%",
+   "x": 63,
+   "y": 3111,
+   "w": 24,
+   "h": 12
+  },
+  {
+   "kind": "text",
+   "text": "BMGT380 assignment moved",
+   "x": 324,
+   "y": 179,
+   "w": 625,
+   "h": 21
+  },
+  {
+   "kind": "text",
+   "text": "Reading Response 6: Remedies",
+   "x": 324,
+   "y": 227,
+   "w": 625,
+   "h": 19
+  },
+  {
+   "kind": "text",
+   "text": "Mark as read",
+   "x": 324,
+   "y": 280,
+   "w": 625,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "text": "Mark as read",
+   "x": 324,
+   "y": 386,
+   "w": 625,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "text": "Mostly finance roles across DC, Baltimore and New York, plus two on campus. All six are summer 2027, the window you want. Three strong matches, two good and one a stretch.",
+   "x": 324,
+   "y": 466,
+   "w": 625,
+   "h": 41
+  },
+  {
+   "kind": "text",
+   "text": "Evercore",
+   "x": 329,
+   "y": 569,
+   "w": 296,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Marriott International",
+   "x": 694,
+   "y": 569,
+   "w": 296,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "T. Rowe Price",
+   "x": 1060,
+   "y": 569,
+   "w": 296,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Carlyle Group",
+   "x": 329,
+   "y": 721,
+   "w": 296,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Robert H. Smith School",
+   "x": 694,
+   "y": 721,
+   "w": 296,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Bloomberg",
+   "x": 1060,
+   "y": 721,
+   "w": 296,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "text": "Both are Smith finance clubs that meet weekly in Van Munching, one research-heavy and one built around recruiting. One strong match and one good.",
+   "x": 324,
+   "y": 1101,
+   "w": 625,
+   "h": 41
+  },
+  {
+   "kind": "text",
+   "text": "Try it on a posting",
+   "x": 1227,
+   "y": 1287,
+   "w": 149,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Open Job Match",
+   "x": 1237,
+   "y": 1522,
+   "w": 139,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Two New York banks, Fannie Mae in DC and T. Rowe Price in Baltimore. All four are summer 2027. One strong match, two good and one a stretch.",
+   "x": 324,
+   "y": 1763,
+   "w": 625,
+   "h": 41
+  },
+  {
+   "kind": "text",
+   "text": "+1 more",
+   "x": 634,
+   "y": 1812,
+   "w": 68,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Open the planner",
+   "x": 1231,
+   "y": 2101,
+   "w": 145,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Open Settings",
+   "x": 1249,
+   "y": 2357,
+   "w": 127,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "text": "Looks like: “6 new roles match you this week”",
+   "x": 265,
+   "y": 2670,
+   "w": 766,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "text": "Looks like: “BMGT380 assignment moved · Reading Response 6: Remedies”",
+   "x": 265,
+   "y": 2769,
+   "w": 766,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "text": "Looks like: “Resume Coach can now tailor your resume to one posting”",
+   "x": 265,
+   "y": 2867,
+   "w": 766,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "text": "5 new",
+   "x": 1260,
+   "y": 28,
+   "w": 35,
+   "h": 12
+  }
+ ]
+}

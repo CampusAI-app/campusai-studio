@@ -19,7 +19,24 @@
 
 export type Aspect = "9x16" | "4x5" | "16x9" | "1x1";
 export type Mode = "individual" | "bulk";
-export type Format = "like-when" | "feature-15" | "bumper-6" | "one-task" | "custom";
+export type Format = "like-when" | "feature-15" | "bumper-6" | "one-task" | "eight-block" | "custom";
+
+/**
+ * The eight-block format (2026-10-24, Robin Tempe's short-form structure, sent through Muse): every shot of an
+ * "eight-block" film names the block it belongs to, in this order, each block with one job (rules.json
+ * `eightBlock`). The CTA is the end card, so no shot names it. Ignored by every other format.
+ */
+export type Block = "hook" | "lead" | "body-1" | "loop-1" | "body-2" | "loop-2" | "body-3";
+
+/**
+ * On the first shot of an open loop: the question it asks and where the NEXT body answers it. The checker
+ * fails a loop whose answer is not on screen in a shot of the next body block.
+ *   question  the line on screen (one of the loop's hook/line texts), or a visual question described in words
+ *   visual    true when the question is a picture, not a line
+ *   answer    the shot in the next body that answers it, and `evidence`: words on that shot's screen (its
+ *             capture's layers, or one of its text lines) that are the answer
+ */
+export type Loop = { question: string; visual?: boolean; answer: { shot: string; evidence: string } };
 
 /** Page pixels (CSS px of the capture), never canvas pixels. */
 export type Rect = { x: number; y: number; w: number; h: number };
@@ -77,6 +94,10 @@ export type Shot = {
   hero?: boolean;
   /** Part-specific settings. */
   props?: Record<string, unknown>;
+  /** Eight-block films only: which block this shot belongs to. */
+  block?: Block;
+  /** Eight-block films only, on a loop's first shot: the question and where it is answered. */
+  loop?: Loop;
 };
 
 export type Storyboard = {
@@ -86,6 +107,8 @@ export type Storyboard = {
   mode: Mode;
   /** Set true by Jacob's yes on the grey draft. Only read in "individual" mode. */
   draftApproved?: boolean;
+  /** 9x16 only: the product fills the frame under the held mark instead of sitting between bands (parts/layout.ts). */
+  fill?: boolean;
   /** Every aspect to deliver. The first is the home format the film is composed for. */
   aspects: Aspect[];
   brand: "campusai";
@@ -96,8 +119,17 @@ export type Storyboard = {
   /** Instagram cuts say "Link in bio" instead of the address. */
   end: { kind: "logo-url"; hold: number; instagram?: boolean };
   music?: { track: string; startAt?: number };
-  /** Length cutdowns: a named subset of shots, in order, rendered with `cut: "<name>"` (logo, end card and sound automatic). */
-  cuts?: Record<string, { shots: string[]; format?: Format }>;
+  /**
+   * Length cutdowns: a named subset of shots, in order, rendered with `cut: "<name>"` (logo, end card and sound automatic).
+   * Opt-in (2026-10-23): `endHold` gives the cut its own end card hold; a cut may also name shots from `cutShots`.
+   */
+  cuts?: Record<string, { shots: string[]; format?: Format; endHold?: number }>;
+  /**
+   * Shots made for a cut only, never rendered in the full film (2026-10-23). A 6 s bumper is built natively,
+   * not trimmed (rules.json formats), and a cut never speeds a shot's text up, so a bumper that no full-film
+   * shot fits gets its own shot here. The checker checks every cut as a film of its own.
+   */
+  cutShots?: Shot[];
   facts: { text: string; source: string }[];
 };
 

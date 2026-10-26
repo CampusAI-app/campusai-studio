@@ -1,0 +1,669 @@
+{
+ "captured": "2026-10-23T22:31:52.553Z",
+ "base": "https://campusai-demo.vercel.app",
+ "viewport": {
+  "w": 1440,
+  "h": 900,
+  "dpr": 2
+ },
+ "stills": [
+  {
+   "name": "p0-profile",
+   "pageH": 900,
+   "press": {
+    "x": 1341,
+    "y": 378,
+    "label": "View details",
+    "rect": {
+     "x": 1295,
+     "y": 369,
+     "w": 92,
+     "h": 20
+    }
+   },
+   "marks": {
+    "chip": {
+     "x": 63,
+     "y": 855,
+     "w": 80,
+     "h": 33,
+     "text": "Maya Chen 15% · Connect your transcript"
+    },
+    "card": {
+     "x": 1068,
+     "y": 345,
+     "w": 340,
+     "h": 471,
+     "text": "Profile strength View details → How much we know about you so far. The more we know, the better everything here fits. 15% What's left 15 of 100 points Interests"
+    },
+    "cardRing": {
+     "x": 1208,
+     "y": 486,
+     "w": 60,
+     "h": 30,
+     "text": "15%"
+    },
+    "pressed": {
+     "x": 1295,
+     "y": 369,
+     "w": 92,
+     "h": 20
+    }
+   }
+  },
+  {
+   "name": "p1-panel",
+   "pageH": 900,
+   "press": null,
+   "marks": {
+    "panel": {
+     "x": 490,
+     "y": 110,
+     "w": 460,
+     "h": 681,
+     "text": "Build your profile How much we know about you so far. The more we know, the better everything here fits. 15% What's left 15 of 100 points Interests +10 pts Stop"
+    },
+    "ring": {
+     "x": 1208,
+     "y": 486,
+     "w": 60,
+     "h": 30,
+     "text": "15%"
+    },
+    "left": {
+     "x": 515,
+     "y": 376,
+     "w": 410,
+     "h": 18,
+     "text": "What's left 15 of 100 points"
+    }
+   }
+  },
+  {
+   "name": "s1-career-picked",
+   "pageH": 900,
+   "press": {
+    "x": 578,
+    "y": 463,
+    "label": "Save",
+    "rect": {
+     "x": 549,
+     "y": 447,
+     "w": 57,
+     "h": 31
+    }
+   },
+   "marks": {
+    "panel": {
+     "x": 490,
+     "y": 16,
+     "w": 460,
+     "h": 868,
+     "text": "Build your profile How much we know about you so far. The more we know, the better everything here fits. 15% What's left 15 of 100 points Interests +10 pts Stop"
+    },
+    "ring": {
+     "x": 1208,
+     "y": 486,
+     "w": 60,
+     "h": 30,
+     "text": "15%"
+    },
+    "left": {
+     "x": 515,
+     "y": 140,
+     "w": 410,
+     "h": 18,
+     "text": "What's left 15 of 100 points"
+    },
+    "finance": {
+     "x": 549,
+     "y": 265,
+     "w": 67,
+     "h": 28,
+     "text": "Finance"
+    },
+    "consulting": {
+     "x": 622,
+     "y": 265,
+     "w": 84,
+     "h": 28,
+     "text": "Consulting"
+    },
+    "pressed": {
+     "x": 549,
+     "y": 447,
+     "w": 57,
+     "h": 31
+    }
+   }
+  },
+  {
+   "name": "s1-career-saved",
+   "pageH": 900,
+   "press": null,
+   "marks": {
+    "panel": {
+     "x": 490,
+     "y": 80,
+     "w": 460,
+     "h": 741,
+     "text": "Build your profile How much we know about you so far. The more we know, the better everything here fits. 20% What's left 20 of 100 points Interests 5/10 pts Sto"
+    },
+    "ring": {
+     "x": 1204,
+     "y": 486,
+     "w": 68,
+     "h": 30,
+     "text": "20%"
+    },
+    "left": {
+     "x": 515,
+     "y": 346,
+     "w": 410,
+     "h": 18,
+     "text": "What's left 20 of 100 points"
+    }
+   }
+  },
+  {
+   "name": "s2-personal-picked",
+   "pageH": 900,
+   "press": {
+    "x": 578,
+    "y": 511,
+    "label": "Save",
+    "rect": {
+     "x": 549,
+     "y": 495,
+     "w": 57,
+     "h": 31
+    }
+   },
+   "marks": {
+    "panel": {
+     "x": 490,
+     "y": 16,
+     "w": 460,
+     "h": 868,
+     "text": "Build your profile How much we know about you so far. The more we know, the better everything here fits. 20% What's left 20 of 100 points Interests 5/10 pts Sto"
+    },
+    "ring": {
+     "x": 1204,
+     "y": 486,
+     "w": 68,
+     "h": 30,
+     "text": "20%"
+    },
+    "left": {
+     "x": 515,
+     "y": 222,
+     "w": 410,
+     "h": 18,
+     "text": "What's left 20 of 100 points"
+    },
+    "sports": {
+     "x": 549,
+     "y": 347,
+     "w": 60,
+     "h": 28,
+     "text": "Sports"
+    },
+    "travel": {
+     "x": 669,
+     "y": 415,
+     "w": 57,
+     "h": 28,
+     "text": "Travel"
+    },
+    "pressed": {
+     "x": 549,
+     "y": 495,
+     "w": 57,
+     "h": 31
+    }
+   }
+  },
+  {
+   "name": "s2-personal-saved",
+   "pageH": 900,
+   "press": null,
+   "marks": {
+    "panel": {
+     "x": 490,
+     "y": 109,
+     "w": 460,
+     "h": 683,
+     "text": "Build your profile How much we know about you so far. The more we know, the better everything here fits. 25% What's left 25 of 100 points Career +20 pts The anc"
+    },
+    "ring": {
+     "x": 1205,
+     "y": 486,
+     "w": 66,
+     "h": 30,
+     "text": "25%"
+    },
+    "left": {
+     "x": 515,
+     "y": 375,
+     "w": 410,
+     "h": 18,
+     "text": "What's left 25 of 100 points"
+    }
+   }
+  },
+  {
+   "name": "s3-locations-picked",
+   "pageH": 900,
+   "press": {
+    "x": 578,
+    "y": 509,
+    "label": "Save",
+    "rect": {
+     "x": 549,
+     "y": 493,
+     "w": 57,
+     "h": 31
+    }
+   },
+   "marks": {
+    "panel": {
+     "x": 490,
+     "y": 16,
+     "w": 460,
+     "h": 868,
+     "text": "Build your profile How much we know about you so far. The more we know, the better everything here fits. 25% What's left 25 of 100 points Career +20 pts The anc"
+    },
+    "ring": {
+     "x": 1205,
+     "y": 486,
+     "w": 66,
+     "h": 30,
+     "text": "25%"
+    },
+    "left": {
+     "x": 515,
+     "y": 206,
+     "w": 410,
+     "h": 18,
+     "text": "What's left 25 of 100 points"
+    },
+    "dmv": {
+     "x": 549,
+     "y": 378,
+     "w": 158,
+     "h": 28,
+     "text": "DC / Maryland / Virginia"
+    },
+    "ny": {
+     "x": 713,
+     "y": 378,
+     "w": 77,
+     "h": 28,
+     "text": "New York"
+    },
+    "pressed": {
+     "x": 549,
+     "y": 493,
+     "w": 57,
+     "h": 31
+    }
+   }
+  },
+  {
+   "name": "s3-locations-saved",
+   "pageH": 900,
+   "press": null,
+   "marks": {
+    "panel": {
+     "x": 490,
+     "y": 79,
+     "w": 460,
+     "h": 743,
+     "text": "Build your profile How much we know about you so far. The more we know, the better everything here fits. 30% What's left 30 of 100 points Career 5/20 pts The an"
+    },
+    "ring": {
+     "x": 1204,
+     "y": 486,
+     "w": 68,
+     "h": 30,
+     "text": "30%"
+    },
+    "left": {
+     "x": 515,
+     "y": 345,
+     "w": 410,
+     "h": 18,
+     "text": "What's left 30 of 100 points"
+    }
+   }
+  },
+  {
+   "name": "s4-live-picked",
+   "pageH": 900,
+   "press": {
+    "x": 578,
+    "y": 696,
+    "label": "Save",
+    "rect": {
+     "x": 549,
+     "y": 681,
+     "w": 57,
+     "h": 31
+    }
+   },
+   "marks": {
+    "panel": {
+     "x": 490,
+     "y": 16,
+     "w": 460,
+     "h": 867,
+     "text": "Build your profile How much we know about you so far. The more we know, the better everything here fits. 30% What's left 30 of 100 points Career 5/20 pts The an"
+    },
+    "ring": {
+     "x": 1204,
+     "y": 486,
+     "w": 68,
+     "h": 30,
+     "text": "30%"
+    },
+    "left": {
+     "x": 515,
+     "y": 282,
+     "w": 410,
+     "h": 18,
+     "text": "What's left 30 of 100 points"
+    },
+    "oncampus": {
+     "x": 549,
+     "y": 643,
+     "w": 87,
+     "h": 28,
+     "text": "On campus"
+    },
+    "pressed": {
+     "x": 549,
+     "y": 681,
+     "w": 57,
+     "h": 31
+    }
+   }
+  },
+  {
+   "name": "s4-live-saved",
+   "pageH": 900,
+   "press": null,
+   "marks": {
+    "panel": {
+     "x": 490,
+     "y": 79,
+     "w": 460,
+     "h": 743,
+     "text": "Build your profile How much we know about you so far. The more we know, the better everything here fits. 35% What's left 35 of 100 points Career 5/20 pts The an"
+    },
+    "ring": {
+     "x": 1205,
+     "y": 486,
+     "w": 67,
+     "h": 30,
+     "text": "35%"
+    },
+    "left": {
+     "x": 515,
+     "y": 345,
+     "w": 410,
+     "h": 18,
+     "text": "What's left 35 of 100 points"
+    }
+   }
+  },
+  {
+   "name": "s5-northstar-picker",
+   "pageH": 900,
+   "press": null,
+   "marks": {
+    "panel": null,
+    "ring": {
+     "x": 1205,
+     "y": 486,
+     "w": 67,
+     "h": 30,
+     "text": "35%"
+    },
+    "left": {
+     "x": 1089,
+     "y": 596,
+     "w": 298,
+     "h": 21,
+     "text": "What's left 25 of 100 points"
+    }
+   }
+  },
+  {
+   "name": "s5-northstar-picked",
+   "pageH": 900,
+   "press": {
+    "x": 886,
+    "y": 348,
+    "label": "Save",
+    "rect": {
+     "x": 858,
+     "y": 332,
+     "w": 57,
+     "h": 31
+    }
+   },
+   "marks": {
+    "panel": null,
+    "ring": {
+     "x": 1204,
+     "y": 486,
+     "w": 68,
+     "h": 30,
+     "text": "50%"
+    },
+    "left": {
+     "x": 1089,
+     "y": 596,
+     "w": 298,
+     "h": 21,
+     "text": "What's left 45 of 100 points"
+    },
+    "role": {
+     "x": 546,
+     "y": 434,
+     "w": 369,
+     "h": 20,
+     "text": "Investment Banking Analyst"
+    },
+    "pressed": {
+     "x": 858,
+     "y": 332,
+     "w": 57,
+     "h": 31
+    }
+   }
+  },
+  {
+   "name": "s5-northstar-saved",
+   "pageH": 900,
+   "press": null,
+   "marks": {
+    "panel": {
+     "x": 490,
+     "y": 108,
+     "w": 460,
+     "h": 685,
+     "text": "Build your profile How much we know about you so far. The more we know, the better everything here fits. 50% What's left 50 of 100 points Resume +15 pts The onl"
+    },
+    "ring": {
+     "x": 1204,
+     "y": 486,
+     "w": 68,
+     "h": 30,
+     "text": "50%"
+    },
+    "left": {
+     "x": 515,
+     "y": 374,
+     "w": 410,
+     "h": 18,
+     "text": "What's left 50 of 100 points"
+    }
+   }
+  },
+  {
+   "name": "p9-profile-after",
+   "pageH": 900,
+   "press": null,
+   "marks": {
+    "chip": {
+     "x": 63,
+     "y": 855,
+     "w": 80,
+     "h": 33,
+     "text": "Maya Chen 50% · Connect your transcript"
+    },
+    "card": {
+     "x": 1068,
+     "y": 345,
+     "w": 340,
+     "h": 471,
+     "text": "Profile strength View details → How much we know about you so far. The more we know, the better everything here fits. 50% What's left 45 of 100 points Resume +1"
+    },
+    "cardRing": {
+     "x": 1204,
+     "y": 486,
+     "w": 68,
+     "h": 30,
+     "text": "50%"
+    }
+   }
+  },
+  {
+   "name": "p9-panel-after",
+   "pageH": 900,
+   "press": null,
+   "marks": {
+    "panel": {
+     "x": 490,
+     "y": 108,
+     "w": 460,
+     "h": 685,
+     "text": "Build your profile How much we know about you so far. The more we know, the better everything here fits. 50% What's left 50 of 100 points Resume +15 pts The onl"
+    },
+    "ring": {
+     "x": 1204,
+     "y": 486,
+     "w": 68,
+     "h": 30,
+     "text": "50%"
+    },
+    "left": {
+     "x": 515,
+     "y": 374,
+     "w": 410,
+     "h": 18,
+     "text": "What's left 50 of 100 points"
+    },
+    "resume": {
+     "x": 1119,
+     "y": 627,
+     "w": 268,
+     "h": 21,
+     "text": "Resume +15 pts"
+    },
+    "academics": {
+     "x": 1119,
+     "y": 677,
+     "w": 268,
+     "h": 21,
+     "text": "Academics +25 pts"
+    }
+   }
+  }
+ ],
+ "writes": [
+  "PATCH https://campusai-demo.vercel.app/api/profile?demo=min",
+  "PATCH https://campusai-demo.vercel.app/api/profile?demo=min",
+  "PATCH https://campusai-demo.vercel.app/api/profile?demo=min",
+  "PATCH https://campusai-demo.vercel.app/api/profile?demo=min",
+  "POST https://campusai-demo.vercel.app/api/v1/career/north-star"
+ ],
+ "steps": [
+  {
+   "label": "Career interests",
+   "press": {
+    "x": 578,
+    "y": 463,
+    "label": "Save",
+    "rect": {
+     "x": 549,
+     "y": 447,
+     "w": 57,
+     "h": 31
+    }
+   },
+   "ring": "20"
+  },
+  {
+   "label": "Personal interests",
+   "press": {
+    "x": 578,
+    "y": 511,
+    "label": "Save",
+    "rect": {
+     "x": 549,
+     "y": 495,
+     "w": 57,
+     "h": 31
+    }
+   },
+   "ring": "25"
+  },
+  {
+   "label": "Preferred locations",
+   "press": {
+    "x": 578,
+    "y": 509,
+    "label": "Save",
+    "rect": {
+     "x": 549,
+     "y": 493,
+     "w": 57,
+     "h": 31
+    }
+   },
+   "ring": "30"
+  },
+  {
+   "label": "Where you live",
+   "press": {
+    "x": 578,
+    "y": 696,
+    "label": "Save",
+    "rect": {
+     "x": 549,
+     "y": 681,
+     "w": 57,
+     "h": 31
+    }
+   },
+   "ring": "35"
+  },
+  {
+   "label": "North Star",
+   "press": {
+    "x": 886,
+    "y": 348,
+    "label": "Save",
+    "rect": {
+     "x": 858,
+     "y": 332,
+     "w": 57,
+     "h": 31
+    }
+   },
+   "ring": "50"
+  }
+ ]
+}
