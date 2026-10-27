@@ -26,7 +26,9 @@ disagrees with this one, this one is right and the other file is stale: say so a
 Everything builds in ONE place, the studio (Remotion, 30fps): the folder this skill sits in
 (`skill/` is inside it). Since 2026-10-23 it is also the team's: one public repo,
 github.com/CampusAI-app/campusai-studio, so Jacob and the team build with the same parts and the
-same rules, and a rule added here reaches everyone on their next `git pull`. Films live in
+same rules, and a rule added here reaches everyone once it is pushed: the studio pulls itself
+each time Claude Code starts in it (`scripts/update.sh`). A change here is not the team's until
+it is pushed. Films live in
 `films/<name>/` NEXT TO the studio folder, not inside it. The old Video Kit
 (`CampusAI-app/campusai-video-kit`) is retired: never build there.
 
@@ -37,10 +39,12 @@ applies as written.
 
 **A teammate** (Ashley, Angela, anyone who installed the studio): everything below applies, with
 three differences.
-- **Their footage is the start.** Most team pieces begin from a cut they made themselves (street
-  interviews, a talking head). The studio adds what their editor can't: the real product (a chat
+- **Know whose lane it is.** Ashley's pieces start from a cut she made herself (street
+  interviews, a talking head); the studio adds what her editor can't: the real product (a chat
   answering their question, a page), motion, and the logo ending. `src/studyspot/StudySpot.tsx` is
-  the worked example: Ashley's interviews, pins over each answer, then the real chat.
+  the worked example: her interviews, pins over each answer, then the real chat. **Angela makes
+  motion graphics** (kinetic type, product beats, logo builds), so her pieces start in the motion
+  lane, not from footage. Never pitch her interviews or footage-led pieces (2026-10-26).
 - **Shelves that only exist on Jacob's Mac:** `shots/` (shot recipes and licensed audio),
   `Design/...`, `Lucius/...`, the Studio reference page's local files, and Base favorites. When a
   step points at one, skip it and use the kit (`src/kit/`) and the films already in `src/` instead.

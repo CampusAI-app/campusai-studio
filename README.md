@@ -18,7 +18,12 @@ curl -fsSL https://raw.githubusercontent.com/CampusAI-app/campusai-studio/main/i
 ```
 
 That clones the studio into `~/CampusAI Studio/studio`, installs it, fetches the fonts, makes your
-`~/CampusAI Studio/films` folder, and gives Claude Code the `studio` skill. Run it again any time.
+`~/CampusAI Studio/films` folder, and gives Claude Code the `studio` skill plus the skills in
+`companion-skills/`. Run it again any time.
+
+**It keeps itself current.** Each time Claude Code starts in the studio folder it pulls Jacob's
+latest rules, parts and scripts (`scripts/update.sh`), so nobody runs `git pull`. If you changed a
+file Jacob also changed, it keeps your version and Claude tells you.
 
 ## Make something
 
@@ -57,6 +62,8 @@ attached. Nothing is posted until he says yes there. The full process is in `ski
   moments, `ChatRecording`.
 - `src/` holds every film made so far. They're worth copying from.
 - `examples/` holds starter files.
+- `companion-skills/` holds other skills the studio leans on (writing the hook), linked into
+  Claude Code the same way.
 
 ## Good to know
 

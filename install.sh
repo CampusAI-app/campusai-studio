@@ -75,9 +75,11 @@ if command -v npx >/dev/null 2>&1; then
   # The studio skill bans this one: it answers "make a video" by starting a blank project.
   rm -rf "$HOME/.claude/skills/remotion-create" "$HOME/.agents/skills/remotion-create"
 fi
+bash "$STUDIO/scripts/update.sh" | sed 's/^Studio: /  done  /'
+ok "the studio updates itself each time Claude Code starts in it"
 
 echo
 echo "Ready. Open Claude Code in this folder and say what you want to make:"
 echo "  cd \"$STUDIO\" && claude"
 echo "First time? Try: npm run chat examples/study-spots.json"
-echo "Updates: git pull in the studio folder (your films are never touched)."
+echo "Updates arrive on their own each time you start Claude here (your films are never touched)."

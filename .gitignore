@@ -39,3 +39,6 @@ src/r4/hooks/
 
 # The example flow recording (`npm run flow examples/add-to-calendar.json` makes it on each machine)
 public/add-to-calendar/
+
+# Each person's own Claude Code settings
+.claude/settings.local.json
