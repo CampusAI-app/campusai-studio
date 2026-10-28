@@ -1,0 +1,86 @@
+<!doctype html>
+<!--
+  LinkedIn profile banner, 1584 x 396. The worked example for this skill (2026-10-28).
+  Every layer is real: the logo is the file, the words are live type, the product is a real
+  capture of campusai-demo in dark mode. Nothing here was drawn by an image model.
+
+  LinkedIn puts the profile photo over the bottom-left (roughly x 40 to 380, y 180 down), so
+  nothing important sits there. The product bleeds off the right and bottom edges on purpose:
+  a frame where everything sits inside even margins reads as a template.
+
+  Render: node templates/render.mjs templates/linkedin-banner.html out.png 1584 396
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://api.fontshare.com/v2/css?f[]=zodiak@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1584px; height: 396px; background: #0b0708; }
+
+  #stage {
+    position: relative; width: 1584px; height: 396px; overflow: hidden;
+    background: #0b0708;
+  }
+
+  /* One light source, behind the product, off centre. A second, weaker wash keeps the
+     left from going flat. Never symmetrical. */
+  .wash { position: absolute; inset: 0; pointer-events: none; }
+  .wash.key { background: radial-gradient(620px 420px at 80% 38%, rgba(217, 32, 46, .30), transparent 70%); }
+  .wash.fill { background: radial-gradient(520px 360px at 4% 110%, rgba(217, 32, 46, .10), transparent 70%); }
+
+  /* The product. Real perspective, a hairline edge, a shadow that falls away from the light. */
+  .product {
+    position: absolute; left: 905px; top: 54px; width: 860px;
+    perspective: 2000px;
+  }
+  .product img {
+    display: block; width: 100%;
+    border-radius: 14px;
+    border: 1px solid rgba(247, 239, 230, .12);
+    transform: rotateY(-17deg) rotateX(7deg) rotateZ(-1.5deg);
+    transform-origin: left center;
+    box-shadow:
+      0 40px 90px rgba(0, 0, 0, .65),
+      0 0 140px rgba(217, 32, 46, .22);
+  }
+
+  .copy { position: absolute; left: 430px; top: 104px; width: 470px; }
+  .copy .logo { display: block; height: 30px; width: auto; }
+  .copy h1 {
+    margin-top: 30px;
+    font-family: 'Zodiak', serif; font-weight: 700;
+    font-size: 44px; line-height: 1.05; letter-spacing: -0.02em;
+    color: #f7efe6;
+  }
+  .copy p {
+    margin-top: 18px;
+    font-family: 'Inter', sans-serif; font-weight: 500; font-size: 17px;
+    color: #d7c3b3;
+  }
+
+  /* Grain over everything. This is what stops a flat dark ground looking generated. */
+  .grain {
+    position: absolute; inset: 0; pointer-events: none; opacity: .14; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E");
+  }
+</style>
+</head>
+<body>
+  <div id="stage">
+    <div class="wash key"></div>
+    <div class="wash fill"></div>
+
+    <div class="product"><img src="../assets/product/dashboard-brief.jpg" alt=""></div>
+
+    <div class="copy">
+      <img class="logo" src="../assets/campusai-logo-white.svg" alt="CampusAI">
+      <h1>Your whole semester,<br>in one place.</h1>
+      <p>campusai.app</p>
+    </div>
+
+    <div class="grain"></div>
+  </div>
+</body>
+</html>

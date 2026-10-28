@@ -34,6 +34,8 @@ Feed 4:5 (1080x1350), square 1:1 (1080x1080), story 9:16 (1080x1920), wide 16:9 
 One set of parts and a small layout value per size, the same way films make formats.
 
 ## Rules
+For any CampusAI still, read the `campusai-brand` skill first (`companion-skills/campusai-brand/`):
+its reference library, the AI tells table and the pass before sending (2026-10-28).
 Everything in the Studio rules applies: real product only, colours and fonts from
 `kit/brand.ts`, no monospace, no em dashes, the logo on every image, nothing invented. Text on a
 still still has to read at phone size: check the PNG at 375 px wide before sending.
