@@ -93,6 +93,48 @@ The product is the best image we have. Use it.
   the M out of the sidebar. Never show the Sandy Spring internship from the demo.
 - Never put a number on a graphic that is not true in the product.
 
+## Getting screenshots of the demo
+
+Anyone can take fresh screenshots of the real product. The demo is public and needs no sign-in:
+**https://campusai-demo.vercel.app**. Nothing you press there changes anything, so click around freely.
+
+**Pages worth shooting**
+
+| Page | Address | The part to crop |
+|---|---|---|
+| Dashboard | `/` | The daily brief card (Your week, Worth a look) |
+| Resume Review | `/career?view=resume` | The score ring and "How a recruiter reads this", or one suggestion |
+| Job Match | `/career?view=jobs` | One job with its match reason. The first job's reason names Sandy Spring, so pick another |
+| Events | `/events` | Two or three event cards |
+| My Calendar | `/calendar` | The week grid |
+| Academic planner | `/academics/planner` | One semester column |
+| Chat | Ask CampusAI on the dashboard | A question and its answer |
+
+**By hand, in any browser (Claude on the web, ChatGPT, anyone)**
+1. Open the demo in Chrome and switch to dark mode with the moon icon next to Maya Chen at the bottom
+   of the sidebar. Always dark.
+2. Make the window about 1440 wide and keep the browser zoom at 100%.
+3. Take only the part you need, as sharp as possible:
+   - Best: Chrome DevTools (Cmd+Option+I on a Mac, Ctrl+Shift+I on Windows), click the arrow tool,
+     click the card you want, then right-click its line in the Elements panel and choose
+     "Capture node screenshot". You get exactly that card, at full sharpness, with nothing around it.
+   - Quick: Cmd+Shift+4 and drag on a Mac (a Retina screen gives a sharp 2x image), or
+     Win+Shift+S on Windows.
+4. Save it as PNG. Never screenshot a screenshot, never stretch it up, never use a phone photo of a screen.
+
+**In Claude Code, inside the studio**
+`node templates/capture.mjs <page> <out.png> [width] [height] [--full]` opens the demo headless, in
+dark mode, and saves a sharp 2x PNG, for example `node templates/capture.mjs / out/dashboard.png`.
+For a recording of a whole path through the demo, the studio has `npm run flow`.
+
+**What to keep out of the frame**
+- The red Maryland M next to the logo in the sidebar. Crop the sidebar off, or crop it to start below the logo.
+- The campus photos on the dashboard's Ask CampusAI cards (one is the Testudo statue). Crop to the
+  daily brief, or to the card text only.
+- The Sandy Spring internship anywhere on Maya's profile or resume.
+- The mobile app. It is parked; use the web product.
+- Anything mid-load: wait until the page settles before you shoot.
+
 ## What makes it look designed
 
 - **Asymmetry.** Put the type somewhere decided, usually a third of the way in, not dead centre.
