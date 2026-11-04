@@ -82,6 +82,39 @@ Three rules from the pack worth keeping:
 5. Copy the formula, never the video. Every row attributed. The output is OUR version of the top
    three: our story, our real number, in the shape that is working.
 
+## Story reels, built in four layers (harvested 2026-11-04)
+
+From Ernesto Lopez's "anatomy of a viral reel" post (X, Nov 3). His skill sits behind a comment
+gate and was not read; his view numbers are his own and the counter in his promo did not match
+them, so take the shape, not the stats.
+
+**Build the layers separately, in this order.** 1 dialogue, written as a script before anything is
+cut. 2 footage under it. 3 captions as a full layer of their own, not subtitles added at the end.
+4 cuts last, dense, every cut changing what you see (his reel claims 55). The script is the reel;
+the edit only times it.
+
+**The arc.**
+- **Two voices in the first second.** A doubt and an answer: "You're gonna be a nobody." / "Not
+  yet. But I will." Conflict is an open loop the viewer already understands.
+- **The turn** is one short line, and it is where the product or the decision enters.
+- **Time cards compress the middle.** "3 MONTHS LATER" skips the boring part and promises the
+  ending is coming. Only print a time that is true.
+- **The payoff answers the first voice**, by name or by phrase, then gives one beat more ("Yes Mom,
+  and I got you one too"). Hit the low point just before it.
+
+**Honest version only.** A time card and a payoff are claims. On CampusAI the outcome has to be a
+real student's real result, or a real measured run of the product. Never write "3 weeks later, I
+got the offer" for a story that did not happen.
+
+**Applied once: the Plan your spring film (round 14).**
+- Before: opens on "Ready to plan your spring classes?", walks the steps, ends on "Ask CampusAI to
+  plan your spring." One voice, a question nobody was asking, the turn saved for the end card.
+- After: open on two voices, "Registration opens Monday." / "I haven't even looked." The turn moves
+  up to beat two, "Ask CampusAI to plan your spring." The step cards stay as the compressed middle
+  under one time card, the real length of a recorded run ("4 MINUTES LATER" only if it took four).
+  The payoff answers the first voice, "Registration opens Monday." / "I'm ready.", over the finished
+  week, and "Meet your advisor" is the one beat more.
+
 ## Diagnose a struggling post
 - **Reach but no watch-through →** the hook is the problem. Rewrite the first 2 seconds; test 3 new openings.
 - **Drop at ~3s →** the first frame raised no question, or the promise felt generic. Add specificity or stakes.
