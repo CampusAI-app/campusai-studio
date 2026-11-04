@@ -33,7 +33,9 @@ brief and LOG. Newest wins where two disagree. Add every new note here, dated, t
   already on screen, never on black (09/16).
 - Never open on the North Star picker for Job Match (rejected twice, 09/16). Skip greeting pages
   and retyping; open each chapter on the question (10/16).
-- End by zooming into, or turning something into, the CampusAI logo. No closing slogan line.
+- End by zooming into, or turning something into, the CampusAI logo. No closing slogan line. (Superseded for
+  chat films 10/30: "at the end, it should say something like 'Ask CampusAI anything.'" The registration film
+  ends on that line above the logo and campusai.app.)
 - Films made on the film system (`studio/src/system/`) end on the logo plus "campusai.app"
   ("Link in bio" on Instagram cuts), held about 3 s (10/23, his yes on the What Ships finding:
   logo plus address beats the logo alone; a logo-first opening only works for famous brands).
@@ -53,11 +55,29 @@ brief and LOG. Newest wins where two disagree. Add every new note here, dated, t
   call for that beat, not a retirement of real captures for whole product films.
 - No headline over or above a product beat that competes with it: "the one text block is blocking it"
   (10/23).
+- A chat recorded in a narrow window shows the product's MOBILE layout: "it's trying to be on mobile when it's
+  getting it from the web" (10/29, registration films). For `npm run chat`, record the desktop web layout in a tall
+  window (1100 x 1956, `zoom` 1.8 makes the conversation readable) and frame it with the camera. The 820 px size in
+  `scripts/chat.mjs` flips to mobile. Keep the page's top logo row (the school's M beside ours) out of frame.
 
 ## Camera and motion
 - Smooth and focused: one subject, arrive early, hold, release when the beat completes. Nothing
   moves for a second reason while something is already moving (08/30).
 - ONE camera framing through a continuous action. The camera never swings while typing (10/22).
+- A streaming chat answer must glide, never jolt: the product scrolls the thread a line at a time, and a film
+  that shows those jumps reads as "a little glitchy" (10/30, registration films). Make the recording itself glide:
+  `capture/register-chat-record.mjs` turns the product's `scrollTop = scrollHeight` pin into a spring the page
+  follows, so a close frame needs no correction in the edit. Typing is one new letter per film frame, about 30 a
+  second: "smoother and quicker" than 20 a second, which gave one or two letters per frame unevenly (10/30).
+- Two versions of a chat film for students (10/30): the plain one, and a separate "more edited up" one for a Gen Z
+  feed, because the plain one "might be a little boring or slow". What he means by edited up is SMALL things: icons,
+  soundtrack, noises, things popping up ("smaller things, like icons, soundtracks, noises"), not big set pieces.
+  But small icons beside each line were rejected ("doesn't look good"): they only repeated the word next to them.
+  What landed in `RegisterChatGenZ-16x9`: one big fact sticker per answer on a held beat, the answer dimmed, every
+  word from the answer; the real AOSC123 block lifting once; the opening question over the app.
+- Don't make the viewer wait on the chat: "a lot of it is just waiting for the chat to respond" (10/30). Thinking
+  steps about half a second each (shorter and the product's fade stacks them unreadably), the answer streamed
+  ~2.5x faster, and a close frame on the conversation while it streams.
 - A zoom into the screenshot wall was rejected ("makes the rest not look so clean"); one screen
   popping out of its slot landed (10/16).
 - **The pop-out** (a real piece of the product lifting off its page in 3D) is liked, not a rule.
@@ -66,6 +86,9 @@ brief and LOG. Newest wins where two disagree. Add every new note here, dated, t
 - Don't go too quick, and use the shotcraft shots rather than hand-built moves (10/21).
 - A 3D ring is wrong when the real list does the job; the real list then the press (10/21).
 - Films in one batch never share a signature move.
+- He loves the motion and the sound of adiiguu's Island "for Agents" carousel (11/03, through Muse): one
+  system with one signature move (rack focus), tempo that alternates beat to beat, and sound on the transitions.
+  The breakdown and our matching parts are in `lanes/motion.md` under Reference.
 - Red bars rising from the bottom on an end card read as AI: never (10/19).
 - The drawn `Laptop3D` "looks fake": use `four/real-laptop.tsx` (10/19).
 

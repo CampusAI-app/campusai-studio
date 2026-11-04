@@ -27,6 +27,8 @@ Write ten openings, keep three, post one. Each opening should pull at least one 
 
 **First-frame rules:** front-load the payoff-question, not a logo or a slow intro. No "hey guys, welcome back." The first spoken words and the on-screen text should both carry the hook (many watch muted). If the first 3 words are throat-clearing, cut them.
 
+**Prove it on screen before you say it (2026-11-01, Nick Kazamias's 89-calorie cookie, 537k plays in 13 seconds).** The stack of cookies proves "massive" before any number is spoken. Then compare against something the viewer already knows the cost of, not against an abstract number: seven of mine for less than one of that. Then make the claim checkable, with the exact numbers in the caption. Picture, known reference, checkable number. It works for anything with a number in it: only use it when the comparison is true.
+
 ## Retention: keep them past the hook
 - **Open fast, mid-motion.** Start on the second sentence. Cut the runway.
 - **Change something every ~2–3 seconds** — shot, framing, caption, zoom, b-roll. Visual change resets attention before it drifts.

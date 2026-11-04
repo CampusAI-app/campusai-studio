@@ -48,4 +48,8 @@ if [ "$behind" -gt 0 ]; then
   fi
 fi
 link_skills
+# Set up before 2026-11-03: updates only reach this person when Claude starts in the studio folder.
+grep -qF "# campusai-studio" "$HOME/.claude/settings.json" 2>/dev/null \
+  || echo "Studio: updates only reach you when Claude starts in this folder. Run bash install.sh once" \
+    "here to get them in every folder. Offer to run it for the person."
 exit 0

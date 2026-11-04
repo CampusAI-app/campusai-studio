@@ -76,10 +76,25 @@ if command -v npx >/dev/null 2>&1; then
   rm -rf "$HOME/.claude/skills/remotion-create" "$HOME/.agents/skills/remotion-create"
 fi
 bash "$STUDIO/scripts/update.sh" | sed 's/^Studio: /  done  /'
-ok "the studio updates itself each time Claude Code starts in it"
+
+echo "6. Updates from any folder"
+# A SessionStart hook in ~/.claude/settings.json, so Jacob's latest rules arrive however Claude is
+# opened, not only inside the studio folder. Merged in: every other setting and hook is kept.
+STUDIO="$STUDIO" node -e '
+const fs = require("fs"), path = require("path"), os = require("os");
+const file = path.join(os.homedir(), ".claude", "settings.json");
+const script = path.join(process.env.STUDIO, "scripts", "update.sh").split(path.sep).join("/");
+let s = {};
+if (fs.existsSync(file)) s = JSON.parse(fs.readFileSync(file, "utf8"));
+const groups = ((s.hooks ??= {}).SessionStart ??= []);
+if (JSON.stringify(groups).includes("# campusai-studio")) { console.log("  skip  already on"); process.exit(0); }
+groups.push({ matcher: "startup|resume", hooks: [{ type: "command", command: `bash "${script}" # campusai-studio`, timeout: 30 }] });
+fs.writeFileSync(file, JSON.stringify(s, null, 2) + "\n");
+console.log("  done  the studio updates itself each time Claude Code starts, in any folder");
+' || skip "could not edit ~/.claude/settings.json, so updates arrive only when Claude starts in the studio"
 
 echo
 echo "Ready. Open Claude Code in this folder and say what you want to make:"
 echo "  cd \"$STUDIO\" && claude"
 echo "First time? Try: npm run chat examples/study-spots.json"
-echo "Updates arrive on their own each time you start Claude here (your films are never touched)."
+echo "Updates arrive on their own each time you start Claude, in any folder (your films are never touched)."

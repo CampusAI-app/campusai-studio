@@ -21,8 +21,9 @@ That clones the studio into `~/CampusAI Studio/studio`, installs it, fetches the
 `~/CampusAI Studio/films` folder, and gives Claude Code the `studio` skill plus the skills in
 `companion-skills/`. Run it again any time.
 
-**It keeps itself current.** Each time Claude Code starts in the studio folder it pulls Jacob's
-latest rules, parts and scripts (`scripts/update.sh`), so nobody runs `git pull`. If you changed a
+**It keeps itself current.** Each time Claude Code starts, in any folder, it pulls Jacob's latest
+rules, parts and scripts (`scripts/update.sh`), so nobody runs `git pull`. Set up before Nov 3? Run
+the install line once more and updates reach you everywhere, not only inside the studio folder. If you changed a
 file Jacob also changed, it keeps your version and Claude tells you.
 
 ## Make something

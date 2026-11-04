@@ -111,6 +111,10 @@ re-made.
 
 ## The order (his, never skipped)
 
+The one exception (2026-11-01): a named style (`/teardown`, `/paper-desk`, `/headline`, `/stat-chart`,
+`/map-route`, `/ink-wash`, see `lanes/motion.md`) is already a chosen structure, so steps 1 to 3 are skipped.
+Its facts file and the review loop are not.
+
 1. **The idea**, in one or two lines: what it says and to whom.
 2. **The structure**: beats, each with its part or shot, its length, its real material, what the
    viewer knows by its end, and the state it starts and ends on. A list of effects is not a
@@ -174,6 +178,12 @@ re-made.
 **Sound**
 - Default is no voice: music, sound and captions. ElevenLabs' free tier is non-commercial, so a
   voiced piece that will be posted needs a paid key: Jacob's call, asked once, never assumed.
+- Free voice candidate (2026-10-27, not adopted yet): **Chatterbox** (`resemble-ai/chatterbox`,
+  MIT, 27k stars), open-source TTS that runs locally, with Turbo for English narration and Nano
+  for CPU. MIT means a posted voiced cut needs no paid key. Two things to know before using it:
+  every file carries Resemble's inaudible Perth watermark, and it clones any voice from a sample,
+  so only clone a voice whose owner said yes. It goes through the adoption gate and one test read
+  on Jacob's Mac before any film uses it.
 - Licensed sound only: `Content/video-studio/shots/audio/` (Mixkit, commercial, no credit needed).
 
 **Remotion licence**: Jacob's call (2026-08-28) is that it is not a blocker. Not raised again.
