@@ -1,7 +1,9 @@
 /** The worked CampusAI example of each style. Every word and number here is in films/one-prompt-styles/facts.md. */
 import type { HeadlineProps } from "./Headline";
 import type { InkWashProps } from "./InkWash";
+import type { FlatCartoonProps } from "./FlatCartoon";
 import type { MapRouteProps } from "./MapRoute";
+import type { PovDoodleProps } from "./PovDoodle";
 import type { PaperDeskProps } from "./PaperDesk";
 import type { StatChartProps } from "./StatChart";
 import type { TeardownProps } from "./Teardown";
@@ -66,3 +68,28 @@ export const MAP_ROUTE: MapRouteProps = {
 };
 
 export const INK_WASH: InkWashProps = { title: "Spring registration" };
+
+export const POV_DOODLE: PovDoodleProps = {
+  pov: "POV: you're figuring out which gen eds to take",
+  tally: "Tabs open",
+  notes: ["Testudo", "PlanetTerp", "Degree audit", "Gen ed guide"],
+  faces: ["Calm", "Concerned", "Hectic", "Tired"],
+  payoff: "Or ask CampusAI once.",
+  accent: "once",
+  after: 1,
+};
+
+export const FLAT_CARTOON: FlatCartoonProps = {
+  title: "BMGT340 keeps filling up",
+  unit: "Business Finance students, fall term",
+  points: [
+    { label: "Fall 2020", value: 506 }, { label: "Fall 2021", value: 524 }, { label: "Fall 2022", value: 564 },
+    { label: "Fall 2023", value: 607 }, { label: "Fall 2024", value: 635 }, { label: "Fall 2025", value: 659 },
+  ],
+  per: 10,
+  perLabel: "10 students",
+  callout: "Five straight falls of growth",
+  source: "Students with a letter grade each fall, PlanetTerp.",
+  cols: 12,
+  rows: 6,
+};

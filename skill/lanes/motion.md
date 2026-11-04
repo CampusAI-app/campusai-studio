@@ -31,7 +31,7 @@ Say the style and one subject: `/teardown the planner`, `/map-route Stamp to Iri
 the names in Shaan Johari's reel; his prompts are gated and were never seen. **The style is the
 structure, so a named style skips the idea and structure pitch.** It never skips the facts: every word
 and number still goes in `films/<name>/facts.md` with its source, and if a source is missing, stop and
-ask for it. Everything else in `SKILL.md` applies. All six are vertical today. Feed and wide are not built.
+ask for it. Everything else in `SKILL.md` applies. All eight are vertical today. Feed and wide are not built.
 
 To make one:
 1. Copy the style's example from `src/styles/examples.ts` into `films/<name>/style.json`, change only
@@ -47,6 +47,16 @@ To make one:
 | `/stat-chart` | One number grows while its line draws | A true series with a source | The pen drives the number. A line, never rising bars. Label what was actually counted |
 | `/map-route` | Real buildings rise, the route draws, minutes count | `python3 scripts/map-route.py <name> "<from lat,lng>" "<to lat,lng>"` first, which bakes `public/styles/<name>.json` | OpenStreetMap credit stays on screen. Never present it as the product's map page, which is not working on the demo. Heights are estimated |
 | `/ink-wash` | Red sun, ink mountains, then the title | A title of a few words | A title card, one thought. Drawn in code, on paper |
+| `/pov-doodle` | A hand-drawn student, a POV line, sticky notes piling up while their face gets worse, then one line clears the pile | A POV line, 3 to 5 things that pile up, a payoff line | Each note is a real thing a student checks. The payoff names CampusAI but never draws its screens (real product only comes from captures). The person is Open Peeps (CC0) in `src/styles/peeps/`, so add a face or pose from CeamKrier/react-peeps there, never draw a new person by hand |
+| `/flat-cartoon` | A flat lecture hall fills or empties as a true number moves, one person per N | A true series with a source, and what one person stands for | Every person is round(value / N) and the legend says N. The number never counts up from zero. Three flat brand colours, no outlines |
+
+**The cartoon pair (2026-11-04, Jacob through Muse: "cartoon graphics and animations to make reels for CampusAI").**
+Both from Shaan Johari's Animation Styles Part 5 (names only, prompts DM-gated). The doodle look is one SVG
+"boil" filter whose noise reseeds every 4 frames over the whole drawing, which is what reads as hand-animated.
+Handwriting is Caveat (Google Fonts) for notes and tallies only; headlines stay Zodiak. Paper ground, so
+they sit beside /ink-wash and /paper-desk, not the near-black films. What a recurring cartoon cast would still
+need is a decision, not code: one named character we always use (a CampusAI student), drawn from Open Peeps
+pieces so anyone on the team can pose them.
 
 ## Reference: Island "for Agents" by adiiguu (2026-11-03, Jacob: "I love the animations and the noises")
 Five-slide carousel (instagram.com/p/DfMPoqACmI3), learned through Muse. Not seen frame by frame
