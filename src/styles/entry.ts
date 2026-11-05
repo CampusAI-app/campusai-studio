@@ -7,9 +7,10 @@ import React from "react";
 import { Composition, registerRoot } from "remotion";
 import type { CalculateMetadataFunction } from "remotion";
 import { END_FRAMES, SIZES, type Format } from "./common";
-import { FLAT_CARTOON, HEADLINE, INK_WASH, MAP_ROUTE, PAPER_DESK, POV_DOODLE, STAT_CHART, TEARDOWN } from "./examples";
+import { POV_DOODLE_WEEK, TWO_PROFESSORS, FLAT_CARTOON, HEADLINE, INK_WASH, MAP_ROUTE, PAPER_DESK, POV_DOODLE, STAT_CHART, TEARDOWN } from "./examples";
 import { FlatCartoon, flatEnd } from "./FlatCartoon";
-import { PovDoodle, povEnd } from "./PovDoodle";
+import { PovDoodle, answerFrames, povEnd } from "./PovDoodle";
+import { TwoProfessors, twoProfessorsEnd } from "./TwoProfessors";
 import { HEADLINE_END, Headline } from "./Headline";
 import { INK_TOTAL, InkWash } from "./InkWash";
 import { MapRoute, ROUTE_END } from "./MapRoute";
@@ -26,7 +27,9 @@ const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: 
   { id: "Style-MapRoute", c: MapRoute, props: MAP_ROUTE, frames: ROUTE_END + END_FRAMES + 12 },
   { id: "Style-InkWash", c: InkWash, props: INK_WASH, frames: INK_TOTAL },
   // The cartoon pair (2026-11-04): their length follows the subject, so it is worked out from the props.
-  { id: "Style-PovDoodle", c: PovDoodle, props: POV_DOODLE, frames: 0, dur: (p) => povEnd(p.notes.length) + END_FRAMES + 12 },
+  { id: "Style-PovDoodle", c: PovDoodle, props: POV_DOODLE, frames: 0, dur: (p) => povEnd(p.notes.length, p.answer ? answerFrames(p.answer) : 0) + END_FRAMES + 12 },
+  { id: "Style-PovDoodle-Week", c: PovDoodle, props: POV_DOODLE_WEEK, frames: 0, dur: (p) => povEnd(p.notes.length, p.answer ? answerFrames(p.answer) : 0) + END_FRAMES + 12 },
+  { id: "Reel-TwoProfessors", c: TwoProfessors, props: TWO_PROFESSORS, frames: 0, dur: (p) => twoProfessorsEnd(p) + END_FRAMES + 12 },
   { id: "Style-FlatCartoon", c: FlatCartoon, props: FLAT_CARTOON, frames: 0, dur: (p) => flatEnd(p.points.length) + END_FRAMES + 12 },
 ];
 

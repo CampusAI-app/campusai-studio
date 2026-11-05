@@ -11,8 +11,10 @@ brief and LOG. Newest wins where two disagree. Add every new note here, dated, t
   gradient runs through the whole piece; the product IS the frame, no visible seam or box (10/16).
 - **Never show Sandy Spring** (Maya Chen's demo internship), in a film or on a captured page.
   Lean on the Smith Investment Fund for her experience (10/21, in caps).
-- Never mention ChatGPT. No Maryland imagery (flag, Testudo, campus photos). No "Free for UMD
-  students". Instagram endings may say "Link in bio."
+- Never mention ChatGPT. No "Free for UMD students". Instagram endings may say "Link in bio."
+- UMD's logo and UMD imagery (the turtle, campus, colours) CAN go in a video (11/04, correcting an older blanket ban
+  that came from the 10/16 social graphics, where the backgrounds were cut because "it blocks out the left side"). It
+  is just sometimes kept off the product itself, so ask before putting it on a product screen.
 - Every press shows where its result lands. Show, never label ("Missed" was cut).
 - Capture from EMPTY: a picker starts empty and gets filled by typing or a tapped suggestion,
   never pre-filled then X'd out (10/21).

@@ -20,7 +20,8 @@ type Pt = { x: number; y: number };
 type Move = { from: Pt; to: Pt; start: number; end: number; click?: number };
 type FlowFile = { vw: number; vh: number; moves?: Move[] };
 
-const pointerAt = (moves: Move[], t: number) => {
+/** Where the recorded pointer is at `t`, and seconds since its last press (shared with the /pov-doodle player). */
+export const pointerAt = (moves: Move[], t: number) => {
   let p: Pt | null = moves.length ? moves[0].from : null;
   let click: number | null = null;
   for (const m of moves) {

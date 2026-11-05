@@ -14,6 +14,7 @@
 //   "size": [1440, 900],             the page in CSS px; 1440x900 suits wide, 820x1000 suits 9x16 and 4x5
 //   "theme": "dark",                 dark | light
 //   "zoom": 1.4,                     optional: bigger type for a phone screen
+//   "dpr": 3,                        optional: sharper frames for a film that zooms in close (default 2)
 //   "steps": [
 //     { "wait": 1 },                                   hold, seconds
 //     { "press": "Add Financial Modeling Bootcamp" },  move the pointer to it and press it
@@ -86,7 +87,7 @@ for (const f of fs.readdirSync(outDir)) fs.unlinkSync(path.join(outDir, f));
 const browser = await chromium.launch({ executablePath: CHROME, headless: true });
 try {
   // bypassCSP lets the capture add its zoom rule; nothing the policy governs is drawn differently
-  const ctx = await browser.newContext({ viewport: { width: vw, height: vh }, deviceScaleFactor: 2, bypassCSP: true });
+  const ctx = await browser.newContext({ viewport: { width: vw, height: vh }, deviceScaleFactor: spec.dpr || 2, bypassCSP: true });
   await ctx.addInitScript((theme) => {
     try {
       localStorage.setItem("campusai-theme", theme);
@@ -219,6 +220,13 @@ try {
         const el = await find(s.press ?? s.hover, s.nth);
         await glide(await reach(el), s.ms);
         await wait(0.15);
+        // a chat thread can re-lay itself out while the pointer travels (2026-11-04: "Correct" rose 19 px in the
+        // spring planner and the press landed under it), so re-aim before pressing if it moved off the pointer
+        const b = await el.boundingBox();
+        if (b && (at.x < b.x || at.x > b.x + b.width || at.y < b.y || at.y > b.y + b.height)) {
+          await glide({ x: Math.round(b.x + b.width / 2), y: Math.round(b.y + b.height / 2) }, 220);
+          await wait(0.1);
+        }
         if ("press" in s) {
           await press();
           await wait(0.5);
@@ -255,7 +263,7 @@ try {
   marks.end = now();
   stop = true;
   await shoot;
-  fs.writeFileSync(path.join(outDir, "frames.json"), JSON.stringify({ vw, vh, dpr: 2, marks, moves, frames }, null, 1));
+  fs.writeFileSync(path.join(outDir, "frames.json"), JSON.stringify({ vw, vh, dpr: spec.dpr || 2, marks, moves, frames }, null, 1));
   const dur = frames.at(-1)?.t || 0;
   console.log(`${frames.length} frames over ${dur.toFixed(1)}s (${(frames.length / dur).toFixed(1)} fps) in public/${film}/flow/`);
   console.log("marks", marks);
