@@ -85,3 +85,32 @@ here, so treat timings as feel, not measured numbers. What to take, and the part
   transitions, not on every UI event. The individual whooshes and clicks could not be heard through
   Instagram, so nothing here says which effect sits where. Apply it as: a sound on each transition
   and each focus change, from `shots/audio/`, chosen by ear in the cut (`shots/method/sound-design.md`).
+
+## Rebuilding a video someone sends, frame for frame (2026-11-04)
+When the job is "make ours move like this" from a video file. From HyperFrames' rewritten
+`reverse-any-video` skill (heygen-com/hyperframes, Apache-2.0), method only: the skill itself is a paid
+HyperFrames Pro feature that signs into HeyGen, sends usage telemetry and re-shoots people with AI, so
+none of it is installed or run. Our rebuild is a Remotion composition built from our own kit.
+- **Rebuild what we have the right to use.** Steal timing and structure, never footage, and never play
+  the original's frame in ours. A logo is the real mark from the brand's own files, never drawn by hand.
+- **The original sets the frame:** our composition is its size and frame rate exactly, and its length
+  is its frame count, not the music's. Write times as frames, not rounded seconds (a time rounded up
+  lands a frame late).
+- **Read consecutive frames wherever something changes,** a few either side of each cut, entrance and
+  exit. Contact sheets a second apart miss one-to-three-frame timing, which way things enter and leave,
+  blurs at cuts and one-frame flashes.
+- **Graphics switch on exact frames.** Anything fully there on its first frame is set there, not faded
+  in; ease only what you saw move across several frames. A blur, dissolve or wipe at a cut is part of
+  the cut and is rebuilt over its measured frames.
+- **Size text from its ink, not by eye:** crop the same line from their frame and ours, match the ink
+  box height and width, then letter spacing. Try two or three fonts at that size before choosing.
+- **Watch every large word through its whole life** (how it arrives, what it does on screen, how it
+  leaves) and name what the letters are made of (solid, gradient, outline, glow) before building it.
+- **Recipes that hold up frame by frame:** a fill sweeping across a word is two copies with the lit
+  one's `clip-path: inset(0 100% 0 0)` driven to `inset(0)`; motion blur along a fast move is an SVG
+  `feGaussianBlur` with a one-axis `stdDeviation` (`"24 0"`), because CSS `blur()` smears both ways;
+  a ghost trail is two to four copies behind at about 0.5, 0.3 and 0.15 opacity; grain is a seeded
+  `feTurbulence` reseeded per frame.
+- **Check it the reanimate way** (full method on Jacob's Mac in `Lucius/memory/motion-library.md`, "Rebuilding motion from a
+  reference"): film ours the same way as theirs, fix the biggest gap, stop at five rounds, never
+  loosen a bar. Start, end and length within 80 ms is the pass mark.

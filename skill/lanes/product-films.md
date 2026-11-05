@@ -49,6 +49,16 @@ capabilities as pills stacking under one phrase.
   the exact thing shown. The silence is a cut, never a fade.
 - The UI pulled apart into single cards, every press showing where its result lands.
 - The pop-out, when the film highlights one specific thing.
+- **The meeting nobody needs** (2026-11-04, Echo's monday.com launch spot, learned through Muse; Jacob:
+  "a great video, learn from it and apply"). One before/after argument in about a minute. The
+  before is the pain in the customer's own words, quoted as they would say it ("Same as last
+  week." "Almost there." "Waiting on review."). The turn is one line naming the product. Then
+  exactly three named capabilities, each with one plain verb (read every task, flag what is stuck,
+  push it forward). The proof is countable and shown moving (3 trends found, statuses flipping to
+  Done), never claimed. It closes on ONE real UI gesture that lands the point (a toggle flipping the
+  status meeting to Cancelled), then the logo. For CampusAI the pain lines come from real students
+  (survey answers, walk-ups), every count from `facts.md`, and the gesture is a real control in the
+  demo. Seen once through Muse, not frame by frame, so its timings are feel, not numbers.
 
 **Film styles to borrow motion from** (Studio page, "Film styles"): Dark Tech Keynote for
 CampusAI launches (its grammar only: one accent for what the product does, transitions only as
