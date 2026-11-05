@@ -126,17 +126,20 @@ const camAt = (a: AnswerRec, t: number) => {
 };
 
 /** The real chat, crisp (outside the boil: the product is never wobbled), in a frame like the notes it replaces. */
-const Answer: React.FC<{ list: AnswerItem[]; at: number; W: number }> = ({ list, at, W }) => {
+const Answer: React.FC<{ list: AnswerItem[]; at: number; W: number; H: number }> = ({ list, at, W, H }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   if (f < at) return null;
   const k = spring({ frame: f - at, fps, config: { damping: 14, stiffness: 120 } });
   const { a: item, k: into } = recOn(list, f - at - 10);
   const w = W - 64;
+  // Shorter frames (feed) shrink the whole box rather than crop it, so every
+  // recording keeps the framing its camera was set for. Vertical is 1, unchanged.
+  const fit = Math.min(1, (H - BOX_TOP - 56) / BOX_H);
   return (
-    <div style={{ position: "absolute", left: 32, top: BOX_TOP, width: w, height: BOX_H, overflow: "hidden", borderRadius: 22,
+    <div style={{ position: "absolute", left: 32, top: BOX_TOP, transformOrigin: "top center", width: w, height: BOX_H, overflow: "hidden", borderRadius: 22,
       border: `5px solid ${PRINT}`, boxShadow: `8px 10px 0 ${PRINT}`, background: "#0b0708",
-      opacity: interpolate(k, [0, 0.25], [0, 1], clamp), transform: `translateY(${(1 - k) * 260}px) rotate(${(1 - k) * -4}deg)` }}>
+      opacity: interpolate(k, [0, 0.25], [0, 1], clamp), transform: `translateY(${(1 - k) * 260}px) rotate(${(1 - k) * -4}deg) scale(${fit})` }}>
       {item.kind === "chat" ? <DrawnChat s={item} from={f - Math.max(0, into)} w={w} />
         : item.kind === "ask" ? <DrawnAsk s={item} from={f - Math.max(0, into)} w={w} />
         : <RecShot a={item} into={into} w={w} />}
@@ -338,19 +341,22 @@ export const PovDoodle: React.FC<PovDoodleProps> = ({ pov, tally, notes, faces, 
           const at = FIRST + i * GAP;
           const drop = spring({ frame: f - at, fps, config: { damping: 11, stiffness: 140 } });
           const rot = (i % 2 ? 5 : -6) + (i === 1 ? 3 : 0);
-          const y = H * 0.8 - i * 165; // room for a two-line note (6 notes since 11/04)
+          // Room for a two-line note (6 notes since 11/04). Feed (1350 tall) packs the
+          // pile tighter and lower so the top note clears the headline; vertical is unchanged.
+          const y = H >= 1600 ? H * 0.8 - i * 165 : H * 0.89 - i * Math.min(165, (H * 0.89 - 450) / Math.max(1, n - 1));
+          const noteScale = H >= 1600 ? 1 : 0.88;
           const off = swept * (W * 1.1 + i * 60);
           return f < at ? null : (
             <div key={i} style={{ position: "absolute", left: W * 0.58 + (i % 2) * 18, top: y - (1 - drop) * 520, width: 410, padding: "24px 28px",
               background: i === n - 1 ? "#fff6c9" : "#fffdf8", border: `5px solid ${PRINT}`, borderRadius: "14px 22px 12px 26px",
-              boxShadow: `6px 8px 0 ${PRINT}`, transform: `translateX(${off}px) rotate(${rot + swept * 40}deg)`,
+              boxShadow: `6px 8px 0 ${PRINT}`, transform: `translateX(${off}px) rotate(${rot + swept * 40}deg) scale(${noteScale})`, transformOrigin: "left top",
               fontFamily: HAND, fontSize: label.length > 12 ? 50 : 60, lineHeight: 1, color: PRINT, opacity: interpolate(drop, [0, 0.2], [0, 1], clamp) }}>
               {label}
             </div>
           );
         })}
       </AbsoluteFill>
-      {answer ? <Answer list={asList(answer)} at={answerAt} W={W} /> : null}
+      {answer ? <Answer list={asList(answer)} at={answerAt} W={W} H={H} /> : null}
       {answer ? <Cue at={answerAt} name="paper-slide" volume={0.5} /> : null}
       {notes.map((_, i) => <Cue key={i} at={FIRST + i * GAP + 4} name="paper-slide" volume={0.45} />)}
       {notes.map((_, i) => <Cue key={`t${i}`} at={tickAt(i)} name="switch-tap" volume={0.35} />)}
