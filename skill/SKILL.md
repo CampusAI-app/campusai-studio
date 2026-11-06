@@ -115,6 +115,11 @@ The one exception (2026-11-01): a named style (`/teardown`, `/paper-desk`, `/hea
 `/map-route`, `/ink-wash`, see `lanes/motion.md`) is already a chosen structure, so steps 1 to 3 are skipped.
 Its facts file and the review loop are not.
 
+**A topic with no style named (2026-11-06, from HyperFrames' style-sampling, Muse send).** Before drafting
+structures, check the named styles in `lanes/motion.md`. If one or more fit the topic, show them as a short list
+(name, what it makes, what the person brings), name the one that fits best and why, and wait for the pick. A proven
+format beats one described from scratch. Only when none fits does the order below start at step 1.
+
 1. **The idea**, in one or two lines: what it says and to whom.
 2. **The structure**: beats, each with its part or shot, its length, its real material, what the
    viewer knows by its end, and the state it starts and ends on. A list of effects is not a
@@ -193,6 +198,7 @@ Its facts file and the review loop are not.
 | Need | Go to |
 |---|---|
 | Parts to build with (camera, cursor, logo moments, cards, type, device) | `studio/src/kit/index.ts`. Import from the kit; never redefine a part a film already has. |
+| Kinetic type, captions, logo stings and a dot transition from snapcn (30 free parts, added 2026-11-06 from Jacob's Muse send, "Need asap") | `studio/src/snapcn/`. Its README says what was taken, what was left out and why. Worked example: `src/snapcn-sample/` (`SnapcnSample-9x16`). |
 | A whole shot recipe with code | `Content/video-studio/shots/` (124 shots, README index; see them move at vincentwei1021.github.io/video-shotcraft/library.html) |
 | The name of a move | `Design/motion-vocabulary.md` Part 4 (923 techniques, plain words to name). Parts 1 and 2 give the exact keyframes and camera numbers for names they share. |
 | Motion numbers (timings, easing, camera chains) | `Lucius/memory/motion-raylight-templates.md`, Raylight's 24 measured beat sheets |
