@@ -3,6 +3,24 @@
 Gathered 2026-10-22 from `motion-library.md` (items 7 to 9 and the 09-16 rules), the hook-films
 brief and LOG. Newest wins where two disagree. Add every new note here, dated, the day he gives it.
 
+## Named styles are each their own world (11/08, newest, wins over the type and colour lines below and in SKILL.md)
+Jacob, on the first 20 styles from the "30 Claude animations" reel: "These still look pretty similar and not actually
+different", "The fonts and the backgrounds are also all the same", and "I'm trying to create these completely different
+types of content that I want to be their own thing, so we have different types of things we could always post. I don't
+really like the brand font, though, because it's super AI-generic and classic. We should be experimenting with different
+fonts. The colors should be more red, but it shouldn't always just be a black background or a white background."
+- **A named style owns its whole frame**: its own ground, palette, typeface, layout and ending. Never the shared title
+  top left, the shared caption block, or the shrink into the shared end card. Two styles side by side must not be
+  mistakable for each other.
+- **Fonts: experiment.** Each style picks its own face (Google Fonts through `@remotion/google-fonts`), chosen for the
+  style. Zodiak and Inter are no longer the default for named styles. Still no monospace and no all-caps
+  wide-tracked labels.
+- **Colour leans red, and grounds vary.** Reds, oxbloods, pinks, corals, terracottas, warm papers, wood, deep water at
+  dusk. Not black or white by default. Brand red `#D9202E` stays the anchor, and a style may use a family of reds around it.
+- **The brand lives in the logo.** The logo still arrives inside two seconds and every piece still ends on it, but drawn
+  in the style's own language on the style's own ground (stamped, flapped, printed), not on the shared dark card.
+- Product films, captures and chat recordings keep the product's own look; this note is about named styles.
+
 ## The product on screen
 - Real dark-mode web captures of campusai-demo (or dev or main), never a mockup, never mobile
   (parked). It must look like the WEB product at phone size: a capture that "looks like mobile,

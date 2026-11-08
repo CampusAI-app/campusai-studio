@@ -8,7 +8,18 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, DUR, readHold } from "../system/motion";
-import { B, Clip, Cue, INTER, RED, ZODIAK, ramp } from "./common";
+import { loadFont as DISPLAYFont } from "@remotion/google-fonts/Righteous";
+import { loadFont as TEXTFont } from "@remotion/google-fonts/Manrope";
+import { Cue, ramp } from "./common";
+import { World } from "./world";
+
+// rebuilt 11/08 as its own world: a plum night street, the tube in hot red, the sign in Righteous
+const { fontFamily: DISPLAY } = DISPLAYFont("normal", { weights: ["400"], subsets: ["latin"] });
+const { fontFamily: TEXT } = TEXTFont("normal", { weights: ["500", "700"], subsets: ["latin"] });
+const INK = "#FFE9F0";
+const SOFT = "#F5A3C0";
+const GLOW = "255, 46, 90";
+const ACCENT = "#FF2E5A";
 import { Peep, type BodyName, type FaceName, type HairName } from "./peeps/Peep";
 
 export type NeonSilhouetteProps = {
@@ -51,17 +62,17 @@ export const NeonSilhouette: React.FC<NeonSilhouetteProps> = (p) => {
   const drift = 1 + ramp(f, 0, end, CURVE.quiet.standard) * 0.04;
   const sub = ramp(f, subAt, subAt + DUR.arrive, CURVE.quiet.enter);
   const tube = (glow: boolean) => (
-    <Peep face={p.person.face} body={p.person.body} hair={p.person.hair} ink={glow ? RED : B.color.ink} fill="transparent" width={pw}
-      style={{ position: "absolute", left: (width - pw) / 2, top, filter: glow ? `blur(10px) drop-shadow(0 0 26px ${RED})` : `drop-shadow(0 0 3px ${RED}) drop-shadow(0 0 10px ${RED})` }} />
+    <Peep face={p.person.face} body={p.person.body} hair={p.person.hair} ink={glow ? ACCENT : INK} fill="transparent" width={pw}
+      style={{ position: "absolute", left: (width - pw) / 2, top, filter: glow ? `blur(10px) drop-shadow(0 0 26px ${ACCENT})` : `drop-shadow(0 0 3px ${ACCENT}) drop-shadow(0 0 10px ${ACCENT})` }} />
   );
   return (
-    <Clip endAt={end} cta={p.cta}>
+    <World endAt={end} cta={p.cta} font={DISPLAY} fontWeight={400} ink={INK} logo="white" logoSpot="top-left" end="iris" endGround="#2A0620" ground="radial-gradient(ellipse 90% 50% at 50% 70%, #4A0B2E 0%, #23061C 55%, #12030E 100%)">
       {/* the wall: brick-less, just a faint vertical grain so the glow has something to land on */}
       <AbsoluteFill style={{ background: `repeating-linear-gradient(90deg, rgba(247,239,230,.018) 0 2px, transparent 2px 9px)` }} />
       <AbsoluteFill style={{ transform: `scale(${drift.toFixed(4)})` }}>
         {/* the glow the tube throws on the wall */}
         <div style={{ position: "absolute", left: width * 0.1, width: width * 0.8, top: top + pw * 0.2, height: pw * 1.1, borderRadius: "50%",
-          background: `radial-gradient(closest-side, rgba(${B.color.glowRgb},${(0.32 * lit * hum).toFixed(3)}), transparent)` }} />
+          background: `radial-gradient(closest-side, rgba(${GLOW},${(0.32 * lit * hum).toFixed(3)}), transparent)` }} />
         {/* the tube lights from the top down while it warms */}
         <div style={{ position: "absolute", inset: 0, clipPath: `inset(0 0 ${((1 - Math.min(1, 0.35 + warm * 0.7)) * 100).toFixed(1)}% 0)`, opacity: lit * hum }}>
           {tube(true)}
@@ -70,18 +81,18 @@ export const NeonSilhouette: React.FC<NeonSilhouetteProps> = (p) => {
         {/* the neon line */}
         <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.15, textAlign: "center", opacity: onT * hum }}>
           {p.lines.map((l, i) => (
-            <div key={i} style={{ fontFamily: ZODIAK, fontWeight: 700, fontStyle: "italic", fontSize: 104, lineHeight: 1.04, letterSpacing: "-0.02em", color: B.color.ink,
-              textShadow: `0 0 4px ${RED}, 0 0 14px ${RED}, 0 0 34px ${RED}, 0 0 64px rgba(${B.color.glowRgb},.7)` }}>{l}</div>
+            <div key={i} style={{ fontFamily: DISPLAY, fontWeight: 400, fontStyle: "normal", fontSize: 112, lineHeight: 1.04, letterSpacing: "-0.02em", color: INK,
+              textShadow: `0 0 4px ${ACCENT}, 0 0 14px ${ACCENT}, 0 0 34px ${ACCENT}, 0 0 64px rgba(${GLOW},.7)` }}>{l}</div>
           ))}
         </div>
       </AbsoluteFill>
-      <div style={{ position: "absolute", left: 64, right: 64, top: subTop, textAlign: "center", fontFamily: ZODIAK, fontWeight: 700, fontSize: 50, lineHeight: 1.1, color: B.color.ink,
+      <div style={{ position: "absolute", left: 64, right: 64, top: subTop, textAlign: "center", fontFamily: TEXT, fontWeight: 700, fontSize: 46, lineHeight: 1.1, color: INK,
         opacity: sub, transform: `translateY(${(1 - sub) * 14}px)` }}>{p.sub}</div>
-      <div style={{ position: "absolute", left: 64, right: 64, top: subTop + 80, textAlign: "center", fontFamily: INTER, fontSize: 32, color: B.color.inkSoft,
+      <div style={{ position: "absolute", left: 64, right: 64, top: subTop + 80, textAlign: "center", fontFamily: TEXT, fontSize: 32, color: SOFT,
         opacity: ramp(f, subAt + 12, subAt + 24) }}>{p.source}</div>
       <Cue at={PERSON_AT + WARM - 4} name="switch-tap" volume={0.5} />
       <Cue at={textAt} name="switch-tap" volume={0.45} />
       <Cue at={textAt + 2} name="data-scan" volume={0.15} />
-    </Clip>
+    </World>
   );
 };

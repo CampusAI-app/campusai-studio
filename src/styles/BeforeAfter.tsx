@@ -9,7 +9,15 @@
 import React from "react";
 import { Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, readHold } from "../system/motion";
-import { B, Clip, Cue, INTER, RED, Title, ZODIAK, clamp, ramp } from "./common";
+import { loadFont } from "@remotion/google-fonts/BricolageGrotesque";
+import { Cue, clamp, ramp } from "./common";
+import { World } from "./world";
+
+const { fontFamily: BRICO } = loadFont("normal", { weights: ["500", "700", "800"], subsets: ["latin"] });
+// rebuilt 11/08 as its own world: a blush studio, a big oxblood headline set tight, the capture as a lifted card
+const BLUSH = "#F6D3CE";
+const OX = "#3B0D10";
+const RED = "#D9202E";
 
 export type BeforeAfterProps = {
   title: string;
@@ -58,12 +66,14 @@ export const BeforeAfter: React.FC<BeforeAfterProps> = (p) => {
   const ring = ramp(f, ringAt, ringAt + 14, CURVE.showy.enter);
   const cap = ramp(f, ringAt + 6, ringAt + 18, CURVE.quiet.enter);
   const label = (text: string, side: "left" | "right", on: number) => (
-    <div style={{ position: "absolute", top: 18, [side]: 18, padding: "10px 22px", borderRadius: 999, background: "rgba(11,7,8,.82)", color: B.color.ink,
-      fontFamily: INTER, fontWeight: 600, fontSize: 30, opacity: on }}>{text}</div>
+    <div style={{ position: "absolute", top: 18, [side]: 18, padding: "10px 22px", borderRadius: 999, background: OX, color: BLUSH,
+      fontFamily: BRICO, fontWeight: 600, fontSize: 30, opacity: on }}>{text}</div>
   );
   return (
-    <Clip endAt={end} cta={p.cta}>
-      <Title out={end}>{p.title}</Title>
+    <World endAt={end} cta={p.cta} font={BRICO} fontWeight={800} ink={BLUSH} logo="dark" endLogo="white" logoSpot="top-left" end="wipe-left" endGround={OX}
+      ground={`radial-gradient(ellipse 90% 60% at 50% 40%, #FCE6E2, ${BLUSH} 60%, #EAB0A8)`}>
+      <div style={{ position: "absolute", left: 56, right: 56, top: 170, fontFamily: BRICO, fontWeight: 800, fontSize: 100, lineHeight: 0.94, letterSpacing: "-0.035em", color: OX,
+        opacity: ramp(f, 0, 10), transform: `translateY(${((1 - ramp(f, 0, 12)) * 20).toFixed(1)}px)` }}>{p.title}</div>
       <div style={{ position: "absolute", left, top, width: W, height: H, overflow: "hidden", borderRadius: 22, boxShadow: "0 30px 80px rgba(0,0,0,.6)" }}>
         <Img src={staticFile(p.before.src)} style={imgStyle} />
         <div style={{ position: "absolute", inset: 0, clipPath: `inset(0 ${((1 - x) * 100).toFixed(2)}% 0 0)` }}>
@@ -73,20 +83,20 @@ export const BeforeAfter: React.FC<BeforeAfterProps> = (p) => {
         {label(p.before.label, "right", ramp(f, 4, 14))}
         {/* the ring on what changed */}
         <div style={{ position: "absolute", left: fx - 14, top: fy - 14, width: p.focus.w * scale + 28, height: p.focus.h * scale + 28, borderRadius: 18,
-          border: `9px solid ${RED}`, opacity: ring, boxShadow: `0 0 0 4000px rgba(11,7,8,${(0.42 * ring).toFixed(3)})`, transform: `scale(${(1.25 - 0.25 * ring).toFixed(3)})` }} />
+          border: `9px solid ${RED}`, opacity: ring, boxShadow: `0 0 0 4000px rgba(59,13,16,${(0.38 * ring).toFixed(3)})`, transform: `scale(${(1.25 - 0.25 * ring).toFixed(3)})` }} />
         {/* the divider */}
-        <div style={{ position: "absolute", top: 0, bottom: 0, left: x * W - 3, width: 6, background: B.color.ink, boxShadow: "0 0 18px rgba(0,0,0,.5)" }} />
-        <div style={{ position: "absolute", top: H / 2 - 40, left: x * W - 40, width: 80, height: 80, borderRadius: 40, background: B.color.ink,
+        <div style={{ position: "absolute", top: 0, bottom: 0, left: x * W - 3, width: 6, background: "#fff", boxShadow: "0 0 18px rgba(0,0,0,.5)" }} />
+        <div style={{ position: "absolute", top: H / 2 - 40, left: x * W - 40, width: 80, height: 80, borderRadius: 40, background: RED,
           transform: `scaleX(${stretch.toFixed(3)})`, boxShadow: "0 6px 20px rgba(0,0,0,.5)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <svg width={44} height={24} viewBox="0 0 44 24"><path d="M14 4 L4 12 L14 20 M30 4 L40 12 L30 20" stroke={B.color.bgDeep} strokeWidth={4} fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
+          <svg width={44} height={24} viewBox="0 0 44 24"><path d="M14 4 L4 12 L14 20 M30 4 L40 12 L30 20" stroke="#fff" strokeWidth={4} fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
         </div>
       </div>
-      <div style={{ position: "absolute", left: 64, right: 64, top: top + H + 46, fontFamily: ZODIAK, fontWeight: 700, fontSize: 58, lineHeight: 1.1, color: B.color.ink,
+      <div style={{ position: "absolute", left: 64, right: 64, top: top + H + 46, fontFamily: BRICO, fontWeight: 700, fontSize: 58, lineHeight: 1.1, color: OX,
         opacity: cap, transform: `translateY(${(1 - cap) * 14}px)` }}>{p.caption}</div>
-      <div style={{ position: "absolute", left: 64, right: 64, top: top + H + 200, fontFamily: INTER, fontSize: 34, color: B.color.ink, opacity: ramp(f, ringAt + 16, ringAt + 28) }}>{p.source}</div>
+      <div style={{ position: "absolute", left: 64, right: 64, top: top + H + 200, fontFamily: BRICO, fontSize: 34, color: OX, opacity: ramp(f, ringAt + 16, ringAt + 28) }}>{p.source}</div>
       <Cue at={KEYS[1]} name="air-woosh-quick" volume={0.5} />
       <Cue at={KEYS[2]} name="switch-tap" volume={0.35} />
       <Cue at={ringAt} name="marker-pen-line" volume={0.35} />
-    </Clip>
+    </World>
   );
 };

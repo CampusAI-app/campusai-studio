@@ -168,6 +168,9 @@ format beats one described from scratch. Only when none fits does the order belo
   only, never typed into a film. CampusAI red is `#D9202E` (the product's own `--color-primary`).
 - Type: each venture's display face for titles, its UI face for anything that reads as product.
   CampusAI is Zodiak titles and Inter UI. (Settles "Inter only" against Zodiak.)
+- **Exception, named styles (Jacob, 11/08):** each named style is its own world, with its own ground, palette,
+  typeface, layout and ending. Fonts are experimented with per style, colour leans red, and grounds are not black or
+  white by default. The brand lives in the logo. Full note in `rules/campusai.md`, "Named styles are each their own world".
 - No fake browser chrome, ever: no traffic-light dots, URL bars or window frames. The product is
   shown frameless or on the realistic device (`studio/src/four/real-laptop.tsx`), never the old
   drawn `Laptop3D`.

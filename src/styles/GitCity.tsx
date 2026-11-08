@@ -8,7 +8,17 @@
 import React from "react";
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, DUR, readHold } from "../system/motion";
-import { B, Clip, Cue, INTER, RED, Title, ZODIAK, clamp, ramp } from "./common";
+import { loadFont as DISPLAYFont } from "@remotion/google-fonts/Teko";
+import { loadFont as TEXTFont } from "@remotion/google-fonts/Teko";
+import { Cue, clamp, ramp } from "./common";
+import { Heading, World } from "./world";
+
+// rebuilt 11/08 as its own world: a blood-orange sunset skyline, cream towers, the year that matters in hot red, labels in Teko
+const { fontFamily: DISPLAY } = DISPLAYFont("normal", { weights: ["500", "600"], subsets: ["latin"] });
+const { fontFamily: TEXT } = TEXTFont("normal", { weights: ["400", "500"], subsets: ["latin"] });
+const INK = "#FFEFE6";
+const SOFT = "#E9B3C4";
+const ACCENT = "#FF3B4E";
 
 export type GitCityProps = {
   title: string;
@@ -58,7 +68,7 @@ export const GitCity: React.FC<GitCityProps> = (p) => {
     const top = [P(c + 0.5 - g, r + 0.5 - g, h), P(c + 0.5 + g, r + 0.5 - g, h), P(c + 0.5 + g, r + 0.5 + g, h), P(c + 0.5 - g, r + 0.5 + g, h)];
     const bot = [P(c + 0.5 + g, r + 0.5 - g), P(c + 0.5 + g, r + 0.5 + g), P(c + 0.5 - g, r + 0.5 + g)];
     const lit = c === p.accent && f >= built - 4;
-    const col = lit ? RED : B.color.ink;
+    const col = lit ? ACCENT : INK;
     if (f < at) return;
     towers.push({ key: `${r}-${c}`, depth: c + r, el: (
       <g key={`${r}-${c}`}>
@@ -72,32 +82,32 @@ export const GitCity: React.FC<GitCityProps> = (p) => {
   const cap = ramp(f, capAt, capAt + DUR.arrive, CURVE.quiet.enter);
   const ground = (c: number, r: number) => P(c, r);
   return (
-    <Clip endAt={end} cta={p.cta}>
-      <Title out={end}>{p.title}</Title>
+    <World endAt={end} cta={p.cta} font={DISPLAY} fontWeight={600} ink={INK} logo="white" logoSpot="top-right" end="wipe-up" endGround="#2A0A26" ground="linear-gradient(180deg, #FF9A62 0%, #F2584A 28%, #B3243F 55%, #5C0F2C 82%, #2A0716 100%)">
+      <Heading font={DISPLAY} color={INK} size={96} weight={600} tracking="0" out={end}>{p.title}</Heading>
       <AbsoluteFill>
         <svg width={width} height={height} style={{ position: "absolute", inset: 0 }}>
-          <polygon points={[ground(0, 0), ground(nC, 0), ground(nC, nR), ground(0, nR)].map(pt).join(" ")} fill={B.color.ink} opacity={0.05} />
+          <polygon points={[ground(0, 0), ground(nC, 0), ground(nC, nR), ground(0, nR)].map(pt).join(" ")} fill={INK} opacity={0.05} />
           {towers.map((t) => t.el)}
         </svg>
         {/* row labels along the near-left edge, column labels along the near-right edge */}
         {p.rows.map((row, r) => {
           const q = P(0, r + 0.5);
           return <div key={r} style={{ position: "absolute", left: q.X - 236, width: 170, top: q.Y - 30, textAlign: "right", opacity: ramp(f, 6, 18) }}>
-            <span style={{ fontFamily: INTER, fontWeight: 600, fontSize: 26, color: B.color.ink, background: "rgba(11,7,8,.82)", padding: "2px 10px", borderRadius: 8 }}>{row.label}</span>
+            <span style={{ fontFamily: TEXT, fontWeight: 600, fontSize: 26, color: INK, background: "rgba(42,10,38,.85)", padding: "2px 10px", borderRadius: 8 }}>{row.label}</span>
           </div>;
         })}
         {p.cols.map((c, i) => {
           if (i !== 0 && i !== nC - 1 && i !== p.accent) return null;
           const q = P(i + 0.5, nR);
-          return <div key={i} style={{ position: "absolute", left: q.X - 60, width: 120, top: q.Y + 16, textAlign: "center", fontFamily: INTER, fontWeight: 600, fontSize: 30,
-            color: i === p.accent ? RED : B.color.inkSoft, opacity: ramp(f, 14 + i * COL_STEP, 24 + i * COL_STEP) }}>{c}</div>;
+          return <div key={i} style={{ position: "absolute", left: q.X - 60, width: 120, top: q.Y + 16, textAlign: "center", fontFamily: TEXT, fontWeight: 600, fontSize: 30,
+            color: i === p.accent ? ACCENT : SOFT, opacity: ramp(f, 14 + i * COL_STEP, 24 + i * COL_STEP) }}>{c}</div>;
         })}
       </AbsoluteFill>
-      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.72, fontFamily: ZODIAK, fontWeight: 700, fontSize: 58, lineHeight: 1.1, color: B.color.ink,
+      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.72, fontFamily: DISPLAY, fontWeight: 700, fontSize: 58, lineHeight: 1.1, color: INK,
         opacity: cap, transform: `translateY(${(1 - cap) * 14}px)` }}>{p.caption}</div>
-      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.72 + 160, fontFamily: INTER, fontSize: 32, color: B.color.ink, opacity: ramp(f, capAt + 12, capAt + 24) }}>{p.source}</div>
+      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.72 + 160, fontFamily: TEXT, fontSize: 32, color: INK, opacity: ramp(f, capAt + 12, capAt + 24) }}>{p.source}</div>
       {p.cols.map((_, i) => (i % 2 === 0 ? <Cue key={i} at={14 + i * COL_STEP} name="hit-weak" volume={0.22} /> : null))}
       <Cue at={built - 4} name="bass-hit-short" volume={0.5} />
-    </Clip>
+    </World>
   );
 };

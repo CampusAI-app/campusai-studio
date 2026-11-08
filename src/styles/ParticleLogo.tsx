@@ -8,7 +8,14 @@
 import React, { useEffect, useState } from "react";
 import { AbsoluteFill, continueRender, delayRender, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, readHold } from "../system/motion";
-import { B, Clip, Cue, RED, ZODIAK, clamp, ramp } from "./common";
+import { loadFont as DISPLAYFont } from "@remotion/google-fonts/Unbounded";
+import { B, Cue, clamp, ramp } from "./common";
+import { World } from "./world";
+
+// rebuilt 11/08 as its own world: a crimson field, cream particles, the line in Unbounded
+const { fontFamily: DISPLAY } = DISPLAYFont("normal", { weights: ["600"], subsets: ["latin"] });
+const INK = "#FFF1E6";
+const ACCENT = "#FFB38A";
 
 export type ParticleLogoProps = {
   /** A line above the logo once it has formed. */
@@ -59,13 +66,13 @@ export const ParticleLogo: React.FC<ParticleLogoProps> = (p) => {
   const { width, height } = useVideoConfig();
   const end = particleEnd(p);
   const pts = useLogoPoints(B.logo!.onDark, p.count ?? 1800);
-  // land exactly where the end card's logo sits (common.tsx EndCard: centred, 0.47 down, min(width / 2, 560) wide)
-  const logoW = Math.min(width * 0.5, 560);
-  const lx = width / 2 - logoW / 2, ly = height * 0.47 - logoW / B.logo!.ratio / 2;
+  // land exactly where the ending's logo sits (world.tsx: centred, half way down, min(0.52 of the width, 580) wide)
+  const logoW = Math.min(width * 0.52, 580);
+  const lx = width / 2 - logoW / 2, ly = height * 0.5 - logoW / B.logo!.ratio / 2;
   const line = ramp(f, DRIFT + GATHER - 4, DRIFT + GATHER + 10, CURVE.quiet.enter);
   const hand = ramp(f, DRIFT + GATHER - 10, DRIFT + GATHER + 6, CURVE.quiet.standard); // particles hand over to the real logo
   return (
-    <Clip endAt={end} noCarry noLogo>
+    <World endAt={end} font={DISPLAY} fontWeight={600} ink={INK} logo="white" logoSpot="none" end="drop" endGround="transparent" ground="radial-gradient(circle at 50% 48%, #E8303A 0%, #A50F1B 45%, #3E050B 100%)">
       <AbsoluteFill>
         <svg width={width} height={height} style={{ position: "absolute", inset: 0 }}>
           {pts?.map((q, i) => {
@@ -78,18 +85,18 @@ export const ParticleLogo: React.FC<ParticleLogoProps> = (p) => {
             // a curved path: start, a bend point off to the side, target
             const bx = (sx + tx) / 2 + Math.sin(phase) * 260, by = (sy + ty) / 2 + Math.cos(phase) * 260;
             const pull = Math.min(1, f / DRIFT) * 0.12; // a gentle inward drift before the stream, so frame one already points somewhere
-            const px0 = sx + (width / 2 - sx) * pull, py0 = sy + (height * 0.47 - sy) * pull;
+            const px0 = sx + (width / 2 - sx) * pull, py0 = sy + (height * 0.5 - sy) * pull;
             const x = (1 - k) * (1 - k) * (px0 + Math.sin(f / 14 + phase) * wob) + 2 * (1 - k) * k * bx + k * k * tx;
             const y = (1 - k) * (1 - k) * (py0 + Math.cos(f / 17 + phase) * wob) + 2 * (1 - k) * k * by + k * k * ty;
             const size = q.red ? 3.4 : 2.6 + (1 - k) * 1.6;
-            return <circle key={i} cx={x} cy={y} r={size} fill={q.red ? RED : B.color.ink} opacity={(0.35 + 0.65 * Math.max(k, ramp(f, 0, 12))) * (1 - hand)} />;
+            return <circle key={i} cx={x} cy={y} r={size} fill={q.red ? ACCENT : INK} opacity={(0.35 + 0.65 * Math.max(k, ramp(f, 0, 12))) * (1 - hand)} />;
           })}
         </svg>
       </AbsoluteFill>
-      <div style={{ position: "absolute", left: 64, right: 64, top: ly - 170, textAlign: "center", fontFamily: ZODIAK, fontWeight: 700, fontSize: 68, lineHeight: 1.08, color: B.color.ink,
+      <div style={{ position: "absolute", left: 64, right: 64, top: ly - 170, textAlign: "center", fontFamily: DISPLAY, fontWeight: 700, fontSize: 68, lineHeight: 1.08, color: INK,
         opacity: line, transform: `translateY(${(1 - line) * 14}px)` }}>{p.line}</div>
       <Cue at={DRIFT} name="swoosh-slow" volume={0.4} />
       <Cue at={DRIFT + GATHER - 6} name="chime-crystal" volume={0.4} />
-    </Clip>
+    </World>
   );
 };

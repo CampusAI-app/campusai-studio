@@ -8,7 +8,18 @@
 import React from "react";
 import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, DUR, readHold } from "../system/motion";
-import { B, Clip, Cue, INTER, RED, Title, ZODIAK, clamp, ramp } from "./common";
+import { loadFont as DISPLAYFont } from "@remotion/google-fonts/Syne";
+import { loadFont as TEXTFont } from "@remotion/google-fonts/Manrope";
+import { B, Cue, clamp, ramp } from "./common";
+import { Heading, World } from "./world";
+
+// rebuilt 11/08 as its own world: a red velvet studio under one spotlight, the caption in Syne
+const { fontFamily: DISPLAY } = DISPLAYFont("normal", { weights: ["700", "800"], subsets: ["latin"] });
+const { fontFamily: TEXT } = TEXTFont("normal", { weights: ["500", "700"], subsets: ["latin"] });
+const INK = "#FFEDE6";
+const SURF = "#2B080D";
+const DEEP = "#16040A";
+const ACCENT = "#FF4B3E";
 
 export type TurntableProps = {
   title: string;
@@ -44,27 +55,27 @@ export const Turntable: React.FC<TurntableProps> = (p) => {
   const cap = ramp(f, SPIN_AT + SPIN + 10, SPIN_AT + SPIN + 10 + DUR.arrive, CURVE.quiet.enter);
   const face: React.CSSProperties = { position: "absolute", inset: 0, borderRadius: 18, overflow: "hidden", backfaceVisibility: "hidden" };
   return (
-    <Clip endAt={end} cta={p.cta}>
-      <Title out={end}>{p.title}</Title>
+    <World endAt={end} cta={p.cta} font={DISPLAY} fontWeight={800} ink={INK} logo="white" logoSpot="top-right" end="iris" endGround="#4A0810" ground="radial-gradient(ellipse 60% 45% at 50% 38%, #A21A28 0%, #5A0B14 50%, #1E0407 100%)">
+      <Heading font={DISPLAY} color={INK} weight={800} out={end}>{p.title}</Heading>
       <AbsoluteFill style={{ transform: `scale(${push.toFixed(4)})`, transformOrigin: `50% ${cy}px` }}>
         {/* the disc and its light */}
         <svg width={width} height={height} style={{ position: "absolute", inset: 0 }}>
           <defs>
             <radialGradient id="tt-disc" cx="50%" cy="40%" r="60%">
-              <stop offset="0" stopColor={B.color.ink} stopOpacity={0.16} />
-              <stop offset="1" stopColor={B.color.ink} stopOpacity={0.02} />
+              <stop offset="0" stopColor={INK} stopOpacity={0.16} />
+              <stop offset="1" stopColor={INK} stopOpacity={0.02} />
             </radialGradient>
           </defs>
-          <ellipse cx={width / 2} cy={disc.y + 18} rx={disc.rx} ry={disc.ry} fill={B.color.bg} />
-          <ellipse cx={width / 2} cy={disc.y} rx={disc.rx} ry={disc.ry} fill="url(#tt-disc)" stroke={B.color.ink} strokeOpacity={0.18} strokeWidth={2} />
+          <ellipse cx={width / 2} cy={disc.y + 18} rx={disc.rx} ry={disc.ry} fill={DEEP} />
+          <ellipse cx={width / 2} cy={disc.y} rx={disc.rx} ry={disc.ry} fill="url(#tt-disc)" stroke={INK} strokeOpacity={0.18} strokeWidth={2} />
           {/* the key light's pool on the platter, and the slab's contact shadow */}
-          <ellipse cx={width / 2} cy={disc.y - 6} rx={disc.rx * 0.7} ry={disc.ry * 0.55} fill={B.color.ink} opacity={0.1} />
-          <ellipse cx={width / 2} cy={disc.y - 18} rx={(W / 2) * Math.max(0.15, Math.abs(Math.cos((angle * Math.PI) / 180)))} ry={10} fill={B.color.bg} opacity={0.55} />
+          <ellipse cx={width / 2} cy={disc.y - 6} rx={disc.rx * 0.7} ry={disc.ry * 0.55} fill={INK} opacity={0.1} />
+          <ellipse cx={width / 2} cy={disc.y - 18} rx={(W / 2) * Math.max(0.15, Math.abs(Math.cos((angle * Math.PI) / 180)))} ry={10} fill={DEEP} opacity={0.55} />
           {/* the disc's rim marks turn with it */}
           {[...Array(24)].map((_, i) => {
             const a = ((i * 15 + angle) * Math.PI) / 180;
             if (Math.sin(a) < 0) return null;
-            return <circle key={i} cx={width / 2 + Math.cos(a) * disc.rx * 0.93} cy={disc.y + Math.sin(a) * disc.ry * 0.93} r={3} fill={i % 6 === 0 ? RED : B.color.ink} opacity={0.45} />;
+            return <circle key={i} cx={width / 2 + Math.cos(a) * disc.rx * 0.93} cy={disc.y + Math.sin(a) * disc.ry * 0.93} r={3} fill={i % 6 === 0 ? ACCENT : INK} opacity={0.45} />;
           })}
         </svg>
         <div style={{ position: "absolute", left: (width - W) / 2, top: cy - H / 2, width: W, height: H, perspective: 2200 }}>
@@ -73,7 +84,7 @@ export const Turntable: React.FC<TurntableProps> = (p) => {
               <Img src={staticFile(p.image.src)} style={{ position: "absolute", left: -p.crop.x * scale, top: -p.crop.y * scale, width: p.image.w * scale, height: p.image.h * scale }} />
               <div style={{ position: "absolute", inset: 0, background: `linear-gradient(100deg, transparent ${sweep / 3.6 - 30}%, rgba(247,239,230,.16) ${sweep / 3.6 - 12}%, transparent ${sweep / 3.6 + 6}%)` }} />
             </div>
-            <div style={{ ...face, transform: "rotateY(180deg)", background: B.color.surface, display: "flex", alignItems: "center", justifyContent: "center",
+            <div style={{ ...face, transform: "rotateY(180deg)", background: SURF, display: "flex", alignItems: "center", justifyContent: "center",
               boxShadow: "inset 0 0 0 2px rgba(247,239,230,.08)" }}>
               <Img src={staticFile(B.logo!.onDark)} style={{ width: W * 0.36, height: "auto", opacity: 0.85 }} />
             </div>
@@ -86,11 +97,11 @@ export const Turntable: React.FC<TurntableProps> = (p) => {
           <Img src={staticFile(p.image.src)} style={{ position: "absolute", left: -p.crop.x * scale, top: -(p.crop.y + p.crop.h) * scale + H * 0.22, width: p.image.w * scale, height: p.image.h * scale }} />
         </div>
       </AbsoluteFill>
-      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.74, fontFamily: ZODIAK, fontWeight: 700, fontSize: 60, lineHeight: 1.1, color: B.color.ink,
+      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.74, fontFamily: DISPLAY, fontWeight: 700, fontSize: 60, lineHeight: 1.1, color: INK,
         opacity: cap, transform: `translateY(${(1 - cap) * 14}px)` }}>{p.caption}</div>
-      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.74 + 170, fontFamily: INTER, fontSize: 34, color: B.color.ink, opacity: ramp(f, SPIN_AT + SPIN + 22, SPIN_AT + SPIN + 34) }}>{p.source}</div>
+      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.74 + 170, fontFamily: TEXT, fontSize: 34, color: INK, opacity: ramp(f, SPIN_AT + SPIN + 22, SPIN_AT + SPIN + 34) }}>{p.source}</div>
       <Cue at={SPIN_AT} name="swoosh-slow" volume={0.4} />
       <Cue at={SPIN_AT + SPIN - 8} name="bass-hit-short" volume={0.45} />
-    </Clip>
+    </World>
   );
 };

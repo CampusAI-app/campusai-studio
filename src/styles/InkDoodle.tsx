@@ -9,7 +9,14 @@ import React from "react";
 import { loadFont } from "@remotion/google-fonts/Caveat";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, readHold } from "../system/motion";
-import { Clip, Cue, INTER, PAPER, PRINT, RED, ZODIAK, ramp } from "./common";
+import { loadFont as DISPLAYFont } from "@remotion/google-fonts/PermanentMarker";
+import { Cue, ramp, PRINT } from "./common";
+import { World } from "./world";
+
+// rebuilt 11/08 as its own world: coral notebook paper with a red margin, the title in Permanent Marker
+const { fontFamily: DISPLAY } = DISPLAYFont("normal", { weights: ["400"], subsets: ["latin"] });
+const ACCENT = "#D9202E";
+const TEXT = "\"Manrope, sans-serif\"";
 
 const { fontFamily: HAND } = loadFont("normal", { weights: ["700"], subsets: ["latin"] });
 
@@ -64,7 +71,7 @@ export const InkDoodle: React.FC<InkDoodleProps> = (p) => {
     return c.measureText(t).width;
   };
   return (
-    <Clip endAt={end} light ground={PAPER} cta={p.cta}>
+    <World endAt={end} cta={p.cta} font={DISPLAY} fontWeight={400} ink="#FFE4DC" logo="dark" endLogo="white" logoSpot="top-right" end="wipe-left" endGround="#1E0A0A" ground="linear-gradient(90deg, transparent 96px, rgba(217,32,46,.55) 96px 100px, transparent 100px), #FFD3C7">
       {/* ruled paper */}
       <AbsoluteFill style={{ background: `repeating-linear-gradient(transparent 0 ${lineH / 2 - 2}px, rgba(11,7,8,.07) ${lineH / 2 - 2}px ${lineH / 2}px)`, backgroundPosition: `0 ${top0 + 26}px` }} />
       <svg width={0} height={0} style={{ position: "absolute" }}>
@@ -74,7 +81,7 @@ export const InkDoodle: React.FC<InkDoodleProps> = (p) => {
         </filter>
       </svg>
       <AbsoluteFill style={{ filter: "url(#inkboil)" }}>
-        <div style={{ position: "absolute", left: 64, right: 64, top: 200, fontFamily: ZODIAK, fontWeight: 700, fontSize: 72, lineHeight: 1.06, letterSpacing: "-0.02em", color: PRINT,
+        <div style={{ position: "absolute", left: 64, right: 64, top: 200, fontFamily: DISPLAY, fontWeight: 400, fontSize: 70, lineHeight: 1.1, letterSpacing: "0", color: PRINT,
           opacity: titleK, transform: `translateY(${(1 - titleK) * 12}px)` }}>{p.title}</div>
         {notes.map((n, i) => {
           const y = top0 + i * lineH;
@@ -92,7 +99,7 @@ export const InkDoodle: React.FC<InkDoodleProps> = (p) => {
                       {n.text.slice(ci, Math.max(ci, Math.min(shown, ci + n.circle!.length)))}
                       {shown >= ci + n.circle!.length ? (
                         <svg viewBox="0 0 100 100" preserveAspectRatio="none" style={{ position: "absolute", left: -34, top: -18, width: "calc(100% + 68px)", height: "calc(100% + 36px)", overflow: "visible" }}>
-                          <Stroke at={n.markAt} color={RED} w={8} d={[...Array(23)].map((_, k) => {
+                          <Stroke at={n.markAt} color={ACCENT} w={8} d={[...Array(23)].map((_, k) => {
                             const a2 = -1.2 + (k / 22) * Math.PI * 2.25, rr = 1 + Math.sin(k * 1.7) * 0.05;
                             return `${k ? "L" : "M"}${(50 + Math.cos(a2) * 42 * rr).toFixed(1)},${(52 + Math.sin(a2) * 46 * rr).toFixed(1)}`;
                           }).join(" ")} />
@@ -118,7 +125,7 @@ export const InkDoodle: React.FC<InkDoodleProps> = (p) => {
           );
         })}
       </AbsoluteFill>
-      <div style={{ position: "absolute", left: 64, right: 64, top: top0 + notes.length * lineH + 40, fontFamily: INTER, fontSize: 34, color: PRINT,
+      <div style={{ position: "absolute", left: 64, right: 64, top: top0 + notes.length * lineH + 40, fontFamily: TEXT, fontSize: 34, color: PRINT,
         opacity: ramp(f, notes[notes.length - 1].markAt + MARK, notes[notes.length - 1].markAt + MARK + 12) }}>{p.source}</div>
       {notes.map((n, i) => (
         <React.Fragment key={i}>
@@ -126,6 +133,6 @@ export const InkDoodle: React.FC<InkDoodleProps> = (p) => {
           <Cue at={n.markAt} name="marker-pen-line" volume={0.4} />
         </React.Fragment>
       ))}
-    </Clip>
+    </World>
   );
 };

@@ -8,7 +8,17 @@
 import React from "react";
 import { Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, DUR, readHold } from "../system/motion";
-import { B, Clip, Cue, INTER, RED, Title, ZODIAK, clamp, ramp } from "./common";
+import { loadFont as DISPLAYFont } from "@remotion/google-fonts/Manrope";
+import { loadFont as TEXTFont } from "@remotion/google-fonts/Manrope";
+import { Cue, clamp, ramp } from "./common";
+import { Heading, World } from "./world";
+
+// rebuilt 11/08 as its own world: a red-to-pink wall, the bell in oxblood, the title in Manrope
+const { fontFamily: DISPLAY } = DISPLAYFont("normal", { weights: ["700", "800"], subsets: ["latin"] });
+const { fontFamily: TEXT } = TEXTFont("normal", { weights: ["500", "700"], subsets: ["latin"] });
+const INK = "#2B0508";
+const GLOW = "255, 241, 236";
+const ACCENT = "#FFF1EC";
 
 export type NotificationsProps = {
   title: string;
@@ -40,17 +50,17 @@ export const Notifications: React.FC<NotificationsProps> = (p) => {
   const capAt = arrive[arrive.length - 1] + 26;
   const cap = ramp(f, capAt, capAt + DUR.arrive, CURVE.quiet.enter);
   return (
-    <Clip endAt={end} cta={p.cta}>
-      <Title out={end}>{p.title}</Title>
+    <World endAt={end} cta={p.cta} font={DISPLAY} fontWeight={800} ink="#FFF1EC" logo="dark" endLogo="white" logoSpot="top-left" end="wipe-up" endGround="#2B0508" ground="linear-gradient(165deg, #D92A3A 0%, #F05A64 45%, #FF9C98 100%)">
+      <Heading font={DISPLAY} color={INK} size={76} weight={800} out={end}>{p.title}</Heading>
       {/* the bell and its badge */}
       <div style={{ position: "absolute", left: width - 200, top: 70, width: 120, height: 120 }}>
         <svg viewBox="0 0 24 24" width={120} height={120} style={{ transform: `rotate(${ring.toFixed(2)}deg)`, transformOrigin: "50% 8%" }}>
-          <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" fill="none" stroke={B.color.ink} strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" fill="none" stroke={B.color.ink} strokeWidth={1.6} strokeLinecap="round" />
+          <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" fill="none" stroke={INK} strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" fill="none" stroke={INK} strokeWidth={1.6} strokeLinecap="round" />
         </svg>
         {count > 0 ? (
-          <div style={{ position: "absolute", right: -6, top: -4, minWidth: 54, height: 54, borderRadius: 27, background: RED, color: B.color.accentInk, display: "flex", alignItems: "center",
-            justifyContent: "center", fontFamily: INTER, fontWeight: 700, fontSize: 32, transform: `scale(${(1 + 0.25 * Math.max(0, 1 - (f - lastHit) / 8)).toFixed(3)})` }}>{count}</div>
+          <div style={{ position: "absolute", right: -6, top: -4, minWidth: 54, height: 54, borderRadius: 27, background: ACCENT, color: INK, display: "flex", alignItems: "center",
+            justifyContent: "center", fontFamily: TEXT, fontWeight: 700, fontSize: 32, transform: `scale(${(1 + 0.25 * Math.max(0, 1 - (f - lastHit) / 8)).toFixed(3)})` }}>{count}</div>
         ) : null}
       </div>
       {/* the rows, newest on top */}
@@ -68,15 +78,15 @@ export const Notifications: React.FC<NotificationsProps> = (p) => {
         const newest = i === count - 1;
         return (
           <div key={i} style={{ position: "absolute", left: 56, top: y, width: W, height: heights[i], borderRadius: 20, overflow: "hidden", opacity: interpolate(s, [0, 0.4], [0, 1], clamp),
-            boxShadow: `0 24px 60px rgba(0,0,0,.55), inset 0 0 0 ${newest ? 3 : 0}px rgba(${B.color.glowRgb},.8)`, zIndex: 10 + i }}>
+            boxShadow: `0 24px 60px rgba(43,5,8,.45), inset 0 0 0 ${newest ? 3 : 0}px rgba(${GLOW},.8)`, zIndex: 10 + i }}>
             <Img src={staticFile(p.image.src)} style={{ position: "absolute", left: -r.x * scale, top: -r.y * scale, width: p.image.w * scale, height: p.image.h * scale }} />
           </div>
         );
       })}
-      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.76, fontFamily: ZODIAK, fontWeight: 700, fontSize: 58, lineHeight: 1.1, color: B.color.ink, zIndex: 40,
+      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.76, fontFamily: DISPLAY, fontWeight: 700, fontSize: 58, lineHeight: 1.1, color: INK, zIndex: 40,
         opacity: cap, transform: `translateY(${(1 - cap) * 14}px)` }}>{p.caption}</div>
-      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.76 + 150, fontFamily: INTER, fontSize: 32, color: B.color.ink, zIndex: 40, opacity: ramp(f, capAt + 12, capAt + 24) }}>{p.source}</div>
+      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.76 + 150, fontFamily: TEXT, fontSize: 32, color: INK, zIndex: 40, opacity: ramp(f, capAt + 12, capAt + 24) }}>{p.source}</div>
       {arrive.map((a, i) => <Cue key={i} at={a} name="chime-crystal" volume={0.3} />)}
-    </Clip>
+    </World>
   );
 };

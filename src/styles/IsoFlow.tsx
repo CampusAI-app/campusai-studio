@@ -7,7 +7,17 @@
 import React from "react";
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, DUR, readHold } from "../system/motion";
-import { B, Clip, Cue, INTER, RED, Title, ZODIAK, clamp, ramp } from "./common";
+import { loadFont as DISPLAYFont } from "@remotion/google-fonts/Sora";
+import { loadFont as TEXTFont } from "@remotion/google-fonts/Sora";
+import { Cue, clamp, ramp } from "./common";
+import { Heading, World } from "./world";
+
+// rebuilt 11/08 as its own world: a deep rose diorama, cream blocks and a red destination, labels in Sora
+const { fontFamily: DISPLAY } = DISPLAYFont("normal", { weights: ["600", "700"], subsets: ["latin"] });
+const { fontFamily: TEXT } = TEXTFont("normal", { weights: ["400", "500"], subsets: ["latin"] });
+const INK = "#FFF3EC";
+const SOFT = "#F2B9AE";
+const ACCENT = "#FF4B3E";
 
 export type IsoFlowProps = {
   title: string;
@@ -58,22 +68,22 @@ export const IsoFlow: React.FC<IsoFlowProps> = (p) => {
     if (f < nodeAt[i]) return null;
     return (
       <g key={n.id}>
-        <polygon points={[c[1], c[2], b[1], b[0]].map(pt).join(" ")} fill={n.big ? RED : B.color.inkSoft} opacity={n.big ? 0.8 : 0.55} />
-        <polygon points={[c[2], c[3], b[2], b[1]].map(pt).join(" ")} fill={n.big ? RED : B.color.inkSoft} opacity={n.big ? 0.6 : 0.35} />
-        <polygon points={c.map(pt).join(" ")} fill={n.big ? RED : B.color.ink} />
+        <polygon points={[c[1], c[2], b[1], b[0]].map(pt).join(" ")} fill={n.big ? ACCENT : SOFT} opacity={n.big ? 0.8 : 0.55} />
+        <polygon points={[c[2], c[3], b[2], b[1]].map(pt).join(" ")} fill={n.big ? ACCENT : SOFT} opacity={n.big ? 0.6 : 0.35} />
+        <polygon points={c.map(pt).join(" ")} fill={n.big ? ACCENT : INK} />
       </g>
     );
   };
   return (
-    <Clip endAt={end} cta={p.cta}>
-      <Title out={end}>{p.title}</Title>
+    <World endAt={end} cta={p.cta} font={DISPLAY} ink={INK} logo="white" logoSpot="top-right" end="wipe-up" endGround="#3C0E15" ground="radial-gradient(ellipse 90% 60% at 50% 38%, #B0484A 0%, #7E2A2E 55%, #4A121A 100%)">
+      <Heading font={DISPLAY} color={INK} out={end}>{p.title}</Heading>
       <AbsoluteFill style={{ transform: `scale(${drift.toFixed(4)})` }}>
         <svg width={width} height={height} style={{ position: "absolute", inset: 0 }}>
           {/* the floor grid */}
           {[...Array(9)].map((_, i) => {
             const k = ramp(f, i * 1.5, i * 1.5 + 16, CURVE.quiet.standard);
             const a = P(-2, i - 3.5), b2 = P(-2 + 6.5 * k, i - 3.5), c = P(i - 3.5, -2), d = P(i - 3.5, -2 + 6.5 * k);
-            return <g key={i} stroke={B.color.ink} strokeOpacity={0.08} strokeWidth={2}><line x1={a.X} y1={a.Y} x2={b2.X} y2={b2.Y} /><line x1={c.X} y1={c.Y} x2={d.X} y2={d.Y} /></g>;
+            return <g key={i} stroke={INK} strokeOpacity={0.08} strokeWidth={2}><line x1={a.X} y1={a.Y} x2={b2.X} y2={b2.Y} /><line x1={c.X} y1={c.Y} x2={d.X} y2={d.Y} /></g>;
           })}
           {/* the channels, drawn along the grid: first along x, then along y */}
           {p.edges.map((e, i) => {
@@ -81,7 +91,7 @@ export const IsoFlow: React.FC<IsoFlowProps> = (p) => {
             const m = P(b.x, a.y), s0 = P(a.x, a.y), s1 = P(b.x, b.y);
             const k = ramp(f, edgeAt[i], edgeAt[i] + DRAW, CURVE.quiet.standard);
             const path = `M${s0.X},${s0.Y} L${m.X},${m.Y} L${s1.X},${s1.Y}`;
-            return <path key={i} d={path} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - k} stroke={B.color.ink} strokeOpacity={0.85} strokeWidth={9} fill="none" strokeLinecap="round" />;
+            return <path key={i} d={path} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - k} stroke={INK} strokeOpacity={0.85} strokeWidth={9} fill="none" strokeLinecap="round" />;
           })}
           {/* packets */}
           {p.edges.flatMap((e, i) => [0, 1, 2].map((j) => {
@@ -92,7 +102,7 @@ export const IsoFlow: React.FC<IsoFlowProps> = (p) => {
             const lx = Math.abs(b.x - a.x), ly = Math.abs(b.y - a.y);
             const d = t * (lx + ly);
             const q = d < lx ? P(a.x + Math.sign(b.x - a.x) * d, a.y, 10) : P(b.x, a.y + Math.sign(b.y - a.y) * (d - lx), 10);
-            return <polygon key={`${i}-${j}`} points={`${q.X},${q.Y - 20} ${q.X + 32},${q.Y} ${q.X},${q.Y + 20} ${q.X - 32},${q.Y}`} fill={RED} stroke={B.color.ink} strokeWidth={3} />;
+            return <polygon key={`${i}-${j}`} points={`${q.X},${q.Y - 20} ${q.X + 32},${q.Y} ${q.X},${q.Y + 20} ${q.X - 32},${q.Y}`} fill={ACCENT} stroke={INK} strokeWidth={3} />;
           }))}
           {/* blocks, back to front */}
           {p.nodes.map((n, i) => ({ n, i })).sort((u, v) => u.n.x + u.n.y - (v.n.x + v.n.y)).map(({ n, i }) => block(n, i))}
@@ -102,20 +112,20 @@ export const IsoFlow: React.FC<IsoFlowProps> = (p) => {
           const k = ramp(f, nodeAt[i] + 6, nodeAt[i] + 6 + DUR.arrive, CURVE.quiet.enter);
           return (
             <div key={n.id} style={{ position: "absolute", left: q.X - 200, width: 400, top: q.Y - 90, textAlign: "center", opacity: k, transform: `translateY(${(1 - k) * 10}px)` }}>
-              <div style={{ display: "inline-block", padding: "8px 18px", borderRadius: 14, background: "rgba(11,7,8,.78)" }}>
-                <div style={{ fontFamily: ZODIAK, fontWeight: 700, fontSize: n.big ? 48 : 40, color: n.big ? B.color.ink : B.color.ink, lineHeight: 1.05 }}>{n.label}</div>
-                {n.sub ? <div style={{ fontFamily: INTER, fontSize: 28, color: B.color.inkSoft, marginTop: 4 }}>{n.sub}</div> : null}
+              <div style={{ display: "inline-block", padding: "8px 18px", borderRadius: 14, background: "rgba(60,14,21,.82)" }}>
+                <div style={{ fontFamily: DISPLAY, fontWeight: 700, fontSize: n.big ? 48 : 40, color: n.big ? INK : INK, lineHeight: 1.05 }}>{n.label}</div>
+                {n.sub ? <div style={{ fontFamily: TEXT, fontSize: 28, color: SOFT, marginTop: 4 }}>{n.sub}</div> : null}
               </div>
             </div>
           );
         })}
       </AbsoluteFill>
-      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.72, fontFamily: ZODIAK, fontWeight: 700, fontSize: 60, lineHeight: 1.1, color: B.color.ink,
+      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.72, fontFamily: DISPLAY, fontWeight: 700, fontSize: 60, lineHeight: 1.1, color: INK,
         opacity: ramp(f, capAt, capAt + DUR.arrive, CURVE.quiet.enter) }}>{p.caption}</div>
-      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.72 + 170, fontFamily: INTER, fontSize: 34, color: B.color.ink, opacity: ramp(f, capAt + 12, capAt + 24) }}>{p.source}</div>
+      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.72 + 170, fontFamily: TEXT, fontSize: 34, color: INK, opacity: ramp(f, capAt + 12, capAt + 24) }}>{p.source}</div>
       {p.nodes.map((_, i) => <Cue key={i} at={nodeAt[i]} name="paper-move-quick" volume={0.3} />)}
       <Cue at={flowAt} name="data-scan" volume={0.3} />
       <Cue at={capAt} name="chime-crystal" volume={0.3} />
-    </Clip>
+    </World>
   );
 };

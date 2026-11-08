@@ -8,7 +8,19 @@
 import React from "react";
 import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, DUR, readHold } from "../system/motion";
-import { B, Clip, Cue, INTER, RED, Title, ZODIAK, clamp, ramp } from "./common";
+import { loadFont as DISPLAYFont } from "@remotion/google-fonts/ChakraPetch";
+import { loadFont as TEXTFont } from "@remotion/google-fonts/ChakraPetch";
+import { Cue, clamp, ramp } from "./common";
+import { Heading, World } from "./world";
+
+// rebuilt 11/08 as its own world: a red-lit lab with a grid floor, readouts in Chakra Petch
+const { fontFamily: DISPLAY } = DISPLAYFont("normal", { weights: ["600", "700"], subsets: ["latin"] });
+const { fontFamily: TEXT } = TEXTFont("normal", { weights: ["500", "600"], subsets: ["latin"] });
+const INK = "#FFE3E6";
+const SOFT = "#FF9AA6";
+const SURF = "#2A0A10";
+const GLOW = "255, 51, 71";
+const ACCENT = "#FF3347";
 
 export type HologramProps = {
   title: string;
@@ -45,29 +57,29 @@ export const Hologram: React.FC<HologramProps> = (p) => {
         <Img src={staticFile(p.image.src)} style={{ width: width * 0.8, height: "auto", filter: "grayscale(1) contrast(1.2) brightness(1.3) sepia(.35)", mixBlendMode: "screen" }} />
       ) : p.figure ? (
         <>
-          <div style={{ fontFamily: ZODIAK, fontWeight: 700, fontSize: 420, lineHeight: 0.9, letterSpacing: "-0.04em", color: B.color.ink,
-            textShadow: `0 0 18px rgba(${B.color.glowRgb},.9), 0 0 60px rgba(${B.color.glowRgb},.6)` }}>{p.figure.value}</div>
-          <div style={{ fontFamily: INTER, fontWeight: 600, fontSize: 46, color: B.color.ink, marginTop: 10, textShadow: `0 0 12px rgba(${B.color.glowRgb},.9)` }}>{p.figure.label}</div>
+          <div style={{ fontFamily: DISPLAY, fontWeight: 700, fontSize: 420, lineHeight: 0.9, letterSpacing: "-0.04em", color: INK,
+            textShadow: `0 0 18px rgba(${GLOW},.9), 0 0 60px rgba(${GLOW},.6)` }}>{p.figure.value}</div>
+          <div style={{ fontFamily: TEXT, fontWeight: 600, fontSize: 46, color: INK, marginTop: 10, textShadow: `0 0 12px rgba(${GLOW},.9)` }}>{p.figure.label}</div>
         </>
       ) : null}
     </div>
   );
   const projTop = height * 0.2, projBottom = disc.y - 90;
   return (
-    <Clip endAt={end} cta={p.cta}>
-      <Title out={end}>{p.title}</Title>
+    <World endAt={end} cta={p.cta} font={DISPLAY} ink={INK} logo="white" logoSpot="top-right" end="wipe-up" endGround="#1B222C" ground="linear-gradient(180deg, transparent 72%, rgba(255,51,71,.10) 72.2%, transparent 72.6%), repeating-linear-gradient(90deg, rgba(255,51,71,.07) 0 2px, transparent 2px 90px), radial-gradient(ellipse 80% 55% at 50% 32%, #34404E 0%, #1B222C 60%, #0D1117 100%)">
+      <Heading font={DISPLAY} color={INK} out={end}>{p.title}</Heading>
       {/* the cone of light */}
       <svg width={width} height={height} style={{ position: "absolute", inset: 0, opacity: discOn }}>
         <defs>
           <linearGradient id="cone" x1="0" y1="1" x2="0" y2="0">
-            <stop offset="0" stopColor={RED} stopOpacity={0.42 * stutter} />
-            <stop offset="1" stopColor={RED} stopOpacity={0} />
+            <stop offset="0" stopColor={ACCENT} stopOpacity={0.42 * stutter} />
+            <stop offset="1" stopColor={ACCENT} stopOpacity={0} />
           </linearGradient>
         </defs>
         <path d={`M${disc.x - disc.rx * 0.8},${disc.y} L${width * 0.06},${projTop} L${width * 0.94},${projTop} L${disc.x + disc.rx * 0.8},${disc.y} Z`} fill="url(#cone)" opacity={build} />
-        <ellipse cx={disc.x} cy={disc.y + 16} rx={disc.rx} ry={disc.ry} fill={B.color.surface} stroke={B.color.ink} strokeOpacity={0.25} strokeWidth={3} />
-        <ellipse cx={disc.x} cy={disc.y} rx={disc.rx * 0.82} ry={disc.ry * 0.7} fill={RED} opacity={0.75 * stutter} />
-        <ellipse cx={disc.x} cy={disc.y} rx={disc.rx * 0.82} ry={disc.ry * 0.7} fill="none" stroke={B.color.ink} strokeOpacity={0.6} strokeWidth={3} />
+        <ellipse cx={disc.x} cy={disc.y + 16} rx={disc.rx} ry={disc.ry} fill={SURF} stroke={INK} strokeOpacity={0.25} strokeWidth={3} />
+        <ellipse cx={disc.x} cy={disc.y} rx={disc.rx * 0.82} ry={disc.ry * 0.7} fill={ACCENT} opacity={0.75 * stutter} />
+        <ellipse cx={disc.x} cy={disc.y} rx={disc.rx * 0.82} ry={disc.ry * 0.7} fill="none" stroke={INK} strokeOpacity={0.6} strokeWidth={3} />
       </svg>
       {/* the projection: scans in bottom to top, scan lines drifting through it */}
       <AbsoluteFill style={{ perspective: 1400 }}>
@@ -80,12 +92,12 @@ export const Hologram: React.FC<HologramProps> = (p) => {
           <div style={{ position: "absolute", left: "16%", right: "16%", height: 26, top: `${(((f * 2.4) % 140) - 20).toFixed(1)}%`, background: `linear-gradient(transparent, rgba(247,239,230,.22), transparent)` }} />
         </div>
       </AbsoluteFill>
-      <div style={{ position: "absolute", left: 64, right: 64, top: disc.y + 90, textAlign: "center", fontFamily: ZODIAK, fontWeight: 700, fontSize: 56, lineHeight: 1.1, color: B.color.ink,
+      <div style={{ position: "absolute", left: 64, right: 64, top: disc.y + 90, textAlign: "center", fontFamily: DISPLAY, fontWeight: 700, fontSize: 56, lineHeight: 1.1, color: INK,
         opacity: cap, transform: `translateY(${(1 - cap) * 14}px)` }}>{p.caption}</div>
-      <div style={{ position: "absolute", left: 64, right: 64, top: disc.y + 240, textAlign: "center", fontFamily: INTER, fontSize: 28, color: B.color.inkSoft, opacity: ramp(f, capAt + 12, capAt + 24) }}>{p.source}</div>
+      <div style={{ position: "absolute", left: 64, right: 64, top: disc.y + 240, textAlign: "center", fontFamily: TEXT, fontSize: 28, color: SOFT, opacity: ramp(f, capAt + 12, capAt + 24) }}>{p.source}</div>
       <Cue at={2} name="switch-tap" volume={0.4} />
       <Cue at={BUILD_AT} name="data-scan" volume={0.35} />
       <Cue at={capAt} name="chime-crystal" volume={0.3} />
-    </Clip>
+    </World>
   );
 };

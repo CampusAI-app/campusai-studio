@@ -8,7 +8,16 @@
 import React from "react";
 import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, DUR, readHold } from "../system/motion";
-import { B, Clip, Cue, INTER, RED, Title, ZODIAK, clamp, ramp } from "./common";
+import { loadFont } from "@remotion/google-fonts/Oswald";
+import { Cue, clamp, ramp } from "./common";
+import { World } from "./world";
+
+const { fontFamily: OSWALD } = loadFont("normal", { weights: ["400", "500", "700"], subsets: ["latin"] });
+// rebuilt 11/08 as its own world: a cream desk-calendar page, the count in big red Oswald, ink in a deep oxblood
+const PAPER_G = "#F3E5D4";
+const INK = "#2A0A0C";
+const SOFT = "#8C4A42";
+const ACCENT = "#D9202E";
 
 export type DayCounterProps = {
   title: string;
@@ -44,7 +53,7 @@ const Reel: React.FC<{ v: number; h: number; w: number; color: string }> = ({ v,
       WebkitMaskImage: "linear-gradient(transparent, #000 8%, #000 92%, transparent)", maskImage: "linear-gradient(transparent, #000 8%, #000 92%, transparent)" }}>
       <div style={{ position: "absolute", top: y, left: 0, width: w }}>
         {[...Array(11)].map((_, i) => (
-          <div key={i} style={{ height: h, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: ZODIAK, fontWeight: 700,
+          <div key={i} style={{ height: h, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: OSWALD, fontWeight: 700,
             fontSize: h * 0.92, lineHeight: 1, color, letterSpacing: "-0.03em" }}>{i % 10}</div>
         ))}
       </div>
@@ -73,8 +82,13 @@ export const DayCounter: React.FC<DayCounterProps> = (p) => {
   const offset = (width / 2 - t * pxRide) * (1 - pull) + 100 * pull;
   const flagged = [{ label: p.from.label, d: 0 }, ...p.marks.map((m) => ({ label: m.label, d: days(p.from.date, m.date), date: m.date })), { label: p.to.label, d: total }];
   return (
-    <Clip endAt={end} cta={p.cta}>
-      <Title out={end} size={58}>{p.title}</Title>
+    <World endAt={end} ground={`repeating-linear-gradient(0deg, rgba(42,10,12,.05) 0 2px, transparent 2px 64px), radial-gradient(ellipse at 50% 30%, #FBF1E6, ${PAPER_G} 70%, #E6CDB6)`}
+      ink="#FBE9DA" logo="dark" endLogo="white" logoSpot="top-right" font={OSWALD} fontWeight={700} cta={p.cta} end="iris" endGround={ACCENT}>
+      {/* the page's binding: the rings of a desk calendar, and the title written under them */}
+      <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 70, background: ACCENT }} />
+      {[...Array(6)].map((_, i) => <div key={i} style={{ position: "absolute", top: 40, left: 90 + i * 112, width: 26, height: 60, borderRadius: 13, background: "#3a1012", boxShadow: "inset 0 -6px 0 rgba(255,255,255,.15)" }} />)}
+      <div style={{ position: "absolute", left: 64, right: 64, top: 190, fontFamily: OSWALD, fontWeight: 700, fontSize: 76, lineHeight: 1, color: INK, letterSpacing: "-0.01em",
+        opacity: ramp(f, 2, 14) }}>{p.title}</div>
       <div style={{ position: "absolute", left: 0, right: 0, top: height * 0.25, display: "flex", justifyContent: "center",
         transform: `scale(${(1 + done * 0.04 - ramp(f, COUNT_TO + 8, COUNT_TO + 22) * 0.04).toFixed(4)})` }}>
         {[...Array(digits)].map((_, i) => {
@@ -85,10 +99,10 @@ export const DayCounter: React.FC<DayCounterProps> = (p) => {
           const lower = place === 1 ? below - whole : ((t % place) / place);
           const ease = (x: number) => x * x * (3 - 2 * x); // rests on whole digits, moves between them
           const carry = place === 1 ? ease(lower) : ease(Math.max(0, (lower - 0.9) / 0.1));
-          return <Reel key={i} v={whole + carry} h={h} w={w} color={B.color.ink} />;
+          return <Reel key={i} v={whole + carry} h={h} w={w} color={ACCENT} />;
         })}
       </div>
-      <div style={{ position: "absolute", left: 0, right: 0, top: height * 0.25 + h + 10, textAlign: "center", fontFamily: INTER, fontWeight: 500, fontSize: 42, color: B.color.inkSoft }}>
+      <div style={{ position: "absolute", left: 0, right: 0, top: height * 0.25 + h + 10, textAlign: "center", fontFamily: OSWALD, fontWeight: 500, fontSize: 42, color: SOFT }}>
         {p.unit}
       </div>
       <svg width={width} height={height} style={{ position: "absolute", inset: 0 }}>
@@ -97,10 +111,10 @@ export const DayCounter: React.FC<DayCounterProps> = (p) => {
           if (x < -40 || x > width + 40) return null;
           const passed = d <= t;
           const flag = flagged.some((m) => m.d === d);
-          return <line key={d} x1={x} x2={x} y1={stripY - (flag ? 46 : 18)} y2={stripY + (flag ? 46 : 18)} stroke={passed ? (flag ? RED : B.color.ink) : B.color.ink}
+          return <line key={d} x1={x} x2={x} y1={stripY - (flag ? 46 : 18)} y2={stripY + (flag ? 46 : 18)} stroke={passed ? (flag ? ACCENT : INK) : INK}
             strokeOpacity={passed ? (flag ? 1 : 0.85) : 0.22} strokeWidth={flag ? 5 : 3} strokeLinecap="round" />;
         })}
-        <line x1={0} x2={width} y1={stripY} y2={stripY} stroke={B.color.ink} strokeOpacity={0.12} strokeWidth={2} />
+        <line x1={0} x2={width} y1={stripY} y2={stripY} stroke={INK} strokeOpacity={0.12} strokeWidth={2} />
       </svg>
       {(() => {
         // each flag gets a row (above or below the strip, then a second level of each) so no two labels overlap at
@@ -130,22 +144,22 @@ export const DayCounter: React.FC<DayCounterProps> = (p) => {
           return (
             <React.Fragment key={i}>
               <svg width={width} height={height} style={{ position: "absolute", inset: 0, opacity: k * edge }}>
-                <line x1={tick} x2={cx} y1={up ? stripY - 50 : stripY + 50} y2={up ? y + 76 : y - 6} stroke={RED} strokeOpacity={0.6} strokeWidth={2} />
+                <line x1={tick} x2={cx} y1={up ? stripY - 50 : stripY + 50} y2={up ? y + 76 : y - 6} stroke={ACCENT} strokeOpacity={0.6} strokeWidth={2} />
               </svg>
               <div style={{ position: "absolute", left: cx - lab[i] / 2 - 20, width: lab[i] + 40, top: y, textAlign: "center", opacity: k * edge,
                 transform: `translateY(${(1 - k) * (up ? 16 : -16)}px)` }}>
-                <div style={{ fontFamily: ZODIAK, fontWeight: 700, fontSize: 42, color: B.color.ink, lineHeight: 1.1, whiteSpace: "nowrap" }}>{m.label}</div>
-                <div style={{ fontFamily: INTER, fontSize: 32, color: B.color.inkSoft, marginTop: 2 }}>{short(i === 0 ? p.from.date : i === flagged.length - 1 ? p.to.date : (m as { date: string }).date)}</div>
+                <div style={{ fontFamily: OSWALD, fontWeight: 700, fontSize: 42, color: INK, lineHeight: 1.1, whiteSpace: "nowrap" }}>{m.label}</div>
+                <div style={{ fontFamily: OSWALD, fontSize: 32, color: SOFT, marginTop: 2 }}>{short(i === 0 ? p.from.date : i === flagged.length - 1 ? p.to.date : (m as { date: string }).date)}</div>
               </div>
             </React.Fragment>
           );
         });
       })()}
-      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.8, fontFamily: INTER, fontSize: 34, color: B.color.ink, textAlign: "center",
+      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.8, fontFamily: OSWALD, fontSize: 34, color: INK, textAlign: "center",
         opacity: ramp(f, COUNT_TO + 10, COUNT_TO + 22) }}>{p.source}</div>
       <Cue at={COUNT_FROM} name="counter" volume={0.3} />
       <Cue at={COUNT_FROM + 40} name="counter" volume={0.22} />
       <Cue at={COUNT_TO} name="bass-hit-short" volume={0.6} />
-    </Clip>
+    </World>
   );
 };

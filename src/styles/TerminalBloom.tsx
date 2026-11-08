@@ -8,7 +8,18 @@
 import React from "react";
 import { spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, DUR, readHold } from "../system/motion";
-import { B, Clip, Cue, INTER, RED, Title, ZODIAK, ramp } from "./common";
+import { loadFont as DISPLAYFont } from "@remotion/google-fonts/SpaceGrotesk";
+import { loadFont as TEXTFont } from "@remotion/google-fonts/SpaceGrotesk";
+import { Cue, ramp } from "./common";
+import { Heading, World } from "./world";
+
+// rebuilt 11/08 as its own world: an aubergine night, the prompt in Space Grotesk (never monospace), petals in rose
+const { fontFamily: DISPLAY } = DISPLAYFont("normal", { weights: ["600", "700"], subsets: ["latin"] });
+const { fontFamily: TEXT } = TEXTFont("normal", { weights: ["500", "600"], subsets: ["latin"] });
+const INK = "#FFEAF2";
+const SOFT = "#E8A3C0";
+const SURF = "#3D1236";
+const ACCENT = "#FF4F7B";
 
 export type TerminalBloomProps = {
   title: string;
@@ -46,25 +57,25 @@ export const TerminalBloom: React.FC<TerminalBloomProps> = (p) => {
   const press = ramp(f, enter, enter + 3) * (1 - ramp(f, enter + 3, enter + 10));
   const ring = ramp(f, enter, enter + 20, CURVE.quiet.exit);
   return (
-    <Clip endAt={end} cta={p.cta}>
-      <Title out={end}>{p.title}</Title>
+    <World endAt={end} cta={p.cta} font={DISPLAY} ink={INK} logo="white" logoSpot="top-right" end="iris" endGround="#3D1236" ground="radial-gradient(ellipse 90% 60% at 50% 55%, #4E1446 0%, #2A0B24 55%, #12040F 100%)">
+      <Heading font={DISPLAY} color={INK} out={end}>{p.title}</Heading>
       {/* the prompt line */}
-      <div style={{ position: "absolute", left: 64, right: 64, top: promptY, display: "flex", alignItems: "center", gap: 18, fontFamily: INTER, fontWeight: 600, fontSize: 46,
-        color: B.color.ink, transform: `translateY(${(-press * 4).toFixed(1)}px)` }}>
-        <span style={{ color: RED, fontWeight: 700 }}>›</span>
-        <span>{p.command.slice(0, shown)}<span style={{ display: "inline-block", width: 24, height: 50, marginLeft: 4, verticalAlign: "-8px", background: B.color.ink, opacity: caretOn ? 0.9 : 0 }} /></span>
+      <div style={{ position: "absolute", left: 64, right: 64, top: promptY, display: "flex", alignItems: "center", gap: 18, fontFamily: TEXT, fontWeight: 600, fontSize: 46,
+        color: INK, transform: `translateY(${(-press * 4).toFixed(1)}px)` }}>
+        <span style={{ color: ACCENT, fontWeight: 700 }}>›</span>
+        <span>{p.command.slice(0, shown)}<span style={{ display: "inline-block", width: 24, height: 50, marginLeft: 4, verticalAlign: "-8px", background: INK, opacity: caretOn ? 0.9 : 0 }} /></span>
       </div>
-      <div style={{ position: "absolute", left: 64, right: 64, top: promptY + 64, height: 2, background: B.color.ink, opacity: 0.12 }} />
+      <div style={{ position: "absolute", left: 64, right: 64, top: promptY + 64, height: 2, background: INK, opacity: 0.12 }} />
       {/* the burst ring from the press */}
       <svg width={width} height={height} style={{ position: "absolute", inset: 0 }}>
-        {f >= enter ? <circle cx={centre.x} cy={centre.y} r={20 + ring * R * 1.3} fill="none" stroke={RED} strokeWidth={4 * (1 - ring)} opacity={1 - ring} /> : null}
+        {f >= enter ? <circle cx={centre.x} cy={centre.y} r={20 + ring * R * 1.3} fill="none" stroke={ACCENT} strokeWidth={4 * (1 - ring)} opacity={1 - ring} /> : null}
         {p.results.map((_, i) => {
           const a = -Math.PI / 2 + (i / p.results.length) * Math.PI * 2;
           const s = spring({ frame: f - enter - 6 - i * 4, fps, config: { damping: 13, stiffness: 120 } });
           return <line key={i} x1={centre.x} y1={centre.y} x2={centre.x + Math.cos(a) * R * Math.min(1, s) * 0.8} y2={centre.y + Math.sin(a) * R * Math.min(1, s) * 0.8}
-            stroke={B.color.ink} strokeOpacity={0.14} strokeWidth={3} />;
+            stroke={INK} strokeOpacity={0.14} strokeWidth={3} />;
         })}
-        <circle cx={centre.x} cy={centre.y} r={14 * ramp(f, enter, enter + 8, CURVE.showy.enter)} fill={RED} />
+        <circle cx={centre.x} cy={centre.y} r={14 * ramp(f, enter, enter + 8, CURVE.showy.enter)} fill={ACCENT} />
       </svg>
       {p.results.map((r, i) => {
         const a = -Math.PI / 2 + (i / p.results.length) * Math.PI * 2;
@@ -72,20 +83,20 @@ export const TerminalBloom: React.FC<TerminalBloomProps> = (p) => {
         if (f < enter + 6 + i * 4) return null;
         const x = centre.x + Math.cos(a) * R * s, y = centre.y + Math.sin(a) * R * s;
         return (
-          <div key={i} style={{ position: "absolute", left: x - 140, top: y - 62, width: 280, height: 124, borderRadius: 26, background: B.color.surface, display: "flex", flexDirection: "column",
+          <div key={i} style={{ position: "absolute", left: x - 140, top: y - 62, width: 280, height: 124, borderRadius: 26, background: SURF, display: "flex", flexDirection: "column",
             alignItems: "center", justifyContent: "center", transform: `scale(${(0.3 + 0.7 * Math.min(1.05, s)).toFixed(3)}) rotate(${((1 - Math.min(1, s)) * (i % 2 ? 18 : -18)).toFixed(1)}deg)`,
-            boxShadow: `inset 0 0 0 ${r.accent ? 4 : 2}px ${r.accent ? RED : "rgba(247,239,230,.14)"}, 0 16px 40px rgba(0,0,0,.5)` }}>
-            <div style={{ fontFamily: ZODIAK, fontWeight: 700, fontSize: 44, color: B.color.ink, lineHeight: 1 }}>{r.label}</div>
-            <div style={{ fontFamily: INTER, fontWeight: 500, fontSize: 28, color: r.accent ? RED : B.color.inkSoft, marginTop: 8 }}>{r.sub}</div>
+            boxShadow: `inset 0 0 0 ${r.accent ? 4 : 2}px ${r.accent ? ACCENT : "rgba(247,239,230,.14)"}, 0 16px 40px rgba(0,0,0,.5)` }}>
+            <div style={{ fontFamily: DISPLAY, fontWeight: 700, fontSize: 44, color: INK, lineHeight: 1 }}>{r.label}</div>
+            <div style={{ fontFamily: TEXT, fontWeight: 500, fontSize: 28, color: r.accent ? ACCENT : SOFT, marginTop: 8 }}>{r.sub}</div>
           </div>
         );
       })}
-      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.78, fontFamily: ZODIAK, fontWeight: 700, fontSize: 56, lineHeight: 1.1, color: B.color.ink,
+      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.78, fontFamily: DISPLAY, fontWeight: 700, fontSize: 56, lineHeight: 1.1, color: INK,
         opacity: ramp(f, capAt, capAt + DUR.arrive, CURVE.quiet.enter) }}>{p.caption}</div>
-      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.78 + 150, fontFamily: INTER, fontSize: 32, color: B.color.ink, opacity: ramp(f, capAt + 12, capAt + 24) }}>{p.source}</div>
+      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.78 + 150, fontFamily: TEXT, fontSize: 32, color: INK, opacity: ramp(f, capAt + 12, capAt + 24) }}>{p.source}</div>
       {[...Array(Math.ceil(p.command.length / 3))].map((_, i) => <Cue key={i} at={TYPE_AT + Math.round(i * 3 * PER_CHAR)} name="typewriter-hit-soft" volume={0.18} />)}
       <Cue at={enter} name="switch-tap" volume={0.55} />
       <Cue at={enter + 4} name="air-woosh-quick" volume={0.4} />
-    </Clip>
+    </World>
   );
 };

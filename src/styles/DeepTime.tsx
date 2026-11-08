@@ -8,7 +8,17 @@
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, DUR, readHold } from "../system/motion";
-import { B, Clip, Cue, INTER, RED, Title, ZODIAK, clamp, ramp } from "./common";
+import { loadFont as DISPLAYFont } from "@remotion/google-fonts/Gloock";
+import { loadFont as TEXTFont } from "@remotion/google-fonts/Manrope";
+import { Cue, clamp, ramp } from "./common";
+import { Heading, World } from "./world";
+
+// rebuilt 11/08 as its own world: archival parchment, the dates in Gloock, the span in sealing-wax red
+const { fontFamily: DISPLAY } = DISPLAYFont("normal", { weights: ["400"], subsets: ["latin"] });
+const { fontFamily: TEXT } = TEXTFont("normal", { weights: ["500", "700"], subsets: ["latin"] });
+const INK = "#2E1208";
+const SOFT = "#7A4A30";
+const ACCENT = "#C2121F";
 
 export type DeepTimeProps = {
   title: string;
@@ -77,18 +87,18 @@ export const DeepTime: React.FC<DeepTimeProps> = (p) => {
   const capK = ramp(f, stageIdx === 0 ? 6 : stageAt[stageIdx - 1] + MOVE * 0.6, (stageIdx === 0 ? 6 : stageAt[stageIdx - 1] + MOVE * 0.6) + DUR.arrive, CURVE.quiet.enter);
   const lineK = ramp(f, lineAt, lineAt + DUR.arrive, CURVE.quiet.enter);
   return (
-    <Clip endAt={end} cta={p.cta}>
-      <Title out={end} size={58}>{p.title}</Title>
+    <World endAt={end} cta={p.cta} font={DISPLAY} fontWeight={400} ink="#FFF1E4" logo="dark" endLogo="white" logoSpot="top-right" end="iris" endGround="#7E0F18" ground="radial-gradient(ellipse 85% 70% at 50% 45%, #F3DDB9 0%, #DDBA8E 62%, #A9784F 100%)">
+      <Heading font={DISPLAY} color={INK} weight={400} out={end} size={58}>{p.title}</Heading>
       <svg width={width} height={height} style={{ position: "absolute", inset: 0 }}>
-        <line x1={0} x2={width} y1={axisY} y2={axisY} stroke={B.color.ink} strokeOpacity={0.35} strokeWidth={3} />
+        <line x1={0} x2={width} y1={axisY} y2={axisY} stroke={INK} strokeOpacity={0.35} strokeWidth={3} />
         {ticks.map((t, i) => (t.x < -10 || t.x > width + 10 ? null : (
           <g key={i}>
-            <line x1={t.x} x2={t.x} y1={axisY - (t.major ? 28 : 14)} y2={axisY + (t.major ? 28 : 14)} stroke={B.color.ink} strokeOpacity={t.major ? 0.7 : 0.35} strokeWidth={t.major ? 3 : 2} />
-            {t.label ? <text x={t.x} y={axisY + 72} textAnchor="middle" fill={B.color.inkSoft} fontFamily={INTER} fontSize={30}>{t.label}</text> : null}
+            <line x1={t.x} x2={t.x} y1={axisY - (t.major ? 28 : 14)} y2={axisY + (t.major ? 28 : 14)} stroke={INK} strokeOpacity={t.major ? 0.7 : 0.35} strokeWidth={t.major ? 3 : 2} />
+            {t.label ? <text x={t.x} y={axisY + 72} textAnchor="middle" fill={SOFT} fontFamily={TEXT} fontSize={30}>{t.label}</text> : null}
           </g>
         )))}
         {/* the small thing, never thinner than a visible sliver */}
-        <rect x={fx0} y={axisY + 20 - Math.min(110, Math.max(40, (fx1 - fx0) * 0.5))} width={Math.max(4, fx1 - fx0)} height={Math.min(110, Math.max(40, (fx1 - fx0) * 0.5))} rx={Math.min(10, (fx1 - fx0) / 2)} fill={RED} opacity={0.92} />
+        <rect x={fx0} y={axisY + 20 - Math.min(110, Math.max(40, (fx1 - fx0) * 0.5))} width={Math.max(4, fx1 - fx0)} height={Math.min(110, Math.max(40, (fx1 - fx0) * 0.5))} rx={Math.min(10, (fx1 - fx0) / 2)} fill={ACCENT} opacity={0.92} />
       </svg>
       {p.marks.map((m, i) => {
         const x = X(m.year);
@@ -97,8 +107,8 @@ export const DeepTime: React.FC<DeepTimeProps> = (p) => {
         return (
           <div key={i} style={{ position: "absolute", left: Math.min(width - 300, Math.max(20, x - 140)), width: 280, top: up ? axisY - 250 : axisY + 120, textAlign: "center",
             opacity: k * interpolate(span, [20, 60], [0, 1], clamp) }}>
-            <div style={{ fontFamily: ZODIAK, fontWeight: 700, fontSize: 44, color: B.color.ink, lineHeight: 1 }}>{m.year}</div>
-            <div style={{ fontFamily: INTER, fontSize: 26, color: B.color.inkSoft, marginTop: 6, lineHeight: 1.2 }}>{m.label}</div>
+            <div style={{ fontFamily: DISPLAY, fontWeight: 700, fontSize: 44, color: INK, lineHeight: 1 }}>{m.year}</div>
+            <div style={{ fontFamily: TEXT, fontSize: 26, color: SOFT, marginTop: 6, lineHeight: 1.2 }}>{m.label}</div>
           </div>
         );
       })}
@@ -107,17 +117,17 @@ export const DeepTime: React.FC<DeepTimeProps> = (p) => {
         const up = i % 2 === 0;
         return <AbsoluteFill key={`l${i}`} style={{ pointerEvents: "none" }}>
           <svg width={width} height={height} style={{ opacity: interpolate(span, [20, 60], [0, 1], clamp) }}>
-            <line x1={x} x2={x} y1={up ? axisY - 160 : axisY + 40} y2={up ? axisY - 40 : axisY + 116} stroke={B.color.ink} strokeOpacity={0.5} strokeWidth={2} />
+            <line x1={x} x2={x} y1={up ? axisY - 160 : axisY + 40} y2={up ? axisY - 40 : axisY + 116} stroke={INK} strokeOpacity={0.5} strokeWidth={2} />
           </svg>
         </AbsoluteFill>;
       })}
-      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.27, fontFamily: ZODIAK, fontWeight: 700, fontSize: 64, lineHeight: 1.08, color: B.color.ink,
+      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.27, fontFamily: DISPLAY, fontWeight: 700, fontSize: 64, lineHeight: 1.08, color: INK,
         opacity: capK * (1 - lineK), transform: `translateY(${(1 - capK) * 14}px)` }}>{caption}</div>
-      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.27, fontFamily: ZODIAK, fontWeight: 700, fontSize: 72, lineHeight: 1.06, color: B.color.ink,
+      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.27, fontFamily: DISPLAY, fontWeight: 700, fontSize: 72, lineHeight: 1.06, color: INK,
         opacity: lineK, transform: `translateY(${(1 - lineK) * 14}px)` }}>{p.line}</div>
-      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.76, fontFamily: INTER, fontSize: 32, color: B.color.ink, opacity: ramp(f, lineAt + 10, lineAt + 22) }}>{p.source}</div>
+      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.76, fontFamily: TEXT, fontSize: 32, color: INK, opacity: ramp(f, lineAt + 10, lineAt + 22) }}>{p.source}</div>
       {stageAt.map((s, i) => <Cue key={i} at={s} name="swoosh-slow" volume={0.32} />)}
       <Cue at={lineAt} name="bass-hit-short" volume={0.5} />
-    </Clip>
+    </World>
   );
 };

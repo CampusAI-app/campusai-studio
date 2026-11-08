@@ -74,6 +74,35 @@ To make one:
 | `/laptop-reveal` | The photoreal laptop opens as the camera rises from the desk, its screen already playing a real desktop recording, then a slow push in | A real desktop recording (`npm run flow`), a caption, a source | Desktop only (11/06). The device is `four/real-laptop.tsx` (CC-BY credit). Render with `--gl=angle` |
 | `/notifications` | A bell rings and its badge counts while real notification rows drop in and stack, newest on top | A real desktop capture of the Notifications page and the row boxes to cut, a caption, a source | Rows are cut from the capture, never rebuilt. Only the kinds main ships |
 
+**Rebuilt the same day as twenty different worlds (Jacob 11/08: "these still look pretty similar", "the fonts and the
+backgrounds are also all the same"; rule in `rules/campusai.md`).** The first build put every style inside the shared
+`Clip` frame in Zodiak and Inter on near-black; now each owns its frame through `src/styles/world.tsx` (`World`,
+`Heading`): its own ground, face, layout and ending, with only the logo kept from the house. When adding a style, give it
+a ground and a face no other style uses. Current set:
+
+| Style | Ground | Face |
+|---|---|---|
+| Type Slam | full-bleed red, oxblood, coral, blush, one per card | Anton |
+| Split Flap | oxblood station wall, black board | Barlow Condensed |
+| Day Counter | cream desk-calendar page with red binding | Oswald |
+| Receipt | walnut counter under a warm lamp | Archivo Narrow |
+| Before After | blush studio | Bricolage Grotesque |
+| Swiss Grid | brand-red Swiss poster | Archivo |
+| Money Stack | terracotta photo studio, wooden pallet | DM Serif Display, Manrope |
+| Iceberg | red-dusk sky over a deep red sea | Fraunces |
+| Neon Silhouette | plum night street | Righteous |
+| Deep Time | archival parchment | Gloock |
+| Hologram | steel-blue lab, red light | Chakra Petch |
+| Ink Doodle | coral notebook paper, red margin | Permanent Marker, Caveat |
+| Iso Flow | deep rose diorama | Sora |
+| Turntable | red velvet studio, one spotlight | Syne |
+| Particle Logo | crimson field | Unbounded |
+| Git City | blood-orange sunset skyline | Teko |
+| Agent Swarm | hot red-orange field | Instrument Sans |
+| Terminal Bloom | aubergine night | Space Grotesk |
+| Laptop Reveal | warm blush desk | Instrument Serif |
+| Notifications | red-to-pink wall | Manrope |
+
 **Batch 1 of the "30 Claude animations" reel (2026-11-08, Gian Angioletti through Muse, "I want all of these added to our
 video creation"; his prompts were gated and never seen, so these are our own builds of the names).** Type and number looks
 first: Type Slam, Split Flap, Day Counter, Receipt, Before After, Swiss Grid, Money Stack. Samples in `films/type-slam-w-not-f/`,

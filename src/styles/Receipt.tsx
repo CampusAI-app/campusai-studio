@@ -8,7 +8,17 @@
 import React from "react";
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, readHold } from "../system/motion";
-import { B, Clip, Cue, INTER, PAPER, PRINT, RED, Title, ZODIAK, clamp, ramp } from "./common";
+import { loadFont } from "@remotion/google-fonts/ArchivoNarrow";
+import { Cue, clamp, ramp } from "./common";
+import { World } from "./world";
+
+const { fontFamily: NARROW } = loadFont("normal", { weights: ["400", "500", "600", "700"], subsets: ["latin"] });
+// rebuilt 11/08 as its own world: a walnut counter under a warm lamp, warm till paper, ink stamp in red
+const WOOD = "#4A2A1C";
+const PAPER = "#FBF4E9";
+const PRINT = "#1E1411";
+const RED = "#D9202E";
+const CREAM = "#F7E3CF";
 
 export type ReceiptProps = {
   title: string;
@@ -67,22 +77,30 @@ export const Receipt: React.FC<ReceiptProps> = (p) => {
   const stampK = spring({ frame: f - stampAt, fps, config: { damping: 11, stiffness: 160 } });
   const teeth = Math.round(W / 26);
   return (
-    <Clip endAt={end} cta={p.cta}>
-      <Title out={end}>{p.title}</Title>
+    <World endAt={end} cta={p.cta} font={NARROW} fontWeight={700} ink={CREAM} logo="white" logoSpot="top-right" end="wipe-up" endGround={RED}
+      ground={`radial-gradient(ellipse 70% 45% at 50% 42%, rgba(255,196,140,.32), transparent 70%), repeating-linear-gradient(92deg, rgba(0,0,0,.10) 0 3px, transparent 3px 22px, rgba(255,255,255,.03) 22px 24px, transparent 24px 61px), linear-gradient(180deg, #6A3C26, ${WOOD} 55%, #2C170F)`}>
+      <div style={{ position: "absolute", left: 64, right: 250, top: 170, fontFamily: NARROW, fontWeight: 700, fontSize: 80, lineHeight: 0.98, color: CREAM, letterSpacing: "-0.01em",
+        opacity: ramp(f, 2, 14) }}>{p.title}</div>
+      {/* a rubber stamp never inks evenly: fine noise knocks small holes out of it */}
+      <svg width={0} height={0} style={{ position: "absolute" }}>
+        <filter id="rubber"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves={1} seed={3} result="n" />
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.5 1.3" result="m" />
+          <feComposite in="SourceGraphic" in2="m" operator="in" /></filter>
+      </svg>
       <div style={{ position: "absolute", left, width: W, top: slotY - paperH, height: paperH, overflow: "hidden" }}>
         <div style={{ position: "absolute", left: 0, width: W, top: 0, height: fullH * fit + 20, background: PAPER, color: PRINT }}>
           <svg width={W} height={14} style={{ position: "absolute", top: -1, left: 0 }}>
-            <path d={`M0,0 ${[...Array(teeth)].map((_, i) => `L${((i + 0.5) * W) / teeth},12 L${((i + 1) * W) / teeth},0`).join(" ")} Z`} fill={B.color.bgDeep} />
+            <path d={`M0,0 ${[...Array(teeth)].map((_, i) => `L${((i + 0.5) * W) / teeth},12 L${((i + 1) * W) / teeth},0`).join(" ")} Z`} fill={WOOD} />
           </svg>
           <div style={{ position: "absolute", left: 0, top: 30, width: W / fit, padding: "0 52px", boxSizing: "border-box", transform: `scale(${fit})`, transformOrigin: "0 0" }}>
             {rows.map((r, i) => {
               const key = `r${i}`;
               if (r.kind === "blank") return <div key={key} style={{ height: LH }} />;
               if (r.kind === "rule") return <div key={key} style={{ height: LH, display: "flex", alignItems: "center" }}><div style={{ flex: 1, borderTop: `3px dashed ${PRINT}`, opacity: 0.5 }} /></div>;
-              if (r.kind === "head") return <div key={key} style={{ height: LH, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: i === 0 ? ZODIAK : INTER, fontWeight: i === 0 ? 700 : 500, fontSize: i === 0 ? 54 : 34 }}>{r.text}</div>;
+              if (r.kind === "head") return <div key={key} style={{ height: LH, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: i === 0 ? NARROW : NARROW, fontWeight: i === 0 ? 700 : 500, fontSize: i === 0 ? 54 : 34 }}>{r.text}</div>;
               const big = r.kind === "total";
               return (
-                <div key={key} style={{ height: LH, display: "flex", alignItems: "baseline", gap: 12, fontFamily: INTER, fontVariantNumeric: "tabular-nums",
+                <div key={key} style={{ height: LH, display: "flex", alignItems: "baseline", gap: 12, fontFamily: NARROW, fontVariantNumeric: "tabular-nums",
                   fontSize: big ? 48 : r.kind === "sub" ? 36 : 44, fontWeight: big ? 700 : r.kind === "sub" ? 400 : 600, paddingLeft: r.kind === "sub" ? 28 : 0, opacity: r.kind === "sub" ? 0.75 : 1 }}>
                   <span>{r.text}</span>
                   {r.amount ? <><span style={{ flex: 1, borderBottom: `3px dotted ${PRINT}`, opacity: 0.35, transform: "translateY(-8px)" }} /><span>{r.amount}</span></> : null}
@@ -93,17 +111,17 @@ export const Receipt: React.FC<ReceiptProps> = (p) => {
         </div>
       </div>
       {/* the slot the paper comes out of */}
-      <div style={{ position: "absolute", left: left - 50, width: W + 100, top: slotY - 4, height: 30, borderRadius: 15, background: B.color.surface,
+      <div style={{ position: "absolute", left: left - 50, width: W + 100, top: slotY - 4, height: 30, borderRadius: 15, background: "#1a0e09",
         boxShadow: "inset 0 8px 14px rgba(0,0,0,.85), 0 1px 0 rgba(247,239,230,.08)" }} />
       {/* the stamp, across the totals */}
-      <div style={{ position: "absolute", left, width: W, top: slotY - LH * fit * 2.1 - 40, display: "flex", justifyContent: "center",
+      <div style={{ position: "absolute", left, width: W, top: slotY - LH * fit * 2.1 - 70, display: "flex", justifyContent: "center",
         opacity: f < stampAt ? 0 : Math.min(1, stampK * 1.5), transform: `rotate(-8deg) scale(${(1.6 - 0.6 * Math.min(1, stampK)).toFixed(3)})` }}>
-        <div style={{ border: `7px solid ${RED}`, borderRadius: 14, padding: "4px 30px 10px", fontFamily: ZODIAK, fontWeight: 700, fontSize: 76, color: RED, letterSpacing: "-0.02em",
-          background: "rgba(247,239,230,.35)" }}>{p.stamp}</div>
+        <div style={{ border: `7px solid ${RED}`, borderRadius: 14, padding: "4px 30px 10px", fontFamily: NARROW, fontWeight: 700, fontSize: 84, color: RED, letterSpacing: "0", filter: "url(#rubber)",
+          background: "transparent" }}>{p.stamp}</div>
       </div>
-      <div style={{ position: "absolute", left: 64, right: 64, top: slotY + 56, fontFamily: INTER, fontSize: 34, color: B.color.ink, opacity: ramp(f, stampAt + 6, stampAt + 18, CURVE.quiet.enter) }}>{p.source}</div>
+      <div style={{ position: "absolute", left: 64, right: 64, top: slotY + 56, fontFamily: NARROW, fontWeight: 500, fontSize: 36, color: CREAM, opacity: ramp(f, stampAt + 6, stampAt + 18, CURVE.quiet.enter) }}>{p.source}</div>
       {rows.map((_, i) => <Cue key={i} at={START + i * LINE} name="typewriter-hit-soft" volume={0.22} />)}
       <Cue at={stampAt} name="bass-hit-short" volume={0.6} />
-    </Clip>
+    </World>
   );
 };

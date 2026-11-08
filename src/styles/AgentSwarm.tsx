@@ -8,7 +8,18 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, DUR, readHold } from "../system/motion";
-import { B, Clip, Cue, INTER, RED, Title, ZODIAK, ramp } from "./common";
+import { loadFont as DISPLAYFont } from "@remotion/google-fonts/InstrumentSans";
+import { loadFont as TEXTFont } from "@remotion/google-fonts/InstrumentSans";
+import { Cue, ramp } from "./common";
+import { Heading, World } from "./world";
+
+// rebuilt 11/08 as its own world: a hot red-orange field, cream agents carrying oxblood pieces, set in Instrument Sans
+const { fontFamily: DISPLAY } = DISPLAYFont("normal", { weights: ["600", "700"], subsets: ["latin"] });
+const { fontFamily: TEXT } = TEXTFont("normal", { weights: ["500", "600"], subsets: ["latin"] });
+const INK = "#FFF3EA";
+const SURF = "#3A0608";
+const GLOW = "255, 243, 234";
+const ACCENT = "#3A0608";
 
 export type AgentSwarmProps = {
   title: string;
@@ -67,16 +78,16 @@ export const AgentSwarm: React.FC<AgentSwarmProps> = (p) => {
     return u >= 1 ? null : { ...quad(o, mid(o, home), home, u), carry: true };
   };
   return (
-    <Clip endAt={end} cta={p.cta}>
-      <Title out={end}>{p.title}</Title>
+    <World endAt={end} cta={p.cta} font={DISPLAY} ink="#FFF3EA" logo="white" logoSpot="top-right" end="iris" endGround="#3A0608" ground="radial-gradient(circle at 50% 50%, #FF7A4A 0%, #F2452E 55%, #C21E22 100%)">
+      <Heading font={DISPLAY} color={INK} size={80} out={end}>{p.title}</Heading>
       {/* the sources */}
       {src.map((s, i) => {
         const k = ramp(f, 8 + i * 4, 8 + i * 4 + DUR.arrive, CURVE.quiet.enter);
         const reading = f > START + OUT && f < back + 10;
         return (
           <div key={i} style={{ position: "absolute", left: s.x - 150, width: 300, top: s.y - 44, height: 88, display: "flex", alignItems: "center", justifyContent: "center",
-            borderRadius: 20, background: B.color.surface, boxShadow: `inset 0 0 0 ${reading ? 3 : 2}px rgba(${reading ? B.color.glowRgb : "247,239,230"},${reading ? 0.7 : 0.12})`,
-            opacity: k, transform: `scale(${(0.9 + 0.1 * k).toFixed(3)})`, fontFamily: INTER, fontWeight: 600, fontSize: 34, color: B.color.ink }}>{s.label}</div>
+            borderRadius: 20, background: SURF, boxShadow: `inset 0 0 0 ${reading ? 3 : 2}px rgba(${reading ? GLOW : "247,239,230"},${reading ? 0.7 : 0.12})`,
+            opacity: k, transform: `scale(${(0.9 + 0.1 * k).toFixed(3)})`, fontFamily: TEXT, fontWeight: 600, fontSize: 34, color: INK }}>{s.label}</div>
         );
       })}
       {/* the agents, each with a short trail */}
@@ -91,23 +102,23 @@ export const AgentSwarm: React.FC<AgentSwarmProps> = (p) => {
           const r = { x: now.x + Math.cos(ang - 2.5) * 10, y: now.y + Math.sin(ang - 2.5) * 10 };
           return (
             <g key={`${s}-${k}`}>
-              <line x1={prev.x} y1={prev.y} x2={now.x} y2={now.y} stroke={B.color.ink} strokeOpacity={0.25} strokeWidth={4} strokeLinecap="round" />
-              <polygon points={`${tip.x},${tip.y} ${l.x},${l.y} ${r.x},${r.y}`} fill={B.color.ink} />
-              {now.carry ? <circle cx={now.x - Math.cos(ang) * 10} cy={now.y - Math.sin(ang) * 10} r={5} fill={RED} /> : null}
+              <line x1={prev.x} y1={prev.y} x2={now.x} y2={now.y} stroke={INK} strokeOpacity={0.25} strokeWidth={4} strokeLinecap="round" />
+              <polygon points={`${tip.x},${tip.y} ${l.x},${l.y} ${r.x},${r.y}`} fill={INK} />
+              {now.carry ? <circle cx={now.x - Math.cos(ang) * 10} cy={now.y - Math.sin(ang) * 10} r={5} fill={ACCENT} /> : null}
             </g>
           );
         }))}
       </svg>
       {/* the question, and the answer gathering under it */}
-      <div style={{ position: "absolute", left: 80, right: 80, top: c.y - 120, textAlign: "center", fontFamily: ZODIAK, fontWeight: 700, fontSize: 56, lineHeight: 1.1, color: B.color.ink,
+      <div style={{ position: "absolute", left: 80, right: 80, top: c.y - 120, textAlign: "center", fontFamily: DISPLAY, fontWeight: 700, fontSize: 56, lineHeight: 1.1, color: INK,
         opacity: qK, transform: `translateY(${(1 - qK) * 12}px)` }}>"{p.question}"</div>
-      <div style={{ position: "absolute", left: 80, right: 80, top: c.y + 70, textAlign: "center", fontFamily: ZODIAK, fontWeight: 700, fontSize: 48, lineHeight: 1.12, color: RED,
+      <div style={{ position: "absolute", left: 80, right: 80, top: c.y + 70, textAlign: "center", fontFamily: DISPLAY, fontWeight: 700, fontSize: 48, lineHeight: 1.12, color: ACCENT,
         opacity: aK, transform: `scale(${(0.96 + 0.04 * aK).toFixed(3)})` }}>{p.answer}</div>
-      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.8, textAlign: "center", fontFamily: INTER, fontSize: 32, color: B.color.ink, opacity: ramp(f, answerAt + 12, answerAt + 24) }}>{p.source}</div>
+      <div style={{ position: "absolute", left: 64, right: 64, top: height * 0.8, textAlign: "center", fontFamily: TEXT, fontSize: 32, color: INK, opacity: ramp(f, answerAt + 12, answerAt + 24) }}>{p.source}</div>
       <Cue at={START} name="air-woosh-quick" volume={0.45} />
       <Cue at={START + OUT} name="data-scan" volume={0.25} />
       <Cue at={back} name="swoosh-slow" volume={0.3} />
       <Cue at={answerAt} name="chime-crystal" volume={0.35} />
-    </Clip>
+    </World>
   );
 };
