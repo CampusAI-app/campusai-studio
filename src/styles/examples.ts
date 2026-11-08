@@ -379,3 +379,291 @@ export const COMIC: ComicProps = {
   worse: { person: { face: "Hectic", body: "Device" }, says: "Wait, which tab was the audit?" },
   payoff: { sfx: "Ding!", person: { face: "SmileBig", body: "Device" }, says: "Or ask CampusAI once." },
 };
+
+/* ---- Batch 1 of the "30 Claude animations" reel (11/08, Gian Angioletti via Muse, names only). Every line of each is in
+ * the matching films/<sample>/facts.md. ---- */
+import type { TypeSlamProps } from "./TypeSlam";
+import type { SplitFlapProps } from "./SplitFlap";
+import type { DayCounterProps } from "./DayCounter";
+import type { ReceiptProps } from "./Receipt";
+import type { BeforeAfterProps } from "./BeforeAfter";
+import type { SwissGridProps } from "./SwissGrid";
+import type { MoneyStackProps } from "./MoneyStack";
+
+/** /type-slam: the W and F rule from the catalog. films/type-slam-w-not-f/facts.md. */
+export const TYPE_SLAM: TypeSlamProps = {
+  cards: [
+    { text: "A W is not an F.", accent: "not" },
+    { text: "An F counts as zero.", accent: "zero" },
+    { text: "A W stays out of your GPA.", accent: "out" },
+  ],
+  source: "UMD Undergraduate Catalog, Academic Records and Regulations",
+  cta: "Ask CampusAI.",
+};
+
+/** /split-flap: the credits each Finance class needs before you can take it. films/split-flap-finance/facts.md. */
+export const SPLIT_FLAP: SplitFlapProps = {
+  title: "When Finance classes open up",
+  heads: ["Class", "Credits needed"],
+  rows: [
+    { left: "BMGT440", right: "68" },
+    { left: "BMGT441", right: "72" },
+    { left: "BMGT443", right: "84" },
+    { left: "BMGT444", right: "84" },
+    { left: "BMGT445", right: "84" },
+  ],
+  accent: [2, 3, 4],
+  note: "The last three need 84 credits first.",
+  source: "Credits completed before you can register. Testudo, Spring 2027.",
+  cta: "Plan around them in CampusAI.",
+};
+
+/** /day-counter: fall 2026, first class to first final. films/day-counter-fall/facts.md. */
+export const DAY_COUNTER: DayCounterProps = {
+  title: "Fall 2026, first class to finals",
+  from: { label: "First class", date: "2026-08-31" },
+  to: { label: "Finals start", date: "2026-12-14" },
+  marks: [
+    { label: "Thanksgiving break", date: "2026-11-25" },
+    { label: "Last class", date: "2026-12-11" },
+  ],
+  unit: "days",
+  source: "UMD Academic Catalog, semester calendar",
+};
+
+/** /receipt: two classes that clear four gen eds. films/receipt-gen-eds/facts.md. */
+export const RECEIPT: ReceiptProps = {
+  title: "Two classes, four gen eds",
+  header: ["Spring 2027", "University of Maryland"],
+  items: [
+    { label: "AOSC123", lines: ["Natural Science", "Big Question"], amount: "3 cr" },
+    { label: "JOUR175", lines: ["Scholarship in Practice", "Diversity"], amount: "3 cr" },
+  ],
+  totals: [
+    { label: "Credits", value: "6" },
+    { label: "Gen eds cleared", value: "4" },
+  ],
+  stamp: "Double counted",
+  source: "Testudo, Spring 2027. Only if you still need all four.",
+  cta: "Find yours in CampusAI.",
+};
+
+/** /before-after: one press of Add to CampusAI Calendar, the same week before and after. films/before-after-calendar/facts.md. */
+export const BEFORE_AFTER: BeforeAfterProps = {
+  title: "One press, and it's on your week",
+  before: { src: "plan-my-week/light/before.jpg", label: "Suggested" },
+  after: { src: "plan-my-week/light/event-landed.jpg", label: "Added" },
+  image: { w: 4320, h: 2700 },
+  crop: { x: 2330, y: 1080, w: 840, h: 960 },
+  focus: { x: 2750, y: 1740, w: 380, h: 190 },
+  caption: "The Goldman Sachs session is on her week now.",
+  source: "The CampusAI demo, My Calendar, Nov 8 to 14.",
+  cta: "Ask CampusAI anything.",
+};
+
+/** /swiss-grid: BMGT340's fall enrolment. films/swiss-grid-bmgt340/facts.md. */
+export const SWISS_GRID: SwissGridProps = {
+  headline: "Business Finance keeps growing",
+  big: { value: "659", label: "BMGT340 students, fall 2025" },
+  cells: [
+    { value: "+22%", label: "since fall 2016" },
+    { value: "538", label: "students in fall 2016" },
+    { value: "5", label: "straight falls of growth" },
+  ],
+  source: "Letter grades reported each fall, PlanetTerp.",
+};
+
+/** /money-stack: a year at UMD, in state, on campus. films/money-stack-year/facts.md. */
+export const MONEY_STACK: MoneyStackProps = {
+  title: "A year at UMD, in state, on campus",
+  parts: [
+    { label: "Tuition", amount: 11014 },
+    { label: "Housing", amount: 10290 },
+    { label: "Food plan", amount: 7180 },
+    { label: "Fees", amount: 1820 },
+    { label: "Transport", amount: 1514 },
+    { label: "Books", amount: 1250 },
+    { label: "Personal", amount: 1200 },
+  ],
+  per: 1000,
+  totalLabel: "estimated, 2026 to 2027",
+  note: "The last three are averages UMD does not bill.",
+  source: "UMD Office of Student Financial Aid, 2026-2027 estimated costs.",
+};
+
+/* ---- Batch 2 of the "30 Claude animations" reel (11/08). Every line of each is in the matching films/<sample>/facts.md. ---- */
+import type { IcebergProps } from "./Iceberg";
+import type { NeonSilhouetteProps } from "./NeonSilhouette";
+import type { DeepTimeProps } from "./DeepTime";
+import type { HologramProps } from "./Hologram";
+import type { InkDoodleProps } from "./InkDoodle";
+import type { IsoFlowProps } from "./IsoFlow";
+import type { TurntableProps } from "./Turntable";
+import type { ParticleLogoProps } from "./ParticleLogo";
+
+/** /iceberg: what BMGT441's name does not tell you. films/iceberg-bmgt441/facts.md. */
+export const ICEBERG: IcebergProps = {
+  title: "One class, three gates",
+  tip: { label: "BMGT441", sub: "Fixed Income, 3 credits" },
+  below: ["Needs BMGT340 first", "Finance majors only", "72 credits completed"],
+  source: "Testudo, Spring 2027.",
+  cta: "Ask CampusAI before you register.",
+};
+
+/** /neon-silhouette: finals week, on the wall. films/neon-finals/facts.md. */
+export const NEON_SILHOUETTE: NeonSilhouetteProps = {
+  person: { face: "Tired", body: "Device", hair: "ShortMessy" },
+  lines: ["Finals start", "Dec 14."],
+  sub: "Last day of classes is Dec 11.",
+  source: "UMD Academic Catalog, semester calendar",
+  cta: "Ask CampusAI anything.",
+};
+
+/** /deep-time: one term inside UMD's history. films/deep-time-umd/facts.md. */
+export const DEEP_TIME: DeepTimeProps = {
+  title: "One term, 170 years",
+  focus: { label: "Fall 2026, one term", from: 2026.66, to: 2026.97 },
+  stages: [
+    { from: 2026.3, to: 2030.7, caption: "Inside four years" },
+    { from: 1846, to: 2036, caption: "Inside 170 years of UMD" },
+  ],
+  marks: [
+    { year: 1856, label: "Chartered as Maryland Agricultural College" },
+    { year: 1920, label: "Becomes the University of Maryland" },
+  ],
+  line: "One term is a sliver. Make it count.",
+  source: "umd.edu/about/history and the UMD Academic Catalog.",
+  cta: "Plan all eight terms in CampusAI.",
+};
+
+/** /hologram: the gen ed minimum. films/hologram-gen-ed/facts.md. */
+export const HOLOGRAM: HologramProps = {
+  title: "The gen ed minimum",
+  figure: { value: "40", label: "credits of gen eds" },
+  caption: "UMD requires at least 40 credits of General Education.",
+  source: "gened.umd.edu",
+  cta: "Ask CampusAI which ones you still need.",
+};
+
+/** /ink-doodle: gen eds that double count. films/ink-doodle-gen-eds/facts.md. */
+export const INK_DOODLE: InkDoodleProps = {
+  title: "Gen eds that double count",
+  notes: [
+    { text: "AOSC123 counts twice", mark: "tick" },
+    { text: "JOUR175 counts twice", mark: "tick" },
+    { text: "2 classes clear 4 gen eds", mark: "circle", circle: "4" },
+    { text: "if you still need all four", mark: "underline" },
+  ],
+  source: "Testudo, Spring 2027.",
+  cta: "Find yours in CampusAI.",
+};
+
+/** /iso-flow: two feeds into My Calendar. films/iso-flow-calendar/facts.md. */
+export const ISO_FLOW: IsoFlowProps = {
+  title: "Two feeds, one week",
+  nodes: [
+    { id: "canvas", label: "Canvas", sub: "your assignments", x: -1.5, y: 1.1 },
+    { id: "events", label: "Events", sub: "the ones you add", x: 1.1, y: -1.5 },
+    { id: "cal", label: "My Calendar", sub: "one week", x: 1.4, y: 1.4, big: true },
+  ],
+  edges: [{ from: "canvas", to: "cal" }, { from: "events", to: "cal" }],
+  caption: "Assignments and the events you add land on My Calendar.",
+  source: "Paste your Canvas calendar link once. Press Add to CampusAI Calendar on an event.",
+};
+
+/** /turntable: the four-year planner. films/turntable-planner/facts.md. */
+export const TURNTABLE: TurntableProps = {
+  title: "Your four-year plan",
+  image: { src: "pass/planner.jpg", w: 2880, h: 1800 },
+  crop: { x: 470, y: 60, w: 2380, h: 1560 },
+  caption: "See what's left to graduate, and what to take next.",
+  source: "The CampusAI demo, Planner and Progress.",
+  cta: "Ask CampusAI anything.",
+};
+
+/** /particle-logo: the logo sting. films/particle-logo/facts.md. */
+export const PARTICLE_LOGO: ParticleLogoProps = { line: "Ask CampusAI anything." };
+
+/* ---- Batch 3 of the "30 Claude animations" reel (11/08). Every line of each is in the matching films/<sample>/facts.md. ---- */
+import type { GitCityProps } from "./GitCity";
+import type { AgentSwarmProps } from "./AgentSwarm";
+import type { TerminalBloomProps } from "./TerminalBloom";
+import type { LaptopRevealProps } from "./LaptopReveal";
+import type { NotificationsProps } from "./Notifications";
+import planWeekFlow from "../../public/plan-my-week/flow/frames.json";
+
+/** /git-city: ten falls of six Smith core classes. films/git-city-smith-core/facts.md. */
+export const GIT_CITY: GitCityProps = {
+  title: "Ten falls of the Smith core",
+  rows: [
+    { label: "BMGT220", values: [542, 508, 415, 409, 458, 467, 401, 361, 384, 569] },
+    { label: "BMGT221", values: [302, 314, 279, 280, 339, 288, 262, 307, 343, 421] },
+    { label: "BMGT230", values: [588, 558, 335, 513, 443, 485, 489, 514, 506, 592] },
+    { label: "BMGT340", values: [538, 501, 518, 516, 506, 524, 564, 607, 635, 659] },
+    { label: "BMGT350", values: [560, 512, 515, 495, 542, 594, 560, 518, 540, 718] },
+    { label: "BMGT364", values: [518, 486, 512, 477, 552, 478, 525, 486, 559, 624] },
+  ],
+  cols: ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"],
+  accent: 9,
+  caption: "Fall 2025 was the biggest of the ten for all six.",
+  source: "Students with a letter grade each fall, PlanetTerp.",
+};
+
+/** /agent-swarm: the four sources behind the gen eds answer. films/agent-swarm-gen-eds/facts.md. */
+export const AGENT_SWARM: AgentSwarmProps = {
+  title: "One question, four sources",
+  question: "Which gen eds do I still need?",
+  sources: ["Testudo", "PlanetTerp", "Degree audit", "Gen ed guide"],
+  answer: "One answer, built from all four.",
+  source: "The sources the CampusAI chat reads for this answer.",
+  cta: "Ask CampusAI anything.",
+};
+
+/** /terminal-bloom: when each Finance class opens. films/terminal-bloom-finance/facts.md. */
+export const TERMINAL_BLOOM: TerminalBloomProps = {
+  title: "When can I take it?",
+  command: "credits needed for Finance classes",
+  results: [
+    { label: "BMGT440", sub: "68 credits" },
+    { label: "BMGT441", sub: "72 credits" },
+    { label: "BMGT443", sub: "84 credits", accent: true },
+    { label: "BMGT444", sub: "84 credits", accent: true },
+    { label: "BMGT445", sub: "84 credits", accent: true },
+  ],
+  caption: "The last three wait for 84 credits.",
+  source: "Testudo, Spring 2027.",
+  cta: "Plan around them in CampusAI.",
+};
+
+/** /laptop-reveal: adding Canvas, recorded on the real demo. films/laptop-reveal-canvas/facts.md. */
+export const LAPTOP_REVEAL: LaptopRevealProps = {
+  title: "Your week, on your laptop",
+  frames: (() => {
+    // the recording's own timestamps, sampled to 30 fps from the Canvas dialog opening to the classes landing
+    const fr = (planWeekFlow as { frames: { t: number; name: string }[] }).frames;
+    const out: string[] = [];
+    for (let t = 8.4; t <= 17.6; t += 1 / 30) {
+      let best = fr[0];
+      for (const x of fr) if (Math.abs(x.t - t) < Math.abs(best.t - t)) best = x;
+      out.push(`plan-my-week/flow/${best.name}`);
+    }
+    return out;
+  })(),
+  caption: "Paste your Canvas link once. Assignments land on My Calendar.",
+  source: "The CampusAI demo, My Calendar.",
+  cta: "Ask CampusAI anything.",
+};
+
+/** /notifications: three real notification rows. films/notifications-demo/facts.md. */
+export const NOTIFICATIONS: NotificationsProps = {
+  title: "What changed, while you were in class",
+  image: { src: "pass/notifications.jpg", w: 2880, h: 1800 },
+  rows: [
+    { x: 560, y: 1194, w: 1340, h: 340 },
+    { x: 560, y: 848, w: 1340, h: 344 },
+    { x: 560, y: 328, w: 1340, h: 306 },
+  ],
+  caption: "New matches and moved due dates, in one place.",
+  source: "The CampusAI demo, Notifications.",
+  cta: "Ask CampusAI anything.",
+};

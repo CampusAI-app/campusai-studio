@@ -23,6 +23,29 @@ import { Blueprint, blueprintEnd } from "./Blueprint";
 import { Chalkboard, chalkEnd } from "./Chalkboard";
 import { PAPER_CUTOUT } from "./examples";
 import { PaperCutout, paperEnd } from "./PaperCutout";
+import { BEFORE_AFTER, DAY_COUNTER, MONEY_STACK, RECEIPT, SPLIT_FLAP, SWISS_GRID, TYPE_SLAM } from "./examples";
+import { TypeSlam, slamEnd } from "./TypeSlam";
+import { SplitFlap, flapEnd } from "./SplitFlap";
+import { DayCounter, counterEnd } from "./DayCounter";
+import { Receipt, receiptEnd } from "./Receipt";
+import { BeforeAfter, beforeAfterEnd } from "./BeforeAfter";
+import { SwissGrid, swissEnd } from "./SwissGrid";
+import { MoneyStack, stackEnd } from "./MoneyStack";
+import { DEEP_TIME, HOLOGRAM, ICEBERG, INK_DOODLE, ISO_FLOW, NEON_SILHOUETTE, PARTICLE_LOGO, TURNTABLE } from "./examples";
+import { Iceberg, icebergEnd } from "./Iceberg";
+import { NeonSilhouette, neonEnd } from "./NeonSilhouette";
+import { DeepTime, deepEnd } from "./DeepTime";
+import { Hologram, hologramEnd } from "./Hologram";
+import { InkDoodle, doodleEnd } from "./InkDoodle";
+import { IsoFlow, isoEnd } from "./IsoFlow";
+import { Turntable, turntableEnd } from "./Turntable";
+import { ParticleLogo, particleEnd } from "./ParticleLogo";
+import { AGENT_SWARM, GIT_CITY, LAPTOP_REVEAL, NOTIFICATIONS, TERMINAL_BLOOM } from "./examples";
+import { GitCity, cityEnd } from "./GitCity";
+import { AgentSwarm, swarmEnd } from "./AgentSwarm";
+import { TerminalBloom, bloomEnd } from "./TerminalBloom";
+import { LaptopReveal, laptopEnd } from "./LaptopReveal";
+import { Notifications, notifEnd } from "./Notifications";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: (p: any) => number }[] = [
@@ -45,6 +68,30 @@ const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: 
   { id: "Style-Comic", c: Comic, props: COMIC, frames: 0, dur: (p) => comicEnd(p) + END_FRAMES + 12 },
   // 11/05: the paper cutout storybook, its length from its beats
   { id: "Style-PaperCutout", c: PaperCutout, props: PAPER_CUTOUT, frames: 0, dur: (p) => paperEnd(p) + END_FRAMES + 12 },
+  // 11/08, batch 1 of the "30 Claude animations" reel (Gian Angioletti via Muse): type and number looks
+  { id: "Style-TypeSlam", c: TypeSlam, props: TYPE_SLAM, frames: 0, dur: (p) => slamEnd(p) + END_FRAMES + 12 },
+  { id: "Style-SplitFlap", c: SplitFlap, props: SPLIT_FLAP, frames: 0, dur: (p) => flapEnd(p) + END_FRAMES + 12 },
+  { id: "Style-DayCounter", c: DayCounter, props: DAY_COUNTER, frames: 0, dur: (p) => counterEnd(p) + END_FRAMES + 12 },
+  { id: "Style-Receipt", c: Receipt, props: RECEIPT, frames: 0, dur: (p) => receiptEnd(p) + END_FRAMES + 12 },
+  { id: "Style-BeforeAfter", c: BeforeAfter, props: BEFORE_AFTER, frames: 0, dur: (p) => beforeAfterEnd(p) + END_FRAMES + 12 },
+  { id: "Style-SwissGrid", c: SwissGrid, props: SWISS_GRID, frames: 0, dur: (p) => swissEnd(p) + END_FRAMES + 12 },
+  { id: "Style-MoneyStack", c: MoneyStack, props: MONEY_STACK, frames: 0, dur: (p) => stackEnd(p) + END_FRAMES + 12 },
+  // 11/08, batch 2: scenes and stings
+  { id: "Style-Iceberg", c: Iceberg, props: ICEBERG, frames: 0, dur: (p) => icebergEnd(p) + END_FRAMES + 12 },
+  { id: "Style-NeonSilhouette", c: NeonSilhouette, props: NEON_SILHOUETTE, frames: 0, dur: (p) => neonEnd(p) + END_FRAMES + 12 },
+  { id: "Style-DeepTime", c: DeepTime, props: DEEP_TIME, frames: 0, dur: (p) => deepEnd(p) + END_FRAMES + 12 },
+  { id: "Style-Hologram", c: Hologram, props: HOLOGRAM, frames: 0, dur: (p) => hologramEnd(p) + END_FRAMES + 12 },
+  { id: "Style-InkDoodle", c: InkDoodle, props: INK_DOODLE, frames: 0, dur: (p) => doodleEnd(p) + END_FRAMES + 12 },
+  { id: "Style-IsoFlow", c: IsoFlow, props: ISO_FLOW, frames: 0, dur: (p) => isoEnd(p) + END_FRAMES + 12 },
+  { id: "Style-Turntable", c: Turntable, props: TURNTABLE, frames: 0, dur: (p) => turntableEnd(p) + END_FRAMES + 12 },
+  { id: "Style-ParticleLogo", c: ParticleLogo, props: PARTICLE_LOGO, frames: 0, dur: (p) => particleEnd(p) + END_FRAMES + 12 },
+  // 11/08, batch 3: data, product and process looks (Globe Arcs and Contour Map wait on Jacob's call on the 11/06 no-map rule)
+  { id: "Style-GitCity", c: GitCity, props: GIT_CITY, frames: 0, dur: (p) => cityEnd(p) + END_FRAMES + 12 },
+  { id: "Style-AgentSwarm", c: AgentSwarm, props: AGENT_SWARM, frames: 0, dur: (p) => swarmEnd(p) + END_FRAMES + 12 },
+  { id: "Style-TerminalBloom", c: TerminalBloom, props: TERMINAL_BLOOM, frames: 0, dur: (p) => bloomEnd(p) + END_FRAMES + 12 },
+  // renders need --gl=angle (the photoreal laptop is WebGL)
+  { id: "Style-LaptopReveal", c: LaptopReveal, props: LAPTOP_REVEAL, frames: 0, dur: (p) => laptopEnd(p) + END_FRAMES + 12 },
+  { id: "Style-Notifications", c: Notifications, props: NOTIFICATIONS, frames: 0, dur: (p) => notifEnd(p) + END_FRAMES + 12 },
 ];
 
 const sized = (dur?: (p: any) => number): CalculateMetadataFunction<any> => ({ props }) => ({
