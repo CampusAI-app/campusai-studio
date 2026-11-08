@@ -67,7 +67,7 @@ export const Carry: React.FC<{ at: number; children: React.ReactNode }> = ({ at,
   );
 };
 
-export const EndCard: React.FC<{ at: number; light?: boolean; y?: number }> = ({ at, light, y }) => {
+export const EndCard: React.FC<{ at: number; light?: boolean; y?: number; cta?: string }> = ({ at, light, y, cta }) => {
   const f = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
   if (f < at) return null;
@@ -78,6 +78,13 @@ export const EndCard: React.FC<{ at: number; light?: boolean; y?: number }> = ({
   const breathe = interpolate(f, [at + 24, at + 24 + fps * 4], [1, 1 + DRIFT.scalePerSecond * 4], clamp);
   return (
     <AbsoluteFill>
+      {cta ? (
+        // the call to action above the logo (Jacob, 10/30 for chat films: end on "something like 'Ask CampusAI
+        // anything.'"; 11/05: "the ending we should have a CTA")
+        <div style={{ position: "absolute", bottom: height - (cy - logoW / B.logo!.ratio / 2 - 56), left: 64, right: 64, textAlign: "center", opacity: line,
+          transform: `translateY(${(1 - line) * 12}px)`, fontFamily: ZODIAK, fontWeight: 700, fontSize: 72, lineHeight: 1.08, letterSpacing: "-0.02em",
+          color: light ? PRINT : B.color.ink }}>{cta}</div>
+      ) : null}
       {light ? (
         <Img
           src={staticFile(B.logo!.onLight)}
@@ -97,8 +104,8 @@ export const EndCard: React.FC<{ at: number; light?: boolean; y?: number }> = ({
 };
 
 /** Ground, fonts, music, held logo, carry and end card, shared by every style. */
-export const Clip: React.FC<{ endAt: number; light?: boolean; ground?: string; logoY?: number; noCarry?: boolean; noLogo?: boolean; children: React.ReactNode }> = ({
-  endAt, light, ground, logoY, noCarry, noLogo, children,
+export const Clip: React.FC<{ endAt: number; light?: boolean; ground?: string; logoY?: number; noCarry?: boolean; noLogo?: boolean; cta?: string; children: React.ReactNode }> = ({
+  endAt, light, ground, logoY, noCarry, noLogo, cta, children,
 }) => {
   useBrandFonts(B);
   return (
@@ -106,7 +113,7 @@ export const Clip: React.FC<{ endAt: number; light?: boolean; ground?: string; l
       <Bed total={endAt + END_FRAMES} />
       {noCarry ? children : <Carry at={endAt}>{children}</Carry>}
       {noLogo ? null : <HeldLogo light={light} out={endAt} />}
-      <EndCard at={noCarry ? endAt : endAt + DUR.arrive + 2} light={light} y={logoY} />
+      <EndCard at={noCarry ? endAt : endAt + DUR.arrive + 2} light={light} y={logoY} cta={cta} />
       <Cue at={endAt + 6} name="transition-soft" volume={0.5} />
     </AbsoluteFill>
   );

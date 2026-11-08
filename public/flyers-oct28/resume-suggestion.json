@@ -1,0 +1,19 @@
+{
+  "name": "resume-suggestion",
+  "source": "https://campusai-demo.vercel.app/career?view=resume",
+  "vw": 900,
+  "dpr": 4,
+  "captured": "2026-10-28T14:08:16.749Z",
+  "css": {
+    "w": 826,
+    "h": 323.609375
+  },
+  "radius": 10,
+  "text": "✦\nImprovement\nQuantify your Investment Fund work\nClose\n▾\nWhy this helps\n\nFinance and analyst recruiters scan for quantified impact first. A bullet without a number reads as a responsibility, not an achievement, and gets skimmed past.\n\nCurrent\nAnalyst, Smith Investment Fund. Researched stocks and presented ideas to the group.\nSuggested\nSmith Investment Fund Analyst, pitched 3 long equity ideas to a student investment committee; one was added to the fund's ~$250K book after a full DCF and comparable-company write-up.\nCopy rewrite",
+  "checks": {
+    "sandy": false,
+    "testudo": false,
+    "emdash": false,
+    "chatgpt": false
+  }
+}

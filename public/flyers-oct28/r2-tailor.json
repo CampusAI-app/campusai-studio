@@ -1,0 +1,41 @@
+{
+ "name": "r2-tailor",
+ "source": "https://campusai-demo.vercel.app/career?view=tailor&job_id=jp_e0a1000000000001",
+ "vw": 1000,
+ "vh": 2000,
+ "dpr": 4,
+ "captured": "2026-10-28T14:44:37.738Z",
+ "checks": {
+  "sandy": false,
+  "testudo": false,
+  "emdash": false,
+  "chatgpt": false
+ },
+ "marks": {
+  "Tailoring for": {
+   "x": 50,
+   "y": 162.5,
+   "w": 70.796875,
+   "h": 18,
+   "card": {
+    "x": 33,
+    "y": 136.5,
+    "w": 934,
+    "h": 70
+   }
+  },
+  "This posting asks for": {
+   "x": 54,
+   "y": 644.5,
+   "w": 131.578125,
+   "h": 19.5,
+   "card": {
+    "x": 33,
+    "y": 631.5,
+    "w": 934,
+    "h": 257.453125
+   }
+  },
+  "Checked against Maya_Chen_Resume.pdf": null
+ }
+}

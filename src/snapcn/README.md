@@ -6,9 +6,9 @@ Only the free `registry/snap-cn/` and `registry/snap-cn-ui/core` code. snapcn's 
 their server and were never fetched.
 
 Import a part from its folder, for example `import { TextReveal } from "../snapcn/text-reveal"`.
-Shared helpers are in `ui/`. Worked example: `src/snapcn-sample/SnapcnSample.tsx` (composition
-`SnapcnSample-9x16`). The parts measure text on mount, so load the brand face before they mount (the
-sample shows how).
+Shared helpers are in `ui/`. Worked example: `src/askhighlight/AskHighlight.tsx` (composition
+`AskHighlight-9x16`): text-highlight as a marker over the real chat, karaoke-captions for the end line. The parts
+measure text on mount, so load the brand face before they mount.
 
 ## Taken (30)
 

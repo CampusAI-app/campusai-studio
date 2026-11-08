@@ -61,6 +61,12 @@ brief and LOG. Newest wins where two disagree. Add every new note here, dated, t
   getting it from the web" (10/29, registration films). For `npm run chat`, record the desktop web layout in a tall
   window (1100 x 1956, `zoom` 1.8 makes the conversation readable) and frame it with the camera. The 820 px size in
   `scripts/chat.mjs` flips to mobile. Keep the page's top logo row (the school's M beside ours) out of frame.
+- **Desktop layout only, every format, until the mobile app ships (11/06, corrects 11/05).** On 11/05 he asked for "a mobile
+  format like a real one" for reels; a day later, after seeing it: "I'd rather show it on a computer, not on a phone, because
+  we're not on the phone yet either." So no phone screens and no "on your phone" copy. A vertical reel uses the tall desktop
+  recording above (1100 x 1956, `zoom` 1.8), shown big with the product as the frame. Never crop a wide desktop recording
+  into a narrow card ("trying to shove it into a real format").
+- Show only what the product has. No map: CampusAI has none, so a map beat reads as a feature that does not exist (11/06).
 
 ## Camera and motion
 - Smooth and focused: one subject, arrive early, hold, release when the beat completes. Nothing

@@ -49,6 +49,14 @@ To make one:
 | `/ink-wash` | Red sun, ink mountains, then the title | A title of a few words | A title card, one thought. Drawn in code, on paper |
 | `/pov-doodle` | A hand-drawn student, a POV line, sticky notes piling up while their face gets worse, then one line clears the pile | A POV line, 3 to 5 things that pile up, a payoff line | Each note is a real thing a student checks. The payoff names CampusAI but never draws its screens (real product only comes from captures). The person is Open Peeps (CC0) in `src/styles/peeps/`, so add a face or pose from CeamKrier/react-peeps there, never draw a new person by hand |
 | `/flat-cartoon` | A flat lecture hall fills or empties as a true number moves, one person per N | A true series with a source, and what one person stands for | Every person is round(value / N) and the legend says N. The number never counts up from zero. Three flat brand colours, no outlines |
+| `/paper-cutout` | A cut-paper storybook: a small student walks while hills, buildings and trees pop up and slide past in layers, the light going from afternoon to night, and the payoff lands at a lit window | 3 to 5 story beats (what pops up, its time of day, a caption), a payoff line with one red word, a smaller line under it | Every caption is a true thing from `facts.md`. The payoff names CampusAI but never draws its screens. The student is flat cut-paper shapes drawn in code, never a detailed person. One accent, the red backpack and the payoff word |
+| `/chalkboard` | One academic idea at the board: a title, a formula, two cases side by side, a note, then the line naming CampusAI, all chalk writing itself on with dust | A title, a one-line framing, a formula (left side and a fraction), two cases (a big letter and a line or two each), a note, a payoff | Every line is a rule from a real source (the catalog, gened.umd.edu), quoted in `facts.md`. Chalk white plus ONE red chalk circle on the case that is the point. Headline and payoff in Zodiak, board work in Caveat |
+| `/blueprint` | A plan drawn as an architect's elevation: one floor per year, one room per term, each dimensioned in credits, the camera riding up as it draws, then a pull back to a red overall dimension and a title block | Floors (label, two rooms, the room dimension), the overall height and width, title-block notes with their sources, a payoff | Never monospace or caps lettering, even though real blueprints use it: Zodiak, Inter, Caveat. The red overall dimension is the one accent. A dimension that is arithmetic says so in the notes |
+| `/comic` | A student gag as a one-page comic: four panels ink on in reading order, Ben-Day dot shading, balloons pop, one red sound effect on a burst | A title, an opening caption and line, 3 or 4 things that pile up, a worse line, a short effect word, a payoff line | Every label that names a real thing is in `facts.md`. The payoff names CampusAI but never draws its screens. The cast is Open Peeps from `src/styles/peeps/`, never drawn by hand. The effect word is sentence case |
+
+**Paper cutout (2026-11-05, from the Nov 5 Muse send of Tobi's (@tobiadonadon_) cartoon story reels; his flat paper-cutout look is the one we can draw in code).** Fixed paper grain and torn edges with a drop shadow under every layer, no boil, so it never reads as /pov-doodle.
+
+**Chalkboard, blueprint, comic halftone (2026-11-05, from the Nov 5 Muse send "10 Claude animation styles", one scene in ten looks; its prompts were gated and never seen, so these are our own build of three of the names that fit students).** Grounds the brand has no colour for (the board's green-black, the paper's blue) are named constants in their own files; every mark on them is brand ink and the one red. Samples: `films/chalkboard-w-not-f/`, `films/blueprint-four-years/`, `films/comic-gen-eds/`.
 
 **The cartoon pair (2026-11-04, Jacob through Muse: "cartoon graphics and animations to make reels for CampusAI").**
 Both from Shaan Johari's Animation Styles Part 5 (names only, prompts DM-gated). The doodle look is one SVG
@@ -57,6 +65,24 @@ Handwriting is Caveat (Google Fonts) for notes and tallies only; headlines stay 
 they sit beside /ink-wash and /paper-desk, not the near-black films. What a recurring cartoon cast would still
 need is a decision, not code: one named character we always use (a CampusAI student), drawn from Open Peeps
 pieces so anyone on the team can pose them.
+
+## Generated images, for looks code cannot draw (2026-11-05)
+From the Nov 5 Muse sends (Tobi's soft 3D and painterly reels; the CGI, cinematic, toy brick and PS2 looks in "10 Claude
+animation styles"). Jacob: Gemini is for when it helps, not every video. Doodle, paper, chalk, ink and flat looks stay in code.
+- **How (Jacob's Mac only, agy is signed in there):** `films/cartoon-test/gen.sh <out.jpg> "<scene>" [reference.jpg ...]`.
+  It runs the Antigravity CLI in print mode with no permission flags: its image tool needs no approval and saves into
+  agy's own folder, and the script copies the file out. Never ask agy to save a file itself, and never use
+  `--dangerously-skip-permissions`. 35 to 100 s an image, 768 x 1376 for 9:16, so keep camera moves gentle.
+- **One character across scenes:** pass an earlier image as the reference. Tested: same face, hair, clothes and style.
+- **Illustration only.** Never generate product UI and never generate text: every prompt says no text, letters,
+  numbers, logos or screens with writing (the script adds it), and all type is drawn in code. Ask for empty space
+  where the type will sit, as part of the room, or the model pastes a flat band. Look at every image before using it.
+- **Putting the real product in the scene:** generate the laptop with a blank screen flat to the camera and nothing
+  in front of it, measure the screen, and play a real recording (`npm run flow` or `npm run chat`) inside it. Stay
+  on the computer: Jacob rejected zooming into the page until it fills the reel ("it's trying to force it to fit
+  within the reel format"). To make one part readable, lift that real piece out of the screen toward the camera.
+- Worked example: `films/cartoon-delusional/` (`CartoonDelusional-9x16`, `src/cartoon/`): the job card's skills row
+  lifts out of a cartoon laptop, then Learn a skill. In Base's video backlog, not finished.
 
 ## Reference: Island "for Agents" by adiiguu (2026-11-03, Jacob: "I love the animations and the noises")
 Five-slide carousel (instagram.com/p/DfMPoqACmI3), learned through Muse. Not seen frame by frame

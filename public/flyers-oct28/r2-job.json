@@ -1,0 +1,60 @@
+{
+ "name": "r2-job",
+ "source": "https://campusai-demo.vercel.app/career?view=jobs",
+ "vw": 1000,
+ "vh": 2000,
+ "dpr": 4,
+ "captured": "2026-10-28T14:44:14.298Z",
+ "checks": {
+  "sandy": false,
+  "testudo": false,
+  "emdash": false,
+  "chatgpt": false
+ },
+ "marks": {
+  "Why this fits you": {
+   "x": 186,
+   "y": 300.5,
+   "w": 131.390625,
+   "h": 21,
+   "card": {
+    "x": 165,
+    "y": 283.5,
+    "w": 670,
+    "h": 336.125
+   }
+  },
+  "About this role": null,
+  "Skills recruiters screen for": {
+   "x": 186,
+   "y": 478.25,
+   "w": 177.4375,
+   "h": 21,
+   "card": {
+    "x": 165,
+    "y": 283.5,
+    "w": 670,
+    "h": 336.125
+   }
+  },
+  "About Capital One": null,
+  "Tailor resume": {
+   "x": 539.234375,
+   "y": 921,
+   "w": 113.703125,
+   "h": 36,
+   "card": {
+    "x": 140,
+    "y": 128,
+    "w": 720,
+    "h": 846
+   }
+  },
+  "dialog": {
+   "x": 0,
+   "y": 0,
+   "w": 1000,
+   "h": 2000
+  }
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "name": "r2-resume",
+ "source": "https://campusai-demo.vercel.app/career?view=resume",
+ "vw": 1000,
+ "vh": 2000,
+ "dpr": 4,
+ "captured": "2026-10-28T14:44:25.705Z",
+ "checks": {
+  "sandy": false,
+  "testudo": false,
+  "emdash": false,
+  "chatgpt": false
+ },
+ "marks": {
+  "Maya_Chen_Resume.pdf": {
+   "x": 37,
+   "y": 338.5,
+   "w": 425.640625,
+   "h": 20,
+   "card": {
+    "x": 12,
+    "y": 305.5,
+    "w": 976,
+    "h": 1036.046875
+   }
+  },
+  "How a recruiter reads this": {
+   "x": 37,
+   "y": 425.5,
+   "w": 180.5,
+   "h": 22.5,
+   "card": {
+    "x": 12,
+    "y": 305.5,
+    "w": 976,
+    "h": 1036.046875
+   }
+  },
+  "What's costing you": {
+   "x": 705.90625,
+   "y": 460,
+   "w": 257.09375,
+   "h": 18,
+   "card": {
+    "x": 12,
+    "y": 305.5,
+    "w": 976,
+    "h": 1036.046875
+   }
+  },
+  "Suggestions for your resume": {
+   "x": 37,
+   "y": 637.75,
+   "w": 298.40625,
+   "h": 27,
+   "card": {
+    "x": 12,
+    "y": 305.5,
+    "w": 976,
+    "h": 1036.046875
+   }
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "event-bloomberg",
+  "source": "https://campusai-demo.vercel.app/events",
+  "vw": 1440,
+  "dpr": 4,
+  "captured": "2026-10-28T14:08:38.286Z",
+  "css": {
+    "w": 574,
+    "h": 209.59375
+  },
+  "radius": 13,
+  "text": "WED\n4\nBloomberg Terminal Workshop\n4:00 PM - 6:00 PM · Van Munching Hall\n✦\nGood match\nBloomberg fluency turns your Smith Investment Fund research into faster comps and cleaner pulls, and it's a skill analyst interviewers actually check.\nAdd to CampusAI Calendar\nLearn more and sign up",
+  "checks": {
+    "sandy": false,
+    "testudo": false,
+    "emdash": false,
+    "chatgpt": false
+  }
+}

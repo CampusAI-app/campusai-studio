@@ -1,0 +1,43 @@
+[
+ {
+  "i": 1,
+  "aria": "Pick section 0401, Mon and Wed, 3:30pm to 4:45pm",
+  "single": false
+ },
+ {
+  "i": 2,
+  "cls": "BMGT440 Advanced Financial Management"
+ },
+ {
+  "i": 2,
+  "aria": "Pick section 0301, Tue and Thu, 2pm to 3:15pm",
+  "single": false
+ },
+ {
+  "i": 3,
+  "cls": "BMGT434 Analytics Consulting: Cases and "
+ },
+ {
+  "i": 3,
+  "aria": "Pick section 0201, Tue and Thu, 3:30pm to 4:45pm",
+  "single": false
+ },
+ {
+  "i": 4,
+  "cls": "BMGT441 Fixed Income"
+ },
+ {
+  "i": 4,
+  "aria": "Pick section 0401, Mon and Wed, 5pm to 6:15pm",
+  "single": false
+ },
+ {
+  "i": 5,
+  "cls": "ARCH271 People, Planet, and Profit: Buil"
+ },
+ {
+  "i": 5,
+  "aria": "Pick section 0102, Tue and Thu, 12:30pm to 1:45pm",
+  "single": false
+ }
+]

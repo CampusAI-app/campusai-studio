@@ -1,0 +1,19 @@
+{
+  "name": "job-capitalone",
+  "source": "https://campusai-demo.vercel.app/career?view=jobs",
+  "vw": 1440,
+  "dpr": 4,
+  "captured": "2026-10-28T14:08:31.239Z",
+  "css": {
+    "w": 435.671875,
+    "h": 169.5
+  },
+  "radius": 13,
+  "text": "C\nCapital One\n✦\nStrong match\nFortune 500\nInternship\nCorporate Finance Summer Analyst, 2027\nHybrid, McLean, VA·$42-$46/hr\n\nYou have financial statement analysis and Excel, plus a credit internship.\n\nPosted 3d ago",
+  "checks": {
+    "sandy": false,
+    "testudo": false,
+    "emdash": false,
+    "chatgpt": false
+  }
+}

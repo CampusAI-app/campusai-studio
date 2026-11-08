@@ -1,11 +1,12 @@
 /**
  * Favorite study spot (2026-10-23), 9:16. Ashley's street interview, lifted.
  *
- * Her cut plays as is up to her end card (frame 1002 in her second cut). Over it, each answer lands as a place tag
- * under her burned-in question: a red pin drops when the place is said and the name opens out of
- * it. The student with no answer gets the fun one: the pin hunts around ("Searching"), gives up and
- * falls over ("No spot yet"), and when Ashley says "That's an answer too" a stamp lands on it:
- * "Still counts". At 1002 the footage goes dark and the question goes to CampusAI: the real full-page chat
+ * Round 6 (2026-10-27) runs on her third cut. It plays as is up to her end card (frame 992). Over it, each answer lands
+ * as a place tag under her burned-in question: the place's icon drops when it is said and the name opens out of it,
+ * and each carries one gag on the student's own words (see Tag). The opener is the pin searching while she asks, landing
+ * on the first answer. The student with no answer gets the fun one: the pin hunts around ("Searching"), gives up and
+ * falls over ("No spot yet"), and when Ashley says "That's an answer too" a stamp lands on it: "Still counts". The last
+ * clip's pin lands on his campusai cap. At 991 the footage goes dark and the question goes to CampusAI: the real full-page chat
  * (campusai-demo /ai), recorded at the frame's own 9:16 shape so the page IS the frame. It opens zoomed in on
  * the chat box as "Best study spots on campus?" types, pulls back once it is sent, and the answer fills the
  * frame. Then the logo and campusai.app. No music (Jacob, round 4).
@@ -26,31 +27,34 @@ export const STUDY_SIZE = { width: 1080, height: 1920 };
 const B = getBrand("campusai");
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 
-// Ashley's second cut (2026-10-23): a cold open ("Nice hat" / "I got it from CampusAI"), then the same seven answers,
-// reordered. Her end card starts at frame 1002 (33.4 s); everything after is ours.
-const SRC = "study-spot/ashley-source-v2.mov";
-const SRC_END = 1002;
+// Ashley's third cut (2026-10-27): her question is burned in from 0.1 s, the answers reordered, and the hat
+// ("Nice hat" / "I got it from CampusAI") moved to the end. Her end card starts at frame 992 (33.07 s); everything after is ours.
+const SRC = "study-spot/ashley-source-v3.mov";
+const SRC_END = 991;
 
-type Icon = "pin" | "home" | "fallen";
-type Tag = { at: number; text: string; icon: Icon; sub?: { at: number; text: string } };
+type Icon = "pin" | "home" | "landmark" | "sun" | "down" | "lock" | "sparkles" | "briefcase";
+// Each tag can carry one gag on the student's own words: `hunt` (the pin searches before it lands), `plusOne` ("Mine
+// too"), `sink` (the tag drops a floor on "basement"), `lock` (the icon locks on "Secretive"), `hearts` ("Love it").
+type Tag = { at: number; text: string; icon: Icon; sub?: { at: number; text: string }; hunt?: number; plusOne?: number; sink?: number; lock?: number; hearts?: number };
 
+// Word starts in the third cut (faster-whisper small.en), in frames at 30 fps. ESJ (12.28 s) gets no tag: its clip runs
+// 0.8 s before Hillel is said, under the read floor.
 const TAGS: Tag[] = [
-  { at: 217, text: "Iribe rooftop", icon: "pin" },
-  { at: 340, text: "Business School basement", icon: "pin" },
-  { at: 433, text: "Public Policy Building", icon: "pin" },
-  { at: 513, text: "Hillel", icon: "pin" },
-  { at: 660, text: "Van Munching Hall", icon: "pin" },
-  { at: 746, text: "Dorm room desk", icon: "home", sub: { at: 805, text: "Prince Frederick" } },
+  { at: 79, text: "Public Policy Building", icon: "landmark", hunt: 8 },
+  { at: 145, text: "Iribe rooftop", icon: "sun", plusOne: 199 },
+  { at: 268, text: "Business School basement", icon: "down", sink: 284, lock: 342, sub: { at: 342, text: "Classified" } },
+  { at: 400, text: "Hillel", icon: "sparkles", hearts: 442 },
+  { at: 492, text: "Business hall", icon: "briefcase", sub: { at: 545, text: "a.k.a. Van Munching Hall" } },
+  { at: 633, text: "Dorm room desk", icon: "home", sub: { at: 689, text: "Prince Frederick" } },
 ];
 
-// The student with no spot, on his own words: "favorite" 30.78 s, "spot." ends 31.5 s, "That's an answer too" 32.26 s.
-const NO = { at: 923, giveUp: 945, stamp: 968 };
+// The student with no spot: hunts from "studying a lot" (25.67 s), gives up as "spot." ends (28.0 s), stamp on "That's
+// an answer too" (28.54 s). Leaves at the cut to the hat.
+const NO = { at: 770, giveUp: 840, stamp: 856 };
 
-// The question, popped up during her cold open (Jacob, round 5), so the hook is on screen while she asks about the hat.
-// Drawn to match her own burned-in caption (Inter Bold, tight, two lines, the short red bar under it), fitted against her
-// frame at 6.0 s to within 3 px on every line edge (`calibrate` draws it red to check), so when hers arrives at 4.75 s
-// (frame 142) ours dissolves into it without a jump.
-const QHOOK = { at: 4, handoff: 142, x: 66, top: 247, size: 69, lh: 72, track: "-0.075em", gap: "0.16em", bar: { x: 69, y: 414, w: 89, h: 5 } };
+// The hat (it says campusai on it): the clip cuts in at 888, "hat" is said at 30.10 s. The cap's crown sits at x 360 to 380,
+// top y about 736, through the whole clip (measured every 0.2 s), so the pin holds still.
+const HAT = { cut: 888, at: 899, x: 372, tipY: 742 };
 
 // Under Ashley's question, above every face in her cut (checked on each clip).
 const SLOT = { x: 72, y: 474 };
@@ -78,26 +82,33 @@ const ZOOM = 1.25;
 const BOX = { cy: 1785, typeCy: 1450 };
 
 const PIN_PATH = "M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0";
-const HOME_PATHS = [
-  "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8",
-  "M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",
-];
+const HEART_PATH = "M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5";
+// Lucide's own geometry (the set the product uses), drawn as red strokes like the house was.
+const ICONS: Record<Exclude<Icon, "pin">, React.ReactNode> = {
+  home: (<><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></>),
+  landmark: (<><path d="M10 18v-7" /><path d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z" /><path d="M14 18v-7" /><path d="M18 18v-7" /><path d="M3 22h18" /><path d="M6 18v-7" /></>),
+  sun: (<><circle cx={12} cy={12} r={4} /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></>),
+  down: (<><path d="M12 17V3" /><path d="m6 11 6 6 6-6" /><path d="M19 21H5" /></>),
+  lock: (<><rect width={18} height={11} x={3} y={11} rx={2} ry={2} /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></>),
+  sparkles: (<><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /><path d="M20 2v4" /><path d="M22 4h-4" /><circle cx={4} cy={20} r={2} /></>),
+  briefcase: (<><path d="M12 12h.01" /><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" /><path d="M22 13a18.15 18.15 0 0 1-20 0" /><rect width={20} height={14} x={2} y={6} rx={2} /></>),
+};
 
 const PinSvg: React.FC<{ icon: Icon; size: number; style?: React.CSSProperties }> = ({ icon, size, style }) => (
   <svg viewBox="0 0 24 24" width={size} height={size} style={{ position: "absolute", inset: 0, overflow: "visible", filter: `drop-shadow(0 4px 10px ${glow(B, 0.55)})`, ...style }}>
-    {icon === "home" ? (
-      HOME_PATHS.map((d) => <path key={d} d={d} fill="none" stroke={B.color.accent} strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round" />)
-    ) : (
+    {icon === "pin" ? (
       <>
         <path d={PIN_PATH} fill={B.color.accent} />
         <circle cx={12} cy={10} r={3.2} fill={B.color.bgDeep} />
       </>
+    ) : (
+      <g fill="none" stroke={B.color.accent} strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round">{ICONS[icon]}</g>
     )}
   </svg>
 );
 
-/** The pin (or house) dropping onto the tag. `t` is frames since the tag's start. */
-const Marker: React.FC<{ icon: Icon; t: number; size: number }> = ({ icon, t, size }) => {
+/** The pin (or the place's icon) dropping onto the tag. `t` is frames since the tag's start; `from` is where it falls from. */
+const Marker: React.FC<{ icon: Icon; t: number; size: number; from?: number; pop?: number }> = ({ icon, t, size, from = -70, pop = 0 }) => {
   const { fps } = useVideoConfig();
   const drop = spring({ frame: t, fps, config: { damping: 11, stiffness: 160, mass: 0.6 } });
   const ring = interpolate(t, [5, 22], [0, 1], clamp);
@@ -107,9 +118,15 @@ const Marker: React.FC<{ icon: Icon; t: number; size: number }> = ({ icon, t, si
         <div style={{ position: "absolute", left: size / 2 - 22, top: size * 0.86 - 7, width: 44, height: 14, borderRadius: "50%",
           border: `2px solid ${glow(B, 0.9 * (1 - ring))}`, transform: `scale(${(0.4 + ring * 1.6).toFixed(3)})` }} />
       )}
-      <PinSvg icon={icon} size={size} style={{ opacity: Math.min(1, drop * 2), transform: `translateY(${((1 - drop) * -70).toFixed(2)}px)` }} />
+      <PinSvg icon={icon} size={size} style={{ opacity: Math.min(1, drop * 2), transform: `translateY(${((1 - drop) * from).toFixed(2)}px) scale(${(1 + pop).toFixed(4)})` }} />
     </div>
   );
+};
+
+/** The search: the pin hovers and swings left and right, never landing. `t` frames since it started. */
+const huntMotion = (t: number, fps: number) => {
+  const swing = Math.sin((t / fps) * Math.PI * 2 * 1.6) * interpolate(t, [4, 12], [0, 1], clamp);
+  return { rot: swing * 22, dx: swing * 8, hover: -8 + Math.sin((t / fps) * Math.PI * 2 * 3.2) * 3 };
 };
 
 /** The dark glass pill every tag sits in. */
@@ -123,26 +140,74 @@ const Pill: React.FC<{ show: number; height: number; children: React.ReactNode; 
 
 const nameStyle: React.CSSProperties = { fontFamily: INTER, fontWeight: 600, fontSize: FONT, color: B.color.ink, letterSpacing: "-0.02em", whiteSpace: "nowrap" };
 
-/** One place tag. `t` frames since it started. */
+/** One place tag. `t` frames since the place was said (negative while a `hunt` tag is still searching). */
 const TagPill: React.FC<{ tag: Tag; t: number }> = ({ tag, t }) => {
+  const { fps } = useVideoConfig();
+  const since = (at?: number) => (at === undefined ? -1 : t - (at - tag.at)); // frames since a gag's word
+  const start = tag.hunt !== undefined ? tag.hunt - tag.at : 0;
+  const show = interpolate(t - start, [2, 12], [0, 1], { ...clamp, easing: EASE });
   const open = interpolate(t, [6, 18], [0, 1], { ...clamp, easing: EASE });
-  const show = interpolate(t, [2, 12], [0, 1], { ...clamp, easing: EASE });
-  const sub = tag.sub ? interpolate(t, [tag.sub.at - tag.at, tag.sub.at - tag.at + 12], [0, 1], { ...clamp, easing: EASE }) : 0;
+  const sub = tag.sub ? interpolate(since(tag.sub.at), [0, 12], [0, 1], { ...clamp, easing: EASE }) : 0;
+  const hunting = t < 0;
+  const searchOut = interpolate(t, [0, 8], [0, 1], { ...clamp, easing: EASE });
+  const h = huntMotion(t - start, fps);
+  // the floor drop on "basement": the tag sinks a step with a bounce, the arrow leading
+  const sink = tag.sink !== undefined ? spring({ frame: since(tag.sink), fps, config: { damping: 9, stiffness: 170, mass: 0.7 } }) * 26 : 0;
+  // "Secretive": the arrow turns into a lock with a small pop
+  const locked = tag.lock !== undefined && since(tag.lock) >= 0;
+  const lockPop = locked ? interpolate(since(tag.lock), [0, 4, 12], [0, 0.35, 0], clamp) : 0;
+  const one = tag.plusOne !== undefined ? spring({ frame: since(tag.plusOne), fps, config: { damping: 10, stiffness: 220, mass: 0.6 } }) : 0;
+  const hearts = since(tag.hearts);
   return (
-    <Pill show={show} height={TAG_H + sub * 50}>
-      <Marker icon={tag.icon} t={t} size={58} />
-      <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
-        <div style={{ ...nameStyle, clipPath: `inset(-10px ${((1 - open) * 100).toFixed(2)}% -10px 0)`, transform: `translateX(${((1 - open) * -10).toFixed(2)}px)` }}>
-          {tag.text}
-        </div>
-        {tag.sub && sub > 0 && (
-          <div style={{ fontFamily: INTER, fontWeight: 500, fontSize: 36, color: B.color.inkSoft, whiteSpace: "nowrap",
-            opacity: sub, transform: `translateY(${((1 - sub) * 10).toFixed(2)}px)` }}>
-            {tag.sub.text}
+    <div style={{ position: "relative", display: "inline-block", transform: `translateY(${sink.toFixed(2)}px)` }}>
+      <Pill show={show} height={TAG_H + sub * 50}>
+        {hunting ? (
+          <div style={{ position: "relative", width: 58, height: 58, flex: "none" }}>
+            <PinSvg icon="pin" size={58} style={{ opacity: show, transformOrigin: "50% 92%",
+              transform: `translate(${h.dx.toFixed(2)}px, ${h.hover.toFixed(2)}px) rotate(${h.rot.toFixed(2)}deg)` }} />
           </div>
+        ) : (
+          <Marker icon={locked ? "lock" : tag.icon} t={t} size={58} from={tag.hunt !== undefined ? -40 : -70} pop={lockPop} />
         )}
-      </div>
-    </Pill>
+        <div style={{ position: "relative", display: "flex", flexDirection: "column", justifyContent: "center",
+          width: tag.hunt !== undefined ? interpolate(t, [0, 14], [300, 528], { ...clamp, easing: EASE }) : undefined }}>
+          {tag.hunt !== undefined && searchOut < 1 && (
+            <div style={{ ...nameStyle, position: "absolute", left: 0, color: B.color.inkSoft, opacity: 1 - searchOut, transform: `translateY(${(searchOut * -20).toFixed(2)}px)` }}>
+              Searching{".".repeat(1 + (Math.floor((t - start) / 7) % 3))}
+            </div>
+          )}
+          <div style={{ ...nameStyle, clipPath: `inset(-10px ${((1 - open) * 100).toFixed(2)}% -10px 0)`, transform: `translateX(${((1 - open) * -10).toFixed(2)}px)` }}>
+            {tag.text}
+          </div>
+          {tag.sub && sub > 0 && (
+            <div style={{ fontFamily: INTER, fontWeight: 500, fontSize: 36, color: B.color.inkSoft, whiteSpace: "nowrap",
+              opacity: sub, transform: `translateY(${((1 - sub) * 10).toFixed(2)}px)` }}>
+              {tag.sub.text}
+            </div>
+          )}
+        </div>
+      </Pill>
+      {one > 0.01 && (
+        <div style={{ position: "absolute", left: "calc(100% + 14px)", top: TAG_H / 2 - 33, height: 66, padding: "0 22px", borderRadius: 33, display: "flex", alignItems: "center",
+          background: B.color.accent, color: "#fff", fontFamily: INTER, fontWeight: 700, fontSize: 40, whiteSpace: "nowrap",
+          opacity: Math.min(1, one * 2), transform: `scale(${(0.4 + 0.6 * one).toFixed(4)}) rotate(${((1 - one) * -14).toFixed(2)}deg)`, transformOrigin: "left center",
+          boxShadow: `0 6px 20px ${glow(B, 0.45)}` }}>
+          +1
+        </div>
+      )}
+      {hearts >= 0 && [0, 1, 2].map((i) => {
+        const p = interpolate(hearts - i * 5, [0, 34], [0, 1], clamp);
+        if (p <= 0 || p >= 1) return null;
+        return (
+          // they float off the pill's right side and stay below her question caption
+          <svg key={i} viewBox="0 0 24 24" width={54 - i * 8} height={54 - i * 8} style={{ position: "absolute", overflow: "visible",
+            left: `calc(100% + ${18 + i * 46}px)`, top: TAG_H / 2 - 10 - p * 70 + i * 6,
+            opacity: interpolate(p, [0, 0.15, 0.7, 1], [0, 1, 1, 0]), transform: `rotate(${((i - 1) * 12 + Math.sin(p * 6) * 8).toFixed(2)}deg) scale(${interpolate(p, [0, 0.2], [0.4, 1], clamp).toFixed(3)})` }}>
+            <path d={HEART_PATH} fill={B.color.accent} />
+          </svg>
+        );
+      })}
+    </div>
   );
 };
 
@@ -201,36 +266,27 @@ const NoSpotPill: React.FC<{ t: number }> = ({ t }) => {
   );
 };
 
-/** The question over her cold open: pops in word by word, then hands off to her own caption underneath. */
-const QuestionHook: React.FC<{ calibrate?: boolean }> = ({ calibrate }) => {
+/** The last answer is the hat: a pin drops onto the campusai on his cap and the tag beside it calls it. */
+const HatPin: React.FC = () => {
   const f = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  if (!calibrate && f >= QHOOK.handoff + 8) return null;
-  const out = calibrate ? 0 : interpolate(f, [QHOOK.handoff, QHOOK.handoff + 8], [0, 1], clamp);
-  const lines = [["What's", "your", "favorite"], ["study", "spot", "on", "campus?"]];
-  let n = 0;
-  const bar = calibrate ? 1 : interpolate(f, [QHOOK.at + 14, QHOOK.at + 24], [0, 1], { ...clamp, easing: EASE });
+  if (f < HAT.at || f >= SRC_END) return null;
+  const t = f - HAT.at;
+  const size = 76;
+  const open = interpolate(t, [8, 20], [0, 1], { ...clamp, easing: EASE });
+  const show = interpolate(t, [4, 14], [0, 1], { ...clamp, easing: EASE });
+  const leave = interpolate(f, [SRC_END - 12, SRC_END - 2], [0, 1], { ...clamp, easing: EASE });
   return (
-    <div style={{ position: "absolute", inset: 0, opacity: 1 - out }}>
-      <div style={{ position: "absolute", left: QHOOK.x, top: QHOOK.top, fontFamily: INTER, fontWeight: 700, fontSize: QHOOK.size, lineHeight: `${QHOOK.lh}px`,
-        letterSpacing: QHOOK.track, color: calibrate ? "rgba(255,0,0,0.55)" : "#fff", textShadow: "0 2px 10px rgba(0,0,0,0.35)", whiteSpace: "nowrap" }}>
-        {lines.map((words, li) => (
-          <div key={li}>
-            {words.map((w) => {
-              const p = calibrate ? 1 : spring({ frame: f - (QHOOK.at + n++ * 2), fps, config: { damping: 13, stiffness: 190, mass: 0.6 } });
-              return (
-                <span key={w} style={{ display: "inline-block", marginRight: QHOOK.gap, opacity: Math.min(1, p * 1.6),
-                  transform: `translateY(${((1 - p) * 22).toFixed(2)}px) scale(${(0.86 + 0.14 * p).toFixed(4)})`, transformOrigin: "50% 80%",
-                  filter: p < 0.99 ? `blur(${((1 - p) * 6).toFixed(2)}px)` : undefined }}>
-                  {w}
-                </span>
-              );
-            })}
-          </div>
-        ))}
+    <div style={{ opacity: 1 - leave }}>
+      <div style={{ position: "absolute", left: HAT.x - size / 2, top: HAT.tipY - size * 0.92 }}>
+        <Marker icon="pin" t={t} size={size} from={-110} />
       </div>
-      <div style={{ position: "absolute", left: QHOOK.bar.x, top: QHOOK.bar.y, width: QHOOK.bar.w * bar, height: QHOOK.bar.h, borderRadius: 3,
-        background: calibrate ? "rgba(0,255,0,0.7)" : B.color.accent }} />
+      <div style={{ position: "absolute", left: HAT.x + 54, top: HAT.tipY - 96 }}>
+        <Pill show={show} height={80} style={{ padding: "0 26px", borderRadius: 24 }}>
+          <div style={{ ...nameStyle, fontSize: 40, clipPath: `inset(-10px ${((1 - open) * 100).toFixed(2)}% -10px 0)` }}>
+            Spotted: a CampusAI hat
+          </div>
+        </Pill>
+      </div>
     </div>
   );
 };
@@ -238,12 +294,12 @@ const QuestionHook: React.FC<{ calibrate?: boolean }> = ({ calibrate }) => {
 /** The tag on screen at frame f during the footage, with its exit when the next one lands. */
 const TagTrack: React.FC = () => {
   const f = useCurrentFrame();
-  const leave = interpolate(f, [SRC_END - 8, SRC_END + 4], [0, 1], { ...clamp, easing: EASE });
+  const leave = interpolate(f, [HAT.cut - 6, HAT.cut + 4], [0, 1], { ...clamp, easing: EASE });
   return (
     <>
       {TAGS.map((tag, i) => {
         const next = TAGS[i + 1]?.at ?? NO.at;
-        if (f < tag.at || f >= next + 8) return null;
+        if (f < (tag.hunt ?? tag.at) || f >= next + 8) return null;
         const out = interpolate(f, [next, next + 8], [0, 1], { ...clamp, easing: EASE });
         return (
           <div key={tag.text} style={{ position: "absolute", left: SLOT.x, top: SLOT.y, opacity: 1 - out,
@@ -252,7 +308,7 @@ const TagTrack: React.FC = () => {
           </div>
         );
       })}
-      {f >= NO.at && f < SRC_END + 6 && (
+      {f >= NO.at && f < HAT.cut + 6 && (
         <div style={{ position: "absolute", left: SLOT.x, top: SLOT.y, opacity: 1 - leave, filter: leave > 0 ? `blur(${(leave * 8).toFixed(2)}px)` : undefined,
           transform: `translateY(${(leave * -30).toFixed(2)}px)` }}>
           <NoSpotPill t={f - NO.at} />
@@ -307,8 +363,8 @@ export const StudySpotFilm: React.FC = () => {
       <div style={{ opacity: 1 - logoOut }}>
         <LogoOpen brand={B} at={6} x={STUDY_SIZE.width / 2} y={150} width={230} />
       </div>
-      <QuestionHook />
       <TagTrack />
+      <HatPin />
       <Sequence from={ASK_AT} durationInFrames={ASK_LEN}>
         <Ask />
       </Sequence>
@@ -323,6 +379,19 @@ export const StudySpotFilm: React.FC = () => {
           <Audio src={staticFile("sound/cues/land-ui-popup-dry.wav")} volume={0.3} />
         </Sequence>
       ))}
+      {TAGS.flatMap((tag) => [
+        tag.plusOne !== undefined && { at: tag.plusOne + 2, src: "sound/cues/notify-ui-message-pop.wav", vol: 0.3 },
+        tag.sink !== undefined && { at: tag.sink, src: "sound/cues/move-swoosh-quick.wav", vol: 0.2 },
+        tag.lock !== undefined && { at: tag.lock, src: "study-spot/switch-tap.mp3", vol: 0.35 },
+        tag.hearts !== undefined && { at: tag.hearts, src: "sound/cues/notify-ui-message-pop.wav", vol: 0.22 },
+      ]).filter((c): c is { at: number; src: string; vol: number } => Boolean(c)).map((c) => (
+        <Sequence key={`${c.src}${c.at}`} from={c.at} durationInFrames={30}>
+          <Audio src={staticFile(c.src)} volume={c.vol} />
+        </Sequence>
+      ))}
+      <Sequence from={HAT.at + 3} durationInFrames={30}>
+        <Audio src={staticFile("sound/cues/land-ui-popup-dry.wav")} volume={0.3} />
+      </Sequence>
       <Sequence from={NO.giveUp + 4} durationInFrames={30}>
         <Audio src={staticFile("study-spot/switch-tap.mp3")} volume={0.4} />
       </Sequence>

@@ -22,7 +22,7 @@ export type ChatBlock = {
   why: string;
 };
 /** Only the typing: the composer beat, before a recording of the real chat takes over at the send (round 11). */
-export type DrawnAskSpec = { kind: "ask"; question: string };
+export type DrawnAskSpec = { kind: "ask"; question: string; /** ms per letter (default CHAR_MS); episode 3 types a 101-letter question */ charMs?: number };
 export type DrawnChatSpec = {
   kind: "chat";
   question: string;
@@ -38,7 +38,7 @@ const STEP_MS = 800;
 const WORD_MS = 48;
 const CUT = 300; // the soft cut between composer, trace and answer
 
-const askMs = (s: { question: string }) => TYPE_START + s.question.length * CHAR_MS + 700;
+const askMs = (s: { question: string; charMs?: number }) => TYPE_START + s.question.length * (s.charMs ?? CHAR_MS) + 700;
 export const askFrames = (s: DrawnAskSpec, fps = 30) => Math.round((askMs(s) / 1000) * fps);
 const gatherAt = (s: DrawnChatSpec) => (s.steps.length - 1) * STEP_MS + 550;
 const thinkMs = (s: DrawnChatSpec) => gatherAt(s) + 550;
@@ -54,11 +54,11 @@ export const chatLanded = (s: DrawnChatSpec, fps = 30) => Math.round(((askMs(s) 
 const ramp = (ms: number, a: number, b: number, e = EASE.outExpo) =>
   interpolate(ms, [a, b], [0, 1], { easing: e, extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
-const Composer: React.FC<{ s: { question: string }; ms: number; w: number }> = ({ s, ms, w }) => {
+const Composer: React.FC<{ s: { question: string; charMs?: number }; ms: number; w: number }> = ({ s, ms, w }) => {
   const settle = ramp(ms, 0, 620);
   const phIn = ramp(ms, 300, 800);
   const phOut = 1 - ramp(ms, TYPE_START - 180, TYPE_START + 60, EASE.inOut);
-  const chars = Math.max(0, Math.min(s.question.length, Math.floor((ms - TYPE_START) / CHAR_MS)));
+  const chars = Math.max(0, Math.min(s.question.length, Math.floor((ms - TYPE_START) / (s.charMs ?? CHAR_MS))));
   const done = chars >= s.question.length;
   const doneAt = TYPE_START + s.question.length * CHAR_MS;
   const press = done ? interpolate(ms, [doneAt + 180, doneAt + 300, doneAt + 480], [1, 0.9, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1;

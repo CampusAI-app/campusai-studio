@@ -198,7 +198,7 @@ format beats one described from scratch. Only when none fits does the order belo
 | Need | Go to |
 |---|---|
 | Parts to build with (camera, cursor, logo moments, cards, type, device) | `studio/src/kit/index.ts`. Import from the kit; never redefine a part a film already has. |
-| Kinetic type, captions, logo stings and a dot transition from snapcn (30 free parts, added 2026-11-06 from Jacob's Muse send, "Need asap") | `studio/src/snapcn/`. Its README says what was taken, what was left out and why. Worked example: `src/snapcn-sample/` (`SnapcnSample-9x16`). |
+| Kinetic type, captions, logo stings and a dot transition from snapcn (30 free parts, added 2026-11-06 from Jacob's Muse send, "Need asap") | `studio/src/snapcn/`. Its README says what was taken, what was left out and why. Worked example: `src/askhighlight/` (`AskHighlight-9x16`, the marker over a real chat recording and the end line). |
 | A whole shot recipe with code | `Content/video-studio/shots/` (124 shots, README index; see them move at vincentwei1021.github.io/video-shotcraft/library.html) |
 | The name of a move | `Design/motion-vocabulary.md` Part 4 (923 techniques, plain words to name). Parts 1 and 2 give the exact keyframes and camera numbers for names they share. |
 | Motion numbers (timings, easing, camera chains) | `Lucius/memory/motion-raylight-templates.md`, Raylight's 24 measured beat sheets |

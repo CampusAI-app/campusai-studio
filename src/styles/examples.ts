@@ -10,9 +10,15 @@ import type { PovDoodleProps } from "./PovDoodle";
 import type { TwoProfessorsProps } from "./TwoProfessors";
 import twoProfFlow from "../../public/two-professors/frames.json";
 import weekFlow from "../../public/pov-week/frames.json";
+import resumeFlow from "../../public/pov-resume/frames.json";
+import advisorChat from "../../public/pov-advisor/chat/frames.json";
 import type { PaperDeskProps } from "./PaperDesk";
 import type { StatChartProps } from "./StatChart";
 import type { TeardownProps } from "./Teardown";
+import type { ChalkboardProps } from "./Chalkboard";
+import type { BlueprintProps } from "./Blueprint";
+import type { ComicProps } from "./Comic";
+import type { PaperCutoutProps } from "./PaperCutout";
 
 export const TEARDOWN: TeardownProps = {
   title: "What's inside a job posting",
@@ -189,21 +195,30 @@ export const TWO_PROFESSORS: TwoProfessorsProps = {
  * the ending is My Calendar's own "Find time to study for Quiz 2": the chat names a time and one press adds the study
  * block (films/pov-week/flow.json, facts in films/pov-week/facts.md). */
 export const POV_DOODLE_WEEK: PovDoodleProps = {
-  pov: "POV: you're a UMD student and this week is a lot",
-  tally: "Things to figure out",
+  // Round 3 (Jacob: "the beginning is the exact same thing"): cold open on the week, a different line, a countdown,
+  // the dorm desk, and an ending that says what CampusAI actually did (one hour, Wed 6:30 to 7:30 PM).
+  pov: "My week, Monday to Thursday",
+  tally: "Free hours",
+  coldOpen: 26,
+  // illustrative hours each thing eats; the quiz finds no room, so it costs nothing
+  countdown: { from: 9, costs: [2, 1, 2, 1, 2, 1, 0] },
+  markOnShirtOnly: true,
   // Round 2 (Jacob: "exactly the same as the other POV"): the week fills like Tetris instead of sticky notes
   notes: ["Work shift", "Reading due", "Work shift", "Evercore coffee chat", "Case brief due", "Resume night 7 PM", "Study for Quiz 2?"],
-  faces: ["Calm", "Calm", "Concerned", "Concerned", "Hectic", "Hectic", "Tired"],
+  // Round 4: a new student (curly bun, round glasses, holding her papers) with her own arc: flat, side-eye, worried,
+  // scared at 0, eyes shut when the quiz has nowhere to go, laughing when CampusAI finds the hour.
+  faces: ["Serious", "Serious", "Suspicious", "ConcernedFear", "ConcernedFear", "Fear", "EyesClosed"],
+  person: { hair: "BunCurly", body: "Paper", glasses: "GlassRound", rest: "Serious", grin: "SmileLol" },
   week: {
     cols: ["Mon", "Tue", "Wed", "Thu"],
     classes: [[0, "BMGT343"], [1, "BMGT310"], [2, "BMGT343"], [3, "BMGT310"], [0, "BMGT380"], [1, "BMGT364"], [2, "BMGT380"], [3, "BMGT364"]],
     days: [0, 1, 2, 3, 2, 2, -1],
   },
-  payoff: "Or ask CampusAI once.",
-  accent: "once",
-  after: 0,
+  payoff: "CampusAI found you an hour.",
+  accent: "hour",
+  after: 1,
   mark: "styles/umd/umd-m.svg",
-  backdrop: "mckeldin",
+  backdrop: "dorm",
   answer: {
     dir: "pov-week",
     rec: weekFlow,
@@ -214,4 +229,153 @@ export const POV_DOODLE_WEEK: PovDoodleProps = {
     pointer: { from: 5.0, to: 68.4, size: 14 },
     landed: 63.9,
   },
+};
+
+/** Episode 4, "Resume at 2 AM" (11/05): the curly bun student (she is the demo's Maya, so the resume on screen is hers).
+ * Cold open on the clock, one bullet rewritten six times until it is the sentence she started with, then the real
+ * Resume Review at phone width. Facts: films/pov-resume/facts.md. */
+export const POV_DOODLE_RESUME: PovDoodleProps = {
+  pov: "Fixing one resume bullet at 2 AM",
+  tally: "Times rewritten",
+  coldOpen: 26,
+  pace: { gap: 30, hold: 40 },
+  markOnShirtOnly: true,
+  notes: [
+    "Analyzed stocks and presented ideas to the group.",
+    "Analyzed equities and presented insights to the group.",
+    "Spearheaded equity analysis.",
+    "Leveraged synergies across equities.",
+    "Passionate about stocks.",
+    "Researched stocks and presented ideas to the group.",
+  ],
+  faces: ["Serious", "Suspicious", "Suspicious", "ConcernedFear", "Fear", "EyesClosed"],
+  person: { hair: "BunCurly", body: "Paper", glasses: "GlassRound", rest: "Serious", grin: "SmileLol" },
+  resume: {
+    name: "Maya Chen",
+    role: "Analyst, Smith Investment Fund",
+    bullet: "Researched stocks and presented ideas to the group.",
+    clock: ["1:59 AM", "2:00 AM", "2:08 AM", "2:16 AM", "2:23 AM", "2:31 AM", "2:40 AM", "2:47 AM"],
+  },
+  // was "CampusAI shows what a recruiter sees.", which wrapped to three lines into the tally and the box
+  payoff: "CampusAI reads it like a recruiter.",
+  accent: "recruiter",
+  after: 6,
+  mark: "styles/umd/umd-m.svg",
+  backdrop: "dorm",
+  answer: {
+    dir: "pov-resume",
+    rec: resumeFlow,
+    x0: 0,
+    // phone width (500 css), so the text wraps short and reads at 2x; the page's own scrolls and the long wait
+    // after opening the suggestion are cut
+    segs: [{ from: 2.9, to: 8.6, speed: 1 }, { from: 10.6, to: 16.2, speed: 1 }],
+    // ends at 200 so the whole Suggested rewrite is in the box (at 0 only its label showed)
+    cam: [[2.9, 0, 30, 1], [5.9, 0, 30, 1], [6.6, 0, 420, 1], [10.7, 0, 420, 1], [11.3, 0, 200, 1], [16.2, 0, 200, 1]],
+    pointer: { from: 6.6, to: 8.6 },
+    landed: 11.4,
+  },
+};
+
+/** Episode 3, "Questions I'd never ask my advisor" (11/05): a new student (afro, hoodie). He types three basic questions
+ * into an email to his advisor and deletes each one, then asks CampusAI all three at once and gets a straight answer,
+ * (round 2: no degree progress after it, Jacob: "we dont need to show the degree progress"). The cringe is his; the advisor is never the joke. Facts: films/pov-advisor/facts.md. */
+export const POV_DOODLE_ADVISOR: PovDoodleProps = {
+  pov: "Questions I'd never ask my advisor",
+  tally: "Questions not asked",
+  coldOpen: 12,
+  pace: { first: 6, gap: 86, tick: 82, hold: 20 },
+  markOnShirtOnly: true,
+  email: { to: "My advisor", subject: "Quick question" },
+  notes: ["what even is a gen ed", "what does a W mean on my transcript", "is it bad I don't know what my major actually requires"],
+  faces: ["Concerned", "ConcernedFear", "EyesClosed"],
+  person: { hair: "Afro", body: "Hoodie", rest: "Suspicious", grin: "SmileTeeth" },
+  payoff: "Or ask CampusAI all three.",
+  accent: "three",
+  after: 0,
+  // round 5 (Jacob: "The CTA thing shouldnt just be at the end complete like that"): the call to action is the last
+  // beat. In the CampusAI box he types "is this a dumb question?", sends it, and the reply lands as the headline.
+  then: "Not to CampusAI.",
+  thenAccent: "Not",
+  thenSize: 96,
+  thenDelay: 58,
+  thenHold: 45,
+  mark: "styles/umd/umd-m.svg",
+  answer: [
+    // the typing is drawn in the current composer (as the gen eds reel does): the real empty chat greets "Hi Maya" with
+    // the Testudo emblem right above the box, and he is not Maya
+    { kind: "ask", question: "ok what even is a gen ed, what does a W mean, and is it bad I don't know what my major actually requires", charMs: 26 },
+    {
+      dir: "pov-advisor/chat",
+      rec: advisorChat,
+      x0: 0,
+      // round 5 (Jacob: "shouldnt scroll down to the bottom. Should just show the answer"): recorded 1600 tall so the
+      // chat never scrolls itself, and the camera holds still on his question and the answer, ending as it finishes
+      segs: [{ from: 6.8, to: 13.2, speed: 1 }],
+      cam: [[6.8, 105, 160, 1.28], [13.2, 105, 160, 1.28]],
+      pointer: { from: 98, to: 99 }, // never: these recordings have no pointer
+      landed: 9.0,
+    },
+    { kind: "ask", question: "is this a dumb question?", charMs: 40 },
+  ],
+};
+
+/** /paper-cutout (11/05, from the Nov 5 Muse send of Tobi's cartoon reels): a student walks across a cut-paper campus
+ * from afternoon into night. Every line is on the demo student's real Wednesday (My Calendar), and the payoff is the
+ * hour the demo's chat found for Quiz 2. Facts: films/paper-cutout-sample/facts.md. */
+export const PAPER_CUTOUT: PaperCutoutProps = {
+  beats: [
+    { scene: "library", time: "afternoon", caption: "Her shift at McKeldin starts at 4." },
+    { scene: "houses", time: "golden", caption: "Her case brief is due today." },
+    { scene: "hills", time: "dusk", caption: "Quiz 2 is tomorrow." },
+    { scene: "stars", time: "night", caption: "So when does she study?" },
+  ],
+  payoff: "CampusAI found her an hour.",
+  accent: "hour",
+  sub: "Wednesday, 6:30 to 7:30 PM.",
+};
+
+/** /chalkboard (11/05, Muse send "10 Claude animation styles"): a W is not an F, worked out at the board.
+ * Every line is in films/chalkboard-w-not-f/facts.md. */
+export const CHALKBOARD: ChalkboardProps = {
+  title: "A W is not an F",
+  sub: "How UMD works out your GPA",
+  formula: { left: "GPA =", top: "quality points", bottom: "credits attempted" },
+  left: { big: "F", lines: ["counts as 0 points", "and its credits count"] },
+  right: { big: "W", lines: ["not in your GPA"] },
+  arrow: true,
+  note: ["W means you withdrew after the", "schedule adjustment period"],
+  payoff: ["Not sure what counts?", "Ask CampusAI."],
+  source: "UMD Undergraduate Catalog, Academic Records and Regulations",
+};
+
+/** /blueprint (11/05, Muse send "10 Claude animation styles"): four years drawn as a building, one floor a year, one
+ * room a term. Every line is in films/blueprint-four-years/facts.md. */
+export const BLUEPRINT: BlueprintProps = {
+  title: "Your degree, drawn to scale",
+  floors: [
+    { label: "Year 1", rooms: ["Fall", "Spring"], dim: "15 cr" },
+    { label: "Year 2", rooms: ["Fall", "Spring"], dim: "15 cr" },
+    { label: "Year 3", rooms: ["Fall", "Spring"], dim: "15 cr" },
+    { label: "Year 4", rooms: ["Fall", "Spring"], dim: "15 cr" },
+  ],
+  roof: "Graduation",
+  height: "4 years, 8 terms",
+  total: "120 credits",
+  block: {
+    name: "Your degree",
+    scale: "Scale: one room, one term",
+    notes: ["No degree under 120 credits", "At least 40 of them are gen ed", "120 over 8 terms is 15 a term"],
+    source: "Sources: UMD Undergraduate Catalog, gened.umd.edu",
+  },
+  payoff: "Plan all eight terms in CampusAI.",
+};
+
+/** /comic (11/05, Muse send "10 Claude animation styles"): picking gen eds as a one-page comic. The four labels are the
+ * four sources the real chat's gen eds answer is built from. Every line is in films/comic-gen-eds/facts.md. */
+export const COMIC: ComicProps = {
+  title: "Picking gen eds",
+  open: { caption: "The night before registration", person: { face: "Concerned", body: "Device" }, says: "Which gen eds do I still need?" },
+  pile: { caption: "Four tabs later", items: ["Testudo", "PlanetTerp", "Degree audit", "Gen ed guide"] },
+  worse: { person: { face: "Hectic", body: "Device" }, says: "Wait, which tab was the audit?" },
+  payoff: { sfx: "Ding!", person: { face: "SmileBig", body: "Device" }, says: "Or ask CampusAI once." },
 };
