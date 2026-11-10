@@ -190,8 +190,12 @@ format beats one described from scratch. Only when none fits does the order belo
 - Show, never label. Headlines small and above the UI, never on it.
 
 **Sound**
-- Default is no voice: music, sound and captions. ElevenLabs' free tier is non-commercial, so a
-  voiced piece that will be posted needs a paid key: Jacob's call, asked once, never assumed.
+- Default is no voice: music, sound and captions.
+- When a piece is voiced, it uses **the CampusAI voice** (Jacob's pick, 2026-11-10): a quick,
+  upbeat 20 year old college student, made on Jacob's Mac with VoiceStudio and the VoxCPM2 engine
+  (Apache-2.0, free to post, no paid key). Clip, setup and the exact call: `skill/voice/README.md`.
+  Never VoiceStudio's default OmniVoice engine or its model packs: non-commercial weights.
+  ElevenLabs only if Jacob asks; its free tier is non-commercial.
 - Free voice candidate (2026-10-27, not adopted yet): **Chatterbox** (`resemble-ai/chatterbox`,
   MIT, 27k stars), open-source TTS that runs locally, with Turbo for English narration and Nano
   for CPU. MIT means a posted voiced cut needs no paid key. Two things to know before using it:
