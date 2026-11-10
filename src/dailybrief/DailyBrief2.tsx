@@ -6,8 +6,12 @@
  *     and settles to the left of it.
  *  2. Nothing tiny: the camera goes into Your week while its three emails land, crosses to Worth a look for the next
  *     three, then pulls back for "in one place."
- *  3. No stall: after the reason opens, the camera glides down to the two events the earlier emails became and rings
- *     them on the beat; the end comes 28 frames sooner.
+ *  3. No stall: the pointer rests on each of the three picks in turn and each opens its own reason.
+ * Round 2b (Nov 10, Jacob's notes on round 2): the full brief stays on screen while the emails land (no going into one
+ * column), bigger, with softer arcing flights that melt into their rows; and since the line promises reasons, all
+ * three picks show theirs. That needed a fresh recording (films/daily-brief-r2/flow.json, Nov 10), so the emails now
+ * match the brief as the demo shows it today (Ch. 6-7 reading and the Palsgraf case brief replaced Quiz 2 and Ch. 8,
+ * the events moved to Tue and Wed).
  *
  * "Everything those emails were telling you, in one place." The daily brief film (Nov 5, Jacob picked structure A).
  *
@@ -38,7 +42,7 @@ const RED = B.color.accent;
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 
 const DIR = "daily-brief";
-const FLOW = `${DIR}/flow/frames.json`;
+const FLOW = `daily-brief-r2/flow/frames.json`; // recorded Nov 10, all three picks hovered
 const aud = (n: string) => staticFile(`${DIR}/audio/${n}`);
 
 // ---- the beats: Cat Walk at ~130 BPM ----
@@ -47,18 +51,12 @@ const Bt = (n: number) => Math.round(n * BEAT);
 const T = {
   logo: 8,
   shell: Bt(8), // the brief appears behind the inbox
-  noise: Bt(8) + 4, // the emails that don't matter fall away
+  noise: Bt(8) - 4, // the emails that don't matter fall away (round 2b: before the brief shows, not across it)
   fly: Bt(10), // the first email that matters reaches its row; one per beat after
   inPlace: Bt(15) + 8, // "in one place."
   hero: Bt(19), // the camera goes to Worth a look, the pointer rests on a pick
-  pick: Bt(21) + 4, // "Picked for you, with the reason."
-  end: Bt(28), // the logo (round 2: two beats sooner, the hold is gone)
-};
-const CAM = {
-  week: T.fly - 20, // into Your week before its first email lands
-  worth: T.fly + Bt(3) - 18, // across to Worth a look as its first email takes off
-  back: T.inPlace - 10, // back out to the whole brief for "in one place."
-  glide: T.pick + 30, // down to the two events once the reason has opened
+  pick: Bt(21) + 4, // "Picked for you, each with its reason."
+  end: Bt(38), // the logo, once the third reason has been open about 1.3 s
 };
 export const FRAMES = T.end + 92; // 16.9 s
 const BLOOM = T.end + 10;
@@ -70,14 +68,14 @@ const MAIL: Mail[] = [
   { from: "Dining Services", subject: "This week's menus", time: "7:02 AM" },
   { from: "Canvas Notifications", subject: "Due date changed: Reading Response 6: Remedies", time: "7:15 AM", row: 0 },
   { from: "Testudo Times", subject: "Your weekly digest", time: "7:31 AM" },
-  { from: "Canvas Notifications", subject: "Quiz 2 is due Thursday at 11:00 AM", time: "7:48 AM", row: 1 },
-  { from: "Canvas Notifications", subject: "Reminder: Reading: Ch. 8 is due Thursday", time: "8:03 AM", row: 2 },
+  { from: "Canvas Notifications", subject: "Reminder: Reading: Ch. 6-7 is due Tuesday", time: "7:48 AM", row: 1 },
+  { from: "Canvas Notifications", subject: "Case brief: Palsgraf is due Wednesday", time: "8:03 AM", row: 2 },
   { from: "RecWell", subject: "Group fitness schedule", time: "8:20 AM" },
   { from: "Job alerts", subject: "New: Investment Banking Summer Analyst, 2027 at Evercore", time: "8:37 AM", row: 3 },
   { from: "Libraries", subject: "Extended hours start Monday", time: "8:52 AM" },
-  { from: "Finance Association", subject: "Resume & LinkedIn Night is Thursday at 7 PM", time: "9:06 AM", row: 4 },
+  { from: "Finance Association", subject: "Resume & LinkedIn Night is Tuesday at 7 PM", time: "9:06 AM", row: 4 },
   { from: "Transportation Services", subject: "Shuttle detours this week", time: "9:19 AM" },
-  { from: "Deloitte Consulting", subject: "Coffee chat, Friday at 4 PM", time: "9:33 AM", row: 5 },
+  { from: "Deloitte Consulting", subject: "Coffee chat, Wednesday at 4 PM", time: "9:33 AM", row: 5 },
   { from: "Student Government", subject: "Town hall recap", time: "9:41 AM" },
 ];
 const ARRIVE = (a: number) => a * 5; // a new email every 5 frames
@@ -86,17 +84,9 @@ const LIST = { x: 510, y: 205, w: 900, h: 70, step: 80 };
 // ---- the brief (CSS px of the recording, 1440 x 900) and where it sits on the canvas ----
 const PAGE = { w: 1440, h: 900 };
 const CARD_PAGE: Rect = { x: 248, y: 32, w: 1160, h: 364 };
-const BRIEF_VIEW: Rect = { x: 120, y: 250, w: 1680, h: 527 };
-const HERO_PAGE: Rect = { x: 838, y: 140, w: 580, h: 290 }; // Worth a look, with room for the reason to open
-const HERO_VIEW: Rect = { x: 700, y: 250, w: 1100, h: 550 }; // round 2: right of centre, so line 3 has the left
-const WEEK_VIEW: Rect = { x: 120, y: 236, w: 1680, h: 600 };
-const WEEK_PAGE: Rect = { x: 268, y: 136, w: 560, h: 205 }; // Your week, its three rows
-const WORTH_PAGE: Rect = { x: 834, y: 136, w: 560, h: 200 }; // Worth a look before the hover
-const EVENTS_PAGE: Rect = { x: 842, y: 214, w: 548, h: 160 }; // the reason's last line and both events, hover state
-const EVENT_ROWS: Rect[] = [
-  { x: 848, y: 268, w: 527, h: 46 }, // Finance Association, Thu 7 PM (hover state)
-  { x: 848, y: 318, w: 527, h: 46 }, // Deloitte Consulting, Fri 4 PM
-];
+const BRIEF_VIEW: Rect = { x: 60, y: 226, w: 1800, h: 565 }; // round 2b: the whole brief, as big as the frame allows
+const HERO_PAGE: Rect = { x: 836, y: 108, w: 584, h: 330 }; // Worth a look, with room for any one reason to open
+const HERO_VIEW: Rect = { x: 700, y: 214, w: 1100, h: 652 }; // round 2: right of centre, so line 3 has the left
 const ROWS: Rect[] = [
   { x: 281, y: 158, w: 527, h: 67 }, // Moved · BMGT380
   { x: 281, y: 228, w: 527, h: 56 }, // Quiz 2
@@ -105,7 +95,7 @@ const ROWS: Rect[] = [
   { x: 848, y: 228, w: 527, h: 45 }, // Finance Association
   { x: 848, y: 278, w: 527, h: 44 }, // Deloitte Consulting
 ];
-const CHROME: Rect = { x: 1170, y: 28, w: 240, h: 28 }; // the page's floating bell and Feedback buttons over the card's corner
+const CHROME: Rect = { x: 1172, y: 20, w: 246, h: 36 }; // the page's floating bell and Feedback buttons over the card's corner
 const SPARK_PT = { x: 960 + 265, y: 500 - 51 }; // the spark over the logo's "i" (logo 560 wide at 960, 500)
 
 /** One email: an unread dot, the sender, the time, the subject. No mail app is drawn or named. */
@@ -131,7 +121,7 @@ export const DailyBrief: React.FC = () => {
   if (!flow) return <AbsoluteFill style={{ background: GROUND }} />;
   const m = flow.marks ?? {};
   const moves = flow.moves ?? [];
-  const hoverMove = moves[moves.length - 1];
+  const hoverMove = moves.find((mv) => mv.start >= (m.clean ?? 8.3) - 0.05); // the move onto Evercore
 
   // the recording: the clean brief (Spring row already dismissed, nothing hovered), then the hover at true speed
   const CLEAN = (m.clean ?? 8.52) - 0.1;
@@ -141,25 +131,15 @@ export const DailyBrief: React.FC = () => {
   ]);
 
   // ---- the camera on the brief ----
-  const shellK = k(f, T.shell, T.shell + 14, EASE_CAMERA);
+  const shellK = k(f, T.shell + 6, T.shell + 22, EASE_CAMERA);
   const briefOut = k(f, T.end - 14, T.end, EASE_CAMERA); // round 2: gone before the logo, no half-and-half frame
   const camBrief = fit(CARD_PAGE, BRIEF_VIEW);
-  const camWeek = fit(WEEK_PAGE, WEEK_VIEW);
-  const camWorth = fit(WORTH_PAGE, WEEK_VIEW);
   const camHero = fit(HERO_PAGE, HERO_VIEW);
-  const camEvents = fit(EVENTS_PAGE, HERO_VIEW);
   // the window on the canvas and the camera inside it move together, one key per move
   const keys: { t: number; cam: typeof camBrief; view: Rect }[] = [
-    { t: CAM.week, cam: camBrief, view: BRIEF_VIEW },
-    { t: CAM.week + 20, cam: camWeek, view: WEEK_VIEW },
-    { t: CAM.worth, cam: camWeek, view: WEEK_VIEW },
-    { t: CAM.worth + 16, cam: camWorth, view: WEEK_VIEW },
-    { t: CAM.back, cam: camWorth, view: WEEK_VIEW },
-    { t: CAM.back + 18, cam: camBrief, view: BRIEF_VIEW },
+    { t: 0, cam: camBrief, view: BRIEF_VIEW },
     { t: T.hero, cam: camBrief, view: BRIEF_VIEW },
     { t: T.hero + 26, cam: camHero, view: HERO_VIEW },
-    { t: CAM.glide, cam: camHero, view: HERO_VIEW },
-    { t: CAM.glide + 22, cam: camEvents, view: HERO_VIEW },
   ];
   const cam = camAlong(f, keys.map(({ t, cam }) => ({ t, cam })));
   const vi = keys.findIndex((x, n) => n < keys.length - 1 && f >= x.t && f < keys[n + 1].t);
@@ -188,23 +168,24 @@ export const DailyBrief: React.FC = () => {
     let opacity = Math.min(1, enter * 1.6);
     let rot = 0;
     if (mail.row === undefined) {
-      const g = k(f, T.noise + noiseN * 3, T.noise + noiseN * 3 + 18, (x) => x * x);
+      const g = k(f, T.noise + noiseN * 2, T.noise + noiseN * 2 + 15, (x) => x * x);
       noiseN++;
       rect = { ...rect, y: rect.y + g * 900 };
       rot = g * (a % 2 ? 7 : -6);
-      opacity *= 1 - k(f, T.noise + (noiseN - 1) * 3 + 8, T.noise + (noiseN - 1) * 3 + 18);
+      opacity *= 1 - k(f, T.noise + (noiseN - 1) * 2 + 6, T.noise + (noiseN - 1) * 2 + 15);
     } else {
       const land = landAt(mail.row);
       // round 2: once the noise is gone, the emails that matter tuck into a small stack in the corner, so the camera
       // can go into the brief without them on top of it; each one flies from there to its row
       // (the first one flies straight from the list, it is already on its way)
-      const tuck = mail.row === 0 ? 0 : k(f, T.noise + 2, T.noise + 20, EASE_CAMERA);
+      const tuck = mail.row === 0 ? 0 : k(f, T.noise + 2, T.noise + 26, EASE_CAMERA);
       const tray: Rect = { x: 1546, y: 872 + mail.row * 32, w: 344, h: LIST.h * 0.38 };
       rect = mixRect(rect, tray, tuck);
-      const fly = k(f, land - 14, land, EASE_CAMERA);
+      const fly = k(f, land - 22, land, EASE_CAMERA); // round 2b: longer, and on an arc
       const to = rowOnCanvas(ROWS[mail.row]);
       rect = mixRect(rect, to, fly);
-      opacity *= 1 - k(f, land - 4, land + 2);
+      rect = { ...rect, y: rect.y - Math.sin(Math.PI * fly) * 70 };
+      opacity *= 1 - k(f, land - 8, land + 2); // melts into the row as the row fades up under it
     }
     return { mail, rect, opacity, rot, key: a };
   });
@@ -214,7 +195,7 @@ export const DailyBrief: React.FC = () => {
   const markIn = k(f, T.logo, T.logo + 12);
   const markOut = k(f, T.end - 6, T.end + 4);
   const ptr = pointerAt(moves, flowT);
-  const ptrOn = f >= T.hero + 6 && f < CAM.glide + 10;
+  const ptrOn = f >= T.hero + 6 && f < T.end - 12;
 
   return (
     <AbsoluteFill style={{ background: GROUND, overflow: "hidden" }}>
@@ -234,7 +215,7 @@ export const DailyBrief: React.FC = () => {
                 <div style={{ position: "absolute", ...at(CHROME, 0), background: "#fff" }} />
                 {ROWS.map((r, i) => {
                   const land = landAt(i);
-                  const cover = 1 - k(f, land - 3, land + 6);
+                  const cover = 1 - k(f, land - 7, land + 6);
                   const ring = k(f, land, land + 16);
                   return (
                     <React.Fragment key={i}>
@@ -243,20 +224,9 @@ export const DailyBrief: React.FC = () => {
                     </React.Fragment>
                   );
                 })}
-                {EVENT_ROWS.map((r, i) => {
-                  const at0 = CAM.glide + 14 + Bt(i);
-                  const ring = k(f, at0, at0 + 16);
-                  const hold = k(f, at0 + 2, at0 + 10);
-                  return f < at0 ? null : (
-                    <React.Fragment key={`e${i}`}>
-                      <div style={{ position: "absolute", ...at(r, 4), borderRadius: 12, border: `2.5px solid ${RED}`, opacity: 0.85 * hold }} />
-                      {ring < 1 && <div style={{ position: "absolute", ...at(r, 6 + 10 * ring), borderRadius: 12, border: `2.5px solid ${RED}`, opacity: 0.6 * (1 - ring) }} />}
-                    </React.Fragment>
-                  );
-                })}
                 {ptrOn && ptr.p && (() => {
                   const p = onCanvas(cam, view, PAGE, ptr.p.x, ptr.p.y);
-                  return <PointerAt x={p.x} y={p.y} since={null} accent={RED} size={Math.round(20 * s)} opacity={k(f, T.hero + 6, T.hero + 12) * (1 - k(f, CAM.glide, CAM.glide + 10))} />;
+                  return <PointerAt x={p.x} y={p.y} since={null} accent={RED} size={Math.round(20 * s)} opacity={k(f, T.hero + 6, T.hero + 12) * (1 - k(f, T.end - 20, T.end - 12))} />;
                 })()}
               </>
             );
@@ -280,7 +250,7 @@ export const DailyBrief: React.FC = () => {
         const sc = 0.45 + 0.55 * o;
         return (
           <div style={{ position: "absolute", inset: 0, transform: `translate(${dx}px, ${dy}px) scale(${sc})`, transformOrigin: "360px 525px" }}>
-            <Line ws={words("Picked for you, with the reason.", ["reason"])} at={T.pick} stagger={2} out={T.end - 14} x={360} y={525} size={68} maxW={540} />
+            <Line ws={words("Picked for you, each with its reason.", ["reason"])} at={T.pick} stagger={2} out={T.end - 14} x={360} y={525} size={68} maxW={540} />
           </div>
         );
       })()}
@@ -307,9 +277,8 @@ export const DailyBrief: React.FC = () => {
           ...keyOrder.map((e) => [landAt(e.x.row as number), "switch-tap.mp3", 0.45] as [number, string, number]),
           [T.hero, "air-woosh-quick.mp3", 0.35],
           [T.hero + 40, "ui-message-pop.mp3", 0.45],
-          [CAM.week, "air-woosh-quick.mp3", 0.22],
-          [CAM.glide, "air-woosh-quick.mp3", 0.25],
-          ...EVENT_ROWS.map((_, i) => [CAM.glide + 14 + Bt(i), "switch-tap.mp3", 0.4] as [number, string, number]),
+          // each later reason opening gets the same pop (flow times from the recording's marks)
+          ...[12.6, 15.55].map((t) => [Math.round(T.hero + 7 + (t - 8.357) * FPS), "ui-message-pop.mp3", 0.4] as [number, string, number]),
           [BLOOM, "shimmer-sparkle-sweep.mp3", 0.45],
         ] as [number, string, number][]
       ).map(([at, src, v], i) => (
