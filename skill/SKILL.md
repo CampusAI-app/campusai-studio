@@ -2,7 +2,7 @@
 name: studio
 description: >-
   The one front door for MAKING CONTENT for any of Jacob's ventures, mostly CampusAI, for Jacob
-  and for the CampusAI team (Ashley, Angela) who installed the studio: product
+  and for the CampusAI team (Ashley, Angela, Ainsley) who installed the studio: product
   films, promo and launch videos, reels, motion graphics (kinetic type, logo builds, stat
   reveals, animated backgrounds), editing footage he recorded, talking-head videos, captions,
   and still graphics (hero stills, feed images, thumbnails, carousel frames). Use when Jacob says
@@ -37,7 +37,7 @@ it is pushed. Films live in
 **Jacob** (his Mac: studio at `~/Desktop/Claude/Content/video-studio/studio/`): everything below
 applies as written.
 
-**A teammate** (Ashley, Angela, anyone who installed the studio): everything below applies, with
+**A teammate** (Ashley, Angela, Ainsley, anyone who installed the studio): everything below applies, with
 three differences.
 - **Know whose lane it is.** Ashley's pieces start from a cut she made herself (street
   interviews, a talking head); the studio adds what her editor can't: the real product (a chat
@@ -45,6 +45,10 @@ three differences.
   the worked example: her interviews, pins over each answer, then the real chat. **Angela makes
   motion graphics** (kinetic type, product beats, logo builds), so her pieces start in the motion
   lane, not from footage. Never pitch her interviews or footage-led pieces (2026-10-26).
+  **Ainsley makes videos of on-campus people and events** (fairs, tabling, club nights, students
+  on camera), so her pieces start from footage she shot on campus, and the studio adds the real
+  product (the Events page, a chat answering what was asked), motion and the logo ending. Ashley
+  owns social and the product explainers, so don't pitch Ainsley product explainers (2026-11-10).
 - **Shelves that only exist on Jacob's Mac:** `shots/` (shot recipes and licensed audio),
   `Design/...`, `Lucius/...`, the Studio reference page's local files, and Base favorites. When a
   step points at one, skip it and use the kit (`src/kit/`) and the films already in `src/` instead.

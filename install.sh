@@ -7,6 +7,11 @@
 # Run it from inside the studio folder (after `git clone`), or on its own and it clones the studio
 # into ~/CampusAI Studio/studio first. Needs Git, Node 18+, Google Chrome and Claude Code.
 set -u
+# Everything below sits in one { } block so bash reads the whole file before running any of it.
+# Pasted as `curl ... | bash`, the script arrives on stdin, and a step that reads stdin (the
+# `npx skills add` lines did) used to swallow the rest of it: the install stopped after step 5
+# and never linked the companion skills or turned on updates, with no error (fixed 2026-11-10).
+{
 REPO="https://github.com/CampusAI-app/campusai-studio.git"
 ok() { printf '  done  %s\n' "$1"; }
 skip() { printf '  skip  %s\n' "$1"; }
@@ -98,3 +103,4 @@ echo "Ready. Open Claude Code in this folder and say what you want to make:"
 echo "  cd \"$STUDIO\" && claude"
 echo "First time? Try: npm run chat examples/study-spots.json"
 echo "Updates arrive on their own each time you start Claude, in any folder (your films are never touched)."
+}
