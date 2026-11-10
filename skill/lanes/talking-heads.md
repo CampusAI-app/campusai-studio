@@ -45,8 +45,23 @@ each taking its content as props and real captures only. Samples render from `sr
   sits the pieces at depth in real CSS 3D with a slow orbit, on deep oxblood, Geist. Ends by pushing through the
   phrase into the logo. Sample wide.
 
-Still waiting on a 30 second talking clip (they need a person): Orbit around a person, Frame break, Green screen,
-Vertigo, Digital zoom, Couch wall.
+The six that need a person are built too (2026-11-10), in the kit (`import { Orbit, CouchWall, FrameBreak,
+GreenScreen, DigitalZoom, Vertigo } from "../kit"`). Each takes the person's `clip` and their cutout `person` (a VP9
+alpha webm, made with MediaPipe; the editing lane says how) and is framed so the cutout's bottom edge stays off
+frame. They were tested on Connyct footage that stays on Jacob's Mac, so there is no sample in the repo.
+- **Orbit** (`Orbit`): three small tiles travel a dashed ring around the chest, behind the person on the far side and
+  in front on the near side, full frame. Pick the start angle (`phase`) so no tile changes sides over their body.
+- **Couch wall** (`CouchWall`): the background wipes to a warm wall, a couch back slides up behind them, then framed
+  pictures pop on one at a time, 4 frames apart, each a few degrees off level.
+- **Frame break** (`FrameBreak`): they sit in a card that insets while they stay the same size, so a gesture breaks
+  the card's edge; small chevrons mark where.
+- **Green screen** (`GreenScreen`): a snap to flat chroma green, then a diagonal wipe to the new background, blurred
+  and darkened a little, with a soft light wrap.
+- **Digital zoom** (`DigitalZoom`): a phone camera's interface (corner brackets, red dot, a yellow focus square that
+  locks on the face, a 1.5x / 1.6x / 2.3x readout in Inter) while the shot punches in on the words that matter. Best
+  on a wide shot.
+- **Vertigo** (`Vertigo`): the background becomes a thin blue line corridor that stretches while the person holds the
+  same size, landing on the line that matters.
 
 ## When the product appears beside the person
 It follows the product-films lane: real capture only, frameless or the real device, captions
