@@ -60,16 +60,19 @@ const aud = (n: string) => staticFile(`${DIR}/audio/${n}`);
 // ---- the beats: Cat Walk at ~130 BPM ----
 const BEAT = (60 / 129.994) * FPS; // 13.85 frames
 const Bt = (n: number) => Math.round(n * BEAT);
+// Round 7 (Jacob: "make the beginning a lil quicker"): emails every 2 frames, the brief two beats sooner, the six
+// emails land two to every three beats, and the whole first half arrives about 1.8 s sooner.
+const LAND_STEP = BEAT * 0.67;
 const T = {
   logo: 8,
-  shell: Bt(8), // the brief appears behind the inbox
-  noise: Bt(8) - 10, // the emails that don't matter fall away, newest first (before the brief shows, not across it)
-  fly: Bt(10), // the first email that matters reaches its row; one per beat after
-  inPlace: Bt(15) + 8, // "in one place."
-  hero: Bt(19), // the camera goes to Worth a look, the pointer rests on a pick
-  pick: Bt(21) + 4, // "Picked for you, each with its reason."
-  stat: Bt(33), // round 6: "What matters, brought to you." and the six things gathering to the viewer
-  end: Bt(38), // the logo
+  shell: Bt(6), // the brief appears behind the inbox
+  noise: Bt(6) - 8, // the emails that don't matter fall away, newest first (before the brief shows, not across it)
+  fly: Bt(8), // the first email that matters reaches its row; then one every two thirds of a beat
+  inPlace: Bt(12), // "in one place."
+  hero: Bt(15), // the camera goes to Worth a look, the pointer rests on a pick
+  pick: Bt(17) + 4, // "Picked for you, each with its reason."
+  stat: Bt(29), // round 6: "What matters, brought to you." and the six things gathering to the viewer
+  end: Bt(34), // the logo
 };
 export const FRAMES = T.end + 78; // about 22 s
 const BLOOM = T.end + 10;
@@ -106,7 +109,7 @@ const MAIL: Mail[] = [
   { from: "University Career Center", subject: "Career fair recap", time: "9:41 AM" },
 ];
 const NOISE = MAIL.map((m, a) => (m.row === undefined ? a : -1)).filter((a) => a >= 0).reverse(); // newest falls first
-const ARRIVE = (a: number) => a * 3; // round 4: a new email every 3 frames, 24 of them
+const ARRIVE = (a: number) => a * 2; // round 7: a new email every 2 frames, 24 of them
 const LIST = { x: 510, y: 205, w: 900, h: 70, step: 80 };
 
 // ---- the brief (CSS px of the recording, 1440 x 900) and where it sits on the canvas ----
@@ -194,7 +197,7 @@ export const DailyBrief: React.FC = () => {
 
   // ---- the inbox: each email's place, its fall or its flight ----
   const keyOrder = MAIL.map((x, a) => ({ x, a })).filter((e) => e.x.row !== undefined);
-  const landAt = (row: number) => T.fly + Bt(row);
+  const landAt = (row: number) => T.fly + Math.round(row * LAND_STEP);
   // the unread counter: every email that has arrived, minus every one that has fallen away
   let unread = 0;
   const mails = MAIL.map((mail, a) => {
