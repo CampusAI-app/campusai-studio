@@ -46,6 +46,14 @@ import { AgentSwarm, swarmEnd } from "./AgentSwarm";
 import { TerminalBloom, bloomEnd } from "./TerminalBloom";
 import { LaptopReveal, laptopEnd } from "./LaptopReveal";
 import { Notifications, notifEnd } from "./Notifications";
+import { BASKET, BILLBOARD, BRANDED_BAG, COUNTDOWN, PHONE_ALERT, PHOTO_PILE, SPIN_WHEEL } from "./examples";
+import { Billboard, billboardEnd } from "./Billboard";
+import { BrandedBag, bagEnd } from "./BrandedBag";
+import { PhoneAlert, phoneAlertEnd } from "./PhoneAlert";
+import { Countdown, countdownEnd } from "./Countdown";
+import { PhotoPile, photoPileEnd } from "./PhotoPile";
+import { Basket, basketEnd } from "./Basket";
+import { SpinWheel, spinWheelEnd } from "./SpinWheel";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: (p: any) => number }[] = [
@@ -92,6 +100,14 @@ const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: 
   // renders need --gl=angle (the photoreal laptop is WebGL)
   { id: "Style-LaptopReveal", c: LaptopReveal, props: LAPTOP_REVEAL, frames: 0, dur: (p) => laptopEnd(p) + END_FRAMES + 12 },
   { id: "Style-Notifications", c: Notifications, props: NOTIFICATIONS, frames: 0, dur: (p) => notifEnd(p) + END_FRAMES + 12 },
+  // 11/10: Shaan Johari's Black Friday Styles Part 6 (via Muse), rebuilt for CampusAI with real captures
+  { id: "Style-Billboard", c: Billboard, props: BILLBOARD, frames: 0, dur: (p) => billboardEnd(p) + END_FRAMES + 12 },
+  { id: "Style-BrandedBag", c: BrandedBag, props: BRANDED_BAG, frames: 0, dur: (p) => bagEnd(p) + END_FRAMES + 12 },
+  { id: "Style-PhoneAlert", c: PhoneAlert, props: PHONE_ALERT, frames: 0, dur: (p) => phoneAlertEnd(p) + END_FRAMES + 12 },
+  { id: "Style-Countdown", c: Countdown, props: COUNTDOWN, frames: 0, dur: (p) => countdownEnd(p) + END_FRAMES + 12 },
+  { id: "Style-PhotoPile", c: PhotoPile, props: PHOTO_PILE, frames: 0, dur: (p) => photoPileEnd(p) + END_FRAMES + 12 },
+  { id: "Style-Basket", c: Basket, props: BASKET, frames: 0, dur: (p) => basketEnd(p) + END_FRAMES + 12 },
+  { id: "Style-SpinWheel", c: SpinWheel, props: SPIN_WHEEL, frames: 0, dur: (p) => spinWheelEnd(p) + END_FRAMES + 12 },
 ];
 
 const sized = (dur?: (p: any) => number): CalculateMetadataFunction<any> => ({ props }) => ({

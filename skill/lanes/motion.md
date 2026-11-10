@@ -73,6 +73,13 @@ To make one:
 | `/terminal-bloom` | A question typed at a prompt, Return, and the answers burst out as cards opening like petals | A command line, 3 to 6 results (some in red), a caption, a source | Drawn in Inter, never monospace, and never a fake terminal window |
 | `/laptop-reveal` | The photoreal laptop opens as the camera rises from the desk, its screen already playing a real desktop recording, then a slow push in | A real desktop recording (`npm run flow`), a caption, a source | Desktop only (11/06). The device is `four/real-laptop.tsx` (CC-BY credit). Render with `--gl=angle` |
 | `/notifications` | A bell rings and its badge counts while real notification rows drop in and stack, newest on top | A real desktop capture of the Notifications page and the row boxes to cut, a caption, a source | Rows are cut from the capture, never rebuilt. Only the kinds main ships |
+| `/billboard` | A rainy night drive under an oxblood sky, tail lights smearing on the wet road, up to a lit billboard whose slats turn from a teaser to the ad: a real capture, a true headline and a pill, then back to red for the logo | A teaser, two road sign lines, a real capture and crop, a true headline, a real button label for the pill, a source | The capture is real, never rebuilt. The sign never names a real place or route (no map). The pill is the product's own label |
+| `/branded-bag` | A matte black bag with the real logo rocks like a pendulum over pink clay paper, a serif headline types on, a hang tag carrying a real capture swings a beat behind, a rule-flanked date fades in, and the end card prints on the bag | Two headline lines, a real dated line with its source, a real capture crop for the tag | The tag is a real capture. The bag is a prop, never offered as merch or a giveaway. The date comes from the registrar or catalog |
+| `/phone-alert` | Venetian-blind light drifts across an oxblood room, an alert card drops over a real capture standing on a plinth, the right button presses, a pill says what happened, and the slab turns to the page it opened | The notification's own title and body, two buttons, what the press really did, the capture on the plinth and the page it opens, a source | Only the notification kinds main ships (new matches, assignment moved, What's new). No phone chrome: CampusAI sends no phone push. The pill never claims more than the press does |
+| `/countdown` | A dawn sky over a white podium holding a real capture, a counter's digits spin and stop in turn, then the seconds tick down while a search bar types the URL | A lead line, a dated target and the "as of" moment (both with offsets), the URL, the capture on the podium, a source | The count is worked out from the two times, never typed in, and the "as of" moment is on screen. Only real registrar or catalog dates, never made-up urgency. The podium never claims a feature for that date |
+| `/photo-pile` | Real cards cut as instant photos drop onto tomato paper at loose angles until they cover it, then the camera pushes in and they scatter to reveal the real page, one huge number and a pill | One capture to cut the photos from and the crops, the clean shot underneath, the number, what it counts, a source | Every photo is a real crop. The number is the page's own count, ringed where the page shows it |
+| `/basket` | A question in serif over bubblegum pink while real cards drop one by one into a red wire basket, each landing jostling it, then a pill with the answer | A small line, a headline with one red turn word, a capture and 3 to 5 crops, the answer pill, a source | The headline is a question, never a claim. Every item is a real crop and the pill uses the page's own words |
+| `/spin-wheel` | A game-show wheel of real events spins down to a random wedge, the nameplate turns to "CampusAI picks with a reason", and the real card rises with its reason underlined and quoted | 6 to 10 real event names, the wedge it lands on, one real card capture with its reason line's box, the reason word for word, a source | Every wedge is a real listing. The card is a capture and the quote is its own words. Say whose reason it is (the demo's sample student) |
 
 **Rebuilt the same day as twenty different worlds (Jacob 11/08: "these still look pretty similar", "the fonts and the
 backgrounds are also all the same"; rule in `rules/campusai.md`).** The first build put every style inside the shared
@@ -102,6 +109,13 @@ a ground and a face no other style uses. Current set:
 | Terminal Bloom | aubergine night | Space Grotesk |
 | Laptop Reveal | warm blush desk | Instrument Serif |
 | Notifications | red-to-pink wall | Manrope |
+| Billboard | oxblood night sky over a wet highway | Big Shoulders, Overpass |
+| Branded Bag | pink clay handmade paper | Cormorant Garamond |
+| Phone Alert | oxblood room, venetian-blind light, stone plinth | Onest |
+| Countdown | dawn sky, pale blue into rose, white podium | Fredoka |
+| Photo Pile | tomato paper with grain, instant photo frames | Schibsted Grotesk |
+| Basket | bubblegum pink, red wire basket | Young Serif, Gabarito |
+| Spin Wheel | oxblood game-show stage, marquee bulbs, chrome | Lilita One, Figtree |
 
 **Batch 1 of the "30 Claude animations" reel (2026-11-08, Gian Angioletti through Muse, "I want all of these added to our
 video creation"; his prompts were gated and never seen, so these are our own builds of the names).** Type and number looks
@@ -115,6 +129,16 @@ Iso Flow, Turntable, Particle Logo. Samples in `films/iceberg-bmgt441/`, `neon-f
 **Batch 3 of the same reel (2026-11-08).** Git City, Agent Swarm, Terminal Bloom, Laptop Reveal, Notifications. Samples in
 `films/git-city-smith-core/`, `agent-swarm-gen-eds/`, `terminal-bloom-finance/`, `laptop-reveal-canvas/`, `notifications-demo/`.
 Globe Arcs and Contour Map are not built: both are maps, and the 11/06 rule says no map beats because CampusAI has none.
+
+**Black Friday Styles Part 6 (2026-11-10, Shaan Johari through Muse, Jacob's note "add this to my studio").** The reel was
+watched frame by frame; his prompts are gated and were never seen, so these are our own builds. Nine looks sold a shop's
+product; seven are new here (Billboard, Branded Bag, Phone Alert from his /low-battery, Countdown, Photo Pile, Basket, Spin
+Wheel from his /spin-to-win). His receipt and lock-screen notification looks are already /receipt and /notifications. The
+shop's "product" becomes a real CampusAI capture every time, and his urgency copy (codes, "only 20% left", sale timers) does
+not come across: a count only runs to a real dated deadline and a wheel only exists to show that CampusAI is not random.
+Samples in `films/billboard-calendar/`, `branded-bag-finals/`, `phone-alert-moved/`, `countdown-finals/`, `photo-pile-events/`,
+`basket-clubs/`, `spin-wheel-events/`. The captures they use live in gitignored `public/` folders, so a teammate renders a
+style with their own capture.
 
 **Paper cutout (2026-11-05, from the Nov 5 Muse send of Tobi's (@tobiadonadon_) cartoon story reels; his flat paper-cutout look is the one we can draw in code).** Fixed paper grain and torn edges with a drop shadow under every layer, no boil, so it never reads as /pov-doodle.
 

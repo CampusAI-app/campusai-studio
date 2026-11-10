@@ -591,6 +591,13 @@ import type { TerminalBloomProps } from "./TerminalBloom";
 import type { LaptopRevealProps } from "./LaptopReveal";
 import type { NotificationsProps } from "./Notifications";
 import planWeekFlow from "../../public/plan-my-week/flow/frames.json";
+import type { BillboardProps } from "./Billboard";
+import type { BrandedBagProps } from "./BrandedBag";
+import type { PhoneAlertProps } from "./PhoneAlert";
+import type { CountdownProps } from "./Countdown";
+import type { PhotoPileProps } from "./PhotoPile";
+import type { BasketProps } from "./Basket";
+import type { SpinWheelProps } from "./SpinWheel";
 
 /** /git-city: ten falls of six Smith core classes. films/git-city-smith-core/facts.md. */
 export const GIT_CITY: GitCityProps = {
@@ -666,4 +673,282 @@ export const NOTIFICATIONS: NotificationsProps = {
   caption: "New matches and moved due dates, in one place.",
   source: "The CampusAI demo, Notifications.",
   cta: "Ask CampusAI anything.",
+};
+
+// 2026-11-10: seven styles from Shaan Johari's Black Friday Styles Part 6 reel via Muse (prompts gated, our own builds).
+// Each sample's facts are in films/<folder>/facts.md, outside the repo.
+/** /One press puts it on your week, Add to CampusAI Calendar on a night billboard. films/billboard-calendar/facts.md. */
+export const BILLBOARD: BillboardProps = {
+  "teaser": "Saw an event you like?",
+  "sign": [
+    "Your week",
+    "Next exit"
+  ],
+  "capture": {
+    "src": "plan-my-week/dark/event-landed.jpg",
+    "w": 4320,
+    "h": 2700,
+    "crop": {
+      "x": 2740,
+      "y": 1420,
+      "w": 800,
+      "h": 560
+    }
+  },
+  "headline": "One press puts it on your week.",
+  "pill": "Add to CampusAI Calendar",
+  "source": "The CampusAI demo, My Calendar, Nov 8 to 14.",
+  "cta": "Ask CampusAI anything."
+};
+
+/** /Exams are coming, the logo on a swinging bag, finals dates from the UMD catalog. films/branded-bag-finals/facts.md. */
+export const BRANDED_BAG: BrandedBagProps = {
+  "headline": [
+    "Exams",
+    "are coming"
+  ],
+  "date": "Fall finals, December 14 to 21",
+  "tag": {
+    "src": "plan-my-week/dark/event-landed.jpg",
+    "w": 4320,
+    "h": 2700,
+    "crop": {
+      "x": 676,
+      "y": 1389,
+      "w": 713,
+      "h": 500
+    }
+  },
+  "cta": "Ask CampusAI anything."
+};
+
+/** /The demo's real BMGT380 assignment moved notification, pressed through to My Calendar. films/phone-alert-moved/facts.md. */
+export const PHONE_ALERT: PhoneAlertProps = {
+  "title": "BMGT380 assignment moved",
+  "body": "Reading Response 6 is now due Sun, Oct 18.",
+  "buttons": [
+    "Later",
+    "Open My Calendar"
+  ],
+  "pill": "Opened My Calendar, week of Oct 18",
+  "product": {
+    "src": "sys/moved-2-bell-open-calendar.jpg",
+    "w": 2880,
+    "h": 1800,
+    "crop": {
+      "x": 1822,
+      "y": 122,
+      "w": 795,
+      "h": 398
+    }
+  },
+  "opens": {
+    "src": "sys/moved-3-calendar.jpg",
+    "w": 2880,
+    "h": 1800,
+    "crop": {
+      "x": 943,
+      "y": 70,
+      "w": 1300,
+      "h": 651
+    }
+  },
+  "source": "The CampusAI demo, Oct 23. Canvas moved the date.",
+  "cta": "Know when a due date moves."
+};
+
+/** /Days to Fall 2026 finals from the UMD catalog, counted from a stated moment. films/countdown-finals/facts.md. */
+export const COUNTDOWN: CountdownProps = {
+  "lead": "Fall 2026 finals start in",
+  "target": "2026-12-14T00:00:00-05:00",
+  "asOf": "2026-11-10T09:00:00-05:00",
+  "units": [
+    "days",
+    "hours",
+    "min",
+    "sec"
+  ],
+  "url": "campusai.app",
+  "product": {
+    "src": "sys/moved-3-calendar.jpg",
+    "w": 2880,
+    "h": 1800,
+    "crop": {
+      "x": 446,
+      "y": 892,
+      "w": 484,
+      "h": 530
+    }
+  },
+  "source": "Finals Mon, Dec 14 (UMD catalog). As of Nov 10, 9 AM ET.",
+  "cta": "Ask CampusAI anything."
+};
+
+/** /Real event cards pile up, then clear to the page's own count of 13 ranked events. films/photo-pile-events/facts.md. */
+export const PHOTO_PILE: PhotoPileProps = {
+  "photoSrc": "pass/events-tall.jpg",
+  "photoImage": {
+    "w": 2880,
+    "h": 3744
+  },
+  "photos": [
+    {
+      "x": 470,
+      "y": 2980,
+      "w": 1200,
+      "h": 680
+    },
+    {
+      "x": 1642,
+      "y": 2536,
+      "w": 1200,
+      "h": 680
+    },
+    {
+      "x": 1642,
+      "y": 2094,
+      "w": 1200,
+      "h": 680
+    },
+    {
+      "x": 1642,
+      "y": 1772,
+      "w": 1200,
+      "h": 680
+    },
+    {
+      "x": 470,
+      "y": 2094,
+      "w": 1200,
+      "h": 680
+    },
+    {
+      "x": 470,
+      "y": 2536,
+      "w": 1200,
+      "h": 680
+    },
+    {
+      "x": 470,
+      "y": 1772,
+      "w": 1200,
+      "h": 680
+    },
+    {
+      "x": 1642,
+      "y": 764,
+      "w": 1200,
+      "h": 680
+    },
+    {
+      "x": 470,
+      "y": 764,
+      "w": 1200,
+      "h": 680
+    },
+    {
+      "x": 1642,
+      "y": 320,
+      "w": 1200,
+      "h": 680
+    },
+    {
+      "x": 470,
+      "y": 320,
+      "w": 1200,
+      "h": 680
+    }
+  ],
+  "shot": {
+    "src": "pass/events.jpg",
+    "crop": {
+      "x": 466,
+      "y": 40,
+      "w": 1540,
+      "h": 1760
+    }
+  },
+  "big": "13",
+  "pill": "upcoming events, ranked for you",
+  "source": "The CampusAI demo, Events, Oct 23 to Nov 8.",
+  "cta": "See yours in CampusAI.",
+  "mark": {
+    "x": 1764,
+    "y": 74,
+    "w": 198,
+    "h": 52
+  }
+};
+
+/** /Real club cards drop into a basket, the page's own 7 orgs aligned with your profile. films/basket-clubs/facts.md. */
+export const BASKET: BasketProps = {
+  "kicker": "A question for Terps",
+  "headline": "You're still shopping for clubs…",
+  "turn": "right?",
+  "itemSrc": "pass/organizations-tall.jpg",
+  "itemImage": {
+    "w": 2880,
+    "h": 4540
+  },
+  "items": [
+    {
+      "x": 488,
+      "y": 2206,
+      "w": 774,
+      "h": 464
+    },
+    {
+      "x": 1270,
+      "y": 2206,
+      "w": 774,
+      "h": 464
+    },
+    {
+      "x": 2050,
+      "y": 2206,
+      "w": 774,
+      "h": 464
+    },
+    {
+      "x": 488,
+      "y": 2678,
+      "w": 774,
+      "h": 464
+    }
+  ],
+  "pill": "7 orgs aligned with your profile",
+  "source": "The CampusAI demo, Organizations, Oct 23.",
+  "cta": "Find yours in CampusAI."
+};
+
+/** /A random wheel of real demo events, then the real Evercore card and its reason. films/spin-wheel-events/facts.md. */
+export const SPIN_WHEEL: SpinWheelProps = {
+  "title": "Can't decide what to go to?",
+  "segments": [
+    "Coffee chat",
+    "Billiards",
+    "Football",
+    "Debate",
+    "Stock pitch",
+    "Concert",
+    "Bootcamp",
+    "Dance show"
+  ],
+  "land": 1,
+  "randomLine": "A wheel picks at random.",
+  "pickLine": "CampusAI picks with a reason.",
+  "pickRed": "reason",
+  "card": {
+    "src": "campus/ev-evercore.png",
+    "w": 1148,
+    "h": 420,
+    "mark": {
+      "x": 30,
+      "y": 254,
+      "w": 966
+    }
+  },
+  "reason": "Restructuring is on your target list and both analysts came out of Smith finance.",
+  "source": "The CampusAI demo's events, for its sample student.",
+  "cta": "Ask CampusAI anything."
 };
