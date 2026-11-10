@@ -33,6 +33,39 @@ watching a render ten times hides.
 6. Write each round to `films/<name>/reviews/` (round, defect, frame, fix, result). Before a new
    piece, read the reviews of the last two, so it starts from what they got wrong.
 
+## Video or slideshow (run on the sheet before the critic sees it)
+
+A film that is really a slide deck reads as AI-made at a glance. Check the sheet and the code,
+not the feeling. Fail one and rework it before anyone sees it.
+
+1. **Scenes change because something moves.** The camera moves, pushes through, whips, or an
+   object carries the eye into the next beat. Three or more beats that swap by fading one layer
+   out and the next in is a deck.
+2. **One thing carries through.** One subject, or one world the camera travels, stays across beats.
+   A new picture plus a new sentence every beat is a slideshow even if the camera drifts.
+3. **Two levels of text at most per beat.** One big line or number plus one label. A kicker, a title
+   and a body line is a slide. Text that is part of the real product screen does not count.
+4. **No headline slot.** Two beats in a row never put their line at the same size, in the same
+   place, arriving the same way.
+5. **Nothing tiny.** If the product sits so small that its own text is unreadable on a phone for
+   more than a beat, the camera is too far back. Go in to the part that is talking.
+6. **Every second moves.** A hold is fine while something on screen acts; a held frame where only
+   the cursor drifts is a stall. Stretches of 3 s with no real change are a defect. The check by
+   number, from the studio: `DYLD_LIBRARY_PATH=node_modules/@remotion/compositor-darwin-arm64
+   node_modules/@remotion/compositor-darwin-arm64/ffmpeg -i <video> -vf freezedetect=n=0.003:d=3
+   -map 0:v:0 -f null - 2>&1 | grep freeze` (a cursor counts as change here, so look too).
+7. **Not the template skeleton.** Hook, then feature, feature, feature, then promise, logo and
+   call to action, with three feature tiles in a row, is the default every tool produces. Two of
+   those without a reason in the concept means pick a different spine.
+8. **On time with the words.** Where there is a voice or captions, the thing a line names appears
+   no more than 3 frames after the line starts and no more than 6 before. Check four frames per
+   line: 6 before, on, 3 after, 8 after. Every line gets some change on screen.
+
+2026-11-10, Muse send (seven Claude video repos). Checks 1 to 5 and 7 are from Bang Motion's
+anti-slideshow rules (bangtutorial/bang-motion, MIT, read in place). Check 8 and the 3 s stall
+are technique from Anything2Explainer's QC protocol (PolyForm Noncommercial, so ideas only, in
+our own words). First run: `films/daily-brief/reviews/` (three findings).
+
 Verify by number, not by eye: a sheet finds composition problems, not dropped frames. Sample the
 real pixel at fixed points across many timestamps before calling a visual bug fixed.
 
