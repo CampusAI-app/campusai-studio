@@ -19,3 +19,4 @@ export { EASE, EASE_CAMERA, enter, exit, envelope, keyframes } from "../lib/anim
 export { safeLayout } from "../lib/safeArea";
 export type { SafeLayout } from "../lib/safeArea";
 export * from "./pass";
+export * from "./effects";

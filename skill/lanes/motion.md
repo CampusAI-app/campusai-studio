@@ -128,6 +128,10 @@ they sit beside /ink-wash and /paper-desk, not the near-black films. What a recu
 need is a decision, not code: one named character we always use (a CampusAI student), drawn from Open Peeps
 pieces so anyone on the team can pose them.
 
+**Effects from @mrcreates.ai (2026-11-10): Checklist, Glass type, Cover story, UI world** are kit parts, not named
+styles (`import { Checklist, GlassType, CoverStory, UIWorld } from "../kit"`). What each looks like and its measured
+timing: `lanes/talking-heads.md`, "Effects from @mrcreates.ai".
+
 ## Generated images, for looks code cannot draw (2026-11-05)
 From the Nov 5 Muse sends (Tobi's soft 3D and painterly reels; the CGI, cinematic, toy brick and PS2 looks in "10 Claude
 animation styles"). Jacob: Gemini is for when it helps, not every video. Doodle, paper, chalk, ink and flat looks stay in code.
