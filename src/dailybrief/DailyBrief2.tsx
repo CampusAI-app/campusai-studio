@@ -7,6 +7,10 @@
  *  2. Nothing tiny: the camera goes into Your week while its three emails land, crosses to Worth a look for the next
  *     three, then pulls back for "in one place."
  *  3. No stall: the pointer rests on each of the three picks in turn and each opens its own reason.
+ * Round 4 (Nov 10, Jacob: "add some more UMD and components to catch people's eyes"; UMD imagery is fine in videos):
+ * the inbox opens over McKeldin Mall with real UMD senders (ELMS-Canvas, Careers4Terps, Shuttle-UM...), 24 emails
+ * instead of 12, an unread counter with the UMD M that climbs to 24 and rolls down to 6 as the noise falls, and a
+ * payoff before the logo: 24 emails, 6 that matter.
  * Round 2b (Nov 10, Jacob's notes on round 2): the full brief stays on screen while the emails land (no going into one
  * column), bigger, with softer arcing flights that melt into their rows; and since the line promises reasons, all
  * three picks show theirs. That needed a fresh recording (films/daily-brief-r2/flow.json, Nov 10), so the emails now
@@ -26,7 +30,8 @@
 import React from "react";
 import { AbsoluteFill, Composition, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { Audio } from "@remotion/media";
-import { EASE_CAMERA, INTER, PointerAt, brand, useBrandFonts, type Rect } from "../kit";
+import { Img } from "remotion";
+import { EASE_CAMERA, INTER, Odometer, PointerAt, brand, useBrandFonts, type Rect } from "../kit";
 import { camAlong } from "../kit/camera";
 import { pointerAt } from "../kit/FlowRecording";
 import { useFrameSeq } from "../system/parts/common";
@@ -51,34 +56,50 @@ const Bt = (n: number) => Math.round(n * BEAT);
 const T = {
   logo: 8,
   shell: Bt(8), // the brief appears behind the inbox
-  noise: Bt(8) - 4, // the emails that don't matter fall away (round 2b: before the brief shows, not across it)
+  noise: Bt(8) - 10, // the emails that don't matter fall away, newest first (before the brief shows, not across it)
   fly: Bt(10), // the first email that matters reaches its row; one per beat after
   inPlace: Bt(15) + 8, // "in one place."
   hero: Bt(19), // the camera goes to Worth a look, the pointer rests on a pick
   pick: Bt(21) + 4, // "Picked for you, each with its reason."
-  end: Bt(38), // the logo, once the third reason has been open about 1.3 s
+  stat: Bt(38), // round 4: "24 emails. 6 that matter." once the third reason has been open about 1.3 s
+  end: Bt(42), // the logo
 };
-export const FRAMES = T.end + 92; // 16.9 s
+export const FRAMES = T.end + 78; // about 22 s
 const BLOOM = T.end + 10;
+const PHOTO = staticFile("campus-guide/photos/mall.jpg"); // Wikimedia Commons, Radhika Kshirsagar, CC BY-SA 4.0
+const UMD_M = staticFile("styles/umd/umd-m.svg");
 
 // ---- the inbox ----
 type Mail = { from: string; subject: string; time: string; row?: number };
 // In the order they arrive (oldest first). `row` is the brief row an email that matters lands on.
 const MAIL: Mail[] = [
-  { from: "Dining Services", subject: "This week's menus", time: "7:02 AM" },
-  { from: "Canvas Notifications", subject: "Due date changed: Reading Response 6: Remedies", time: "7:15 AM", row: 0 },
-  { from: "Testudo Times", subject: "Your weekly digest", time: "7:31 AM" },
-  { from: "Canvas Notifications", subject: "Reminder: Reading: Ch. 6-7 is due Tuesday", time: "7:48 AM", row: 1 },
-  { from: "Canvas Notifications", subject: "Case brief: Palsgraf is due Wednesday", time: "8:03 AM", row: 2 },
-  { from: "RecWell", subject: "Group fitness schedule", time: "8:20 AM" },
-  { from: "Job alerts", subject: "New: Investment Banking Summer Analyst, 2027 at Evercore", time: "8:37 AM", row: 3 },
-  { from: "Libraries", subject: "Extended hours start Monday", time: "8:52 AM" },
+  { from: "UMD Dining Services", subject: "This week's menus", time: "6:12 AM" },
+  { from: "The Diamondback", subject: "Today's headlines", time: "6:20 AM" },
+  { from: "Division of IT", subject: "Duo security reminder", time: "6:31 AM" },
+  { from: "Resident Life", subject: "Room inspections this week", time: "6:45 AM" },
+  { from: "Maryland Athletics", subject: "Student tickets for Saturday", time: "7:02 AM" },
+  { from: "ELMS-Canvas", subject: "Due date changed: Reading Response 6: Remedies", time: "7:15 AM", row: 0 },
+  { from: "Stamp Student Union", subject: "Late night bingo Friday", time: "7:22 AM" },
+  { from: "TerpLink", subject: "3 new posts in your groups", time: "7:31 AM" },
+  { from: "ELMS-Canvas", subject: "Reminder: Reading: Ch. 6-7 is due Tuesday", time: "7:48 AM", row: 1 },
+  { from: "University Health Center", subject: "Flu shots this week", time: "7:55 AM" },
+  { from: "ELMS-Canvas", subject: "Case brief: Palsgraf is due Wednesday", time: "8:03 AM", row: 2 },
+  { from: "Smith School of Business", subject: "Speaker series this week", time: "8:12 AM" },
+  { from: "UMD RecWell", subject: "Group fitness schedule", time: "8:20 AM" },
+  { from: "Bursar's Office", subject: "Your statement is ready", time: "8:29 AM" },
+  { from: "Careers4Terps", subject: "New: Investment Banking Summer Analyst, 2027 at Evercore", time: "8:37 AM", row: 3 },
+  { from: "Writing Center", subject: "Book a session", time: "8:44 AM" },
+  { from: "UMD Libraries", subject: "McKeldin extended hours start Monday", time: "8:52 AM" },
+  { from: "Do Good Institute", subject: "Volunteer fair Thursday", time: "9:00 AM" },
   { from: "Finance Association", subject: "Resume & LinkedIn Night is Tuesday at 7 PM", time: "9:06 AM", row: 4 },
-  { from: "Transportation Services", subject: "Shuttle detours this week", time: "9:19 AM" },
+  { from: "Shuttle-UM", subject: "Detours this week", time: "9:12 AM" },
+  { from: "Student Government", subject: "Town hall recap", time: "9:19 AM" },
+  { from: "Stamp Gallery", subject: "New exhibit opens", time: "9:26 AM" },
   { from: "Deloitte Consulting", subject: "Coffee chat, Wednesday at 4 PM", time: "9:33 AM", row: 5 },
-  { from: "Student Government", subject: "Town hall recap", time: "9:41 AM" },
+  { from: "University Career Center", subject: "Career fair recap", time: "9:41 AM" },
 ];
-const ARRIVE = (a: number) => a * 5; // a new email every 5 frames
+const NOISE = MAIL.map((m, a) => (m.row === undefined ? a : -1)).filter((a) => a >= 0).reverse(); // newest falls first
+const ARRIVE = (a: number) => a * 3; // round 4: a new email every 3 frames, 24 of them
 const LIST = { x: 510, y: 205, w: 900, h: 70, step: 80 };
 
 // ---- the brief (CSS px of the recording, 1440 x 900) and where it sits on the canvas ----
@@ -132,7 +153,7 @@ export const DailyBrief: React.FC = () => {
 
   // ---- the camera on the brief ----
   const shellK = k(f, T.shell + 6, T.shell + 22, EASE_CAMERA);
-  const briefOut = k(f, T.end - 14, T.end, EASE_CAMERA); // round 2: gone before the logo, no half-and-half frame
+  const briefOut = k(f, T.stat - 14, T.stat, EASE_CAMERA); // round 2: gone before the logo, no half-and-half frame
   const camBrief = fit(CARD_PAGE, BRIEF_VIEW);
   const camHero = fit(HERO_PAGE, HERO_VIEW);
   // the window on the canvas and the camera inside it move together, one key per move
@@ -156,7 +177,8 @@ export const DailyBrief: React.FC = () => {
   // ---- the inbox: each email's place, its fall or its flight ----
   const keyOrder = MAIL.map((x, a) => ({ x, a })).filter((e) => e.x.row !== undefined);
   const landAt = (row: number) => T.fly + Bt(row);
-  let noiseN = 0;
+  // the unread counter: every email that has arrived, minus every one that has fallen away
+  let unread = 0;
   const mails = MAIL.map((mail, a) => {
     const at = ARRIVE(a);
     if (f < at) return null;
@@ -164,15 +186,17 @@ export const DailyBrief: React.FC = () => {
     let y = LIST.y;
     for (let b = a + 1; b < MAIL.length; b++) y += pop(f, ARRIVE(b), 15) * LIST.step;
     const enter = pop(f, at, 14);
+    unread += Math.min(1, enter);
     let rect: Rect = { x: LIST.x, y: y - (1 - enter) * 50, w: LIST.w, h: LIST.h };
     let opacity = Math.min(1, enter * 1.6);
     let rot = 0;
     if (mail.row === undefined) {
-      const g = k(f, T.noise + noiseN * 2, T.noise + noiseN * 2 + 15, (x) => x * x);
-      noiseN++;
+      const n = NOISE.indexOf(a);
+      const g = k(f, T.noise + n * 2, T.noise + n * 2 + 15, (x) => x * x);
       rect = { ...rect, y: rect.y + g * 900 };
       rot = g * (a % 2 ? 7 : -6);
-      opacity *= 1 - k(f, T.noise + (noiseN - 1) * 2 + 6, T.noise + (noiseN - 1) * 2 + 15);
+      opacity *= 1 - k(f, T.noise + n * 2 + 6, T.noise + n * 2 + 15);
+      unread -= k(f, T.noise + n * 2 + 2, T.noise + n * 2 + 8);
     } else {
       const land = landAt(mail.row);
       // round 2: once the noise is gone, the emails that matter tuck into a small stack in the corner, so the camera
@@ -192,14 +216,27 @@ export const DailyBrief: React.FC = () => {
 
   // ---- the end ----
   const endK = k(f, T.end, T.end + 12);
+  // round 4: McKeldin Mall behind the inbox, pushing in, gone once the brief is up
+  const photoIn = interpolate(f, [0, T.shell + 22], [1, 1.1], clamp);
+  const photoOut = k(f, T.shell + 4, T.shell + 24, EASE_CAMERA);
   const markIn = k(f, T.logo, T.logo + 12);
-  const markOut = k(f, T.end - 6, T.end + 4);
+  const markOut = k(f, T.stat - 6, T.stat + 4);
   const ptr = pointerAt(moves, flowT);
-  const ptrOn = f >= T.hero + 6 && f < T.end - 12;
+  const ptrOn = f >= T.hero + 6 && f < T.stat - 12;
 
   return (
     <AbsoluteFill style={{ background: GROUND, overflow: "hidden" }}>
       <AbsoluteFill style={{ background: "radial-gradient(1400px 700px at 50% -15%, rgba(217,32,46,0.07), transparent 70%)" }} />
+      {photoOut < 1 && (
+        <AbsoluteFill style={{ opacity: 1 - photoOut }}>
+          <Img src={PHOTO} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${photoIn})`, transformOrigin: "50% 60%" }} />
+          {/* a light wash so the inbox and the line read, darker at the top where the line sits */}
+          <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(246,241,237,0.86) 0%, rgba(246,241,237,0.42) 34%, rgba(246,241,237,0.30) 70%, rgba(246,241,237,0.62) 100%)" }} />
+          <div style={{ position: "absolute", left: 40, bottom: 26, fontFamily: INTER, fontWeight: 500, fontSize: 17, color: "rgba(29,21,23,0.72)" }}>
+            McKeldin Mall, University of Maryland. Photo by Radhika Kshirsagar, CC BY-SA 4.0
+          </div>
+        </AbsoluteFill>
+      )}
 
       {/* the brief, recorded: rows hidden until their email lands on them */}
       {f >= T.shell && briefOut < 1 && (
@@ -226,7 +263,7 @@ export const DailyBrief: React.FC = () => {
                 })}
                 {ptrOn && ptr.p && (() => {
                   const p = onCanvas(cam, view, PAGE, ptr.p.x, ptr.p.y);
-                  return <PointerAt x={p.x} y={p.y} since={null} accent={RED} size={Math.round(20 * s)} opacity={k(f, T.hero + 6, T.hero + 12) * (1 - k(f, T.end - 20, T.end - 12))} />;
+                  return <PointerAt x={p.x} y={p.y} since={null} accent={RED} size={Math.round(20 * s)} opacity={k(f, T.hero + 6, T.hero + 12) * (1 - k(f, T.stat - 20, T.stat - 12))} />;
                 })()}
               </>
             );
@@ -237,8 +274,46 @@ export const DailyBrief: React.FC = () => {
       {/* the inbox, over the brief */}
       {mails.map((x) => (x ? <MailRow key={x.key} m={x.mail} rect={x.rect} opacity={x.opacity} rot={x.rot} /> : null))}
 
+      {/* round 4: the unread counter, top right, with the UMD M */}
+      {(() => {
+        const inK = pop(f, 2, 16);
+        const outK = k(f, T.shell + 30, T.shell + 44, EASE_CAMERA);
+        if (outK >= 1) return null;
+        return (
+          <div style={{ position: "absolute", right: 56, top: 40, display: "flex", alignItems: "center", gap: 16, padding: "12px 26px 12px 16px", borderRadius: 999,
+            background: "#fff", boxShadow: "0 0 0 1px rgba(70,30,30,.08), 0 12px 30px rgba(90,40,40,.14)", opacity: Math.min(1, inK) * (1 - outK),
+            transform: `translateY(${(1 - inK) * -24 - outK * 20}px)` }}>
+            <Img src={UMD_M} style={{ width: 40, height: 44 }} />
+            <Odometer value={Math.max(0, unread)} digits={unread >= 9.5 ? 2 : 1} size={46} color={RED} />
+            <span style={{ fontFamily: INTER, fontWeight: 600, fontSize: 30, color: INK }}>unread</span>
+          </div>
+        );
+      })()}
+
+      {/* round 4: the payoff before the logo */}
+      {f >= T.stat - 2 && f < T.end + 6 && (() => {
+        const a = k(f, T.stat, T.stat + 10);
+        const out = k(f, T.end - 6, T.end + 4);
+        const n1 = interpolate(f, [T.stat, T.stat + 12], [0, 24], { ...clamp, easing: EASE_CAMERA });
+        const b = k(f, T.stat + Math.round(BEAT * 1.5), T.stat + Math.round(BEAT * 1.5) + 10);
+        const n2 = interpolate(f, [T.stat + Math.round(BEAT * 1.5), T.stat + Math.round(BEAT * 1.5) + 14], [24, 6], { ...clamp, easing: EASE_CAMERA });
+        const row = (o: number, n: number, word: string, c: string, y: number) => (
+          <div style={{ position: "absolute", left: 0, right: 0, top: y, display: "flex", justifyContent: "center", alignItems: "baseline", gap: 26,
+            opacity: o * (1 - out), transform: `translateY(${(1 - o) * 22 - out * 16}px)` }}>
+            <Odometer value={n} digits={n >= 9.5 ? 2 : 1} size={150} color={c} />
+            <span style={{ fontFamily: "Zodiak", fontWeight: 700, fontSize: 104, color: INK, letterSpacing: "-0.02em" }}>{word}</span>
+          </div>
+        );
+        return (
+          <>
+            {row(a, n1, "emails.", INK, 330)}
+            {row(b, n2, "that matter.", RED, 540)}
+          </>
+        );
+      })()}
+
       {/* lines */}
-      <Line ws={words("Your week arrives as email.", ["email"])} at={0} stagger={2} out={T.shell - 6} x={960} y={112} size={60} />
+      <Line ws={words("Your week at Maryland arrives as email.", ["email"])} at={0} stagger={2} out={T.shell - 6} x={900} y={112} size={60} />
       {/* line 2 sits low, under the brief, smaller, and arrives whole */}
       <Line ws={words("Everything those emails were telling you,")} at={T.shell + 2} stagger={1} out={T.pick - 8} x={960} y={924} size={46} />
       <Line ws={words("in one place.", ["one"])} at={T.inPlace} stagger={1} out={T.pick - 8} x={960} y={984} size={46} />
@@ -250,7 +325,7 @@ export const DailyBrief: React.FC = () => {
         const sc = 0.45 + 0.55 * o;
         return (
           <div style={{ position: "absolute", inset: 0, transform: `translate(${dx}px, ${dy}px) scale(${sc})`, transformOrigin: "360px 525px" }}>
-            <Line ws={words("Picked for you, each with its reason.", ["reason"])} at={T.pick} stagger={2} out={T.end - 14} x={360} y={525} size={68} maxW={540} />
+            <Line ws={words("Picked for you, each with its reason.", ["reason"])} at={T.pick} stagger={2} out={T.stat - 14} x={360} y={525} size={68} maxW={540} />
           </div>
         );
       })()}
@@ -272,7 +347,9 @@ export const DailyBrief: React.FC = () => {
       <Audio src={aud("cat-walk.mp3")} trimBefore={305} volume={(fr) => 0.5 * Math.min(1, fr / 6) * Math.min(1, Math.max(0, (FRAMES - fr) / 40))} />
       {(
         [
-          ...MAIL.map((_, a) => [ARRIVE(a) + 2, "typewriter-hit-soft.mp3", 0.22] as [number, string, number]),
+          ...MAIL.filter((_, a) => a % 2 === 0).map((_, i) => [ARRIVE(i * 2) + 2, "typewriter-hit-soft.mp3", 0.2] as [number, string, number]),
+          [T.stat, "switch-tap.mp3", 0.45],
+          [T.stat + Math.round(BEAT * 1.5), "switch-tap.mp3", 0.45],
           [T.noise, "swoosh-quick.mp3", 0.35],
           ...keyOrder.map((e) => [landAt(e.x.row as number), "switch-tap.mp3", 0.45] as [number, string, number]),
           [T.hero, "air-woosh-quick.mp3", 0.35],

@@ -55,6 +55,8 @@ Street-interview clips that hand off into the real product. Ashley picks what to
 - UMD's logo and UMD imagery (the turtle, campus, colours) CAN go in a video (11/04, correcting an older blanket ban
   that came from the 10/16 social graphics, where the backgrounds were cut because "it blocks out the left side"). It
   is just sometimes kept off the product itself, so ask before putting it on a product screen.
+  11/10, Jacob: "Don't worry about UMD imagery in videos." Use it freely in films (campus photos, the M, real UMD
+  senders like ELMS-Canvas and Careers4Terps); no need to ask. Wikimedia photos still carry their on-screen credit.
 - Every press shows where its result lands. Show, never label ("Missed" was cut).
 - Capture from EMPTY: a picker starts empty and gets filled by typing or a tapped suggestion,
   never pre-filled then X'd out (10/21).
