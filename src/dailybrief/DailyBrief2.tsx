@@ -7,6 +7,10 @@
  *  2. Nothing tiny: the camera goes into Your week while its three emails land, crosses to Worth a look for the next
  *     three, then pulls back for "in one place."
  *  3. No stall: the pointer rests on each of the three picks in turn and each opens its own reason.
+ * Round 5 (Nov 10, Jacob: the picks "a little quicker", and "put some information or some pictures on the left side"):
+ * the rests between the three hovers are cut and that stretch plays at 1.25x, and as each reason opens the left side
+ * shows that pick: its logo (the UMD M for the Finance Association), its real details from the demo, and the first
+ * clause of its own reason, quoted.
  * Round 4 (Nov 10, Jacob: "add some more UMD and components to catch people's eyes"; UMD imagery is fine in videos):
  * the inbox opens over McKeldin Mall with real UMD senders (ELMS-Canvas, Careers4Terps, Shuttle-UM...), 24 emails
  * instead of 12, an unread counter with the UMD M that climbs to 24 and rolls down to 6 as the noise falls, and a
@@ -61,8 +65,8 @@ const T = {
   inPlace: Bt(15) + 8, // "in one place."
   hero: Bt(19), // the camera goes to Worth a look, the pointer rests on a pick
   pick: Bt(21) + 4, // "Picked for you, each with its reason."
-  stat: Bt(38), // round 4: "24 emails. 6 that matter." once the third reason has been open about 1.3 s
-  end: Bt(42), // the logo
+  stat: Bt(33), // round 4: "24 emails. 6 that matter." (round 5: sooner, the picks run quicker)
+  end: Bt(37), // the logo
 };
 export const FRAMES = T.end + 78; // about 22 s
 const BLOOM = T.end + 10;
@@ -146,9 +150,20 @@ export const DailyBrief: React.FC = () => {
 
   // the recording: the clean brief (Spring row already dismissed, nothing hovered), then the hover at true speed
   const CLEAN = (m.clean ?? 8.52) - 0.1;
+  // round 5: the rests between hovers are cut (the frames there are identical, so the jumps do not show) and the
+  // stretch plays at 1.25x. Flow times: Evercore move 8.357, Finance Association moves from 11.03, Deloitte from 14.06.
+  const P0 = T.hero + 7;
+  const R = 1.25;
+  const fs = (sec: number) => Math.round((sec * FPS) / R);
+  const A1 = P0 + fs(2.0), B0 = A1 + 1, B1 = B0 + fs(2.42), C0 = B1 + 1;
   const flowT = pw(f, [
     [T.hero + 6, CLEAN],
-    [T.hero + 7, hoverMove?.start ?? 8.52],
+    [P0, hoverMove?.start ?? 8.357],
+    [A1, (hoverMove?.start ?? 8.357) + 2.0],
+    [B0, 11.03],
+    [B1, 13.45],
+    [C0, 14.06],
+    [C0 + 200, 14.06 + (200 * R) / FPS],
   ]);
 
   // ---- the camera on the brief ----
@@ -321,13 +336,57 @@ export const DailyBrief: React.FC = () => {
       {(() => {
         const o = k(f, T.pick, T.pick + 18, EASE_CAMERA);
         const dx = (1 - o) * 640;
-        const dy = (1 - o) * -150;
+        const dy = (1 - o) * 120;
         const sc = 0.45 + 0.55 * o;
         return (
-          <div style={{ position: "absolute", inset: 0, transform: `translate(${dx}px, ${dy}px) scale(${sc})`, transformOrigin: "360px 525px" }}>
-            <Line ws={words("Picked for you, each with its reason.", ["reason"])} at={T.pick} stagger={2} out={T.stat - 14} x={360} y={525} size={68} maxW={540} />
+          <div style={{ position: "absolute", inset: 0, transform: `translate(${dx}px, ${dy}px) scale(${sc})`, transformOrigin: "360px 270px" }}>
+            <Line ws={words("Picked for you, each with its reason.", ["reason"])} at={T.pick} stagger={2} out={T.stat - 14} x={370} y={270} size={56} maxW={620} />
           </div>
         );
+      })()}
+
+      {/* round 5: the pick whose reason is open, on the left: logo, real details from the demo, its reason's first clause */}
+      {(() => {
+        const P0 = T.hero + 7;
+        const at = (sec: number, base: number, from: number) => base + Math.round(((sec - from) * FPS) / 1.25);
+        const A1 = P0 + Math.round((2.0 * FPS) / 1.25), B0 = A1 + 1, B1 = B0 + Math.round((2.42 * FPS) / 1.25), C0 = B1 + 1;
+        const picks = [
+          { at: at(9.6, P0, 8.357), logo: staticFile("daily-brief-r2/logos/evercore.png"), kind: "Job", name: "Investment Banking Summer Analyst, Evercore",
+            facts: ["New York, NY", "$110k to $120k"], quote: ["Your Investment Fund pitches line up directly with an M&A analyst's ", "core work."] },
+          { at: at(12.1, B0, 11.03), logo: UMD_M, kind: "Event", name: "Finance Association, Resume & LinkedIn Night",
+            facts: ["Tue 7 PM", "Van Munching 1330"], quote: ["Your resume is going into fall banking books ", "now."] },
+          { at: at(15.1, C0, 14.06), logo: staticFile("daily-brief-r2/logos/deloitte.png"), kind: "Event", name: "Deloitte Consulting, Coffee Chat",
+            facts: ["Wed 4 PM", "Van Munching Atrium"], quote: ["Consulting sits right next to the finance work you already do, so it's a real ", "backup lane."] },
+        ];
+        return picks.map((p, i) => {
+          const next = i < picks.length - 1 ? picks[i + 1].at : T.stat - 12;
+          const inK = k(f, p.at, p.at + 12, EASE_CAMERA);
+          const outK = k(f, next - 2, next + 8, EASE_CAMERA);
+          if (inK <= 0 || outK >= 1) return null;
+          return (
+            <div key={i} style={{ position: "absolute", left: 70, top: 410, width: 590, opacity: inK * (1 - outK), transform: `translateY(${(1 - inK) * 40 - outK * 30}px)` }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 22 }}>
+                <div style={{ width: 104, height: 104, flex: "none", borderRadius: 24, background: "#fff", boxShadow: "0 0 0 1px rgba(70,30,30,.08), 0 12px 28px rgba(90,40,40,.12)",
+                  display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
+                  <Img src={p.logo} style={{ width: 72, height: 72, objectFit: "contain" }} />
+                </div>
+                <div style={{ fontFamily: INTER }}>
+                  <div style={{ fontSize: 22, fontWeight: 600, color: RED }}>{p.kind}</div>
+                  <div style={{ fontSize: 30, fontWeight: 650, color: INK, lineHeight: 1.18 }}>{p.name}</div>
+                </div>
+              </div>
+              <div style={{ display: "flex", gap: 12, marginTop: 22 }}>
+                {p.facts.map((t, j) => (
+                  <span key={j} style={{ fontFamily: INTER, fontSize: 22, fontWeight: 600, color: INK, background: "#fff", borderRadius: 999, padding: "9px 18px",
+                    boxShadow: "0 0 0 1px rgba(70,30,30,.10)", opacity: k(f, p.at + 6 + j * 3, p.at + 14 + j * 3) }}>{t}</span>
+                ))}
+              </div>
+              <div style={{ marginTop: 28, fontFamily: "Zodiak", fontWeight: 700, fontSize: 36, lineHeight: 1.2, color: INK, letterSpacing: "-0.01em", opacity: k(f, p.at + 10, p.at + 20) }}>
+                {p.quote[0]}<span style={{ color: RED, fontStyle: "italic", fontWeight: 400 }}>{p.quote[1]}</span>
+              </div>
+            </div>
+          );
+        });
       })()}
 
       {/* the logo: a small mark from the start, then the end card */}
@@ -355,7 +414,8 @@ export const DailyBrief: React.FC = () => {
           [T.hero, "air-woosh-quick.mp3", 0.35],
           [T.hero + 40, "ui-message-pop.mp3", 0.45],
           // each later reason opening gets the same pop (flow times from the recording's marks)
-          ...[12.6, 15.55].map((t) => [Math.round(T.hero + 7 + (t - 8.357) * FPS), "ui-message-pop.mp3", 0.4] as [number, string, number]),
+          // round 5: the same pop as each later reason opens, on the compressed clock
+          ...[T.hero + 7 + 48 + 1 + Math.round(((12.1 - 11.03) * FPS) / 1.25), T.hero + 7 + 48 + 1 + 58 + 1 + Math.round(((15.1 - 14.06) * FPS) / 1.25)].map((fr) => [fr, "ui-message-pop.mp3", 0.4] as [number, string, number]),
           [BLOOM, "shimmer-sparkle-sweep.mp3", 0.45],
         ] as [number, string, number][]
       ).map(([at, src, v], i) => (
