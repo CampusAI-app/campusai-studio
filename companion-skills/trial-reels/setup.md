@@ -14,20 +14,45 @@ This skill lives in the studio, which updates itself. Confirm `~/.claude/skills/
 exists and `python3 --version` works. If the skill folder is missing, run
 `bash scripts/update.sh` from the studio folder and start a new chat.
 
-## 2. Connect Instagram (about 2 minutes)
+## 2. Make her Instagram key and connect it (about 10 minutes)
 
-The key is what lets this Mac read CampusAI's Instagram numbers and post trial reels. It stays on
-this Mac only.
+The key is what lets this Mac read CampusAI's Instagram numbers and post trial reels. She makes it
+herself in Meta Business Suite (Jacob added her to the CampusAI business portfolio on Nov 9 for
+this), and it stays on this Mac only. She does the clicks; you say the next one each time and wait
+for her to say done. If Claude in Chrome already works, open the pages for her, but she still does
+the clicks and confirms anything Meta asks.
 
-1. Ask her: has Jacob sent you the Instagram key file? It comes by AirDrop (it lands in
-   Downloads). If not, she messages Jacob: "Can you send me my Instagram key for trial reels?"
-   Jacob's Claude knows how to make it (`setup-jacob.md`). Wait here until she has it.
-2. Find the file in `~/Downloads` (ask her its name if there are several), then run
-   `python3 ~/.claude/skills/trial-reels/scripts/connect.py "<the file>"`.
-   It saves the key, deletes the file it came in, and prints the account it reached. It never
-   prints the key, and you never open or paste the key anywhere.
-3. It should say `Connected to @campusai_`. If Instagram refused the key, she asks Jacob for a new
-   one.
+1. **Open** business.facebook.com/settings and pick the business portfolio **Campusai**. In the
+   left menu, Users, then **System users**.
+   - If she cannot see System users, or the Add button is greyed out, her role is not high enough:
+     only an admin (Full control) can make keys. She asks Jacob: "Can you give me Full control on
+     the Campusai business portfolio?" (Settings, People, Ashley). Wait, then try again.
+2. **Add** a system user. Name: `Ashley`, ONE word (Meta refuses names with spaces). Role:
+   Employee.
+3. **Assign assets** to the new Ashley system user (the Assign assets button on its page):
+   - Instagram account **@campusai_**: Content, Community activity, Insights.
+   - Facebook Page **Campusai**: Content, Insights.
+   - App **CampusAI Studio**: Develop app.
+4. **Generate new token**: app CampusAI Studio, expiry **Never**, and tick the Instagram and Page
+   permissions it offers. Meta adds every permission to the key whatever she ticks, and that is
+   fine: this skill never deletes and never DMs.
+5. **Save the key.** Meta shows it once. Before she copies it, make an empty file and open it:
+   `touch ~/Downloads/instagram-key.txt && open -a TextEdit ~/Downloads/instagram-key.txt`.
+   She copies the key from Meta, pastes it into that TextEdit window, saves (Cmd+S) and closes it.
+   Never ask her to paste the key into this chat, and never open the file yourself.
+6. **Connect it:** run
+   `python3 ~/.claude/skills/trial-reels/scripts/connect.py ~/Downloads/instagram-key.txt`.
+   It checks the key, saves it where the scripts read it, deletes the file in Downloads, and prints
+   the account it reached. It never prints the key.
+7. It should say `Connected to @campusai_`. If Instagram refused the key, go back to step 4 and
+   generate a new one (the old one is useless anyway). If the assets in step 3 were missed, the
+   key works but cannot see the account: assign them, then generate again.
+
+If anything in Meta looks different from these steps, describe what she sees back to her in plain
+words and find the matching button with her. Meta moves things around.
+
+To switch the key off later (a lost laptop, say): the same System users page, Ashley, **Revoke
+tokens**. Then make a new one the same way.
 
 ## 3. Connect Base
 
