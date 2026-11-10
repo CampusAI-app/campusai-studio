@@ -7,6 +7,9 @@
  *  2. Nothing tiny: the camera goes into Your week while its three emails land, crosses to Worth a look for the next
  *     three, then pulls back for "in one place."
  *  3. No stall: the pointer rests on each of the three picks in turn and each opens its own reason.
+ * Round 6 (Nov 10, Jacob: the ending "should be more about bringing the important things to them", not 24 emails to 6):
+ * the payoff is now "What matters, brought to you." with the six real things from the brief flying in from the edges
+ * of the frame and settling under it, one per beat.
  * Round 5 (Nov 10, Jacob: the picks "a little quicker", and "put some information or some pictures on the left side"):
  * the rests between the three hovers are cut and that stretch plays at 1.25x, and as each reason opens the left side
  * shows that pick: its logo (the UMD M for the Finance Association), its real details from the demo, and the first
@@ -65,8 +68,8 @@ const T = {
   inPlace: Bt(15) + 8, // "in one place."
   hero: Bt(19), // the camera goes to Worth a look, the pointer rests on a pick
   pick: Bt(21) + 4, // "Picked for you, each with its reason."
-  stat: Bt(33), // round 4: "24 emails. 6 that matter." (round 5: sooner, the picks run quicker)
-  end: Bt(37), // the logo
+  stat: Bt(33), // round 6: "What matters, brought to you." and the six things gathering to the viewer
+  end: Bt(38), // the logo
 };
 export const FRAMES = T.end + 78; // about 22 s
 const BLOOM = T.end + 10;
@@ -305,24 +308,41 @@ export const DailyBrief: React.FC = () => {
         );
       })()}
 
-      {/* round 4: the payoff before the logo */}
+      {/* round 6: the payoff before the logo. The six things the brief brought, flying in to the viewer */}
       {f >= T.stat - 2 && f < T.end + 6 && (() => {
-        const a = k(f, T.stat, T.stat + 10);
         const out = k(f, T.end - 6, T.end + 4);
-        const n1 = interpolate(f, [T.stat, T.stat + 12], [0, 24], { ...clamp, easing: EASE_CAMERA });
-        const b = k(f, T.stat + Math.round(BEAT * 1.5), T.stat + Math.round(BEAT * 1.5) + 10);
-        const n2 = interpolate(f, [T.stat + Math.round(BEAT * 1.5), T.stat + Math.round(BEAT * 1.5) + 14], [24, 6], { ...clamp, easing: EASE_CAMERA });
-        const row = (o: number, n: number, word: string, c: string, y: number) => (
-          <div style={{ position: "absolute", left: 0, right: 0, top: y, display: "flex", justifyContent: "center", alignItems: "baseline", gap: 26,
-            opacity: o * (1 - out), transform: `translateY(${(1 - o) * 22 - out * 16}px)` }}>
-            <Odometer value={n} digits={n >= 9.5 ? 2 : 1} size={150} color={c} />
-            <span style={{ fontFamily: "Zodiak", fontWeight: 700, fontSize: 104, color: INK, letterSpacing: "-0.02em" }}>{word}</span>
-          </div>
-        );
+        const things: { t: string; kind: string; from: [number, number] }[] = [
+          { t: "Reading Response 6, now due Sun", kind: "BMGT380", from: [-700, -300] },
+          { t: "Evercore summer analyst role", kind: "Job", from: [2600, -260] },
+          { t: "Reading: Ch. 6-7, due Tue", kind: "BMGT364", from: [-760, 560] },
+          { t: "Resume & LinkedIn Night, Tue 7 PM", kind: "Event", from: [2700, 520] },
+          { t: "Case brief: Palsgraf, due Wed", kind: "BMGT380", from: [-600, 1400] },
+          { t: "Deloitte Coffee Chat, Wed 4 PM", kind: "Event", from: [2500, 1450] },
+        ];
+        const COL = [250, 990];
+        const ROW0 = 470;
         return (
           <>
-            {row(a, n1, "emails.", INK, 330)}
-            {row(b, n2, "that matter.", RED, 540)}
+            <div style={{ opacity: 1 - out, transform: `translateY(${-out * 16}px)` }}>
+              <Line ws={words("What matters, brought to you.", ["you."])} at={T.stat} stagger={2} x={960} y={300} size={84} />
+            </div>
+            {things.map((th, i) => {
+              const at = T.stat + 8 + i * 4;
+              const p = pop(f, at, 16);
+              const col = COL[i % 2], row = ROW0 + Math.floor(i / 2) * 104;
+              const x = th.from[0] + (col - th.from[0]) * p;
+              const y = th.from[1] + (row - th.from[1]) * p;
+              if (f < at) return null;
+              return (
+                <div key={i} style={{ position: "absolute", left: x, top: y, width: 680, height: 80, borderRadius: 20, background: "#fff",
+                  boxShadow: "0 0 0 1px rgba(70,30,30,.08), 0 14px 32px rgba(90,40,40,.13)", display: "flex", alignItems: "center", gap: 18, padding: "0 26px",
+                  fontFamily: INTER, opacity: (1 - out) * Math.min(1, p * 1.4), transform: `rotate(${(1 - Math.min(1, p)) * (i % 2 ? 8 : -8)}deg)` }}>
+                  <div style={{ width: 12, height: 12, borderRadius: "50%", background: RED, flex: "none" }} />
+                  <span style={{ fontSize: 22, fontWeight: 600, color: RED, flex: "none" }}>{th.kind}</span>
+                  <span style={{ fontSize: 27, fontWeight: 600, color: INK, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{th.t}</span>
+                </div>
+              );
+            })}
           </>
         );
       })()}
@@ -407,8 +427,7 @@ export const DailyBrief: React.FC = () => {
       {(
         [
           ...MAIL.filter((_, a) => a % 2 === 0).map((_, i) => [ARRIVE(i * 2) + 2, "typewriter-hit-soft.mp3", 0.2] as [number, string, number]),
-          [T.stat, "switch-tap.mp3", 0.45],
-          [T.stat + Math.round(BEAT * 1.5), "switch-tap.mp3", 0.45],
+          ...[0, 1, 2, 3, 4, 5].map((i) => [T.stat + 14 + i * 4, "switch-tap.mp3", 0.3] as [number, string, number]),
           [T.noise, "swoosh-quick.mp3", 0.35],
           ...keyOrder.map((e) => [landAt(e.x.row as number), "switch-tap.mp3", 0.45] as [number, string, number]),
           [T.hero, "air-woosh-quick.mp3", 0.35],
