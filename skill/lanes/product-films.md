@@ -59,6 +59,34 @@ capabilities as pills stacking under one phrase.
   status meeting to Cancelled), then the logo. For CampusAI the pain lines come from real students
   (survey answers, walk-ups), every count from `facts.md`, and the gesture is a real control in the
   demo. Seen once through Muse, not frame by frame, so its timings are feel, not numbers.
+- **The NestPay hand-offs** (2026-11-10, Jimmy's 21 s NestPay launch film, @thejimmy.vision, learned
+  through Muse; Jacob: "It's more about the transition and how it moves it"). Stepped frame by frame.
+  The lesson is how each beat hands to the next, never a cut to a fresh layout. One object carries the
+  eye per hand-off, exits speed up, entrances slow down, and fast moves carry motion blur.
+  1. Line to product. The product rises from below the frame tipped back about 50 degrees and
+     straightens as it climbs (0.7 s, ease-out), passing up through the line, which leaves the moment
+     the product crosses it. Then a 0.3 s drift, never a dead hold.
+  2. Push through. A fast push-in (about 0.4 s, 1.5x) until the screen content is the frame, then a
+     glide along the one list or row that matters (0.8 s, blurred while it moves).
+  3. Turn away into the dark. The surface swings on its vertical axis and drifts right while it blurs
+     and goes black (0.4 s), then about 0.1 s of near black before the next line.
+  4. Words. Each word fades in left to right about 0.08 s apart, lit in the accent as it lands.
+  5. Line to logo. The line shrinks toward the centre and vanishes (0.2 s), and the logo opens from that
+     same point (0.25 s), holds 0.5 s, then completes.
+  6. Scale hand-off across a hard cut. The logo shrinks about 15% (0.2 s), hard cut, and the next object
+     arrives about 1.5x and blurred and settles to size in 0.25 s. The only hard cut in the film.
+  7. Tip over. The object tips back on its bottom edge and falls out the bottom (about 0.9 s,
+     accelerating) while the next one rises behind it from about 0.85x (decelerating).
+  8. Spin in. The next object enters from the frame edge showing its back and turns about 180 degrees
+     on its vertical axis on the way to the centre (0.6 s).
+  9. Accumulation. The number rolls up digit by digit (about 2.4 s) while the pieces it counts fade in
+     around the object, one side then the other, about 0.35 s apart.
+  10. Sink and rhyme. The object sinks out the bottom (0.6 s), 0.15 s of empty ground, and the logo
+     builds exactly as it did the first time.
+  For CampusAI: the product is a real capture lifted as one panel (the week, a dialog, a card), every
+  count comes from `facts.md`, and our reading-time rule still wins over the reel's short holds (its
+  lines sat about 0.4 s). Worked example `src/launch-transitions/` (`LaunchTransitions-16x9`, its own
+  entry file), which uses hand-offs 1 to 7, 9 and 10.
 
 **Film styles to borrow motion from** (Studio page, "Film styles"): Dark Tech Keynote for
 CampusAI launches (its grammar only: one accent for what the product does, transitions only as
