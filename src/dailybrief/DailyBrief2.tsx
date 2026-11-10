@@ -7,6 +7,11 @@
  *  2. Nothing tiny: the camera goes into Your week while its three emails land, crosses to Worth a look for the next
  *     three, then pulls back for "in one place."
  *  3. No stall: the pointer rests on each of the three picks in turn and each opens its own reason.
+ * Round 8 (Nov 10, Jacob picked hook 1 and sound A): the first frame carries "POV: UMD has emailed you 24 times
+ * before 10 AM." Sound tells the story: notification pings stack faster and higher while the counter climbs, they
+ * stop dead as the junk falls (near silence), the beat drops in with the brief, each thing that matters lands on a
+ * rising crystal chime, and the logo lands on a bass hit. Sounds are Mixkit (free licence), shots/audio/ATTRIBUTION.md.
+ * Round 7 (Nov 10): a quicker opening.
  * Round 6 (Nov 10, Jacob: the ending "should be more about bringing the important things to them", not 24 emails to 6):
  * the payoff is now "What matters, brought to you." with the six real things from the brief flying in from the edges
  * of the frame and settling under it, one per beat.
@@ -351,7 +356,8 @@ export const DailyBrief: React.FC = () => {
       })()}
 
       {/* lines */}
-      <Line ws={words("Your week at Maryland arrives as email.", ["email"])} at={0} stagger={2} out={T.shell - 6} x={900} y={112} size={60} />
+      {/* round 8: the hook, whole on the first frame */}
+      <Line ws={words("POV: UMD has emailed you 24 times before 10 AM.", ["24", "times"])} at={-16} stagger={1} out={T.shell - 6} x={880} y={112} size={58} maxW={1560} />
       {/* line 2 sits low, under the brief, smaller, and arrives whole */}
       <Line ws={words("Everything those emails were telling you,")} at={T.shell + 2} stagger={1} out={T.pick - 8} x={960} y={924} size={46} />
       <Line ws={words("in one place.", ["one"])} at={T.inPlace} stagger={1} out={T.pick - 8} x={960} y={984} size={46} />
@@ -425,26 +431,36 @@ export const DailyBrief: React.FC = () => {
         </>
       )}
 
-      {/* sound */}
-      <Audio src={aud("cat-walk.mp3")} trimBefore={305} volume={(fr) => 0.5 * Math.min(1, fr / 6) * Math.min(1, Math.max(0, (FRAMES - fr) / 40))} />
-      {(
-        [
-          ...MAIL.filter((_, a) => a % 2 === 0).map((_, i) => [ARRIVE(i * 2) + 2, "typewriter-hit-soft.mp3", 0.2] as [number, string, number]),
-          ...[0, 1, 2, 3, 4, 5].map((i) => [T.stat + 14 + i * 4, "switch-tap.mp3", 0.3] as [number, string, number]),
-          [T.noise, "swoosh-quick.mp3", 0.35],
-          ...keyOrder.map((e) => [landAt(e.x.row as number), "switch-tap.mp3", 0.45] as [number, string, number]),
-          [T.hero, "air-woosh-quick.mp3", 0.35],
-          [T.hero + 40, "ui-message-pop.mp3", 0.45],
-          // each later reason opening gets the same pop (flow times from the recording's marks)
-          // round 5: the same pop as each later reason opens, on the compressed clock
-          ...[T.hero + 7 + 48 + 1 + Math.round(((12.1 - 11.03) * FPS) / 1.25), T.hero + 7 + 48 + 1 + 58 + 1 + Math.round(((15.1 - 14.06) * FPS) / 1.25)].map((fr) => [fr, "ui-message-pop.mp3", 0.4] as [number, string, number]),
-          [BLOOM, "shimmer-sparkle-sweep.mp3", 0.45],
-        ] as [number, string, number][]
-      ).map(([at, src, v], i) => (
-        <Sequence key={i} from={at} layout="none">
-          <Audio src={aud(src)} volume={() => v} />
-        </Sequence>
-      ))}
+      {/* sound, round 8: pings build, the quiet, the beat drops with the brief, chimes as things land, a bass hit on the logo */}
+      {(() => {
+        const MUSIC_AT = T.shell + 4; // the drop, as the brief comes up
+        const LIFT = 444; // the track frame of Cat Walk's first lift, kept on the first landing as before
+        const pings = [0, 8, 15, 21, 26, 31, 35, 39, 43, 46, 49, 52, 55, 57, 59, 61, 63, 65, 67, 69, 70, 71, 72, 73];
+        const cues: [number, string, number, number][] = [
+          ...pings.map((at, i) => [at, "daily-brief-r2/audio/ui-notify-tech.mp3", 0.4 + 0.35 * (i / pings.length), 1 + 0.3 * (i / pings.length)] as [number, string, number, number]),
+          ...keyOrder.map((e, i) => [landAt(e.x.row as number), "daily-brief-r2/audio/chime-crystal.mp3", 0.32, 1 + 0.06 * i] as [number, string, number, number]),
+          [T.hero, `${DIR}/audio/air-woosh-quick.mp3`, 0.3, 1],
+          [T.hero + 40, `${DIR}/audio/ui-message-pop.mp3`, 0.45, 1],
+          ...[T.hero + 7 + 48 + 1 + Math.round(((12.1 - 11.03) * FPS) / 1.25), T.hero + 7 + 48 + 1 + 58 + 1 + Math.round(((15.1 - 14.06) * FPS) / 1.25)].map((fr) => [fr, `${DIR}/audio/ui-message-pop.mp3`, 0.4, 1] as [number, string, number, number]),
+          ...[0, 1, 2, 3, 4, 5].map((i) => [T.stat + 14 + i * 4, "daily-brief-r2/audio/chime-crystal.mp3", 0.18, 1 + 0.05 * i] as [number, string, number, number]),
+          [T.end, "daily-brief-r2/audio/bass-hit-futuristic.mp3", 0.5, 1],
+          [BLOOM, `${DIR}/audio/shimmer-sparkle-sweep.mp3`, 0.3, 1],
+        ];
+        return (
+          <>
+            <Sequence from={MUSIC_AT} layout="none">
+              <Audio src={aud("cat-walk.mp3")} trimBefore={LIFT - (T.fly - MUSIC_AT)}
+                volume={(fr) => 0.55 * Math.min(1, fr / 3) * Math.min(1, Math.max(0, (FRAMES - MUSIC_AT - fr) / 40))} />
+            </Sequence>
+            {cues.map(([at, src, v, rate], i) => (
+              // the pings are cut off at the fall, so the quiet is really quiet
+              <Sequence key={i} from={at} layout="none" durationInFrames={src.includes("notify") ? Math.max(1, Math.min(16, T.noise - at)) : undefined}>
+                <Audio src={staticFile(src)} volume={() => v} playbackRate={rate} />
+              </Sequence>
+            ))}
+          </>
+        );
+      })()}
     </AbsoluteFill>
   );
 };
