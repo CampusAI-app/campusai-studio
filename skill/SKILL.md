@@ -55,6 +55,12 @@ three differences.
 
 The person decides; Claude never posts, and nothing is final until Jacob says so.
 
+**The one exception: trial reels (Jacob, 2026-11-09).** Ashley runs these herself, on her own Mac,
+with the `trial-reels` skill: she picks what to make and what goes out, and her Claude posts a
+trial reel only when she names the file and caption in the conversation. Nothing waits on Jacob.
+That skill also reads the numbers and keeps the Social playbook (Base note 79); read its Working
+list before pitching any CampusAI reel.
+
 ## Pick the lane
 
 Read this file, then the one lane file the request belongs to. A film can borrow from another

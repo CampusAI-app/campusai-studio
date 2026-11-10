@@ -1,0 +1,22 @@
+{
+  "note": "Public Instagram accounts the loop reads for ideas. Only business or creator accounts can be read; personal accounts go in watch_by_hand. Add a handle, it is picked up on the next run. Jacob 2026-11-09: weight student-run, in-person campus, AI and trends over corporate platforms.",
+  "groups": {
+    "UMD student life": ["thedbk", "barstoolumd", "umdhomecoming", "univofmaryland", "umdstudentaffairs", "umd_sga", "umdrecwell"],
+    "Student apps grown on campus": ["partiful", "joinsaturn", "bereal"],
+    "College culture and media": ["overheard", "hercampus", "betches", "theodysseyonline", "collegegameday"],
+    "AI": ["claudeai", "openai", "chatgpt", "googlegemini", "rowancheung", "theaifield"],
+    "Trend reports": ["creators"],
+    "UMD career": ["umdcareercenter", "umdsmithschool"],
+    "Career and study platforms (benchmark only)": ["joinhandshake", "simplify.jobs", "jobright.ai", "quizlet", "chegg", "notion", "glassdoor", "ratemyprofessors"]
+  },
+  "watch_by_hand": {
+    "note": "Student-run pages the API cannot read (personal accounts or renamed). Unverified that they are still active; from the Diamondback's 2021 meme-page roundup and a 2023 Terp article.",
+    "handles": ["umd_squirrels_", "umdbarbz", "benches_of_umd", "umdroaches", "umdswarbz"]
+  },
+  "trend_sources_outside_instagram": [
+    "Instagram @creators weekly Trend Report (read above through the API)",
+    "https://creatordb.app/free-tools/trending-instagram-audio/",
+    "https://www.heyorca.com/blog/trending-audio-for-reels-tiktok",
+    "https://www.socialpilot.co/blog/instagram-reels-trends"
+  ]
+}

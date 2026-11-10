@@ -21,6 +21,28 @@ fonts. The colors should be more red, but it shouldn't always just be a black ba
   in the style's own language on the style's own ground (stamped, flapped, printed), not on the shared dark card.
 - Product films, captures and chat recordings keep the product's own look; this note is about named styles.
 
+## Trial reels (11/09)
+Street-interview clips that hand off into the real product. Ashley picks what to make; the
+`trial-reels` skill says what is working (Base note 79) and posts when she says so.
+- **Web, never mobile.** "Dont use mobile, Use web instead." Show the WHOLE web page at frame width,
+  with parts lifting off it to be read. A column crop reads as a phone; a laptop push-in reads as
+  "showing it half at a time... makes the flow worse".
+- **Stay 9:16.** Trial reels only run as Reels; a horizontal video plays as a small strip.
+- **The bridge:** her words become a red tag that lands on the product. Not the student reacting.
+- **Captions copy our best reels:** question title on top with a red underline, white phrase
+  captions under the speaker.
+- **"All in one place" opens on the daily brief** ("everything brought together"), shows more of
+  Job Match and of why a job fits, and degree progress rather than semester credits or GPA.
+  Section names land big ("bigger and more aggressive").
+- **No Tailor resume reel yet** ("we dont have fully just yet").
+- **Craft rules from three cold reviews:** set cuts and captions from measured loudness (word
+  timestamps ran up to 0.8 s off and clipped words); never play a recorded `npm run flow` scroll
+  (it plays at about 6 fps), dissolve between states; the phrase-to-tag morph hides the caption the
+  same frame; no dead air under the product half (a soft Mixkit bed, never over the student).
+- **What the numbers say so far:** opening on a person holds (44 to 55% skip); opening on the
+  product or a feature loses most people in the first seconds (72 to 91% skip). The live version
+  is the playbook, not this line.
+
 ## The product on screen
 - Real dark-mode web captures of campusai-demo (or dev or main), never a mockup, never mobile
   (parked). It must look like the WEB product at phone size: a capture that "looks like mobile,
