@@ -222,7 +222,7 @@ format beats one described from scratch. Only when none fits does the order belo
 | References to learn from | The Studio page, https://campusai-motion-templates.vercel.app (What Ships launch films first for openings; Raylight for motion) |
 | Prompts behind good Opus-made films | `Design/prompts/opus-motion-films.md` |
 | Every rule Jacob has given on CampusAI | `rules/campusai.md` |
-| What Jacob has favorited (Jacob's Mac only; read before pitching; favorites lead the structure options) | Base's `library_favorites` table, rows with `card_id` starting `studio:` (`studio:kit/Pass-<Name>.mp4`, `studio:graphics/<name>.jpg`, `studio:kit:<kit part>`, `studio:film:<reference film>`), `fav` true. Read with the Supabase connector on project `cjpcvveochjcgyexyyvr`. |
+| What the team has starred (read before pitching; favorites lead the structure options) | The star on any part of the Studio site (campusai-studio.vercel.app, also Base's Studio tab). Since 2026-11-10 each person stars their own and everyone sees everyone's: Base's `studio_stars` table, one row per person (`person_id`) per site part (`item_id`, e.g. `kit-orbit`). Jacob's Mac reads it with the Supabase connector on project `cjpcvveochjcgyexyyvr`; Jacob's own stars lead. The older `library_favorites` rows starting `studio:` are frozen. |
 
 **Other skills, and when (they never override this file):**
 - `remotion-best-practices`: Remotion API questions only. Ignore its "creating a video" route.
