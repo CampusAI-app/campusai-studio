@@ -57,6 +57,9 @@ Street-interview clips that hand off into the real product. Ashley picks what to
   is just sometimes kept off the product itself, so ask before putting it on a product screen.
   11/10, Jacob: "Don't worry about UMD imagery in videos." Use it freely in films (campus photos, the M, real UMD
   senders like ELMS-Canvas and Careers4Terps); no need to ask. Wikimedia photos still carry their on-screen credit.
+- **Capture fresh from the current demo for every film (11/16).** Captures already in `public/` go stale when a page is
+  redesigned: the Goldman film used the Oct 23 Events page after Events was rebuilt. Before using a stored capture,
+  open the live page and compare; if it changed, capture again.
 - Every press shows where its result lands. Show, never label ("Missed" was cut).
 - Capture from EMPTY: a picker starts empty and gets filled by typing or a tapped suggestion,
   never pre-filled then X'd out (10/21).
@@ -70,6 +73,10 @@ Street-interview clips that hand off into the real product. Ashley picks what to
   the film never claims it.
 
 ## Opening and ending
+- **Every video opens student-first, at Maryland (11/16, Jacob: "it should be student-centric and Maryland-beginning.
+  I think all of our videos should have that").** The first line is a UMD student in their own words: who they are and
+  what they are after ("Junior at Maryland. Finance. Where do I even start?"), then the product answers. Never open on
+  a company name or a feature. Product films keep the dark product ground below, never a paper or grid look.
 - Logo near the start and always at the end (10/22). Earlier: "any cut gets a short logo
   intro" (10/16) and "logo at 0.5 s with the watermark held top-left" (Job Match, 09/16).
 - The hook is in the first 0.5 s; the opening is never slow (10/21).
