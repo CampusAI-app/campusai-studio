@@ -77,3 +77,8 @@ export { GlowFocus } from "./GlowFocus";
 export type { GlowFocusProps, GlowSpot } from "./GlowFocus";
 export { PixelBurst } from "./PixelBurst";
 export type { PixelBurstProps } from "./PixelBurst";
+
+// From Claudian's Fable 5.2 résumé film (2026-11-16, films/claudian-checklist/facts.md): a card folds into a paper plane
+// and lands where its result goes. Worked example: src/claudianchecklist/ (ClaudianChecklist-9x16).
+export { FoldAway, foldAwayTimes, FOLD } from "./FoldAway";
+export type { FoldAwayProps } from "./FoldAway";

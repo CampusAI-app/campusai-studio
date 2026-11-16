@@ -33,21 +33,31 @@ export type ChecklistItem = {
   /** Push-in on the card while the item plays: how far, and toward which point of the crop (0 to 1). */
   zoom?: number;
   focus?: { x: number; y: number };
+  /** Frames this item plays; default is `perItem`, then the reading rule on its name. */
+  frames?: number;
+  /** Frames into the item when its tick lands (the moment that proves it); default is when the next item starts. */
+  tickAt?: number;
+  /** Draws the card instead of the pushed-in crop (a press, a swap, a fold). `shot` still sets the card's size. */
+  card?: React.FC<{ local: number; width: number; height: number }>;
 };
 
 export type ChecklistProps = {
   heading: { count: string; rest: string; italic?: string };
+  /** Replaces the heading block (keep the logo in it, so it still lands inside two seconds). */
+  headingNode?: React.ReactNode;
   items: ChecklistItem[];
   /** Frames per item; default is the reading rule on each name. */
   perItem?: number;
   sound?: boolean;
+  /** Which top corner of the card the 01/04 counter sits in; default left. */
+  counter?: "left" | "right";
 };
 
 const END = 48; // logo hold after the last tick: 1.6 s
 const BLUR_OUT = 3; // the reel blurs the card out over 3 frames before a cut
 
 export const checklistTimes = (p: ChecklistProps) => {
-  const lens = p.items.map((it) => p.perItem ?? readFrames(it.name));
+  const lens = p.items.map((it) => it.frames ?? p.perItem ?? readFrames(it.name));
   const starts: number[] = [];
   lens.reduce((acc, l) => (starts.push(acc), acc + l), 0);
   const end = starts[starts.length - 1] + lens[lens.length - 1];
@@ -113,6 +123,7 @@ export const Checklist: React.FC<ChecklistProps> = (p) => {
       <AbsoluteFill style={{ background: "radial-gradient(ellipse 70% 55% at 50% 48%, rgba(255,250,248,0.55), rgba(255,250,248,0) 70%)" }} />
 
       {/* heading: on screen from frame 0, the logo inside it */}
+      {p.headingNode ? <div style={{ position: "absolute", top, left: 0, width }}>{p.headingNode}</div> : (
       <div style={{ position: "absolute", top, left: 0, width, textAlign: "center" }}>
         <div style={{ fontSize: 96, fontWeight: 800, letterSpacing: "-0.035em", lineHeight: 1 }}>
           <span style={{ color: RED }}>{p.heading.count}</span> {p.heading.rest}
@@ -122,6 +133,7 @@ export const Checklist: React.FC<ChecklistProps> = (p) => {
           <Img src={staticFile(B.logo!.onLight)} style={{ height: 66, width: "auto", marginTop: 8 }} />
         </div>
       </div>
+      )}
 
       {/* the list */}
       <div style={{ position: "absolute", left: (width - listW) / 2, top: listTop, width: listW, display: "grid",
@@ -129,6 +141,8 @@ export const Checklist: React.FC<ChecklistProps> = (p) => {
         {p.items.map((it, i) => {
           const isCur = i === cur;
           const done = i < cur;
+          const tickAt = it.tickAt !== undefined ? starts[i] + it.tickAt : i + 1 < n ? starts[i + 1] : end;
+          const ticked = f >= tickAt;
           const grow = isCur ? k(f, starts[i], starts[i] + 3) : 0;
           const leave = i === n - 1 ? 1 - k(f, end, end + 6) : 1;
           return (
@@ -140,7 +154,7 @@ export const Checklist: React.FC<ChecklistProps> = (p) => {
               <span style={{ position: "relative", width: 84, fontWeight: 700, fontVariantNumeric: "tabular-nums",
                 color: isCur ? RED : INK, opacity: isCur ? 1 : done ? 0.45 : 0.22 }}>{pad(i + 1)}</span>
               <span style={{ position: "relative", fontWeight: isCur ? 800 : 600, letterSpacing: "-0.02em", opacity: isCur || done ? 1 : 0.3 }}>{it.name}</span>
-              {done ? <Tick at={i + 1 < n ? starts[i + 1] : end} size={twoCols ? 32 : 40} /> : null}
+              {done || ticked ? <Tick at={tickAt} size={twoCols ? 32 : 40} /> : null}
             </div>
           );
         })}
@@ -151,10 +165,12 @@ export const Checklist: React.FC<ChecklistProps> = (p) => {
         opacity: 1 - fold, transform: `scale(${(1 - 0.14 * fold).toFixed(4)})`, filter: `blur(${(fold * 14).toFixed(2)}px)` }}>
         <div style={{ position: "absolute", inset: 0, borderRadius: 30, boxShadow: "0 40px 90px rgba(90, 10, 18, 0.32), 0 6px 18px rgba(90, 10, 18, 0.18)" }} />
         <div style={{ position: "absolute", inset: 0, filter: blurOut > 0.05 ? `blur(${blurOut.toFixed(2)}px)` : undefined }}>
-          <Shot shot={item.shot} width={cardW} radius={30} zoom={zoom} focus={item.focus} style={{ height: cardH }} />
+          {item.card ? <item.card local={local} width={cardW} height={cardH} /> : (
+            <Shot shot={item.shot} width={cardW} radius={30} zoom={zoom} focus={item.focus} style={{ height: cardH }} />
+          )}
         </div>
         {/* counter, inside the card's corner */}
-        <div style={{ position: "absolute", left: 26, top: 24, padding: "8px 16px", borderRadius: 999, background: "rgba(42, 11, 14, 0.82)",
+        <div style={{ position: "absolute", [p.counter === "right" ? "right" : "left"]: 26, top: 24, padding: "8px 16px", borderRadius: 999, background: "rgba(42, 11, 14, 0.82)",
           color: "#FFF4F2", fontWeight: 700, fontSize: 28, fontVariantNumeric: "tabular-nums", letterSpacing: "-0.01em" }}>
           {pad(Math.min(cur, n - 1) + 1)}/{pad(n)}
         </div>
