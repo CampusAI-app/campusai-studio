@@ -51,6 +51,10 @@ export type ChecklistProps = {
   sound?: boolean;
   /** Which top corner of the card the 01/04 counter sits in; default left. */
   counter?: "left" | "right";
+  /** Width of the list block in px, for longer row names; default 700 (960 in two columns). */
+  listWidth?: number;
+  /** Tighter or looser vertical layout, for a taller card. Every field defaults to the layout above. */
+  layout?: { top?: number; headingHeight?: number; rowHeight?: number; rowSize?: number; gap?: number };
 };
 
 const END = 48; // logo hold after the last tick: 1.6 s
@@ -90,13 +94,17 @@ export const Checklist: React.FC<ChecklistProps> = (p) => {
   // layout, 1080 x 1920; the block is centred inside the Reels safe area
   const twoCols = n > 6;
   const perCol = twoCols ? Math.ceil(n / 2) : n;
-  const rowH = twoCols ? 62 : 80;
-  const listW = twoCols ? 960 : 700;
+  const L = p.layout ?? {};
+  const rowH = L.rowHeight ?? (twoCols ? 62 : 80);
+  const rowSize = L.rowSize ?? (twoCols ? 40 : 50);
+  const headH = L.headingHeight ?? 280;
+  const listGap = L.gap ?? 70;
+  const listW = p.listWidth ?? (twoCols ? 960 : 700);
   const cardW = 1000;
   const cardH = Math.max(...p.items.map((it) => shotHeight(it.shot, cardW)));
-  const top = Math.round((height - (230 + 50 + perCol * rowH + 70 + cardH + 150)) / 2) - 40;
-  const listTop = top + 280;
-  const cardTop = listTop + perCol * rowH + 70;
+  const top = L.top ?? Math.round((height - (headH + perCol * rowH + listGap + cardH + 150)) / 2) - 40;
+  const listTop = top + headH;
+  const cardTop = listTop + perCol * rowH + listGap;
   const cardCx = width / 2;
 
   const item = p.items[Math.min(cur, n - 1)];
@@ -146,15 +154,15 @@ export const Checklist: React.FC<ChecklistProps> = (p) => {
           const grow = isCur ? k(f, starts[i], starts[i] + 3) : 0;
           const leave = i === n - 1 ? 1 - k(f, end, end + 6) : 1;
           return (
-            <div key={i} style={{ position: "relative", display: "flex", alignItems: "center", fontSize: twoCols ? 40 : 50 }}>
+            <div key={i} style={{ position: "relative", display: "flex", alignItems: "center", fontSize: rowSize }}>
               {isCur || (i === n - 1 && f >= end) ? (
                 <div style={{ position: "absolute", left: -18, top: 6, bottom: 6, width: `calc(${(88 + 12 * grow).toFixed(2)}% + 18px)`,
                   borderRadius: 12, border: `3px solid ${RED}`, background: "rgba(217, 32, 46, 0.09)", opacity: leave }} />
               ) : null}
-              <span style={{ position: "relative", width: 84, fontWeight: 700, fontVariantNumeric: "tabular-nums",
+              <span style={{ position: "relative", width: L.rowSize ? Math.round(rowSize * 1.68) : 84, fontWeight: 700, fontVariantNumeric: "tabular-nums",
                 color: isCur ? RED : INK, opacity: isCur ? 1 : done ? 0.45 : 0.22 }}>{pad(i + 1)}</span>
               <span style={{ position: "relative", fontWeight: isCur ? 800 : 600, letterSpacing: "-0.02em", opacity: isCur || done ? 1 : 0.3 }}>{it.name}</span>
-              {done || ticked ? <Tick at={tickAt} size={twoCols ? 32 : 40} /> : null}
+              {done || ticked ? <Tick at={tickAt} size={Math.round(rowSize * 0.8)} /> : null}
             </div>
           );
         })}
