@@ -25,3 +25,48 @@ export type { DigitalZoomProps, ZoomStep } from "./DigitalZoom";
 export { Vertigo } from "./Vertigo";
 export type { VertigoProps } from "./Vertigo";
 export type { Capture, Crop } from "./shared";
+
+// From Skill Stack Store's "20 Claude Effects in 20 Secs" (2026-11-15, Muse, Base 1056). Our own builds from the reel,
+// watched frame by frame (films/effects-skillstack/facts.md); the paid skill was never bought or seen. Person effects take
+// `clip` and the cutout `person` (or `matte`). Tested on footage that stays on Jacob's Mac, so no sample is in the repo.
+export { InkScreen, framedStyle, framedPoint } from "./InkScreen";
+export type { InkScreenProps, Framing } from "./InkScreen";
+export { grabFrame, framingOf, drawFramed } from "./frameGrab";
+export { PressFont, PressPage } from "./PressFont";
+export type { PressFontProps, PressPageProps } from "./PressFont";
+export { ImpactFrame } from "./ImpactFrame";
+export type { ImpactFrameProps } from "./ImpactFrame";
+export { BankNote } from "./BankNote";
+export type { BankNoteProps } from "./BankNote";
+export { LetterDive } from "./LetterDive";
+export type { LetterDiveProps } from "./LetterDive";
+export { PaperTear } from "./PaperTear";
+export type { PaperTearProps } from "./PaperTear";
+export { LayerExplode } from "./LayerExplode";
+export type { LayerExplodeProps } from "./LayerExplode";
+export { CloneRow } from "./CloneRow";
+export type { CloneRowProps, ClonePair } from "./CloneRow";
+export { DayDial } from "./DayDial";
+export type { DayDialProps } from "./DayDial";
+export { CodeBody } from "./CodeBody";
+export type { CodeBodyProps } from "./CodeBody";
+export { PostWall } from "./PostWall";
+export type { PostWallProps } from "./PostWall";
+export { SketchWords } from "./SketchWords";
+export type { SketchWordsProps } from "./SketchWords";
+export { HeadStack } from "./HeadStack";
+export type { HeadStackProps } from "./HeadStack";
+export { BlowAway } from "./BlowAway";
+export type { BlowAwayProps } from "./BlowAway";
+export { LiveCursor } from "./LiveCursor";
+export type { LiveCursorProps } from "./LiveCursor";
+export { CommentDrop } from "./CommentDrop";
+export type { CommentDropProps, CaptionWord } from "./CommentDrop";
+export { BladeSlice } from "./BladeSlice";
+export type { BladeSliceProps } from "./BladeSlice";
+export { PredictKeys } from "./PredictKeys";
+export type { PredictKeysProps } from "./PredictKeys";
+export { RackFocus } from "./RackFocus";
+export type { RackFocusProps, FocusTarget } from "./RackFocus";
+export { VoiceNote } from "./VoiceNote";
+export type { VoiceNoteProps } from "./VoiceNote";

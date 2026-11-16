@@ -63,6 +63,52 @@ frame. They were tested on Connyct footage that stays on Jacob's Mac, so there i
 - **Vertigo** (`Vertigo`): the background becomes a thin blue line corridor that stretches while the person holds the
   same size, landing on the line that matters.
 
+## Effects from Skill Stack Store (2026-11-15)
+From the TikTok "20 Claude Effects in 20 Secs" (tiktok.com/@skill.stack.store/video/7708204558081690911, Muse, Base
+1056), stepped frame by frame; it sells a paid skill we never bought or saw, so all 19 are our own builds from the reel.
+Facts and timings: `films/effects-skillstack/facts.md`. We already owned two of its 21 (orbit ring is close to `Orbit`,
+dolly zoom is `Vertigo`). All are in the kit (`import { PressFont, ... } from "../kit"`), each taking its content as props,
+person effects taking `clip` plus the cutout `person` and/or `matte`. Words on screen come from the clip's
+`captions.json`, never made up. Tested on footage that stays on Jacob's Mac, so there is no sample in the repo.
+Frame takeovers (the page or picture becomes something else):
+- **Press font** (`PressFont`, `PressPage`): hard cut to a cream front page, blackletter masthead, serif caps headline,
+  italic deck, the live footage printed as a 45 degree halftone. ~1.4 s; the headline settles in 3 frames.
+- **Impact frame** (`ImpactFrame`): 2 inverted flash frames, then a posterised two-tone portrait with screentone and
+  manga speed lines redrawn every 2 frames, a huge condensed word slamming in at the bottom, shake 18 px settling to 3.
+- **Bank note** (`BankNote`): a green engraved note lands in 6 frames, the live portrait as line engraving in the oval,
+  a serif number counting up to land on the spoken number.
+- **Letter dive** (`LetterDive`): hard cut to cream, a word types on one letter every ~2.4 frames with the footage only
+  through the letters, 14 frame push, then a 5 frame dive into one stroke back to the footage.
+- **Paper tear** (`PaperTear`): rips any page open as a V in 6 frames with fibre edges, halves gone within 9 more.
+- **Layer explode** (`LayerExplode`): punch out to 62%, the frame turns 28 degrees and splits into five glass planes
+  (ground, footage, cutout, title, a waveform from the real audio), then snaps flat in 5 frames.
+- Shared engine: `InkScreen` (halftone, engraving, threshold; SVG filters, renders headless).
+On and around the person:
+- **Clone row** (`CloneRow`): darker copies fan out behind him in pairs every 9 frames, a few frames behind his motion.
+- **Day dial** (`DayDial`): a cream clock disc rolls in behind him over 16 frames, days in italic, turns on the spoken day.
+- **Code body** (`CodeBody`): his silhouette redrawn as code characters in Geist (proportional, centred in a grid; no
+  monospace), colours from the footage inside the matte, grid 90 to 14 px in 3 frame steps. Decodes frames itself with
+  mediabunny (`frameGrab`) so the render is deterministic.
+- **Post wall** (`PostWall`): square tiles drop in row by row, 2 frames a row, then drift up. Tiles are props.
+- **Sketch words** (`SketchWords`): background to cream paper, the word's real outline draws itself over 22 frames,
+  a second wobbly pass, then a gold swoosh.
+- **Head stack** (`HeadStack`): paper tags land beside the head on each phrase, then flick up in 8 frames.
+- **Blow away** (`BlowAway`): he breaks into 3 px dust left to right over 30 frames. There is never a clean plate in
+  our footage, so it reveals a `ground` prop (b-roll or another shot). Film two seconds of the empty set on the day
+  for the reel's exact look.
+Overlays and cuts:
+- **Live cursor** (`LiveCursor`): a named cursor glides in on a curve, drags a gold selection box round the person,
+  handles pop, a size badge lands.
+- **Comment drop** (`CommentDrop`): each spoken phrase drops in as a white pill (6 frame fall, spring), words lit as said.
+- **Blade slice** (`BladeSlice`): a streak crosses in 3 frames at 25 degrees, the halves shear 100 px along the cut,
+  hold 7 frames, heal in 7.
+- **Predict keys** (`PredictKeys`): a phone keyboard we draw types the spoken words, the suggestion bar guessing from
+  the captions, send on each sentence end.
+- **Rack focus** (`RackFocus`): matte-separated focus pulls (room 26 px blur, person 20 px, 14 frames each). Made
+  stronger than the reel's, which was too subtle to read on a phone.
+- **Voice note** (`VoiceNote`): ours from the name only (the reel shows nothing for it): a chat voice-note bubble with a
+  waveform from the clip's real audio, the play head moving with the speech, a transcript lit word by word.
+
 ## When the product appears beside the person
 It follows the product-films lane: real capture only, frameless or the real device, captions
 still below the product.
