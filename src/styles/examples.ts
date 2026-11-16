@@ -952,3 +952,84 @@ export const SPIN_WHEEL: SpinWheelProps = {
   "source": "The CampusAI demo's events, for its sample student.",
   "cta": "Ask CampusAI anything."
 };
+
+// 11/15: three Bloop templates (bloop.wtf, via Muse) rebuilt as our own, on real demo captures; facts in films/bloop-styles/facts.md
+import type { PerspectiveFloorProps } from "./PerspectiveFloor";
+import type { SpiralScatterProps } from "./SpiralScatter";
+import type { FanShuffleProps } from "./FanShuffle";
+
+const PAGE = { w: 2880, h: 1800 };
+const page = (name: string, label: string) => ({ src: `pass/${name}.jpg`, image: PAGE, crop: { x: 0, y: 0, w: 2880, h: 1800 }, label });
+
+export const PERSPECTIVE_FLOOR: PerspectiveFloorProps = {
+  headline: "Everything you check, in one place.",
+  cards: [
+    page("dashboard", "Dashboard"),
+    page("calendar", "My Calendar"),
+    page("jobmatch", "Job Match"),
+    page("events", "Events"),
+    page("organizations", "Organizations"),
+    page("planner", "Planner & Progress"),
+    page("notifications", "Notifications"),
+  ],
+  source: "The CampusAI demo, Oct 23.",
+  cta: "It's all in CampusAI.",
+  direction: "forward",
+  cameraAngle: 58,
+  depth: 0.72,
+  vertical: 0.8,
+  gap: 0.04,
+  stepSeconds: 1.4,
+  speed: 1,
+  easing: "sharp",
+  visible: 12,
+};
+
+// the club cards on pass/organizations-tall.jpg (page px x 2), the covered first row left out
+const ORGS = { w: 2880, h: 4540 };
+const org = (x: number, y: number, h = 224) => ({ src: "pass/organizations-tall.jpg", image: ORGS, crop: { x: x * 2, y: y * 2, w: 379 * 2, h: h * 2 } });
+
+export const SPIRAL_SCATTER: SpiralScatterProps = {
+  headline: "Clubs picked for you, with why each one fits.",
+  cards: [
+    org(248, 1107), org(639, 1107), org(1029, 1107), org(248, 1343), org(248, 1718),
+    org(639, 1718), org(1029, 1718), org(248, 1955, 208), org(639, 1955, 208), org(1029, 1955, 208),
+  ],
+  hero: { src: "pass/organizations.jpg", image: PAGE, crop: { x: 776, y: 260, w: 1760, h: 928 } },
+  source: "The CampusAI demo, Organizations, Oct 23.",
+  cta: "See yours in CampusAI.",
+  direction: "up",
+  width: 0.7,
+  widthEnd: 2.1,
+  density: 1.1,
+  turns: 2,
+  curve: "inward",
+  tilt: 10,
+  jitter: 6,
+  stepSeconds: 0.8,
+  speed: 1,
+  easing: "sharp",
+};
+
+// the job cards on pass/jobmatch-tall.jpg (page px x 2), Best match order; Uline left out (the chat bar covers it)
+const JOBS = { w: 2880, h: 7200 };
+const job = (y: number, h: number) => ({ src: "pass/jobmatch-tall.jpg", image: JOBS, crop: { x: 269 * 2, y: y * 2, w: 436 * 2, h: h * 2 } });
+
+export const FAN_SHUFFLE: FanShuffleProps = {
+  headline: "22 open roles.\nBest match first.",
+  cards: [
+    job(214, 158), job(382, 195), job(586, 170), job(928, 132), job(1070, 170), job(1249, 152), job(1411, 170),
+    job(1591, 152), job(1753, 140), job(1903, 172), job(2085, 172), job(2267, 190), job(2467, 170),
+  ],
+  source: "The CampusAI demo, Job Match, Oct 23.",
+  cta: "See yours in CampusAI.",
+  deckCards: 6,
+  fanSpread: 0.078,
+  fanAngle: -47,
+  columns: 3,
+  cardGap: 0.025,
+  rowShift: 0.77,
+  pullBack: 0.8,
+  speed: 1,
+  bezier: [0.65, 0, 0.35, 1],
+};

@@ -54,6 +54,10 @@ import { Countdown, countdownEnd } from "./Countdown";
 import { PhotoPile, photoPileEnd } from "./PhotoPile";
 import { Basket, basketEnd } from "./Basket";
 import { SpinWheel, spinWheelEnd } from "./SpinWheel";
+import { FAN_SHUFFLE, PERSPECTIVE_FLOOR, SPIRAL_SCATTER } from "./examples";
+import { PerspectiveFloor, floorEnd } from "./PerspectiveFloor";
+import { SpiralScatter, spiralEnd } from "./SpiralScatter";
+import { FanShuffle, fanEnd } from "./FanShuffle";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: (p: any) => number }[] = [
@@ -108,6 +112,10 @@ const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: 
   { id: "Style-PhotoPile", c: PhotoPile, props: PHOTO_PILE, frames: 0, dur: (p) => photoPileEnd(p) + END_FRAMES + 12 },
   { id: "Style-Basket", c: Basket, props: BASKET, frames: 0, dur: (p) => basketEnd(p) + END_FRAMES + 12 },
   { id: "Style-SpinWheel", c: SpinWheel, props: SPIN_WHEEL, frames: 0, dur: (p) => spinWheelEnd(p) + END_FRAMES + 12 },
+  // 11/15: three Bloop templates (bloop.wtf, via Muse), our own builds on real captures
+  { id: "Style-PerspectiveFloor", c: PerspectiveFloor, props: PERSPECTIVE_FLOOR, frames: 0, dur: (p) => floorEnd(p) + END_FRAMES + 12 },
+  { id: "Style-SpiralScatter", c: SpiralScatter, props: SPIRAL_SCATTER, frames: 0, dur: (p) => spiralEnd(p) + END_FRAMES + 12 },
+  { id: "Style-FanShuffle", c: FanShuffle, props: FAN_SHUFFLE, frames: 0, dur: (p) => fanEnd(p) + END_FRAMES + 12 },
 ];
 
 const sized = (dur?: (p: any) => number): CalculateMetadataFunction<any> => ({ props }) => ({
