@@ -58,6 +58,8 @@ import { FAN_SHUFFLE, PERSPECTIVE_FLOOR, SPIRAL_SCATTER } from "./examples";
 import { PerspectiveFloor, floorEnd } from "./PerspectiveFloor";
 import { SpiralScatter, spiralEnd } from "./SpiralScatter";
 import { FanShuffle, fanEnd } from "./FanShuffle";
+import { CARD_DROP } from "./examples";
+import { CardDrop, dropEnd } from "./CardDrop";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: (p: any) => number }[] = [
@@ -116,6 +118,8 @@ const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: 
   { id: "Style-PerspectiveFloor", c: PerspectiveFloor, props: PERSPECTIVE_FLOOR, frames: 0, dur: (p) => floorEnd(p) + END_FRAMES + 12 },
   { id: "Style-SpiralScatter", c: SpiralScatter, props: SPIRAL_SCATTER, frames: 0, dur: (p) => spiralEnd(p) + END_FRAMES + 12 },
   { id: "Style-FanShuffle", c: FanShuffle, props: FAN_SHUFFLE, frames: 0, dur: (p) => fanEnd(p) + END_FRAMES + 12 },
+  // 11/16: the Nov 15 React Rapier trial (Jacob approved Nov 16); WebGL, so render with --gl=angle
+  { id: "Style-CardDrop", c: CardDrop, props: CARD_DROP, frames: 0, dur: (p) => dropEnd(p) + END_FRAMES + 12 },
 ];
 
 const sized = (dur?: (p: any) => number): CalculateMetadataFunction<any> => ({ props }) => ({

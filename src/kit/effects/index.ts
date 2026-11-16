@@ -70,3 +70,10 @@ export { RackFocus } from "./RackFocus";
 export type { RackFocusProps, FocusTarget } from "./RackFocus";
 export { VoiceNote } from "./VoiceNote";
 export type { VoiceNoteProps } from "./VoiceNote";
+
+// From the Nov 15 trials of React Postprocessing and PixelFX (Muse), ported Nov 16 after Jacob approved them.
+// Samples: Effect-GlowFocus and Effect-PixelBurst in samples.tsx, on captures in public/sys/ (local, not in the repo).
+export { GlowFocus } from "./GlowFocus";
+export type { GlowFocusProps, GlowSpot } from "./GlowFocus";
+export { PixelBurst } from "./PixelBurst";
+export type { PixelBurstProps } from "./PixelBurst";

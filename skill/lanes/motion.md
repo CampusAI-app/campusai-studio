@@ -83,6 +83,7 @@ To make one:
 | `/perspective-floor` | Real pages lie single file on an oxblood floor running to a coral dusk horizon, and the file steps toward the camera one page at a time while the front page's own name sits in the sky | A short headline, 4 to 8 real page captures each with its sidebar name, a source | Every page is a real capture and every name is the product's own label. Leave Resume Review out unless the capture is checked for Sandy Spring (Bloop, via Muse, Nov 15) |
 | `/spiral-scatter` | Real cards ride a leaning helix over rose silk, near ones big and sharp, far ones soft, climbing a slot at a time, then the spiral opens until they scatter and the one card that matters rises | A headline in the page's words, 6 to 12 real card crops, one hero crop, a source | Every card is a real crop, none covered by the chat bar. The hero is the page's own top card (Bloop, via Muse, Nov 15) |
 | `/fan-shuffle` | One real card on red baize, the deck behind it fans out like a dealer's spread and gathers, then the table becomes a wall of real cards whose rows slide past each other as the camera pulls back | A one or two line headline with a true count, the hero card and 8 to 14 more in the page's own order, a source | Every card is a real crop in the page's order. The count is the page's own (Bloop, via Muse, Nov 15) |
+| `/card-drop` | Real cards fall one by one as physics bodies under a crimson pool of light and pile up, the one that matters lands on top, and the camera pushes in and squares up on it | A one or two line headline, 3 to 8 real card crops, the hero crop (often the same card after the press), a source. Render with `--gl=angle` | Every card is a real crop with the page's own corners. The fall is Rapier, baked on a fixed timestep, so the same props always make the same pile (via Muse, Nov 15 trial, Jacob approved Nov 16) |
 
 **Rebuilt the same day as twenty different worlds (Jacob 11/08: "these still look pretty similar", "the fonts and the
 backgrounds are also all the same"; rule in `rules/campusai.md`).** The first build put every style inside the shared
@@ -119,6 +120,7 @@ a ground and a face no other style uses. Current set:
 | Photo Pile | tomato paper with grain, instant photo frames | Schibsted Grotesk |
 | Basket | bubblegum pink, red wire basket | Young Serif, Gabarito |
 | Spin Wheel | oxblood game-show stage, marquee bulbs, chrome | Lilita One, Figtree |
+| Card Drop | crimson pool of light on a dark floor, real shadows | Urbanist |
 
 **Batch 1 of the "30 Claude animations" reel (2026-11-08, Gian Angioletti through Muse, "I want all of these added to our
 video creation"; his prompts were gated and never seen, so these are our own builds of the names).** Type and number looks
@@ -158,6 +160,15 @@ pieces so anyone on the team can pose them.
 **Effects from @mrcreates.ai (2026-11-10): Checklist, Glass type, Cover story, UI world** are kit parts, not named
 styles (`import { Checklist, GlassType, CoverStory, UIWorld } from "../kit"`). What each looks like and its measured
 timing: `lanes/talking-heads.md`, "Effects from @mrcreates.ai".
+
+**Effects from the Nov 15 repo trials (React Postprocessing, PixelFX), ported Nov 16** are kit parts too
+(`import { GlowFocus, PixelBurst } from "../kit"`). Samples: `Effect-GlowFocus` and `Effect-PixelBurst` from
+`src/kit/effects/entry.ts` (GlowFocus is WebGL: render with `--gl=angle`).
+
+| Use | What it shows | What it needs | Keep it honest |
+|---|---|---|---|
+| `GlowFocus` | A real capture tilted in 3D, the camera pushing in onto one card while the page dims under grain and a vignette, and chosen spots glowing in turn with a real bloom, then the page swaps to the after-capture and the new state glows | A capture, its after-capture from the same camera, the focus box and each glow's box and frames, all in capture pixels | Both pages are real captures. Only light what is already on the page (via Muse, Nov 15 trial, Jacob approved Nov 16) |
+| `PixelBurst` | A PixelFX pixel-art effect played over a capture at one point, such as crimson confetti off the button just pressed | A sprite sheet and its JSON in `public/pixelfx/` (the header of `PixelBurst.tsx` says how to render another effect or palette), the point, the start frame | Pinned to a real press on a real capture. PixelFX is MIT; its licence ships beside the sheets (via Muse, Nov 15 trial, Jacob approved Nov 16) |
 
 ## Generated images, for looks code cannot draw (2026-11-05)
 From the Nov 5 Muse sends (Tobi's soft 3D and painterly reels; the CGI, cinematic, toy brick and PS2 looks in "10 Claude

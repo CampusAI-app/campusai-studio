@@ -1033,3 +1033,26 @@ export const FAN_SHUFFLE: FanShuffleProps = {
   speed: 1,
   bezier: [0.65, 0, 0.35, 1],
 };
+
+// 11/16: /card-drop, the Nov 15 React Rapier trial (Jacob approved Nov 16), on campusai-demo /events (sys/cal-*: page px x 2).
+// The Goldman and Smith Investment Fund cards are cut to their top half: the chat bar covers the rest on the capture.
+import type { CardDropProps } from "./CardDrop";
+
+const EVENTS_PAGE = { w: 2880, h: 1800 };
+const eventCard = (src: string, x: number, y: number, h = 420) => ({ src, image: EVENTS_PAGE, crop: { x, y, w: 1148, h } });
+
+export const CARD_DROP: CardDropProps = {
+  headline: "Six events.\nYou added this one.",
+  cards: [
+    eventCard("sys/cal-0-events.jpg", 1668, 894), // Smith Fall Career & Internship Fair
+    eventCard("sys/cal-0-events.jpg", 496, 1336, 212), // Goldman Sachs, Investment Banking Info Session
+    eventCard("sys/cal-0-events.jpg", 496, 450), // Evercore Coffee Chat
+    eventCard("sys/cal-0-events.jpg", 1668, 1336, 212), // Smith Investment Fund, Stock Pitch Competition
+    eventCard("sys/cal-0-events.jpg", 496, 894), // Smith Finance Group Stock Pitch Night
+  ],
+  hero: eventCard("sys/cal-3-added.jpg", 1668, 450), // Financial Modeling Bootcamp, after Add: On your calendar
+  source: "The CampusAI demo, Events, Oct 23.",
+  cta: "See yours in CampusAI.",
+  every: 9.5,
+  radius: 24,
+};

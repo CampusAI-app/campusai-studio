@@ -18,6 +18,8 @@ public/**/*.wav
 public/**/*.mp3
 public/**/*.m4a
 public/**/*.zip
+# PixelBurst's sprite sheets ship with the repo (PixelFX, MIT, licence beside them)
+!public/pixelfx/*.png
 # Loose check stills saved at the studio root (named by frame number)
 /[0-9]*
 
