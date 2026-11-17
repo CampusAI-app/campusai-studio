@@ -329,7 +329,7 @@ const EmailDraft: React.FC<{ email: NonNullable<PovDoodleProps["email"]>; notes:
 };
 
 /** McKeldin Library, drawn as a facade: the portico, its pediment, the drum and dome with its lantern. */
-const McKeldin: React.FC<{ w: number; ink: string }> = ({ w, ink }) => {
+export const McKeldin: React.FC<{ w: number; ink: string }> = ({ w, ink }) => {
   const line = { fill: "none", stroke: ink, strokeWidth: 5, strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
   const windows = [40, 100, 160, 540, 600, 660].flatMap((x) => [330, 410].map((y) => <rect key={`${x}-${y}`} x={x - 18} y={y} width={36} height={50} rx={4} {...line} />));
   return (

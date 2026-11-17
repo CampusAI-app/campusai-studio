@@ -60,6 +60,8 @@ import { SpiralScatter, spiralEnd } from "./SpiralScatter";
 import { FanShuffle, fanEnd } from "./FanShuffle";
 import { CARD_DROP } from "./examples";
 import { CardDrop, dropEnd } from "./CardDrop";
+import { STICK_STORY } from "./examples";
+import { StickStory, stickEnd } from "./StickStory";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: (p: any) => number }[] = [
@@ -96,6 +98,8 @@ const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: 
   { id: "Style-DeepTime", c: DeepTime, props: DEEP_TIME, frames: 0, dur: (p) => deepEnd(p) + END_FRAMES + 12 },
   { id: "Style-Hologram", c: Hologram, props: HOLOGRAM, frames: 0, dur: (p) => hologramEnd(p) + END_FRAMES + 12 },
   { id: "Style-InkDoodle", c: InkDoodle, props: INK_DOODLE, frames: 0, dur: (p) => doodleEnd(p) + END_FRAMES + 12 },
+  // Shaan Johari's stick figure story look (11/16, Muse): one drawn scene, things blow in, a phone answers them
+  { id: "Style-StickStory", c: StickStory, props: STICK_STORY, frames: 0, dur: (p) => stickEnd(p) + END_FRAMES + 12 },
   { id: "Style-IsoFlow", c: IsoFlow, props: ISO_FLOW, frames: 0, dur: (p) => isoEnd(p) + END_FRAMES + 12 },
   { id: "Style-Turntable", c: Turntable, props: TURNTABLE, frames: 0, dur: (p) => turntableEnd(p) + END_FRAMES + 12 },
   { id: "Style-ParticleLogo", c: ParticleLogo, props: PARTICLE_LOGO, frames: 0, dur: (p) => particleEnd(p) + END_FRAMES + 12 },

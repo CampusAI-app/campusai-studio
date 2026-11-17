@@ -1056,3 +1056,17 @@ export const CARD_DROP: CardDropProps = {
   every: 9.5,
   radius: 24,
 };
+
+/* ---- /stick-story (11/16, Shaan Johari's Animation Styles reel via Muse, Jacob: "def should do a ink doodle vid from campusai"). ---- */
+import type { StickStoryProps } from "./StickStory";
+
+/** /stick-story: a junior at Maryland, everything blowing around them. films/stick-story-junior/facts.md. */
+export const STICK_STORY: StickStoryProps = {
+  sign: "Junior at Maryland",
+  ask: "Where do I even start?",
+  things: ["Gen eds left?", "Canvas due dates", "4-year plan", "Club events"],
+  answer: "All of it, one place.",
+  place: "mckeldin",
+  source: "Planner, My Calendar and Events in CampusAI.",
+  cta: "Ask CampusAI anything.",
+};
