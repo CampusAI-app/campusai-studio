@@ -54,7 +54,8 @@
     "chat": "node scripts/chat.mjs",
     "flow": "node scripts/flow.mjs",
     "fonts": "node scripts/fonts.mjs",
-    "sheet": "node scripts/sheet.mjs"
+    "sheet": "node scripts/sheet.mjs",
+    "effects": "bash effects/run.sh"
   },
   "sideEffects": [
     "*.css"

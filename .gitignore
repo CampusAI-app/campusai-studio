@@ -44,3 +44,8 @@ public/add-to-calendar/
 
 # Each person's own Claude Code settings
 .claude/settings.local.json
+
+# The effects renderer builds its Python setup here on each machine (effects/run.sh)
+effects/.venv/
+effects/.bin/
+effects/**/__pycache__/

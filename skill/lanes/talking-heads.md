@@ -109,6 +109,16 @@ Overlays and cuts:
 - **Voice note** (`VoiceNote`): ours from the name only (the reel shows nothing for it): a chat voice-note bubble with a
   waveform from the clip's real audio, the play head moving with the speech, a transcript lit word by word.
 
+## Vibha Ramprakash's 51 effects (2026-11-18, `studio/effects`)
+Her free MIT renderer, now in the studio: `npm run effects -- <effect> clip.mp4 out.mp4 --start 1 --end 4` puts one of
+51 face-tracked effects on a real talking-head clip in about 7 s (Python and ffmpeg, no Remotion; first run sets itself
+up). `npm run effects -- --list` names them; options and the plan format are in `effects/EFFECTS.md`. Use it to try a
+look on real footage, then build the keeper into the kit if it earns it. All 51 plus three looks are on the Studio
+site with previews on Aiden's Connyct clips. It fills two gaps named above, the liquid-glass graph and the match cut.
+Close to what the kit owns: orbit, checklist, cover-star, locked-on, select-resize, profile-wall.
+Pass our own words and numbers to every effect: left out, several show her sample numbers and text (see
+`effects/README.md`).
+
 ## When the product appears beside the person
 It follows the product-films lane: real capture only, frameless or the real device, captions
 still below the product.
