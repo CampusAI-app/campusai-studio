@@ -62,6 +62,8 @@ import { CARD_DROP } from "./examples";
 import { CardDrop, dropEnd } from "./CardDrop";
 import { STICK_STORY } from "./examples";
 import { StickStory, stickEnd } from "./StickStory";
+import { PAPER_DOC } from "./examples";
+import { PaperDoc, paperDocEnd } from "./PaperDoc";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: (p: any) => number }[] = [
@@ -124,6 +126,9 @@ const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: 
   { id: "Style-FanShuffle", c: FanShuffle, props: FAN_SHUFFLE, frames: 0, dur: (p) => fanEnd(p) + END_FRAMES + 12 },
   // 11/16: the Nov 15 React Rapier trial (Jacob approved Nov 16); WebGL, so render with --gl=angle
   { id: "Style-CardDrop", c: CardDrop, props: CARD_DROP, frames: 0, dur: (p) => dropEnd(p) + END_FRAMES + 12 },
+  // 11/18: the "Pencil to VOX" paper documentary (via Muse), one timeline in two frames: vertical and wide
+  { id: "Style-PaperDoc", c: PaperDoc, props: PAPER_DOC, frames: 0, dur: (p) => paperDocEnd(p) + END_FRAMES + 12 },
+  { id: "Style-PaperDoc-Wide", c: PaperDoc, props: { ...PAPER_DOC, format: "wide" }, frames: 0, dur: (p) => paperDocEnd(p) + END_FRAMES + 12 },
 ];
 
 const sized = (dur?: (p: any) => number): CalculateMetadataFunction<any> => ({ props }) => ({

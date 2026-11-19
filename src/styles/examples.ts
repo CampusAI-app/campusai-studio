@@ -1070,3 +1070,37 @@ export const STICK_STORY: StickStoryProps = {
   source: "Planner, My Calendar and Events in CampusAI.",
   cta: "Ask CampusAI anything.",
 };
+
+/* ---- /paper-doc (11/18, the "Pencil to VOX" reel via Muse, Jacob: "I love this"; the creator's skill was never seen, our own build). ---- */
+import type { PaperDocProps } from "./PaperDoc";
+
+/** /paper-doc: a freshman at Maryland, 170 years in four paper scenes, then their own four. films/paper-doc-maryland/facts.md. */
+export const PAPER_DOC: PaperDocProps = {
+  scenes: [
+    { kind: "title", above: "Freshman at Maryland.", word: "1856", below: "the year it was chartered", collage: ["sun", "clouds", "hall", "trees"], frames: 80 },
+    { kind: "count", above: "Students enrolled,", from: 34, to: 522, below: "from 1859 to 1920", calendar: ["1859", "1920"], frames: 76 },
+    {
+      kind: "map", above: "In 1920, two campuses became the", word: "University", below: "of Maryland", frames: 82,
+      bounds: [38.86, -77.02, 39.36, -76.36],
+      pins: [{ label: "Baltimore", at: [39.2904, -76.6122] }, { label: "College Park", at: [38.9897, -76.9378] }],
+      route: [0, 1],
+      // the bay, schematic: approximate western-shore points north to south, closed along the sheet's east edge
+      water: [[[39.45, -76.3], [39.36, -76.36], [39.27, -76.42], [39.2, -76.44], [39.22, -76.5], [39.25, -76.56], [39.275, -76.59], [39.285, -76.61],
+        [39.265, -76.6], [39.235, -76.54], [39.18, -76.49], [39.12, -76.44], [39.07, -76.42], [39.01, -76.4], [38.97, -76.46], [38.93, -76.45],
+        [38.9, -76.44], [38.85, -76.49], [38.8, -76.51], [38.8, -76.3]]],
+    },
+    {
+      kind: "compare", above: "Next to 170 years, yours is", word: "Four", below: "Plan them in CampusAI.", underline: true, frames: 104,
+      unit: "years", max: 175, step: 25,
+      items: [
+        { label: "Since 1856", value: 170, pill: "170 yrs", shape: "tower" },
+        { label: "Since 1920", value: 106, pill: "106 yrs", shape: "obelisk" },
+        { label: "Your degree", value: 4, pill: "4 yrs", shape: "cap" },
+      ],
+      // the demo student's real Fall 2026 term card from Planner & Progress (captured Nov 17 for films/brick-world-four-years)
+      clip: { src: "brick-world/plan-strip.jpg", w: 1150, h: 10350, crop: { x: 0, y: 4600, w: 780, h: 700 } },
+    },
+  ],
+  source: "UMD history, umd.edu. Planner: the CampusAI demo, Nov 17.",
+  cta: "Ask CampusAI anything.",
+};
