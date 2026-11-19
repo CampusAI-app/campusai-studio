@@ -102,3 +102,20 @@ export { BehindWord, BehindWordLayer, behindTimes } from "./BehindWord";
 export type { BehindWordProps, BehindWordSpec, BehindBeat } from "./BehindWord";
 export { ReededTitle } from "./ReededTitle";
 export type { ReededTitleProps } from "./ReededTitle";
+
+// Talking-head edit (2026-11-18, from Shaan Johari's "I filmed this. Claude edited it." reel, instagram.com/reel/Df4TGYjEZLu,
+// Muse Nov 18; read frame by frame, his breakdown is DM-gated and was never seen, so these are our own builds). FaceLock
+// reads a 10 Hz face track from effects/scripts/facetrack.py. PlacedCaptions puts each line in an open spot clear of the
+// face, other faces and the platform's own buttons (src/lib/platformUI.ts). Sample: CampusAI street interview, private.
+export { FaceLock, FaceLockLayer, faceAt, statChars } from "./FaceLock";
+export type { FaceLockProps, FaceLockSpec, FaceLockStat, FaceLockSub, FaceTrack, FaceSample, FaceBox } from "./FaceLock";
+export { PlacedCaptions, PlacedCaptionsLayer, placeLines, lineTimes, autoLines, approxMeasure } from "./PlacedCaptions";
+export type { PlacedCaptionsProps, PlacedCaptionsSpec, PlaceSpot, CaptionLine, Avoid, AvoidRect, PlacedLine } from "./PlacedCaptions";
+export { MatteReveal, MatteLayer, MatteTitle, Silhouette, matteLook, matteState } from "./MatteReveal";
+export type { MatteRevealProps, MatteMode, MatteTitleSpec } from "./MatteReveal";
+export { GlowIn, GlowInLayer, GlowWordLayer, glowWhite } from "./GlowIn";
+export type { GlowInProps, GlowInSpec, GlowWord } from "./GlowIn";
+export { ArcWords, ArcWordsLayer, arcPlaces, trackAt } from "./ArcWords";
+export type { ArcWordsProps, ArcSpec, ArcFace, FaceTrack as ArcTrack } from "./ArcWords";
+export { RibbonWrap, RibbonLayer, RibbonTitleLayer, ribbonAround } from "./RibbonWrap";
+export type { RibbonWrapProps, RibbonSpec, RibbonSeg, RibbonTitle } from "./RibbonWrap";

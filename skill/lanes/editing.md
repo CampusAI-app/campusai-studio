@@ -30,6 +30,7 @@ That difference is most of what separates produced captions from automatic ones.
   Got60). Separate the voice from music first only when music sits under the speaker.
 - An MP3 carries about 23 ms of encoder delay, visible on a word wipe: analyse WAV.
 - Caption placement: below the footage over a product; outside the face-safe zone over a person.
+  Over a person, `PlacedCaptions` places each line clear of every face and the platform's buttons (talking-heads lane).
   Chunked lines that slam in two or three at a time are a style choice for a piece, not the system.
 - Caption reading time follows the Studio rule: at least the line plus 0.6 s.
 

@@ -160,3 +160,31 @@ Order in the reel and our sample: whip in 0 to 0.3 s, keyword behind the head on
 close on the next phrase, the glass on the last words. Captions in the sample are two rolling rows below the face (a new
 row pushes the last one up, so each stays its line plus 0.6 s); the last row hands off into the title's lead line. Tested
 on Connyct footage (Aiden, the goal moment), so the sample is private: `src/private/person-effects/podcast.tsx`.
+
+## Talking-head edit: face lock, placed captions, matte reveal (2026-11-18)
+From Shaan Johari's reel "I filmed this. Claude edited it." (instagram.com/reel/Df4TGYjEZLu, Muse Nov 18), a 9 s
+before and after of one take, stepped frame by frame; his breakdown is DM-gated and was never seen, so these are our own
+builds. What the frames showed that the text did not: the captions MOVE, each line landing in a different open spot. All
+six are in the kit (`import { FaceLock, PlacedCaptions, MatteReveal, GlowIn, ArcWords, RibbonWrap } from "../kit"`), take
+their words from the clip's `captions.json`, and take `clip`, the cutout `person` and a `frame` like the parts above.
+- **Face track first.** `effects/.venv/bin/python -I effects/scripts/facetrack.py clip.mp4 track.json` writes the face at
+  10 Hz (YuNet, the same detector as the 51 effects). In a two-shot add `--near <x>` to follow one person; run it twice
+  to get both faces.
+- **Face lock** (`FaceLock`): yellow corner brackets ride the face, easing between samples, with a small readout
+  (FACE score, X, Y) that steps exactly 10 times a second; a big stat in Barlow Condensed Light types on her word one
+  character every 2 frames and clears the same way; an optional word under the face. Keep the stat above the hair.
+- **Placed captions** (`PlacedCaptions`): every line is placed where it is free: above the head, left or right of the
+  face, or below it, tested at every frame the line is up against the face (expanded 35%), anything in `avoid` (another
+  face track or a rect) and the platform's own buttons (`platform`: instagram, tiktok or shorts, from
+  `src/lib/platformUI.ts`; approximate zones dated today). Words light on the voice per the editing lane, one accent word
+  per line in Newsreader italic. `showZone` draws the dashed box the reel uses to show the rule.
+- **Matte reveal** (`MatteReveal`): the show-your-work beat. A hard cut to the cutout as a flat silhouette (cream with
+  turning arcs, black on white, or white on black), an italic lead line over one heavy word, held about half a second,
+  one inverted flash frame, back to the footage.
+- **Glow in** (`GlowIn`): on a hard cut the person is solid glowing white for 2 frames, then real over 3.
+- **Arc words** (`ArcWords`): her words arrive one by one on a tilted ring round the head, far side behind it, near side
+  in front, each out of a blur; `follow` a face track on handheld footage so the ring stays on her.
+- **Ribbon wrap** (`RibbonWrap`): on a black-on-white matte hold a gold ribbon draws on in 12 frames, its upper loop
+  behind the body and its lower band in front, while a two-part title lands with the big word behind the head.
+Tested on the CampusAI street interview IMG_5696 (`public/post-leftonread/`, git-ignored; the cutout holds both people,
+so every matte shows two silhouettes). Test entries are private: `src/private/person-effects/shaan-a.tsx`, `shaan-b.tsx`.
