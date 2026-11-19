@@ -25,7 +25,9 @@ export type BedPick = { track: string; file: string; startAt: number; gain: numb
 /** The track, where it starts (track seconds) and the gain that matches the reference loudness. */
 export const pickBed = (id: string, seconds: number, track?: string): BedPick => {
   const names = Object.keys(TRACKS).sort();
-  const name = track && TRACKS[track] ? track : names[hash(id) % names.length];
+  // the same film in another shape (Style-X-Wide, -Feed, -Square, -9x16) keeps the same music
+  const film = id.replace(/-(wide|feed|square|vertical|\d+x\d+)$/i, "");
+  const name = track && TRACKS[track] ? track : names[hash(film) % names.length];
   const map = TRACKS[name];
   const downs = map.downbeats.filter((t) => t >= 0);
   const drop = map.moments.find((m) => m.big && m.kind === "lift");
