@@ -6,6 +6,7 @@ import React from "react";
 import { Easing, Img, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Audio } from "@remotion/media";
 import { brand } from "../brand";
+import { pickBed } from "../../system/sound/bed";
 
 export const B = brand("campusai");
 export const FPS = 30;
@@ -79,8 +80,13 @@ export const Sfx: React.FC<{ at: number; name: string; volume?: number; on: bool
     </Sequence>
   ) : null;
 
-/** The shelf's music bed, faded in and out. */
-export const Bed: React.FC<{ total: number; on: boolean; volume?: number }> = ({ total, on, volume = 0.38 }) =>
-  on ? (
-    <Audio src={staticFile("styles/sfx/bed.mp3")} volume={(f) => volume * interpolate(f, [0, 10, total - 20, total], [0, 1, 1, 0], clampX)} />
-  ) : null;
+/** The music bed, faded in and out: a licensed track picked per film (system/sound/bed.ts), or the one named in `track`. */
+export const Bed: React.FC<{ total: number; on: boolean; volume?: number; track?: string }> = ({ total, on, volume = 0.38, track }) => {
+  const { id, fps } = useVideoConfig();
+  if (!on) return null;
+  const bed = pickBed(id, total / fps, track);
+  return (
+    <Audio src={staticFile(bed.file)} trimBefore={Math.round(bed.startAt * fps)}
+      volume={(f) => volume * bed.gain * interpolate(f, [0, 10, total - 20, total], [0, 1, 1, 0], clampX)} />
+  );
+};

@@ -207,6 +207,9 @@ format beats one described from scratch. Only when none fits does the order belo
   so only clone a voice whose owner said yes. It goes through the adoption gate and one test read
   on Jacob's Mac before any film uses it.
 - Licensed sound only: `Content/video-studio/shots/audio/` (Mixkit, commercial, no credit needed).
+- Music is never one shared bed (11/18, Jacob: every Muse pass film had "the same exact audio"). Named styles and kit
+  effects pick one of the measured tracks per film (`src/system/sound/bed.ts`): from the composition id by default, or
+  name it with `track` on `Bed` when the film's mood calls for one. It starts on the track's drop and is level-matched.
 
 **Remotion licence**: Jacob's call (2026-08-28) is that it is not a blocker. Not raised again.
 

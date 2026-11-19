@@ -11,6 +11,7 @@ import { brand, useBrandFonts } from "../kit/brand";
 import { LogoEnd } from "../kit/LogoMoment";
 import { INTER } from "../kit/parts";
 import { CURVE, DUR, DRIFT } from "../system/motion";
+import { pickBed } from "../system/sound/bed";
 
 export const B = brand("campusai");
 export const PAPER = B.color.ink;
@@ -37,12 +38,18 @@ export const Cue: React.FC<{ at: number; name: string; volume?: number }> = ({ a
   </Sequence>
 );
 
-export const Bed: React.FC<{ total: number; volume?: number }> = ({ total, volume = 0.42 }) => (
-  <Audio
-    src={staticFile("styles/sfx/bed.mp3")}
-    volume={(f) => volume * interpolate(f, [0, 12, total - 24, total], [0, 1, 1, 0], clamp)}
-  />
-);
+/** The music bed: a licensed track picked per film (system/sound/bed.ts), or the one named in `track`. */
+export const Bed: React.FC<{ total: number; volume?: number; track?: string }> = ({ total, volume = 0.42, track }) => {
+  const { id, fps } = useVideoConfig();
+  const bed = pickBed(id, total / fps, track);
+  return (
+    <Audio
+      src={staticFile(bed.file)}
+      trimBefore={Math.round(bed.startAt * fps)}
+      volume={(f) => volume * bed.gain * interpolate(f, [0, 12, total - 24, total], [0, 1, 1, 0], clamp)}
+    />
+  );
+};
 
 /** The logo inside the first half second, held small top left. It never delays the hook. */
 export const HeldLogo: React.FC<{ light?: boolean; out: number }> = ({ light, out }) => {
