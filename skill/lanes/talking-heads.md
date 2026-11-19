@@ -122,3 +122,41 @@ Pass our own words and numbers to every effect: left out, several show her sampl
 ## When the product appears beside the person
 It follows the product-films lane: real capture only, frameless or the real device, captions
 still below the product.
+
+## A series gets one house look (2026-11-18)
+From @eightsenses.media's reel "ALL OF THIS, 4 speakers one skill" (instagram.com/reel/Df5QrYGkgiR, Muse Nov 18): four
+people, four moments, and they read as one show because every clip is made of the same materials. So when clips belong
+to a series, choose ONE look once, before the first clip, and record it with the film as `films/<series>/look.json`
+(a `HouseLook`: palette, caption style, frosted card, italic serif accent, ring colour). Every clip in the series reads
+that file and nothing else; effects from the lists above still go on top, but they take their colours and type from it.
+A new look is a new series. In the kit: `houseLook("violet" | "ember" | <look.json>)`, `HouseEdit` (one clip in the
+look: word-lit captions held as whole phrases, one frosted card landing on a spoken keyword, the serif accent, an
+optional ring) and `SpeakerFan` (the reel's opener: the series' clips fanned in 3D under a short title). Only words the
+speakers say go in captions and cards. Tested on Connyct footage (two people, four moments), so the sample is private.
+
+## Podcast edit: dot globe, word behind the head, reeded title (2026-11-18)
+From @eightsenses.media's reel "PODCAST edited this, not me" (instagram.com/reel/Df447Vfj36j, Muse Nov 18), read frame
+by frame; it sells a paid skill we never bought or saw, so these three are our own builds. The reel edits a raw podcast
+clip: a whip in, a keyword behind his head, a dot globe forming round it, then a fluted-glass title on his last words.
+All three are in the kit (`import { DotGlobe, BehindWord, ReededTitle } from "../kit"`), take their words from the clip's
+`captions.json` and render headless. Person effects take `clip`, the cutout `person` and a `frame`; `DotGlobeLayer` and
+`BehindWordLayer` are the same parts without the footage, to stack several on one person.
+- **Dot globe** (`DotGlobe`): blue dots fly in from seeded points round the frame on a slight curve with short streaks,
+  about 1 s in the reel (ours 32 frames, the last dot landing on the cue), and close into a dotted wireframe sphere
+  (meridians and parallels) round the head, then it turns slowly (22 degrees a second, axis tipped 16). The far half
+  draws behind the cutout, the near half in front; front dots fade to a trace over the `face` ellipse so nothing crosses
+  the face. Make the sphere wider than the head so dots change layer beside it.
+- **Behind word** (`BehindWord`): a small lowercase lead line (Inter) above one huge condensed word (Barlow Condensed
+  800, white to grey) behind the head. The lead line shows 0.35 s early and lights each word as said; the keyword lands
+  on its exact first frame out of a blur in 4 frames, then pushes 4% so it is never still; the next beat swaps in on its
+  own keyword. The room darkens a little behind the type, fading out well above the cutout's bottom edge. Hold each beat
+  its reading time; a fast talker gets one or two beats, not one per sentence. The kit had nothing like it (the Python
+  renderer's `backdrop-word` is one fixed word with no timing).
+- **Reeded title** (`ReededTitle`): a full-frame overlay of the closing words seen through vertical glass ribs, built from
+  slices (each rib magnifies its own copy of the scene; no `backdrop-filter`). The glass slides in from the right in 8
+  frames with a light streak, ribs relax from 2x to 1.32x as the type drifts under them; the small lead line (already
+  said) sits ON the glass, since ribs scramble small type, and each title word appears on its own first frame. Inter Tight 800 on deep blue. Hold the reading time.
+Order in the reel and our sample: whip in 0 to 0.3 s, keyword behind the head on the word, dots fly in when it ends and
+close on the next phrase, the glass on the last words. Captions in the sample are two rolling rows below the face (a new
+row pushes the last one up, so each stays its line plus 0.6 s); the last row hands off into the title's lead line. Tested
+on Connyct footage (Aiden, the goal moment), so the sample is private: `src/private/person-effects/podcast.tsx`.

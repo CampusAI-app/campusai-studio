@@ -82,3 +82,23 @@ export type { PixelBurstProps } from "./PixelBurst";
 // and lands where its result goes. Worked example: src/claudianchecklist/ (ClaudianChecklist-9x16).
 export { FoldAway, foldAwayTimes, FOLD } from "./FoldAway";
 export type { FoldAwayProps } from "./FoldAway";
+
+// House look (2026-11-18, from @eightsenses.media's "4 speakers one skill" reel, instagram.com/reel/Df5QrYGkgiR, Muse
+// Nov 18; our own build from the frames). One look (palette, caption, frosted card, italic serif accent, ring colour)
+// applied to every clip in a series, and the reel's fanned-cards opener. Tested on Connyct footage, sample is private.
+export { HOUSE_LOOKS, HOUSE_FONTS, houseLook } from "./houseLook";
+export type { HouseLook, HouseLookName, HouseSans, HouseSerif } from "./houseLook";
+export { HouseEdit, houseEditFrames, housePhrases, HOUSE_FAMILY } from "./HouseEdit";
+export type { HouseEditProps, HouseCard, HouseRing } from "./HouseEdit";
+export { SpeakerFan } from "./SpeakerFan";
+export type { SpeakerFanProps } from "./SpeakerFan";
+
+// Podcast edit (2026-11-18, from @eightsenses.media's "PODCAST edited this, not me" reel, instagram.com/reel/Df447Vfj36j,
+// Muse Nov 18; our own builds from the frames, the paid skill was never bought or seen). Person effects take `clip`, the
+// cutout `person` and a `frame`; each also exports its layer alone to stack on one person. Sample is private (Connyct).
+export { DotGlobe, DotGlobeLayer, globeFormed } from "./DotGlobe";
+export type { DotGlobeProps, GlobeSpec } from "./DotGlobe";
+export { BehindWord, BehindWordLayer, behindTimes } from "./BehindWord";
+export type { BehindWordProps, BehindWordSpec, BehindBeat } from "./BehindWord";
+export { ReededTitle } from "./ReededTitle";
+export type { ReededTitleProps } from "./ReededTitle";
