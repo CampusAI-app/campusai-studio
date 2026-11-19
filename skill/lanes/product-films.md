@@ -88,6 +88,20 @@ capabilities as pills stacking under one phrase.
   lines sat about 0.4 s). Worked example `src/launch-transitions/` (`LaunchTransitions-16x9`, its own
   entry file), which uses hand-offs 1 to 7, 9 and 10.
 
+**Stageshow's rules worth keeping** (2026-11-18, from Stageshow, Muse send; Benji Taylor's skill, MIT, trialled
+and security-passed first). `npm run gate` checks the motion faults; these are the framing and craft calls it can't.
+- **Poster = the payoff state**, never a frame mid-change. It is also what a reduced-motion viewer sees. The film still
+  ends on the logo; the poster PNG is the answer, the filled week, the number landed.
+- **Loops reset with a seen cause or out of view.** Data never rewinds in view: a count, a list or an answer that runs
+  backwards to restart reads as a glitch. Cut, cover, or let the last frame hand back to the first.
+- **Added layers leave in one reverse stagger,** 40 to 80 ms apart, last in first out, never all at once and never one by one at reading pace.
+- **Numbers roll last digit first,** and reserve the width of the final number so the line never re-centres when a digit
+  column arrives (the gate caught that on `LaunchTransitions-16x9` at 14.7 s: the line jumps 23 px when 9 becomes 10).
+- **A status word changes on its own pill:** the pill holds its place and its word changes inside it; the row around it never re-lays out.
+- **Crop to where the story happens.** One gutter, either full bleed or a full gutter, the same on every side that has
+  one; nothing the story opens (the window, the answer, the card) cut by the frame edge.
+- **A word budget of 3 to 7 real strings** a viewer must read in the whole film, product text included. Over 7, cut words or cut a beat.
+
 **Film styles to borrow motion from** (Studio page, "Film styles"): Dark Tech Keynote for
 CampusAI launches (its grammar only: one accent for what the product does, transitions only as
 UI expanding or collapsing, numbers resolving from noise), Swiss Motion for FigBlossom, Data

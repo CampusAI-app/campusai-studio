@@ -16,6 +16,7 @@ watching a render ten times hides.
    - a real hook inside the first 0.5 s, and the logo by 2 s
    - the last frame ends on the logo and is strong enough to be the poster
    - house rules: no em dashes, no monospace, captions below the UI, every number true today
+   **`npm run gate <Composition>` runs before the critic** and must pass (2026-11-18, from Stageshow; what it checks is at the top of `scripts/gate.mjs`).
 3. **The builder never judges its own work.** Hand the sheet, `brief.md` and the references to a
    fresh subagent that saw none of the build, and never tell it what you think you fixed. It
    scores seven things on fixed anchors (style fidelity, concept, motion craft, type and design,
