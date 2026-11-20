@@ -80,6 +80,17 @@ A flat dark fill looks generated. Every dark graphic gets three layers behind th
 2. A weaker wash in the opposite corner, so the frame is never symmetrical.
 3. Grain over everything at about 14% (the SVG noise in `templates/linkedin-banner.html`).
 
+**Textured grounds (added 2026-11-20).** When a plain wash is not enough, three textures are drawn
+in code in `templates/post-grounds.html`, picked with `#topo`, `#glass` or `#thermal`:
+- **Topographic lines** (the default): fine warm contour lines with one dotted red route. Reads as
+  a path or a plan, so it suits the planner, a four-year plan, getting somewhere.
+- **Red glass**: red light behind reeded glass. Bold, for a launch or a big claim.
+- **Thermal**: heat bands in red and ember. Use sparingly; it can tip into the glossy glow look.
+They come from a reel of AI-made looks (Niki Aroca, Higgsfield, Nov 18). We draw them in code
+instead of generating them: free, the same every time, and no image model near the words. Blueprint
+grids, water and grass from the same reel are left out (blue and teal are off brand). Never put a
+product capture behind the glass: its coloured bars smear into dots.
+
 ### The product
 The product is the best image we have. Use it.
 - **Real screenshots only**, from the live demo (campusai-demo) in dark mode. `assets/product/` has

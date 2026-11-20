@@ -1,0 +1,165 @@
+<!doctype html>
+<!--
+  Feed post, 1080 x 1350 (4:5), with a textured ground made in code (2026-11-20, Muse pass).
+
+  Where the grounds came from: Niki Aroca's reel of seven AI graphic looks made on Higgsfield
+  (thermal gradients, blueprint grids, water ripples, particles, topographic lines, refracted
+  glass, grass). Three of them fit our brand once they are drawn in our colours, so they are
+  drawn here in code instead of generated: free, the same every time, no image model anywhere
+  near the logo or the words. Blueprint (blue), water (teal) and grass (green) are left out:
+  the brand never uses blue, navy, purple or teal, and grass says nothing about students.
+
+  Pick the ground with the address fragment:
+    #topo     topographic contour lines, with a dotted red route through them (default)
+    #glass    the product itself seen through fluted glass, red light behind it
+    #thermal  heat bands in red and ember, gathered where the product sits
+
+  Every layer is still real: the logo is the file, the words are live type, the product is a
+  capture of campusai-demo in dark mode (assets/product/planner-progress.jpg, Nov 20).
+
+  Render: node templates/render.mjs "templates/post-grounds.html#topo" out.png 1080 1350
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://api.fontshare.com/v2/css?f[]=zodiak@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1350px; background: #0b0708; }
+  #stage { position: relative; width: 1080px; height: 1350px; overflow: hidden; background: #0b0708; }
+  .layer { position: absolute; inset: 0; pointer-events: none; }
+
+  /* One light behind the product, a weaker one opposite. Never symmetrical. */
+  .wash.key { background: radial-gradient(700px 520px at 78% 30%, rgba(217, 32, 46, .30), transparent 70%); }
+  .wash.fill { background: radial-gradient(560px 420px at 0% 100%, rgba(217, 32, 46, .10), transparent 70%); }
+
+  /* Grounds. Only the one named in the fragment shows. */
+  .ground { display: none; }
+  body.topo .ground.topo, body.glass .ground.glass, body.thermal .ground.thermal { display: block; }
+
+  /* Fluted glass: red light behind reeded glass. Each flute shows the light a little to one side
+     and carries its own sheen, which is what reads as glass. (Tried the product itself behind the
+     glass first: its green and yellow bars smear into dots and the blurred words read as noise.) */
+  .ground.glass { overflow: hidden; }
+  .ground.glass .flute {
+    position: absolute; top: 0; bottom: 0;
+    background-image:
+      radial-gradient(260px 420px at 50% 50%, rgba(255, 92, 80, .55), transparent 70%),
+      radial-gradient(520px 700px at 50% 50%, rgba(217, 32, 46, .55), transparent 72%),
+      radial-gradient(900px 900px at 50% 50%, rgba(120, 14, 24, .5), transparent 75%);
+    background-size: 1400px 1350px; background-repeat: no-repeat;
+  }
+  .ground.glass .flute::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(90deg, rgba(11,7,8,.55), rgba(247,239,230,.07) 38%, rgba(11,7,8,0) 55%, rgba(11,7,8,.6));
+  }
+  .ground.glass .tint { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(217,32,46,.16), rgba(11,7,8,.2) 55%, #0b0708 88%); }
+
+  /* Thermal: banded heat, red to ember, cooling to the ground. No blue end. */
+  .ground.thermal .heat {
+    position: absolute; left: 140px; top: -260px; width: 1300px; height: 1150px; border-radius: 50%;
+    background: repeating-radial-gradient(ellipse at 50% 42%,
+      rgba(255, 110, 70, .55) 0 26px, rgba(217, 32, 46, .50) 26px 58px,
+      rgba(120, 18, 28, .45) 58px 96px, rgba(40, 10, 12, .40) 96px 140px);
+    filter: blur(14px);
+    -webkit-mask-image: radial-gradient(closest-side, #000 35%, transparent 100%);
+            mask-image: radial-gradient(closest-side, #000 35%, transparent 100%);
+    opacity: .75;
+  }
+
+  /* The product, bleeding off the right edge. */
+  .product { position: absolute; left: 70px; top: 250px; width: 1420px; perspective: 2400px; }
+  .product img {
+    display: block; width: 100%; border-radius: 18px;
+    border: 1px solid rgba(247, 239, 230, .12);
+    transform: rotateY(-12deg) rotateX(6deg) rotateZ(-2deg); transform-origin: left center;
+    box-shadow: 0 50px 110px rgba(0, 0, 0, .7), 0 0 160px rgba(217, 32, 46, .22);
+  }
+
+  .copy { position: absolute; left: 84px; top: 860px; width: 820px; }
+  .copy .logo { display: block; height: 40px; width: auto; }
+  .copy h1 {
+    margin-top: 40px; font-family: 'Zodiak', serif; font-weight: 700;
+    font-size: 84px; line-height: 1.03; letter-spacing: -0.02em; color: #f7efe6;
+  }
+  .copy p { margin-top: 30px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 28px; line-height: 1.35; color: #d7c3b3; width: 700px; }
+
+  .grain {
+    opacity: .14; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E");
+  }
+</style>
+</head>
+<body>
+  <div id="stage">
+    <canvas class="layer ground topo" id="topo" width="2160" height="2700" style="width:1080px;height:1350px"></canvas>
+    <div class="layer ground glass" id="glass"><div class="tint"></div></div>
+    <div class="layer ground thermal"><div class="heat"></div></div>
+
+    <div class="layer wash key"></div>
+    <div class="layer wash fill"></div>
+
+    <div class="product"><img src="../assets/product/planner-progress.jpg" alt=""></div>
+
+    <div class="copy">
+      <img class="logo" src="../assets/campusai-logo-white.svg" alt="CampusAI">
+      <h1>Know what's left before you register.</h1>
+      <p>CampusAI checks your plan against your requirements and finds the classes that count twice.</p>
+    </div>
+
+    <div class="layer grain"></div>
+  </div>
+
+<script>
+  const ground = (location.hash || "#topo").slice(1);
+  document.body.classList.add(["topo", "glass", "thermal"].includes(ground) ? ground : "topo");
+
+  // Topographic contours: a smooth height field, traced at even heights (marching squares).
+  (function topo() {
+    const c = document.getElementById("topo"), g = c.getContext("2d"), S = 2, W = 1080, H = 1350;
+    g.scale(S, S);
+    const hills = [[300, 1050, 380, 1], [820, 420, 300, .8], [980, 1180, 260, .6], [120, 300, 240, -.5], [600, 760, 420, .45]];
+    const f = (x, y) => {
+      let v = 0;
+      for (const [hx, hy, r, a] of hills) v += a * Math.exp(-((x - hx) ** 2 + (y - hy) ** 2) / (2 * r * r));
+      return v + .06 * Math.sin(x / 90 + y / 140) + .05 * Math.cos(y / 70 - x / 210);
+    };
+    const step = 6, cols = Math.ceil(W / step) + 1, rows = Math.ceil(H / step) + 1, grid = [];
+    for (let j = 0; j < rows; j++) { grid[j] = []; for (let i = 0; i < cols; i++) grid[j][i] = f(i * step, j * step); }
+    const levels = 34, lo = -.55, hi = 1.15;
+    for (let k = 0; k < levels; k++) {
+      const t = lo + (hi - lo) * k / levels;
+      g.strokeStyle = k % 5 === 0 ? "rgba(247,239,230,.20)" : "rgba(247,239,230,.09)";
+      g.lineWidth = k % 5 === 0 ? 1.1 : .8;
+      g.beginPath();
+      for (let j = 0; j < rows - 1; j++) for (let i = 0; i < cols - 1; i++) {
+        const a = grid[j][i], b = grid[j][i + 1], cc = grid[j + 1][i + 1], d = grid[j + 1][i];
+        const x = i * step, y = j * step, pts = [];
+        const edge = (v1, v2, x1, y1, x2, y2) => { if ((v1 < t) !== (v2 < t)) { const u = (t - v1) / (v2 - v1); pts.push([x1 + u * (x2 - x1), y1 + u * (y2 - y1)]); } };
+        edge(a, b, x, y, x + step, y); edge(b, cc, x + step, y, x + step, y + step);
+        edge(cc, d, x + step, y + step, x, y + step); edge(d, a, x, y + step, x, y);
+        for (let p = 0; p + 1 < pts.length; p += 2) { g.moveTo(pts[p][0], pts[p][1]); g.lineTo(pts[p + 1][0], pts[p + 1][1]); }
+      }
+      g.stroke();
+    }
+    // The route: a dotted red line climbing the right side, clear of the words, into the plan.
+    g.fillStyle = "rgba(217,32,46,.85)";
+    const route = t => [1010 - 330 * t * t + 30 * Math.sin(t * 6), 1360 - 690 * t + 24 * Math.sin(t * 5 + 1)];
+    for (let t = 0; t <= 1; t += .012) { const [x, y] = route(t); g.beginPath(); g.arc(x, y, 2.4, 0, Math.PI * 2); g.fill(); }
+  })();
+
+  // Fluted glass: 30 flutes, each showing a slice of the product a little to one side.
+  (function glass() {
+    const host = document.getElementById("glass"), n = 30, w = 1080 / n;
+    for (let i = 0; i < n; i++) {
+      const el = document.createElement("div");
+      el.className = "flute";
+      el.style.left = (i * w) + "px"; el.style.width = (w + 1) + "px";
+      el.style.backgroundPosition = `${-i * w * 0.82 + 210 + 18 * Math.sin(i * 1.7)}px ${-330 + 10 * Math.cos(i * 1.1)}px`;
+      host.insertBefore(el, host.firstChild);
+    }
+  })();
+</script>
+</body>
+</html>
