@@ -48,6 +48,12 @@ capabilities as pills stacking under one phrase.
 - Problem, silence, turn: the frustration, a hard cut to a beat of black, then the product solves
   the exact thing shown. The silence is a cut, never a fade.
 - The UI pulled apart into single cards, every press showing where its result lands.
+- **Desk stage** (2026-11-20, XZE Creative's Notion film, read frame by frame): one locked-off shot of a dark desk,
+  the film plays on a big monitor that is the room's only real light, a laptop in front shows the product small and
+  soft, a POV line sits above the screen the whole time. On the screen: chaos (the student's pieces drifting) pulled
+  into one line, one command, a wipe off that line into the real page building part by part, three words landing over
+  their real pages, the words stacked beside the pages, then the logo. Kit part `ScreenStage` (the worked example,
+  `PostDeskStage-9x16`, stays local with its captures). A real filmed plate (6 s, tripod, monitor on plain white) beats the code-drawn room.
 - The pop-out, when the film highlights one specific thing.
 - **The meeting nobody needs** (2026-11-04, Echo's monday.com launch spot, learned through Muse; Jacob:
   "a great video, learn from it and apply"). One before/after argument in about a minute. The

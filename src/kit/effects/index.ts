@@ -119,3 +119,10 @@ export { ArcWords, ArcWordsLayer, arcPlaces, trackAt } from "./ArcWords";
 export type { ArcWordsProps, ArcSpec, ArcFace, FaceTrack as ArcTrack } from "./ArcWords";
 export { RibbonWrap, RibbonLayer, RibbonTitleLayer, ribbonAround } from "./RibbonWrap";
 export type { RibbonWrapProps, RibbonSpec, RibbonSeg, RibbonTitle } from "./RibbonWrap";
+
+// Desk stage (2026-11-20, from XZE Creative's Notion spec film, instagram.com/reel/Df5Ozz2KVRR, Muse Nov 20; read frame
+// by frame, our own build). A product film plays on a big monitor in a dark desk scene, camera locked off, the room lit
+// by the screen. Code-drawn room by default; pass `plate` (a real filmed desk plus the screen's four corners) to pin the
+// film onto real footage. The worked example (PostDeskStage-9x16, src/trials/) stays on Jacob's Mac with its captures.
+export { ScreenStage, quadMatrix, DESK } from "./ScreenStage";
+export type { ScreenStageProps, ScreenStagePlate, Quad, Pt } from "./ScreenStage";
