@@ -55,6 +55,18 @@ capabilities as pills stacking under one phrase.
   their real pages, the words stacked beside the pages, then the logo. Kit part `ScreenStage` (the worked example,
   `PostDeskStage-9x16`, stays local with its captures). A real filmed plate (6 s, tripod, monitor on plain white) beats the code-drawn room.
 - The pop-out, when the film highlights one specific thing.
+- **Pastel launch** (2026-11-20, ClickUp's 3:30 launch film, read frame by frame; Jacob: "basically the exact same layout /
+  flow / visuals ... but context of campus AI"). A keynote launch without a stage: a pastel void (magenta top left,
+  lavender left, blue or coral bottom right, near white centre), dark product captures floating tilted in it (settled at
+  about rotateY -6 to -11 deg, turning about 2.5 deg a second), and kinetic type that builds word by word in small ink
+  (about 62 px at 1080p, a word every 0.2 to 0.3 s, arriving grey and settling to ink) with ONE huge gradient word per beat
+  (about 4x, fading up from washed out over 0.3 s). Every chapter opens on a black card: logo at 31% height, "A way to
+  ___ it." at 50% with the verb in its gradient and underlined, the feature name small at 69%, about 2.6 s, hard cuts
+  both ends. Inside a chapter, hard cuts between a wide and a tight crop of the same real screen. For CampusAI the cold
+  open is student-first ("Every Terp starts with a QUESTION."), the questions are the product's own Ask chips, and the
+  gradient keeps ClickUp's violet start but lands on brand red. Kit parts in `PastelLaunch` (PastelVoid, KineticType,
+  FloatingScreen, ChapterCard, GlowPrompt, CaptionPill); the numbers are in `LAUNCH`. Worked example `LaunchFilm-16x9`
+  (local, src/trials/).
 - **The meeting nobody needs** (2026-11-04, Echo's monday.com launch spot, learned through Muse; Jacob:
   "a great video, learn from it and apply"). One before/after argument in about a minute. The
   before is the pain in the customer's own words, quoted as they would say it ("Same as last

@@ -126,3 +126,14 @@ export type { RibbonWrapProps, RibbonSpec, RibbonSeg, RibbonTitle } from "./Ribb
 // film onto real footage. The worked example (PostDeskStage-9x16, src/trials/) stays on Jacob's Mac with its captures.
 export { ScreenStage, quadMatrix, DESK } from "./ScreenStage";
 export type { ScreenStageProps, ScreenStagePlate, Quad, Pt } from "./ScreenStage";
+
+// Pastel launch (2026-11-20, from ClickUp's 3:30 launch film, x.com/wallstengine/status/2123809287814476146, Muse Nov 20;
+// Jacob: "basically the exact same layout / flow / visuals ... but context of campus AI"). Read frame by frame, numbers
+// measured off the frames (films/launch-film/system.md, local); our own build. A pastel void, dark product captures
+// floating tilted in it, kinetic type that builds word by word with one huge gradient word per beat, the black
+// "A way to ___ it." chapter card, and the glowing ask field. Worked example LaunchFilm-16x9 (src/trials/) stays local.
+export {
+  PastelVoid, KineticType, WordRow, BigWord, CaptionPill, FloatingScreen, ChapterCard, GlowPrompt, words as launchWords,
+  LAUNCH, LAUNCH_GRADIENTS, LAUNCH_FONT, VOID_TINTS, gradientCss,
+} from "./PastelLaunch";
+export type { KWord, Pose, VoidTint } from "./PastelLaunch";
