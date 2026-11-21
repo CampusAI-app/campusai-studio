@@ -74,6 +74,35 @@ capabilities as pills stacking under one phrase.
   gradient keeps ClickUp's violet start but lands on brand red. Kit parts in `PastelLaunch` (PastelVoid, KineticType,
   FloatingScreen, ChapterCard, GlowPrompt, CaptionPill); the numbers are in `LAUNCH`. Worked example `LaunchFilm-16x9`
   (local, src/trials/).
+- **One take** (2026-11-21, Ilias Miah's 22 s Kestrel notifications film, read frame by frame; Jacob: "I love how this
+  video looks for motion design"). No cuts at all: the product's screens are planes floating at different depths in a
+  pale void, tilted 3 to 5 deg with soft shadows, and one camera travels through them. Open on the whole tableau (a big
+  page behind, a second page floating in front and overlapping it); a quick dive to a steep view (about 18 deg, 0.2 to
+  0.4 s), a glide that hands focus to the front page by depth (the far page blurs and pales, never a cut); the page
+  squares up as the camera arrives; inside it the camera travels down the list instead of the page scrolling; an
+  oversized black arrow does one real press with a soft ring, and the result plays in place from the real recording;
+  a lateral slide at the same height carries to the next thing; then the pull back to the exact opening frame so it
+  loops. Everything eases, nothing teleports. Kit part `OneTake` (planes, camera keys that square to a plane and set
+  how big a page px looks, depth of field, softness on whips, the arrow riding its plane, in-place swaps); numbers in
+  `ONE_TAKE`. Worked example `PostOneTake-4x5` (local, src/trials/).
+- **Explainer anatomy** (2026-11-21, Sultan Mahmud's (@sultanmotions, Sleeko) 44 s "HowDo" explainer breakdown,
+  instagram.com/reel/DcLzGYovY9B, read frame by frame; Jacob: "I love this"). Four labelled sections, measured: Intro
+  0 to 2.7 s (6%), Problem 2.7 to 13.7 s (25%), Use Case 13.7 to 38.5 s (56%), Call to Action 38.5 to 44.4 s (13%).
+  For a 30 to 40 s CampusAI piece that is about 2.5 to 3, 8 to 9, 17 to 20 and 5 to 6 s; our reading-time rule can
+  stretch the Intro and the CTA. What each section does for us:
+  1. Intro: the hook and the logo together. The real product already on screen and moving, a UMD student naming who
+     they are ("Junior at Maryland."), the logo by 2 s. Theirs: the hero device, the wordmark, shapes floating in.
+  2. Problem: the student's problem in their own words, no product claims. Word by word kinetic type on the off-white
+     (each word out of a blur, about 5 frames apart), one picture of the mess made of real pieces (theirs: a swirl of
+     tilted cards round "you just want the solution"), then one punch word opened out letterspaced over a blueprint
+     grid that hands into the product (theirs: "Simple" into the logo ring).
+  3. Use Case: the real product answering that exact problem, most of the runtime, one continuous camera (One take, or
+     the reel's push through a monitor into the page), every press showing where it lands.
+  4. Call to Action: one line typed and then corrected (theirs: "Do it" becomes "Make it Done!"), the logo, "Link in bio".
+  Sections hand off with a move, never a fade. The breakdown frame (the film in a rounded card over the brand ground,
+  four pills whose near-black highlight and red playhead advance with the sections, a tick ruler) is kit part
+  `SectionFrame`, for "how we built it" cuts and teaching posts; the post itself goes out without it. Worked examples
+  `PostFitExplainer-4x5` and `PostFitExplainerFrame-4x5` (local, src/trials/).
 - **The meeting nobody needs** (2026-11-04, Echo's monday.com launch spot, learned through Muse; Jacob:
   "a great video, learn from it and apply"). One before/after argument in about a minute. The
   before is the pain in the customer's own words, quoted as they would say it ("Same as last

@@ -146,3 +146,19 @@ export {
   LAUNCH, LAUNCH_GRADIENTS, LAUNCH_FONT, VOID_TINTS, gradientCss,
 } from "./PastelLaunch";
 export type { KWord, Pose, VoidTint } from "./PastelLaunch";
+
+// One take (2026-11-21, from Ilias Miah's Kestrel notifications film, instagram.com/reel/Df8Nh5iBFPO, Muse Nov 21; Jacob:
+// "I love how this video looks for motion design"). Read frame by frame; our own build. Real captures as planes at their
+// own depths and tilts in a pale void, one camera through them with no cuts (push-in that squares the target plane,
+// lateral slides, the pull back to the opening frame for a loop), focus handed over by depth, an operated arrow with a
+// press ring, and in-place state changes from real recordings. Worked example PostOneTake-4x5 (src/trials/) stays local.
+export { OneTake, ONE_TAKE, oneTakeCam, planePoint, project as oneTakeProject } from "./OneTake";
+export type { Plane as OneTakePlane, PlaneContent as OneTakeContent, CamKey as OneTakeKey, PointerKey as OneTakePointer } from "./OneTake";
+
+// Section frame (2026-11-21, from Sultan Mahmud's (@sultanmotions, Sleeko) HowDo explainer breakdown,
+// instagram.com/reel/DcLzGYovY9B, Muse Nov 21; Jacob: "I love this"). Read frame by frame; our own build in CampusAI's
+// brand. A film inside a rounded card over the warm near-black ground with the red light from below, four labelled pills
+// (Intro, Problem, Use Case, Call to Action) whose near-black highlight and red playhead advance with the sections, and a
+// tick ruler. Worked example PostFitExplainerFrame-4x5 (src/trials/) stays local.
+export { SectionFrame, SECTION_FRAME, sectionsFor } from "./SectionFrame";
+export type { Section as SectionFrameSection } from "./SectionFrame";
