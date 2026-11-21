@@ -127,6 +127,15 @@ export type { RibbonWrapProps, RibbonSpec, RibbonSeg, RibbonTitle } from "./Ribb
 export { ScreenStage, quadMatrix, DESK } from "./ScreenStage";
 export type { ScreenStageProps, ScreenStagePlate, Quad, Pt } from "./ScreenStage";
 
+// Word phone (2026-11-20, from DrillUp's "I turned a song into an iPhone" reel, instagram.com/reel/Df60v8ChJhT, Muse
+// Nov 20; read frame by frame, the maker's method is comment-gated and was never seen, so this is our build). The words
+// of the piece land as a drawn phone's own text (suggestion bar, search, notifications, a counter, the Dynamic Island,
+// a pill that grows into an alert card) under one camera of whips, 3D tilts and push-ins, motion-blurred when fast.
+// The phone is the student's, never CampusAI's (web only until the app ships). Worked example PostWordPhone-9x16
+// (src/trials/) stays on Jacob's Mac with its voice and captures.
+export { WordPhone, wordPhoneEvents, camAt as wordPhoneCamAt } from "./WordPhone";
+export type { WordPhoneProps, PhoneScene, PhoneCam, PhoneNote, PhoneIsland, Spoken, SearchScene, LockScene, AlertScene, DialerScene } from "./WordPhone";
+
 // Pastel launch (2026-11-20, from ClickUp's 3:30 launch film, x.com/wallstengine/status/2123809287814476146, Muse Nov 20;
 // Jacob: "basically the exact same layout / flow / visuals ... but context of campus AI"). Read frame by frame, numbers
 // measured off the frames (films/launch-film/system.md, local); our own build. A pastel void, dark product captures

@@ -55,6 +55,13 @@ capabilities as pills stacking under one phrase.
   their real pages, the words stacked beside the pages, then the logo. Kit part `ScreenStage` (the worked example,
   `PostDeskStage-9x16`, stays local with its captures). A real filmed plate (6 s, tripod, monitor on plain white) beats the code-drawn room.
 - The pop-out, when the film highlights one specific thing.
+- **Word phone** (2026-11-20, DrillUp's "I turned a song into an iPhone" reel, read frame by frame; Jacob: "I love how
+  this looks for motion graphics"). The words are never captions: every word of the line lands as a phone's own text as it
+  is said (suggestion bar, a search, a notification title and body, a "N more" counter, the Dynamic Island, a black pill that
+  grows into an alert card whose button carries the last words), under one camera of whips (about 0.2 s, motion-blurred),
+  3D tilts and push-ins, every hand-off on a beat. For CampusAI the phone is the student's own, carrying a real student's
+  words from the footage library, and the alert's button pushes through into the real web product; never CampusAI on the
+  phone (web only until the app ships). Kit part `WordPhone`; worked example `PostWordPhone-9x16` (local, src/trials/).
 - **Pastel launch** (2026-11-20, ClickUp's 3:30 launch film, read frame by frame; Jacob: "basically the exact same layout /
   flow / visuals ... but context of campus AI"). A keynote launch without a stage: a pastel void (magenta top left,
   lavender left, blue or coral bottom right, near white centre), dark product captures floating tilted in it (settled at
