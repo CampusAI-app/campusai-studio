@@ -2,6 +2,9 @@
 
 Free Remotion components from snapcn (github.com/shadcn-labs/snapcn, MIT, see `LICENSE`), taken from
 commit `9c57e1b6196d7c895d74ec52934298120b22ffb6` on 2026-11-06, from Jacob's Muse send ("Need asap").
+Rechecked 2026-11-23 against upstream `main` (21 commits later, second Muse send "need this asap"): the 30 taken
+parts are unchanged upstream; brand-wheel was added; the only core change was snapcn's default accent blue, not
+taken because we always pass our own colours. Which part to reach for, and how long each runs: `skill/rules/snapcn.md`.
 Only the free `registry/snap-cn/` and `registry/snap-cn-ui/core` code. snapcn's paid Pro items live on
 their server and were never fetched.
 
@@ -10,11 +13,11 @@ Shared helpers are in `ui/`. Worked example: `src/askhighlight/AskHighlight.tsx`
 `AskHighlight-9x16`): text-highlight as a marker over the real chat, karaoke-captions for the end line. The parts
 measure text on mount, so load the brand face before they mount.
 
-## Taken (30)
+## Taken (31)
 
 Titles and type: text-reveal, text-highlight, text-rewrite, text-select, text-swap, text-swell,
 text-build, word-flip, word-gather, word-wheel, type-morph, punch-lines, spec-sweep, drop-line,
-hello-zoom, portal-intro.
+hello-zoom, portal-intro, brand-wheel (added 2026-11-23).
 Captions: word-captions, karaoke-captions.
 Logo moments: block-wordmark, wordmark-cut, cut-lockup, sky-lockup, title-sweep, logo-assemble,
 logo-collapse, logo-drift, logo-flicker.
@@ -48,6 +51,8 @@ label counts up (five to five hundred by default), so only use it with a true nu
 - Monospace: font-shuffle (cycles through a mono face; also loads fonts from jsdelivr), bloom-lockup
   (Geist Mono tagline, plus a wall of snapcn's stock pictures).
 - Needs `@paper-design/shaders-react`: pulsing-border.
+- prompt-mark (new upstream by 2026-11-23): a typed prompt pill that becomes snapcn's mark. Fake chat UI
+  again, and its ending is their logo, so it was left out with the others.
 - Not needed this pass, image galleries built on snapcn's stock pictures: announce-title,
   gather-lockup, hero-launch, moodboard-reveal, orbit-gallery, reel-collage, reel-wall, card-rail,
   orb-swarm, screen-recording.
