@@ -162,3 +162,33 @@ export type { Plane as OneTakePlane, PlaneContent as OneTakeContent, CamKey as O
 // tick ruler. Worked example PostFitExplainerFrame-4x5 (src/trials/) stays local.
 export { SectionFrame, SECTION_FRAME, sectionsFor } from "./SectionFrame";
 export type { Section as SectionFrameSection } from "./SectionFrame";
+
+// Keynote deck parts (2026-11-24, from bemx.studio's RunInfra launch film, instagram.com/reel/DgGtZyFKcLY, Muse Nov 24;
+// Jacob: "do the same for campusai"). Read frame by frame; our own build. PixelDissolve breaks one scene into accent blocks
+// that sweep across and leave the next behind (the deck's signature at open, middle and close). HandleHighlight marks one
+// phrase or one piece of UI the way a design tool marks a selected object: a box with tiny square corner handles.
+// Worked example PostKeynoteMonitor-9x16 (src/trials/, on ScreenStage) stays local.
+export { PixelDissolve } from "./PixelDissolve";
+export type { PixelDissolveProps } from "./PixelDissolve";
+export { HandleHighlight } from "./HandleHighlight";
+export type { HandleHighlightProps } from "./HandleHighlight";
+
+// Living map parts (2026-11-24, from Gur's Waze brand film "The Living Map", instagram.com/reel/Df4eC2iIxQC, Muse Nov 24;
+// Jacob: "how do we do this for campusAI"). PortraitFilmstrip: real people cut out onto flat colour cards on one strip
+// sliding right to left, their own words in a chip, a giant word passing behind. ChipSentence: a huge sentence with the
+// product's own UI cards set inside the words, chips popping around it, a colour flood turning the type. Worked example
+// PostLivingCampus-16x9 (src/trials/) stays local.
+export { PortraitFilmstrip } from "./PortraitFilmstrip";
+export type { PortraitFilmstripProps, FilmstripCard } from "./PortraitFilmstrip";
+export { ChipSentence } from "./ChipSentence";
+export type { ChipSentenceProps, SentencePart, FloatChip } from "./ChipSentence";
+
+// Presenter demo parts (2026-11-24, from Alex Prompter's Cicada demo, instagram.com/reel/DgFw8w-xrJD, Muse Nov 24;
+// Jacob: "we should do one like this but for campusai"). CartoonPresenter: CampusAI's one recurring cartoon student
+// (Open Peeps, CC0), bottom centre for a whole film, four poses (point, shrug, hold, proud) swapped on the beats.
+// KaraokeKeyword: captions building word by word at the top, the key word in italic serif inside a red box with corner
+// handles; takes word timings when there is a voice. Worked example PostPresenterDemo-9x16 (src/trials/) stays local.
+export { CartoonPresenter } from "./CartoonPresenter";
+export type { CartoonPresenterProps, PresenterPose } from "./CartoonPresenter";
+export { KaraokeKeyword } from "./KaraokeKeyword";
+export type { KaraokeKeywordProps, KaraokePhrase } from "./KaraokeKeyword";

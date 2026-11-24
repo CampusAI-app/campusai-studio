@@ -54,6 +54,19 @@ capabilities as pills stacking under one phrase.
   into one line, one command, a wipe off that line into the real page building part by part, three words landing over
   their real pages, the words stacked beside the pages, then the logo. Kit part `ScreenStage` (the worked example,
   `PostDeskStage-9x16`, stays local with its captures). A real filmed plate (6 s, tripod, monitor on plain white) beats the code-drawn room.
+- **Keynote on a monitor** (2026-11-24, bemx.studio's RunInfra launch film, read frame by frame): the launch deck plays on
+  a monitor in a dark room for the whole film, the camera drifting slowly, no voice. White slides, small quiet type built a
+  word at a time, ONE phrase per slide in a red `HandleHighlight` box, numbers the only big type, real captures framed by
+  the same corner handles, a `PixelDissolve` into red at the open, middle and close, and it ends inside the product (the
+  pointer presses a real control) before the logo. Room from `ScreenStage`. Worked example `PostKeynoteMonitor-9x16` stays local.
+- **Living map** (2026-11-24, Gur's Waze brand film): how CampusAI works underneath, told with people instead of a
+  feature list. Real students from our footage on flat red-family cards in a `PortraitFilmstrip` with their own words, the
+  mechanism line as a `ChipSentence` built from real product cards, giant cropped type, confetti dots, two first-person
+  proof scenes opening the real product, a red flood to the logo. Worked example `PostLivingCampus-16x9` stays local.
+- **Presenter demo** (2026-11-24, Alex Prompter's Cicada demo): one student job done end to end around one laptop, the
+  camera moving around it (wide, push in until the screen is the frame, a close-up for the one press), the recurring
+  `CartoonPresenter` at the bottom the whole film, `KaraokeKeyword` captions, and a payoff the student can click. Check on
+  the demo that the job really runs the way the film says before writing a line. Worked example `PostPresenterDemo-9x16` stays local.
 - The pop-out, when the film highlights one specific thing.
 - **Word phone** (2026-11-20, DrillUp's "I turned a song into an iPhone" reel, read frame by frame; Jacob: "I love how
   this looks for motion graphics"). The words are never captions: every word of the line lands as a phone's own text as it
