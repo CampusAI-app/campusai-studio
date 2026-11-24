@@ -59,13 +59,15 @@ capabilities as pills stacking under one phrase.
   word at a time, ONE phrase per slide in a red `HandleHighlight` box, numbers the only big type, real captures framed by
   the same corner handles, a `PixelDissolve` into red at the open, middle and close, and it ends inside the product (the
   pointer presses a real control) before the logo. Room from `ScreenStage`. Worked example `PostKeynoteMonitor-9x16` stays local.
+  Round 2 (Jacob, Nov 24: "It's clearly a screenshot... I like showing the data flowing"): never a flat screenshot on a slide.
+  Each product piece is a real card cut out of the demo and played arriving with `LivePart` (frame lands, rows fill in, numbers count).
 - **Living map** (2026-11-24, Gur's Waze brand film): how CampusAI works underneath, told with people instead of a
   feature list. Real students from our footage on flat red-family cards in a `PortraitFilmstrip` with their own words, the
   mechanism line as a `ChipSentence` built from real product cards, giant cropped type, confetti dots, two first-person
   proof scenes opening the real product, a red flood to the logo. Worked example `PostLivingCampus-16x9` stays local.
 - **Presenter demo** (2026-11-24, Alex Prompter's Cicada demo): one student job done end to end around one laptop, the
   camera moving around it (wide, push in until the screen is the frame, a close-up for the one press), the recurring
-  `CartoonPresenter` at the bottom the whole film, `KaraokeKeyword` captions, and a payoff the student can click. Check on
+  `KaraokeKeyword` captions (`keyStyle="plain"`: Jacob, Nov 24, no box or handles over the key word, and no cartoon host needed), real desktop pages on the 3D laptop with camera hand-offs instead of dissolves, a voice, sound on every move, and a payoff the student can click. Check on
   the demo that the job really runs the way the film says before writing a line. Worked example `PostPresenterDemo-9x16` stays local.
 - The pop-out, when the film highlights one specific thing.
 - **Word phone** (2026-11-20, DrillUp's "I turned a song into an iPhone" reel, read frame by frame; Jacob: "I love how

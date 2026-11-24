@@ -192,3 +192,10 @@ export { CartoonPresenter } from "./CartoonPresenter";
 export type { CartoonPresenterProps, PresenterPose } from "./CartoonPresenter";
 export { KaraokeKeyword } from "./KaraokeKeyword";
 export type { KaraokeKeywordProps, KaraokePhrase } from "./KaraokeKeyword";
+
+// LivePart (2026-11-24, round 2 of the keynote film after Jacob's note "It's clearly a screenshot... I like showing the
+// data flowing"). A real product card cut out of the demo (empty frame, full card, each row's box, each number re-shot
+// through its count; captured by a script like films/post-keynote-monitor/capture-parts.mjs) played back arriving:
+// the frame lands, the rows fill in one by one, numbers count up, bars draw. Worked example PostKeynoteMonitor-9x16.
+export { LivePart, liveTimes, readingOrder } from "./LivePart";
+export type { LiveLine, LiveManifest, LiveTiming } from "./LivePart";

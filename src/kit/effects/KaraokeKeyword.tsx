@@ -9,6 +9,9 @@
  * arrives out of a small blur and rise; the key box draws open from its centre as the key word lands. The phrase leaves on
  * `end` (fade and lift, 6 frames), so phrases can be butted end to start.
  *
+ * `keyStyle: "plain"` (added 2026-11-24 for post-everything-laptop, Jacob on round 1: no box, no corner handles, no
+ * outline over the key word): the key word is just the italic serif in the accent colour, landing like the other words.
+ *
  * Reading time is the film's job: hold each phrase at least letters / 15 + 1.5 s (rules in skill/SKILL.md).
  */
 import React from "react";
@@ -27,6 +30,9 @@ export type KaraokePhrase = {
   text: string;
   /** Optional landing frame per word (absolute), e.g. from word timings. Overrides `stagger`. */
   times?: number[];
+  /** Optional frame from which the whole phrase already sits on screen, faint, before each word lights up as it lands
+   *  (so frame 0 can carry the opening line, rules/campusai.md 11/24). */
+  ghost?: number;
 };
 
 export type KaraokeKeywordProps = {
@@ -40,6 +46,8 @@ export type KaraokeKeywordProps = {
   maxWidth?: number;
   ink?: string;
   accent: string;
+  /** "box" (default): the key word in a thin accent box with corner handles. "plain": italic serif in the accent colour, no box. */
+  keyStyle?: "box" | "plain";
 };
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -75,14 +83,17 @@ const Handle: React.FC<{ style: React.CSSProperties; accent: string; s: number }
   <div style={{ position: "absolute", width: s, height: s, background: "#fff", border: `1.5px solid ${accent}`, ...style }} />
 );
 
-const PhraseView: React.FC<{ p: KaraokePhrase; stagger: number; size: number; maxWidth: number; ink: string; accent: string }> = ({ p, stagger, size, maxWidth, ink, accent }) => {
+const PhraseView: React.FC<{ p: KaraokePhrase; stagger: number; size: number; maxWidth: number; ink: string; accent: string; keyStyle: "box" | "plain" }> = ({ p, stagger, size, maxWidth, ink, accent, keyStyle }) => {
   const f = useCurrentFrame();
   const words = parse(p.text);
   const landAt = (i: number) => (p.times?.[i] ?? p.at + i * stagger);
   const leave = interpolate(f, [p.end - 6, p.end], [1, 0], clamp);
   const lift = interpolate(f, [p.end - 6, p.end], [0, -10], clamp);
+  const ghostOn = p.ghost !== undefined && f >= p.ghost;
+  const shown = (i: number) => f >= landAt(i) || ghostOn;
   const wordStyle = (i: number): React.CSSProperties => {
     const t = interpolate(f, [landAt(i), landAt(i) + 5], [0, 1], clamp);
+    if (ghostOn) return { opacity: 0.45 + 0.55 * t, display: "inline-block" };
     return { opacity: t, transform: `translateY(${(1 - t) * 10}px)`, filter: `blur(${(1 - t) * 5}px)`, display: "inline-block" };
   };
   return (
@@ -90,12 +101,17 @@ const PhraseView: React.FC<{ p: KaraokePhrase; stagger: number; size: number; ma
       {runs(words).map((run, k) => {
         if (!run.key) {
           // a word takes its place only when it lands, so the line builds from the centre the way the reel's does
-          return run.words.filter(({ i }) => f >= landAt(i)).map(({ w, i }) => (
+          return run.words.filter(({ i }) => shown(i)).map(({ w, i }) => (
             <span key={`${k}-${i}`} style={{ ...wordStyle(i), fontFamily: INTER, fontWeight: 600, fontSize: size, color: ink, letterSpacing: "-0.02em", textShadow: "0 2px 14px rgba(0,0,0,0.65)" }}>{w}</span>
           ));
         }
         const first = run.words[0].i;
-        if (f < landAt(first)) return null;
+        if (!shown(first)) return null;
+        if (keyStyle === "plain") {
+          return run.words.filter(({ i }) => shown(i)).map(({ w, i }) => (
+            <span key={`p${k}-${i}`} style={{ ...wordStyle(i), fontFamily: SERIF, fontStyle: "italic", fontWeight: 400, fontSize: size * 1.22, lineHeight: 1.0, color: accent, textShadow: "0 2px 16px rgba(0,0,0,0.75)" }}>{w}</span>
+          ));
+        }
         const open = interpolate(f, [landAt(first), landAt(first) + 7], [0, 1], { ...clamp, easing: (x) => 1 - Math.pow(1 - x, 3) });
         const hs = Math.round(size * 0.2);
         return (
@@ -122,13 +138,13 @@ const hexRgb = (hex: string) => {
   return `${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}`;
 };
 
-export const KaraokeKeyword: React.FC<KaraokeKeywordProps> = ({ phrases, stagger = 6, top = 180, size = 54, maxWidth = 900, ink = "#ffffff", accent }) => {
+export const KaraokeKeyword: React.FC<KaraokeKeywordProps> = ({ phrases, stagger = 6, top = 180, size = 54, maxWidth = 900, ink = "#ffffff", accent, keyStyle = "box" }) => {
   const f = useCurrentFrame();
-  const live = phrases.filter((p) => f >= p.at - 1 && f < p.end);
+  const live = phrases.filter((p) => f >= Math.min(p.at, p.ghost ?? p.at) - 1 && f < p.end);
   return (
     <div style={{ position: "absolute", left: 0, right: 0, top, textAlign: "center", pointerEvents: "none" }}>
       {live.map((p) => (
-        <PhraseView key={`${p.at}-${p.text}`} p={p} stagger={stagger} size={size} maxWidth={maxWidth} ink={ink} accent={accent} />
+        <PhraseView key={`${p.at}-${p.text}`} p={p} stagger={stagger} size={size} maxWidth={maxWidth} ink={ink} accent={accent} keyStyle={keyStyle} />
       ))}
     </div>
   );
