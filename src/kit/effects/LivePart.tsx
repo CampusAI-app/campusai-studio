@@ -26,6 +26,7 @@ export type LiveManifest = {
   after?: { x: number; y: number; w: number; h: number; press: string } | null;
 };
 
+/** `order` lists the rows that land, in order; rows left out never show (a whole page's rows below the fold). */
 export type LiveTiming = { start: number; frameDur?: number; fillAfter?: number; step?: number; lineDur?: number; countDur?: number; order?: number[] };
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -79,6 +80,7 @@ export const LivePart: React.FC<{
         <Img src={staticFile(`${dir}/frame.png`)} style={{ position: "absolute", left: 0, top: 0, width: W, height: H }} />
         {m.lines.map((l, i) => {
           const t0 = at[i];
+          if (!Number.isFinite(t0)) return null; // a row left out of timing.order never lands (off screen, say)
           const p = interpolate(f, [t0, t0 + lineDur], [0, 1], { ...clamp, easing: OUT });
           if (p <= 0) return null;
           const bar = isBar(l);

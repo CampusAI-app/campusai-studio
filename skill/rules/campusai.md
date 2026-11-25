@@ -115,6 +115,13 @@ Street-interview clips that hand off into the real product. Ashley picks what to
   we're not on the phone yet either." So no phone screens and no "on your phone" copy. A vertical reel uses the tall desktop
   recording above (1100 x 1956, `zoom` 1.8), shown big with the product as the frame. Never crop a wide desktop recording
   into a narrow card ("trying to shove it into a real format").
+- **Real computer size, never a tall or narrow window (11/24, replaces the tall window in the two bullets above).** The
+  1100 x 1956 window reflows the product: at `zoom` 1.8 its cards wrap a word per line, and under 1280 px some pages change
+  layout (My Calendar's task list drops under the grid). Jacob on the keynote film's round 3 direction: "I don't think that's
+  how it shows up on the web" and "you're trying to fit it on a phone... it makes it look weird." For a vertical reel,
+  record at 1440 x 900 and show the whole screen (on a monitor in a room, as `post-keynote-monitor` round 3 does), and fill
+  the rest of the 9:16 frame with big words, never with a reflowed or cropped product. A chat may still use `zoom` in
+  chat.json: it enlarges only the thread and the box, and the page keeps its desktop layout.
 - Show only what the product has. No map: CampusAI has none, so a map beat reads as a feature that does not exist (11/06).
 
 ## Camera and motion
