@@ -11,6 +11,11 @@
  * Frame 0 is the frame the strip starts; wrap it in a Sequence. `startX` is where the first card's left edge sits on
  * frame 0 (negative starts the strip already full, the way the reference opens). Cards repeat when the strip runs out.
  * Portraits are PNG cutouts (transparent ground) drawn bottom aligned; a plain photo also works (object-fit cover).
+ *
+ * Round 2 (2026-11-24, Jacob on the first cut: he did not like the people sitting in front of the giant word). The word
+ * can now go in front of the cards (`wordLayer="front"`), or leave `word` empty and set the giant type in its own band
+ * above the strip, the way post-living-campus round 2 does. A card can carry a name over its line (`chipTitle`), for
+ * real people named on screen (name plus major or role, never invented).
  */
 import React from "react";
 import { Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
@@ -22,6 +27,8 @@ export type FilmstripCard = {
   color: string;
   /** The chip bottom left. Keep it the person's own words or name; never invented. */
   chip?: string;
+  /** A bold first line on the chip (a name), with `chip` under it in a lighter weight. */
+  chipTitle?: string;
   /** Scale and nudge of the portrait inside the card (1 = fills the card height). */
   zoom?: number;
   dx?: number;
@@ -52,13 +59,15 @@ export type PortraitFilmstripProps = {
   enter?: number;
   /** Draw only these card indices on top of the word (others go behind it), for the in-and-out weave. Default all on top. */
   frontOf?: (i: number) => boolean;
+  /** "front" draws the giant word over every card, so the word always reads. Default "behind" (the reference's weave). */
+  wordLayer?: "behind" | "front";
 };
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 
 export const PortraitFilmstrip: React.FC<PortraitFilmstripProps> = ({
   cards, speed = 13, startX = 0, cardW = 400, cardH = 500, gap = 34, radius = 22, cy, word, wordColor = "#141012",
-  wordSize = 760, wordSpeed = 0.55, wordStartX, font, chipFont, chipSize = 25, enter = 0, frontOf,
+  wordSize = 760, wordSpeed = 0.55, wordStartX, font, chipFont, chipSize = 25, enter = 0, frontOf, wordLayer = "behind",
 }) => {
   const f = useCurrentFrame();
   const { width, height } = useVideoConfig();
@@ -82,12 +91,15 @@ export const PortraitFilmstrip: React.FC<PortraitFilmstripProps> = ({
           position: "absolute", bottom: 0, left: "50%", height: `${(c.zoom ?? 1) * 100}%`, maxWidth: "none",
           transform: `translateX(calc(-50% + ${c.dx ?? 0}px))`,
         }} />
-        {c.chip ? (
+        {c.chip || c.chipTitle ? (
           <div style={{
             position: "absolute", left: 18, bottom: 18, maxWidth: cardW - 36, padding: "10px 16px", borderRadius: 18,
             background: "rgba(255,255,255,0.96)", color: "#141012", fontFamily: chipFont ?? font, fontWeight: 600, fontSize: chipSize,
             lineHeight: 1.18, boxShadow: "0 6px 18px rgba(20,16,18,0.16)",
-          }}>{c.chip}</div>
+          }}>
+            {c.chipTitle ? <div style={{ fontWeight: 800, fontSize: chipSize * 1.25, lineHeight: 1.1 }}>{c.chipTitle}</div> : null}
+            {c.chip ? <div style={{ opacity: c.chipTitle ? 0.72 : 1, marginTop: c.chipTitle ? 2 : 0 }}>{c.chip}</div> : null}
+          </div>
         ) : null}
       </div>
     );
@@ -102,6 +114,7 @@ export const PortraitFilmstrip: React.FC<PortraitFilmstripProps> = ({
   ) : null;
 
   const front = frontOf ?? (() => true);
+  if (wordLayer === "front") return <>{slots.map(card)}{wordEl}</>;
   return (
     <>
       {slots.filter((s) => !front(s)).map(card)}

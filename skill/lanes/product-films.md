@@ -65,6 +65,10 @@ capabilities as pills stacking under one phrase.
   feature list. Real students from our footage on flat red-family cards in a `PortraitFilmstrip` with their own words, the
   mechanism line as a `ChipSentence` built from real product cards, giant cropped type, confetti dots, two first-person
   proof scenes opening the real product, a red flood to the logo. Worked example `PostLivingCampus-16x9` stays local.
+  Round 2 (Jacob, Nov 24: "I'd rather show actual members of our team", and the people should not sit above the giant word):
+  the real team on the cards with name plus major or role (`chipTitle`), the giant line in its own band above the strip
+  (or `wordLayer="front"`), never behind faces, and "every Terp" shown through real features and non-business campus life
+  (events filter, lacrosse, open mic), not more finance cards. Worked example `PostLivingCampusR2-16x9`, local.
 - **Presenter demo** (2026-11-24, Alex Prompter's Cicada demo): one student job done end to end around one laptop, the
   camera moving around it (wide, push in until the screen is the frame, a close-up for the one press), the recurring
   `KaraokeKeyword` captions (`keyStyle="plain"`: Jacob, Nov 24, no box or handles over the key word, and no cartoon host needed), real desktop pages on the 3D laptop with camera hand-offs instead of dissolves, a voice, sound on every move, and a payoff the student can click. Check on
