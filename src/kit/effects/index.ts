@@ -212,3 +212,20 @@ export type { StoryBoard } from "./StoryboardVsFinal";
 // in and settling. Worked example PostConstantMotion-9x16 (src/trials/, on ScreenStage) stays local.
 export { GradientCursor, InlineBloom, DrawQuestion, PieceStorm, typed, CONSTANT_MOTION } from "./ConstantMotion";
 export type { StormPiece } from "./ConstantMotion";
+
+// Kinetic confession (2026-11-25, Muse: Adrian's spec film for Bitstack, Jacob: "I LOVE THIS"). Read frame by frame; our
+// own build. Banners landing in one slot and pushing the pile up, a boiling marker, a word that curls into a ring around
+// another, coin-flipping letter tiles. Worked example PostFriendStory-9x16 (src/trials/) stays local.
+export { NoticeStack, BoilMarker, OrbitWord, FlipTile, KINETIC_CONFESSION } from "./KineticConfession";
+export type { Notice } from "./KineticConfession";
+
+// Desk flow (2026-11-25, Muse: XZE Creative's "Flow.ai" spec film, instagram.com/reel/DgHAfQtI8GM; Jacob: "I want one
+// almost exact like this"). Read frame by frame; our own build. The screen moves of a film played on one monitor in a
+// dark room (use with ScreenStage): ribbon sweep, the spark tumbling in with the wordmark typed beside it, the hook in a
+// glowing pill, cards bending into a spinning ring. Worked example PostDeskFlow-9x16 (src/trials/) stays local.
+export { RibbonSweep, Spark3D, SparkLockup, GlowPill, VortexRing, measureLine, SPARK_D, SPARK_HOME, WORDMARK, WORDMARK_LETTERS, DESK_FLOW } from "./DeskFlow";
+export type { VortexItem } from "./DeskFlow";
+
+// From Ildari's Strava concept ad (2026-11-25, Muse): a walk on a real campus map with a live bar. Reuse for the Campus Map film.
+export { CampusWalk, WalkFigure, clockText } from "./CampusWalk";
+export type { CampusWalkProps, WalkWorld } from "./CampusWalk";
