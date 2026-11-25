@@ -199,3 +199,10 @@ export type { KaraokeKeywordProps, KaraokePhrase } from "./KaraokeKeyword";
 // the frame lands, the rows fill in one by one, numbers count up, bars draw. Worked example PostKeynoteMonitor-9x16.
 export { LivePart, liveTimes, readingOrder } from "./LivePart";
 export type { LiveLine, LiveManifest, LiveTiming } from "./LivePart";
+
+// Storyboard vs final (2026-11-24, from bemx.studio's "Storyboard vs. Final" reel for Linear, Muse Nov 24; Jacob: "follow
+// this for campusai"). Read frame by frame; our own build. The rough storyboard runs as a tilted strip above the finished
+// film in a rounded card, in sync, with a dotted progress line under it; any film can be wrapped. The Rough* pieces sketch
+// honest boards in a few lines. Worked example PostStoryboardFinal-4x5 (src/trials/) stays local.
+export { StoryboardVsFinal, STORYBOARD_VS_FINAL, RoughBoard, RoughText, RoughBox, RoughPill, RoughBlock, RoughArrow } from "./StoryboardVsFinal";
+export type { StoryBoard } from "./StoryboardVsFinal";

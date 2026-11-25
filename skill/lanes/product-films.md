@@ -61,6 +61,11 @@ capabilities as pills stacking under one phrase.
   pointer presses a real control) before the logo. Room from `ScreenStage`. Worked example `PostKeynoteMonitor-9x16` stays local.
   Round 2 (Jacob, Nov 24: "It's clearly a screenshot... I like showing the data flowing"): never a flat screenshot on a slide.
   Each product piece is a real card cut out of the demo and played arriving with `LivePart` (frame lands, rows fill in, numbers count).
+- **Storyboard vs final** (2026-11-24, bemx.studio's "Storyboard vs. Final" reel for Linear; Jacob: "follow this for
+  campusai"): use it when a film is worth showing as craft, the rough plan running above the finished cut so one post sells
+  the process and the result. Kit part `StoryboardVsFinal` wraps any film (boards are your own `Rough*` sketches, one per
+  beat, or frozen washed-out frames as a quick fallback); keep the film's sound outside the part. Worked example
+  `PostStoryboardFinal-4x5` stays local.
 - **Living map** (2026-11-24, Gur's Waze brand film): how CampusAI works underneath, told with people instead of a
   feature list. Real students from our footage on flat red-family cards in a `PortraitFilmstrip` with their own words, the
   mechanism line as a `ChipSentence` built from real product cards, giant cropped type, confetti dots, two first-person
