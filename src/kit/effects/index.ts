@@ -206,3 +206,9 @@ export type { LiveLine, LiveManifest, LiveTiming } from "./LivePart";
 // honest boards in a few lines. Worked example PostStoryboardFinal-4x5 (src/trials/) stays local.
 export { StoryboardVsFinal, STORYBOARD_VS_FINAL, RoughBoard, RoughText, RoughBox, RoughPill, RoughBlock, RoughArrow } from "./StoryboardVsFinal";
 export type { StoryBoard } from "./StoryboardVsFinal";
+
+// Constant motion (2026-11-24, Muse: bemx.studio's Lovable promo, Jacob: "always something moving to catch ur eye on").
+// Read frame by frame; our own build. Inline bloom, a drawing "?", an oversized gradient cursor, real pieces storming
+// in and settling. Worked example PostConstantMotion-9x16 (src/trials/, on ScreenStage) stays local.
+export { GradientCursor, InlineBloom, DrawQuestion, PieceStorm, typed, CONSTANT_MOTION } from "./ConstantMotion";
+export type { StormPiece } from "./ConstantMotion";

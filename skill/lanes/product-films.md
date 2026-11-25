@@ -66,6 +66,16 @@ capabilities as pills stacking under one phrase.
   the process and the result. Kit part `StoryboardVsFinal` wraps any film (boards are your own `Rough*` sketches, one per
   beat, or frozen washed-out frames as a quick fallback); keep the film's sound outside the part. Worked example
   `PostStoryboardFinal-4x5` stays local.
+- **Constant motion** (2026-11-24, bemx.studio's Lovable promo, read frame by frame; Jacob: "you see how there's always
+  something moving and to catch ur eye on"): a laptop in a dark room, the camera drifting by hand, a sticky note under the
+  screen, and on the screen not one still second. The grammar, measured: an icon inside the sentence blooms to fill the
+  screen in 0.2 s and collapses back; a gradient "?" draws itself while the line erases backwards a word every ~0.1 s; every
+  word but the punch word drops away and a blob floods up; the logo zooms until its letters are the next scene's background;
+  an oversized gradient cursor travels with intent and every click is punctuation; generation is finished pieces storming
+  in and settling, never a spinner; a dark breath before the ending; the ending is a live edit (a word selected, deleted,
+  retyped, the theme re-tinted, one press). The story still comes first: ours carries one problem ("Knowing what's next?")
+  from the hook to the edit ("stall." becomes "start."). Kit parts `ConstantMotion` (GradientCursor, InlineBloom,
+  DrawQuestion, PieceStorm, typed); room from `ScreenStage` with a plate. Worked example `PostConstantMotion-9x16` stays local.
 - **Living map** (2026-11-24, Gur's Waze brand film): how CampusAI works underneath, told with people instead of a
   feature list. Real students from our footage on flat red-family cards in a `PortraitFilmstrip` with their own words, the
   mechanism line as a `ChipSentence` built from real product cards, giant cropped type, confetti dots, two first-person
