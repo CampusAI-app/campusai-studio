@@ -72,14 +72,10 @@ fi
 if command -v npx >/dev/null 2>&1; then
   npx -y skills add remotion-dev/skills -g -a claude-code -s '*' -y >/dev/null 2>&1 \
     && ok "Remotion's official skills" || skip "Remotion's official skills, optional"
-  # Emil Kowalski's motion craft (MIT): how motion should feel, the names of effects, Apple's springs,
-  # and a critique pass. Reference only; his `animate` is left out because it builds from scratch.
-  # Added 2026-11-25 (from the Nov 17 Muse send): choreograph (several things moving as one), gestures,
-  # break-ui, remove-animations, animation-performance.
-  npx -y skills add emilkowalski/skills -g -a claude-code \
-    -s emil-design-eng -s review-animations -s animation-vocabulary -s apple-design \
-    -s choreograph -s gestures -s break-ui -s remove-animations -s animation-performance -y >/dev/null 2>&1 \
-    && ok "Emil Kowalski's motion skills" || skip "Emil Kowalski's motion skills, optional"
+  # Everyone else's skills the team shares (Emil Kowalski's motion craft, Jakub Krehel's colour and type,
+  # transitions.dev, copywriting): the list is skill/team-skills.txt.
+  n="$(bash "$STUDIO/scripts/add-skills.sh")"
+  ok "shared skills ($n new)"
   # The studio skill bans this one: it answers "make a video" by starting a blank project.
   rm -rf "$HOME/.claude/skills/remotion-create" "$HOME/.agents/skills/remotion-create"
 fi

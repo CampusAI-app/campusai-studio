@@ -1,0 +1,27 @@
+# Skills from other people that every studio teammate gets. One "owner/repo skill" per line.
+# scripts/add-skills.sh installs any that are missing; the update at session start runs it in the
+# background, so a line added here reaches the whole team on its own. Remotion's whole pack is
+# installed separately (install.sh), minus remotion-create, which the studio skill bans.
+#
+# Emil Kowalski (MIT): how motion should feel, its names, Apple's springs, critique and fixes
+emilkowalski/skills emil-design-eng
+emilkowalski/skills review-animations
+emilkowalski/skills animation-vocabulary
+emilkowalski/skills apple-design
+emilkowalski/skills choreograph
+emilkowalski/skills gestures
+emilkowalski/skills break-ui
+emilkowalski/skills remove-animations
+emilkowalski/skills animation-performance
+emilkowalski/skills improve-animations
+emilkowalski/skills find-animation-opportunities
+# Jakub Krehel (MIT): colour, type, layout and writing craft for graphics and on-screen words
+jakubkrehel/skills better-colors
+jakubkrehel/skills better-typography
+jakubkrehel/skills better-layout
+jakubkrehel/skills better-writing
+# transitions.dev: how transitions between states should move
+jakubantalik/transitions.dev transitions-dev
+jakubantalik/transitions.dev transitions-polish
+# Corey Haines (MIT): copywriting for hooks, captions and CTAs
+coreyhaines31/marketingskills copywriting

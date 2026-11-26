@@ -48,10 +48,16 @@ if [ "$behind" -gt 0 ]; then
   fi
 fi
 link_skills
-# Emil Kowalski's newer motion skills joined install.sh on 2026-11-25; anyone set up earlier lacks them.
-[ -e "$HOME/.claude/skills/choreograph" ] || [ -e "$HOME/.agents/skills/choreograph" ] \
-  || echo "Studio: new motion skills (choreograph, gestures and three more) are ready. Run bash install.sh once" \
-    "here to add them. Offer to run it for the person."
+# A skill added to skill/team-skills.txt installs itself here, in the background so the session never waits.
+missing=0
+while read -r repo name; do
+  case "$repo" in ""|\#*) continue ;; esac
+  [ -e "$HOME/.claude/skills/$name" ] || [ -e "$HOME/.agents/skills/$name" ] || missing=$((missing + 1))
+done < skill/team-skills.txt 2>/dev/null
+if [ "$missing" -gt 0 ] && command -v npx >/dev/null 2>&1; then
+  nohup bash scripts/add-skills.sh </dev/null >/dev/null 2>&1 &
+  echo "Studio: adding $missing new skill(s) in the background. They are ready from the next session."
+fi
 # Set up before 2026-11-03: updates only reach this person when Claude starts in the studio folder.
 grep -qF "# campusai-studio" "$HOME/.claude/settings.json" 2>/dev/null \
   || echo "Studio: updates only reach you when Claude starts in this folder. Run bash install.sh once" \
