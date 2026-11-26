@@ -187,6 +187,26 @@ capabilities as pills stacking under one phrase.
   lines sat about 0.4 s). Worked example `src/launch-transitions/` (`LaunchTransitions-16x9`, its own
   entry file), which uses hand-offs 1 to 7, 9 and 10.
 
+- **Phone walkthrough** (2026-11-26, the NestPay film again, now on mobile; Jacob: "let's make one of these for
+  mobile"). The hand-offs above with a phone as the one carrier: rise on the number, roll away, the reframe question,
+  the logo whose spark opens the light ground, the phone stands, tips flat into the list, one card stands up out of the
+  screen, the phone spins through its back onto the result, chips orbit in while the number ticks. Kit part
+  `PhoneMove`; worked example `PostPhoneWalk-9x16` (src/phonewalk/). Screens are simulator screenshots of the real app
+  in progress, and the copy says the app is being built. On a preserve-3d layer, opacity and filter flatten the phone:
+  put them on the flat layer outside the perspective.
+- **Inspiration shelf, Nov 26 Muse pass** (each read frame by frame from Lucius's notes; one proof clip each):
+  - *Placed* (Halmarr, a career and placement SaaS film): a mascot orb carries the story; stat cards tick beside a
+    rising chart; "Build your [icon] path", a real app icon dropping into the headline (kit `InlineIcon`); lesson cards
+    fan in 3D; a swoosh wipe into a 100/100 score. Take: one recurring character or object for the whole film, numbers
+    that move instead of sit, the product's own icon standing in for a word. Fits CampusAI as the Job Match and degree
+    stories, a near twin of what we sell.
+  - *JustPaid* (Halmarr): the look. A warm peach to violet mesh world, frosted glass cards of the product floating in
+    depth with parallax, giant type beside a tilted device, one deep accent word (kit `FrostDepth`). Take: the ground is
+    a living gradient, never flat, and depth of field does the layering.
+  - *Pulse* (thejimmy.vision): pain hook, reframe question, product answers, benefit imperatives, call to action; a
+    typed headline whose key word sits in a filled pill; a funnel of dark pills joined by arrows with % tags (kit
+    `PillType`). Take: one pill per line, on the word the line is about, and every % from the facts file.
+
 **Stageshow's rules worth keeping** (2026-11-18, from Stageshow, Muse send; Benji Taylor's skill, MIT, trialled
 and security-passed first). `npm run gate` checks the motion faults; these are the framing and craft calls it can't.
 - **Poster = the payoff state**, never a frame mid-change. It is also what a reduced-motion viewer sees. The film still

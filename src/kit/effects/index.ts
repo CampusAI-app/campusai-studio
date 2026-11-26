@@ -235,3 +235,26 @@ export type { CampusWalkProps, WalkWorld } from "./CampusWalk";
 // "Woah" card, the highlight and bar sweeps, the outline mark, a counter, the orb. Worked example PostKinso-9x16 stays local.
 export { UltrawideRoom, ULTRAWIDE, GradientField, PillWord, Halftone, HalftoneCard, HighlightSweep, BarSweep, StrokeMark, CountUp, Orb, Crosshair, CornerTicks, SL } from "./ScreenLaunch";
 export type { PillIcon } from "./ScreenLaunch";
+
+// Island morph, Edge-turn card, Narrator type (2026-11-26, three Muse sends: dnyx's Find My Dynamic Island, Studio Size's
+// Medallia system slide 9, John Stark's Spline explainer). Read frame by frame; our own builds. Worked examples:
+// src/trials/post-campus-island.tsx (PostCampusIsland-9x16), proof-edge-turn.tsx, proof-narrator.tsx (own entry files).
+export { IslandMorph, IslandWords, IslandPin, IslandComet, IslandFlash, IslandParticleLogo, islandProject, ISLAND } from "./IslandMorph";
+export type { IslandState, IslandTilt } from "./IslandMorph";
+export { EdgeTurnCard, GrowBars, StatTile, edgeTurnTimes, EDGE_TURN } from "./EdgeTurnCard";
+export type { EdgePage, Bar as EdgeBar } from "./EdgeTurnCard";
+export { NarratorType, narratorTimes, NARRATOR } from "./NarratorType";
+export type { NarratorBeat, NarratorWord } from "./NarratorType";
+
+// Nov 26 Muse pass (Lucius's frame-by-frame watch notes; our own builds). PhoneMove: the phone as the subject, every scene
+// change a move of the phone (rise, roll away, lay flat, a card lifting out, the spin edge-on, chips orbiting in), from
+// thejimmy.vision's NestPay walkthrough. PillType: a typed line with the key word in a filled pill, and the pill funnel,
+// from thejimmy.vision's Pulse explainer. InlineIcon: a real app icon dropping into a gap in the headline, from Halmarr's
+// Placed film. FrostDepth: the warm mesh world and frosted cards in depth, from Halmarr's JustPaid film. Worked examples:
+// PostPhoneWalk-9x16 and the three *-Proof-9x16 clips (src/phonewalk/, entry src/phonewalk/entry.ts; captures stay local).
+export { Phone3D, PhoneStage, PhoneShadow, ScreenPx, PressRing, poseAt, poseBlur, phoneMetrics, focusOn, PHONE_EASE, CAPTURE as PHONE_CAPTURE } from "./PhoneMove";
+export type { PhonePose, PoseState } from "./PhoneMove";
+export { PillType, PillFunnel } from "./PillType";
+export type { PillRun, FunnelStep } from "./PillType";
+export { InlineIcon } from "./InlineIcon";
+export { MeshWorld, FrostCard } from "./FrostDepth";

@@ -50,6 +50,7 @@ import { MuseBooqraRoot } from "./muse1125/booqra/Root";
 import { MuseJacksonRoot } from "./muse1125/jackson/Root";
 import { MuseTriangleRoot } from "./muse1125/triangle/Root";
 import { getVideoDuration } from "./lib/getVideoDuration";
+import { PhoneWalkRoot } from "./phonewalk/Root";
 import { StudySpotFilm, STUDY_FRAMES, STUDY_FPS, STUDY_SIZE } from "./studyspot/StudySpot";
 import { OneShape, DURATION as ONE_SHAPE_FRAMES, FPS as ONE_SHAPE_FPS, W as ONE_SHAPE_W, H as ONE_SHAPE_H } from "./wave2a/one-shape/OneShape";
 import { Letters, DURATION as LETTERS_FRAMES, FPS as LETTERS_FPS, W as LETTERS_W, H as LETTERS_H } from "./wave2a/letters/Letters";
@@ -370,6 +371,8 @@ export const RemotionRoot: React.FC = () => {
       {/* Wave 2 motion loops (2026-10-23): one shape through the real states, the product inside the letters. */}
       <Composition id="OneShape-9x16" component={OneShape} durationInFrames={ONE_SHAPE_FRAMES} fps={ONE_SHAPE_FPS} width={ONE_SHAPE_W} height={ONE_SHAPE_H} />
       <Composition id="Letters-16x9" component={Letters} durationInFrames={LETTERS_FRAMES} fps={LETTERS_FPS} width={LETTERS_W} height={LETTERS_H} />
+      {/* Nov 26 Muse pass: the phone walkthrough post and the PhoneMove, PillType, InlineIcon, FrostDepth proofs. */}
+      <PhoneWalkRoot />
     </>
   );
 };
