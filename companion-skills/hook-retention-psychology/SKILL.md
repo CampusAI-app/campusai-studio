@@ -38,6 +38,10 @@ Write ten openings, keep three, post one. Each opening should pull at least one 
 - **Payoff timing.** If the whole thing is a single "wait for it," the wait must be short and the reveal must be worth it. Long teases with thin payoffs are the fastest way to train the algorithm to bury you.
 - **End on a reason to act or re-watch**, not a fade. Saves and shares are the strongest signal; give them a line worth saving.
 
+**Tension loops (2026-11-25, @byjacksonsword, Muse send).** A loop is a question the viewer cannot leave unanswered. Open the next before you close the last, keep two or three pending at all times, and close every one by the end. A clean stopping point mid-video is where they leave. Show the loops: a small card pinned on screen until it is answered. On CampusAI the product closes a loop and never opens a fake one. Worked example: the "Left on read" doodle cut (`src/muse1125/jackson`).
+
+**The 5-part story in about 45 s (2026-11-25, @byjacksonsword).** Hook with a specific goal or problem; rising action (show the effort, most b-roll here); a second conflict that re-hooks (something goes wrong, the timeline shrinks); the climax where it is pulled off, on the music's lift; the resolution that pays it off. The second conflict is the part most people skip.
+
 ## Hook formulas, tools and the swipe loop (harvested 2026-10-25)
 
 From Jake Schincariol's Instagram agent pack (MIT). Vendored, not installed:

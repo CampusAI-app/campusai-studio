@@ -9,6 +9,11 @@ here and add `talking-heads.md`.
 - Exact durations and frames for any clip: `npm run probe -- <file>`.
 - Cut dead air and false starts freely; never cut inside a word.
 - Footage goes in `studio/public/<film>/`, the brief names each file by path.
+- **Motion, pacing, sound: one triangle (2026-11-25, John Bucog's "Triangle of Editing", Muse send).** Movement
+  inside the frame is what makes pacing possible. Pacing is contrast: mix 0.2 to 0.5 s cuts with 1.5 to 2.5 s holds,
+  because an even cut length reads flat. Sound lands on the moments the contrast makes, a hit on every fast cut and
+  weight on the slow turn. Write the rhythm first (for example "s f f f f f f s s"), then fill it. Parts that do this
+  with type: `src/muse1125/triangle/parts.tsx`.
 
 ## Captions (word level)
 **Not set up yet (2026-10-23):** WhisperX is installed on no machine, Jacob's included, and the
