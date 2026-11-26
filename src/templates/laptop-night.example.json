@@ -1,0 +1,83 @@
+{
+  "captureSize": { "width": 2880, "height": 1858 },
+  "wordPace": 0.26,
+  "opening": {
+    "pages": [
+      { "name": "ELMS Canvas", "image": "post-everything-laptop/umd/elms.jpg", "mark": "post-everything-laptop/logos/canvas.png", "markStyle": "fill" },
+      { "name": "Testudo schedule of classes", "image": "post-everything-laptop/umd/testudo-soc.jpg", "mark": "post-everything-laptop/logos/testudo.png", "markStyle": "red" },
+      { "name": "Outlook", "image": "post-everything-laptop/umd/outlook.jpg", "mark": "post-everything-laptop/logos/outlook.png", "markStyle": "fill" },
+      { "name": "University Career Center", "image": "post-everything-laptop/umd/careers.jpg", "mark": "post-everything-laptop/logos/handshake.svg", "markStyle": "fill" },
+      { "name": "TerpLink", "image": "post-everything-laptop/umd/terplink.jpg", "mark": "post-everything-laptop/logos/terplink.png", "markStyle": "fill" },
+      { "name": "Registrar", "image": "post-everything-laptop/umd/registrar.jpg", "mark": "styles/umd/umd-m.svg", "markStyle": "logo" },
+      { "name": "TerpLink events", "image": "post-everything-laptop/umd/terplink-events.jpg", "mark": "post-everything-laptop/logos/terplink.png", "markStyle": "fill" },
+      { "name": "Dining", "image": "post-everything-laptop/umd/dining.jpg", "mark": "styles/umd/umd-m.svg", "markStyle": "logo" },
+      { "name": "Testudo", "image": "post-everything-laptop/umd/testudo.jpg", "mark": "post-everything-laptop/logos/testudo.png", "markStyle": "red" },
+      { "name": "umd.edu", "image": "post-everything-laptop/umd/umd-home.jpg", "mark": "styles/umd/umd-m.svg", "markStyle": "logo" }
+    ],
+    "firstPageAt": 0.3,
+    "pageEvery": 0.3,
+    "lines": [
+      { "text": "Imagine *everything* about your semester", "at": 0.3, "pace": 0.48 },
+      { "text": "was in one *place.*", "at": 3.31, "pace": 0.19 },
+      { "text": "Right now it's ten *tabs,*", "at": 4.45, "pace": 0.38 },
+      { "text": "and nobody tells you what's *next.*", "at": 6.75, "pace": 0.34 }
+    ],
+    "collapseAt": 8.5,
+    "dashboard": "post-everything-laptop/cap/d1-dash.jpg",
+    "reveal": "Meet *CampusAI.*",
+    "revealHold": 2.5
+  },
+  "beats": [
+    { "capture": "post-everything-laptop/cap/d1-dash.jpg", "focus": "laptop", "hold": 2.38,
+      "caption": { "text": "And all you need is your *laptop.*", "at": 0.075 } },
+    { "capture": "post-everything-laptop/cap/o-t1.jpg", "focus": { "x": 880, "y": 420, "w": 1120, "h": 1020 }, "hold": 1.75,
+      "caption": { "text": "Upload your *transcript,*", "at": 0.065, "pace": 0.42 } },
+    { "capture": "post-everything-laptop/cap/t3-progress.jpg", "focus": { "x": 500, "y": 30, "w": 1140, "h": 840 }, "hold": 1.705,
+      "caption": { "text": "and it knows where you *stand.*", "at": 0.08, "pace": 0.25 } },
+    { "capture": "post-everything-laptop/cap/r3-review.jpg", "focus": { "x": 520, "y": 580, "w": 1040, "h": 140 }, "hold": 1.1,
+      "caption": { "text": "Add your *resume,*", "at": 0.18, "pace": 0.17 } },
+    { "capture": "post-everything-laptop/cap/r3-review.jpg", "focus": { "x": 1400, "y": 840, "w": 640, "h": 200 }, "hold": 1.685,
+      "caption": { "text": "and it knows what you're *good* at.", "at": 0.095, "pace": 0.18 } },
+    { "capture": "post-everything-laptop/cap/c3-pasted.jpg", "focus": { "x": 930, "y": 430, "w": 1020, "h": 1000 }, "hold": 1.51,
+      "click": { "x": 1842, "y": 1366, "at": 1.1 },
+      "caption": { "text": "Paste your *Canvas* link,", "at": 0.15, "pace": 0.28 } },
+    { "capture": "post-everything-laptop/cap/c5-week.jpg", "focus": { "x": 1290, "y": 200, "w": 1330, "h": 180 }, "hold": 2.385,
+      "caption": { "text": "and every assignment lands on your *week.*", "at": 0.02, "pace": 0.35 } },
+    { "capture": "post-everything-laptop/cap/d1-dash.jpg", "focus": { "x": 500, "y": 60, "w": 2320, "h": 880 }, "hold": 4.025,
+      "caption": [
+        { "text": "Then the next *morning,*", "at": 0.3, "pace": 0.2 },
+        { "text": "it's already worked on things for *you.*", "at": 1.865, "pace": 0.28 }
+      ] },
+    { "capture": "post-everything-laptop/cap/d1-dash.jpg", "focus": { "x": 1086, "y": 666, "w": 570, "h": 264 }, "highlight": true, "hold": 1.51,
+      "caption": { "text": "Your *deadlines.*", "at": 0.11, "pace": 0.19 } },
+    { "capture": "post-everything-laptop/cap/d1-dash.jpg", "focus": { "x": 1658, "y": 666, "w": 570, "h": 264 }, "highlight": true, "hold": 2.5,
+      "caption": { "text": "Six new *jobs,* matched to you.", "at": 0.03, "pace": 0.3 } },
+    { "capture": "post-everything-laptop/cap/d1-dash.jpg", "focus": { "x": 512, "y": 666, "w": 570, "h": 264 }, "highlight": true, "hold": 1.97,
+      "caption": { "text": "Your coffee chat, *prepped.*", "at": 0.035, "pace": 0.42 } },
+    { "capture": "post-everything-laptop/cap/d1-dash.jpg", "focus": { "x": 1658, "y": 666, "w": 570, "h": 264 }, "highlight": true, "hold": 0.88,
+      "click": { "x": 1916, "y": 724, "at": 0.5 },
+      "caption": { "text": "*Tap* the jobs,", "at": 0.19, "pace": 0.2 } },
+    { "capture": "post-everything-laptop/cap/j98-roles.jpg", "focus": { "x": 616, "y": 920, "w": 712, "h": 680 }, "hold": 3.28,
+      "caption": { "text": "and you see exactly why each one *fits.*", "at": 0.04, "pace": 0.38 } }
+  ],
+  "end": { "line": "Made for Terps. Link in bio.", "at": 0.88, "pace": 0.26, "hold": 4.4 },
+  "narration": [
+    { "src": "post-everything-laptop/vo/lines/01-a.mp3", "at": 0.235, "from": 0, "to": 1.0, "volume": 1.349 },
+    { "src": "post-everything-laptop/vo/lines/01-a.mp3", "at": 1.235, "from": 1.15, "to": 4.16, "volume": 1.349 },
+    { "src": "post-everything-laptop/vo/lines/02-a.mp3", "at": 4.395, "from": 0.64, "to": 1.44, "volume": 1.404 },
+    { "src": "post-everything-laptop/vo/lines/02-a.mp3", "at": 5.195, "from": 1.68, "to": 3.03, "volume": 1.404 },
+    { "src": "post-everything-laptop/vo/lines/02-a.mp3", "at": 6.545, "from": 3.63, "to": 5.7, "volume": 1.404 },
+    { "src": "post-everything-laptop/vo/lines/03m-a.mp3", "at": 8.74, "from": 0, "to": 1.8, "volume": 0.785 },
+    { "src": "post-everything-laptop/vo/lines/05-a.mp3", "beat": 0, "at": 0.025, "to": 2.24, "volume": 0.975 },
+    { "src": "post-everything-laptop/vo/lines/06-a.mp3", "beat": 1, "at": 0, "to": 3.52, "volume": 0.989 },
+    { "src": "post-everything-laptop/vo/lines/07-a.mp3", "beat": 3, "at": 0.1, "to": 2.72, "volume": 1.051 },
+    { "src": "post-everything-laptop/vo/lines/08-a.mp3", "beat": 5, "at": 0.1, "to": 3.76, "volume": 0.807 },
+    { "src": "post-everything-laptop/vo/lines/09-a.mp3", "beat": 7, "at": 0.1, "to": 3.92, "volume": 0.983 },
+    { "src": "post-everything-laptop/vo/lines/10-a.mp3", "beat": 8, "at": 0.05, "to": 6.4, "volume": 1.03 },
+    { "src": "post-everything-laptop/vo/lines/11-b.mp3", "beat": 11, "at": 0.1, "to": 3.84, "volume": 1.29 },
+    { "src": "post-everything-laptop/vo/lines/12-a.mp3", "beat": "end", "at": 0, "to": 2.72, "volume": 0.922 }
+  ],
+  "music": { "track": "midnight-funk" },
+  "effects": { "folder": "post-everything-laptop/sfx" },
+  "desk": { "testudoPhoto": "no-idea-spring/photos/testudo.jpg", "mug": true }
+}

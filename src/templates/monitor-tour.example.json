@@ -1,0 +1,55 @@
+{
+  "label": "Built by Terps, for Terps.",
+  "beats": [
+    {
+      "screen": { "title": "What's on [my week?]", "mark": "private-umd-logo/umd-m.svg" },
+      "graphic": { "icon": "message-circle", "dots": true },
+      "say": [{ "text": "Just ask [CampusAI.]", "sides": [{ "icon": "sparkles", "red": true }] }]
+    },
+    {
+      "screen": { "chat": "pkm-chat-week/chat", "from": 0.45, "speed": 1.6 },
+      "graphic": { "icon": "message-circle", "dots": true },
+      "say": [
+        { "text": "What's on [your week?]", "sides": [null, "send"] },
+        { "text": "Tuesday: [a reading.]", "at": "send+0.38", "graphic": { "day": "TUE", "date": "24" }, "sides": ["book-open"] },
+        { "text": "Thursday: a quiz,\n[and a coffee chat.]", "at": "send+1.12", "graphic": { "day": "THU", "date": "26" }, "sides": ["book-open", "clipboard-check", { "icon": "coffee", "red": true }] }
+      ]
+    },
+    {
+      "screen": { "chat": "pkm-chat-jobs/chat", "from": 1.1, "speed": 1.6 },
+      "graphic": "briefcase-business",
+      "say": [
+        { "text": "Any jobs [that fit me?]" },
+        { "text": "Your top two,\n[and why each fits.]", "at": "send+0.2", "graphic": { "pills": ["Goldman Sachs", "Bank of America"] }, "sides": [null, { "icon": "sparkles", "red": true }] }
+      ]
+    },
+    {
+      "screen": { "page": "post-keynote-monitor/parts-r3", "part": "jobsPage", "step": 0.6 },
+      "graphic": { "count": 41, "icon": "briefcase-business" },
+      "say": [{ "text": "open roles,\n[matched to you.]" }],
+      "push": { "x": 470, "y": 430, "scale": 1.9, "at": 0.87 }
+    },
+    {
+      "screen": { "page": "post-keynote-monitor/parts-r3", "part": "auditPage", "step": 0.3 },
+      "graphic": { "ring": 51 },
+      "say": [{ "text": "of your degree,\n[every requirement tracked.]", "size": 76, "sides": ["graduation-cap", { "icon": "check", "red": true }] }],
+      "push": { "x": 820, "y": 470, "scale": 1.45, "at": 1.07 }
+    },
+    {
+      "screen": { "logo": true },
+      "graphic": "sparkles",
+      "say": [{ "text": "The AI agent system\n[for college.]", "sides": [{ "icon": "sparkles", "red": true }, null, { "icon": "sparkles", "red": true }] }]
+    },
+    {
+      "screen": { "flow": "pkm-press/flow", "from": 2.1, "speed": 1 },
+      "graphic": { "icon": "calendar-plus", "pressTo": "calendar-check" },
+      "say": [
+        { "text": "One press.", "sides": ["map-pin"] },
+        { "text": "[Added.]", "at": "press+0.1", "stack": true, "sides": [null, { "icon": "bell-ring", "red": true }] }
+      ]
+    }
+  ],
+  "end": { "text": "Ask CampusAI anything.\nLink in bio.", "graphic": "message-circle", "seconds": 3.5 },
+  "music": { "track": "tech-house-vibes", "volume": 0.3 },
+  "sound": true
+}

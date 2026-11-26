@@ -1,0 +1,47 @@
+{
+  "hook": {
+    "lines": [
+      { "text": "Recruiting season, and I'm already behind.", "accent": "behind." },
+      { "text": "Who do I even talk to?", "accent": "talk" }
+    ],
+    "chip": { "src": "howdo-remake/deloitte.png", "size": [2880, 1800], "box": { "x": 1852, "y": 160, "w": 964, "h": 144 } }
+  },
+  "beats": [
+    {
+      "capture": { "src": "howdo-remake/r3/dash.png", "size": [2880, 1800] },
+      "lines": [
+        { "text": "Every morning, what's worth" },
+        { "text": "your attention.", "accent": "attention." }
+      ],
+      "boxes": [
+        { "x": 564, "y": 236, "w": 1052, "h": 116 },
+        { "x": 1692, "y": 236, "w": 1060, "h": 116 },
+        { "x": 520, "y": 676, "w": 552, "h": 244, "lift": true },
+        { "x": 1668, "y": 676, "w": 548, "h": 244, "lift": true }
+      ]
+    },
+    {
+      "capture": { "src": "howdo-remake/resume.png", "size": [2880, 1800] },
+      "lines": [
+        { "text": "It spots what your resume" },
+        { "text": "is missing.", "accent": "missing." }
+      ],
+      "boxes": [
+        { "x": 556, "y": 464, "w": 1364, "h": 716, "lift": true }
+      ]
+    },
+    {
+      "capture": { "src": "howdo-remake/r3/deloitte-people.png", "size": [2880, 1800] },
+      "lines": [
+        { "text": "Knows when firms come to campus," },
+        { "text": "and who to ask there.", "accent": "ask" }
+      ],
+      "boxes": [
+        { "x": 1852, "y": 156, "w": 964, "h": 144, "atWord": 5 },
+        { "x": 1356, "y": 336, "w": 1280, "h": 140, "atWord": 7, "lift": true },
+        { "x": 1828, "y": 1284, "w": 988, "h": 262, "atWord": 9, "lift": true }
+      ]
+    }
+  ],
+  "end": { "line": "Made for Terps.", "accent": "Terps.", "sub": "Link in bio", "photo": "gta6-carousel/photos/sunrise.jpg" }
+}

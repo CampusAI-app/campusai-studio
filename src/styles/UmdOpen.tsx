@@ -14,8 +14,10 @@
 import React, { useState } from "react";
 import { Easing, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 
-/** On Jacob's Mac only (the repo is public). Without it the M is left out and the style opens as it would anyway (Nov 18). */
+/** Jacob's copy, on his Mac only. Without it the M comes from the copy already in the repo (public/styles/umd, the same M
+ * on a slightly taller canvas), so a teammate's frame 0 still opens on it (2026-11-25); if both are missing it is left out. */
 const LOGO = "private-umd-logo/umd-m.svg";
+const LOGO_IN_REPO = "styles/umd/umd-m.svg";
 
 const ENTER = 3; // motion: lands at 0.1 s, sharing the hook with the opening line
 const MOVE_START = 33; // motion: holds big until 1.1 s
@@ -41,6 +43,7 @@ export const UmdOpen: React.FC<UmdOpenProps> = ({
 }) => {
   const frame = useCurrentFrame();
   const [missing, setMissing] = useState(false);
+  const [fallback, setFallback] = useState(false);
   const { fps } = useVideoConfig();
   const pop = spring({ frame: frame - ENTER, fps, config: { damping: 15, mass: 0.7, stiffness: 160 } });
   const fadeIn = interpolate(frame, [ENTER, ENTER + 4], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
@@ -59,8 +62,8 @@ export const UmdOpen: React.FC<UmdOpenProps> = ({
   if (fadeIn * out <= 0 || missing) return null;
   return (
     <Img
-      src={staticFile(LOGO)}
-      onError={() => setMissing(true)}
+      src={staticFile(fallback ? LOGO_IN_REPO : LOGO)}
+      onError={() => (fallback ? setMissing(true) : setFallback(true))}
       style={{
         position: "absolute",
         left: cx,
