@@ -8,13 +8,19 @@
  * The chalk look is one SVG filter: fine noise punched out of each stroke (dry chalk never covers fully), a soft halo
  * under it (dust on the board), and a slight wobble whose noise reseeds every 4 frames. The board is two noises: wide
  * eraser smears and a fine grain.
+ *
+ * 2026-11-17 (Jacob: show the product when we can, and open on UMD so Maryland students stop scrolling): two optional
+ * props, both off by default so the Nov 5 sample renders as before. `shot` pins a REAL capture to the board once the
+ * board work is done, like a printout taped up after the lecture (cream paper margin, two strips of tape, a drop
+ * shadow), never drawn UI. `umd` adds the shared <UmdOpen /> as the last child.
  */
 import React from "react";
 import { loadFont } from "@remotion/google-fonts/Caveat";
-import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE } from "../system/motion";
 import { readHold } from "../system/motion";
 import { B, Clip, Cue, INTER, RED, ZODIAK, clamp } from "./common";
+import { UmdOpen, type UmdOpenProps } from "./UmdOpen";
 
 const { fontFamily: HAND } = loadFont("normal", { weights: ["700"], subsets: ["latin"] });
 
@@ -35,6 +41,10 @@ export type ChalkboardProps = {
   /** The closing lines, Zodiak, naming CampusAI. */
   payoff: string[];
   source: string;
+  /** Optional (11/17): a real capture pinned to the board after the board work, like a printout. `top` is its top edge. */
+  shot?: { src: string; w: number; h: number; crop: { x: number; y: number; w: number; h: number }; width?: number; top?: number };
+  /** Optional (11/17): the UMD M opening (src/styles/UmdOpen.tsx), placement only. */
+  umd?: UmdOpenProps;
 };
 
 // The board itself. brand.ts has no green: a chalkboard is green-black by definition, so these two are the style's
@@ -81,9 +91,14 @@ export const chalkPlan = (p: ChalkboardProps) => {
   p.note.forEach((l, i) => write(`n${i}`, l, i ? GAP : BREAK));
   p.payoff.forEach((l, i) => write(`p${i}`, l, i ? GAP : BREAK));
   stroke("source", 12, 4);
+  // the printout goes up as the board finishes (it says the same thing, so the reading happens on it) and holds 3.4 s
+  if (p.shot) {
+    items.push({ key: "shot", at: t + 6, end: t + 20 });
+    t += 20;
+  }
   const at = Object.fromEntries(items.map((x) => [x.key, x]));
   // every line holds its reading time once written, before the board shrinks into the logo
-  const end = Math.max(t + 20, ...items.filter((x) => x.text).map((x) => x.end + Math.ceil(readHold(x.text!) * 30)));
+  const end = p.shot ? t + 102 : Math.max(t + 20, ...items.filter((x) => x.text).map((x) => x.end + Math.ceil(readHold(x.text!) * 30)));
   return { at, end };
 };
 export const chalkEnd = (p: ChalkboardProps) => chalkPlan(p).end;
@@ -246,6 +261,30 @@ const Board: React.FC<{ f: number; W: number; H: number }> = ({ f, W, H }) => (
   </svg>
 );
 
+/** The capture taped to the board: it swings in from slightly above and settles, cream margin, two tape strips. */
+const Printout: React.FC<{ shot: NonNullable<ChalkboardProps["shot"]>; it?: Item }> = ({ shot, it }) => {
+  const f = useCurrentFrame();
+  const { fps, width: W } = useVideoConfig();
+  if (!it || f < it.at) return null;
+  const k = spring({ frame: f - it.at, fps, config: { damping: 14, stiffness: 140 } });
+  const w = shot.width ?? 900;
+  const h = w * (shot.crop.h / shot.crop.w);
+  const s = w / shot.crop.w;
+  const M = 16; // the paper margin round the screen print
+  const tape = (left: number, rot: number): React.CSSProperties => ({ position: "absolute", top: -24, left, width: 150, height: 46, transform: `rotate(${rot}deg)`,
+    background: "rgba(236,230,214,0.72)", boxShadow: "0 2px 4px rgba(0,0,0,0.25)" });
+  return (
+    <div style={{ position: "absolute", left: (W - w) / 2 - M, top: (shot.top ?? 730) - (1 - k) * 90, width: w + M * 2, height: h + M * 2, opacity: Math.min(1, k * 2.5),
+      transform: `rotate(${(-1.6 - (1 - k) * 4).toFixed(3)}deg)`, background: "#F4EFE4", boxShadow: "10px 18px 30px rgba(0,0,0,0.55)" }}>
+      <div style={{ position: "absolute", left: M, top: M, width: w, height: h, overflow: "hidden", background: "#120a0b" }}>
+        <Img src={staticFile(shot.src)} style={{ position: "absolute", left: -shot.crop.x * s, top: -shot.crop.y * s, width: shot.w * s, height: shot.h * s }} />
+      </div>
+      <div style={tape(60, -6)} />
+      <div style={tape(w + M * 2 - 210, 5)} />
+    </div>
+  );
+};
+
 export const Chalkboard: React.FC<ChalkboardProps> = (p) => {
   const f = useCurrentFrame();
   const { width: W, height: H } = useVideoConfig();
@@ -287,10 +326,13 @@ export const Chalkboard: React.FC<ChalkboardProps> = (p) => {
           <Stroke it={A.circle} seed={43} width={9} color={RED} pts={ellipse(800, 920, 152, 136, 1.08, -2.2)} />
           <Stroke it={A.underline} seed={44} width={6} pts={wobbly([620, 1114], [970, 1110])} />
         </svg>
+        {p.shot ? <Printout shot={p.shot} it={A.shot} /> : null}
       </AbsoluteFill>
-      {Object.entries(A).filter(([k]) => k !== "source").map(([k, it]) => (
+      {p.shot && A.shot ? <Cue at={A.shot.at} name="paper-slide" volume={0.5} /> : null}
+      {Object.entries(A).filter(([k]) => k !== "source" && k !== "shot").map(([k, it]) => (
         <Cue key={k} at={it.at} name="marker-pen-line" volume={k === "circle" ? 0.45 : ["bar", "divider", "arrow", "underline"].includes(k) ? 0.28 : 0.12} />
       ))}
+      {p.umd ? <UmdOpen {...p.umd} /> : null}
     </Clip>
   );
 };

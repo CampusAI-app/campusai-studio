@@ -38,10 +38,22 @@ export const Cue: React.FC<{ at: number; name: string; volume?: number }> = ({ a
   </Sequence>
 );
 
-/** The music bed: a licensed track picked per film (system/sound/bed.ts), or the one named in `track`. */
+/** Songs chosen by hand for a film's mood (Jacob, Nov 20), so these drafts don't take the automatic pick. */
+const FILM_TRACKS: Record<string, string> = {
+  "Style-GlowSketch": "sun-in-your-eyes",
+  "Style-CgiCalm": "digital-clouds",
+  "Style-BrickWorld": "funkee-monkeee",
+  "Style-MinimalLine": "the-greatest-comeback",
+  "Style-Comic": "my-mind-goes-wah-wah",
+  "Style-LowPoly": "epic-games",
+  "Style-PixelArt": "friday-routine",
+  "Style-ClayExplainer": "sweet-september",
+};
+
+/** The music bed: a licensed track picked per film (system/sound/bed.ts), or the one named in `track` or FILM_TRACKS. */
 export const Bed: React.FC<{ total: number; volume?: number; track?: string }> = ({ total, volume = 0.42, track }) => {
   const { id, fps } = useVideoConfig();
-  const bed = pickBed(id, total / fps, track);
+  const bed = pickBed(id, total / fps, track ?? FILM_TRACKS[id.replace(/-(wide|feed|square|vertical|\d+x\d+)$/i, "")]);
   return (
     <Audio
       src={staticFile(bed.file)}

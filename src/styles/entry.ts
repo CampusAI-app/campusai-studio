@@ -62,8 +62,23 @@ import { CARD_DROP } from "./examples";
 import { CardDrop, dropEnd } from "./CardDrop";
 import { STICK_STORY } from "./examples";
 import { StickStory, stickEnd } from "./StickStory";
+import { CLAY_EXPLAINER } from "./examples";
+import { ClayExplainer, clayEnd } from "./ClayExplainer";
+import { LOW_POLY } from "./examples";
+import { LowPoly, polyEnd } from "./LowPoly";
+import { CGI_CALM } from "./examples";
+import { CgiCalm, calmEnd } from "./CgiCalm";
+import { BRICK_WORLD } from "./examples";
+import { BrickWorld, brickEnd } from "./BrickWorld";
+import { GLOW_SKETCH } from "./examples";
+import { GlowSketch, glowEnd } from "./GlowSketch";
+import { MINIMAL_LINE } from "./examples";
+import { MinimalLine, minimalEnd } from "./MinimalLine";
+import { PIXEL_ART } from "./examples";
+import { PixelArt, pixelEnd } from "./PixelArt";
 import { PAPER_DOC } from "./examples";
 import { PaperDoc, paperDocEnd } from "./PaperDoc";
+import { PAPER_DOC_POST } from "./examples";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: (p: any) => number }[] = [
@@ -79,7 +94,7 @@ const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: 
   { id: "Style-PovDoodle-Resume", c: PovDoodle, props: POV_DOODLE_RESUME, frames: 0, dur: (p) => povEnd(p.notes.length, p.answer ? answerFrames(p.answer) : 0, p.pace) + END_FRAMES + 12 },
   { id: "Style-PovDoodle-Advisor", c: PovDoodle, props: POV_DOODLE_ADVISOR, frames: 0, dur: (p) => povEnd(p.notes.length, (p.answer ? answerFrames(p.answer) : 0) + (p.thenHold ?? 0), p.pace) + END_FRAMES + 12 },
   { id: "Reel-TwoProfessors", c: TwoProfessors, props: TWO_PROFESSORS, frames: 0, dur: (p) => twoProfessorsEnd(p) + END_FRAMES + 12 },
-  { id: "Style-FlatCartoon", c: FlatCartoon, props: FLAT_CARTOON, frames: 0, dur: (p) => flatEnd(p.points.length) + END_FRAMES + 12 },
+  { id: "Style-FlatCartoon", c: FlatCartoon, props: FLAT_CARTOON, frames: 0, dur: (p) => flatEnd(p.points.length, p) + END_FRAMES + 12 },
   // Chalkboard, blueprint, comic halftone (2026-11-05, Muse send "10 Claude animation styles")
   { id: "Style-Chalkboard", c: Chalkboard, props: CHALKBOARD, frames: 0, dur: (p) => chalkEnd(p) + END_FRAMES + 12 },
   { id: "Style-Blueprint", c: Blueprint, props: BLUEPRINT, frames: 0, dur: (p) => blueprintEnd(p) + END_FRAMES + 12 },
@@ -126,9 +141,23 @@ const STYLES: { id: string; c: React.FC<any>; props: any; frames: number; dur?: 
   { id: "Style-FanShuffle", c: FanShuffle, props: FAN_SHUFFLE, frames: 0, dur: (p) => fanEnd(p) + END_FRAMES + 12 },
   // 11/16: the Nov 15 React Rapier trial (Jacob approved Nov 16); WebGL, so render with --gl=angle
   { id: "Style-CardDrop", c: CardDrop, props: CARD_DROP, frames: 0, dur: (p) => dropEnd(p) + END_FRAMES + 12 },
+  // 11/17: the "what happens when" clay explainer (Matt Penny and Karam Mahaan via Muse), three.js, so render with --gl=angle
+  { id: "Style-ClayExplainer", c: ClayExplainer, props: CLAY_EXPLAINER, frames: 0, dur: (p) => clayEnd(p) + END_FRAMES + 12 },
+  // 11/17: the low-poly retro 3D fly-through (Matt Penny via Muse), drawn at 360 x 640 and blown up; render with --gl=angle
+  { id: "Style-LowPoly", c: LowPoly, props: LOW_POLY, frames: 0, dur: (p) => polyEnd(p) + END_FRAMES + 12 },
+  // 11/17: Matt Penny's "CGI Motion" (via Muse), three.js, so render with --gl=angle
+  { id: "Style-CgiCalm", c: CgiCalm, props: CGI_CALM, frames: 0, dur: (p) => calmEnd(p) + END_FRAMES + 12 },
+  // 11/17: Matt Penny's toy-brick look (via Muse), three.js, so render with --gl=angle
+  { id: "Style-BrickWorld", c: BrickWorld, props: BRICK_WORLD, frames: 0, dur: (p) => brickEnd(p) + END_FRAMES + 12 },
+  // 11/17: Matt Penny's ten Claude animation styles (via Muse), our own 2D builds
+  { id: "Style-GlowSketch", c: GlowSketch, props: GLOW_SKETCH, frames: 0, dur: (p) => glowEnd(p) + END_FRAMES + 12 },
+  { id: "Style-MinimalLine", c: MinimalLine, props: MINIMAL_LINE, frames: 0, dur: (p) => minimalEnd(p) + END_FRAMES + 12 },
+  { id: "Style-PixelArt", c: PixelArt, props: PIXEL_ART, frames: 0, dur: (p) => pixelEnd(p) + END_FRAMES + 12 },
   // 11/18: the "Pencil to VOX" paper documentary (via Muse), one timeline in two frames: vertical and wide
   { id: "Style-PaperDoc", c: PaperDoc, props: PAPER_DOC, frames: 0, dur: (p) => paperDocEnd(p) + END_FRAMES + 12 },
   { id: "Style-PaperDoc-Wide", c: PaperDoc, props: { ...PAPER_DOC, format: "wide" }, frames: 0, dur: (p) => paperDocEnd(p) + END_FRAMES + 12 },
+  // 11/18: the paper documentary as one postable reel, "Nobody tells you this: 8 semesters" (films/paper-doc-post)
+  { id: "Style-PaperDoc-Post", c: PaperDoc, props: PAPER_DOC_POST, frames: 0, dur: (p) => paperDocEnd(p) + END_FRAMES + 12 },
 ];
 
 const sized = (dur?: (p: any) => number): CalculateMetadataFunction<any> => ({ props }) => ({

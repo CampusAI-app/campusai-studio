@@ -1071,6 +1071,129 @@ export const STICK_STORY: StickStoryProps = {
   cta: "Ask CampusAI anything.",
 };
 
+/* ---- /clay-explainer (11/17, Matt Penny's ten styles and Karam Mahaan's six skills via Muse, our own 3D build). ---- */
+import type { ClayExplainerProps } from "./ClayExplainer";
+
+/** /clay-explainer: what happens when CampusAI looks at your Thursday, on two real captures of My Calendar (Nov 17).
+ * Boxes are in the crop's 1x pixels (public/clay-thursday/screen-*.png, Wed to Fri). films/clay-explainer-thursday/facts.md. */
+export const CLAY_EXPLAINER: ClayExplainerProps = {
+  who: "Junior at Maryland",
+  lines: ["Thursday. How bad is it?"],
+  question: "What happens when CampusAI looks at your Thursday?",
+  screen: { before: "clay-thursday/screen-before.png", after: "clay-thursday/screen-after.png", w: 394, h: 715 },
+  steps: [
+    { caption: "two classes", kind: "pin", boxes: [{ x: 134, y: 203, w: 126, h: 52 }, { x: 134, y: 401, w: 126, h: 52 }] },
+    { caption: "a quiz", kind: "pin", color: "#9B5DE5", boxes: [{ x: 136, y: 54, w: 123, h: 23 }] },
+    { caption: "a suggestion", kind: "pin", color: "#FF7DB8", boxes: [{ x: 134, y: 533, w: 126, h: 86 }] },
+    { caption: "+ Add", kind: "drop", boxes: [{ x: 134, y: 533, w: 126, h: 86 }] },
+    { caption: "still busy. but planned.", kind: "pin", color: "#4CC38A", boxes: [{ x: 134, y: 54, w: 126, h: 600 }] },
+  ],
+  source: "The CampusAI demo, My Calendar, Nov 17.",
+  cta: "Ask CampusAI anything.",
+};
+
+/* ---- /low-poly (11/17, Matt Penny's ten styles via Muse, our own retro 3D build). ---- */
+import type { LowPolyProps } from "./LowPoly";
+
+/** /low-poly: a fly-through down McKeldin Mall, what's left to graduate. films/low-poly-graduate/facts.md. */
+export const LOW_POLY: LowPolyProps = {
+  place: "McKeldin Mall",
+  placeSub: "College Park",
+  who: "Junior at Maryland",
+  ask: "What's left to graduate?",
+  answerBy: "CampusAI",
+  answer: "See what's left to graduate, and what to take next.",
+  board: { src: "low-poly-planner/board.png", w: 1099, h: 915, title: "Quest log" },
+  source: "The CampusAI demo, Planner & Progress, Nov 17.",
+  cta: "Ask CampusAI anything.",
+};
+
+/* ---- /cgi-calm (11/17, Matt Penny's "CGI Motion" via Muse, our own build). films/cgi-calm-finals/facts.md. ---- */
+import type { CgiCalmProps } from "./CgiCalm";
+
+// round 3 (Jacob 11/17: the joke has to follow from the screen): the plane unfolds into the real chat answering the
+// student's own question, campusai-demo /ai, captured Nov 17 at 520x1000 (the phone layout), dpr 3 (crop in capture px)
+export const CGI_CALM: CgiCalmProps = {
+  who: "Junior at Maryland.",
+  ask: "What should I ask at the Evercore coffee chat?",
+  capture: { src: "cgi-calm/coffee-chat.jpg", image: { w: 1560, h: 3000 }, crop: { x: 60, y: 210, w: 1440, h: 1074 } },
+  radius: 36,
+  lines: ["Two good questions.", "That's the whole hour."],
+  source: "The CampusAI demo chat, Nov 17.",
+  cta: "Ask CampusAI anything.",
+  hold: 6.5,
+};
+
+/* ---- /brick-world (11/17, Matt Penny's toy-brick look via Muse, our own build). films/brick-world-four-years/facts.md. ---- */
+import type { BrickWorldProps } from "./BrickWorld";
+
+// round 3 (Jacob 11/17: show the actual planning, never the disclaimer): the brick screen scrolls through the real plan,
+// one term card per brick, then the General Education requirements. campusai-demo /academics?tab=planning, each term
+// card captured Nov 17 at 1000 px wide, dpr 2.5, stacked into one picture (films/brick-world-four-years/facts.md)
+export const BRICK_WORLD: BrickWorldProps = {
+  who: "Freshman at Maryland.",
+  ask: "How do I plan four years?",
+  tabs: ["Testudo", "PlanetTerp", "Degree audit", "Gen ed guide"],
+  tabsLine: "Four tabs later.",
+  plan: { src: "brick-world/plan-strip.jpg", panels: 9 },
+  answerBy: "CampusAI",
+  answer: "Or one 4-year plan.",
+  bricks: ["Fall 2024", "Spring 2025", "Fall 2025", "Spring 2026", "Fall 2026", "Spring 2027", "Fall 2027", "Spring 2028"],
+  endLine: "And what's left to graduate.",
+  source: "The CampusAI demo, Planner & Progress, Nov 17.",
+  cta: "Ask CampusAI anything.",
+};
+
+/* ---- /glow-sketch (11/17, Matt Penny's ten Claude animation styles via Muse, our own build). ---- */
+import type { GlowSketchProps } from "./GlowSketch";
+
+/** /glow-sketch: McKeldin in amber light, two feeds fly into My Calendar. films/glow-sketch-calendar/facts.md. */
+export const GLOW_SKETCH: GlowSketchProps = {
+  who: "Freshman at Maryland.",
+  ask: "Where does my week even live?",
+  feeds: ["Canvas assignments", "Events you add"],
+  answer: ["Both land on", "My Calendar."],
+  source: "Paste your Canvas calendar link once. Press Add to CampusAI Calendar on an event.",
+  // a real capture of the demo's My Calendar (Nov 17, take.cjs in the session scratchpad), jpg/png so not in the repo
+  shot: { src: "muse-nov17/calendar-week.png", w: 1840, h: 1320, fullH: 1360 },
+  marks: [{ x: 1202, y: 137, rx: 140, ry: 44 }, { x: 1446, y: 1262, rx: 168, ry: 82 }],
+  columns: [262, 525, 788, 1051, 1314, 1577],
+  rows: [104, 278],
+  cta: "Ask CampusAI anything.",
+};
+
+/* ---- /minimal-line (11/17, Karam Mahaan's /minimalistic-graphics and Matt Penny's stick figure look via Muse, our own build). ---- */
+import type { MinimalLineProps } from "./MinimalLine";
+
+/** /minimal-line: one rule per gen ed credit, the dot climbs to 40. films/minimal-line-gen-eds/facts.md. */
+export const MINIMAL_LINE: MinimalLineProps = {
+  pairs: [
+    ["sophomore at maryland.", "how many gen eds are left?"],
+    ["nobody sees the gen eds.", "everyone sees the diploma."],
+    ["campusai counts what's left.", "one line at a time."],
+  ],
+  count: 40,
+  source: "gened.umd.edu: a minimum of 40 credits of General Education.",
+  // a real capture of the demo's General Education card (Nov 17); the dot lands where the bar's grey, what is left, begins
+  card: { src: "muse-nov17/gened-card.png", w: 1722, h: 437, land: { x: 1197, y: 193 } },
+  cta: "ask campusai anything.",
+};
+
+/* ---- /pixel-art (11/17, Matt Penny's ten Claude animation styles via Muse, our own build). ---- */
+import type { PixelArtProps } from "./PixelArt";
+
+/** /pixel-art: a pixel campus, a transfer student, the real Clubs & Orgs page on a pixel phone. films/pixel-art-clubs/facts.md. */
+export const PIXEL_ART: PixelArtProps = {
+  who: "Transfer at Maryland.",
+  ask: "Do I just wave at people?",
+  banner: "Find your clubs",
+  answer: ["104 clubs, the best", "for you first."],
+  source: "The real Clubs & Orgs page, CampusAI demo, Nov 17.",
+  // a real phone capture of the demo's Clubs & Orgs page (Nov 17), png so not in the repo
+  screen: { src: "muse-nov17/clubs-phone.png", w: 1170, h: 2220 },
+  cta: "Ask CampusAI anything.",
+};
+
 /* ---- /paper-doc (11/18, the "Pencil to VOX" reel via Muse, Jacob: "I love this"; the creator's skill was never seen, our own build). ---- */
 import type { PaperDocProps } from "./PaperDoc";
 
@@ -1103,4 +1226,45 @@ export const PAPER_DOC: PaperDocProps = {
   ],
   source: "UMD history, umd.edu. Planner: the CampusAI demo, Nov 17.",
   cta: "Ask CampusAI anything.",
+};
+
+// 11/18: the paper documentary as one postable reel (pillar: Nobody Tells You This). Every number from gened.umd.edu and
+// UMD policy, read Nov 18; the planner captured fresh from the demo the same day. Sources: films/paper-doc-post/facts.md.
+const POST_TERMS = [1, 2, 3, 4].flatMap((y) => [{ label: "Fall", sub: `Year ${y}` }, { label: "Spring", sub: `Year ${y}` }]);
+const POST_PAGE = (n: string) => `paper-doc-post/plan/${n}.jpg`;
+export const PAPER_DOC_POST: PaperDocProps = {
+  scenes: [
+    { kind: "terms", above: "Nobody tells you this:", word: "Only 8", wordAt: 18, below: "semesters to fit 120 credits.", cards: POST_TERMS, frames: 84 },
+    { kind: "terms", held: true, above: "Add up 8 semesters of 15:", word: "120", below: "the minimum to graduate.", tally: 15, cards: POST_TERMS.map((c) => ({ ...c, note: "15" })), frames: 80 },
+    {
+      kind: "compare", above: "At least", word: "40", below: "of those are Gen Ed.", underline: true, frames: 80,
+      unit: "credits", max: 125, step: 25,
+      items: [
+        { label: "To graduate", value: 120, pill: "120", shape: "tower" },
+        { label: "Gen Ed", value: 40, pill: "40", shape: "block" },
+        { label: "One semester", value: 15, pill: "15", shape: "obelisk" },
+      ],
+    },
+    { kind: "terms", held: true, above: "Order matters.", word: "First 30", below: "credits: start Math and Academic Writing.", mark: [0, 1], cards: POST_TERMS, frames: 80 },
+    {
+      kind: "page", above: "CampusAI lays out", word: "All 8", frames: 192,
+      // the demo student's real plan, Planner & Progress, captured Nov 18 (films/paper-doc-post/flow.json); the crop starts under the disclaimer alert
+      page: {
+        w: 2200, h: 5400, crop: { x: 0, y: 560, w: 2200, h: 2400 },
+        states: [{ src: POST_PAGE("freshman"), at: 0 }, { src: POST_PAGE("sophomore"), at: 128 }, { src: POST_PAGE("junior"), at: 148 }, { src: POST_PAGE("senior"), at: 168 }],
+      },
+      lifts: [
+        { src: POST_PAGE("freshman"), crop: { x: 515, y: 585, w: 660, h: 90 }, at: 18, back: 56, toW: 960, toCy: 1000 },
+        { src: POST_PAGE("freshman"), crop: { x: 540, y: 1948, w: 560, h: 406 }, at: 60, back: 98, toW: 900, toCy: 1040 },
+        // then the year panel itself comes forward and stays, and the years turn inside it
+        { src: POST_PAGE("freshman"), crop: { x: 500, y: 1800, w: 1640, h: 1190 }, at: 104, toW: 1040, toCy: 1040, follow: true },
+      ],
+      counter: [{ at: 110, text: "Semesters 1 and 2" }, { at: 128, text: "Semesters 3 and 4" }, { at: 148, text: "Semesters 5 and 6" }, { at: 168, text: "Semesters 7 and 8" }],
+      counterTop: 1450,
+    },
+  ],
+  source: "gened.umd.edu and UMD policy. Planner: the CampusAI demo, Nov 18.",
+  cta: "Link in bio",
+  // the M sits big under the hook line, over where the cards will land, so "Only 8" can land with it at 0.6 s
+  umd: { bigCy: 1180, bigH: 380 },
 };

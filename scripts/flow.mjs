@@ -15,6 +15,7 @@
 //   "theme": "dark",                 dark | light
 //   "zoom": 1.4,                     optional: bigger type for a phone screen
 //   "dpr": 3,                        optional: sharper frames for a film that zooms in close (default 2)
+//   "clock": "2026-11-18T09:00:00",  optional: the page's clock starts here (Eastern), for a page that reads the date
 //   "steps": [
 //     { "wait": 1 },                                   hold, seconds
 //     { "press": "Add Financial Modeling Bootcamp" },  move the pointer to it and press it
@@ -87,18 +88,18 @@ for (const f of fs.readdirSync(outDir)) fs.unlinkSync(path.join(outDir, f));
 const browser = await chromium.launch({ executablePath: CHROME, headless: true });
 try {
   // bypassCSP lets the capture add its zoom rule; nothing the policy governs is drawn differently
-  const ctx = await browser.newContext({ viewport: { width: vw, height: vh }, deviceScaleFactor: spec.dpr || 2, bypassCSP: true });
+  const ctx = await browser.newContext({ viewport: { width: vw, height: vh }, deviceScaleFactor: spec.dpr || 2, bypassCSP: true, ...(spec.clock ? { timezoneId: "America/New_York" } : {}) });
   await ctx.addInitScript((theme) => {
     try {
       localStorage.setItem("campusai-theme", theme);
     } catch {}
   }, spec.theme || "dark");
   // The page's own clock runs at 1/SLOW once window.__warp() is called, so animations read true speed in playback.
-  await ctx.addInitScript((SLOW) => {
+  await ctx.addInitScript(([SLOW, shift]) => {
     let k = 1, realAt = 0, virtAt = 0;
     const pn = performance.now.bind(performance), dn = Date.now, st = window.setTimeout, si = window.setInterval, raf = window.requestAnimationFrame.bind(window);
     const v = () => virtAt + (pn() - realAt) / k;
-    const dOff = dn() - pn();
+    const dOff = dn() - pn() + shift;
     window.__warp = () => { virtAt = v(); realAt = pn(); k = SLOW; };
     // a page opened mid-recording starts slowed (the flag survives navigation in this tab)
     try { if (sessionStorage.getItem("studio-warp")) { window.__warp(); window.__warpOn = true; } } catch {}
@@ -109,7 +110,7 @@ try {
     window.setTimeout = (fn, ms, ...a) => st(fn, (ms || 0) * k, ...a);
     window.setInterval = (fn, ms, ...a) => si(fn, (ms || 0) * k, ...a);
     window.requestAnimationFrame = (cb) => raf(() => cb(v()));
-  }, SLOW);
+  }, [SLOW, spec.clock ? new Date(spec.clock).getTime() - Date.now() : 0]);
   const p = await ctx.newPage();
   const cdp = await ctx.newCDPSession(p);
   await cdp.send("Animation.enable");

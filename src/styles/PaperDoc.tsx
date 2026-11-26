@@ -23,7 +23,7 @@ import { loadFont as SERIFFont } from "@remotion/google-fonts/LibreCaslonText";
 import { AbsoluteFill, Img, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, readHold } from "../system/motion";
 import { Cue, RED, ramp, type Format } from "./common";
-import { UmdOpen } from "./UmdOpen";
+import { UmdOpen, type UmdOpenProps } from "./UmdOpen";
 import { World } from "./world";
 
 const { fontFamily: DISPLAY } = DISPLAYFont("normal", { weights: ["800", "900"], subsets: ["latin"] });
@@ -43,6 +43,18 @@ export type CollagePiece = "sun" | "clouds" | "hall" | "trees" | "hills";
 export type CompareShape = "tower" | "obelisk" | "hall" | "pole" | "cap" | "block";
 /** A real capture cut out like a clipping: the file in public/, its pixel size, the crop to show. */
 export type Clipping = { src: string; w: number; h: number; crop: { x: number; y: number; w: number; h: number } };
+/** One semester card in a `terms` scene: a big label ("Fall"), a small line under it ("Year 1"), an optional pill. */
+export type TermCard = { label: string; sub?: string; note?: string };
+type Box = { x: number; y: number; w: number; h: number };
+/**
+ * A real capture shown whole at frame width (`page` scene, 11/18). `states` are captures of the same page in different
+ * states (a tab pressed), each fading in at its frame over the one before, never a recorded scroll (rules/campusai.md:
+ * dissolve between states). All files share the pixel size `w` x `h`; `crop` is the part of the page shown.
+ */
+export type PageCapture = { w: number; h: number; crop: Box; states: { src: string; at: number }[] };
+/** A part of the page lifting off to be read: rises from its place at `at`, grows to `toW` wide centred on `toCy`, and goes back at `back` (or stays). */
+export type PageLift = { src: string; crop: Box; at: number; back?: number; toW: number; toCy: number; follow?: boolean };
+/** `follow`: the lifted part keeps showing the page's current state, so the dissolves between states play inside it. */
 
 type Words = {
   /** Small serif line on a torn scrap above the big word. */
@@ -55,6 +67,8 @@ type Words = {
   underline?: boolean;
   /** Frames this scene holds before the hard cut. Default: from the reading rule. */
   frames?: number;
+  /** Frame the big word lands. Default: 8, or 46 in the first scene so the UMD M has the frame (the word sits above the big M, so a hook can land with it). */
+  wordAt?: number;
   /** A real capture pinned into the picture as a clipping. */
   clip?: Clipping;
 };
@@ -62,7 +76,15 @@ export type PaperScene =
   | (Words & { kind: "title"; collage?: CollagePiece[] })
   | (Words & { kind: "compare"; unit: string; max: number; step: number; items: { label: string; value: number; pill: string; shape: CompareShape }[] })
   | (Words & { kind: "map"; bounds: [number, number, number, number]; pins: { label: string; at: LatLng }[]; route?: [number, number]; water?: LatLng[][] })
-  | (Words & { kind: "count"; from: number; to: number; calendar?: [string, string] });
+  | (Words & { kind: "count"; from: number; to: number; calendar?: [string, string] })
+  /**
+   * Cut-paper semester cards dealt into a grid (11/18). `held`: the cards are already on the desk (a scene that follows
+   * another `terms` scene), so they fade up instead of being dealt. `mark`: the cards to circle in red, the rest dim.
+   * `tally`: each card's pill adds this much to the big word, which counts up to `word` as the pills land.
+   */
+  | (Words & { kind: "terms"; cards: TermCard[]; columns?: number; held?: boolean; mark?: number[]; tally?: number })
+  /** A real product page, whole at frame width, with parts lifting off it to be read (11/18). `counter`: a small scrap under the page that changes at each `at`. */
+  | (Words & { kind: "page"; page: PageCapture; lifts?: PageLift[]; counter?: { at: number; text: string }[]; counterTop?: number });
 
 export type PaperDocProps = {
   format?: Format;
@@ -70,6 +92,8 @@ export type PaperDocProps = {
   /** Small source line under the last scene. */
   source?: string;
   cta?: string;
+  /** Where the UMD M sits big before it glides into its tag (vertical only). Default: UmdOpen's own. */
+  umd?: Pick<UmdOpenProps, "bigCx" | "bigCy" | "bigH">;
 };
 
 /* ---------------- timing ---------------- */
@@ -457,6 +481,120 @@ const Clip: React.FC<{ L: ReturnType<typeof layoutFor>; t: number; c: Clipping; 
   );
 };
 
+/* ---------------- semesters and a real page (11/18, the post) ---------------- */
+const NOTE_AT = 14, NOTE_GAP = 5; // motion: the pills land one card every 1/6 s, so the tally reads as it climbs
+const notesIn = (s: Extract<PaperScene, { kind: "terms" }>, t: number) => s.cards.filter((c, i) => c.note && t >= NOTE_AT + i * NOTE_GAP + 3).length; // counted as its pill shows
+
+const TermsGrid: React.FC<{ R: Rect; t: number; s: Extract<PaperScene, { kind: "terms" }>; first: boolean }> = ({ R, t, s, first }) => {
+  const cols = s.columns ?? 2;
+  const rows = Math.ceil(s.cards.length / cols);
+  const gap = 26;
+  const cw = (R.w - gap * (cols - 1)) / cols;
+  const ch = Math.min(230, (R.h - gap * (rows - 1)) / rows);
+  const top = R.y + (R.h - (ch * rows + gap * (rows - 1))) / 2;
+  const base = first ? 38 : 4; // the first scene deals once the UMD M has glided up
+  const markK = s.mark ? rise(t, 10, 14) : 0;
+  return (
+    <>
+      {s.cards.map((c, i) => {
+        const col = i % cols, row = Math.floor(i / cols);
+        const k = s.held ? rise(t, 0, 8) : rise(t, base + i * 3, 16);
+        const on = s.mark?.includes(i);
+        const dim = s.mark && !on ? 1 - 0.6 * markK : 1;
+        const noteK = c.note ? rise(t, NOTE_AT + i * NOTE_GAP, 10) : 0;
+        const tilt = (((i * 37) % 5) - 2) * 0.45;
+        return (
+          <div key={i} style={{ position: "absolute", left: R.x + col * (cw + gap), top: top + row * (ch + gap), width: cw, height: ch,
+            opacity: Math.min(1, k * 1.6) * dim, transform: `translateY(${((1 - k) * 70).toFixed(1)}px) rotate(${tilt}deg)`, filter: "drop-shadow(0 6px 9px rgba(26,31,51,0.24))" }}>
+            <div style={{ position: "absolute", inset: 0, background: SCRAP, clipPath: torn(i * 7 + 3) }} />
+            {on ? <div style={{ position: "absolute", inset: 12, border: `6px solid ${RED}`, borderRadius: 6, opacity: markK, transform: `scale(${(1.06 - 0.06 * markK).toFixed(3)})` }} /> : null}
+            <div style={{ position: "absolute", left: 38, top: ch * 0.2, fontFamily: DISPLAY, fontWeight: 900, fontSize: ch * 0.34, lineHeight: 1, color: NAVY, letterSpacing: "-0.02em" }}>{c.label}</div>
+            {c.sub ? <div style={{ position: "absolute", left: 40, top: ch * 0.6, fontFamily: SERIF, fontStyle: "italic", fontSize: 30, color: NAVY, opacity: 0.75 }}>{c.sub}</div> : null}
+            {c.note ? (
+              <div style={{ position: "absolute", right: 30, top: ch / 2 - 30, height: 60, padding: "0 22px", borderRadius: 30, background: SCRAP, border: `3px solid ${NAVY}`,
+                display: "flex", alignItems: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 30, color: NAVY,
+                opacity: Math.min(1, noteK * 1.5), transform: `translateY(${((1 - noteK) * 16).toFixed(1)}px) scale(${(0.9 + 0.1 * noteK).toFixed(3)})` }}>{c.note}</div>
+            ) : null}
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
+/** Where the whole page sits: full frame width under the words in vertical, the picture side in wide. */
+const pageRect = (L: ReturnType<typeof layoutFor>, W: number, p: PageCapture) => {
+  const w = L.wide ? L.pic.w - 20 : W - 100;
+  const s = w / p.crop.w;
+  return { x: L.wide ? L.pic.x + 10 : 50, y: L.wide ? L.pic.y + 10 : 520, w, h: p.crop.h * s, s };
+};
+
+const PageView: React.FC<{ L: ReturnType<typeof layoutFor>; t: number; s: Extract<PaperScene, { kind: "page" }>; len: number }> = ({ L, t, s, len }) => {
+  const { width: W } = useVideoConfig();
+  const p = s.page;
+  const P = pageRect(L, W, p);
+  const inK = rise(t, 0, 18);
+  const push = 1 + 0.025 * ramp(t, 0, len, CURVE.quiet.standard); // motion: a slow push so the held page never sits still
+  const lifts = (s.lifts ?? []).map((l) => {
+    const up = rise(t, l.at, 16);
+    const down = l.back !== undefined ? ramp(t, l.back, l.back + 12, CURVE.quiet.standard) : 0;
+    return { l, k: up * (1 - down) };
+  });
+  const veil = Math.max(0, ...lifts.map((x) => x.k));
+  const img = (src: string, c: Box, sc: number) => (
+    <Img src={staticFile(src)} style={{ position: "absolute", left: -c.x * sc, top: -c.y * sc, width: p.w * sc, height: p.h * sc }} />
+  );
+  return (
+    <div style={{ position: "absolute", left: 0, top: 0, width: W, height: "100%", transformOrigin: `${W / 2}px ${P.y + P.h / 2}px`, transform: `scale(${push.toFixed(4)})` }}>
+      {/* the page, cut out like a clipping with a thin paper edge */}
+      <div style={{ position: "absolute", left: P.x - 10, top: P.y - 10, padding: 10, background: EDGE, boxShadow: "0 14px 26px rgba(26,31,51,0.32)",
+        opacity: Math.min(1, inK * 2), transform: `translateY(${((1 - inK) * 140).toFixed(1)}px) rotate(${(-0.5 - (1 - inK) * 2).toFixed(2)}deg)` }}>
+        <div style={{ position: "relative", width: P.w, height: P.h, overflow: "hidden" }}>
+          {p.states.map((st, i) => (
+            <div key={i} style={{ position: "absolute", inset: 0, opacity: i === 0 ? 1 : ramp(t, st.at, st.at + 6, CURVE.quiet.standard) }}>{img(st.src, p.crop, P.s)}</div>
+          ))}
+          <div style={{ position: "absolute", inset: 0, background: "#EFE4CE", opacity: 0.62 * veil }} />
+        </div>
+      </div>
+      {lifts.map(({ l, k }, i) => {
+        if (k <= 0) return null;
+        const w0 = l.crop.w * P.s, h0 = l.crop.h * P.s;
+        const x0 = P.x + (l.crop.x - p.crop.x) * P.s, y0 = P.y + (l.crop.y - p.crop.y) * P.s;
+        const h1 = (l.crop.h * l.toW) / l.crop.w;
+        const x1 = W / 2 - l.toW / 2, y1 = l.toCy - h1 / 2;
+        const w = w0 + (l.toW - w0) * k, h = h0 + (h1 - h0) * k;
+        const x = x0 + (x1 - x0) * k, y = y0 + (y1 - y0) * k;
+        const sc = w / l.crop.w;
+        const pad = 12 * k;
+        return (
+          <div key={i} style={{ position: "absolute", left: x - pad, top: y - pad, padding: pad, background: EDGE, transform: `rotate(${(-1.2 * k).toFixed(2)}deg)`,
+            boxShadow: `0 ${(22 * k).toFixed(1)}px ${(36 * k).toFixed(1)}px rgba(26,31,51,${(0.4 * k).toFixed(3)})`, zIndex: 6 }}>
+            <div style={{ position: "relative", width: w, height: h, overflow: "hidden" }}>
+              {l.follow
+                ? p.states.map((st, j) => (
+                  <div key={j} style={{ position: "absolute", inset: 0, opacity: j === 0 ? 1 : ramp(t, st.at, st.at + 6, CURVE.quiet.standard) }}>
+                    <Img src={staticFile(st.src)} style={{ position: "absolute", left: -l.crop.x * sc, top: -l.crop.y * sc, width: p.w * sc, height: p.h * sc }} />
+                  </div>
+                ))
+                : <Img src={staticFile(l.src)} style={{ position: "absolute", left: -l.crop.x * sc, top: -l.crop.y * sc, width: p.w * sc, height: p.h * sc }} />}
+            </div>
+          </div>
+        );
+      })}
+      {(s.counter ?? []).map((c, i, all) => {
+        const next = all[i + 1]?.at;
+        const k = rise(t, c.at, 10) * (next !== undefined ? 1 - ramp(t, next, next + 6, CURVE.quiet.exit) : 1);
+        if (k <= 0) return null;
+        return (
+          <div key={i} style={{ position: "absolute", left: 0, right: 0, top: s.counterTop ?? P.y + P.h + 30, display: "flex", justifyContent: "center", zIndex: 7 }}>
+            <Scrap text={c.text} k={k} seed={40 + i} size={L.scrap} tilt={i % 2 ? 1.2 : -1.2} />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
 /* ---------------- one scene ---------------- */
 const CUT = 4; // motion: the calm cut, the page clears in 4 frames to an empty sheet, then the next scene lands
 const Scene: React.FC<{ s: PaperScene; first: boolean; last: boolean; source?: string; seed: number; len: number }> = ({ s, first, last, source, seed, len }) => {
@@ -465,25 +603,29 @@ const Scene: React.FC<{ s: PaperScene; first: boolean; last: boolean; source?: s
   const { width: W, height: H } = useVideoConfig();
   const L = layoutFor(W, H);
   // when each part lands; the first scene lets the UMD M have the frame until it glides up at 1.1 s
-  const aboveAt = first ? 6 : 2;
-  const wordAt = first ? 46 : 8;
-  const belowAt = first ? 54 : 14;
+  const aboveAt = s.wordAt !== undefined ? 0 : first ? 6 : 2;
+  const wordAt = s.wordAt ?? (first ? 46 : 8);
+  const belowAt = s.wordAt !== undefined ? s.wordAt + 8 : first ? 54 : 14;
   const countFrom = 14, countTo = 50;
+  const tallied = s.kind === "terms" && s.tally !== undefined;
   const wordText = s.kind === "count"
     ? Math.round(s.from + (s.to - s.from) * ramp(t, countFrom, countTo, CURVE.quiet.enter)).toLocaleString("en-US")
+    : tallied ? String(Math.min(Number(s.word), s.tally! * Math.max(1, notesIn(s, t)))) // starts on one card's worth, never on 0
     : s.word ?? "";
-  const chars = s.kind === "count" ? String(s.to.toLocaleString("en-US")).length : wordText.length;
-  const fontSize = Math.min(L.wordMax, L.text.w / Math.max(1, chars * 0.6));
+  const chars = s.kind === "count" ? String(s.to.toLocaleString("en-US")).length : tallied ? (s.word ?? "").length : wordText.length;
+  // a page scene gives the frame to the page: the words sit higher and smaller
+  const T = s.kind === "page" && !L.wide ? { ...L.text, y: 190, h: 320 } : L.text;
+  const fontSize = Math.min(s.kind === "page" ? 190 : L.wordMax, T.w / Math.max(1, chars * 0.6));
   const wordK = rise(t, wordAt, 14);
   const ulK = s.underline ? ramp(t, wordAt + 26, wordAt + 40, CURVE.quiet.enter) : 0;
   const clipAt = s.kind === "compare" ? 8 + (s.items.length - 1) * 18 + 12 : 30;
   return (
     <AbsoluteFill style={{ opacity: clear }}>
-      <div style={{ position: "absolute", left: L.text.x, top: L.text.y, width: L.text.w, height: L.text.h, display: "flex", flexDirection: "column",
+      <div style={{ position: "absolute", left: T.x, top: T.y, width: T.w, height: T.h, display: "flex", flexDirection: "column",
         alignItems: "center", justifyContent: L.wide && !s.clip ? "center" : "flex-start", paddingTop: L.wide && s.clip ? 60 : 0, gap: 10 }}>
         {s.above ? <Scrap text={s.above} k={rise(t, aboveAt, 12)} seed={seed * 3 + 1} size={L.scrap} tilt={-1.4} /> : null}
         <div style={{ position: "relative", display: "inline-block", opacity: Math.min(1, wordK * 1.5), transform: `translateY(${((1 - wordK) * 34).toFixed(1)}px)`, margin: "4px 0 12px" }}>
-          <span data-snap={s.kind === "count" ? "" : undefined} style={{ fontFamily: DISPLAY, fontWeight: 900, fontSize, lineHeight: 1.04, letterSpacing: "-0.025em",
+          <span data-snap={s.kind === "count" || tallied ? "" : undefined} style={{ fontFamily: DISPLAY, fontWeight: 900, fontSize, lineHeight: 1.04, letterSpacing: "-0.025em",
             fontVariantNumeric: "lining-nums tabular-nums", backgroundImage: `linear-gradient(180deg, ${NAVY_HI} 0%, ${NAVY} 70%)`, WebkitBackgroundClip: "text",
             backgroundClip: "text", color: "transparent", display: "inline-block", padding: "0 0.04em" }}>{wordText}</span>
           {s.underline ? <Underline k={ulK} /> : null}
@@ -494,6 +636,8 @@ const Scene: React.FC<{ s: PaperScene; first: boolean; last: boolean; source?: s
       {s.kind === "compare" ? <CompareChart R={L.pic} t={t} s={s} /> : null}
       {s.kind === "map" ? <MapSheet R={L.pic} t={t} s={s} /> : null}
       {s.kind === "count" ? <FlipCalendar R={L.pic} t={t} pages={s.calendar ?? [String(s.from), String(s.to)]} flipAt={countFrom} /> : null}
+      {s.kind === "terms" ? <TermsGrid R={L.wide ? L.pic : { x: 90, y: 760, w: W - 180, h: 820 }} t={t} s={s} first={first} /> : null}
+      {s.kind === "page" ? <PageView L={L} t={t} s={s} len={len} /> : null}
       {s.clip ? <Clip L={L} t={t} c={s.clip} at={clipAt} /> : null}
       {last && source ? (
         <div style={{ position: "absolute", left: L.wide ? L.text.x : 70, right: L.wide ? undefined : 70, bottom: L.wide ? 50 : 70, textAlign: L.wide ? "left" : "center",
@@ -505,6 +649,11 @@ const Scene: React.FC<{ s: PaperScene; first: boolean; last: boolean; source?: s
       {s.kind === "map" ? <Cue at={22} name="paper-move-quick" volume={0.3} /> : null}
       {s.kind === "count" ? <><Cue at={countFrom} name="paper-page-turn" volume={0.45} /><Cue at={countFrom + 2} name="counter" volume={0.3} /></> : null}
       {s.underline ? <Cue at={wordAt + 26} name="marker-pen-line" volume={0.4} /> : null}
+      {s.kind === "terms" && !s.held ? <Cue at={first ? 38 : 4} name="paper-move-quick" volume={0.3} /> : null}
+      {s.kind === "terms" && s.tally !== undefined ? <Cue at={NOTE_AT} name="counter" volume={0.3} /> : null}
+      {s.kind === "terms" && s.mark ? <Cue at={10} name="marker-pen-line" volume={0.35} /> : null}
+      {s.kind === "page" ? (s.lifts ?? []).map((l, i) => <Cue key={`l${i}`} at={l.at} name="paper-slide" volume={0.3} />) : null}
+      {s.kind === "page" ? (s.page.states.slice(1)).map((st, i) => <Cue key={`s${i}`} at={st.at} name="paper-page-turn" volume={0.3} />) : null}
     </AbsoluteFill>
   );
 };
@@ -523,7 +672,7 @@ export const PaperDoc: React.FC<PaperDocProps> = (p) => {
         </Sequence>
       ))}
       <Grain W={W} H={H} />
-      {wide ? <UmdOpen bigCx={960} bigCy={520} bigH={300} tagCx={960} tagCy={84} tagH={56} outAt={end - 10} /> : <UmdOpen outAt={end - 10} />}
+      {wide ? <UmdOpen bigCx={960} bigCy={520} bigH={300} tagCx={960} tagCy={84} tagH={56} outAt={end - 10} /> : <UmdOpen outAt={end - 10} {...p.umd} />}
     </World>
   );
 };

@@ -63,13 +63,25 @@ const Pinned: React.FC<{ w: number; h: number; quad: Quad; children: React.React
   </div>
 );
 
-/** Where the code-drawn room puts things, in a 1080 x 1920 frame. */
+/** Where the code-drawn room puts things, in a 1080 x 1920 frame. `stand` is the monitor stand: left, top, height. */
 export const DESK = {
   screen: [[64, 452], [1020, 436], [1014, 1036], [70, 1046]] as Quad,
   laptop: [[196, 1170], [766, 1162], [759, 1518], [205, 1525]] as Quad,
   lampAt: [918, 1560] as Pt,
   deskTop: 1610,
+  stand: [520, 1030, 140] as [number, number, number],
 };
+
+/** The room with no laptop (2026-11-21, Jacob: the laptop "is just there"): the monitor moves down and in, a touch bigger,
+ *  standing on the desk, the lamp on the desk in front of it. */
+export const DESK_SOLO = {
+  screen: [[40, 566], [1042, 550], [1036, 1176], [46, 1186]] as Quad,
+  laptop: DESK.laptop,
+  lampAt: [900, 1560] as Pt,
+  deskTop: 1330,
+  stand: [520, 1176, 160] as [number, number, number],
+};
+type DeskLayout = typeof DESK;
 
 const Grain: React.FC<{ amount: number }> = ({ amount }) => {
   const f = useCurrentFrame();
@@ -89,10 +101,11 @@ const Grain: React.FC<{ amount: number }> = ({ amount }) => {
 };
 
 /** The code-drawn room behind the screen: wall, desk, monitor body, laptop, lamp. */
-const Room: React.FC<{ light: { rgb: string; level: number }; lamp: string; laptop?: string | null; children: React.ReactNode }> = ({ light, lamp, laptop, children }) => {
+const Room: React.FC<{ light: { rgb: string; level: number }; lamp: string; laptop?: string | null; desk: DeskLayout; children: React.ReactNode }> = ({ light, lamp, laptop, desk, children }) => {
   const L = light.level;
-  const [lx, ly] = DESK.lampAt;
-  const s = DESK.screen;
+  const [lx, ly] = desk.lampAt;
+  const s = desk.screen;
+  const [standX, standY, standH] = desk.stand;
   return (
     <AbsoluteFill style={{ background: "#120806" }}>
       {/* the slatted wall: warm oxblood wood, lit from the screen */}
@@ -106,7 +119,7 @@ const Room: React.FC<{ light: { rgb: string; level: number }; lamp: string; lapt
       {/* a warm practical low on the right, so the wall is never flat */}
       <AbsoluteFill style={{ background: `radial-gradient(ellipse 40% 26% at ${lx / 10.8}% ${ly / 19.2}%, rgba(${lamp}, 0.2) 0%, rgba(${lamp}, 0.05) 50%, rgba(0,0,0,0) 80%)`, mixBlendMode: "screen" }} />
       {/* the monitor: thin black bezel, a shadow on the wall, the stand */}
-      <div style={{ position: "absolute", left: 520, top: 1030, width: 40, height: 140, background: "linear-gradient(90deg,#0b0a0a,#1c1a19,#0b0a0a)" }} />
+      <div style={{ position: "absolute", left: standX, top: standY, width: 40, height: standH, background: "linear-gradient(90deg,#0b0a0a,#1c1a19,#0b0a0a)" }} />
       <div style={{ position: "absolute", left: 0, top: 0, width: 0, height: 0, borderRadius: 6, background: "linear-gradient(180deg,#252220,#0c0b0a)" }} />
       <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
         <defs>
@@ -117,9 +130,9 @@ const Room: React.FC<{ light: { rgb: string; level: number }; lamp: string; lapt
       </svg>
       {children}
       {/* the desk: dark walnut, the screen and lamp reflected in it */}
-      <div style={{ position: "absolute", left: 0, top: DESK.deskTop, width: 1080, height: 1920 - DESK.deskTop, background: "linear-gradient(180deg,#2a1710 0%,#1a0d08 40%,#0d0604 100%)" }} />
-      <div style={{ position: "absolute", left: 0, top: DESK.deskTop, width: 1080, height: 1920 - DESK.deskTop, opacity: 0.35, background: "repeating-linear-gradient(178deg, rgba(255,200,160,0.05) 0px, rgba(0,0,0,0) 3px, rgba(0,0,0,0.25) 9px, rgba(0,0,0,0) 14px)" }} />
-      <div style={{ position: "absolute", left: 0, top: DESK.deskTop, width: 1080, height: 300, background: `radial-gradient(ellipse 60% 70% at 50% 0%, rgba(${light.rgb}, ${0.3 * L}) 0%, rgba(0,0,0,0) 70%)`, mixBlendMode: "screen" }} />
+      <div style={{ position: "absolute", left: 0, top: desk.deskTop, width: 1080, height: 1920 - desk.deskTop, background: "linear-gradient(180deg,#2a1710 0%,#1a0d08 40%,#0d0604 100%)" }} />
+      <div style={{ position: "absolute", left: 0, top: desk.deskTop, width: 1080, height: 1920 - desk.deskTop, opacity: 0.35, background: "repeating-linear-gradient(178deg, rgba(255,200,160,0.05) 0px, rgba(0,0,0,0) 3px, rgba(0,0,0,0.25) 9px, rgba(0,0,0,0) 14px)" }} />
+      <div style={{ position: "absolute", left: 0, top: desk.deskTop, width: 1080, height: 300, background: `radial-gradient(ellipse 60% 70% at 50% 0%, rgba(${light.rgb}, ${0.3 * L}) 0%, rgba(0,0,0,0) 70%)`, mixBlendMode: "screen" }} />
       {/* laptop */}
       {laptop ? <Laptop src={laptop} /> : null}
       {/* the lamp: a glossy red ball, lit from inside */}
@@ -159,7 +172,8 @@ const Laptop: React.FC<{ src: string }> = ({ src }) => {
 
 export const ScreenStage: React.FC<ScreenStageProps> = ({ screen, screenSize = [1440, 900], laptop = null, light = { rgb: "217, 32, 46", level: 0.6 }, lamp = "217, 32, 46", plate, caption, grain = 0.12 }) => {
   const [sw, sh] = screenSize;
-  const quad = plate ? plate.screen : DESK.screen;
+  const desk = laptop ? DESK : DESK_SOLO;
+  const quad = plate ? plate.screen : desk.screen;
   const glass = (
     <Pinned w={sw} h={sh} quad={quad} style={{ pointerEvents: "none" }}>
       {/* glass: a soft sheen top left and a touch of falloff at the edges, so it reads as a lit panel, not a sticker */}
@@ -189,7 +203,7 @@ export const ScreenStage: React.FC<ScreenStageProps> = ({ screen, screenSize = [
           <AbsoluteFill style={{ background: `radial-gradient(ellipse 75% 40% at 50% 38%, rgba(${light.rgb}, ${0.18 * light.level}) 0%, rgba(0,0,0,0) 70%)`, mixBlendMode: "screen" }} />
         </>
       ) : (
-        <Room light={light} lamp={lamp} laptop={laptop}>
+        <Room light={light} lamp={lamp} laptop={laptop} desk={desk}>
           {film}
         </Room>
       )}

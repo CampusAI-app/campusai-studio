@@ -227,5 +227,5 @@ export { RibbonSweep, Spark3D, SparkLockup, GlowPill, VortexRing, measureLine, S
 export type { VortexItem } from "./DeskFlow";
 
 // From Ildari's Strava concept ad (2026-11-25, Muse): a walk on a real campus map with a live bar. Reuse for the Campus Map film.
-export { CampusWalk, WalkFigure, clockText } from "./CampusWalk";
+export { CampusWalk, WalkFigure, RunFigure, clockText } from "./CampusWalk";
 export type { CampusWalkProps, WalkWorld } from "./CampusWalk";

@@ -78,7 +78,9 @@ lane; it still has one home lane.
 | Talking heads | A person speaking to camera, plus on-screen effects | `lanes/editing.md`, then `lanes/talking-heads.md` |
 | Graphics | Still images from the same parts: feed images, hero stills, thumbnails, carousel frames | `lanes/graphics.md` |
 
-For CampusAI work also read `rules/campusai.md`: everything Jacob has said across every round.
+For CampusAI work also read `rules/campusai.md`: everything Jacob has said across every round. They are preferences,
+not hard rules (11/25): lean toward them, and when a film breaks one, say which and why. Start with its "How things
+move" and "Styles from the recent films" sections.
 
 ## Your own chat (2026-10-23): the real chat, answering your question
 
@@ -195,11 +197,15 @@ format beats one described from scratch. Only when none fits does the order belo
 
 **Sound**
 - Default is no voice: music, sound and captions.
-- When a piece is voiced, it uses **the CampusAI voice** (Jacob's pick, 2026-11-10): a quick,
-  upbeat 20 year old college student, made on Jacob's Mac with VoiceStudio and the VoxCPM2 engine
-  (Apache-2.0, free to post, no paid key). Clip, setup and the exact call: `skill/voice/README.md`.
-  Never VoiceStudio's default OmniVoice engine or its model packs: non-commercial weights.
-  ElevenLabs only if Jacob asks; its free tier is non-commercial.
+- When a piece is voiced, it uses **the CampusAI voice** (Jacob's pick, 2026-11-10: a quick,
+  upbeat 20 year old college student) made with **ElevenLabs** through its hosted MCP
+  (`elevenlabs`, https://api.elevenlabs.io/v1/mcp). Clip and setup: `skill/voice/README.md`.
+  Posted work needs a paid ElevenLabs plan; the free tier is non-commercial.
+- Trial reels (Jacob, 2026-11-24): the voice is Victor (id in `skill/voice/README.md`); the other voices tried were
+  rejected. With type on screen the voice says exactly the type, from the hook on, and each word lands as it is said;
+  a line card lasts as long as the voice takes. Everything else stays on the CampusAI voice.
+- Never VoiceStudio (Jacob, 2026-11-24: uninstalled, too heavy for his Mac). Nothing local on
+  localhost:3900, and no other on-device voice model without his yes.
 - Free voice candidate (2026-10-27, not adopted yet): **Chatterbox** (`resemble-ai/chatterbox`,
   MIT, 27k stars), open-source TTS that runs locally, with Turbo for English narration and Nano
   for CPU. MIT means a posted voiced cut needs no paid key. Two things to know before using it:

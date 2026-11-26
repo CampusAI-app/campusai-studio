@@ -1,7 +1,74 @@
-# CampusAI: every rule Jacob has given, in one place
+# CampusAI: Jacob's preferences, in one place
+
+**These are preferences, not hard rules (11/25).** Jacob: "I don't want those to be hard rules. I want those to be
+preferences." Every line in this file, including the ones written as "never" or "always", is what he has liked or
+disliked so far. Lean toward them. Break one when the film is better for it, and say which one and why when you show
+the film. A note he gave about one film is a hint for the next, not a law for all of them.
 
 Gathered 2026-10-22 from `motion-library.md` (items 7 to 9 and the 09-16 rules), the hook-films
-brief and LOG. Newest wins where two disagree. Add every new note here, dated, the day he gives it.
+brief and LOG. Newest wins where two disagree. Add every new note here, dated, the day he gives it. The two sections
+right below (how things move, and the styles of the recent films) are the newest and lead.
+
+## How things move (preferences, 11/25, from the Nov 24 films and his notes on them)
+What he wants more of: "better animations, things on screen, not keeping your eyes moving."
+- **Keep the eye in one place.** Decide where the viewer is looking and bring things to that spot, so they never
+  hunt: the next line lands where the last one was, the product chip slides in under the hook, a card lifts toward
+  the middle. When the eye has to move, lead it with one motion (a red outline drawing on, the camera pushing in),
+  never two things appearing in two places at once. One thing moves at a time; nothing moves for a second reason
+  while something else is moving (08/30). Words keep the same place from beat to beat (the keynote's line always in
+  one band above the monitor).
+- **Whole thing first, then bring the one part forward.** The real page at desktop size for context, then the camera
+  pushes in until the thing being named fills the width (Feature Friday round 6), or the part lifts off the page to be
+  read (the trial reels' red outline, then the cards lifting). Never leave a small thing on a big page to be found.
+- **Show it working, not a still of it.** "When it shows the chat it should show it actually answering, not a
+  screenshot" (Living campus). Jobs come as cards: "If doing the job question, show the cards" (Living campus), "when it
+  shows the jobs it should show them in cards also" (Keynote). Degree progress shows the audit's own sections, "the
+  degree audit section with the sections" (Keynote), not a bare percentage.
+- **Quick, and more of it.** "It's a little slow" (Keynote round 2) became a new beat every 1.2 to 2.8 s. "More
+  aggressively showing people, quickly" and "a better animation of showing the people" (Living campus) became faces
+  strobing into a wall. Piles land fast (a page every 0.3 s in Feature Friday).
+- **Things up front.** "I'd rather the cards show up at the beginning" (Feature Friday): the brief arrives with its
+  cards already on it and each one lights as it is named, rather than building from nothing.
+- **No empty space.** "A lot of empty space" (Keynote round 3 direction): the product stays at real size and big words
+  fill the rest of the frame around it. Never pad with blank ground or shrink the product to fill a gap.
+- **Words land as they are said.** Word by word at speaking pace. A line can sit faint and light up as it is spoken
+  (trial reels), or build in at the top with one red word (Feature Friday).
+- **Transitions carry you in.** The pile of pages collapses into one point that opens as the dashboard (Feature
+  Friday); the camera pushes through the laptop's glass into the product (Who to talk to); a red flood carries into the
+  end (Living campus); the UMD M glides from big to a small tag (trial reels). Not cuts to black or plain fades.
+- **Hold the payoff.** The one line that matters holds long enough to read twice ("Meet CampusAI" held 2.4 s); the end
+  card about 3 s.
+- **Glide, never jolt.** No loading or skeleton frame on screen (Living campus round 6); a streaming chat glides; dissolve
+  between states rather than playing a recorded scroll.
+- **Sound lands on the motion.** A low hit on the payoff, a click on each press. Trial reels carry no music in the file:
+  "take away the background music... I'd rather just choose songs on Instagram."
+- **One palette per film.** "Random colors, not premium" (Living campus): a family of reds around the brand red, not
+  extra colours for variety.
+
+## Styles from the recent films (a menu, not a format, 11/25)
+Each is a whole look a new film can borrow, mix or skip. The file named is the worked example. Post files in
+`src/trials/` stay on Jacob's Mac (they carry real students' footage and words, and this repo is public); the kit parts
+they are built from are all here, and the finished films are on the Studio site.
+- **Light trial reel** (Who to talk to, Your week; `src/trials/post-howdo-remake.tsx`). Soft pink and white cloud ground.
+  Frame 0 has the UMD M big, the first line set and the second line faint, lighting up as said. The M glides up into a
+  tag and one real product chip slides in under the lines. A real student clip at a named UMD place (campus versions),
+  the campusai wordmark with its spark for a second, the whole real page with red outlines on what the line names, then
+  those things lift off as stacked cards. Ends on the wordmark over a McKeldin sky, "Made for Terps. Link in bio." Ships
+  as versions that differ only in the opening, each with Victor's voice and text only. Good for: one problem, one answer,
+  about 20 s. Unproven as of Nov 25 (posted Nov 24, judged after Nov 26: see the Base playbook, note 79).
+- **Laptop at night** (Feature Friday; `src/trials/post-everything-laptop.tsx`). A real laptop on a warm dark desk with a
+  Testudo photo and a Maryland mug behind it; real UMD pages, each with its mark, stack onto the glass, then collapse into
+  one point that opens as the dashboard; captions build at the top with one red word; the camera pushes in until the
+  named thing fills the width; a narrator the whole way. Good for: "everything in one place", setup to payoff, 40 s plus.
+- **Monitor in a dark room** (Keynote round 3; `src/trials/post-keynote-monitor-r3.tsx`). The real product at 1440 x 900 on
+  a monitor; a "Built by Terps, for Terps." label on top; a big icon and a big line above the monitor with one phrase in a
+  red box; chat leads; rows assemble one at a time; "One press. Added." Good for: launch or a fast tour, about 20 s.
+- **Living map** (Living campus round 6; `src/trials/post-living-campus-r6.tsx`). Coral and red grounds, the team's faces
+  strobing into a wall, the full chat page answering live, a red flood into "Live now, only at UMD." No voice. Good for:
+  who built it, 16x9 or vertical, under 30 s.
+- **Type-led** (Storyboard vs final; `src/trials/post-storyboard-final.tsx`). A giant serif word cropped over a red
+  block, a pill word ("matter?"), a list that lights one item, then real cards. Good for: one idea in words before the
+  product.
 
 ## Named styles are each their own world (11/08, newest, wins over the type and colour lines below and in SKILL.md)
 Jacob, on the first 20 styles from the "30 Claude animations" reel: "These still look pretty similar and not actually
@@ -20,6 +87,24 @@ fonts. The colors should be more red, but it shouldn't always just be a black ba
 - **The brand lives in the logo.** The logo still arrives inside two seconds and every piece still ends on it, but drawn
   in the style's own language on the style's own ground (stamped, flapped, printed), not on the shared dark card.
 - Product films, captures and chat recordings keep the product's own look; this note is about named styles.
+- **A world style shows the product or makes a joke (11/17).** Jacob, on the first Brick World and CGI Calm cuts: "For
+  these random types, where it's like the Lego ones and other things, we should try to be showing the product in it
+  when we can, or have it be a little funny or satirical. Otherwise, it doesn't really make sense for those." A pretty
+  world with an answer line on top is not enough. Put a real capture inside the world (a screen, a billboard, a phone,
+  a page the plane unfolds into), or make it funny (a satirical voice, a gag that tops out on CampusAI). Both is best.
+- **The planner shows the planning, never its disclaimer (11/17).** Jacob, on Brick World round 2: "it doesn't really
+  show the actual planning of it out. Also, whenever you show the planner, like Degree Audit, you always show the alert
+  of 'we're not the guy,' not the actual thing for Degree Audit things, which is really the main part of it." Any
+  capture of the planner or degree audit frames the terms with their courses and the requirements being met. The "a
+  guide, not your official degree audit" alert is never the shot; crop or scroll past it.
+- **A joke has to follow from what the product really does (11/17).** CGI Calm round 2 ("Finals week. Total calm." over
+  the calendar) failed: "That wouldn't just show up in the calendar." The line has to be something the screen on show
+  plainly causes.
+- **UMD in the first second (11/17).** Jacob: "They should try to have the UMD logo or something showing up at UMD at
+  the beginning, because otherwise people might scroll through if it's not related to them." Every named style opens
+  with `UmdOpen` (`src/styles/UmdOpen.tsx`): the UMD M pops in big at 0.1 s and glides into a small tag at 1.1 s, his
+  Nov 16 move. The logo file is `public/private-umd-logo/umd-m.svg`, on Jacob's Mac only; a teammate without it leaves
+  the M out and opens on a UMD landmark instead.
 
 ## Trial reels (11/09)
 Street-interview clips that hand off into the real product. Ashley picks what to make; the
@@ -42,6 +127,8 @@ Street-interview clips that hand off into the real product. Ashley picks what to
 - **What the numbers say so far:** opening on a person holds (44 to 55% skip); opening on the
   product or a feature loses most people in the first seconds (72 to 91% skip). The live version
   is the playbook, not this line.
+- **Recent trial reels (11/24)** use the "Light trial reel" look in "Styles from the recent films" above. It is one
+  option, not the trial format. The voice notes are in `voice/README.md` ("Trial reels: the voice").
 
 ## The product on screen
 - Real dark-mode web captures of campusai-demo (or dev or main), never a mockup, never mobile
@@ -80,6 +167,11 @@ Street-interview clips that hand off into the real product. Ashley picks what to
 - Logo near the start and always at the end (10/22). Earlier: "any cut gets a short logo
   intro" (10/16) and "logo at 0.5 s with the watermark held top-left" (Job Match, 09/16).
 - The hook is in the first 0.5 s; the opening is never slow (10/21).
+- **Never open on an empty screen (11/24).** Jacob: "I don't like when they start with nothing on the screen, because
+  then people don't really know much... and they skip." Frame 0 already carries the hook: the first line set, the UMD M
+  already up, the visual mid-motion. Animate the rest in from there, never everything in from blank. Frame 0 is also the
+  thumbnail in a folder and the first thing a phone shows. Worked example: the hooks in `src/trials/post-howdo-remake.tsx`
+  (lines start early, a spoken line sits faint on screen and lights up word by word as it is said).
 - Orientation plays OVER the thing, not in front of it: the hook lines sit over the real card
   already on screen, never on black (09/16).
 - Never open on the North Star picker for Job Match (rejected twice, 09/16). Skip greeting pages
@@ -115,6 +207,11 @@ Street-interview clips that hand off into the real product. Ashley picks what to
   we're not on the phone yet either." So no phone screens and no "on your phone" copy. A vertical reel uses the tall desktop
   recording above (1100 x 1956, `zoom` 1.8), shown big with the product as the frame. Never crop a wide desktop recording
   into a narrow card ("trying to shove it into a real format").
+  Saying the app is coming is allowed (11/24, Jacob on the team sitcom film: "mobile is allowed because we are working
+  towards that"). Word it as in progress ("building the CampusAI app"), never as shipped. Same day, for the team
+  sitcom: "I would rather show actual mobile screens that we're working on", so real screens of the mobile app in
+  progress (captured from the simulator build, its sample data) are allowed where the piece is about the team building
+  it. Product films still use the desktop web layout.
 - **Real computer size, never a tall or narrow window (11/24, replaces the tall window in the two bullets above).** The
   1100 x 1956 window reflows the product: at `zoom` 1.8 its cards wrap a word per line, and under 1280 px some pages change
   layout (My Calendar's task list drops under the grid). Jacob on the keynote film's round 3 direction: "I don't think that's

@@ -37,6 +37,13 @@ export type CampusWalkProps = {
   /** The bar. `clock` is the time of day at `from` in minutes after midnight and `minutes` how long the walk takes (the
    *  big clock ticks from one to the other); `left` and `right` sit either side of the walker. */
   bar?: { clock: number; minutes: number; chip: string; left: { value: string; label: string }; right: { value: string; label: string } };
+  /** A day of walks (2026-11-25, round 2): each leg runs between two stops along `route` (fractions, as bake-day.py writes
+   *  them in `stops`) over its own frames. The bar then shows that leg: the clock ticking from `clock` for `minutes`, the
+   *  walk and the time between either side, and, past `clock + between`, the clock in red with `lateLine`. A leg over
+   *  `long` minutes carries the running figure, the mark the product puts on a long walk. Overrides from/to and bar. */
+  legs?: { f0: number; f1: number; a0: number; a1: number; clock: number; minutes: number; between: number; chip: string }[];
+  long?: number;
+  lateLine?: string;
   /** Camera: px per metre at the start and at the end of the walk. */
   zoom?: [number, number];
   /** Bottom of the map's useful area (the bar sits under it). */
@@ -62,6 +69,13 @@ const BLOCK = "#2a2023";
 const BLOCK_EDGE = "#36292d";
 const ROAD = "#3b2f32";
 
+/** The running figure the product puts on a walk over 15 minutes (Material Symbols directions_run, Apache 2.0). */
+export const RunFigure: React.FC<{ size: number; color: string }> = ({ size, color }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" style={{ display: "block" }}>
+    <path fill={color} d="M13.49 5.48c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-3.6 13.9 1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1l-5.2 2.2v4.7h2v-3.4l1.8-.7-1.6 8.1-4.9-1-.4 2 7 1.4z" />
+  </svg>
+);
+
 /** A walking figure (drawn from the Material Symbols directions_walk shape, Apache 2.0). */
 export const WalkFigure: React.FC<{ size: number; color: string }> = ({ size, color }) => (
   <svg width={size} height={size} viewBox="0 -960 960 960" style={{ display: "block" }}>
@@ -69,7 +83,7 @@ export const WalkFigure: React.FC<{ size: number; color: string }> = ({ size, co
   </svg>
 );
 
-export const CampusWalk: React.FC<CampusWalkProps> = ({ data, from, to, fromLabel, toLabel, stops = [], bar, zoom = [1.25, 1.75], credit }) => {
+export const CampusWalk: React.FC<CampusWalkProps> = ({ data, from, to, fromLabel, toLabel, stops = [], bar: barProp, zoom = [1.25, 1.75], credit, legs, long = 15, lateLine }) => {
   const f = useCurrentFrame();
   const { width, height, fps } = useVideoConfig();
   const [world, setWorld] = useState<WalkWorld | null>(null);
@@ -79,7 +93,16 @@ export const CampusWalk: React.FC<CampusWalkProps> = ({ data, from, to, fromLabe
   if (!world) return null;
 
   // motion: a walk at a near-even pace, a soft start and stop so the dot and the camera never jolt
-  const t = interpolate(f, [from, to], [0, 1], { ...clampX, easing: Easing.bezier(0.25, 0.05, 0.75, 0.95) });
+  const ease = Easing.bezier(0.25, 0.05, 0.75, 0.95);
+  // with legs: the active leg is the last one that has started; between legs the dot waits at the stop
+  const leg = legs ? [...legs].reverse().find((g) => f >= g.f0) ?? legs[0] : null;
+  const legT = leg ? interpolate(f, [leg.f0, leg.f1], [0, 1], { ...clampX, easing: ease }) : 0;
+  const t = leg ? mix(leg.a0, leg.a1, legT) : interpolate(f, [from, to], [0, 1], { ...clampX, easing: ease });
+  const bar = leg ? { clock: leg.clock, minutes: leg.minutes, chip: leg.chip, left: { value: `${leg.minutes} min`, label: "walk" }, right: { value: `${leg.between} min`, label: "between" } } : barProp;
+  const barT = leg ? legT : t;
+  const late = leg ? leg.minutes > leg.between && legT * leg.minutes > leg.between : false;
+  const lateA = leg && leg.minutes > leg.between ? k(f, mix(leg.f0, leg.f1, leg.between / leg.minutes), mix(leg.f0, leg.f1, leg.between / leg.minutes) + 8) : 0;
+  const running = leg ? leg.minutes > long : false;
   const head = along(world.route, L, t);
   const start = world.route[0], end = world.route[world.route.length - 1];
   const mid = along(world.route, L, 0.5);
@@ -107,9 +130,10 @@ export const CampusWalk: React.FC<CampusWalkProps> = ({ data, from, to, fromLabe
   const S0 = proj(start[0], start[1]);
   const E0 = proj(end[0], end[1]);
   const pulse = 0.5 + 0.5 * Math.sin((f / fps) * Math.PI * 2 * 1.1);
-  const arrived = k(f, to - 4, to + 10);
+  const f0 = legs ? legs[0].f0 : from;
+  const arrived = legs ? k(f, legs[legs.length - 1].f1 - 4, legs[legs.length - 1].f1 + 10) : k(f, to - 4, to + 10);
 
-  const minutesNow = bar ? Math.min(bar.minutes, Math.floor(t * bar.minutes + 0.0001)) : 0;
+  const minutesNow = bar ? Math.min(bar.minutes, Math.floor(barT * bar.minutes + 0.0001)) : 0;
 
   return (
     <AbsoluteFill style={{ background: GROUND, overflow: "hidden" }}>
@@ -135,12 +159,26 @@ export const CampusWalk: React.FC<CampusWalkProps> = ({ data, from, to, fromLabe
         <circle cx={H.x} cy={H.y} r={30 + pulse * 14} fill={B.color.accent} opacity={0.18 * (1 - arrived)} />
         <circle cx={H.x} cy={H.y} r={17} fill="#ffffff" stroke={B.color.accent} strokeWidth={7} opacity={1 - arrived * 0.9} />
       </svg>
+      {/* on a long walk the walker carries the running figure, the way the product marks it */}
+      {running ? (
+        <div style={{ position: "absolute", left: H.x + 22, top: H.y - 66, width: 52, height: 52, borderRadius: 26, background: late ? B.color.accent : "#f7efe6",
+          display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 6px 20px rgba(0,0,0,0.5)",
+          transform: `scale(${spring({ frame: f - (leg ? leg.f0 : 0), fps, config: { damping: 11, stiffness: 180 } }).toFixed(3)})` }}>
+          <RunFigure size={34} color={late ? "#ffffff" : "#151213"} />
+        </div>
+      ) : null}
 
       {/* place names: where it starts, where it is going, and the places on the way as the dot passes them */}
       {[
         { label: fromLabel, x: S0.x, y: S0.y, at: Math.max(0, from - 30), until: from + 40, side: 1 },
-        ...stops.map((q) => { const p = along(world.route, L, q.at); const P0 = proj(p[0], p[1]); const when = mix(from, to, q.at); return { label: q.label, x: P0.x, y: P0.y, at: when - 6, until: when + 30, side: -1 }; }),
-        { label: toLabel, x: E0.x, y: E0.y, at: to - 26, until: 99999, side: 1 },
+        ...stops.map((q) => {
+          const p = along(world.route, L, q.at); const P0 = proj(p[0], p[1]);
+          const g = legs?.find((x) => q.at >= x.a0 - 1e-6 && q.at <= x.a1 + 1e-6);
+          const when = g ? mix(g.f0, g.f1, (q.at - g.a0) / Math.max(1e-6, g.a1 - g.a0)) : mix(from, to, q.at);
+          const isStop = legs?.some((x) => Math.abs(x.a1 - q.at) < 1e-4);
+          return { label: q.label, x: P0.x, y: P0.y, at: when - 6, until: isStop ? 99999 : when + 30, side: -1 };
+        }),
+        { label: toLabel, x: E0.x, y: E0.y, at: (legs ? legs[legs.length - 1].f1 : to) - 26, until: 99999, side: 1 },
       ].map((l, i) => {
         const a = spring({ frame: f - l.at, fps, config: { damping: 12, stiffness: 170 } });
         // a name never sits over the bar's band: it gives way as it slides down into it
@@ -163,15 +201,21 @@ export const CampusWalk: React.FC<CampusWalkProps> = ({ data, from, to, fromLabe
       {bar ? (
         <>
           {/* the big number over the map, as the reference's pace does: the time of day, ticking */}
+          {lateLine ? (
+            <div style={{ position: "absolute", left: 0, right: 0, top: height * 0.625, display: "flex", justifyContent: "center", opacity: lateA,
+              transform: `translateY(${((1 - lateA) * 16).toFixed(1)}px)` }}>
+              <span style={{ padding: "8px 22px", borderRadius: 999, background: B.color.accent, fontFamily: INTER, fontWeight: 600, fontSize: 32, color: "#ffffff" }}>{lateLine}</span>
+            </div>
+          ) : null}
           <div style={{ position: "absolute", left: 0, right: 0, top: height * 0.665, textAlign: "center", fontFamily: INTER, fontWeight: 600, fontSize: 112,
-            letterSpacing: "-0.02em", color: "#f7efe6", fontVariantNumeric: "tabular-nums", opacity: k(f, from - 24, from - 10) }}>
+            letterSpacing: "-0.02em", color: late ? "#ff4d5a" : "#f7efe6", fontVariantNumeric: "tabular-nums", opacity: k(f, f0 - 24, f0 - 10) }}>
             {clockText(bar.clock + minutesNow)}
           </div>
-          <div style={{ position: "absolute", left: 70, right: 70, top: height * 0.775, height: 4, borderRadius: 2, background: "rgba(247,239,230,0.14)", opacity: k(f, from - 24, from - 10) }}>
-            <div style={{ width: `${t * 100}%`, height: "100%", borderRadius: 2, background: B.color.accent }} />
+          <div style={{ position: "absolute", left: 70, right: 70, top: height * 0.775, height: 4, borderRadius: 2, background: "rgba(247,239,230,0.14)", opacity: k(f, f0 - 24, f0 - 10) }}>
+            <div style={{ width: `${barT * 100}%`, height: "100%", borderRadius: 2, background: B.color.accent }} />
           </div>
           <div style={{ position: "absolute", left: 70, right: 70, top: height * 0.8, display: "flex", alignItems: "flex-start", justifyContent: "space-between",
-            fontFamily: INTER, color: "#f7efe6", opacity: k(f, from - 20, from - 6), transform: `translateY(${(1 - k(f, from - 20, from - 4)) * 40}px)` }}>
+            fontFamily: INTER, color: "#f7efe6", opacity: k(f, f0 - 20, f0 - 6), transform: `translateY(${(1 - k(f, f0 - 20, f0 - 4)) * 40}px)` }}>
             <div style={{ width: 280 }}>
               <div style={{ fontWeight: 600, fontSize: 64, fontVariantNumeric: "tabular-nums", letterSpacing: "-0.02em" }}>{bar.left.value}</div>
               <div style={{ fontSize: 28, color: "rgba(247,239,230,0.6)", marginTop: 4 }}>{bar.left.label}</div>
@@ -179,12 +223,12 @@ export const CampusWalk: React.FC<CampusWalkProps> = ({ data, from, to, fromLabe
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 12 }}>
               <div style={{ width: 124, height: 124, borderRadius: 62, background: B.color.accent, display: "flex", alignItems: "center", justifyContent: "center",
                 boxShadow: `0 0 ${40 + pulse * 20}px rgba(${B.color.glowRgb}, 0.55)` }}>
-                <WalkFigure size={70} color="#ffffff" />
+                {running ? <RunFigure size={74} color="#ffffff" /> : <WalkFigure size={70} color="#ffffff" />}
               </div>
               <div style={{ fontWeight: 600, fontSize: 30 }}>{bar.chip}</div>
             </div>
             <div style={{ width: 280, textAlign: "right" }}>
-              <div style={{ fontWeight: 600, fontSize: 64, fontVariantNumeric: "tabular-nums", letterSpacing: "-0.02em" }}>{bar.right.value}</div>
+              <div style={{ fontWeight: 600, fontSize: 64, fontVariantNumeric: "tabular-nums", letterSpacing: "-0.02em", color: late ? "#ff4d5a" : undefined }}>{bar.right.value}</div>
               <div style={{ fontSize: 28, color: "rgba(247,239,230,0.6)", marginTop: 4 }}>{bar.right.label}</div>
             </div>
           </div>

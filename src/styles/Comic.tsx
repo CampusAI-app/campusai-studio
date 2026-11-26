@@ -7,14 +7,20 @@
  * Ben-Day dots are built in SVG: a 45 degree grid of dots whose radius follows a falloff, drawn as one path per panel,
  * so the shading is real halftone (dots grow, they never fade). The cast is Open Peeps (./peeps), never drawn by hand.
  * Balloons and captions letter in Caveat, the title and the sound effect in Zodiak. Sentence case, even the effect.
+ *
+ * 2026-11-17 (Jacob: show the product when we can, and open on UMD so Maryland students stop scrolling): two optional
+ * props, both off by default so the Nov 5 sample renders as before. `shot` pops a REAL capture in as an inset panel
+ * over the page after the payoff (ink border, offset shadow, a caption box), never drawn UI. `umd` adds the shared
+ * <UmdOpen /> as the last child.
  */
 import React from "react";
 import { loadFont } from "@remotion/google-fonts/Caveat";
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { CURVE, DUR } from "../system/motion";
 import { readHold } from "../system/motion";
 import { B, Clip, Cue, PAPER, PRINT, RED, ZODIAK, clamp, ramp } from "./common";
 import { Peep, type BodyName, type FaceName } from "./peeps/Peep";
+import { UmdOpen, type UmdOpenProps } from "./UmdOpen";
 
 const { fontFamily: HAND } = loadFont("normal", { weights: ["700"], subsets: ["latin"] });
 
@@ -30,6 +36,10 @@ export type ComicProps = {
   worse: { person: Person; says: string };
   /** Panel 4: the sound effect (a short word, red), the student, and the line naming CampusAI. */
   payoff: { sfx: string; person: Person; says: string };
+  /** Optional (11/17): a real capture popped in over the page after the payoff, with a caption box naming it. */
+  shot?: { src: string; w: number; h: number; crop: { x: number; y: number; w: number; h: number }; caption: string; width?: number; top?: number };
+  /** Optional (11/17): the UMD M opening (src/styles/UmdOpen.tsx), placement only. */
+  umd?: UmdOpenProps;
 };
 
 const BALLOON = B.color.accentInk; // white balloons on cream paper
@@ -57,8 +67,11 @@ export const comicPlan = (p: ComicProps) => {
     [6, p.open.caption], [says[0] + 6, p.open.says], [says[1] + 6, p.pile.caption], [says[2] + 6, p.worse.says], [says[3] + 6, p.payoff.says],
     ...p.pile.items.map((t, i) => [P[1] + 4 + i * 9, t] as [number, string]),
   ];
-  const end = Math.max(...texts.map(([a, t]) => a + Math.ceil(readHold(t) * 30))) + 10;
-  return { P, says, end };
+  const base = Math.max(...texts.map(([a, t]) => a + Math.ceil(readHold(t) * 30))) + 10;
+  // the inset lands once the payoff line has been read, then holds long enough to read the capture (3.2 s)
+  const shotAt = p.shot ? says[3] + 6 + Math.ceil(readHold(p.payoff.says) * 30) : Infinity;
+  const end = p.shot ? Math.max(base, shotAt + 96) : base;
+  return { P, says, end, shotAt };
 };
 export const comicEnd = (p: ComicProps) => comicPlan(p).end;
 
@@ -176,10 +189,35 @@ const burst = (cx: number, cy: number, r0: number, r1: number, n: number) =>
     return `${i ? "L" : "M"}${(cx + Math.cos(a) * r).toFixed(1)} ${(cy + Math.sin(a) * r).toFixed(1)}`;
   }).join(" ") + " Z";
 
+/** The real capture as an inset panel: it pops out of the page on a spring, ink border and an offset shadow like a
+ * pasted-in close-up, with a caption box on its corner. The picture inside is the capture, cropped, never redrawn. */
+const Inset: React.FC<{ shot: NonNullable<ComicProps["shot"]>; at: number }> = ({ shot, at }) => {
+  const f = useCurrentFrame();
+  const { fps, width: W } = useVideoConfig();
+  if (f < at) return null;
+  const k = spring({ frame: f - at, fps, config: { damping: 13, stiffness: 150 } });
+  const w = shot.width ?? 820;
+  const h = w * (shot.crop.h / shot.crop.w);
+  const s = w / shot.crop.w;
+  const cap = ramp(f, at + 8, at + 8 + DUR.panel, CURVE.quiet.enter);
+  return (
+    <div style={{ position: "absolute", left: (W - w) / 2, top: shot.top ?? 280, width: w, height: h, opacity: Math.min(1, k * 3),
+      transform: `rotate(${(-2 * k).toFixed(3)}deg) scale(${(0.82 + 0.18 * k).toFixed(4)})`, transformOrigin: "50% 60%" }}>
+      <div style={{ position: "absolute", inset: 0, overflow: "hidden", border: `${INK_W}px solid ${PRINT}`, boxShadow: `14px 16px 0 ${PRINT}`, background: PRINT }}>
+        <Img src={staticFile(shot.src)} style={{ position: "absolute", left: -shot.crop.x * s, top: -shot.crop.y * s, width: shot.w * s, height: shot.h * s }} />
+      </div>
+      <div style={{ position: "absolute", top: -72, left: -22, padding: "16px 24px 14px", background: PAPER, border: `${INK_W - 2}px solid ${PRINT}`,
+        fontFamily: HAND, fontWeight: 700, fontSize: 46, lineHeight: 1, color: PRINT, opacity: cap, transform: `translateX(${(1 - cap) * -30}px) rotate(-1deg)` }}>
+        {shot.caption}
+      </div>
+    </div>
+  );
+};
+
 export const Comic: React.FC<ComicProps> = (p) => {
   const f = useCurrentFrame();
   const { fps, width: W, height: H } = useVideoConfig();
-  const { P, says, end } = comicPlan(p);
+  const { P, says, end, shotAt } = comicPlan(p);
   const box = panels(W, H);
 
   // A slow push on the whole page. (A lean toward each panel was tried in round 1 and cropped the title off the left.)
@@ -255,13 +293,16 @@ export const Comic: React.FC<ComicProps> = (p) => {
             transform: `translate(${shake.toFixed(1)}px, 0) rotate(-8deg) scale(${(0.4 + 0.6 * sfxK).toFixed(4)})` }}>{p.payoff.sfx}</div>
           <Balloon x={b4.w - 560} y={b4.h - 166} w={520} h={150} tail={[330, b4.h - 190]} at={says[3]} size={54}>{p.payoff.says}</Balloon>
         </Panel>
+        {p.shot ? <Inset shot={p.shot} at={shotAt} /> : null}
       </AbsoluteFill>
+      {p.shot ? <Cue at={shotAt} name="paper-move-quick" volume={0.45} /> : null}
       <Cue at={0} name="paper-slide" volume={0.4} />
       {P.slice(1).map((t, i) => <Cue key={i} at={t} name="paper-move-quick" volume={0.35} />)}
       {p.pile.items.map((_, i) => <Cue key={`p${i}`} at={P[1] + 4 + i * 9} name="paper-slide" volume={0.35} />)}
       {says.map((t, i) => <Cue key={`s${i}`} at={t} name="switch-tap" volume={0.3} />)}
       <Cue at={sfxAt} name="chime-crystal" volume={0.55} />
       <Cue at={sfxAt} name="bass-hit-short" volume={0.45} />
+      {p.umd ? <UmdOpen {...p.umd} /> : null}
     </Clip>
   );
 };
