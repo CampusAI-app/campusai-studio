@@ -153,6 +153,13 @@ format beats one described from scratch. Only when none fits does the order belo
 5. **Review loop** (`review.md`) before any full render.
 6. **Deliver** (below). Never auto-open. Posting is his.
 
+**Log the gap, never build it unasked (2026-11-25, from Joshua Blatch's pitch-first graphics mod, Muse send).**
+While building any film, when a beat would be explained better by a part the kit does not have, write it in
+`films/<name>/gaps.md`: the time, the exact line said or shown, the idea, and why no existing part (Studio site,
+`src/kit/`) does the job. Do not build it. At delivery, list the gaps under the film, one line each, and ask yes or
+no. On a yes, show 2 or 3 directions as stills first; animate only the one picked, then add it to the kit and the
+Studio site so every later film can use it. This is how the kit grows from real work instead of from guesses.
+
 ## Rules for everything (each one settled; the old disagreement is noted so it stays settled)
 
 **Real and honest**
