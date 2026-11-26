@@ -229,3 +229,9 @@ export type { VortexItem } from "./DeskFlow";
 // From Ildari's Strava concept ad (2026-11-25, Muse): a walk on a real campus map with a live bar. Reuse for the Campus Map film.
 export { CampusWalk, WalkFigure, RunFigure, clockText } from "./CampusWalk";
 export type { CampusWalkProps, WalkWorld } from "./CampusWalk";
+
+// From Roshan Studio's Kinso launch film (2026-11-25, Muse: "lets remake this almost exactly for campusai"): the whole
+// film on one curved ultrawide in a warm dark room, a pill of app icons standing in a word as a letter, the halftone
+// "Woah" card, the highlight and bar sweeps, the outline mark, a counter, the orb. Worked example PostKinso-9x16 stays local.
+export { UltrawideRoom, ULTRAWIDE, GradientField, PillWord, Halftone, HalftoneCard, HighlightSweep, BarSweep, StrokeMark, CountUp, Orb, Crosshair, CornerTicks, SL } from "./ScreenLaunch";
+export type { PillIcon } from "./ScreenLaunch";

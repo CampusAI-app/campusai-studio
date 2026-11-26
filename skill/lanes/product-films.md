@@ -108,6 +108,17 @@ capabilities as pills stacking under one phrase.
   gradient keeps ClickUp's violet start but lands on brand red. Kit parts in `PastelLaunch` (PastelVoid, KineticType,
   FloatingScreen, ChapterCard, GlowPrompt, CaptionPill); the numbers are in `LAUNCH`. Worked example `LaunchFilm-16x9`
   (local, src/trials/).
+- **Ultrawide launch** (2026-11-25, Roshan Studio's spec launch film for Kinso, read frame by frame; Jacob: "lets remake
+  this almost exactly for campusai"). One locked shot of a curved ultrawide on a desk in a warm orange room, the whole film on
+  its screen, music only, about 44 s. The beats: a small line set at frame 0 ("Your next opportunity / is in here"), a push
+  into the last word with a pill of the student's real sources (Testudo, TerpLink, Smith Careers, PlanetTerp) standing in it
+  as a letter, "Woah" on a tilted card over halftone, "You are a really busy Terp" with a bar sweeping behind the last words,
+  a bar wipe ("Let's solve this first."), the spark drawing on as an outline into "Meet campusai", the real product rising as a
+  window while a word stack builds beside an orb, the found item lifting as the orb settles behind it, a dark iris into the
+  product's ask bar opening into the real answer, a sourced number counting, the site's own call to action, logo and
+  address. Walk the room camera in on the monitor whenever the product is the subject, or its text is unreadable on a phone.
+  Kit parts `ScreenLaunch` (UltrawideRoom, PillWord, HalftoneCard, HighlightSweep, BarSweep, StrokeMark, CountUp, Orb,
+  Crosshair, CornerTicks). Worked example `PostKinso-9x16` (local, src/trials/).
 - **One take** (2026-11-21, Ilias Miah's 22 s Kestrel notifications film, read frame by frame; Jacob: "I love how this
   video looks for motion design"). No cuts at all: the product's screens are planes floating at different depths in a
   pale void, tilted 3 to 5 deg with soft shadows, and one camera travels through them. Open on the whole tableau (a big
