@@ -54,6 +54,12 @@ capabilities as pills stacking under one phrase.
   into one line, one command, a wipe off that line into the real page building part by part, three words landing over
   their real pages, the words stacked beside the pages, then the logo. Kit part `ScreenStage` (the worked example,
   `PostDeskStage-9x16`, stays local with its captures). A real filmed plate (6 s, tripod, monitor on plain white) beats the code-drawn room.
+  **Desk series** (2026-11-27, XZE Creative's Spotify 2.0 film, read frame by frame): the same room is the series. Every
+  episode keeps the shot and only the lamp and spill take the product's colour (ours stays red), so a viewer knows the
+  format before reading a word. Inside the screen, one feature in three beats on one real page with the camera riding
+  it (push to the number as it fills, ride down to the card that lifts, push into the one action and tap it), a hard cut
+  to black, two short lines that track in (kit `TrackIn`, the second shrinking away), then the mark alone and the
+  wordmark after it. Proof `ProofDeskSeries-9x16` (src/trials/proof-desk-series.tsx).
 - **Keynote on a monitor** (2026-11-24, bemx.studio's RunInfra launch film, read frame by frame): the launch deck plays on
   a monitor in a dark room for the whole film, the camera drifting slowly, no voice. White slides, small quiet type built a
   word at a time, ONE phrase per slide in a red `HandleHighlight` box, numbers the only big type, real captures framed by

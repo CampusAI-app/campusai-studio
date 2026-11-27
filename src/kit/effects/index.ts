@@ -258,3 +258,7 @@ export { PillType, PillFunnel } from "./PillType";
 export type { PillRun, FunnelStep } from "./PillType";
 export { InlineIcon } from "./InlineIcon";
 export { MeshWorld, FrostCard } from "./FrostDepth";
+// Nov 27 Muse pass (XZE Creative's "Spotify 2.0" desk film, read frame by frame; our own build). TrackIn: a payoff line on
+// black whose words arrive spread wide and pull together, key words in red, the line re-centring as it grows and shrinking
+// away before the logo. Proof: src/trials/proof-desk-series.tsx (ProofDeskSeries-9x16, own entry file).
+export { TrackIn } from "./TrackIn";
