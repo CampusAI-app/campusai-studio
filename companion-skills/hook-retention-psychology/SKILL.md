@@ -138,7 +138,7 @@ Any bait/misleading element fails the whole post regardless of other scores.
 
 ## How this plugs into our system
 - **content-engine** runs plan → research → copy → render → **score**; this skill is the depth behind the hook/retention part of that score. Run it on the opening before rendering, and again on the near-final cut.
-- **humanizer** cleans the language so the hook doesn't read as AI. Order: draft → hook-retention pass → humanizer → anti-slop check.
+- **humanizer**, if you have it installed (otherwise use the copy tells in the anti-slop check), cleans the language so the hook doesn't read as AI. Order: draft → hook-retention pass → humanizer → anti-slop check.
 - **content-engine** `reference/copy-levers.md` carries the caption rules and the scripted clean pass from the same harvest.
 - Human reference to study: Jonathan Maxim (content & retention psychology). Craft reference for scroll-stopping first frames: the burger-shop feed-glitch Reel.
 - Never invent a stat, credential, or claim to strengthen a hook. If the specific detail isn't true, find one that is — there's always a real, specific angle.
